@@ -113,3 +113,10 @@
 - Removed loose p.2 pointer text/shapes (`GlossaryPointer`, `PresenterGuidePointer`) and replaced them with top-right designed reference cards inside shapes: `MEETING PROCEDURE / Guide p.3–5` and `ABBREVIATIONS / Glossary p.39–41`.
 - Saved `Future_Industrial_PLM_Meeting_Deck_EN_V13.pptx`, default `Future_Industrial_PLM_Meeting_Deck_EN.pptx`, and `Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (`40,748,296` bytes, `2026-06-07 01:41:40`); exported final PDF (`4,286,085` bytes, `2026-06-07 01:41:52`).
 - QA: rendered all 41 pages to `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v13_slide2_reference_cards_render\`; visually checked p.1, p.2, p.3-p.5, p.38, and p.41. COM verification confirmed 41 slides, V13 reference-card shapes present, and old loose pointer text absent.
+
+2026-06-07 run (~11m)
+
+- Redesigned AVEVA deck p.7 `Stack & Position` content and saved as V14.
+- Replaced the right-side plain text list with a structured card/table panel containing five color-coded vendor cards: AVEVA, Siemens, Dassault, Hexagon, and PTC. Kept the left positioning map and bottom takeaway unchanged.
+- Saved `Future_Industrial_PLM_Meeting_Deck_EN_V14.pptx`, default `Future_Industrial_PLM_Meeting_Deck_EN.pptx`, and `Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (`40,749,477` bytes, saved around `2026-06-07 01:57:19-21`); exported final PDF (`4,288,639` bytes, `2026-06-07 01:58:41`).
+- QA: rendered all 41 pages to `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v14_slide7_stack_cards_render\`; visually checked p.1, p.2, p.7, and p.41. COM verification confirmed 41 slides, V14 card shapes present, old p.7 list-shape names absent, and key redesigned text present.
