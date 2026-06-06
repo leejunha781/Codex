@@ -110,8 +110,12 @@ try {
     if ($ppt -ne $null) {
         try { $ppt.Quit() } catch {}
     }
-    [System.Runtime.InteropServices.Marshal]::ReleaseComObject($pres) | Out-Null 2>$null
-    [System.Runtime.InteropServices.Marshal]::ReleaseComObject($ppt) | Out-Null 2>$null
+    if ($pres -ne $null) {
+        [System.Runtime.InteropServices.Marshal]::ReleaseComObject($pres) | Out-Null 2>$null
+    }
+    if ($ppt -ne $null) {
+        [System.Runtime.InteropServices.Marshal]::ReleaseComObject($ppt) | Out-Null 2>$null
+    }
     [GC]::Collect()
     [GC]::WaitForPendingFinalizers()
 }
@@ -134,8 +138,12 @@ try {
     if ($ppt -ne $null) {
         try { $ppt.Quit() } catch {}
     }
-    [System.Runtime.InteropServices.Marshal]::ReleaseComObject($pres) | Out-Null 2>$null
-    [System.Runtime.InteropServices.Marshal]::ReleaseComObject($ppt) | Out-Null 2>$null
+    if ($pres -ne $null) {
+        [System.Runtime.InteropServices.Marshal]::ReleaseComObject($pres) | Out-Null 2>$null
+    }
+    if ($ppt -ne $null) {
+        [System.Runtime.InteropServices.Marshal]::ReleaseComObject($ppt) | Out-Null 2>$null
+    }
     [GC]::Collect()
     [GC]::WaitForPendingFinalizers()
 }
