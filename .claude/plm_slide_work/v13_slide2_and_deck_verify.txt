@@ -1,0 +1,38 @@
+﻿V13 slide 2 and deck verification
+Generated: 2026-06-07 01:49:04 +09:00
+Deck: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V13.pptx
+Slides: 41
+
+Slide 2 old pointer shapes:
+  GlossaryPointer = False
+  PresenterGuidePointer = False
+
+Slide 2 new reference-card shapes:
+  ReferenceToolbarPanelV13 = True
+  ProcedureGuideCardV13 = True
+  ProcedureGuideAccentBarV13 = True
+  ProcedureGuideLabelV13 = True
+  ProcedureGuideRangeV13 = True
+  GlossaryGuideCardV13 = True
+  GlossaryGuideAccentBarV13 = True
+  GlossaryGuideLabelV13 = True
+  GlossaryGuideRangeV13 = True
+
+Slide 2 reference texts:
+  TextBox 11: Meeting procedure - development + planning decision flow
+  TextBox 13: Start with the meeting procedure, then move from facts to ideas, delivery plan and final decision
+  ProcedureGuideLabelV13: MEETING PROCEDURE
+  ProcedureGuideRangeV13: Guide p.3–5
+  GlossaryGuideLabelV13: ABBREVIATIONS
+  GlossaryGuideRangeV13: Glossary p.39–41
+
+Page number text check:
+  Slide 1: 1
+  Slide 2: 1, 2, 3, 4, 5, 6, 7, 2
+  Slide 3: 3, 1, 2, 3, 4
+  Slide 4: 4
+  Slide 5: 5
+  Slide 38: 38
+  Slide 39: 39
+  Slide 40: 40
+  Slide 41: 41
