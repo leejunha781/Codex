@@ -1,0 +1,48 @@
+﻿Deck: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx
+Slide count: 41
+Slide 7 shapes: 45
+ 1. TextBox 13 | Type=17 | L=26.0 T=14.0 W=760.0 H=30.0 | Text=Current PLM landscape
+ 2. Rounded Rectangle 16 | Type=1 | L=56.0 T=86.0 W=556.0 H=388.0 | Text=
+ 3. Straight Arrow Connector 17 | Type=1 | L=80.0 T=300.0 W=516.0 H=0.0 | Text=
+ 4. Straight Arrow Connector 18 | Type=1 | L=334.0 T=96.0 W=0.0 H=370.0 | Text=
+ 5. TextBox 19 | Type=17 | L=470.0 T=302.0 W=138.0 H=29.1 | Text=Operations / Asset >
+ 6. TextBox 20 | Type=17 | L=66.0 T=302.0 W=150.0 H=29.1 | Text=< Engineering / PLM
+ 7. TextBox 21 | Type=17 | L=340.0 T=100.0 W=200.0 H=29.1 | Text=Unified Platform (up)
+ 8. TextBox 22 | Type=17 | L=340.0 T=452.0 W=200.0 H=29.1 | Text=Siloed point tools (down)
+ 9. Oval 23 | Type=1 | L=234.0 T=120.0 W=248.0 H=100.0 | Text=
+10. TextBox 24 | Type=17 | L=250.0 T=124.0 W=220.0 H=29.1 | Text=Engineering → Operations Sweet Spot
+11. Oval 25 | Type=1 | L=214.0 T=213.0 W=12.0 H=12.0 | Text=
+12. TextBox 26 | Type=17 | L=230.0 T=211.0 W=80.0 H=29.1 | Text=Siemens
+13. Oval 27 | Type=1 | L=256.0 T=185.0 W=12.0 H=12.0 | Text=
+14. TextBox 28 | Type=17 | L=272.0 T=183.0 W=80.0 H=29.1 | Text=Dassault
+15. Oval 29 | Type=1 | L=352.0 T=283.0 W=12.0 H=12.0 | Text=
+16. TextBox 30 | Type=17 | L=368.0 T=281.0 W=60.0 H=29.1 | Text=PTC
+17. Oval 31 | Type=1 | L=478.0 T=233.0 W=12.0 H=12.0 | Text=
+18. TextBox 32 | Type=17 | L=494.0 T=231.0 W=80.0 H=29.1 | Text=Hexagon
+19. Oval 33 | Type=1 | L=344.0 T=160.0 W=20.0 H=20.0 | Text=
+20. TextBox 34 | Type=17 | L=368.0 T=160.0 W=90.0 H=29.1 | Text=AVEVA
+21. TextBox 35 | Type=17 | L=632.0 T=90.0 W=300.0 H=29.1 | Text=Stack & Position
+22. Oval 36 | Type=1 | L=636.0 T=119.0 W=12.0 H=12.0 | Text=
+23. TextBox 37 | Type=17 | L=656.0 T=116.0 W=270.0 H=29.1 | Text=AVEVA
+24. TextBox 38 | Type=17 | L=656.0 T=132.0 W=280.0 H=29.1 | Text=E3D/Marine · AIM · PI · CONNECT
+25. TextBox 39 | Type=17 | L=656.0 T=146.0 W=280.0 H=29.1 | Text=Engineering → Operations (the bridge)
+26. Oval 40 | Type=1 | L=636.0 T=173.0 W=12.0 H=12.0 | Text=
+27. TextBox 41 | Type=17 | L=656.0 T=170.0 W=270.0 H=29.1 | Text=Siemens
+28. TextBox 42 | Type=17 | L=656.0 T=186.0 W=280.0 H=29.1 | Text=Teamcenter · NX · Opcenter
+29. TextBox 43 | Type=17 | L=656.0 T=200.0 W=280.0 H=29.1 | Text=PLM core backbone
+30. Oval 44 | Type=1 | L=636.0 T=227.0 W=12.0 H=12.0 | Text=
+31. TextBox 45 | Type=17 | L=656.0 T=224.0 W=270.0 H=29.1 | Text=Dassault
+32. TextBox 46 | Type=17 | L=656.0 T=240.0 W=280.0 H=29.1 | Text=3DEXPERIENCE · CATIA · DELMIA
+33. TextBox 47 | Type=17 | L=656.0 T=254.0 W=280.0 H=29.1 | Text=Experience / virtual-twin platform
+34. Oval 48 | Type=1 | L=636.0 T=281.0 W=12.0 H=12.0 | Text=
+35. TextBox 49 | Type=17 | L=656.0 T=278.0 W=270.0 H=29.1 | Text=Hexagon
+36. TextBox 50 | Type=17 | L=656.0 T=294.0 W=280.0 H=29.1 | Text=SDx · Smart 3D · j5 · Completions
+37. TextBox 51 | Type=17 | L=656.0 T=308.0 W=280.0 H=29.1 | Text=Asset lifecycle & operations
+38. Oval 52 | Type=1 | L=636.0 T=335.0 W=12.0 H=12.0 | Text=
+39. TextBox 53 | Type=17 | L=656.0 T=332.0 W=270.0 H=29.1 | Text=PTC
+40. TextBox 54 | Type=17 | L=656.0 T=348.0 W=280.0 H=29.1 | Text=Windchill · Codebeamer · ThingWorx
+41. TextBox 55 | Type=17 | L=656.0 T=362.0 W=280.0 H=29.1 | Text=PLM + IoT digital thread
+42. Rounded Rectangle 56 | Type=1 | L=56.0 T=484.0 W=878.0 H=45.0 | Text=Takeaway: don't compete as just another PLM backbone — build the engineering-to-operations layer that existing PLM, CAD, MES and historian platforms cannot easily unify.
+43. Text 1 | Type=1 | L=33.8 T=54.7 W=612.0 H=18.7 | Text=The future PLM opportunity is between engineering data and live operations
+44. Text 2 | Type=1 | L=766.8 T=23.8 W=158.4 H=18.7 | Text=Future Industrial PLM
+45. Text 10 | Type=1 | L=920.2 T=8.6 W=18.0 H=11.5 | Text=7
