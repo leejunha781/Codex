@@ -24,6 +24,12 @@ foreach ($target in $backupTargets) {
     Copy-Item -LiteralPath $target -Destination (Join-Path $backupDir (Split-Path $target -Leaf)) -Force
 }
 
+foreach ($generated in @($briefDocx, $briefPdf)) {
+    if (Test-Path -LiteralPath $generated) {
+        Remove-Item -LiteralPath $generated -Force
+    }
+}
+
 $notes = @{}
 $notes[1] = @'
 Purpose: Open the meeting by making the decision objective explicit. The audience is not being asked to approve a vague vision; they are being asked to align on a concrete future direction, pilot scope, governance model and KPI-based acceptance plan.
