@@ -78,3 +78,12 @@
 - Exported final PDF `...\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf` (`3,633,108` bytes, `2026-06-07 00:38:39`).
 - Corrections: cover revision/date to `Rev. V10 · 2026-06-07`; slide 2 meeting guide pointer to `p.3–5`; slide 18 stale WBS reference `p.28` -> `p.31` and shortened to avoid clipping; slide 38 footer changed from Meeting Procedure to Close.
 - QA: rendered 41 PDF pages to `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v10_impacted_refs_pdf_render\`; visually checked p.1, p.2, p.18, p.38. COM text verification found no remaining `p.28`.
+
+2026-06-07 run (~11m)
+
+- Redesigned AVEVA deck slide 38 for higher visibility and stronger closing impact.
+- Generated a relevant marine PLM control-plane image with the built-in image generation tool and copied it to `C:\Users\namma\.claude\plm_slide_work\future_direction_control_plane_background_v11.png`.
+- Created V11 from the V10 final deck and inserted the generated image as a full-bleed p.38 background with dark readability overlay.
+- p.38 layout changed to large closing statement, three proof cards (`CREDIBLE`, `DIFFERENT`, `APPROVE`), and a bottom meeting-ask banner.
+- Saved `Future_Industrial_PLM_Meeting_Deck_EN_V11.pptx`, default `Future_Industrial_PLM_Meeting_Deck_EN.pptx`, and `Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (`35,308,787` bytes, `2026-06-07 00:54:15`); exported final PDF (`3,844,838` bytes, `2026-06-07 00:54:26`).
+- QA: rendered all 41 pages to `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v11_slide38_visual_render\`; visually checked p.38 and p.1.
