@@ -1,0 +1,38 @@
+﻿V10 impacted reference verification
+Generated: 2026-06-07 00:41:21 +09:00
+Deck: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V10.pptx
+Slides: 41
+
+Targeted matches for p.28 / p.3-5 / Meeting Procedure:
+SLIDE 2: Meeting procedure - development + planning decision flow
+SLIDE 2: Start with the meeting procedure, then move from facts to ideas, delivery plan and final decision
+SLIDE 2: Meeting procedure guide -> p.3–5
+SLIDE 3: Meeting Procedure - decision path
+SLIDE 3: Future Industrial PLM / Meeting Procedure
+SLIDE 4: Future Industrial PLM / Meeting Procedure
+SLIDE 5: Future Industrial PLM / Meeting Procedure
+
+Slide 1 checked text:
+  Company-by-company benchmark, win-above strategies, open AVEVA control plane, delivery WBS and KPI gates
+  Rev. V10 · 2026-06-07
+
+Slide 2 checked text:
+  Architecture, workflows and pilot scope - then WBS and KPI gates
+  Procedure rule: align how the room will decide first; WBS and KPI appear only after capabilities and pilot scope are clear.
+  Abbreviations → Glossary appendix, p.39–41
+  p.6–8
+  p.9
+  p.10–18
+  p.19–32
+  p.33
+  p.34–36
+  p.37–38
+  Meeting procedure guide -> p.3–5
+
+Slide 18 checked text:
+  Pilot value: auditable Linux-based route proposals with human/class validation. | Scope: future phase; WBS p.31.
+
+Slide 38 checked text:
+  Future Industrial PLM / Close
+  Phase 2 configuration core plus one bounded Continuous Naval Assurance pilot, governed by the WBS and KPI gates.
+
