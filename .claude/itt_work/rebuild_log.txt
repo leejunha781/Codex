@@ -1,0 +1,14 @@
+﻿1) Tables 4 (Intellian) & 5 (Genohco) corrected.
+2) Harsh-Environment bullet updated.
+3) Connector-knowledge bullet inserted.
+4) Profile values paragraph rewoven into 2 paragraphs.
+5) Collected 9 paragraphs of Product section to delete.
+  HEADING ok=True : Professional Profile
+  HEADING ok=True : Key Strengths Matched to ITT Cannon
+  HEADING ok=True : Education, Certifications, Language
+  HEADING ok=True : Career Summary
+  HEADING ok=True : Detailed Professional Experience
+  HEADING ok=True : Compensation / Salary Information
+  HEADING ok=True : Self-Introduction and Application Motivation
+  Product section removed = True
+RESULT pages=9 words=4545

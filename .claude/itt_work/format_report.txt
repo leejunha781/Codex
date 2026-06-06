@@ -1,0 +1,319 @@
+﻿PAGES=8
+WORDS=3919
+PARAS=300
+TABLES=11
+SECTIONS=1
+PAGESETUP top=35.45 bottom=35.45 left=35.45 right=35.45 pagew=595.3 pageh=841.9
+TABLE #1: rows=1 cols=2
+TABLE #2: rows=8 cols=4
+TABLE #3: rows=5 cols=2
+TABLE #4: rows=2 cols=2
+TABLE #5: rows=2 cols=2
+TABLE #6: rows=2 cols=2
+TABLE #7: rows=2 cols=2
+TABLE #8: rows=2 cols=2
+TABLE #9: rows=2 cols=2
+TABLE #10: rows=8 cols=3
+TABLE #11: rows=8 cols=3
+----- PARAGRAPH MAP (idx | style | font | size | bold | lineSpacingRule | spaceBefore/After | text) -----
+1 | 표준 | Arial | 23 | -1 | 5 | 0/0 | Joonha Lee
+2 | 표준 | Arial | 13 | -1 | 0 | 0/0 | Field Application Engineer (FAE) - ITT Cannon Connector Korea
+3 | 표준 | Arial | 10 | 0 | 0 | 0/0 | Gunpo-si, Gyeonggi-do, Korea | +82-10-2731-4581 | leejunha781@gmail.co
+4 | 표준 | Arial | 10 | 0 | 5 | 0/10 | /
+5 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+6 | 표준 | Arial | 14 | -1 | 0 | 8/2 | Professional Profile and Interest in ITT Cannon FAE Role
+7 | 표준 | Arial | 10 | 0 | 0 | 0/2 | Field Application Engineer candidate with 21+ years of experience in h
+8 | 표준 | Arial | 10 | 0 | 0 | 0/2 | I am strongly interested in ITT Cannon Connector Korea because the FAE
+9 | 표준 | Arial | 10 | 0 | 0 | 0/2 | At ITT Cannon, I can contribute by capturing Voice of Customer, identi
+10 | 표준 | Arial | 14 | -1 | 0 | 8/2 | Key Strengths Matched to ITT Cannon FAE Role
+11 | 글머리 기호 | Arial | 10 | 9999999 | 0 | 0/2 | Aerospace & Defense / Military Customer Background: 15+ years supporti
+12 | 글머리 기호 | Arial | 10 | 9999999 | 0 | 0/2 | Connector, Cable and System Interface Understanding: Practical underst
+13 | 글머리 기호 | Arial | 10 | 9999999 | 0 | 0/2 | Customer Engineering Engagement: Able to act as the technical bridge b
+14 | 글머리 기호 | Arial | 10 | 9999999 | 0 | 0/2 | Application Issue Solving and Root-Cause Analysis: Strong issue-solvin
+15 | 글머리 기호 | Arial | 10 | 9999999 | 0 | 0/2 | New Design / Product Development Support: Experienced in translating c
+16 | 글머리 기호 | Arial | 10 | 9999999 | 0 | 0/2 | Technical Presentations and Solution Proposals: Prepared technical pro
+17 | 글머리 기호 | Arial | 10 | 9999999 | 0 | 0/2 | Harsh-Environment Reliability Mindset: Proven background in defense, n
+18 | 글머리 기호 | Arial | 10 | 9999999 | 0 | 0/2 | Independent, Self-Motivated and Travel-Ready Working Style: Accustomed
+19 | 표준 | Arial | 10 | 0 | 0 | 0/2 | 
+20 | 표준 | Arial | 14 | -1 | 0 | 8/2 | Career Summary
+21 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Period
+22 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Company
+23 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Position
+24 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | ITT Cannon FAE Relevance
+25 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+26 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Aug 2025 - Present
+27 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Independent / Career Transition
+28 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Career Transition & Self-Study
+29 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Preparing for ITT Cannon FAE role; strengthening connector/application
+30 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+31 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Mar 2023 - Jul 2025
+32 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Intellian Technologies
+33 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Senior Engineer / Hardware Platform Lead
+34 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | LEO satellite terminal integration, RF/antenna and network interface v
+35 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+36 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Aug 2022 - Mar 2023
+37 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Genohco
+38 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Lead Engineer / Principal Research Engineer
+39 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Defense/aerospace electronics, RFP/requirements review, EMI/EMC planni
+40 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+41 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | May 2007 - Apr 2022
+42 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Daeyang Electric Co., Ltd.
+43 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Principal Engineer / Project Manager
+44 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | ROK Navy ship/submarine systems, shipboard networks, installation, FAT
+45 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+46 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Jan 2006 - May 2007
+47 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Excure Hitron
+48 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Engineer
+49 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | CCTV/IR dome camera control boards, power/signal interface debugging, 
+50 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+51 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Jun 2005 - Oct 2005
+52 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Esetel
+53 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Engineer
+54 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | ARM-based mobile hardware, RF/digital/power interface debugging and pr
+55 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+56 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Jan 2004 - May 2005
+57 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | NesLab
+58 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Engineer
+59 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | ARM-based embedded hardware, HDD phone interface debugging, PCB suppor
+60 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+61 | 표준 | Arial | 14 | -1 | 0 | 8/2 | Education, Certifications, Language and Technical Toolkit
+62 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Education
+63 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | M.S. in Electronic & Electrical Engineering, Embedded Systems, Pusan N
+64 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+65 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Certifications / Training
+66 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Certified NMEA 2000 Networking; Defence PMBOK training; Machine Learni
+67 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+68 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Language
+69 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | English technical meetings and customer communication with Eutelsat On
+70 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+71 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Technical Toolkit
+72 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | ARM Cortex-M3, embedded C, CPU/I/O boards, power/control circuits, Eth
+73 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+74 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Documentation
+75 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | ICD, test plan/procedure, test report, defect log, verification eviden
+76 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+77 | 표준 | Arial | 10 | 0 | 0 | 0/2 | 
+78 | 표준 | Arial | 14 | -1 | 0 | 8/2 | Detailed Professional Experience
+79 | 표준 | Arial | 11 | -1 | 0 | 5/2 | Intellian Technologies | Senior Engineer / Hardware Platform Lead | Ma
+80 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Role
+81 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | LEO satellite terminal integration, production validation, field issue
+82 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+83 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | FAE Fit
+84 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Integrated RF/antenna, control electronics, modem/signal-processing mo
+85 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+86 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Main Responsibilities and Scope
+87 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Managed system integration testing, software-log based issue analysis,
+88 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Translated customer and product requirements into HW/SW/RF/network int
+89 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Analyzed defect logs, software logs, network packets, Wireshark/iperf 
+90 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Coordinated ECO/BOM updates, pilot-build findings, production-validati
+91 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Supported English technical reviews and quality issue meetings with Eu
+92 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Connector / Application Engineering Relevance Embedded in the Role
+93 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Worked with RF/antenna cable paths, data/network cabling, modem-to-con
+94 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Gained practical experience discussing customer pain points in a syste
+95 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Built a practical FAE-style issue closure process: capture customer sy
+96 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Strengthened ability to support new design applications by linking app
+97 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Selected Achievements and Evidence
+98 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Contributed to approximately 30% reduction in monthly defect rate and 
+99 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Improved cross-functional decision quality by connecting customer requ
+100 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Maintained customer-facing technical summaries and quality issue statu
+101 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Reason for Leaving
+102 | 표준 | Arial | 10 | 0 | 0 | 0/2 | After gaining experience in LEO satellite terminal integration, produc
+103 | 표준 | Arial | 11 | -1 | 0 | 5/2 | Genohco | Lead Engineer / Principal Research Engineer | Aug 2022 - Mar
+104 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Role
+105 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Defense/aerospace electronics PL/PM support, RFP analysis, technical p
+106 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+107 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | FAE Fit
+108 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Converted aerospace/defense customer requirements and RFP items into p
+109 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+110 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Main Responsibilities and Scope
+111 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Led defense and aerospace electronics tasks from requirement review th
+112 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Analyzed RFP requirements and prepared technical proposals, project ex
+113 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Converted system requirements into board specifications, power/signal 
+114 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Reviewed PCB circuits and layouts for power integrity, signal integrit
+115 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Coordinated technical Q&A with customers, inspection bodies and extern
+116 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Connector / Application Engineering Relevance Embedded in the Role
+117 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Strengthened harsh-environment electronics discipline around signal/po
+118 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Developed the ability to translate customer requirements into practica
+119 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Built proposal and customer-response experience relevant to ITT Cannon
+120 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Gained direct Aerospace & Defense market relevance in Korea, matching 
+121 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Selected Achievements and Evidence
+122 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Managed technical proposal and execution documentation for defense/aer
+123 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Reduced delivery and test-readiness risk by reviewing design changes n
+124 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Established disciplined communication with customers and external auth
+125 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Reason for Leaving
+126 | 표준 | Arial | 10 | 0 | 0 | 0/2 | At Genohco, I gained valuable experience in defense/aerospace electron
+127 | 표준 | Arial | 11 | -1 | 0 | 5/2 | Daeyang Electric Co., Ltd. | Principal Engineer / Project Manager | Ma
+128 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Role
+129 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | ROK Navy ship/submarine communication systems, shipboard networks, bro
+130 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+131 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | FAE Fit
+132 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Built the strongest foundation for ITT Cannon’s Aerospace & Defense an
+133 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+134 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Main Responsibilities and Scope
+135 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Led and supported ROK Navy ship and submarine communication system pro
+136 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Converted Navy, shipyard and inspection requirements into system archi
+137 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Managed WBS-based schedules covering equipment delivery, subcontractor
+138 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Coordinated engineering, production, quality, procurement, shipyards, 
+139 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Designed and debugged ARM Cortex-M3 CPU/I/O boards, sensor and communi
+140 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Verified VHF/UHF/HF communication equipment using signal generators, s
+141 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Connector / Application Engineering Relevance Embedded in the Role
+142 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Directly handled shipboard/submarine electrical cabling, RF antenna/ca
+143 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Experienced field conditions where connector and cable reliability aff
+144 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Understood the customer side of harsh-environment connector selection:
+145 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Developed the ability to speak with military users, shipyards and insp
+146 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Selected Achievements and Evidence
+147 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Delivered multiple naval communication and shipboard integration proje
+148 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Built a disciplined issue-closing method under customer pressure: symp
+149 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Established a technical PM foundation that combines customer requireme
+150 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Gained long-term, Korea-based Aerospace & Defense customer experience 
+151 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Reason for Leaving
+152 | 표준 | Arial | 10 | 0 | 0 | 0/2 | After approximately 15 years and 11 months at Daeyang Electric, I had 
+153 | 표준 | Arial | 11 | -1 | 0 | 5/2 | Excure Hitron | Engineer | Jan 2006 - May 2007
+154 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Role
+155 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | CCTV/IR dome camera control board development support, prototype verif
+156 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+157 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | FAE Fit
+158 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Gained practical hands-on experience with product-level electronics, c
+159 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+160 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Main Responsibilities and Scope
+161 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Reviewed and debugged CCTV and IR dome camera control circuits, power 
+162 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Supported prototype bring-up, power application, signal measurement, i
+163 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Analyzed early production defects and coordinated corrective actions w
+164 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Supported EMC/RoHS preparation and product stabilization activities.
+165 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Connector / Application Engineering Relevance Embedded in the Role
+166 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Worked with cable-connected CCTV/control equipment, power/signal inter
+167 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Learned to distinguish abnormal symptoms by circuit, wiring, connector
+168 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Developed product-level troubleshooting discipline useful for FAE appl
+169 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Selected Achievements and Evidence
+170 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Supported transition from prototype verification to production stabili
+171 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Built practical understanding of camera/control equipment stability, f
+172 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Reason for Leaving
+173 | 표준 | Arial | 10 | 0 | 0 | 0/2 | After gaining experience with CCTV/IR dome camera products, control bo
+174 | 표준 | Arial | 11 | -1 | 0 | 5/2 | Esetel | Engineer | Jun 2005 - Oct 2005
+175 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Role
+176 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | ARM-based cellular mobile hardware development support, RF/digital/pow
+177 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+178 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | FAE Fit
+179 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Built early hands-on experience in RF, digital control and power inter
+180 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+181 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Main Responsibilities and Scope
+182 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Checked ARM-based cellular mobile circuit operation, power paths, sign
+183 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Reviewed interaction among RF blocks, digital control blocks and power
+184 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Separated causes of power abnormality, signal instability and interfac
+185 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Connector / Application Engineering Relevance Embedded in the Role
+186 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Worked with RF/digital/power interface boundaries where interconnect q
+187 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Established a foundation for analyzing communication equipment issues 
+188 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Developed practical insight into the relationship between board-level 
+189 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Selected Achievements and Evidence
+190 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Supported prototype verification and interface debugging for ARM-based
+191 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Built early technical foundation later used in defense communication s
+192 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Reason for Leaving
+193 | 표준 | Arial | 10 | 0 | 0 | 0/2 | The project scope at Esetel was mainly focused on specific circuit and
+194 | 표준 | Arial | 11 | -1 | 0 | 5/2 | NesLab | Engineer | Jan 2004 - May 2005
+195 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Role
+196 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | ARM-based embedded hardware, Samsung HDD phone interface debugging, PC
+197 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+198 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | FAE Fit
+199 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Established the basic engineering foundation for board-to-system inter
+200 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+201 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Main Responsibilities and Scope
+202 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Supported control boards and peripheral circuits for ARM-based mobile/
+203 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Debugged Samsung HDD phone interface and reviewed board-to-board/devic
+204 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Supported PCB design review, prototype power/signal measurement, funct
+205 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Organized issue causes and improvement directions during product devel
+206 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Connector / Application Engineering Relevance Embedded in the Role
+207 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Developed practical understanding of board-to-system interconnects, po
+208 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Learned to view product issues not only as circuit defects but also as
+209 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Built the foundation for later FAE-relevant work in customer issue ana
+210 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Selected Achievements and Evidence
+211 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Built strong early-career engineering fundamentals in embedded hardwar
+212 | 글머리 기호 | Arial | 10 | 0 | 0 | 0/2 | Established hands-on discipline for measurement-based troubleshooting 
+213 | 표준 | Arial | 10 | -1 | 0 | 0/2 | Reason for Leaving
+214 | 표준 | Arial | 10 | 0 | 0 | 0/2 | NesLab provided my initial foundation in embedded hardware, HDD phone 
+215 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+216 | 제목 1 | Arial | 18 | -1 | 0 | 8/2 | Compensation / Salary Information
+217 | 표준 | Arial | 10 | 0 | 0 | 0/6 | This section is included as recruiter-requested HR information and is 
+218 | 표준 | Arial | 11 | -1 | 0 | 0/0 | Category
+219 | 표준 | Arial | 11 | -1 | 0 | 0/0 | Item
+220 | 표준 | Arial | 11 | -1 | 0 | 0/0 | Details
+221 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+222 | 표준 | Arial | 10.5 | -1 | 0 | 0/0 | Current Compensation
+223 | 표준 | Arial | 10.5 | -1 | 0 | 0/0 | Basic salary / contract annual salary
+224 | 표준 | Arial | 10.5 | 0 | 0 | 0/0 | KRW 83.97M
+225 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+226 | 표준 | Arial | 10 | 0 | 0 | 0/0 | 
+227 | 표준 | Arial | 10.5 | -1 | 0 | 0/0 | Meal allowance
+228 | 표준 | Arial | 10.5 | 0 | 0 | 0/0 | KRW 1.80M separate
+229 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+230 | 표준 | Arial | 10 | 0 | 0 | 0/0 | 
+231 | 표준 | Arial | 10.5 | -1 | 0 | 0/0 | Transportation allowance
+232 | 표준 | Arial | 10.5 | 0 | 0 | 0/0 | KRW 1.80M separate
+233 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+234 | 표준 | Arial | 10 | 0 | 0 | 0/0 | 
+235 | 표준 | Arial | 10.5 | -1 | 0 | 0/0 | Performance incentive
+236 | 표준 | Arial | 10.5 | 0 | 0 | 0/0 | KRW 6.67M separate
+237 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+238 | 표준 | Arial | 10 | 0 | 0 | 0/0 | 
+239 | 표준 | Arial | 10.5 | -1 | 0 | 0/0 | Current annual cash reference
+240 | 표준 | Arial | 10.5 | 0 | 0 | 0/0 | KRW 94.24M when the above separate allowances and performance incentiv
+241 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+242 | 표준 | Arial | 10.5 | -1 | 0 | 0/0 | Expected Compensation
+243 | 표준 | Arial | 10.5 | -1 | 0 | 0/0 | Expected basic salary
+244 | 표준 | Arial | 10.5 | 0 | 0 | 0/0 | KRW 90M+ base salary
+245 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+246 | 표준 | Arial | 10 | 0 | 0 | 0/0 | 
+247 | 표준 | Arial | 10.5 | -1 | 0 | 0/0 | Negotiation basis
+248 | 표준 | Arial | 10.5 | 0 | 0 | 0/0 | Negotiable depending on total compensation, role level, incentive stru
+249 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+250 | 표준 | Arial | 14 | -1 | 0 | 8/2 | Self-Introduction and Application Motivation
+251 | 표준 | Arial | 11 | -1 | 0 | 5/2 | 1. Professional Growth and Engineering Foundation
+252 | 표준 | Arial | 10 | 0 | 0 | 0/2 | I have built my career around making electronic, communication and con
+253 | 표준 | Arial | 10 | 0 | 0 | 0/2 | This foundation is important for an ITT Cannon FAE role because connec
+254 | 표준 | Arial | 10 | 0 | 0 | 0/2 | Later, at Daeyang Electric, my work expanded from product-level electr
+255 | 표준 | Arial | 11 | -1 | 0 | 5/2 | 2. Reason for Interest in ITT Cannon FAE Role
+256 | 표준 | Arial | 10 | 0 | 0 | 0/2 | I am interested in ITT Cannon Connector Korea because the FAE role is 
+257 | 표준 | Arial | 10 | 0 | 0 | 0/2 | For more than 15 years, I worked with military shipboard and submarine
+258 | 표준 | Arial | 10 | 0 | 0 | 0/2 | These experiences align strongly with ITT Cannon FAE responsibilities:
+259 | 표준 | Arial | 11 | -1 | 0 | 5/2 | 3. FAE-Relevant Working Style and Strengths
+260 | 표준 | Arial | 10 | 0 | 0 | 0/2 | My strongest working style is evidence-based problem solving. When an 
+261 | 표준 | Arial | 10 | 0 | 0 | 0/2 | I am also comfortable working between customer engineering and interna
+262 | 표준 | Arial | 10 | 0 | 0 | 0/2 | In addition, I have a practical technical proposal and presentation ba
+263 | 표준 | Arial | 11 | -1 | 0 | 5/2 | 4. Contribution After Joining ITT Cannon
+264 | 표준 | Arial | 10 | 0 | 0 | 0/2 | If selected, I would first focus on understanding ITT Cannon’s connect
+265 | 표준 | Arial | 10 | 0 | 0 | 0/2 | After onboarding, I can contribute in three areas. First, I can suppor
+266 | 표준 | Arial | 10 | 0 | 0 | 0/2 | I am fully willing to travel periodically up to 50% and to work indepe
+267 | 표준 | Arial | 14 | -1 | 0 | 8/2 | Attachment: Condensed ITT Cannon FAE Requirement Match
+268 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | ITT Cannon FAE Requirement
+269 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Condensed Career Evidence
+270 | 표준 | Arial | 9.5 | -1 | 0 | 0/0 | Value to ITT Cannon
+271 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+272 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Recommend products and technical solutions for new designs
+273 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Converted requirements into architecture, interface requirements, tech
+274 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Supports design-in by linking application conditions to connector/cabl
+275 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+276 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Identify design requirements and unmet challenges
+277 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Worked with Navy users, shipyards, inspectors, Eutelsat OneWeb, Marlin
+278 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Captures VOC and translates pain points into practical application req
+279 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+280 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Primary contact between customer engineering and internal teams
+281 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Coordinated engineering, quality, production, procurement, suppliers, 
+282 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Acts as a reliable bridge among customer engineering, sales, R&D, prod
+283 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+284 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Solve application/product issues with R&D support
+285 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Used board debugging, RF measurements, logs, defect history, packets, 
+286 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Escalates issues with clear reproduction data, evidence and corrective
+287 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+288 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Develop technical solutions for design wins
+289 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Prepared technical proposals, WBS schedules, cost estimates, procedure
+290 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Presents ITT Cannon value clearly and supports new design opportunitie
+291 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+292 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Preferred Aerospace & Defense market experience in Korea
+293 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | 15+ years ROK Navy ship/submarine systems, defense/aerospace electroni
+294 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Strong fit for Korean A&D customers requiring reliability and harsh-en
+295 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+296 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Harsh-environment connectors, cabling, high power or high-speed data t
+297 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Practical exposure to shipboard electrical cabling, RF antenna/cable i
+298 | 표준 | Arial | 9.5 | 0 | 0 | 0/0 | Understands rugged interconnect use cases, power/signal integrity, RF/
+299 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+300 | 표준 | Arial | 10 | 0 | 5 | 0/10 | 
+

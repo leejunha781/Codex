@@ -1,0 +1,239 @@
+﻿===== PAGES: 9  WORDS: 4557 =====
+
+##### PARAGRAPHS (in document order) #####
+[23] (empty) sz=14 bold=-1 style=표준
+[24] sz=14 bold=-1 style="표준" :: Professional Profile and Interest in ITT Cannon FAE Role
+[25] sz=10 bold=0 style="표준" :: Field Application Engineer candidate with 21+ years of experience in high-reliability electronics, naval and defense communication systems, aerospace and defense electronics, LEO satellite terminal integration, customer-site commissioning, field issue troubleshooting, and cross-functional technical coordination.
+[26] sz=10 bold=0 style="표준" :: I am interested in ITT Cannon Connector Korea because this FAE role is closely aligned with the work I have built my career around: understanding customer requirements, reviewing application conditions, recommending practical technical solutions, coordinating with internal engineering teams, and supporting new design opportunities from concept through production.
+[27] sz=10 bold=0 style="표준" :: My background fits well with ITT Cannon’s harsh-environment connector and interconnect business. In this field, circular and multi-pin connectors, high-density D-Sub / Micro-D / Nano-D-style interfaces, cable assemblies, high-power and high-speed data applications, RF/coaxial paths, and ruggedized connector solutions must be selected based on the customer’s actual operating environment, reliability needs, installation constraints, and mission-critical performance requirements.
+[28] sz=10 bold=0 style="표준" :: Throughout my career, I have worked with systems where cabling, RF/network connectivity, power/signal/data interfaces, mechanical robustness, EMI/EMC awareness, documentation accuracy, customer trust, and evidence-based issue closure were essential. Although my formal title has not been “connector design engineer,” my hands-on experience is directly relevant to connector applications. I have repeatedly worked with system-level interfaces, cable-connected equipment, RF antenna paths, board-to-system interconnects, field installation constraints, production validation, technical documentation, and customer acceptance in naval, defense, aerospace, satellite, and industrial-style environments.
+[29] sz=10 bold=0 style="표준" :: This experience also fits well with ITT’s culture and DNA. I bring a customer-focused mindset, strong ownership, disciplined documentation, transparent issue communication, and a practical engineering approach. When an issue occurs, I try to understand the customer’s real pain point, identify the technical root cause, coordinate with the right internal teams, and close the issue with clear evidence. This reflects the working style I value: accountability, teamwork, integrity, speed, simplicity, and a strong focus on customer satisfaction.
+[30] sz=10 bold=0 style="표준" :: At ITT Cannon, I can contribute by capturing Voice of Customer, identifying system design requirements and unmet technical challenges, supporting product and technical capability presentations, recommending suitable connector, cabling and interface solutions, coordinating R&D-supported issue resolution, and helping secure new design wins in Aerospace & Defense, Transportation, Industrial, Energy, and other harsh-environment markets.
+[31] (empty) sz=10 bold=0 style=표준
+[32] sz=14 bold=-1 style="표준" :: Key Strengths Matched to ITT Cannon FAE Role
+[33] sz=10 bold=9999999 style="글머리 기호" :: Aerospace & Defense / Military Customer Background: 15+ years of experience supporting ROK Navy ship and submarine communication systems, combined with defense/aerospace electronics and LEO satellite terminal experience. This background is well aligned with ITT Cannon’s preferred Aerospace & Defense market experience in Korea, particularly for mission-critical applications that require reliability, ruggedized interfaces, formal documentation and disciplined customer acceptance. Positioned to track Korean A&D market trends, naval and aerospace platform modernization programs, and ITT Cannon product expansion opportunities in the defense sector.
+[34] sz=10 bold=9999999 style="글머리 기호" :: Connector, Cable and System Interface Understanding: Practical understanding of RF cables, antenna interfaces, shipboard electrical cabling, Ethernet/high-speed data cabling, power/control/signal interfaces, board-to-system interconnects, equipment interfaces, ICDs and ruggedized installation constraints. Able to support technical discussions around circular and multi-pin connectors, high-density signal interfaces, cable assemblies, high-power/high-speed data transfer, signal integrity, shielding, durability and maintainability.
+[35] sz=10 bold=9999999 style="글머리 기호" :: Customer Engineering Engagement / Voice of Customer: Experienced in working as a technical bridge between customer engineering teams and internal functions, including sales, R&D, product management, quality, production, suppliers and operations. Able to capture requirements, clarify technical pain points, align issue ownership and follow through transparently until closure.
+[36] sz=10 bold=9999999 style="글머리 기호" :: Application Issue Solving and Root-Cause Analysis: Strong evidence-based troubleshooting approach using symptoms, logs, measurements, defect history, environmental conditions, reproduction criteria, corrective actions and re-test evidence. Able to separate possible causes across hardware, cabling, interface, network, RF, power and operating conditions.
+[37] sz=10 bold=9999999 style="글머리 기호" :: New Design / Product Development and Design-In Support: Experienced in translating customer requirements into system architecture, HW/SW/interface requirements, test plans, design reviews, pilot-build findings, ECO/BOM coordination and production-readiness decisions. This experience is directly useful for supporting ITT Cannon design-in activities by connecting customer application conditions with practical connector and interconnect solution requirements. Hands-on hardware design experience - ARM Cortex-M3 CPU/I/O boards, sensor and communication interfaces, embedded control circuits - provides practical insight for customer discussions on new component and assembly design-in.
+[38] sz=10 bold=9999999 style="글머리 기호" :: Technical Presentations and Solution Proposals: Experienced in preparing technical proposals, project execution plans, WBS schedules, cost estimates, test procedures, result reports and customer-facing issue summaries. Able to support product capability presentations and customer-specific technical proposals that can lead to new design-win opportunities. Equally prepared to deliver sales-oriented product capability presentations and to provide sustained technical customer support through the full design-in and post-design lifecycle.
+[39] sz=10 bold=9999999 style="글머리 기호" :: Harsh-Environment Reliability and Manufacturing Mindset: Proven background in defense, naval, shipboard and satellite systems where reliability, EMI/EMC awareness, environmental robustness, interface stability, mechanical durability, formal documentation and acceptance evidence were essential. Also familiar with ECO/BOM coordination, pilot-build findings, defective-part review, EMC/RoHS support and manufacturability considerations.
+[40] sz=10 bold=9999999 style="글머리 기호" :: Independent, Self-Motivated and Travel-Ready Working Style: Accustomed to field restrictions, shipyard/onboard environments, schedule pressure, customer-facing responsibility and cross-functional coordination. Able to work independently with ownership, accountability, integrity and a customer-first mindset, and fully willing to travel periodically up to 50% as required. Strong organizational skills to anticipate, prioritize and coordinate multiple concurrent activities — with a relentless focus on customer satisfaction at every stage.
+[41] (empty) sz=10 bold=0 style=표준
+[42] sz=14 bold=-1 style="표준" :: Product/Application Knowledge Integrated with ITT Cannon FAE Role
+[43] sz=10 bold=0 style="글머리 기호" :: I understand that ITT Cannon FAE value comes from matching customer application needs with the right connector, cabling and interconnect solution, not simply from product catalog knowledge.
+[44] (empty) sz=10 bold=0 style=글머리 기호
+[45] sz=10 bold=9999999 style="글머리 기호" :: Aerospace & Defense: Familiar with D38999-style circular connectors, KJ/KJA/KJB families, miniature circular, Micro-D/Nano-D, filtered and hermetic connector concepts. This fits my 15+ years of ROK Navy ship/submarine systems, defense/aerospace electronics and LEO satellite terminal experience in harsh, EMI/EMC-sensitive environments.
+[46] sz=10 bold=9999999 style="글머리 기호" :: Transportation, Industrial, Heavy Vehicle and Energy: Understand the relevance of rectangular interconnects, CA Bayonet/MIL-DTL-5015-style connectors, high-power, mixed power-signal, EV and customized cable solutions. My experience in shipboard cabling, power/control wiring, board-to-system interfaces and field installation supports practical customer discussions.
+[47] sz=10 bold=9999999 style="글머리 기호" :: High-Speed / High-Power / RF Applications: Able to discuss customer needs around high-speed data, fiber-optic concepts, RF/coaxial paths, Quadrax-style interfaces and high-power contacts. This is supported by RF antenna/cable work, Ethernet/TCP-UDP verification, Wireshark/iperf analysis and power/signal interface troubleshooting.
+[48] sz=10 bold=9999999 style="글머리 기호" :: Materials and Manufacturing Awareness: Understand that connector selection depends on materials, contact reliability, sealing, shielding, manufacturability, environmental robustness and production quality. My ECO/BOM, pilot-build, defective-part review, EMC/RoHS and production-readiness experience supports this view.
+[49] sz=10 bold=9999999 style="글머리 기호" :: FAE Customer Value: I can help customers clarify requirements, identify technical pain points, recommend suitable connector and cabling directions, coordinate with internal teams, and support design-in and design-win opportunities with a practical, customer-focused approach.
+[50] (empty) sz=10 bold=0 style=글머리 기호
+[51] sz=14 bold=-1 style="표준" :: Education, Certifications, Language and Technical Toolkit
+[76] (empty) sz=10 bold=0 style=표준
+[77] sz=14 bold=-1 style="표준" :: Career Summary
+[118] (empty) sz=10 bold=-1 style=표준
+[119] sz=14 bold=-1 style="표준" :: Detailed Professional Experience
+[120] sz=11 bold=-1 style="표준" :: Intellian Technologies | Senior Engineer / Hardware Platform Lead | Mar 2023 - Jul 2025
+[130] (empty) sz=10 bold=-1 style=표준
+[131] sz=10.5 bold=-1 style="표준" :: Main Responsibilities and Scope
+[132] sz=10 bold=0 style="글머리 기호" :: Managed system integration testing, software-log-based issue analysis, network verification, production validation and release-readiness reviews for Eutelsat OneWeb Ku-band LEO satellite communication terminals.
+[133] sz=10 bold=0 style="글머리 기호" :: Translated customer and product requirements into HW/SW/RF/network interface requirements, test items, verification records, service-support data and release decision materials.
+[134] sz=10 bold=0 style="글머리 기호" :: Analyzed defect logs, software logs, network packets, Wireshark/iperf results, environmental data and actual field conditions to define reproduction criteria, likely root causes, corrective actions and re-test evidence.
+[135] sz=10 bold=0 style="글머리 기호" :: Coordinated ECO/BOM updates, pilot-build findings, production-validation checklists and release-readiness records with engineering, quality and production teams.
+[136] sz=10 bold=0 style="글머리 기호" :: Supported English technical reviews and quality issue meetings with Eutelsat OneWeb, Marlink/STW and internal engineering, quality and production stakeholders.
+[137] (empty) sz=10 bold=0 style=표준
+[138] sz=10.5 bold=-1 style="표준" :: Connector / Application Engineering Relevance Embedded in the Role
+[139] sz=10 bold=0 style="글머리 기호" :: Worked with RF/antenna cable paths, data/network cabling, modem-to-control interfaces, power/control lines and terminal-level field conditions where reliable interconnect performance directly affected product behavior.
+[140] sz=10 bold=0 style="글머리 기호" :: Gained practical experience identifying customer pain points in a system context, including RF performance, network stability, hardware status, software logs, environmental conditions and production history.
+[141] sz=10 bold=0 style="글머리 기호" :: Built an FAE-style issue closure process: capture customer symptoms, reproduce the condition, isolate the interface boundary, coordinate internal technical owners, verify corrective actions and provide customer-facing evidence.
+[142] sz=10 bold=0 style="글머리 기호" :: Strengthened the ability to support new design applications by linking application requirements, field constraints, production readiness and customer acceptance criteria.
+[143] (empty) sz=10 bold=0 style=표준
+[144] sz=10.5 bold=-1 style="표준" :: Selected Achievements and Evidence
+[145] sz=10 bold=0 style="글머리 기호" :: Contributed to approximately 30% reduction in monthly defect rate and approximately 25% reduction in customer issue lead time by structuring issue analysis, corrective-action tracking and validation evidence.
+[146] sz=10 bold=0 style="글머리 기호" :: Improved cross-functional decision quality by connecting customer requirements, field issue history, ECO/BOM changes, production validation results and release-readiness criteria into a single decision framework.
+[147] sz=10 bold=0 style="글머리 기호" :: Maintained customer-facing technical summaries and quality issue status, including owners, risks, schedule impact, corrective actions and follow-up evidence.
+[148] sz=10 bold=0 style="글머리 기호" :: Demonstrated ITT-aligned working behaviors: accountability, customer focus, transparent communication, cross-functional teamwork and evidence-based problem solving.
+[149] (empty) sz=10 bold=-1 style=표준
+[150] sz=10.5 bold=-1 style="표준" :: Reason for Leaving
+[151] sz=10 bold=0 style="표준" :: After gaining experience in LEO satellite terminal integration, production validation, global customer technical support and release-readiness control, I decided to move toward a broader customer-facing application engineering role where my RF/network interface, cabling, harsh-environment electronics and customer issue-solving experience can be used more directly to support design-in opportunities, technical solution proposals and customer design decisions. This is the main reason I am strongly interested in the ITT Cannon FAE role.
+[152] (empty) sz=10 bold=-1 style=표준
+[153] sz=11 bold=-1 style="표준" :: Genohco | Lead Engineer / Principal Research Engineer | Aug 2022 - Mar 2023\
+[163] (empty) sz=10 bold=-1 style=표준
+[164] sz=10.5 bold=-1 style="표준" :: Main Responsibilities and Scope
+[165] sz=10 bold=0 style="글머리 기호" :: Led defense and aerospace electronics tasks from requirement review through board-level design review, verification planning, external test coordination and delivery documentation.
+[166] sz=10 bold=0 style="글머리 기호" :: Analyzed RFP requirements and prepared technical proposals, project execution plans, WBS schedules, cost estimates, test plans, test procedures and technical summaries.
+[167] sz=10 bold=0 style="글머리 기호" :: Converted system requirements into board specifications, power/signal interfaces, HW/SW requirements, verification procedures and result reports with clear traceability.
+[168] sz=10 bold=0 style="글머리 기호" :: Reviewed PCB circuits and layouts for power integrity, signal integrity, EMI/EMC, environmental robustness and test readiness.
+[169] sz=10 bold=0 style="글머리 기호" :: Coordinated technical Q&A with customers, inspection bodies and external test laboratories, and managed test issue closure through root-cause review, corrective action and re-verification.
+[170] (empty) sz=10 bold=0 style=표준
+[171] sz=10.5 bold=-1 style="표준" :: Connector / Application Engineering Relevance Embedded in the Role
+[172] sz=10 bold=0 style="글머리 기호" :: Strengthened harsh-environment electronics discipline around signal/power interfaces, connector-dependent interface stability, EMI/EMC constraints, environmental requirements and design-test-manufacturing linkage.
+[173] sz=10 bold=0 style="글머리 기호" :: Developed the ability to translate customer requirements into practical engineering language, which is essential for recommending connector products and technical solutions for new design applications.
+[174] sz=10 bold=0 style="글머리 기호" :: Built proposal and customer-response experience relevant to ITT Cannon product capability presentations and technical solution proposals.
+[175] sz=10 bold=0 style="글머리 기호" :: Gained direct Aerospace & Defense market relevance in Korea, matching a preferred qualification of the ITT Cannon Connector Korea FAE role.
+[176] (empty) sz=10 bold=0 style=글머리 기호
+[177] sz=10.5 bold=-1 style="표준" :: Selected Achievements and Evidence
+[178] sz=10 bold=0 style="글머리 기호" :: Managed technical proposal and execution documentation for defense/aerospace electronics projects, including WBS, test plans, procedures, reports and customer-facing technical evidence.
+[179] sz=10 bold=0 style="글머리 기호" :: Reduced delivery and test-readiness risk by reviewing design changes not only for function, but also for testability, external test readiness, schedule impact and customer acceptance criteria.
+[180] sz=10 bold=0 style="글머리 기호" :: Established disciplined communication with customers and external authorities using documented requirements, objective evidence and clear issue status.
+[181] sz=10 bold=0 style="글머리 기호" :: Demonstrated ITT-aligned behaviors: integrity in documentation, ownership of technical issues, practical problem solving and customer-oriented communication.
+[182] (empty) sz=10 bold=-1 style=표준
+[183] sz=10.5 bold=-1 style="표준" :: Reason for Leaving
+[184] sz=10 bold=0 style="표준" :: At Genohco, I gained valuable experience in defense/aerospace electronics, RFP analysis, technical proposals, test planning and external test coordination. I later moved to a role where I could take broader responsibility across long-term product development, production validation and global customer technical support, rather than remaining within shorter project-based defense electronics assignments.
+[185] sz=11 bold=-1 style="표준" :: Daeyang Electric Co., Ltd. | Principal Engineer / Project Manager | May 2007 - Apr 2022
+[195] (empty) sz=10 bold=-1 style=표준
+[196] sz=10.5 bold=-1 style="표준" :: Main Responsibilities and Scope
+[197] sz=10 bold=0 style="글머리 기호" :: Led and supported ROK Navy ship and submarine communication system projects including FFX, Jangbogo/KSS, PKX-B and PKG programs as PM/PL and technical engineer.
+[198] sz=10 bold=0 style="글머리 기호" :: Converted Navy, shipyard and inspection requirements into system architecture, equipment specifications, ICDs, cable/interface documents, wiring information, FAT/HAT/SAT procedures and acceptance criteria.
+[199] sz=10 bold=0 style="글머리 기호" :: Managed WBS-based schedules covering equipment delivery, subcontractor work, installation, test, inspection, commissioning, sea trial and customer acceptance
+[200] sz=10 bold=0 style="글머리 기호" :: Coordinated engineering, production, quality, procurement, shipyards, Navy users, inspectors, subcontractors and suppliers to close configuration, interface, quality and delivery issues.
+[201] sz=10 bold=0 style="글머리 기호" :: Designed and debugged ARM Cortex-M3 CPU/I/O boards, sensor and communication interfaces, power/control circuits and embedded C functions; supported board bring-up, production issue analysis, defective-part review and corrective-action verification.
+[202] sz=10 bold=0 style="글머리 기호" :: Verified VHF/UHF/HF communication equipment using signal generators, spectrum/signal analyzers, RF power meters and dummy loads.
+[203] (empty) sz=10 bold=0 style=표준
+[204] sz=10.5 bold=-1 style="표준" :: Connector / Application Engineering Relevance Embedded in the Role
+[205] sz=10 bold=0 style="글머리 기호" :: Directly handled shipboard/submarine electrical cabling, RF antenna/cable interfaces, equipment connectors, power/control/signal lines, processor-connected interfaces, network cabling and ruggedized installation constraints.
+[206] sz=10 bold=0 style="글머리 기호" :: Experienced field conditions where connector and cable reliability affected communication performance, RF output/sensitivity, channel stability, network operation, equipment interface stability and customer acceptance.
+[207] sz=10 bold=0 style="글머리 기호" :: Understood the customer side of harsh-environment connector selection: application conditions, installation restrictions, vibration/space constraints, cable routing, EMI/EMC concerns, maintainability, inspection evidence and long-term reliability.
+[208] sz=10 bold=0 style="글머리 기호" :: Developed the ability to speak with military users, shipyards and inspectors in practical engineering terms, which is critical for ITT Cannon design-in discussions with Aerospace & Defense customers.
+[209] (empty) sz=10 bold=0 style=글머리 기호
+[210] sz=10.5 bold=-1 style="표준" :: Selected Achievements and Evidence
+[211] sz=10 bold=0 style="글머리 기호" :: Delivered multiple naval communication and shipboard integration projects through FAT/HAT/SAT, commissioning, sea trials and customer acceptance with formal test procedures, defect logs, corrective-action records and re-test evidence.
+[212] sz=10 bold=0 style="글머리 기호" :: Built a disciplined issue-closing method under customer pressure: symptom confirmation, interface isolation, corrective action, re-test, documented evidence and customer communication.
+[213] sz=10 bold=0 style="글머리 기호" :: Established a technical PM foundation that combines customer requirement capture, system interface understanding, supplier coordination, documentation control and field acceptance support.
+[214] sz=10 bold=0 style="글머리 기호" :: Gained long-term, Korea-based Aerospace & Defense customer experience directly aligned with ITT Cannon’s preferred market requirement.
+[215] sz=10 bold=0 style="글머리 기호" :: Demonstrated ITT-aligned values: accountability, integrity, teamwork, ownership, disciplined execution and customer satisfaction in mission-critical environments.
+[216] (empty) sz=10 bold=0 style=글머리 기호
+[217] sz=10.5 bold=-1 style="표준" :: Reason for Leaving
+[218] sz=10 bold=0 style="표준" :: After approximately 15 years and 11 months at Daeyang Electric, I had built a strong technical and project foundation in ROK Navy ship/submarine communication systems, shipboard networks, CCTV/VOD, C4I-linked systems and customer acceptance. I left to expand my high-reliability systems experience beyond naval and shipbuilding projects into aerospace, satellite and global customer-facing technology fields. This was a career expansion decision, not a break from the defense or harsh-environment domain.
+[219] (empty) sz=11 bold=-1 style=표준
+[220] sz=11 bold=-1 style="표준" :: Excure Hitron | Engineer | Jan 2006 - May 2007
+[230] (empty) sz=10 bold=-1 style=표준
+[231] sz=10.5 bold=-1 style="표준" :: Main Responsibilities and Scope
+[232] sz=10 bold=0 style="글머리 기호" :: Reviewed and debugged CCTV and IR dome camera control circuits, power circuits and signal interface circuits.
+[233] sz=10 bold=0 style="글머리 기호" :: Supported prototype bring-up, power application, signal measurement, interface operation confirmation and functional testing.
+[234] sz=10 bold=0 style="글머리 기호" :: Analyzed early production defects and coordinated corrective actions with production and quality teams.
+[235] sz=10 bold=0 style="글머리 기호" :: Supported EMC/RoHS preparation and product stabilization activities.
+[236] (empty) sz=10 bold=-1 style=표준
+[237] sz=10.5 bold=-1 style="표준" :: Connector / Application Engineering Relevance Embedded in the Role
+[238] sz=10 bold=0 style="글머리 기호" :: Worked with cable-connected CCTV/control equipment, power/signal interfaces, external device connections, board-level connectors and manufacturability issues.
+[239] sz=10 bold=0 style="글머리 기호" :: Learned to distinguish abnormal symptoms by circuit, wiring, connector, component and external equipment interaction conditions.
+[240] sz=10 bold=0 style="글머리 기호" :: Developed product-level troubleshooting discipline useful for FAE application issue solving and technical support.
+[241] sz=10 bold=0 style="글머리 기호" :: Built early experience in connecting engineering, production and quality actions to product reliability.
+[242] (empty) sz=10 bold=-1 style=표준
+[243] sz=10.5 bold=-1 style="표준" :: Selected Achievements and Evidence
+[244] sz=10 bold=0 style="글머리 기호" :: Supported the transition from prototype verification to production stabilization through functional testing, interface checks, defect analysis and certification preparation.
+[245] sz=10 bold=0 style="글머리 기호" :: Built practical understanding of camera/control equipment stability, field installation implications, external interface behavior and production quality issues..
+[246] (empty) sz=10 bold=-1 style=표준
+[247] sz=10.5 bold=-1 style="표준" :: Reason for Leaving
+[248] sz=10 bold=0 style="표준" :: After gaining experience with CCTV/IR dome camera products, control boards, power/signal interfaces, prototype verification and production issue analysis, I moved to a larger communication and defense/shipbuilding system environment where I could apply my product-level electronics foundation to broader system integration projects.
+[249] (empty) sz=11 bold=-1 style=표준
+[250] sz=11 bold=-1 style="표준" :: Esetel | Engineer | Jun 2005 - Oct 2005
+[260] (empty) sz=10 bold=-1 style=표준
+[261] sz=10.5 bold=-1 style="표준" :: Main Responsibilities and Scope
+[262] sz=10 bold=0 style="글머리 기호" :: Checked ARM-based cellular mobile circuit operation, power paths, signal lines and interface conditions.
+[263] sz=10 bold=0 style="글머리 기호" :: Reviewed interaction among RF blocks, digital control blocks and power blocks.
+[264] sz=10 bold=0 style="글머리 기호" :: Separated causes of power abnormality, signal instability and interface errors, and confirmed board functions.
+[265] (empty) sz=10 bold=-1 style=표준
+[266] sz=10.5 bold=-1 style="표준" :: Connector / Application Engineering Relevance Embedded in the Role
+[267] sz=10 bold=0 style="글머리 기호" :: Worked with RF/digital/power interface boundaries where interconnect quality, signal path stability and power integrity can affect overall product performance.
+[268] sz=10 bold=0 style="글머리 기호" :: Established a foundation for analyzing communication equipment issues by separating circuit, component, wiring, connector and control-condition factors.
+[269] sz=10 bold=0 style="글머리 기호" :: Developed practical insight into the relationship between board-level design and system-level product behavior.
+[270] (empty) sz=10 bold=-1 style=표준
+[271] sz=10.5 bold=-1 style="표준" :: Selected Achievements and Evidence
+[272] sz=10 bold=0 style="글머리 기호" :: Supported prototype verification and interface debugging for ARM-based mobile hardware.
+[273] sz=10 bold=0 style="글머리 기호" :: Built early technical foundation later used in defense communication systems, satellite terminals and customer-facing issue analysis.
+[274] (empty) sz=10 bold=-1 style=표준
+[275] sz=10.5 bold=-1 style="표준" :: Reason for Leaving
+[276] sz=10 bold=0 style="표준" :: The project scope at Esetel was mainly focused on specific circuit and interface debugging. I moved to an environment where I could gain broader product development, board bring-up and system-level hardware verification experience.
+[277] (empty) sz=11 bold=-1 style=표준
+[278] sz=11 bold=-1 style="표준" :: NesLab | Engineer | Jan 2004 - May 2005
+[288] (empty) sz=10 bold=-1 style=표준
+[289] sz=10.5 bold=-1 style="표준" :: Main Responsibilities and Scope
+[290] sz=10 bold=0 style="글머리 기호" :: Supported control boards and peripheral circuits for ARM-based mobile/embedded products.
+[291] sz=10 bold=0 style="글머리 기호" :: Debugged Samsung HDD phone interface and reviewed board-to-board/device interface issues.
+[292] sz=10 bold=0 style="글머리 기호" :: Supported PCB design review, prototype power/signal measurement, functional verification and error analysis.
+[293] sz=10 bold=0 style="글머리 기호" :: Organized issue causes and improvement directions during product development, verification and production handover.
+[294] (empty) sz=10 bold=-1 style=표준
+[295] sz=10.5 bold=-1 style="표준" :: Connector / Application Engineering Relevance Embedded in the Role
+[296] sz=10 bold=0 style="글머리 기호" :: Developed practical understanding of board-to-system interconnects, power/signal paths, device interfaces, cable-connected equipment and production stability.
+[297] sz=10 bold=0 style="글머리 기호" :: Learned to view product issues not only as circuit defects but also as design, component, wiring, interface, connector and manufacturability problems.
+[298] sz=10 bold=0 style="글머리 기호" :: Built the foundation for later FAE-relevant work in customer issue analysis, technical communication and system-level problem solving.
+[299] (empty) sz=10 bold=-1 style=표준
+[300] sz=10.5 bold=-1 style="표준" :: Selected Achievements and Evidence
+[301] sz=10 bold=0 style="글머리 기호" :: Built strong early-career engineering fundamentals in embedded hardware, PCB support, board bring-up and interface debugging.
+[302] sz=10 bold=0 style="글머리 기호" :: Established hands-on discipline for measurement-based troubleshooting and engineering-to-production communication.
+[303] (empty) sz=10 bold=-1 style=표준
+[304] sz=10.5 bold=-1 style="표준" :: Reason for Leaving
+[305] sz=10 bold=0 style="표준" :: NesLab provided my initial foundation in embedded hardware, HDD phone interface debugging, PCB support and board bring-up. I left to broaden my experience into communication and video/security hardware, RF/digital/power interfaces and more diverse product families.
+[306] (empty) sz=10 bold=0 style=표준
+[307] sz=14 bold=-1 style="표준" :: Compensation / Salary Information
+[336] (empty) sz=10 bold=0 style=표준
+[337] (empty) sz=14 bold=-1 style=표준
+[338] sz=14 bold=-1 style="표준" :: Self-Introduction and Application Motivation
+[339] sz=10.5 bold=-1 style="표준" :: 1. Professional Growth and Engineering Foundation
+[340] sz=10 bold=0 style="표준" :: My career has focused on making electronic, communication and control systems work reliably in real customer environments. I started with ARM-based embedded hardware, mobile communication hardware, CCTV/IR dome camera control boards, HDD phone interfaces, PCB support and board bring-up. This gave me a solid hands-on foundation in circuits, power, signals, interfaces, wiring, production issues and manufacturability.
+[341] sz=10 bold=0 style="표준" :: This background is directly relevant to the ITT Cannon FAE role. In real applications, connector and cable selection is not based on catalog specifications alone. It depends on power level, signal integrity, high-speed data requirements, RF path quality, cable routing, installation space, vibration, environmental conditions, EMI/EMC constraints, sealing, shielding, maintenance access and customer acceptance criteria. My strength is understanding the actual application behind the connector requirement and explaining technical trade-offs in practical engineering terms.
+[342] sz=10 bold=0 style="표준" :: At Daeyang Electric, my role expanded from product-level electronics to system integration and customer-site execution. I supported ROK Navy ship and submarine communication systems, shipboard networks, broadcasting systems, CCTV/VOD and C4I-linked systems from requirements review through installation, FAT/HAT/SAT, commissioning, sea trials, customer acceptance and after-delivery support. Through this work, I learned how to connect customer requirements, system architecture, interface documents, cable and interconnect constraints, test evidence and customer communication into one clear execution flow.
+[343] sz=10.5 bold=-1 style="표준" :: 2. Reason for Interest in ITT Cannon FAE Role
+[344] sz=10 bold=0 style="표준" :: I am interested in ITT Cannon Connector Korea because this FAE role fits the work I have done throughout my career: understanding customer applications, identifying technical requirements, recommending practical solutions, solving field issues and coordinating with internal teams from concept through production.
+[345] sz=10 bold=0 style="표준" :: ITT Cannon’s focus on harsh-environment connectors and interconnect solutions for aerospace, defense, transportation, industrial, energy storage, medical and automotive applications is closely aligned with my experience in high-reliability systems. For more than 15 years, I worked on military shipboard and submarine systems where cabling, RF antenna interfaces, equipment connectors, power/control/signal lines, EMI/EMC awareness, installation restrictions and formal acceptance evidence were critical. At Genohco, I strengthened my defense and aerospace electronics experience through RFP analysis, technical proposals, design review, EMI/EMC planning and external test coordination. At Intellian, I worked on LEO satellite terminal integration and global customer technical support, where RF/antenna, power/control, network/data interfaces, software logs, production history and field conditions had to be reviewed together.
+[346] sz=10 bold=0 style="표준" :: These experiences match the key responsibilities of the ITT Cannon FAE role: recommending products and technical solutions, identifying system design requirements and unmet technical challenges, capturing Voice of Customer, acting as the technical link between customer engineering and internal teams, solving application/product issues with R&D support, and supporting design-in and design-win opportunities.
+[347] sz=10.5 bold=-1 style="표준" :: 3. FAE-Relevant Working Style and Strengths
+[348] sz=10 bold=0 style="표준" :: My working style is practical and evidence-based. When an issue occurs, I do not stop at the symptom. I confirm the operating condition, collect logs and measurements, define reproduction criteria, separate possible causes, coordinate the responsible technical owner, verify the corrective action and document the result clearly for both the customer and internal teams. This approach fits ITT Cannon’s customer application support and R&D-supported troubleshooting work.
+[349] sz=10 bold=0 style="표준" :: I am also used to working as the technical bridge between customers and internal teams. In previous roles, I coordinated with Navy users, shipyards, inspectors, subcontractors, suppliers, production, quality, procurement, engineering teams and global customers. I understand that an FAE must not only understand the product, but also clarify ownership, manage communication, protect schedules, reduce customer risk and help teams make fact-based decisions.
+[350] sz=10 bold=0 style="표준" :: I also bring practical proposal and presentation experience. I have prepared technical proposals, project execution plans, WBS schedules, cost estimates, test procedures, result reports, issue summaries and customer-facing evidence packages. This background can support ITT Cannon’s product capability presentations, technical solution proposals and design-in discussions.
+[351] sz=10 bold=0 style="표준" :: My work style also fits ITT’s “We Solve It” mindset and its core principles. I bring integrity, accurate documentation and verifiable evidence. I approach technical challenges by listening to the customer, identifying the real issue and turning field symptoms into practical application solutions. I also work well across customer engineering, sales, R&D, product management, quality, production and operations to move issues from discussion to closure.
+[352] sz=10 bold=9999999 style="표준" :: These career habits also reflect ITT's core principles. My defense and naval background is grounded in Impeccable Character - integrity, accurate documentation and verifiable acceptance evidence at every stage. I apply Bold Thinking by taking on unmet technical challenges, reframing field symptoms into root causes and turning customer pain points into practical design-in solutions. And I rely on Collective Know-How - working as the technical bridge across customer engineering, sales, R&D, product management, quality and production to deliver results from concept through production. This is exactly how I would operate as an ITT Cannon FAE, guided by the "We Solve It" purpose.
+[353] (empty) sz=10 bold=0 style=표준
+[354] sz=10.5 bold=-1 style="표준" :: 4. Contribution After Joining ITT Cannon
+[355] sz=10 bold=0 style="표준" :: If selected, I would first focus on learning ITT Cannon’s connector portfolio and customer application strategy, especially harsh-environment circular connectors, military/aerospace connector families, D-Sub and high-density interface concepts, electrical cabling and cable assembly solutions, high-power and high-speed data applications, material options, sealing and shielding requirements, manufacturing constraints, design-in process and internal escalation routes. I would also quickly understand ITT’s customer engagement model, sales support process, R&D interface, product management expectations, quality documentation and operations flow.
+[356] sz=10 bold=0 style="표준" :: After onboarding, I can contribute in three practical areas. First, I can support customer requirement capture by asking the right application-level questions around environment, cable routing, power/signal/data requirements, RF/network constraints, mating cycles, maintainability, installation restrictions and acceptance criteria. Second, I can support issue solving by organizing symptoms, reproduction data, measurements, field conditions, corrective actions and re-test evidence for both ITT engineering and customer teams. Third, I can support design-win activities by turning customer pain points into practical technical proposals and communicating ITT Cannon’s value in a customer-specific way.
+[357] sz=10 bold=0 style="표준" :: I am fully willing to travel periodically up to 50% and work independently with strong ownership. My goal is to become a reliable FAE who helps ITT Cannon Korea earn customer trust, resolve application issues quickly and secure new design opportunities in Aerospace & Defense and other harsh-environment markets.
+[358] (empty) sz=10 bold=0 style=표준
+
+##### TABLES #####
+----- TABLE 1 : rows=6 cols=3 -----
+  R1: 
+----- TABLE 2 : rows=6 cols=2 -----
+  R1: Category  |  Details
+  R2: Education  |  M.S. in Electronic & Electrical Engineering, Embedded Systems, Pusan National University (2013-2018); B.S. in Control & Instrumentation Engineering, University of Ulsan (1992-2002).
+  R3: Certifications / Training  |  Certified NMEA 2000 Networking for marine communication interfaces;  Defense PMBOK training for defense project execution;  Python and machine learning training for data-based issue analysis and technical reporting.
+  R4: Language  |  English technical meetings, customer communication,  VOC clarification and issue follow-up with global partners;  English study in Perth, Australia;  IELTS 5.0.
+  R5: Technical Toolkit  |  Connector/cable applications, RF/coaxial paths, power/control/signal interfaces, Ethernet/high-speed data, board-to-system interconnects, ICDs, EMI/EMC, signal integrity, RF measurement equipment, Wireshark, iperf, embedded hardware, Linux and Microsoft Office.
+  R6: Documentation  |  Customer requirements, ICDs, connector/cable interface review, technical proposals, test plans/reports, defect logs, root-cause evidence, ECO/BOM records, design-review documents and customer-facing issue summaries.
+----- TABLE 3 : rows=8 cols=4 -----
+  R1: Period  |  Company  |  Position  |  ITT Cannon FAE Relevance
+  R2: Aug 2025 - Present  |  Independent / Career Transition  |  Career Transition & Self-Study  |  Preparing for ITT Cannon FAE role; strengthening connector/application, field-support and troubleshooting readiness.
+  R3: Mar 2023 - Jul 2025  |  Intellian Technologies  |  Senior Engineer / Hardware Platform Lead  |  LEO satellite terminal integration, RF/antenna and network interface validation, field issue analysis, production validation and global customer support.
+  R4: Aug 2022 - Mar 2023  |  Genohco  |  Lead Engineer / Principal Research Engineer  |  Defense/aerospace electronics, RFP/requirements review, EMI/EMC planning, technical proposals and test documentation.
+  R5: May 2007 - Apr 2022  |  Daeyang Electric Co., Ltd.  |  Principal Engineer / Project Manager  |  ROK Navy ship/submarine systems, shipboard networks, installation, FAT/HAT/SAT, commissioning, sea trials, acceptance and after-delivery support.
+  R6: Jan 2006 - May 2007  |  Excure Hitron  |  Engineer  |  CCTV/IR dome camera control boards, power/signal interface debugging, production issue analysis and EMC/RoHS support.
+  R7: Jun 2005 - Oct 2005  |  Esetel  |  Engineer  |  ARM-based mobile hardware, RF/digital/power interface debugging and prototype support.
+  R8: Jan 2004 - May 2005  |  NesLab  |  Engineer  |  ARM-based embedded hardware, HDD phone interface debugging, PCB support and board bring-up.
+----- TABLE 4 : rows=3 cols=2 -----
+  R1: Item  |  Summary
+  R2: Role  |  Defense/aerospace electronics PL/PM support, RFP analysis, technical proposal preparation, design review, external test coordination and delivery documentation.
+  R3: FAE Fit  |  Converted aerospace and defense customer requirements, RFP items and technical constraints into practical technical proposals, execution plans, interface requirements, test procedures and customer deliverables. This is closely matched to ITT Cannon FAEs who must identify design requirements, understand customer pain points, communicate technical solutions and coordinate with engineering, product management and operations.
+----- TABLE 5 : rows=3 cols=2 -----
+  R1: Item  |  Summary
+  R2: Role  |  ROK Navy ship/submarine communication systems, shipboard networks, broadcasting systems, CCTV/VOD, C4I-linked systems and control-interface equipment from requirements analysis through installation, FAT/HAT/SAT, commissioning, sea trials, customer acceptance and after-delivery support.
+  R3: FAE Fit  |  Built the strongest foundation for ITT Cannon’s Aerospace & Defense and harsh-environment connector markets. Worked for 15+ years in military shipboard and submarine environments where rugged cabling, RF antenna/cable interfaces, equipment connectors, power/control/signal lines, EMI/EMC awareness, installation constraints, formal documentation and customer acceptance evidence were essential.
+----- TABLE 6 : rows=3 cols=2 -----
+  R1: Item  |  Summary
+  R2: Role  |  ROK Navy ship/submarine communication systems, shipboard networks, broadcasting systems, CCTV/VOD, C4I-linked systems and control-interface equipment from requirements analysis through installation, FAT/HAT/SAT, commissioning, sea trials, customer acceptance and after-delivery support.
+  R3: FAE Fit  |  Built the strongest foundation for ITT Cannon’s Aerospace & Defense and harsh-environment connector markets. Worked for 15+ years in military shipboard and submarine environments where rugged cabling, RF antenna/cable interfaces, equipment connectors, power/control/signal lines, EMI/EMC awareness, installation constraints, formal documentation and customer acceptance evidence were essential.
+----- TABLE 7 : rows=3 cols=2 -----
+  R1: Item  |  Summary
+  R2: Role  |  CCTV/IR dome camera control board development support, prototype verification, production issue analysis and certification support.
+  R3: FAE Fit  |  Gained hands-on product-level electronics experience with control boards, power/signal interfaces, cable-connected camera equipment and early production stabilization. This provides useful background for understanding equipment-side connector applications, product behavior, production quality and customer troubleshooting.
+----- TABLE 8 : rows=3 cols=2 -----
+  R1: Item  |  Summary
+  R2: Role  |  ARM-based cellular mobile hardware development support, RF/digital/power interface debugging and board-level verification.
+  R3: FAE Fit  |  Built early hands-on experience in RF, digital control and power interface behavior. This supports understanding of high-speed data, power and signal transfer requirements that are important in connector and interconnect application discussions.
+----- TABLE 9 : rows=3 cols=2 -----
+  R1: Item  |  Summary
+  R2: Role  |  ARM-based embedded hardware, Samsung HDD phone interface debugging, PCB support, board bring-up and prototype-to-production support.
+  R3: FAE Fit  |  Established the basic engineering foundation for board-to-system interfaces, storage/device interfaces, power/signal paths, prototype bring-up and engineering-to-production handover. These skills remain relevant to connector and interconnect applications at system level.
+----- TABLE 10 : rows=7 cols=3 -----
+  R1: 

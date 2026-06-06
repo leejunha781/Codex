@@ -1,0 +1,17 @@
+﻿opened
+strays found=6
+deleted=6
+saved
+pdf
+PAGES=8
+--- headings(14/bold) after cleanup ---
+  H: [Professional Profile and Interest in ITT Cannon FAE Role]
+  H: [Key Strengths Matched to ITT Cannon FAE Role]
+  H: [ITT Cannon Connector Product Knowledge & Target-Market Fit]
+  H: [Education, Certifications, Language and Technical Toolkit]
+  H: [Career Summary]
+  H: [Detailed Professional Experience]
+  H: [Compensation / Salary Information]
+  H: [Alignment with ITT Purpose, Values & DNA]
+  H: [Self-Introduction and Application Motivation]
+

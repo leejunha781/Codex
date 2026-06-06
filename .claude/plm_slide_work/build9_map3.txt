@@ -1,0 +1,101 @@
+Executable gate flow|||실행 가능한 게이트 플로우
+Quality and impact rules use the same evaluate → promote governance pattern|||품질·영향 규칙은 동일한 평가 → 승급 거버넌스 패턴을 사용한다
+1. Evaluate¶Rules produce candidates without changing official records.|||1. 평가¶규칙이 공식 레코드를 변경하지 않고 후보를 생성한다.
+2. Review¶Planner / engineer checks candidates, severity, object context and evidence.|||2. 검토¶기획자/엔지니어가 후보·심각도·객체 컨텍스트·증빙을 확인한다.
+3. Promote¶Authorized role promotes candidates into official quality issues or change impacts.|||3. 승급¶권한 보유 역할이 후보를 공식 품질이슈 또는 변경영향으로 승급한다.
+4. Measure¶Dashboard updates KPI, gate status and readiness with traceable audit.|||4. 측정¶대시보드가 추적 가능한 감사와 함께 KPI·게이트 상태·준비도를 갱신한다.
+Why this matters¶It separates automated detection from controlled engineering decisions.|||중요한 이유¶자동 탐지와 통제된 엔지니어링 의사결정을 분리한다.
+Delivery WBS|||딜리버리 WBS
+KPI-gated work breakdown for overseas development coordination|||해외 개발 협업을 위한 KPI 게이트 기반 작업분해(WBS)
+Control principle: every WBS package must have API contract, seed data, E2E test, KPI threshold and demo scenario.|||통제 원칙: 모든 WBS 패키지는 API 계약·시드 데이터·E2E 테스트·KPI 임계값·데모 시나리오를 갖춰야 한다.
+start|||시작
+Readiness|||준비
+Phase 1 hardening|||Phase 1 안정화
+Configuration core|||형상관리 코어
+Change impact|||변경영향
+Pilot adoption|||파일럿 도입
+2 wks|||2주
+4 wks|||4주
+6 wks|||6주
+Backlog · env · source · roles|||백로그 · 환경 · 소스 · 역할
+S6 gates · OIDC · dashboard · CI|||S6 게이트 · OIDC · 대시보드 · CI
+BOM · effectivity · baseline · APIs|||BOM · 유효성 · 기준선 · API
+ECR/ECO/MOC · rules · promote · UI|||ECR/ECO/MOC · 규칙 · 승급 · UI
+Shipyard UAT · perf · security|||조선소 UAT · 성능 · 보안
+Gates -> KPI: G1 env & backlog ready  |  G2 E2E >=95% / OIDC  |  G3 BOM & Effectivity 99%  |  G4 Impact precision >=85%  |  G5 Thread >=85% / dashboard <=5s|||게이트 -> KPI: G1 환경·백로그 준비  |  G2 E2E >=95% / OIDC  |  G3 BOM·유효성 99%  |  G4 영향 정밀도 >=85%  |  G5 스레드 >=85% / 대시보드 <=5s
+KPI model|||KPI 모델
+Use objective gates to steer delivery, not subjective progress reporting|||주관적 진척 보고가 아닌 객관적 게이트로 딜리버리를 운영
+API contract coverage|||API 계약 커버리지
+All committed features ship with OpenAPI + tests|||확정된 모든 기능은 OpenAPI + 테스트와 함께 제공
+E2E gate pass rate|||E2E 게이트 통과율
+CI validates schema, seed, evaluate and promote|||CI가 스키마·시드·평가·승급을 검증
+Digital thread coverage|||디지털 스레드 커버리지
+Equipment linked to tag, document, 3D, asset, test|||장비가 태그·문서·3D·자산·시험에 연결
+BOM expansion accuracy|||BOM 전개 정확도
+Recursive BOM returns correct levels & quantities|||재귀 BOM이 올바른 레벨·수량 반환
+Effectivity accuracy|||유효성 정확도
+Hull / block / option / date filters correct|||호선/블록/옵션/일자 필터 정확
+Impact candidate precision|||영향 후보 정밀도
+Rule engine suggests relevant affected objects|||룰 엔진이 관련 영향 객체를 제안
+Dashboard response|||대시보드 응답
+KPI & readiness summary under target load|||목표 부하에서 KPI·준비도 요약
+Gate decision|||게이트 결정
+PASS|||통과(PASS)
+CONDITIONAL PASS + backlog|||조건부 통과 + 백로그
+FAIL + remediation sprint|||실패 + 보완 스프린트
+Benchmark absorption map|||벤치마크 흡수 맵
+Absorb each vendor's strength INTO one AVEVA-based, operations-ready PLM|||각 벤더의 강점을 하나의 AVEVA 기반 운영형 PLM으로 흡수
+Siemens — Core PLM rigor|||Siemens — PLM 코어 견고성
+Item · BOM · baseline · effectivity · config & change governance|||품목 · BOM · 기준선 · 유효성 · 형상·변경 거버넌스
+Dassault — Experience platform|||Dassault — 익스피리언스 플랫폼
+Role-based collaboration · virtual twin · mfg planning flow|||역할 기반 협업 · 버추얼 트윈 · 생산 계획 플로우
+Hexagon — Asset lifecycle|||Hexagon — 자산 라이프사이클
+SDx asset info · completions · j5 operations · project controls|||SDx 자산정보 · 완성관리 · j5 운영 · 프로젝트 통제
+PTC — PLM + ALM thread|||PTC — PLM + ALM 스레드
+Requirements · SW traceability · AI-assisted change (Windchill/Codebeamer)|||요구사항 · SW 추적성 · AI 기반 변경 (Windchill/Codebeamer)
+New AVEVA-based PLM|||새로운 AVEVA 기반 PLM
+Engineering →Operations digital thread|||엔지니어링 → 운영 디지털 스레드
+Absorbs the best of each:|||각 강점을 흡수:
+Configuration rigor (Siemens-grade)|||형상관리 견고성 (Siemens 수준)
+Collaboration & virtual twin (Dassault)|||협업 & 버추얼 트윈 (Dassault)
+Asset lifecycle & completions (Hexagon)|||자산 라이프사이클 & 완성관리 (Hexagon)
+Requirements / ALM + AI change (PTC)|||요구사항 / ALM + AI 변경 (PTC)
+AVEVA differentiation:|||AVEVA 차별화:
+E3D/Marine + AIM + PI + UOC + CONNECT  ->  operations-ready, configuration-governed PLM|||E3D/Marine + AIM + PI + UOC + CONNECT  ->  운영형 · 형상 거버넌스 PLM
+Strategy: absorb proven strengths into ONE configuration-governed, executable, operations-ready PLM — not a copy of any single backbone.|||전략: 검증된 강점을 하나의 형상 거버넌스 · 실행 가능 · 운영형 PLM으로 흡수 — 특정 백본의 복제가 아님.
+Operating model|||운영 모델
+How planning and development teams should work together|||기획팀과 개발팀의 협업 방식
+Product Planning¶¶Own roadmap, ¶MVP scope, ¶user outcomes, ¶KPI thresholds and ¶acceptance decisions.|||제품 기획¶¶로드맵 · ¶MVP 범위 · ¶사용자 성과 · ¶KPI 임계값 · ¶인수 결정 담당
+Solution Architecture¶¶Own data model, ¶OpenAPI contracts, ¶rule architecture, ¶integration patterns and ¶non-functional targets.|||솔루션 아키텍처¶¶데이터 모델 · ¶OpenAPI 계약 · ¶룰 아키텍처 · ¶통합 패턴 · ¶비기능 목표 담당
+Development Team¶¶Own implementation, ¶test automation, ¶CI stability, ¶performance and ¶defect closure.|||개발팀¶¶구현 · ¶테스트 자동화 · ¶CI 안정성 · ¶성능 · ¶결함 종결 담당
+Weekly steering cadence¶Review KPI dashboard. ¶Review failing gates. ¶Approve scope changes. ¶Promote completed capabilities. ¶Update risk burndown.|||주간 운영 회의¶KPI 대시보드 검토. ¶실패 게이트 검토. ¶범위 변경 승인. ¶완료 기능 승급. ¶리스크 번다운 갱신.
+Main risks and mitigations|||주요 리스크와 대응
+Likelihood x Impact — early agreement reduces rework|||발생가능성 x 영향 — 조기 합의가 재작업을 줄인다
+Impact →|||영향 →
+Likelihood|||발생가능성
+High|||상
+Med|||중
+Low|||하
+Risk → mitigation|||리스크 → 대응
+Scope creep|||범위 확대(스코프 크리프)
+Lock Phase 2 to BOM/effectivity/baseline/change; defer MES/APM.|||Phase 2를 BOM/유효성/기준선/변경으로 고정; MES/APM은 후행.
+Vendor ambiguity|||벤더 모호성
+Vendor-neutral adapters; no single-backbone dependency.|||벤더 중립 어댑터; 단일 백본 의존 배제.
+Data quality|||데이터 품질
+Gate every release with seeded E2E + quality-issue promotion.|||모든 릴리스를 시드 E2E + 품질이슈 승급으로 게이트.
+Security gaps|||보안 공백
+OIDC/JWT, role-based authority and audit trail (mandatory).|||OIDC/JWT · 역할 기반 권한 · 감사추적 (필수).
+Adoption resistance|||도입 저항
+Dashboard + shipyard scenarios to show value early.|||대시보드 + 조선소 시나리오로 초기 가치 입증.
+Evidence base|||근거 자료
+Official public sources used for vendor direction|||벤더 방향성에 사용된 공식 공개 출처
+This deck uses public signals only. Unreleased features are treated as directional roadmap signals, not guaranteed product commitments.|||본 자료는 공개 시그널만 사용한다. 미출시 기능은 보장된 제품 약속이 아니라 방향성 로드맵 시그널로 취급한다.
+AVEVA¶AI-enabled updates to CONNECT, Unified Engineering, PI Data Infrastructure and Operations Control; Industrial AI positioning.|||AVEVA¶CONNECT · Unified Engineering · PI Data Infrastructure · Operations Control의 AI 기능 강화; Industrial AI 포지셔닝.
+Siemens¶Teamcenter PLM as lifecycle single source of data; Teamcenter X cloud/SaaS; embedded AI positioning.|||Siemens¶라이프사이클 단일 데이터 소스로서의 Teamcenter PLM; Teamcenter X 클라우드/SaaS; 내장 AI 포지셔닝.
+Dassault Systemes¶3DEXPERIENCE as single collaborative platform with real-time business ecosystem vision and Virtual Twin direction.|||Dassault Systèmes¶실시간 비즈니스 생태계 비전과 버추얼 트윈 방향성을 갖춘 단일 협업 플랫폼 3DEXPERIENCE.
+Hexagon¶Octave / Asset Lifecycle Intelligence around connected asset lifecycle, planning, performance and response.|||Hexagon¶연결된 자산 라이프사이클·계획·성능·대응을 아우르는 Octave / Asset Lifecycle Intelligence.
+PTC¶Windchill AI, PLM data foundation, Codebeamer AI and PLM-ALM traceability direction.|||PTC¶Windchill AI · PLM 데이터 기반 · Codebeamer AI · PLM-ALM 추적성 방향성.
+Citation URLs are available in the meeting notes and can be attached as appendix if required.|||인용 URL은 미팅 노트에 있으며 필요 시 부록으로 첨부 가능.
+Recommended decision|||권고 결정
+Proceed with Phase 2 full configuration management as the next delivery increment.¶¶Approve: OpenAPI-first development, ¶seeded E2E tests, OIDC security, KPI-gated WBS, and shipyard configuration pilot scenario.|||다음 딜리버리 증분으로 Phase 2 전체 형상관리를 진행한다.¶¶승인: OpenAPI 우선 개발 · ¶시드 E2E 테스트 · OIDC 보안 · KPI 게이트 WBS · 조선소 형상관리 파일럿 시나리오.
+Why now¶The executable reference is ready. The next differentiator is controlled configuration and change impact across the digital thread.|||지금인 이유¶실행 가능한 레퍼런스가 준비됐다. 다음 차별화 요소는 디지털 스레드 전반의 통제된 형상과 변경영향이다.

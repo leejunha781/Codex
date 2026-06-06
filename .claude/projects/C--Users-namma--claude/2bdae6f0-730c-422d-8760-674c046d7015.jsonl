@@ -1,0 +1,2 @@
+{"type":"queue-operation","operation":"enqueue","timestamp":"2026-06-05T18:52:41.674Z","sessionId":"89379084-ff6f-4909-a25e-6c33a61deed1","content":"Future_Industrial_PLM_Meeting_Deck_EN_Rebuilt_v2 프리젠테이션 전체 내용을 점검하고\n개발팀과 기획팀과의 미팅 진행시 내용이 매끄러운지 점검\n매끄럽지 않다면 매끄럽게 정정\n내용을 추가하여야될 부분이 있다면 내용 추가\n전체 프리젠테이션 에서 내용 이해에 도움이 될 수 있는 이미지를 추가로 생성하여야한다면 추가 이미지 생성 후 프리젠테이션에 추가\n이 프리젠테이션 파일로 미팅 진행에 문제점이 있다면 이를 지적하고 정정"}
+{"type":"queue-operation","operation":"dequeue","timestamp":"2026-06-05T18:52:41.828Z","sessionId":"89379084-ff6f-4909-a25e-6c33a61deed1"}

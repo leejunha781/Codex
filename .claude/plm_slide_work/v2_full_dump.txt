@@ -1,0 +1,2667 @@
+﻿
+################## SLIDE 1  (slide1.xml) ##################
+  [sp empty] name='사각형: 둥근 모서리 1'
+  [sp] name='Text 1'
+     | Company-by-company benchmark, win-above strategies, open AVEVA control plane, delivery WBS and KPI gates
+  [sp] name='Text 2'
+     | Meeting deck for overseas development and planning teams
+     | Based on the executable FastAPI + PostgreSQL + OIDC + E2E reference package
+  [sp] name='Text 3'
+     | Decision expected today | Align on the winning product position, Phase 2 + Naval Assurance pilot, delivery governance and KPI-based acceptance.
+  [sp] name='Text 4'
+     | 1
+  [sp] name='TextBox 13'
+     | Future Industrial PLM
+   >> media: ../media/image1.png
+   --- NOTES --- 1
+
+################## SLIDE 2  (slide2.xml) ##################
+  [sp] name='TextBox 11'
+     | Meeting structure - seven decisions in order
+  [sp] name='TextBox 13'
+     | Move from facts to ideas, then validate the delivery plan and final decision
+  [sp] name='TextBox 14'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 15'
+  [sp empty] name='사각형: 둥근 모서리 16'
+  [sp empty] name='타원 17'
+  [sp] name='TextBox 18'
+     | 1
+  [sp] name='TextBox 19'
+     | CURRENT STATE
+  [sp] name='TextBox 20'
+     | Competitor vs AVEVA comparison, PLM position and today's executable baseline
+  [sp empty] name='사각형: 둥근 모서리 21'
+  [sp empty] name='타원 22'
+  [sp] name='TextBox 23'
+     | 2
+  [sp] name='TextBox 24'
+     | PUBLIC SIGNALS
+  [sp] name='TextBox 25'
+     | Official product and roadmap signals; confirmed versus directional
+  [sp empty] name='사각형: 둥근 모서리 26'
+  [sp empty] name='타원 27'
+  [sp] name='TextBox 28'
+     | 3
+  [sp] name='TextBox 29'
+     | WINNING IDEAS
+  [sp] name='TextBox 30'
+     | Meeting thesis + win-above NAPA / Siemens / Dassault patterns
+  [sp empty] name='사각형: 둥근 모서리 31'
+  [sp empty] name='타원 32'
+  [sp] name='TextBox 33'
+     | 4
+  [sp] name='TextBox 34'
+     | PROPOSAL + DELIVERY
+  [sp] name='TextBox 35'
+     | Architecture, workflows and pilot scope - then WBS and KPI gates
+  [sp empty] name='사각형: 둥근 모서리 36'
+  [sp empty] name='타원 37'
+  [sp] name='TextBox 38'
+     | 5
+  [sp] name='TextBox 39'
+     | FUTURE-STATE COMPARE
+  [sp] name='TextBox 40'
+     | Re-score AVEVA after the proposed ideas are applied
+  [sp empty] name='사각형: 둥근 모서리 41'
+  [sp empty] name='타원 42'
+  [sp] name='TextBox 43'
+     | 6
+  [sp] name='TextBox 44'
+     | REVIEW
+  [sp] name='TextBox 45'
+     | Ownership, risks, evidence and assumptions requiring agreement
+  [sp empty] name='사각형: 둥근 모서리 46'
+  [sp empty] name='타원 47'
+  [sp] name='TextBox 48'
+     | 7
+  [sp] name='TextBox 49'
+     | CLOSE
+  [sp] name='TextBox 50'
+     | Approve the next increment and the assurance pilot
+  [sp empty] name='사각형: 둥근 모서리 51'
+  [sp] name='TextBox 52'
+     | Sequencing rule: WBS and KPI appear only after all proposed capabilities and pilot ideas are consolidated.
+  [sp] name='TextBox 53'
+     | 2
+   --- NOTES --- 2
+
+################## SLIDE 3  (slide3.xml) ##################
+  [sp empty] name='직사각형 5'
+  [sp] name='TextBox 10'
+     | Current-state comparison - no vendor owns the complete loop
+  [sp] name='TextBox 12'
+     | Today's reality: NAPA leads naval architecture; classical PLM leads configuration; AVEVA leads engineering-to-operations context
+  [sp] name='TextBox 13'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 14'
+  [sp empty] name='사각형: 둥근 모서리 15'
+  [sp] name='TextBox 16'
+     | Capability
+  [sp empty] name='사각형: 둥근 모서리 17'
+  [sp] name='TextBox 18'
+     | AVEVA
+E3D/Marine + AIM/PI
+  [sp empty] name='사각형: 둥근 모서리 19'
+  [sp] name='TextBox 20'
+     | Siemens / Dassault
+PLM platforms
+  [sp empty] name='사각형: 둥근 모서리 21'
+  [sp] name='TextBox 22'
+     | Hexagon / CADMATIC
+/ FORAN
+  [sp empty] name='사각형: 둥근 모서리 23'
+  [sp] name='TextBox 24'
+     | NAPA
+  [sp empty] name='사각형: 둥근 모서리 25'
+  [sp] name='TextBox 26'
+     | Configuration / BOM / change
+  [sp] name='TextBox 27'
+     | Partial
+  [sp] name='TextBox 28'
+     | Strong
+  [sp] name='TextBox 29'
+     | Partial
+  [sp] name='TextBox 30'
+     | Limited
+  [sp empty] name='사각형: 둥근 모서리 31'
+  [sp] name='TextBox 32'
+     | Hull / outfitting / production
+  [sp] name='TextBox 33'
+     | Strong
+  [sp] name='TextBox 34'
+     | Partial
+  [sp] name='TextBox 35'
+     | Strong
+  [sp] name='TextBox 36'
+     | Partial
+  [sp empty] name='사각형: 둥근 모서리 37'
+  [sp] name='TextBox 38'
+     | Naval architecture / stability
+  [sp] name='TextBox 39'
+     | Partial
+  [sp] name='TextBox 40'
+     | Limited
+  [sp] name='TextBox 41'
+     | Partial
+  [sp] name='TextBox 42'
+     | Strong
+  [sp empty] name='사각형: 둥근 모서리 43'
+  [sp] name='TextBox 44'
+     | Operations / asset context
+  [sp] name='TextBox 45'
+     | Strong
+  [sp] name='TextBox 46'
+     | Partial
+  [sp] name='TextBox 47'
+     | Strong
+  [sp] name='TextBox 48'
+     | Partial
+  [sp empty] name='사각형: 둥근 모서리 49'
+  [sp] name='TextBox 50'
+     | Customer-owned API / process
+  [sp] name='TextBox 51'
+     | Partial
+  [sp] name='TextBox 52'
+     | Partial
+  [sp] name='TextBox 53'
+     | Partial
+  [sp] name='TextBox 54'
+     | Partial
+  [sp empty] name='사각형: 둥근 모서리 55'
+  [sp] name='TextBox 56'
+     | CURRENT GAP
+  [sp] name='TextBox 57'
+     | No current product closes design change -> naval calculation -> evidence -> approval -> operations feedback. That is the opportunity, not replacing every specialist tool.
+  [sp] name='TextBox 58'
+     | General positioning from official public information; capability varies by version, configuration and implementation.
+  [sp] name='TextBox 59'
+     | 3
+   --- NOTES --- 3
+
+################## SLIDE 4  (slide4.xml) ##################
+  [sp] name='TextBox 13'
+     | Current PLM landscape
+  [sp empty] name='사각형: 둥근 모서리 16'
+  [sp] name='TextBox 19'
+     | Operations / Asset >
+  [sp] name='TextBox 20'
+     | < Engineering / PLM
+  [sp] name='TextBox 21'
+     | Unified Platform (up)
+  [sp] name='TextBox 22'
+     | Siloedpointtools (down)
+  [sp empty] name='타원 23'
+  [sp] name='TextBox 24'
+     | Engineering → Operations Sweet Spot
+  [sp empty] name='타원 25'
+  [sp] name='TextBox 26'
+     | Siemens
+  [sp empty] name='타원 27'
+  [sp] name='TextBox 28'
+     | Dassault
+  [sp empty] name='타원 29'
+  [sp] name='TextBox 30'
+     | PTC
+  [sp empty] name='타원 31'
+  [sp] name='TextBox 32'
+     | Hexagon
+  [sp empty] name='타원 33'
+  [sp] name='TextBox 34'
+     | AVEVA
+  [sp] name='TextBox 35'
+     | Stack & Position
+  [sp empty] name='타원 36'
+  [sp] name='TextBox 37'
+     | AVEVA
+  [sp] name='TextBox 38'
+     | E3D/Marine · AIM · PI · CONNECT
+  [sp] name='TextBox 39'
+     | Engineering → Operations (thebridge)
+  [sp empty] name='타원 40'
+  [sp] name='TextBox 41'
+     | Siemens
+  [sp] name='TextBox 42'
+     | Teamcenter · NX · Opcenter
+  [sp] name='TextBox 43'
+     | PLM core backbone
+  [sp empty] name='타원 44'
+  [sp] name='TextBox 45'
+     | Dassault
+  [sp] name='TextBox 46'
+     | 3DEXPERIENCE · CATIA · DELMIA
+  [sp] name='TextBox 47'
+     | Experience / virtual-twinplatform
+  [sp empty] name='타원 48'
+  [sp] name='TextBox 49'
+     | Hexagon
+  [sp] name='TextBox 50'
+     | SDx · Smart 3D · j5 · Completions
+  [sp] name='TextBox 51'
+     | Asset lifecycle & operations
+  [sp empty] name='타원 52'
+  [sp] name='TextBox 53'
+     | PTC
+  [sp] name='TextBox 54'
+     | Windchill · Codebeamer · ThingWorx
+  [sp] name='TextBox 55'
+     | PLM + IoT digital thread
+  [sp] name='사각형: 둥근 모서리 56'
+     | Takeaway: don't compete as just another PLM backbone — build the engineering-to-operations layer that existing PLM, CAD, MES and historian platforms cannot easily unify.
+  [sp] name='Text 1'
+     | The future PLM opportunity is between engineering data and live operations
+  [sp] name='Text 2'
+     | Future Industrial PLM
+  [sp] name='Text 10'
+     | 4
+   --- NOTES --- 4
+
+################## SLIDE 5  (slide5.xml) ##################
+  [sp] name='Text 0'
+     | Where we are now
+  [sp] name='Text 1'
+     | Phase 1 creates measurable data quality and handover value
+  [sp] name='Text 2'
+     | Future Industrial PLM
+  [sp empty] name='Shape 3'
+  [sp] name='Text 4'
+     | Phase 1 S6 Gate
+  [sp] name='Text 5'
+     | A. Integration Hub
+     | Source import, mapping, relationship creation
+  [sp] name='Text 6'
+     | B. Standard Model
+     | Project, system, equipment, tag, document, asset, model object
+  [sp] name='Text 7'
+     | C. Handover/AIM
+     | Asset register, required document matrix, readiness calculation
+  [sp] name='Text 8'
+     | D. Digital Twin Dashboard
+     | Coverage, quality issues, drill-down and gate report
+  [sp] name='Text 9'
+     | Next: Phase 2 adds configuration governance so every issue, BOM and change can be traced by effectivity.
+  [sp] name='Text 10'
+     | 5
+  <PICTURE> name='그림 14'
+   >> media: ../media/image2.png
+   --- NOTES --- 5
+
+################## SLIDE 6  (slide6.xml) ##################
+  [sp] name='TextBox 13'
+     | Public product + roadmap signals - official emphasis only
+  [sp] name='TextBox 14'
+     | What vendors publicly emphasize, translated into design implications for the proposed AVEVA platform
+  [sp] name='TextBox 15'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 16'
+  [sp empty] name='사각형: 둥근 모서리 17'
+  [sp empty] name='직사각형 18'
+  [sp] name='TextBox 19'
+     | AVEVA
+  [sp] name='TextBox 20'
+     | CONNECT industrial intelligence, Unified Engineering, AIM and PI System lifecycle context
+  [sp] name='TextBox 21'
+     | Opportunity: close design-to-operations feedback and assurance.
+  [sp empty] name='사각형: 둥근 모서리 22'
+  [sp empty] name='직사각형 23'
+  [sp] name='TextBox 24'
+     | Siemens
+  [sp] name='TextBox 25'
+     | Teamcenter digital twin/thread, lifecycle process automation and AI built for PLM
+  [sp] name='TextBox 26'
+     | Absorb: cloud-ready configuration and lifecycle automation.
+  [sp empty] name='사각형: 둥근 모서리 27'
+  [sp empty] name='직사각형 28'
+  [sp] name='TextBox 29'
+     | Dassault
+  [sp] name='TextBox 30'
+     | 3DEXPERIENCE / ENOVIA cloud-native collaboration, model-based engineering and virtual twins
+  [sp] name='TextBox 31'
+     | Absorb: role-based collaboration and virtual-twin validation.
+  [sp empty] name='사각형: 둥근 모서리 32'
+  [sp empty] name='직사각형 33'
+  [sp] name='TextBox 34'
+     | Hexagon
+  [sp] name='TextBox 35'
+     | Octave asset lifecycle intelligence spanning design, projects, completions and operations
+  [sp] name='TextBox 36'
+     | Absorb: AIM, completions, project controls and handover.
+  [sp empty] name='사각형: 둥근 모서리 37'
+  [sp empty] name='직사각형 38'
+  [sp] name='TextBox 39'
+     | PTC
+  [sp] name='TextBox 40'
+     | Windchill + Codebeamer requirements, risk, test, end-to-end traceability and AI assistance
+  [sp] name='TextBox 41'
+     | Absorb: requirements, software trace and AI-assisted change.
+  [sp empty] name='사각형: 둥근 모서리 42'
+  [sp empty] name='직사각형 43'
+  [sp] name='TextBox 44'
+     | NAPA
+  [sp] name='TextBox 45'
+     | Naval architecture, hydrostatics, stability, rule compliance and calculation workflows
+  [sp] name='TextBox 46'
+     | Integrate: certified naval calculations and approval evidence.
+  [sp empty] name='사각형: 둥근 모서리 47'
+  [sp] name='TextBox 48'
+     | PRINCIPLE
+  [sp] name='TextBox 49'
+     | Treat public signals as directional, not guaranteed scope. Build adapters and an assurance graph that can absorb change without rewriting the platform.
+  [sp] name='TextBox 50'
+     | 6
+   --- NOTES --- 6
+
+################## SLIDE 7  (slide7.xml) ##################
+  [sp] name='Text 0'
+     | Meeting thesis - win above tool silos
+  [sp] name='Text 1'
+     | Own the change-to-assurance-to-operations loop, not every specialist calculation
+  [sp] name='Text 2'
+     | Future Industrial PLM
+  [sp empty] name='Shape 3'
+  [sp] name='Text 4'
+     | Traditional PLM wins on item, BOM and change control.
+     | Industrial operations platforms win on asset, historian and field context.
+     | Our opportunity is to connect both worlds for shipbuilding, EPC and asset-intensive industries.
+  [sp] name='Text 5'
+     | North Star
+     | Requirement -> Engineering -> Assure -> BOM -> Build -> Commissioning -> Handover -> Operations -> Maintenance -> Change Feedback
+  [sp] name='Text 6'
+     | Strategic differentiation
+     | Open AVEVA control plane = Siemens-grade configuration + Dassault-grade collaboration + NAPA-grade assurance, connected by customer-owned APIs, evidence and operations feedback.
+  [sp] name='Text 7'
+     | 7
+  <PICTURE> name='그림 11'
+   >> media: ../media/image3.png
+   --- NOTES --- 7
+
+################## SLIDE 8  (slide8.xml) ##################
+  [sp] name='TextBox 13'
+     | Strategic gap to fill
+  [sp] name='TextBox 14'
+     | Competitors own strong domains; nobody owns the open change-to-evidence-to-operations decision loop
+  [sp] name='TextBox 16'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 17'
+  [sp] name='TextBox 18'
+     | SPECIALIST STRENGTHS TO FEDERATE
+  [sp empty] name='사각형: 둥근 모서리 19'
+  [sp empty] name='직사각형 21'
+  [sp] name='TextBox 22'
+     | PRODUCT CONFIGURATION
+  [sp] name='TextBox 23'
+     | Siemens / Dassault
+     | BOM · variants · baseline · change · collaboration
+  [sp empty] name='사각형: 둥근 모서리 25'
+  [sp empty] name='직사각형 26'
+  [sp] name='TextBox 27'
+     | NAVAL ASSURANCE
+  [sp] name='TextBox 28'
+     | NAPA / class solvers
+     | Hydrostatics · stability · rules · approved calculations
+  [sp empty] name='사각형: 둥근 모서리 30'
+  [sp empty] name='직사각형 31'
+  [sp] name='TextBox 32'
+     | ASSET LIFECYCLE
+  [sp] name='TextBox 33'
+     | Hexagon / AVEVA
+     | Handover · completions · asset and operations context
+  [sp empty] name='사각형: 둥근 모서리 35'
+  [sp empty] name='직사각형 36'
+  [sp] name='TextBox 37'
+     | THE MISSING PRODUCT
+  [sp] name='TextBox 38'
+     | Open AVEVA Decision Control Plane
+  [sp] name='타원 39'
+     | CHANGE →
+     | DECISION
+     | LOOP
+  [sp] name='사각형: 둥근 모서리 42'
+     | Configuration
+  [sp] name='사각형: 둥근 모서리 44'
+     | Impact
+  [sp] name='사각형: 둥근 모서리 46'
+     | Evidence
+  [sp] name='사각형: 둥근 모서리 48'
+     | Approval
+  [sp] name='사각형: 둥근 모서리 50'
+     | Operations
+  [sp] name='사각형: 둥근 모서리 57'
+     | policy + 
+     | physics-guarded AI
+  [sp] name='TextBox 59'
+     | Own the decision, evidence and learning layer.
+  [sp empty] name='사각형: 둥근 모서리 60'
+  [sp empty] name='직사각형 61'
+  [sp] name='TextBox 62'
+     | WHY AVEVA CAN OWN IT
+  [sp] name='TextBox 63'
+     | Engineering truth + lifecycle context
+  [sp empty] name='타원 64'
+  [sp] name='TextBox 65'
+     | E3D / Marine design-change truth
+  [sp empty] name='타원 66'
+  [sp] name='TextBox 67'
+     | Unified Engineering + AIM context
+  [sp empty] name='타원 68'
+  [sp] name='TextBox 69'
+     | PI / CONNECT live operational truth
+  [sp empty] name='타원 70'
+  [sp] name='TextBox 71'
+     | Open, vendor-neutral integration
+  [sp empty] name='타원 72'
+  [sp] name='TextBox 73'
+     | Customer-owned API and process
+  [sp empty] name='사각형: 둥근 모서리 74'
+  [sp] name='TextBox 75'
+     | Outcome: safer, faster change with visible accountability.
+  [sp] name='사각형: 둥근 모서리 76'
+     | PRODUCT BOUNDARYFederate specialist tools instead of replacing them. Own the cross-domain 
+     |                                                     configuration, impact, evidence, approval and operations-feedback loop.
+  [sp] name='TextBox 79'
+     | 8
+   --- NOTES --- 8
+
+################## SLIDE 9  (slide9.xml) ##################
+  [sp] name='TextBox 2'
+     | What to absorb - and where AVEVA must go beyond
+  [sp] name='TextBox 3'
+     | Absorb proven strengths company by company; make them executable through AVEVA engineering-to-operations context
+  [sp] name='TextBox 12'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 14'
+  [sp] name='TextBox 15'
+     | COMPANY / PLATFORM
+  [sp] name='TextBox 16'
+     | ABSORB THE BEST
+  [sp] name='TextBox 17'
+     | AVEVA MOVE BEYOND
+  [sp empty] name='사각형: 둥근 모서리 18'
+  [sp empty] name='직사각형 19'
+  [sp] name='TextBox 20'
+     | SIEMENS
+     | Teamcenter
+  [sp empty] name='직사각형 21'
+  [sp] name='TextBox 22'
+     | BOM · variants · baselines
+     | change · lifecycle automation
+  [sp empty] name='직사각형 23'
+  [sp] name='TextBox 24'
+     | Open promote APIs +
+     | operations-aware configuration
+  [sp empty] name='사각형: 둥근 모서리 26'
+  [sp empty] name='직사각형 27'
+  [sp] name='TextBox 28'
+     | DASSAULT
+     | 3DEXPERIENCE / ENOVIA
+  [sp empty] name='직사각형 29'
+  [sp] name='TextBox 30'
+     | Role collaboration · virtual twin
+     | model-based engineering-to-mfg
+  [sp empty] name='직사각형 31'
+  [sp] name='TextBox 33'
+     | Twin action -> auditable
+     | API event + evidence
+  [sp empty] name='사각형: 둥근 모서리 35'
+  [sp empty] name='직사각형 36'
+  [sp] name='TextBox 37'
+     | HEXAGON
+     | Octave / ALI
+  [sp empty] name='직사각형 38'
+  [sp] name='TextBox 39'
+     | Asset info · completions
+     | project controls · operations
+  [sp empty] name='직사각형 40'
+  [sp] name='TextBox 41'
+     | Link asset state to
+     | configuration + approval
+  [sp empty] name='사각형: 둥근 모서리 43'
+  [sp empty] name='직사각형 44'
+  [sp] name='TextBox 45'
+     | PTC
+     | Codebeamer / Windchill
+  [sp empty] name='직사각형 46'
+  [sp] name='TextBox 47'
+     | Requirements · risk · test
+     | end-to-end traceability + AI
+  [sp empty] name='직사각형 48'
+  [sp] name='TextBox 49'
+     | Tie requirements to hull,
+     | BOM, solver and approval
+  [sp empty] name='사각형: 둥근 모서리 51'
+  [sp empty] name='직사각형 90'
+  [sp] name='TextBox 91'
+     | NAPA
+     | Naval architecture
+  [sp empty] name='직사각형 92'
+  [sp] name='TextBox 93'
+     | Hydrostatics · stability · rules
+     | calculation workflows
+  [sp empty] name='직사각형 94'
+  [sp] name='TextBox 95'
+     | Keep solver of record; own
+     | continuous assurance loop
+  [sp empty] name='사각형: 둥근 모서리 115'
+  [sp] name='TextBox 116'
+     | OUTCOME
+  [sp] name='TextBox 117'
+     | Operations-ready, configuration-governed, approval-evidenced PLM - open enough to absorb the best specialist capability without surrendering the decision loop.
+  [sp] name='TextBox 118'
+     | Public product-positioning basis checked 6 Jun 2026; capability details and integration boundaries require customer / vendor validation.
+  [sp] name='TextBox 119'
+     | 9
+  <PICTURE> name='그림 5'
+  [sp empty] name='직사각형 6'
+  [sp empty] name='사각형: 둥근 모서리 7'
+  [sp empty] name='직사각형 8'
+  [sp] name='TextBox 9'
+     | NEW AVEVA-BASED PLM
+  [sp] name='TextBox 10'
+     | Five specialist strengths -> one open decision control plane
+  [sp empty] name='사각형: 둥근 모서리 11'
+  [sp] name='TextBox 13'
+     | AVEVA DIFFERENTIATION
+  [sp empty] name='타원 32'
+  [sp] name='TextBox 52'
+     | E3D / Marine + Unified Engineering + AIM + PI + CONNECT
+  [sp empty] name='타원 53'
+  [sp] name='TextBox 54'
+     | Customer-owned OpenAPI + configuration / assurance graph
+  [sp empty] name='타원 55'
+  [sp] name='TextBox 56'
+     | Federated solvers + physics-guarded AI + evidence + operations learning
+   >> media: ../media/image4.png
+   --- NOTES --- 9
+
+################## SLIDE 10  (slide10.xml) ##################
+  [sp empty] name='직사각형 1'
+  [sp] name='TextBox 2'
+     | Win above NAPA - own the continuous naval assurance loop
+  [sp] name='TextBox 3'
+     | NAPA is already a trusted stability engine. The defensible AVEVA opportunity is the decision, evidence and lifecycle-learning layer above every solver.
+  [sp] name='TextBox 4'
+     | Future Industrial PLM
+  [sp] name='TextBox 5'
+     | 10
+  [sp empty] name='사각형: 둥근 모서리 6'
+  [sp empty] name='직사각형 7'
+  [sp] name='TextBox 8'
+     | TRUSTED CALCULATION ENGINES
+  [sp] name='TextBox 9'
+     | Keep the certified math.
+  [sp empty] name='사각형: 둥근 모서리 10'
+  [sp] name='TextBox 11'
+     | NAPA stability + hydrostatics
+  [sp empty] name='사각형: 둥근 모서리 12'
+  [sp] name='TextBox 13'
+     | Class rules + approval criteria
+  [sp empty] name='사각형: 둥근 모서리 14'
+  [sp] name='TextBox 15'
+     | CFD / FEM / flooding models
+  [sp empty] name='사각형: 둥근 모서리 16'
+  [sp] name='TextBox 17'
+     | Other approved solvers
+  [sp] name='TextBox 18'
+     | NAPA remains a solver of record for naval architecture, rule compliance and stability evidence.
+  [sp empty] name='사각형: 둥근 모서리 19'
+  [sp empty] name='직사각형 20'
+  [sp] name='TextBox 21'
+     | NEW MOAT: CONTINUOUS NAVAL ASSURANCE CONTROL PLANE
+  [sp] name='TextBox 22'
+     | A governed graph of every safety decision
+  [sp empty] name='사각형: 둥근 모서리 29'
+  [sp] name='TextBox 30'
+     | NAVAL
+  [sp] name='TextBox 31'
+     | ASSURANCE
+GRAPH
+  [sp empty] name='사각형: 둥근 모서리 34'
+  [sp] name='TextBox 35'
+     | Revision / baseline
+  [sp empty] name='사각형: 둥근 모서리 36'
+  [sp] name='TextBox 37'
+     | Hull / compartment
+  [sp empty] name='사각형: 둥근 모서리 38'
+  [sp] name='TextBox 39'
+     | Weight / CoG
+  [sp empty] name='사각형: 둥근 모서리 40'
+  [sp] name='TextBox 41'
+     | Loading cases
+  [sp empty] name='사각형: 둥근 모서리 42'
+  [sp] name='TextBox 43'
+     | Rules / criteria
+  [sp empty] name='사각형: 둥근 모서리 44'
+  [sp] name='TextBox 45'
+     | Margin + evidence
+  [sp] name='TextBox 46'
+     | One graph links change -> calculation -> decision -> evidence -> revision.
+  [sp empty] name='사각형: 둥근 모서리 47'
+  [sp empty] name='직사각형 48'
+  [sp] name='TextBox 49'
+     | AVEVA LIFECYCLE CONTEXT
+  [sp] name='TextBox 50'
+     | Win with the closed loop.
+  [sp empty] name='사각형: 둥근 모서리 51'
+  [sp] name='TextBox 52'
+     | E3D / Marine design changes
+  [sp empty] name='사각형: 둥근 모서리 53'
+  [sp] name='TextBox 54'
+     | PLM configuration + approval
+  [sp empty] name='사각형: 둥근 모서리 55'
+  [sp] name='TextBox 56'
+     | AIM documents + class evidence
+  [sp empty] name='사각형: 둥근 모서리 57'
+  [sp] name='TextBox 58'
+     | PI / CONNECT operational truth
+  [sp] name='TextBox 59'
+     | Add counterfactual design options, cross-domain impact and live operational learning - not another calculation silo.
+  [sp empty] name='사각형: 둥근 모서리 62'
+  [sp] name='TextBox 63'
+     | WINNING POSITION
+  [sp] name='TextBox 64'
+     | NAPA = solver of record.  AVEVA-based PLM = system of decision, evidence and lifecycle learning.  Competitive moat: customer-owned APIs + assurance graph + closed-loop operational feedback.
+  [sp] name='TextBox 65'
+     | Official-source basis: napa.fi/software-and-services/ship-design/software/napa/  |  napa.fi/napa-release-2025-2/  |  napa.fi/extending-ocx/  |  aveva.com/en/solutions/connect/
+  [sp empty] name='사각형: 둥근 모서리 66'
+  [sp] name='TextBox 67'
+     | physics-guarded AI
+
+################## SLIDE 11  (slide11.xml) ##################
+  [sp] name='TextBox 2'
+     | Win above Siemens - make configuration rigor open and operations-aware
+  [sp] name='TextBox 3'
+     | Teamcenter is strong at PLM governance. Win by preserving that rigor while making configuration customer-owned, API-native and connected to shipyard and operational truth.
+  [sp] name='TextBox 4'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 5'
+  [sp empty] name='사각형: 둥근 모서리 6'
+  [sp empty] name='직사각형 7'
+  [sp] name='TextBox 8'
+     | SIEMENS STRENGTH TO KEEP
+  [sp] name='TextBox 9'
+     | Preserve enterprise-grade control.
+  [sp empty] name='사각형: 둥근 모서리 10'
+  [sp] name='TextBox 11'
+     | Item / BOM / change governance
+  [sp empty] name='사각형: 둥근 모서리 12'
+  [sp] name='TextBox 13'
+     | Effectivity + baseline discipline
+  [sp empty] name='사각형: 둥근 모서리 14'
+  [sp] name='TextBox 15'
+     | Enterprise workflow + audit
+  [sp empty] name='사각형: 둥근 모서리 16'
+  [sp] name='TextBox 17'
+     | Multi-domain configuration
+  [sp] name='TextBox 18'
+     | Keep the rigor that makes complex product change governable.
+  [sp empty] name='사각형: 둥근 모서리 19'
+  [sp empty] name='직사각형 20'
+  [sp] name='TextBox 21'
+     | NEW MOAT: OPEN CONFIGURATION CONTROL PLANE
+  [sp] name='TextBox 22'
+     | A customer-owned graph that can execute the process
+  [sp] name='사각형: 둥근 모서리 28'
+     | OPEN
+     | CONFIGURATION
+     | CONTROL GRAPH
+  [sp] name='사각형: 둥근 모서리 31'
+     | Revision / baseline
+  [sp] name='사각형: 둥근 모서리 33'
+     | Hull / block / option / date
+  [sp] name='사각형: 둥근 모서리 35'
+     | ECR / ECO / MCO
+  [sp] name='사각형: 둥근 모서리 37'
+     | M-BOM / production status
+  [sp] name='사각형: 둥근 모서리 39'
+     | Approval / evidence
+  [sp] name='사각형: 둥근 모서리 41'
+     | policy-gated APIs
+  [sp] name='TextBox 43'
+     | Event → policy → gate → evidence → promote
+  [sp empty] name='사각형: 둥근 모서리 44'
+  [sp empty] name='직사각형 45'
+  [sp] name='TextBox 46'
+     | AVEVA LIFECYCLE CONTEXT
+  [sp] name='TextBox 47'
+     | Connect configuration to real work.
+  [sp empty] name='사각형: 둥근 모서리 48'
+  [sp] name='TextBox 49'
+     | E3D / Marine design objects
+  [sp empty] name='사각형: 둥근 모서리 50'
+  [sp] name='TextBox 51'
+     | Draw / MTO / ERM production truth
+  [sp empty] name='사각형: 둥근 모서리 52'
+  [sp] name='TextBox 53'
+     | AIM handover + documents
+  [sp empty] name='사각형: 둥근 모서리 54'
+  [sp] name='TextBox 55'
+     | PI / CONNECT operational truth
+  [sp] name='TextBox 56'
+     | Make every state visible, usable and measurable beyond the PLM specialist.
+  [sp empty] name='사각형: 둥근 모서리 59'
+  [sp] name='TextBox 60'
+     | WINNING POSITION
+  [sp] name='TextBox 61'
+     | Siemens = governance benchmark. AVEVA-based PLM = open system of configuration action. Competitive moat: customer-owned APIs + live engineering-to-operations context.
+  [sp] name='TextBox 62'
+     | ARCHITECTURE HANDOFF  ->  API Contract Layer + Configuration Layer + Integration Layer
+  [sp] name='TextBox 63'
+     | 11
+
+################## SLIDE 12  (slide12.xml) ##################
+  [sp empty] name='직사각형 1'
+  [sp] name='TextBox 2'
+     | Win above Dassault - make the virtual twin executable and evidence-driven
+  [sp] name='TextBox 3'
+     | 3DEXPERIENCE is strong at immersive collaboration and virtual-twin vision. Win by turning every twin interaction into an API contract, gate result, affected-object trace and operational learning event.
+  [sp] name='TextBox 4'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 5'
+  [sp empty] name='사각형: 둥근 모서리 6'
+  [sp empty] name='직사각형 7'
+  [sp] name='TextBox 8'
+     | DASSAULT STRENGTH TO KEEP
+  [sp] name='TextBox 9'
+     | Preserve the shared virtual experience.
+  [sp empty] name='사각형: 둥근 모서리 10'
+  [sp] name='TextBox 11'
+     | Role-based collaboration spaces
+  [sp empty] name='사각형: 둥근 모서리 12'
+  [sp] name='TextBox 13'
+     | Virtual twin + 3D experience
+  [sp empty] name='사각형: 둥근 모서리 14'
+  [sp] name='TextBox 15'
+     | Engineering / manufacturing view
+  [sp empty] name='사각형: 둥근 모서리 16'
+  [sp] name='TextBox 17'
+     | Visual simulation + validation
+  [sp] name='TextBox 18'
+     | Keep the context and collaboration that make complex decisions understandable.
+  [sp empty] name='사각형: 둥근 모서리 19'
+  [sp empty] name='직사각형 20'
+  [sp] name='TextBox 21'
+     | NEW MOAT: EXECUTABLE EVIDENCE TWIN
+  [sp] name='TextBox 22'
+     | Every interaction becomes a governed next-state event
+  [sp] name='사각형: 둥근 모서리 28'
+     | EVIDENCE
+     | TWIN
+     | CONTROL GRAPH
+  [sp] name='사각형: 둥근 모서리 31'
+     | Role / task / decision
+  [sp] name='사각형: 둥근 모서리 33'
+     | Requirement / affected object
+  [sp] name='사각형: 둥근 모서리 35'
+     | AI diagnosis / solver result
+  [sp] name='사각형: 둥근 모서리 37'
+     | Approval / evidence pack
+  [sp] name='사각형: 둥근 모서리 39'
+     | Operations feedback
+  [sp] name='사각형: 둥근 모서리 41'
+     | twin action = API event
+  [sp] name='TextBox 43'
+     | Context → decision → evidence → approval → learning
+  [sp empty] name='사각형: 둥근 모서리 44'
+  [sp empty] name='직사각형 45'
+  [sp] name='TextBox 46'
+     | AVEVA LIFECYCLE CONTEXT
+  [sp] name='TextBox 47'
+     | Connect the twin to production truth.
+  [sp empty] name='사각형: 둥근 모서리 48'
+  [sp] name='TextBox 49'
+     | E3D / Marine production truth
+  [sp empty] name='사각형: 둥근 모서리 50'
+  [sp] name='TextBox 51'
+     | AIM document + class context
+  [sp empty] name='사각형: 둥근 모서리 52'
+  [sp] name='TextBox 53'
+     | PI / CONNECT operating feedback
+  [sp empty] name='사각형: 둥근 모서리 54'
+  [sp] name='TextBox 55'
+     | Customer-configured workflows
+  [sp] name='TextBox 56'
+     | Make the virtual twin drive measurable work, evidence and lifecycle learning.
+  [sp empty] name='사각형: 둥근 모서리 59'
+  [sp] name='TextBox 60'
+     | WINNING POSITION
+  [sp] name='TextBox 61'
+     | Dassault = collaboration benchmark. AVEVA-based PLM = executable evidence twin. Competitive moat: every virtual-twin decision is measurable, auditable and connected to operations.
+  [sp] name='TextBox 62'
+     | ARCHITECTURE HANDOFF  ->  Experience Layer + Assurance & Digital Thread Layer + Integration Layer
+  [sp] name='TextBox 63'
+     | 12
+
+################## SLIDE 13  (slide13.xml) ##################
+  [sp] name='Text 0'
+     | Target architecture concept
+  [sp] name='Text 1'
+     | The three win-above patterns converge into one open, customer-owned AVEVA control plane
+  [sp] name='Text 2'
+     | Future Industrial PLM
+  [sp empty] name='Shape 3'
+  [sp] name='Text 4'
+     | Experience Layer
+     | Dassault-grade role collaboration, 3D context, assurance margins and executable gate views
+  [sp] name='Text 5'
+     | API Contract Layer
+     | Customer-owned FastAPI/OpenAPI contracts, OIDC authority and solver-adapter contracts
+  [sp] name='Text 6'
+     | Assurance + Digital Thread Layer
+     | NAPA-grade evidence lineage, assurance graph, rules and evaluate/promote flow
+  [sp] name='Text 7'
+     | Configuration Layer
+     | Siemens-grade BOM, effectivity, baselines and change-impact governance
+  [sp] name='Text 8'
+     | Integration Layer
+     | AVEVA E3D/AIM/PI/CONNECT + NAPA/class/CFD/FEM + ERP/MES/PLM adapters
+  [sp] name='Text 9'
+     | 13
+  <PICTURE> name='그림 13'
+   >> media: ../media/image5.png
+   --- NOTES --- 13
+
+################## SLIDE 14  (slide14.xml) ##################
+  [sp] name='Text 0'
+     | Executable reference package
+  [sp] name='Text 1'
+     | The deck is backed by runnable architecture, not only concept slides
+  [sp] name='Text 2'
+     | Future Industrial PLM
+  [sp empty] name='Shape 3'
+  [sp] name='Text 12'
+     | 14
+  [sp] name='Rounded Rectangle 31'
+     | DELIVERED REFERENCE
+API First
+  [sp empty] name='Circular Arrow 32'
+  [sp empty] name='Oval 33'
+  [sp empty] name='Oval 34'
+  [sp empty] name='Oval 35'
+  [sp empty] name='Oval 38'
+  [sp empty] name='Oval 39'
+  [sp empty] name='Rounded Rectangle 40'
+  [sp] name='TextBox 33'
+     | API
+Services
+  [sp] name='TextBox 34'
+     | Data
+Schema
+  [sp] name='TextBox 35'
+     | Security
+OIDC
+  [sp] name='TextBox 36'
+     | Gates
+& E2E
+  [sp empty] name='Rounded Rectangle 45'
+  [sp] name='Oval 46'
+     | 1
+  [sp] name='TextBox 39'
+     | FastAPI services
+  [sp] name='TextBox 40'
+     | OpenAPI routes for KPI, readiness,
+coverage, quality issues and
+Phase 2 configuration APIs.
+  [sp empty] name='Rounded Rectangle 49'
+  [sp] name='Oval 50'
+     | 2
+  [sp] name='TextBox 43'
+     | Docker Compose
+  [sp] name='TextBox 44'
+     | Postgres + Keycloak + API +
+E2E tests with schema and
+seed auto-load.
+  [sp empty] name='Rounded Rectangle 53'
+  [sp] name='Oval 54'
+     | 3
+  [sp] name='TextBox 47'
+     | E2E tests
+  [sp] name='TextBox 48'
+     | Evaluate → promote flows for
+quality gates and Phase 2
+impact analysis.
+  [sp empty] name='Rounded Rectangle 57'
+  [sp] name='Oval 58'
+     | 4
+  [sp] name='TextBox 51'
+     | PostgreSQL schema
+  [sp] name='TextBox 52'
+     | Phase 1 S6 tables/views plus
+Phase 2 configuration, BOM,
+effectivity and change tables.
+  [sp empty] name='Rounded Rectangle 61'
+  [sp] name='Oval 62'
+     | 5
+  [sp] name='TextBox 55'
+     | OIDC security
+  [sp] name='TextBox 56'
+     | Keycloak realm, JWT validation
+and role-gated promote
+actions.
+  [sp empty] name='Rounded Rectangle 65'
+  [sp] name='Oval 66'
+     | 6
+  [sp] name='TextBox 59'
+     | React dashboard
+  [sp] name='TextBox 60'
+     | Integrated FastAPI static
+serving for gate report and
+planning visibility.
+  [sp] name='TextBox 69'
+     | test gates
+  [sp] name='Rounded Rectangle 84'
+     | Governance value
+     | The current executable package proves API-first contracts, security and gate patterns. Naval Assurance adapters, evidence lineage and operations calibration are the proposed pilot extension.
+  [sp] name='TextBox 71'
+     | Meeting objective: agree the executable baseline, then approve the bounded Continuous Naval Assurance pilot extension.
+   --- NOTES --- 14
+
+################## SLIDE 15  (slide15.xml) ##################
+  [sp] name='TextBox 2'
+     | Hardware  ↔  Software (API) Architecture    &    HD Hyundai API Example
+  [sp] name='TextBox 3'
+     | Organic data-center → AVEVA PLM → API stack, with a simple step-by-step client HD Hyundai can run and verify.
+  [sp] name='TextBox 4'
+     | A - Reference Architecture: organic Hardware <-> Software <-> API
+  [sp empty] name='사각형: 둥근 모서리 5'
+  [sp empty] name='사각형: 둥근 모서리 6'
+  [sp] name='TextBox 7'
+     | 1.  API LAYER
+  [sp] name='TextBox 8'
+     | FastAPI  -  REST / OData  -  OpenAPI 3.1  -  OIDC (OAuth2)
+  [sp] name='사각형: 둥근 모서리 9'
+     | POST /oauth/token
+  [sp] name='사각형: 둥근 모서리 10'
+     | GET /objects/{id}
+  [sp] name='사각형: 둥근 모서리 11'
+     | POST /structures
+  [sp] name='사각형: 둥근 모서리 12'
+     | POST /approvals
+  [sp] name='TextBox 13'
+     | Stateless, versioned, OpenAPI-documented endpoints, token-secured; every call returns JSON + an HTTP status, so each step is verifiable.
+  [sp] name='TextBox 15'
+     | API exposesservices   ↔  AVEVA PLM returnsdata (JSON)
+  [sp empty] name='사각형: 둥근 모서리 16'
+  [sp empty] name='사각형: 둥근 모서리 17'
+  [sp] name='TextBox 18'
+     | 2.  AVEVA PLM SOFTWARE: application & engineering services
+  [sp] name='사각형: 둥근 모서리 19'
+     | Objects & Vault
+  [sp] name='사각형: 둥근 모서리 20'
+     | Structures / eBOM
+  [sp] name='사각형: 둥근 모서리 21'
+     | ECR & Impact
+  [sp] name='사각형: 둥근 모서리 22'
+     | Approvals / Workflow
+  [sp] name='사각형: 둥근 모서리 23'
+     | CAD / AVEVA E3D
+  [sp] name='사각형: 둥근 모서리 24'
+     | Digital Thread
+  [sp] name='TextBox 25'
+     | Versioned objects, structures/BOM & configuration rules, ECR/impact, approvals, all exposed through the API layer above.
+  [sp] name='TextBox 27'
+     | PLM runs on   ↔   data-center hosts, scales & secures it
+  [sp empty] name='사각형: 둥근 모서리 28'
+  [sp empty] name='사각형: 둥근 모서리 29'
+  [sp] name='TextBox 30'
+     | 3.  INFRASTRUCTURE - DATA CENTER (on-prem, HA, multi-yard, 1,000+ users)
+  [sp empty] name='사각형: 둥근 모서리 31'
+  [sp empty] name='타원 32'
+  [sp] name='TextBox 33'
+     | App / API Servers
+  [sp] name='TextBox 34'
+     | 4-node cluster - HA
+     | 16 vCPU - 64 GB/node
+     | Linux - containers
+  [sp empty] name='사각형: 둥근 모서리 35'
+  [sp empty] name='타원 36'
+  [sp] name='TextBox 37'
+     | Database
+  [sp] name='TextBox 38'
+     | PostgreSQL 16 - HA
+     | 32 vCPU - 256 GB
+     | NVMe RAID10 + standby
+  [sp empty] name='사각형: 둥근 모서리 39'
+  [sp empty] name='타원 40'
+  [sp] name='TextBox 41'
+     | Vault / Storage
+  [sp] name='TextBox 42'
+     | SAN (FC) + NAS
+     | 100 TB+ usable
+     | Snapshots - WORM
+  [sp empty] name='사각형: 둥근 모서리 43'
+  [sp empty] name='타원 44'
+  [sp] name='TextBox 45'
+     | Gateway - Security
+  [sp] name='TextBox 46'
+     | API GW + LB (HA)
+     | TLS 1.3 - WAF
+     | OIDC/OAuth2 - ZTNA
+  [sp] name='TextBox 47'
+     | Redundant 10/25 GbEbackbone  -  Geo-DR site (asyncreplica) + nightly/continuousbackup
+     |  -  GPU nodefor 3D / digital-twin  -  Observability: metrics - logs - traces
+  [sp] name='TextBox 49'
+     | B - HD Hyundai: Using the API (simple, step-by-step, verifiable)
+  [sp empty] name='사각형: 둥근 모서리 50'
+  [sp empty] name='직사각형 51'
+  [sp empty] name='타원 52'
+  [sp empty] name='타원 53'
+  [sp empty] name='타원 54'
+  [sp] name='TextBox 55'
+     | plm_client.py  -  HD Hyundai PLM client  ->  calls REST API
+  [sp] name='TextBox 56'
+     | import requests
+     | API = "https://plm.hhi.co.kr/api/v1"
+     | tok = requests.post(f"{API}/oauth/token",
+     |                     data=CRED).json()["access_token"]
+     | H = {"Authorization": f"Bearer {tok}"}
+     | r = requests.get(f"{API}/objects/HD-ETO-1001", headers=H)
+     | print(r.status_code, r.json()["name"])   # 200 OK -> verified
+  [sp] name='TextBox 57'
+     | Each step calls one endpoint and returns a status you can check  (OK)
+  [sp empty] name='사각형: 둥근 모서리 58'
+  [sp empty] name='사각형: 둥근 모서리 59'
+  [sp empty] name='타원 60'
+  [sp] name='TextBox 61'
+     | 1
+  [sp] name='TextBox 62'
+     | Authenticate (OIDC)
+     | POST /oauth/token
+  [sp] name='사각형: 둥근 모서리 63'
+     | 200 - token  OK
+  [sp empty] name='사각형: 둥근 모서리 65'
+  [sp empty] name='사각형: 둥근 모서리 66'
+  [sp empty] name='타원 67'
+  [sp] name='TextBox 68'
+     | 2
+  [sp] name='TextBox 69'
+     | Read object
+     | GET /objects/HD-ETO-1001
+  [sp] name='사각형: 둥근 모서리 70'
+     | 200 - object  OK
+  [sp empty] name='사각형: 둥근 모서리 72'
+  [sp empty] name='사각형: 둥근 모서리 73'
+  [sp empty] name='타원 74'
+  [sp] name='TextBox 75'
+     | 3
+  [sp] name='TextBox 76'
+     | Create structure (eBOM)
+     | POST /structures
+  [sp] name='사각형: 둥근 모서리 77'
+     | 201 - struct_id  OK
+  [sp empty] name='사각형: 둥근 모서리 79'
+  [sp empty] name='사각형: 둥근 모서리 80'
+  [sp empty] name='타원 81'
+  [sp] name='TextBox 82'
+     | 4
+  [sp] name='TextBox 83'
+     | Raise ECR & run impact
+     | POST /ecr/{id}/impact
+  [sp] name='사각형: 둥근 모서리 84'
+     | 200 - impact  OK
+  [sp empty] name='사각형: 둥근 모서리 86'
+  [sp empty] name='사각형: 둥근 모서리 87'
+  [sp empty] name='타원 88'
+  [sp] name='TextBox 89'
+     | 5
+  [sp] name='TextBox 90'
+     | Approve
+     | POST /approvals
+  [sp] name='사각형: 둥근 모서리 91'
+     | 200 - APPROVED  OK
+  [sp] name='TextBox 92'
+     | Organic connection: data-center hardware hosts AVEVA PLM Software → AVEVA PLM exposes secured APIs → HD Hyundai's client calls them in clear, status-verified Steps.
+  [sp] name='Text 2'
+     | Future Industrial PLM
+  [sp] name='Text 12'
+     | 15
+
+################## SLIDE 16  (slide16.xml) ##################
+  [sp] name='TextBox 6'
+     | Phase 2 + Continuous Naval Assurance pilot scope
+  [sp] name='TextBox 7'
+     | A bounded executable slice proves configuration, impact, approved-solver evidence, approval authority and operations feedback
+  [sp] name='TextBox 8'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 9'
+  [sp empty] name='사각형: 둥근 모서리 10'
+  [sp empty] name='타원 15'
+  [sp] name='TextBox 16'
+     | 1
+  [sp] name='TextBox 17'
+     | E3D / Hull
+     | change
+  [sp] name='TextBox 18'
+     | POST /events
+  [sp empty] name='사각형: 둥근 모서리 19'
+  [sp empty] name='타원 20'
+  [sp] name='TextBox 22'
+     | 2
+  [sp] name='TextBox 23'
+     | Resolve
+     | configuration
+  [sp] name='TextBox 24'
+     | GET /configuration
+  [sp empty] name='사각형: 둥근 모서리 25'
+  [sp empty] name='타원 26'
+  [sp] name='TextBox 27'
+     | 3
+  [sp] name='TextBox 28'
+     | Evaluate
+     | impact
+  [sp] name='TextBox 29'
+     | POST /impact/evaluate
+  [sp empty] name='사각형: 둥근 모서리 30'
+  [sp empty] name='타원 31'
+  [sp] name='TextBox 32'
+     | 4
+  [sp] name='TextBox 33'
+     | Run approved
+     | solver
+  [sp] name='TextBox 34'
+     | POST /solver-runs
+  [sp empty] name='사각형: 둥근 모서리 35'
+  [sp empty] name='타원 36'
+  [sp] name='TextBox 37'
+     | 5
+  [sp] name='TextBox 38'
+     | Evidence +
+     | approval
+  [sp] name='TextBox 39'
+     | POST /promote
+  [sp empty] name='사각형: 둥근 모서리 40'
+  [sp empty] name='타원 41'
+  [sp] name='TextBox 42'
+     | 6
+  [sp] name='TextBox 43'
+     | Operations
+     | feedback
+  [sp] name='TextBox 44'
+     | AIM + PI / CONNECT
+  [sp empty] name='사각형: 둥근 모서리 56'
+  [sp] name='TextBox 57'
+     | Siemens-grade
+     | configuration
+  [sp empty] name='사각형: 둥근 모서리 58'
+  [sp] name='TextBox 59'
+     | PTC-grade
+     | traceability
+  [sp empty] name='사각형: 둥근 모서리 60'
+  [sp] name='TextBox 61'
+     | NAPA-grade
+     | calculation
+  [sp empty] name='사각형: 둥근 모서리 62'
+  [sp] name='TextBox 63'
+     | Dassault-grade
+     | decision context
+  [sp empty] name='사각형: 둥근 모서리 64'
+  [sp] name='TextBox 65'
+     | AVEVA lifecycle
+     | context
+  [sp] name='TextBox 89'
+     | 16
+  <PICTURE> name='그림 2'
+  [sp empty] name='직사각형 3'
+  [sp empty] name='사각형: 둥근 모서리 4'
+  [sp] name='TextBox 5'
+     | VISUAL PROOF: ONE CLOSED ASSURANCE LOOP
+  [sp] name='TextBox 11'
+     | Configuration → affected scenarios → approved solver evidence → human / class approval  → operations feedback
+  [sp] name='TextBox 12'
+     | AI diagnoses and holds gates; accountable humans retain release authority.
+  [sp empty] name='사각형: 둥근 모서리 13'
+  [sp empty] name='직사각형 14'
+  [sp] name='TextBox 21'
+     | BOUNDED SCENARIO
+  [sp] name='TextBox 45'
+     | One hull / block · selected loading cases · one approved solver adapter · seeded change and failure cases
+  [sp empty] name='사각형: 둥근 모서리 46'
+  [sp empty] name='직사각형 47'
+  [sp] name='TextBox 48'
+     | DELIVERABLE + RELEASE GOVERNANCE
+  [sp] name='TextBox 49'
+     | Configuration + assurance graph · signed evidence pack · AI proposes / holds · naval architect and class authority release
+  [sp empty] name='사각형: 둥근 모서리 50'
+  [sp empty] name='직사각형 90'
+  [sp] name='TextBox 91'
+     | MINIMUM ACCEPTANCE
+  [sp empty] name='사각형: 둥근 모서리 92'
+  [sp] name='TextBox 93'
+     | Configuration >=99%
+  [sp empty] name='사각형: 둥근 모서리 94'
+  [sp] name='TextBox 95'
+     | Impact recall >=95%
+  [sp empty] name='사각형: 둥근 모서리 96'
+  [sp] name='TextBox 97'
+     | Provenance 100%
+  [sp empty] name='사각형: 둥근 모서리 98'
+  [sp] name='TextBox 99'
+     | Approval <=5 s
+   >> media: ../media/image6.png
+   --- NOTES --- 16
+
+################## SLIDE 17  (slide17.xml) ##################
+  [sp] name='TextBox 88'
+     | Requirement → AI-built VCRM & Checklist (admin-editable, approved in Impact+Approval)
+  [sp] name='TextBox 91'
+     | Enter a requirement →AI builds the VCRM + Checklist → admin can add/delete sub-items → attach deliverables → VCRM & Checklist are approved together in the Impact + Approval step before production.
+  [sp empty] name='사각형: 둥근 모서리 92'
+  [sp empty] name='사각형: 둥근 모서리 93'
+  [sp empty] name='타원 94'
+  [sp empty] name='타원 95'
+  [sp empty] name='타원 96'
+  [sp] name='TextBox 97'
+     | Future PLM  —  Requirements & Verification   ·   /api/v1
+  [sp] name='사각형: 둥근 모서리 98'
+     | ADMIN
+  [sp empty] name='타원 99'
+  [sp] name='TextBox 100'
+     | RUNNING
+  [sp empty] name='사각형: 둥근 모서리 101'
+  [sp] name='TextBox 102'
+     | REQUIREMENT
+  [sp empty] name='사각형: 둥근 모서리 103'
+  [sp] name='TextBox 104'
+     | REQ-014 · Ballast Water Treatment · cap >= 250 m3/h · IMO D-2
+  [sp] name='사각형: 둥근 모서리 105'
+     | POST /api/v1/requirements
+  [sp] name='육각형 106'
+     | AI
+  [sp] name='TextBox 107'
+     | AI -> VCRM + Checklist + risk flags
+  [sp empty] name='사각형: 둥근 모서리 108'
+  [sp] name='TextBox 109'
+     | VCRM — Verification Cross-Reference Matrix  (LargeCategory)
+  [sp empty] name='사각형: 둥근 모서리 110'
+  [sp] name='TextBox 111'
+     | Checklist — Cautions & RequirementReflection  (Large Category)
+  [sp] name='사각형: 둥근 모서리 112'
+     | + Add item
+  [sp] name='사각형: 둥근 모서리 113'
+     | × Delete
+  [sp] name='TextBox 114'
+     | admin · POST / DELETE  /api/v1/vcrm/items
+  [sp] name='사각형: 둥근 모서리 115'
+     | + Add item
+  [sp] name='사각형: 둥근 모서리 116'
+     | × Delete
+  [sp] name='TextBox 117'
+     | admin · POST / DELETE  /api/v1/checklist/items
+  [sp empty] name='사각형: 둥근 모서리 118'
+  [sp] name='TextBox 119'
+     | 1.1   Capacity >= 250 m3/h
+  [sp] name='TextBox 120'
+     | verify: analysis/test
+  [sp] name='TextBox 121'
+     | ×
+  [sp] name='사각형: 둥근 모서리 122'
+     | capacity_calc.pdf
+  [sp] name='사각형: 둥근 모서리 123'
+     | Verified
+  [sp empty] name='사각형: 둥근 모서리 124'
+  [sp] name='TextBox 125'
+     | 1.2   IMO D-2 compliance
+  [sp] name='TextBox 126'
+     | verify: certification
+  [sp] name='TextBox 127'
+     | ×
+  [sp] name='사각형: 둥근 모서리 128'
+     | IMO_D2_cert.pdf
+  [sp] name='사각형: 둥근 모서리 129'
+     | Certified
+  [sp empty] name='사각형: 둥근 모서리 130'
+  [sp] name='TextBox 131'
+     | 1.3   Power & energybudget
+  [sp] name='TextBox 133'
+     | ×
+  [sp] name='사각형: 둥근 모서리 134'
+     | power_test.pdf
+  [sp] name='사각형: 둥근 모서리 135'
+     | Verified
+  [sp empty] name='사각형: 둥근 모서리 136'
+  [sp] name='TextBox 137'
+     | 1.4   Piping / HVAC interface
+  [sp] name='TextBox 139'
+     | ×
+  [sp] name='사각형: 둥근 모서리 140'
+     | P&ID + 3D ref
+  [sp] name='사각형: 둥근 모서리 141'
+     | Linked
+  [sp empty] name='사각형: 둥근 모서리 142'
+  [sp] name='TextBox 143'
+     | 1.5   Maintenance access
+  [sp] name='TextBox 145'
+     | ×
+  [sp] name='사각형: 둥근 모서리 146'
+     | access_review.docx
+  [sp] name='사각형: 둥근 모서리 147'
+     | Verified
+  [sp empty] name='사각형: 둥근 모서리 148'
+  [sp] name='사각형: 둥근 모서리 149'
+     | Caution
+  [sp] name='TextBox 150'
+     | Class & IMO rulesapplied
+  [sp] name='TextBox 151'
+     | ×
+  [sp] name='사각형: 둥근 모서리 152'
+     | rule_check.pdf
+  [sp] name='사각형: 둥근 모서리 153'
+     | OK
+  [sp empty] name='사각형: 둥근 모서리 154'
+  [sp] name='사각형: 둥근 모서리 155'
+     | Caution
+  [sp] name='TextBox 156'
+     | Material / coatingspeccorrect
+  [sp] name='TextBox 157'
+     | ×
+  [sp] name='사각형: 둥근 모서리 158'
+     | material_spec.pdf
+  [sp] name='사각형: 둥근 모서리 159'
+     | OK
+  [sp empty] name='사각형: 둥근 모서리 160'
+  [sp] name='사각형: 둥근 모서리 161'
+     | Caution
+  [sp] name='TextBox 162'
+     | 3D clash check (interfaces)
+  [sp] name='TextBox 163'
+     | ×
+  [sp] name='사각형: 둥근 모서리 164'
+     | clash_report.html
+  [sp] name='사각형: 둥근 모서리 165'
+     | OK
+  [sp empty] name='사각형: 둥근 모서리 166'
+  [sp] name='사각형: 둥근 모서리 167'
+     | Reflect
+  [sp] name='TextBox 168'
+     | All REQ items mapped to VCRM
+  [sp] name='TextBox 169'
+     | ×
+  [sp] name='사각형: 둥근 모서리 170'
+     | trace_matrix.xlsx
+  [sp] name='사각형: 둥근 모서리 171'
+     | OK
+  [sp empty] name='사각형: 둥근 모서리 172'
+  [sp] name='사각형: 둥근 모서리 173'
+     | Reflect
+  [sp] name='TextBox 174'
+     | Test / inspectionevidence
+  [sp] name='TextBox 175'
+     | ×
+  [sp] name='사각형: 둥근 모서리 176'
+     | evidence_pack.zip
+  [sp] name='사각형: 둥근 모서리 177'
+     | OK
+  [sp empty] name='사각형: 둥근 모서리 178'
+  [sp] name='TextBox 179'
+     | APPROVED IN THE  'IMPACT + APPROVAL' STEP
+  [sp] name='사각형: 둥근 모서리 180'
+     | VCRM  5/5  OK
+  [sp] name='TextBox 181'
+     | +
+  [sp] name='사각형: 둥근 모서리 182'
+     | Checklist  OK
+  [sp] name='TextBox 183'
+     | +
+  [sp] name='사각형: 둥근 모서리 184'
+     | All requirements reflected  OK
+  [sp] name='사각형: 둥근 모서리 186'
+     | PRODUCTION  RELEASED
+  [sp] name='TextBox 187'
+     | VCRM & Checklist are approval items inside the Impact + Approval step — production releases only when all are approved together.
+  [sp] name='Text 2'
+     | Future Industrial PLM
+  [sp] name='Text 13'
+     | 17
+  [sp] name='사각형: 둥근 모서리 3'
+     | × Delete
+  [sp] name='사각형: 둥근 모서리 4'
+     | × Delete
+  [sp] name='사각형: 둥근 모서리 5'
+     | × Delete
+  [sp] name='사각형: 둥근 모서리 6'
+     | × Delete
+  [sp] name='사각형: 둥근 모서리 7'
+     | × Delete
+  [sp] name='사각형: 둥근 모서리 12'
+     | × Delete
+  [sp] name='사각형: 둥근 모서리 13'
+     | × Delete
+  [sp] name='사각형: 둥근 모서리 14'
+     | × Delete
+  [sp] name='사각형: 둥근 모서리 15'
+     | × Delete
+  [sp] name='TextBox 16'
+     | verify: Test
+  [sp] name='TextBox 17'
+     | verify: 3D/Inspection
+  [sp] name='TextBox 18'
+     | verify: Design Review
+  [sp] name='사각형: 둥근 모서리 20'
+     | × Delete
+
+################## SLIDE 18  (slide18.xml) ##################
+  [sp empty] name='직사각형 6'
+  [sp] name='TextBox 88'
+     | AI-gated flow across AVEVA design tools and the API-built PLM
+  [sp] name='TextBox 96'
+     | Design in AVEVA (E3D/Marine + Draw)  →  governed & tracked in the API-built PLM, AI-gated at every step
+  [sp empty] name='사각형: 둥근 모서리 97'
+  [sp empty] name='사각형: 둥근 모서리 98'
+  [sp empty] name='타원 99'
+  [sp] name='TextBox 100'
+     | 1
+  [sp] name='TextBox 101'
+     | AVEVA E3D Design
+  [sp] name='사각형: 둥근 모서리 102'
+     | AVEVA E3D/Marine
+  [sp] name='TextBox 103'
+     | Hull & outfitting 3D model
+  [sp] name='사각형: 둥근 모서리 104'
+     | modeled  OK
+  [sp empty] name='사각형: 둥근 모서리 105'
+  [sp empty] name='사각형: 둥근 모서리 106'
+  [sp empty] name='타원 107'
+  [sp] name='TextBox 108'
+     | 2
+  [sp] name='TextBox 109'
+     | 2D Production Drawing
+  [sp] name='사각형: 둥근 모서리 110'
+     | AVEVA Draw
+  [sp] name='TextBox 111'
+     | Generate 2D sheet → export AutoCAD DWG / DXF
+  [sp] name='사각형: 둥근 모서리 112'
+     | DWG issued  OK
+  [sp empty] name='사각형: 둥근 모서리 113'
+  [sp empty] name='사각형: 둥근 모서리 114'
+  [sp empty] name='타원 115'
+  [sp] name='TextBox 116'
+     | 3
+  [sp] name='TextBox 117'
+     | E-BOM / MTO
+  [sp] name='사각형: 둥근 모서리 118'
+     | AVEVA MTO
+  [sp] name='TextBox 119'
+     | Material take-off / eng. BOM from model
+  [sp] name='사각형: 둥근 모서리 120'
+     | extracted  OK
+  [sp empty] name='사각형: 둥근 모서리 121'
+  [sp empty] name='사각형: 둥근 모서리 122'
+  [sp empty] name='타원 123'
+  [sp] name='TextBox 124'
+     | 4
+  [sp] name='TextBox 125'
+     | Approval
+  [sp] name='사각형: 둥근 모서리 126'
+     | PLM · API
+  [sp] name='TextBox 127'
+     | Approver signs off in the API-built PLM
+  [sp] name='사각형: 둥근 모서리 128'
+     | approved  OK
+  [sp empty] name='사각형: 둥근 모서리 129'
+  [sp empty] name='사각형: 둥근 모서리 130'
+  [sp empty] name='타원 131'
+  [sp] name='TextBox 132'
+     | 5
+  [sp] name='TextBox 133'
+     | Effectivity
+  [sp] name='사각형: 둥근 모서리 134'
+     | PLM · API
+  [sp] name='TextBox 135'
+     | Hull / Block / Zone / Date
+  [sp] name='사각형: 둥근 모서리 136'
+     | scoped  OK
+  [sp empty] name='사각형: 둥근 모서리 137'
+  [sp empty] name='사각형: 둥근 모서리 138'
+  [sp empty] name='타원 139'
+  [sp] name='TextBox 140'
+     | 6
+  [sp] name='TextBox 141'
+     | Baseline
+  [sp] name='사각형: 둥근 모서리 142'
+     | PLM · API
+  [sp] name='TextBox 143'
+     | Frozen configuration / released rev
+  [sp] name='사각형: 둥근 모서리 144'
+     | baselined  OK
+  [sp empty] name='사각형: 둥근 모서리 145'
+  [sp empty] name='사각형: 둥근 모서리 146'
+  [sp empty] name='타원 147'
+  [sp] name='TextBox 148'
+     | 7
+  [sp] name='TextBox 149'
+     | ECR -> ECO
+  [sp] name='사각형: 둥근 모서리 150'
+     | PLM · API
+  [sp] name='TextBox 151'
+     | Change request → changeorder
+  [sp] name='사각형: 둥근 모서리 152'
+     | ECO closed  OK
+  [sp empty] name='사각형: 둥근 모서리 153'
+  [sp empty] name='사각형: 둥근 모서리 154'
+  [sp empty] name='타원 155'
+  [sp] name='TextBox 156'
+     | 8
+  [sp] name='TextBox 157'
+     | M-BOM + MCO
+  [sp] name='사각형: 둥근 모서리 158'
+     | PLM·API + ERM
+  [sp] name='TextBox 159'
+     | Manufacturing BOM + mfg change order
+  [sp] name='사각형: 둥근 모서리 160'
+     | released  OK
+  [sp empty] name='사각형: 둥근 모서리 161'
+  [sp empty] name='사각형: 둥근 모서리 162'
+  [sp empty] name='타원 163'
+  [sp] name='TextBox 164'
+     | 9
+  [sp] name='TextBox 165'
+     | Impact + Approval
+  [sp] name='사각형: 둥근 모서리 166'
+     | PLM · API
+  [sp] name='TextBox 167'
+     | Affected objects + VCRM & Checklist approval
+  [sp] name='사각형: 둥근 모서리 168'
+     | approved  OK
+  [sp] name='육각형 177'
+     | AI
+  [sp] name='육각형 178'
+     | AI
+  [sp] name='육각형 179'
+     | AI
+  [sp] name='육각형 180'
+     | AI
+  [sp] name='육각형 181'
+     | AI
+  [sp] name='육각형 182'
+     | AI
+  [sp] name='육각형 183'
+     | AI
+  [sp] name='육각형 184'
+     | AI
+  [sp] name='TextBox 185'
+     | AI gate at every step = error check + anomaly diagnosis  ·  PASS → auto-promote  ·  FAIL → block & flag (no promote)
+  [sp] name='TextBox 186'
+     | PLM live status:  modeled → DWG issued  → MTO extracted → approved  → scoped → baselined → ECO closed → released → approved
+  [sp] name='Text 2'
+     | Future Industrial PLM
+  [sp] name='Text 13'
+     | 18
+  [sp] name='TextBox 91'
+     | AVEVA E3D/Marine 3D → AVEVA Draw 2D (AutoCAD DWG/DXF) → MTO/E-BOM → Approval → Effectivity → Baseline → ECR/ECO → M-BOM/MCO → Impact
+  [sp empty] name='사각형: 둥근 모서리 92'
+  [sp] name='TextBox 93'
+     | Future PLM   -   API workspace   ·   served at /api/v1   ·   live status tracked
+  [sp empty] name='타원 94'
+  [sp] name='TextBox 95'
+     | RUNNING
+  [sp empty] name='타원 16'
+  [sp empty] name='타원 17'
+  [sp empty] name='타원 18'
+
+################## SLIDE 19  (slide19.xml) ##################
+  [sp] name='TextBox 2'
+     | Design tool →  2D production drawing (AutoCAD DWG/DXF) →  registered in the API-built PLM
+  [sp] name='TextBox 5'
+     | AVEVA E3D/Marine model → AVEVA Draw issuesthe 2D sheet → export AutoCAD DWG/DXF (+MTO) → AI checksdrawingstandards → registered & status-tracked in the PLM.
+  [sp empty] name='사각형: 둥근 모서리 6'
+  [sp empty] name='사각형: 둥근 모서리 7'
+  [sp empty] name='타원 8'
+  [sp empty] name='타원 9'
+  [sp empty] name='타원 10'
+  [sp] name='TextBox 11'
+     | AVEVA E3D Design  —  Draw (Draughting)   ·   Hull / Block B12 / Panel P3
+  [sp empty] name='사각형: 둥근 모서리 12'
+  [sp] name='TextBox 13'
+     | MODEL TREE  (E3D)
+  [sp] name='TextBox 14'
+     | Hull
+  [sp] name='TextBox 15'
+     | Block B12
+  [sp] name='TextBox 16'
+     | Panel P3
+  [sp] name='TextBox 17'
+     | Stiffeners
+  [sp] name='TextBox 18'
+     | Brackets
+  [sp] name='TextBox 19'
+     | Block B13
+  [sp empty] name='직사각형 20'
+  [sp empty] name='직사각형 21'
+  [sp] name='TextBox 26'
+     | 3D model (E3D / Marine)
+  [sp empty] name='사각형: 둥근 모서리 27'
+  [sp] name='TextBox 31'
+     | 12 000
+  [sp empty] name='직사각형 32'
+  [sp] name='TextBox 36'
+     | PLAN
+  [sp empty] name='직사각형 37'
+  [sp] name='TextBox 39'
+     | ELEVATION
+  [sp empty] name='직사각형 40'
+  [sp] name='TextBox 43'
+     | ISO / DETAIL
+  [sp empty] name='사각형: 둥근 모서리 44'
+  [sp] name='TextBox 45'
+     | AVEVA Draw
+  [sp] name='TextBox 46'
+     | Block B12 · Panel P3
+  [sp] name='TextBox 47'
+     | Sheet 1/3 · 1:50 · A1
+  [sp] name='TextBox 48'
+     | rev A · format DWG
+  [sp] name='TextBox 49'
+     | drawing-standard: OK
+  [sp] name='사각형: 둥근 모서리 50'
+     | Export  ->  AutoCAD DWG / DXF
+  [sp] name='사각형: 둥근 모서리 51'
+     | A1 · 1:50 · layers mapped
+  [sp] name='TextBox 52'
+     | Registered in the API-built PLM
+  [sp] name='사각형: 둥근 모서리 53'
+     | B12-P3_revA.dwg     ·     + MTO
+  [sp] name='TextBox 56'
+     | drawing & standard check: title block, layers, refs
+  [sp empty] name='사각형: 둥근 모서리 58'
+  [sp] name='TextBox 59'
+     | POST  /api/v1/drawings
+  [sp] name='TextBox 60'
+     | { "block":"B12", "sheet":"P3",
+     |   "rev":"A", "format":"DWG",
+     |   "file":"B12-P3_revA.dwg" }
+     | -> 201  drawing_id: 8842
+  [sp] name='사각형: 둥근 모서리 62'
+     | registered   OK
+  [sp] name='사각형: 둥근 모서리 63'
+     | linked to Block B12 / Panel P3
+  [sp] name='사각형: 둥근 모서리 64'
+     | rev A · current · status-tracked
+  [sp] name='TextBox 65'
+     | AVEVA Draw issues the 2D production drawing (DWG/DXF) from the E3D/Marine model; 
+     | the API-built PLM registers it with its MTO, AI-checks drawing standards, and tracks revision & status across the digital thread.
+  [sp] name='Text 2'
+     | Future Industrial PLM
+  [sp] name='Text 13'
+     | 19
+  [sp] name='육각형 55'
+     | AI
+
+################## SLIDE 20  (slide20.xml) ##################
+  [sp] name='TextBox 41'
+     | E3D / Hull design - version control approach
+  [sp] name='TextBox 44'
+     | The digital thread drives version control - we do not treat 3D design like source code.
+  [sp empty] name='사각형: 둥근 모서리 45'
+  [sp] name='TextBox 46'
+     | CHALLENGE
+  [sp] name='TextBox 47'
+     | 3D files are huge - per-save Git is too heavy  ·  a central server bottlenecks with many concurrent designers  ·  manual upload misses versions
+  [sp empty] name='사각형: 둥근 모서리 48'
+  [sp empty] name='사각형: 둥근 모서리 49'
+  [sp empty] name='타원 50'
+  [sp] name='TextBox 51'
+     | 1
+  [sp] name='TextBox 52'
+     | DB-based, not file-based
+  [sp] name='TextBox 53'
+     | database elements, not whole files
+  [sp] name='TextBox 54'
+     | E3D is database-driven. Version its native element & extract/merge change history plus PLM metadata and relationships - lightweight, with no whole-file snapshots.
+  [sp empty] name='사각형: 둥근 모서리 55'
+  [sp empty] name='사각형: 둥근 모서리 56'
+  [sp empty] name='타원 57'
+  [sp] name='TextBox 58'
+     | 2
+  [sp] name='TextBox 59'
+     | Content-addressed geometry
+  [sp] name='TextBox 60'
+     | store heavy 3D once
+  [sp] name='TextBox 61'
+     | Heavy geometry is stored once in object storage (Git-LFS / S3 style, de-duplicated). PLM keeps only references and deltas, so the design tool and server stay light.
+  [sp empty] name='사각형: 둥근 모서리 62'
+  [sp empty] name='사각형: 둥근 모서리 63'
+  [sp empty] name='타원 64'
+  [sp] name='TextBox 65'
+     | 3
+  [sp] name='TextBox 66'
+     | Event-driven snapshots
+  [sp] name='TextBox 67'
+     | on promote / baseline, not every save
+  [sp] name='TextBox 68'
+     | Version on promote / AI-gate / baseline approval - not on every save. The governance flow already designed becomes the version trigger.
+  [sp empty] name='사각형: 둥근 모서리 69'
+  [sp empty] name='사각형: 둥근 모서리 70'
+  [sp empty] name='타원 71'
+  [sp] name='TextBox 72'
+     | 4
+  [sp] name='TextBox 73'
+     | Async queued capture
+  [sp] name='TextBox 74'
+     | background, no bottleneck
+  [sp] name='TextBox 75'
+     | Snapshots are captured in the background via a queue on the redundant Linux servers, so many concurrent designers never hit a bottleneck.
+  [sp empty] name='사각형: 둥근 모서리 76'
+  [sp] name='TextBox 77'
+     | CORE
+  [sp] name='TextBox 78'
+     | E3D is not source code.  DB-element + metadata versioning · content-addressed geometry · versions triggered by promote/baseline events and captured asynchronously - the digital thread drives version control.
+  [sp] name='Text 2'
+     | Future Industrial PLM
+  [sp] name='Text 13'
+     | 20
+
+################## SLIDE 21  (slide21.xml) ##################
+  [sp] name='TextBox 2'
+     | Continuous Naval Assurance Control Plane - API concept
+  [sp] name='TextBox 3'
+     | Every promoted E3D/Hull revision re-evaluates only affected naval-architecture scenarios, then publishes explainable margins, evidence and approval state in the user PLM.
+  [sp] name='TextBox 4'
+     | Future Industrial PLM
+  [sp] name='TextBox 5'
+     | 21
+  [sp empty] name='사각형: 둥근 모서리 6'
+  [sp] name='TextBox 7'
+     | captured  ->  affected  ->  calculated  ->  explained  ->  approved  ->  learned
+  [sp empty] name='사각형: 둥근 모서리 8'
+  [sp empty] name='직사각형 9'
+  [sp empty] name='타원 10'
+  [sp] name='TextBox 11'
+     | 1
+  [sp] name='TextBox 12'
+     | Design-change event
+  [sp] name='TextBox 13'
+     | E3D / Marine + PLM
+  [sp] name='TextBox 14'
+     | Promoted revision or baseline emits a typed event with hull, block, option and date effectivity.
+  [sp empty] name='사각형: 둥근 모서리 15'
+  [sp] name='TextBox 16'
+     | POST /api/v1/revisions
+  [sp empty] name='사각형: 둥근 모서리 17'
+  [sp empty] name='직사각형 18'
+  [sp empty] name='타원 19'
+  [sp] name='TextBox 20'
+     | 2
+  [sp] name='TextBox 21'
+     | Assurance impact graph
+  [sp] name='TextBox 22'
+     | customer-owned graph
+  [sp] name='TextBox 23'
+     | Find affected compartments, loading cases, rules, downstream objects and previous evidence.
+  [sp empty] name='사각형: 둥근 모서리 24'
+  [sp] name='TextBox 25'
+     | POST /api/v1/assurance/impact
+  [sp empty] name='사각형: 둥근 모서리 26'
+  [sp empty] name='직사각형 27'
+  [sp empty] name='타원 28'
+  [sp] name='TextBox 29'
+     | 3
+  [sp] name='TextBox 30'
+     | Federated solver run
+  [sp] name='TextBox 31'
+     | NAPA + class / CFD / FEM adapters
+  [sp] name='TextBox 32'
+     | Execute only affected scenarios; preserve certified solver results and provenance.
+  [sp empty] name='사각형: 둥근 모서리 33'
+  [sp] name='TextBox 34'
+     | POST /api/v1/solver-runs
+  [sp empty] name='사각형: 둥근 모서리 35'
+  [sp empty] name='직사각형 36'
+  [sp empty] name='타원 37'
+  [sp] name='TextBox 38'
+     | 4
+  [sp] name='TextBox 39'
+     | Physics-guarded AI diagnosis
+  [sp] name='TextBox 40'
+     | explain + propose alternatives
+  [sp] name='TextBox 41'
+     | Explain margin erosion; rank counterfactual options across safety, weight, cost, buildability and operations.
+  [sp empty] name='사각형: 둥근 모서리 42'
+  [sp] name='TextBox 43'
+     | GET /api/v1/diagnostics/{run}
+  [sp empty] name='사각형: 둥근 모서리 44'
+  [sp empty] name='직사각형 45'
+  [sp empty] name='타원 46'
+  [sp] name='TextBox 47'
+     | 5
+  [sp] name='TextBox 48'
+     | Evidence + approval pack
+  [sp] name='TextBox 49'
+     | OCX / class / baseline / approval
+  [sp] name='TextBox 50'
+     | Publish signed results, rule trace, affected objects, evidence pack and release decision.
+  [sp empty] name='사각형: 둥근 모서리 51'
+  [sp] name='TextBox 52'
+     | POST /api/v1/evidence-packs
+  [sp empty] name='사각형: 둥근 모서리 53'
+  [sp empty] name='직사각형 54'
+  [sp empty] name='타원 55'
+  [sp] name='TextBox 56'
+     | 6
+  [sp] name='TextBox 57'
+     | Operations calibration
+  [sp] name='TextBox 58'
+     | PI System + CONNECT
+  [sp] name='TextBox 59'
+     | Compare design assumptions with live draught, tank, trim and performance data; feed learning back.
+  [sp empty] name='사각형: 둥근 모서리 60'
+  [sp] name='TextBox 61'
+     | POST /api/v1/operations/calibration
+  [sp] name='TextBox 68'
+     | operational learning loop
+  [sp empty] name='사각형: 둥근 모서리 69'
+  [sp] name='TextBox 70'
+     | GUARDRAIL
+  [sp] name='TextBox 71'
+     | AI prioritizes, explains and proposes; certified solvers calculate; the naval architect and class authority make the release decision. This is how the platform moves faster without weakening assurance.
+  [sp] name='TextBox 72'
+     | Official-source basis: NAPA naval architecture + Node Network + OCX; AVEVA E3D Design + CONNECT + PI System official product pages. Concept architecture is a proposed AVEVA-based PLM extension.
+
+################## SLIDE 22  (slide22.xml) ##################
+  [sp] name='TextBox 2'
+     | User-Configurable PLM Process — AlteringtheEntireFlowvia API (AdminPrivileges)
+  [sp] name='TextBox 5'
+     | Admins reorder, add or remove steps and reconfigure AI gates through governed API calls; the live PLM flow updates immediately — versioned, role-gated and audited.
+  [sp empty] name='사각형: 둥근 모서리 6'
+  [sp empty] name='사각형: 둥근 모서리 7'
+  [sp empty] name='타원 8'
+  [sp empty] name='타원 9'
+  [sp empty] name='타원 10'
+  [sp] name='TextBox 11'
+     | Future PLM  —  Process Designer  ·  admin  ·  /api/v1
+  [sp] name='TextBox 12'
+     | Drag to reorder   ·   gate = configure AI gate   ·   x = remove   ·   + add step
+  [sp empty] name='사각형: 둥근 모서리 13'
+  [sp] name='TextBox 14'
+     | ≡
+  [sp empty] name='타원 15'
+  [sp] name='TextBox 16'
+     | Requirement
+  [sp] name='TextBox 17'
+     | ↑  ↓     gate     ×
+  [sp] name='사각형: 둥근 모서리 18'
+     | moved
+  [sp empty] name='사각형: 둥근 모서리 19'
+  [sp] name='TextBox 20'
+     | ≡
+  [sp empty] name='타원 21'
+  [sp] name='TextBox 22'
+     | Design (E3D / Marine)
+  [sp] name='TextBox 23'
+     | ↑  ↓     gate     ×
+  [sp empty] name='사각형: 둥근 모서리 24'
+  [sp] name='TextBox 25'
+     | ≡
+  [sp empty] name='타원 26'
+  [sp] name='TextBox 27'
+     | 2D Drawing (AVEVA Draw)
+  [sp] name='TextBox 28'
+     | ↑  ↓     gate     ×
+  [sp empty] name='사각형: 둥근 모서리 29'
+  [sp] name='TextBox 30'
+     | ≡
+  [sp empty] name='타원 31'
+  [sp] name='TextBox 32'
+     | E-BOM / MTO
+  [sp] name='TextBox 33'
+     | ↑  ↓     gate     ×
+  [sp empty] name='사각형: 둥근 모서리 34'
+  [sp] name='TextBox 35'
+     | ≡
+  [sp empty] name='타원 36'
+  [sp] name='TextBox 37'
+     | Approval
+  [sp] name='TextBox 38'
+     | ↑  ↓     gate     ×
+  [sp empty] name='사각형: 둥근 모서리 39'
+  [sp] name='TextBox 40'
+     | ≡
+  [sp empty] name='타원 41'
+  [sp] name='TextBox 42'
+     | Effectivity
+  [sp] name='TextBox 43'
+     | ↑  ↓     gate     ×
+  [sp empty] name='사각형: 둥근 모서리 44'
+  [sp] name='TextBox 45'
+     | ≡
+  [sp empty] name='타원 46'
+  [sp] name='TextBox 47'
+     | Baseline
+  [sp] name='TextBox 48'
+     | ↑  ↓     gate     ×
+  [sp empty] name='사각형: 둥근 모서리 49'
+  [sp] name='TextBox 50'
+     | ≡
+  [sp empty] name='타원 51'
+  [sp] name='TextBox 52'
+     | ECR / ECO
+  [sp] name='TextBox 53'
+     | ↑  ↓     gate     ×
+  [sp empty] name='사각형: 둥근 모서리 54'
+  [sp] name='TextBox 55'
+     | ≡
+  [sp empty] name='타원 56'
+  [sp] name='TextBox 57'
+     | M-BOM / MCO
+  [sp] name='TextBox 58'
+     | ↑  ↓     gate     ×
+  [sp empty] name='사각형: 둥근 모서리 59'
+  [sp] name='TextBox 60'
+     | ≡
+  [sp empty] name='타원 61'
+  [sp] name='TextBox 62'
+     | Impact + Approval
+  [sp] name='TextBox 63'
+     | ↑  ↓     gate     ×
+  [sp] name='사각형: 둥근 모서리 64'
+     | + Add step
+  [sp] name='사각형: 둥근 모서리 65'
+     | Save & version process
+  [sp] name='TextBox 66'
+     | Process configuration API   (admin · role-gated)
+  [sp empty] name='사각형: 둥근 모서리 67'
+  [sp] name='TextBox 68'
+     | REST · OpenAPI 3.1 · OIDC
+  [sp] name='TextBox 69'
+     | GET     /api/v1/process/definition
+     | PUT     /api/v1/process/steps/{id}/order     # reorder
+     | POST    /api/v1/process/steps                # add step
+     | DELETE  /api/v1/process/steps/{id}           # remove
+     | PUT     /api/v1/process/gates/{id}           # AI gate
+  [sp] name='TextBox 70'
+     | versioned · role-gated (admin) · audit-logged · takes effect immediately
+  [sp] name='TextBox 71'
+     | Example change: move Requirement before Design
+  [sp empty] name='사각형: 둥근 모서리 72'
+  [sp] name='TextBox 73'
+     | BEFORE
+  [sp] name='사각형: 둥근 모서리 74'
+     | Design (E3D)
+  [sp] name='사각형: 둥근 모서리 76'
+     | Requirement
+  [sp] name='TextBox 77'
+     | (req after design)
+  [sp] name='사각형: 둥근 모서리 78'
+     | PUT /api/v1/process/steps/requirement/order  { "before": "design" }
+  [sp] name='TextBox 79'
+     | AFTER
+  [sp] name='사각형: 둥근 모서리 80'
+     | Requirement
+  [sp] name='사각형: 둥근 모서리 82'
+     | Design (E3D)
+  [sp] name='TextBox 83'
+     | → restofflow
+  [sp] name='TextBox 84'
+     | Other changes via the same API:
+  [sp] name='사각형: 둥근 모서리 85'
+     | POST /steps → 
+     | + Class Approval
+  [sp] name='사각형: 둥근 모서리 86'
+     | DELETE /steps/{id}
+  [sp] name='사각형: 둥근 모서리 87'
+     | PUT /gates  →  threshold
+  [sp] name='TextBox 88'
+     | AI re-validates the reconfigured process; every user immediately sees the updated flow, gates and live status — no redeploy, fully audited.
+  [sp] name='Text 2'
+     | Future Industrial PLM
+  [sp] name='Text 13'
+     | 22
+
+################## SLIDE 23  (slide23.xml) ##################
+  [sp] name='Text 0'
+     | Executable gate flow
+  [sp] name='Text 1'
+     | Quality and impact rules use the same evaluate → promote governance pattern
+  [sp] name='Text 2'
+     | Future Industrial PLM
+  [sp empty] name='Shape 3'
+  [sp] name='Text 4'
+     | 1. Evaluate
+     | Rules produce candidates without changing official records.
+  [sp] name='Text 5'
+     | 2. Review
+     | Planner / engineer checks candidates, severity, object context and evidence.
+  [sp] name='Text 6'
+     | 3. Promote
+     | Authorized role promotes candidates into official quality issues or change impacts.
+  [sp] name='Text 7'
+     | 4. Measure
+     | Dashboard updates KPI, gate status and readiness with traceable audit.
+  [sp] name='Text 8'
+     | Why this matters
+     | It separates automated detection from controlled engineering decisions.
+  [sp] name='Text 9'
+     | 23
+  <PICTURE> name='그림 13'
+   >> media: ../media/image7.png
+   --- NOTES --- 23
+
+################## SLIDE 24  (slide24.xml) ##################
+  [sp] name='TextBox 6'
+     | Delivery WBS - consolidated after the full solution scope
+  [sp] name='TextBox 7'
+     | Six KPI-gated packages: configuration first, then Continuous Naval Assurance and shipyard adoption
+  [sp] name='TextBox 8'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 9'
+  [sp empty] name='직사각형 34'
+  [sp] name='TextBox 61'
+     | G1
+  [sp] name='TextBox 62'
+     | wk2
+  [sp empty] name='다이아몬드 63'
+  [sp empty] name='직사각형 64'
+  [sp] name='TextBox 65'
+     | G2
+  [sp] name='TextBox 66'
+     | wk6
+  [sp empty] name='다이아몬드 67'
+  [sp empty] name='직사각형 68'
+  [sp] name='TextBox 69'
+     | G3
+  [sp] name='TextBox 70'
+     | wk12
+  [sp empty] name='다이아몬드 71'
+  [sp empty] name='직사각형 72'
+  [sp] name='TextBox 73'
+     | G4
+  [sp] name='TextBox 74'
+     | wk16
+  [sp empty] name='다이아몬드 75'
+  [sp empty] name='직사각형 76'
+  [sp] name='TextBox 77'
+     | G5
+  [sp] name='TextBox 78'
+     | wk22
+  [sp empty] name='다이아몬드 79'
+  [sp empty] name='직사각형 80'
+  [sp] name='TextBox 81'
+     | G6
+  [sp] name='TextBox 82'
+     | wk26
+  [sp empty] name='다이아몬드 83'
+  [sp] name='TextBox 84'
+     | start
+  [sp empty] name='직사각형 85'
+  [sp] name='TextBox 86'
+     | WBS 0
+  [sp] name='TextBox 87'
+     | Readiness
+  [sp empty] name='사각형: 둥근 모서리 88'
+  [sp] name='TextBox 89'
+     | 2 wks
+  [sp] name='TextBox 90'
+     | Backlog · environment · source · roles
+  [sp] name='TextBox 91'
+     | WBS 1
+  [sp] name='TextBox 92'
+     | Phase 1 hardening
+  [sp empty] name='사각형: 둥근 모서리 93'
+  [sp] name='TextBox 94'
+     | 4 wks
+  [sp] name='TextBox 95'
+     | S6 gates · OIDC · dashboard · CI
+  [sp] name='TextBox 96'
+     | WBS 2
+  [sp] name='TextBox 97'
+     | Configuration core
+  [sp empty] name='사각형: 둥근 모서리 98'
+  [sp] name='TextBox 99'
+     | 6 wks
+  [sp] name='TextBox 100'
+     | BOM · effectivity · baseline · APIs
+  [sp] name='TextBox 101'
+     | WBS 3
+  [sp] name='TextBox 102'
+     | Change impact
+  [sp empty] name='사각형: 둥근 모서리 103'
+  [sp] name='TextBox 104'
+     | 4 wks
+  [sp] name='TextBox 105'
+     | ECR/ECO/MOC · impact graph · promote
+  [sp] name='TextBox 106'
+     | WBS 4
+  [sp] name='TextBox 107'
+     | Naval assurance
+  [sp empty] name='사각형: 둥근 모서리 108'
+  [sp] name='TextBox 109'
+     | 6 wks
+  [sp] name='TextBox 110'
+     | E3D/Hull event · solver adapters · evidence
+  [sp] name='TextBox 111'
+     | WBS 5
+  [sp] name='TextBox 112'
+     | Pilot adoption
+  [sp empty] name='사각형: 둥근 모서리 113'
+  [sp] name='TextBox 114'
+     | 4 wks
+  [sp] name='TextBox 115'
+     | Shipyard UAT · class review · performance
+  [sp] name='TextBox 116'
+     | Gates -> G1 ready | G2 E2E/OIDC | G3 BOM/effectivity 99% | G4 impact recall >=95% | G5 solver provenance + evidence 100% | G6 UAT / response <=5s
+  [sp empty] name='사각형: 둥근 모서리 117'
+  [sp] name='TextBox 118'
+     | Control principle: every package ships API contract, seed truth set, E2E test, KPI threshold, evidence and demo scenario.
+  [sp] name='TextBox 119'
+     | 24
+   --- NOTES --- 24
+
+################## SLIDE 25  (slide25.xml) ##################
+  [sp] name='TextBox 6'
+     | KPI model - configuration and naval assurance acceptance
+  [sp] name='TextBox 7'
+     | Objective gates measure correctness, evidence provenance and decision speed - not subjective progress
+  [sp] name='TextBox 8'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 9'
+  [sp empty] name='사각형: 둥근 모서리 10'
+  [sp empty] name='직사각형 11'
+  [sp] name='TextBox 12'
+     | API contract coverage
+  [sp] name='TextBox 69'
+     | 100%
+  [sp empty] name='직사각형 70'
+  [sp empty] name='직사각형 71'
+  [sp] name='TextBox 72'
+     | All committed features ship with OpenAPI + tests
+  [sp empty] name='사각형: 둥근 모서리 73'
+  [sp empty] name='직사각형 74'
+  [sp] name='TextBox 75'
+     | E2E gate pass rate
+  [sp] name='TextBox 76'
+     | >=95%
+  [sp empty] name='직사각형 77'
+  [sp empty] name='직사각형 78'
+  [sp] name='TextBox 79'
+     | CI validates seed, evaluate, promote and rollback
+  [sp empty] name='사각형: 둥근 모서리 80'
+  [sp empty] name='직사각형 81'
+  [sp] name='TextBox 82'
+     | BOM / effectivity accuracy
+  [sp] name='TextBox 83'
+     | >=99%
+  [sp empty] name='직사각형 84'
+  [sp empty] name='직사각형 85'
+  [sp] name='TextBox 86'
+     | Correct levels, quantities and scoped configuration
+  [sp empty] name='사각형: 둥근 모서리 87'
+  [sp empty] name='직사각형 88'
+  [sp] name='TextBox 89'
+     | Impact graph recall
+  [sp] name='TextBox 90'
+     | >=95%
+  [sp empty] name='직사각형 91'
+  [sp empty] name='직사각형 92'
+  [sp] name='TextBox 93'
+     | Find all seeded affected objects and naval scenarios
+  [sp empty] name='사각형: 둥근 모서리 94'
+  [sp empty] name='직사각형 95'
+  [sp] name='TextBox 96'
+     | Solver-run provenance
+  [sp] name='TextBox 97'
+     | 100%
+  [sp empty] name='직사각형 98'
+  [sp empty] name='직사각형 99'
+  [sp] name='TextBox 100'
+     | Version, input, result and approval source retained
+  [sp empty] name='사각형: 둥근 모서리 101'
+  [sp empty] name='직사각형 102'
+  [sp] name='TextBox 103'
+     | Evidence-pack completeness
+  [sp] name='TextBox 104'
+     | 100%
+  [sp empty] name='직사각형 105'
+  [sp empty] name='직사각형 106'
+  [sp] name='TextBox 107'
+     | Rule trace, affected objects and approval pack present
+  [sp empty] name='사각형: 둥근 모서리 108'
+  [sp empty] name='직사각형 109'
+  [sp] name='TextBox 110'
+     | AI diagnostic precision
+  [sp] name='TextBox 111'
+     | >=85%
+  [sp empty] name='직사각형 112'
+  [sp empty] name='직사각형 113'
+  [sp] name='TextBox 114'
+     | Useful ranked explanations without release authority
+  [sp empty] name='사각형: 둥근 모서리 115'
+  [sp empty] name='직사각형 116'
+  [sp] name='TextBox 117'
+     | Dashboard / approval response
+  [sp] name='TextBox 118'
+     | <=5 s
+  [sp empty] name='직사각형 119'
+  [sp empty] name='직사각형 120'
+  [sp] name='TextBox 121'
+     | Status, margin and approval summary under pilot load
+  [sp empty] name='사각형: 둥근 모서리 122'
+  [sp] name='TextBox 123'
+     | GATE DECISION
+  [sp] name='TextBox 124'
+     | PASS | CONDITIONAL PASS with backlog | FAIL + remediation sprint. AI never owns the certified release decision.
+  [sp] name='TextBox 125'
+     | 25
+   --- NOTES --- 25
+
+################## SLIDE 26  (slide26.xml) ##################
+  [sp] name='TextBox 57'
+     | Future-state comparison - AVEVA wins by orchestrating the full assurance loop
+  [sp] name='TextBox 58'
+     | Proposed open AVEVA control plane versus NAPA, Siemens / Dassault PLM and other ship design tools
+  [sp] name='TextBox 59'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 60'
+  [sp] name='사각형: 둥근 모서리 61'
+     | Capability
+  [sp] name='사각형: 둥근 모서리 63'
+     | AVEVA + Continuous
+Naval Assurance
+  [sp] name='사각형: 둥근 모서리 65'
+     | NAPA
+  [sp] name='사각형: 둥근 모서리 67'
+     | Siemens / Dassault
+     | PLM platforms
+  [sp] name='사각형: 둥근 모서리 69'
+     | Other ship
+design tools
+  [sp empty] name='사각형: 둥근 모서리 71'
+  [sp] name='TextBox 72'
+     | Certified stability / hydrostatics
+  [sp] name='TextBox 73'
+     | Federated
+  [sp] name='TextBox 74'
+     | Strong
+  [sp] name='TextBox 75'
+     | Limited
+  [sp] name='TextBox 76'
+     | Partial
+  [sp empty] name='사각형: 둥근 모서리 77'
+  [sp] name='TextBox 78'
+     | Hull + outfitting + production
+  [sp] name='TextBox 79'
+     | Strong
+  [sp] name='TextBox 80'
+     | Partial
+  [sp] name='TextBox 81'
+     | Partial
+  [sp] name='TextBox 82'
+     | Strong
+  [sp empty] name='사각형: 둥근 모서리 83'
+  [sp] name='TextBox 84'
+     | Configuration / change / effectivity
+  [sp] name='TextBox 85'
+     | Strong
+  [sp] name='TextBox 86'
+     | Partial
+  [sp] name='TextBox 87'
+     | Strong
+  [sp] name='TextBox 88'
+     | Partial
+  [sp empty] name='사각형: 둥근 모서리 89'
+  [sp] name='TextBox 90'
+     | Cross-domain assurance impact graph
+  [sp] name='TextBox 91'
+     | Strong - new
+  [sp] name='TextBox 92'
+     | Partial
+  [sp] name='TextBox 93'
+     | Partial
+  [sp] name='TextBox 94'
+     | Limited
+  [sp empty] name='사각형: 둥근 모서리 95'
+  [sp] name='TextBox 96'
+     | Evidence + approval orchestration
+  [sp] name='TextBox 97'
+     | Strong - new
+  [sp] name='TextBox 98'
+     | Partial
+  [sp] name='TextBox 99'
+     | Strong
+  [sp] name='TextBox 100'
+     | Partial
+  [sp empty] name='사각형: 둥근 모서리 101'
+  [sp] name='TextBox 102'
+     | Operations calibration / learning
+  [sp] name='TextBox 103'
+     | Strong - new
+  [sp] name='TextBox 104'
+     | Partial
+  [sp] name='TextBox 105'
+     | Partial
+  [sp] name='TextBox 106'
+     | Partial
+  [sp empty] name='사각형: 둥근 모서리 107'
+  [sp] name='TextBox 108'
+     | Customer-owned API / process
+  [sp] name='TextBox 109'
+     | Strong
+  [sp] name='TextBox 110'
+     | Partial
+  [sp] name='TextBox 111'
+     | Partial
+  [sp] name='TextBox 112'
+     | Partial
+  [sp empty] name='사각형: 둥근 모서리 113'
+  [sp] name='TextBox 114'
+     | TAKEAWAY
+  [sp] name='TextBox 115'
+     | Distinctive position = Siemens-grade configuration + Dassault-grade collaboration + NAPA-grade assurance, connected by customer-owned APIs and AVEVA lifecycle context.
+  [sp] name='TextBox 116'
+     | Future-state concept comparison; proposed capabilities require pilot validation and class / customer agreement.
+  [sp] name='TextBox 117'
+     | 26
+
+################## SLIDE 27  (slide27.xml) ##################
+  [sp empty] name='직사각형 4'
+  [sp] name='TextBox 5'
+     | Review ownership and operating model
+  [sp] name='TextBox 6'
+     | A cross-functional review board sees the same KPI, risk, evidence and release state before any capability is promoted
+  [sp] name='TextBox 7'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 8'
+  [sp] name='TextBox 9'
+     | ACCOUNTABLE REVIEW BOARD
+  [sp empty] name='사각형: 둥근 모서리 10'
+  [sp empty] name='직사각형 11'
+  [sp] name='TextBox 13'
+     | PRODUCT PLANNING
+  [sp] name='TextBox 14'
+     | Roadmap · MVP scope · user outcomes · KPI thresholds
+  [sp empty] name='사각형: 둥근 모서리 20'
+  [sp empty] name='직사각형 23'
+  [sp] name='TextBox 44'
+     | NAVAL ARCHITECTURE + CLASS
+  [sp] name='TextBox 45'
+     | Criteria · solver validation · evidence adequacy · release
+  [sp empty] name='사각형: 둥근 모서리 46'
+  [sp empty] name='직사각형 47'
+  [sp] name='TextBox 48'
+     | SOLUTION ARCHITECTURE
+  [sp] name='TextBox 49'
+     | Data model · assurance graph · OpenAPI · adapters · NFRs
+  [sp empty] name='사각형: 둥근 모서리 50'
+  [sp empty] name='직사각형 51'
+  [sp] name='TextBox 52'
+     | DEVELOPMENT TEAM
+  [sp] name='TextBox 53'
+     | Implementation · automation · security · performance · defects
+  [sp empty] name='사각형: 둥근 모서리 54'
+  [sp] name='TextBox 55'
+     | WEEKLY STEERING + REVIEW
+  [sp] name='TextBox 56'
+     | 1  KPI + evidence dashboard     2  Failing configuration / assurance gates     3  Class and naval-architecture issues
+     | 4  Scope-change decisions     5  Promote completed capabilities + update risk burndown
+  [sp] name='TextBox 57'
+     | 27
+   >> media: ../media/image8.png
+   --- NOTES --- 27
+
+################## SLIDE 28  (slide28.xml) ##################
+  [sp] name='TextBox 4'
+     | Key review risks and mitigations
+  [sp] name='TextBox 5'
+     | Continuous Naval Assurance adds value only when certified authority, provenance and scope boundaries stay explicit
+  [sp] name='TextBox 6'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 7'
+  [sp empty] name='사각형: 둥근 모서리 8'
+  [sp empty] name='사각형: 둥근 모서리 9'
+  [sp empty] name='사각형: 둥근 모서리 10'
+  [sp empty] name='사각형: 둥근 모서리 11'
+  [sp empty] name='사각형: 둥근 모서리 13'
+  [sp empty] name='사각형: 둥근 모서리 68'
+  [sp empty] name='사각형: 둥근 모서리 69'
+  [sp empty] name='사각형: 둥근 모서리 70'
+  [sp empty] name='사각형: 둥근 모서리 71'
+  [sp] name='TextBox 72'
+     | High
+  [sp] name='TextBox 73'
+     | Med
+  [sp] name='TextBox 74'
+     | Low
+  [sp] name='TextBox 75'
+     | Low
+  [sp] name='TextBox 76'
+     | Med
+  [sp] name='TextBox 77'
+     | High
+  [sp] name='TextBox 78'
+     | Impact ->
+  [sp] name='TextBox 79'
+     | Likelihood
+  [sp empty] name='타원 80'
+  [sp] name='TextBox 81'
+     | 1
+  [sp empty] name='타원 82'
+  [sp] name='TextBox 83'
+     | 2
+  [sp empty] name='타원 84'
+  [sp] name='TextBox 85'
+     | 3
+  [sp empty] name='타원 86'
+  [sp] name='TextBox 87'
+     | 4
+  [sp empty] name='타원 88'
+  [sp] name='TextBox 89'
+     | 5
+  [sp] name='TextBox 90'
+     | Risk -> mitigation
+  [sp empty] name='사각형: 둥근 모서리 91'
+  [sp empty] name='타원 92'
+  [sp] name='TextBox 93'
+     | 1
+  [sp] name='TextBox 94'
+     | Scope creep
+  [sp] name='TextBox 95'
+     | Pilot one E3D/Hull scenario; adapters orchestrate solvers instead of rewriting them.
+  [sp empty] name='사각형: 둥근 모서리 96'
+  [sp empty] name='타원 97'
+  [sp] name='TextBox 98'
+     | 2
+  [sp] name='TextBox 99'
+     | Solver / class acceptance
+  [sp] name='TextBox 100'
+     | Certified solver remains source of truth; immutable provenance and human/class release.
+  [sp empty] name='사각형: 둥근 모서리 101'
+  [sp empty] name='타원 102'
+  [sp] name='TextBox 103'
+     | 3
+  [sp] name='TextBox 104'
+     | Data and model mapping
+  [sp] name='TextBox 105'
+     | Seeded truth cases validate hull, compartment, weight, loading case and rule links.
+  [sp empty] name='사각형: 둥근 모서리 106'
+  [sp empty] name='타원 107'
+  [sp] name='TextBox 108'
+     | 4
+  [sp] name='TextBox 109'
+     | AI overreach / security
+  [sp] name='TextBox 110'
+     | AI proposes and explains only; OIDC/RBAC, signed evidence and full audit trail.
+  [sp empty] name='사각형: 둥근 모서리 111'
+  [sp empty] name='타원 112'
+  [sp] name='TextBox 113'
+     | 5
+  [sp] name='TextBox 114'
+     | Adoption and ownership
+  [sp] name='TextBox 115'
+     | Naval architect, engineering, IT and planning jointly own pilot and KPI decisions.
+  [sp] name='TextBox 116'
+     | 28
+   --- NOTES --- 28
+
+################## SLIDE 29  (slide29.xml) ##################
+  [sp] name='TextBox 2'
+     | Evidence base and assumption boundaries
+  [sp] name='TextBox 3'
+     | Official product signals support the direction; proposed AVEVA control-plane capabilities still require pilot validation
+  [sp] name='TextBox 4'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 5'
+  [sp empty] name='사각형: 둥근 모서리 6'
+  [sp empty] name='직사각형 7'
+  [sp] name='TextBox 8'
+     | AVEVA
+  [sp] name='TextBox 9'
+     | PUBLIC SIGNAL
+     | Data-centric engineering + industrial intelligence
+  [sp empty] name='직사각형 10'
+  [sp] name='TextBox 11'
+     | DESIGN USE
+     | Engineering-to-operations lifecycle context
+  [sp empty] name='사각형: 둥근 모서리 12'
+  [sp empty] name='직사각형 47'
+  [sp] name='TextBox 48'
+     | SIEMENS
+  [sp] name='TextBox 49'
+     | PUBLIC SIGNAL
+     | Digital thread / twin + PLM process automation
+  [sp empty] name='직사각형 50'
+  [sp] name='TextBox 51'
+     | DESIGN USE
+     | Configuration rigor and lifecycle governance
+  [sp empty] name='사각형: 둥근 모서리 52'
+  [sp empty] name='직사각형 53'
+  [sp] name='TextBox 54'
+     | DASSAULT
+  [sp] name='TextBox 55'
+     | PUBLIC SIGNAL
+     | Model-based collaboration + virtual twins
+  [sp empty] name='직사각형 56'
+  [sp] name='TextBox 57'
+     | DESIGN USE
+     | Role context and executable twin decisions
+  [sp empty] name='사각형: 둥근 모서리 58'
+  [sp empty] name='직사각형 59'
+  [sp] name='TextBox 60'
+     | HEXAGON
+  [sp] name='TextBox 61'
+     | PUBLIC SIGNAL
+     | Asset lifecycle from design through maintenance
+  [sp empty] name='직사각형 62'
+  [sp] name='TextBox 63'
+     | DESIGN USE
+     | Completions, handover and operations context
+  [sp empty] name='사각형: 둥근 모서리 64'
+  [sp empty] name='직사각형 65'
+  [sp] name='TextBox 66'
+     | PTC
+  [sp] name='TextBox 67'
+     | PUBLIC SIGNAL
+     | Requirements, risk, test traceability + AI
+  [sp empty] name='직사각형 68'
+  [sp] name='TextBox 69'
+     | DESIGN USE
+     | Verification gates and affected-object trace
+  [sp empty] name='사각형: 둥근 모서리 70'
+  [sp empty] name='직사각형 71'
+  [sp] name='TextBox 72'
+     | NAPA
+  [sp] name='TextBox 73'
+     | PUBLIC SIGNAL
+     | Naval calculations, rules and workflows
+  [sp empty] name='직사각형 74'
+  [sp] name='TextBox 75'
+     | DESIGN USE
+     | Approved solver-of-record adapter
+  [sp empty] name='사각형: 둥근 모서리 76'
+  [sp] name='TextBox 77'
+     | ASSUMPTION
+     | BOUNDARY
+  [sp] name='TextBox 78'
+     | Public signals are not product commitments. The assurance graph, solver adapters, AI diagnosis and closed-loop calibration are proposed AVEVA-based PLM extensions; validate scope, authority and evidence with HD Hyundai, vendors and class authorities.
+  [sp] name='TextBox 79'
+     | Official product pages checked 6 Jun 2026: aveva.com | siemens.com/teamcenter | 3ds.com/3dexperience/enovia | hexagon.com/asset-lifecycle | ptc.com/codebeamer/windchill | napa.fi
+  [sp] name='TextBox 80'
+     | 29
+   --- NOTES --- 29
+
+################## SLIDE 30  (slide30.xml) ##################
+  [sp empty] name='사각형: 둥근 모서리 2'
+  [sp] name='TextBox 7'
+     | Recommended decision
+  [sp] name='TextBox 8'
+     | Approve the bounded next increment that proves the open AVEVA control plane in a real shipbuilding change scenario
+  [sp] name='TextBox 9'
+     | Future Industrial PLM
+  [sp empty] name='직사각형 10'
+  [sp empty] name='사각형: 둥근 모서리 11'
+  [sp empty] name='직사각형 12'
+  [sp] name='TextBox 13'
+     | APPROVE NOW
+  [sp] name='TextBox 14'
+     | Phase 2 configuration core + bounded Continuous Naval Assurance pilot
+  [sp empty] name='타원 15'
+  [sp] name='TextBox 16'
+     | 1
+  [sp] name='TextBox 17'
+     | PRODUCT POSITION
+  [sp] name='TextBox 18'
+     | Open AVEVA control plane above specialist tools
+  [sp empty] name='타원 19'
+  [sp] name='TextBox 20'
+     | 2
+  [sp] name='TextBox 21'
+     | DELIVERY INCREMENT
+  [sp] name='TextBox 22'
+     | One E3D/Hull change-to-evidence pilot slice
+  [sp empty] name='타원 23'
+  [sp] name='TextBox 24'
+     | 3
+  [sp] name='TextBox 25'
+     | GOVERNANCE
+  [sp] name='TextBox 26'
+     | 26-week WBS, KPI gates, customer + class release
+  [sp] name='TextBox 27'
+     | WHAT APPROVAL UNLOCKS
+  [sp empty] name='사각형: 둥근 모서리 28'
+  [sp empty] name='직사각형 29'
+  [sp] name='TextBox 30'
+     | 0-6 WEEKS
+  [sp] name='TextBox 31'
+     | Harden reference
+  [sp] name='TextBox 32'
+     | OIDC · seed truth · E2E gates
+  [sp empty] name='사각형: 둥근 모서리 33'
+  [sp empty] name='직사각형 34'
+  [sp] name='TextBox 35'
+     | 6-16 WEEKS
+  [sp] name='TextBox 36'
+     | Configuration + impact
+  [sp] name='TextBox 37'
+     | BOM · effectivity · baseline · graph
+  [sp empty] name='사각형: 둥근 모서리 38'
+  [sp empty] name='직사각형 39'
+  [sp] name='TextBox 40'
+     | 16-26 WEEKS
+  [sp] name='TextBox 41'
+     | Assurance + UAT
+  [sp] name='TextBox 42'
+     | Solver evidence · approvals · class review
+  [sp empty] name='사각형: 둥근 모서리 45'
+  [sp empty] name='직사각형 46'
+  [sp] name='TextBox 47'
+     | PROOF AT G6: ONE CLOSED, AUDITABLE LOOP
+  [sp] name='사각형: 둥근 모서리 48'
+     | E3D / Hull
+     | change
+  [sp] name='사각형: 둥근 모서리 50'
+     | Affected
+     | scenarios
+  [sp] name='사각형: 둥근 모서리 52'
+     | Approved solver
+     | evidence
+  [sp] name='사각형: 둥근 모서리 54'
+     | Human / class
+     | approval
+  [sp] name='사각형: 둥근 모서리 56'
+     | Operations
+     | feedback
+  [sp] name='TextBox 62'
+     | Success means the customer can see, explain, approve and replay every state transition - without replacing certified specialist solvers.
+  [sp empty] name='사각형: 둥근 모서리 63'
+  [sp] name='TextBox 64'
+     | WHY NOW  |  The executable reference is ready; the next differentiator is controlled configuration + cross-domain evidence + lifecycle learning.
+  [sp] name='TextBox 65'
+     | 30
+   >> media: ../media/image9.png
+   --- NOTES --- 30

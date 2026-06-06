@@ -1,0 +1,10 @@
+﻿PDF: unlocked (can refresh)
+Acrobat procs: 0
+InlineShapes total: 1
+InlineShape #1: type=3 w=61 h=82 inTable=True row=1 col=2
+Floating Shapes total: 0
+Table#1 rows=1 cols=2
+  cell r=1 c=1 img=0 | Joonha Lee Field Application Engineer (F
+  cell r=1 c=2 img=1 | /
+Values heading present: True ; Requirement heading present: True ; total tables: 11
+

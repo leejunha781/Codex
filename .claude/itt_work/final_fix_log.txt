@@ -1,0 +1,6 @@
+﻿opened
+removed \f from para: len=46
+removed \f from para: len=44
+STEP1 formfeeds removed=2
+FATAL: 인수가 잘못되었습니다.
+

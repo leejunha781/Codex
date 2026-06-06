@@ -1,0 +1,23 @@
+﻿opened
+tblHdr=7949855
+table added
+table filled
+table styled
+re-bordered=10 (charcoal 12/8 pt)
+bumped=0
+saved
+pdf
+PAGES=8 TABLES=11
+MIN_FONT=10
+--- headings ---
+  H: Professional Profile and Interest in ITT Cannon FAE Role
+  H: Key Strengths Matched to ITT Cannon FAE Role
+  H: ITT Cannon Connector Product Knowledge & Target-Market Fit
+  H: Education, Certifications, Language and Technical Toolkit
+  H: Career Summary
+  H: Detailed Professional Experience
+  H: Compensation / Salary Information
+  H: Alignment with ITT Purpose, Values & DNA
+  H: Self-Introduction and Application Motivation
+  H: Attachment: Condensed ITT Cannon FAE Requirement Match
+

@@ -1,0 +1,1073 @@
+
+========== SLIDE 1 ==========
+[Text 1] Company-by-company benchmark, win-above strategies, open AVEVA control plane, delivery WBS and KPI gates
+[Text 2] Meeting deck for overseas development and planning teams / Based on the executable FastAPI + PostgreSQL + OIDC + E2E reference package
+[Text 3] Decision expected today | Align on the winning product position, Phase 2 + Naval Assurance pilot, delivery governance and KPI-based acceptance.
+[Text 4] 1
+[TextBox 13] Future Industrial PLM
+
+========== SLIDE 2 ==========
+[TextBox 11] Meeting structure - seven decisions in order
+[TextBox 13] Move from facts to ideas, then validate the delivery plan and final decision
+[TextBox 14] Future Industrial PLM
+[TextBox 18] 1
+[TextBox 19] CURRENT STATE
+[TextBox 20] Competitor vs AVEVA comparison, PLM position and today's executable baseline
+[TextBox 23] 2
+[TextBox 24] PUBLIC SIGNALS
+[TextBox 25] Official product and roadmap signals; confirmed versus directional
+[TextBox 28] 3
+[TextBox 29] WINNING IDEAS
+[TextBox 30] Meeting thesis + win-above NAPA / Siemens / Dassault patterns
+[TextBox 33] 4
+[TextBox 34] PROPOSAL + DELIVERY
+[TextBox 35] Architecture, workflows and pilot scope - then WBS and KPI gates
+[TextBox 38] 5
+[TextBox 39] FUTURE-STATE COMPARE
+[TextBox 40] Re-score AVEVA after the proposed ideas are applied
+[TextBox 43] 6
+[TextBox 44] REVIEW
+[TextBox 45] Ownership, risks, evidence and assumptions requiring agreement
+[TextBox 48] 7
+[TextBox 49] CLOSE
+[TextBox 50] Approve the next increment and the assurance pilot
+[TextBox 52] Sequencing rule: WBS and KPI appear only after all proposed capabilities and pilot ideas are consolidated.
+[TextBox 53] 2
+[GlossaryPointer] Abbreviations → Glossary appendix, p.31–33
+[MeetingNavRange1] p.3–5
+[MeetingNavRange2] p.6
+[MeetingNavRange3] p.7–12
+[MeetingNavRange4] p.13–25
+[MeetingNavRange5] p.26
+[MeetingNavRange6] p.27–29
+[MeetingNavRange7] p.30
+
+========== SLIDE 3 ==========
+[TextBox 10] Current-state comparison - no vendor owns the complete loop
+[TextBox 12] Today's reality: NAPA leads naval architecture; classical PLM leads configuration; AVEVA leads engineering-to-operations context
+[TextBox 13] Future Industrial PLM
+[TextBox 56] CURRENT GAP
+[TextBox 57] No current product closes design change → naval calculation → evidence → approval → operations feedback. That is the opportunity, not replacing every specialist tool.
+[TextBox 58] General positioning from official public information; capability varies by version, configuration and implementation.
+[TextBox 59] 3
+  TBLROW: Capability | AVEVA E3D/Marine + AIM/PI | Siemens / Dassault PLM platforms | Hexagon / CADMATIC / FORAN | NAPA
+  TBLROW: Configuration / BOM / change | ◐  Partial | ●  Strong | ◐  Partial | ○  Limited
+  TBLROW: Hull / outfitting / production | ●  Strong | ◐  Partial | ●  Strong | ◐  Partial
+  TBLROW: Naval architecture / stability | ◐  Partial | ○  Limited | ◐  Partial | ●  Strong
+  TBLROW: Operations / asset context | ●  Strong | ◐  Partial | ●  Strong | ◐  Partial
+  TBLROW: Customer-owned API / process | ◐  Partial | ◐  Partial | ◐  Partial | ◐  Partial
+
+========== SLIDE 4 ==========
+[TextBox 13] Current PLM landscape
+[TextBox 19] Operations / Asset >
+[TextBox 20] < Engineering / PLM
+[TextBox 21] Unified Platform (up)
+[TextBox 22] Siloed point tools (down)
+[TextBox 24] Engineering → Operations Sweet Spot
+[TextBox 26] Siemens
+[TextBox 28] Dassault
+[TextBox 30] PTC
+[TextBox 32] Hexagon
+[TextBox 34] AVEVA
+[TextBox 35] Stack & Position
+[TextBox 37] AVEVA
+[TextBox 38] E3D/Marine · AIM · PI · CONNECT
+[TextBox 39] Engineering → Operations (the bridge)
+[TextBox 41] Siemens
+[TextBox 42] Teamcenter · NX · Opcenter
+[TextBox 43] PLM core backbone
+[TextBox 45] Dassault
+[TextBox 46] 3DEXPERIENCE · CATIA · DELMIA
+[TextBox 47] Experience / virtual-twin platform
+[TextBox 49] Hexagon
+[TextBox 50] SDx · Smart 3D · j5 · Completions
+[TextBox 51] Asset lifecycle & operations
+[TextBox 53] PTC
+[TextBox 54] Windchill · Codebeamer · ThingWorx
+[TextBox 55] PLM + IoT digital thread
+[Rounded Rectangle 56] Takeaway: don't compete as just another PLM backbone — build the engineering-to-operations layer that existing PLM, CAD, MES and historian platforms cannot easily unify.
+[Text 1] The future PLM opportunity is between engineering data and live operations
+[Text 2] Future Industrial PLM
+[Text 10] 4
+
+========== SLIDE 5 ==========
+[Text 0] Where we are now
+[Text 1] Phase 1 creates measurable data quality and handover value
+[Text 2] Future Industrial PLM
+[Text 4] Phase 1 S6 Gate
+[Text 5] A. Integration Hub / Source import, mapping, relationship creation
+[Text 6] B. Standard Model / Project, system, equipment, tag, document, asset, model object
+[Text 7] C. Handover/AIM / Asset register, required document matrix, readiness calculation
+[Text 8] D. Digital Twin Dashboard / Coverage, quality issues, drill-down and gate report
+[Text 9] Next: Phase 2 adds configuration governance so every issue, BOM and change can be traced by effectivity.
+[Text 10] 5
+
+========== SLIDE 6 ==========
+[TextBox 13] Public product + roadmap signals - official emphasis only
+[TextBox 14] What vendors publicly emphasize, translated into design implications for the proposed AVEVA platform
+[TextBox 15] Future Industrial PLM
+[TextBox 19] AVEVA
+[TextBox 20] CONNECT industrial intelligence, Unified Engineering, AIM and PI System lifecycle context
+[TextBox 21] Opportunity: close design-to-operations feedback and assurance.
+[TextBox 24] Siemens
+[TextBox 25] Teamcenter digital twin/thread, lifecycle process automation and AI built for PLM
+[TextBox 26] Absorb: cloud-ready configuration and lifecycle automation.
+[TextBox 29] Dassault
+[TextBox 30] 3DEXPERIENCE / ENOVIA cloud-native collaboration, model-based engineering and virtual twins
+[TextBox 31] Absorb: role-based collaboration and virtual-twin validation.
+[TextBox 34] Hexagon
+[TextBox 35] Octave asset lifecycle intelligence spanning design, projects, completions and operations
+[TextBox 36] Absorb: AIM, completions, project controls and handover.
+[TextBox 39] PTC
+[TextBox 40] Windchill + Codebeamer requirements, risk, test, end-to-end traceability and AI assistance
+[TextBox 41] Absorb: requirements, software trace and AI-assisted change.
+[TextBox 44] NAPA
+[TextBox 45] Naval architecture, hydrostatics, stability, rule compliance and calculation workflows
+[TextBox 46] Integrate: certified naval calculations and approval evidence.
+[TextBox 48] PRINCIPLE
+[TextBox 49] Treat public signals as directional, not guaranteed scope. Build adapters and an assurance graph that can absorb change without rewriting the platform.
+[TextBox 50] 6
+
+========== SLIDE 7 ==========
+[Text 0] Meeting thesis - win above tool silos
+[Text 1] Own the change-to-assurance-to-operations loop, not every specialist calculation
+[Text 2] Future Industrial PLM
+[Text 4] Traditional PLM wins on item, BOM and change control. / Industrial operations platforms win on asset, historian and field context. / Our opportunity is to connect both worlds for shipbuilding, EPC and asset-intensive industries.
+[Text 5] North Star / Requirement → Engineering → Assure → BOM → Build → Commissioning → Handover → Operations → Maintenance → Change Feedback
+[Text 6] Strategic differentiation / Open AVEVA control plane = Siemens-grade configuration + Dassault-grade collaboration + NAPA-grade assurance, connected by customer-owned APIs, evidence and operations feedback.
+[Text 7] 7
+
+========== SLIDE 8 ==========
+[TextBox 13] Strategic gap to fill
+[TextBox 14] Competitors own strong domains; nobody owns the open change-to-evidence-to-operations decision loop
+[TextBox 16] Future Industrial PLM
+[TextBox 18] SPECIALIST STRENGTHS TO FEDERATE
+[TextBox 22] PRODUCT CONFIGURATION
+[TextBox 23] Siemens / Dassault / BOM · variants · baseline · change · collaboration
+[TextBox 27] NAVAL ASSURANCE
+[TextBox 28] NAPA / class solvers / Hydrostatics · stability · rules · approved calculations
+[TextBox 32] ASSET LIFECYCLE
+[TextBox 33] Hexagon / AVEVA / Handover · completions · asset and operations context
+[TextBox 37] THE MISSING PRODUCT
+[TextBox 38] Open AVEVA Decision Control Plane
+[Oval 39] CHANGE → / DECISION / LOOP
+[Rounded Rectangle 42] Configuration
+[Rounded Rectangle 44] Impact
+[Rounded Rectangle 46] Evidence
+[Rounded Rectangle 48] Approval
+[Rounded Rectangle 50] Operations
+[Rounded Rectangle 57] policy +  / physics-guarded AI
+[TextBox 59] Own the decision, evidence and learning layer.
+[TextBox 62] WHY AVEVA CAN OWN IT
+[TextBox 63] Engineering truth + lifecycle context
+[TextBox 65] E3D / Marine design-change truth
+[TextBox 67] Unified Engineering + AIM context
+[TextBox 69] PI / CONNECT live operational truth
+[TextBox 71] Open, vendor-neutral integration
+[TextBox 73] Customer-owned API and process
+[TextBox 75] Outcome: safer, faster change with visible accountability.
+[Rounded Rectangle 76] PRODUCT BOUNDARY  Federate specialist tools instead of replacing them. Own the cross-domain  /                                                     configuration, impact, evidence, approval and operations-feedback loop.
+[TextBox 79] 8
+
+========== SLIDE 9 ==========
+[TextBox 2] What to absorb - and where AVEVA must go beyond
+[TextBox 3] Absorb proven strengths company by company; make them executable through AVEVA engineering-to-operations context
+[TextBox 12] Future Industrial PLM
+[TextBox 15] COMPANY / PLATFORM
+[TextBox 16] ABSORB THE BEST
+[TextBox 17] AVEVA MOVE BEYOND
+[TextBox 20] SIEMENS / Teamcenter
+[TextBox 22] BOM · variants · baselines / change · lifecycle automation
+[TextBox 24] Open promote APIs + / operations-aware configuration
+[TextBox 28] DASSAULT / 3DEXPERIENCE / ENOVIA
+[TextBox 30] Role collaboration · virtual twin / model-based engineering-to-mfg
+[TextBox 33] Twin action → auditable / API event + evidence
+[TextBox 37] HEXAGON / Octave / ALI
+[TextBox 39] Asset info · completions / project controls · operations
+[TextBox 41] Link asset state to / configuration + approval
+[TextBox 45] PTC / Codebeamer / Windchill
+[TextBox 47] Requirements · risk · test / end-to-end traceability + AI
+[TextBox 49] Tie requirements to hull, / BOM, solver and approval
+[TextBox 91] NAPA / Naval architecture
+[TextBox 93] Hydrostatics · stability · rules / calculation workflows
+[TextBox 95] Keep solver of record; own / continuous assurance loop
+[TextBox 116] OUTCOME
+[TextBox 117] Operations-ready, configuration-governed, approval-evidenced PLM - open enough to absorb the best specialist capability without surrendering the decision loop.
+[TextBox 118] Public product-positioning basis checked 6 Jun 2026; capability details and integration boundaries require customer / vendor validation.
+[TextBox 119] 9
+[TextBox 9] NEW AVEVA-BASED PLM
+[TextBox 10] Five specialist strengths → one open decision control plane
+[TextBox 13] AVEVA DIFFERENTIATION
+[TextBox 52] E3D / Marine + Unified Engineering + AIM + PI + CONNECT
+[TextBox 54] Customer-owned OpenAPI + configuration / assurance graph
+[TextBox 56] Federated solvers + physics-guarded AI + evidence + operations learning
+
+========== SLIDE 10 ==========
+[TextBox 2] Win above NAPA - own the continuous naval assurance loop
+[TextBox 3] NAPA is already a trusted stability engine. The defensible AVEVA opportunity is the decision, evidence and lifecycle-learning layer above every solver.
+[TextBox 4] Future Industrial PLM
+[TextBox 5] 10
+[TextBox 8] TRUSTED CALCULATION ENGINES
+[TextBox 9] Keep the certified math.
+[TextBox 11] NAPA stability + hydrostatics
+[TextBox 13] Class rules + approval criteria
+[TextBox 15] CFD / FEM / flooding models
+[TextBox 17] Other approved solvers
+[TextBox 18] NAPA remains a solver of record for naval architecture, rule compliance and stability evidence.
+[TextBox 21] NEW MOAT: CONTINUOUS NAVAL ASSURANCE CONTROL PLANE
+[TextBox 22] A governed graph of every safety decision
+[TextBox 30] NAVAL
+[TextBox 31] ASSURANCE / GRAPH
+[TextBox 35] Revision / baseline
+[TextBox 37] Hull / compartment
+[TextBox 39] Weight / CoG
+[TextBox 41] Loading cases
+[TextBox 43] Rules / criteria
+[TextBox 45] Margin + evidence
+[TextBox 46] One graph links change → calculation → decision → evidence → revision.
+[TextBox 49] AVEVA LIFECYCLE CONTEXT
+[TextBox 50] Win with the closed loop.
+[TextBox 52] E3D / Marine design changes
+[TextBox 54] PLM configuration + approval
+[TextBox 56] AIM documents + class evidence
+[TextBox 58] PI / CONNECT operational truth
+[TextBox 59] Add counterfactual design options, cross-domain impact and live operational learning - not another calculation silo.
+[TextBox 63] WINNING POSITION
+[TextBox 64] NAPA = solver of record.  AVEVA-based PLM = system of decision, evidence and lifecycle learning.  Competitive moat: customer-owned APIs + assurance graph + closed-loop operational feedback.
+[TextBox 65] Official-source basis: napa.fi/software-and-services/ship-design/software/napa/  |  napa.fi/napa-release-2025-2/  |  napa.fi/extending-ocx/  |  aveva.com/en/solutions/connect/
+[TextBox 67] physics-guarded AI
+
+========== SLIDE 11 ==========
+[TextBox 2] Win above Siemens - make configuration rigor open and operations-aware
+[TextBox 3] Teamcenter is strong at PLM governance. Win by preserving that rigor while making configuration customer-owned, API-native and connected to shipyard and operational truth.
+[TextBox 4] Future Industrial PLM
+[TextBox 8] SIEMENS STRENGTH TO KEEP
+[TextBox 9] Preserve enterprise-grade control.
+[TextBox 11] Item / BOM / change governance
+[TextBox 13] Effectivity + baseline discipline
+[TextBox 15] Enterprise workflow + audit
+[TextBox 17] Multi-domain configuration
+[TextBox 18] Keep the rigor that makes complex product change governable.
+[TextBox 21] NEW MOAT: OPEN CONFIGURATION CONTROL PLANE
+[TextBox 22] A customer-owned graph that can execute the process
+[Rounded Rectangle 28] OPEN / CONFIGURATION / CONTROL GRAPH
+[Rounded Rectangle 31] Revision / baseline
+[Rounded Rectangle 33] Hull / block / option / date
+[Rounded Rectangle 35] ECR / ECO / MCO
+[Rounded Rectangle 37] M-BOM / production status
+[Rounded Rectangle 39] Approval / evidence
+[Rounded Rectangle 41] policy-gated APIs
+[TextBox 43] Event → policy → gate → evidence → promote
+[TextBox 46] AVEVA LIFECYCLE CONTEXT
+[TextBox 47] Connect configuration to real work.
+[TextBox 49] E3D / Marine design objects
+[TextBox 51] Draw / MTO / ERM production truth
+[TextBox 53] AIM handover + documents
+[TextBox 55] PI / CONNECT operational truth
+[TextBox 56] Make every state visible, usable and measurable beyond the PLM specialist.
+[TextBox 60] WINNING POSITION
+[TextBox 61] Siemens = governance benchmark. AVEVA-based PLM = open system of configuration action. Competitive moat: customer-owned APIs + live engineering-to-operations context.
+[TextBox 62] ARCHITECTURE HANDOFF  →  API Contract Layer + Configuration Layer + Integration Layer
+[TextBox 63] 11
+
+========== SLIDE 12 ==========
+[TextBox 2] Win above Dassault - make the virtual twin executable and evidence-driven
+[TextBox 3] 3DEXPERIENCE is strong at immersive collaboration and virtual-twin vision. Win by turning every twin interaction into an API contract, gate result, affected-object trace and operational learning event.
+[TextBox 4] Future Industrial PLM
+[TextBox 8] DASSAULT STRENGTH TO KEEP
+[TextBox 9] Preserve the shared virtual experience.
+[TextBox 11] Role-based collaboration spaces
+[TextBox 13] Virtual twin + 3D experience
+[TextBox 15] Engineering / manufacturing view
+[TextBox 17] Visual simulation + validation
+[TextBox 18] Keep the context and collaboration that make complex decisions understandable.
+[TextBox 21] NEW MOAT: EXECUTABLE EVIDENCE TWIN
+[TextBox 22] Every interaction becomes a governed next-state event
+[Rounded Rectangle 28] EVIDENCE / TWIN / CONTROL GRAPH
+[Rounded Rectangle 31] Role / task / decision
+[Rounded Rectangle 33] Requirement / affected object
+[Rounded Rectangle 35] AI diagnosis / solver result
+[Rounded Rectangle 37] Approval / evidence pack
+[Rounded Rectangle 39] Operations feedback
+[Rounded Rectangle 41] twin action = API event
+[TextBox 43] Context → decision → evidence → approval → learning
+[TextBox 46] AVEVA LIFECYCLE CONTEXT
+[TextBox 47] Connect the twin to production truth.
+[TextBox 49] E3D / Marine production truth
+[TextBox 51] AIM document + class context
+[TextBox 53] PI / CONNECT operating feedback
+[TextBox 55] Customer-configured workflows
+[TextBox 56] Make the virtual twin drive measurable work, evidence and lifecycle learning.
+[TextBox 60] WINNING POSITION
+[TextBox 61] Dassault = collaboration benchmark. AVEVA-based PLM = executable evidence twin. Competitive moat: every virtual-twin decision is measurable, auditable and connected to operations.
+[TextBox 62] ARCHITECTURE HANDOFF  →  Experience Layer + Assurance & Digital Thread Layer + Integration Layer
+[TextBox 63] 12
+
+========== SLIDE 13 ==========
+[Text 0] Target architecture concept
+[Text 1] The win-above patterns converge into one open, customer-owned AVEVA control plane — Windows-based authoring + Linux-based control plane + Cloud/CONNECT integration
+[Text 2] Future Industrial PLM
+[Text 4] Experience Layer / Dassault-grade role collaboration, 3D context, assurance margins and executable gate views
+[Text 5] API Contract Layer / Customer-owned FastAPI/OpenAPI contracts, OIDC authority and solver-adapter contracts
+[Text 6] Assurance + Digital Thread Layer / NAPA-grade evidence lineage, assurance graph, rules and evaluate/promote flow
+[Text 7] Configuration Layer / Siemens-grade BOM, effectivity, baselines and change-impact governance
+[Text 8] Integration Layer Windows E3D/Marine/Hull authoring via Local Agent/PML.NET Bridge · AIM/PI/CONNECT + Edge/Adapter + NAPA/class + ERP/MES adapters
+[Text 9] 13
+
+========== SLIDE 14 ==========
+[Text 0] Executable reference package
+[Text 1] The deck is backed by runnable architecture, not only concept slides
+[Text 2] Future Industrial PLM
+[Text 12] 14
+[Rounded Rectangle 31] DELIVERED REFERENCE / API First
+[TextBox 33] API / Services
+[TextBox 34] Data / Schema
+[TextBox 35] Security / OIDC
+[TextBox 36] Gates / & E2E
+[Rounded Rectangle 45] OpenAPI routes for KPI, readiness, / coverage, quality issues and / Phase 2 configuration APIs.
+[Oval 46] 1
+[TextBox 39] FastAPI services
+[Rounded Rectangle 49] Postgres + Keycloak + API + / E2E tests with schema and / seed auto-load.
+[Oval 50] 2
+[TextBox 43] Docker Compose
+[Oval 54] 3
+[TextBox 47] E2E tests
+[TextBox 48] Evaluate → promote flows for / quality gates and Phase 2 / impact analysis.
+[Rounded Rectangle 57] Phase 1 S6 tables/views plus / Phase 2 configuration, BOM, / effectivity and change tables.
+[Oval 58] 4
+[TextBox 51] PostgreSQL schema
+[Rounded Rectangle 61] Keycloak realm, JWT validation / and role-gated promote / actions.
+[Oval 62] 5
+[TextBox 55] OIDC security
+[Rounded Rectangle 65] Integrated FastAPI static / serving for gate report and / planning visibility.
+[Oval 66] 6
+[TextBox 59] React dashboard
+[TextBox 69] test gates
+[Rounded Rectangle 84] Governance value / The current executable package proves API-first contracts, security and gate patterns. Naval Assurance adapters, evidence lineage and operations calibration are the proposed pilot extension.
+[TextBox 71] Meeting objective: agree the executable baseline, then approve the bounded Continuous Naval Assurance pilot extension.
+
+========== SLIDE 15 ==========
+[TextBox 2] Hybrid: Windows Authoring + Linux Control Plane + Cloud/CONNECT
+[TextBox 3] Windows AVEVA E3D/Marine/Hull authoring + Linux Open PLM Control Plane (API/SQL/AI Gate/Evidence/Adapters/Callbacks) + Cloud/CONNECT
+[TextBox 4] A - Windows Authoring ↔ Linux Control Plane ↔ Local Agent / API callbacks
+[TextBox 7] 1.  API LAYER
+[TextBox 8] FastAPI  -  REST / OData  -  OpenAPI 3.1  -  OIDC (OAuth2)
+[Rounded Rectangle 9] POST /oauth/token
+[Rounded Rectangle 10] GET /objects/{id}
+[Rounded Rectangle 11] POST /structures
+[Rounded Rectangle 12] POST /approvals
+[TextBox 13] Stateless, versioned, OpenAPI-documented endpoints, token-secured; every call returns JSON + an HTTP status, so each step is verifiable.
+[TextBox 15] REST commands ↔ Local Agent/Plugin executes ↔ JSON callbacks
+[TextBox 18] 2.  OPEN PLM CONTROL PLANE (Linux) — API & services
+[Rounded Rectangle 19] Objects & Vault
+[Rounded Rectangle 20] Structures / eBOM
+[Rounded Rectangle 21] ECR & Impact
+[Rounded Rectangle 22] Approvals / Workflow
+[Rounded Rectangle 23] AI Gate / Evidence
+[Rounded Rectangle 24] Integration Gateway
+[TextBox 25] Linux control plane handles API, SQL, AI Gate, evidence, integration gateway and callback receiver; E3D authoring stays on Windows.
+[TextBox 27] Linux Control Plane ↔ Windows authoring via Local Agent / PML.NET Bridge
+[TextBox 30] 3.  INFRASTRUCTURE — Linux cluster + Windows authoring tier
+[Rounded Rectangle 31] 4-node cluster - HA / 16 vCPU - 64 GB/node / Linux - containers
+[TextBox 33] App · API · AI Gate (Linux)
+[Rounded Rectangle 35] PostgreSQL 16 - HA / 32 vCPU - 256 GB / NVMe RAID10 + standby
+[TextBox 37] Database
+[Rounded Rectangle 39] SAN (FC) + NAS / 100 TB+ usable / Snapshots - WORM
+[TextBox 41] Vault / Storage
+[Rounded Rectangle 43] API GW + LB (HA) / TLS 1.3 - WAF / OIDC/OAuth2 - ZTNA
+[TextBox 45] Gateway - Security
+[TextBox 47] Windows authoring tier: GPU workstations run AVEVA E3D · Marine · Hull · Draw in supported AVEVA environments, linked via Local Agent / Plugin / PML.NET Bridge (not hosted on Linux). Linux: HA API/SQL/evidence services + backup + AI gate observability.
+[TextBox 49] B - HD Hyundai: Using the API (simple, step-by-step, verifiable)
+[TextBox 55] plm_client.py  -  HD Hyundai PLM client  →  calls REST API
+[TextBox 56] import requests / API = "https://plm.hhi.co.kr/api/v1" / tok = requests.post(f"{API}/oauth/token", /                     data=CRED).json()["access_token"] / H = {"Authorization": f"Bearer {tok}"} / r = requests.get(f"{API}/objects/HD-ETO-1001", headers=H) / print(r.status_code, r.json()["name"])   # 200 OK → verified
+[TextBox 57] Each step calls one endpoint and returns a status you can check  (OK)
+[Oval 60] 1
+[TextBox 62] Authenticate (OIDC) / POST /oauth/token
+[Rounded Rectangle 63] 200 - token  OK
+[Oval 67] 2
+[TextBox 69] Read object / GET /objects/HD-ETO-1001
+[Rounded Rectangle 70] 200 - object  OK
+[Oval 74] 3
+[TextBox 76] Create structure (eBOM) / POST /structures
+[Rounded Rectangle 77] 201 - struct_id  OK
+[Oval 81] 4
+[TextBox 83] Raise ECR & run impact / POST /ecr/{id}/impact
+[Rounded Rectangle 84] 200 - impact  OK
+[Oval 88] 5
+[TextBox 90] Approve / POST /approvals
+[Rounded Rectangle 91] 200 - APPROVED  OK
+[TextBox 92] Hybrid: Windows runs E3D/Marine/Hull authoring · Linux hosts API/SQL/AI Gate/Evidence/Integration · Local Agent/Plugin executes commands and returns callbacks.
+[Text 2] Future Industrial PLM
+[Text 12] 15
+
+========== SLIDE 16 ==========
+[TextBox 1] Final hybrid deployment correction - authoring vs control plane
+[TextBox 2] Final positioning: Windows-based AVEVA engineering authoring + Linux-based Open PLM Control Plane + Cloud/CONNECT integration
+[Rounded Rectangle 3] Windows Authoring Zone / AVEVA E3D / Marine / Hull Design / AVEVA Draw / MTO / Local Agent / Plugin / PML.NET Bridge / Windows designer PCs or supported AVEVA environments. / No direct Linux hosting assumption.
+[Rounded Rectangle 4] Linux Open PLM Control Plane / FastAPI / OpenAPI / PostgreSQL / Evidence Store / AI Gate + Rule Guardrails / Integration Gateway + Callback Receiver / Keycloak / OIDC / RBAC / Scalable API, SQL, evidence and governance layer.
+[Rounded Rectangle 5] Cloud / CONNECT + Adapters / AVEVA CONNECT / AIM / PI Web API / AVEVA Edge / Adapter layer / NAPA / Class / CFD / FEM adapters / ERP / MES / Document Vault / Federates specialist tools without replacing them.
+  TBLROW: Unsafe expression to avoid | Final corrected expression
+  TBLROW: “AVEVA Marine / E3D on Linux server” | “E3D/Marine/Hull runs in supported Windows authoring environments; Linux servers run API/SQL/AI Gate/Evidence/Integration Control Plane.”
+  TBLROW: “Linux server directly runs PLM and E3D” | “Linux runs the PLM Control Plane and integration layer; E3D/Hull links through Windows Authoring Client, Local Agent/Plugin or supported AVEVA adapters.”
+  TBLROW: “FastAPI directly calls E3D/Hull” | “FastAPI issues commands; Local Agent/Plugin executes E3D/Hull work and returns callbacks.”
+  TBLROW: “All AVEVA products integrated on Linux” | “Windows Authoring + Linux Control Plane + Cloud/CONNECT + Adapter-based Hybrid Architecture.”
+[TextBox 9] Interview line: E3D/Marine authoring stays Windows-centered; Linux owns FastAPI, PostgreSQL, AI Gate, Evidence Pack, Integration Gateway and Callback Receiver.
+[Text 2] Future Industrial PLM
+[Text 12] 16
+
+========== SLIDE 17 ==========
+[TextBox 6] Phase 2 + Continuous Naval Assurance pilot scope
+[TextBox 7] A bounded executable slice proves configuration, impact, approved-solver evidence, approval authority and operations feedback
+[TextBox 8] Future Industrial PLM
+[Oval 15] 1
+[TextBox 17] E3D / Hull / change
+[TextBox 18] Local Agent → POST /events
+[Oval 20] 2
+[TextBox 23] Resolve / configuration
+[TextBox 24] GET /configuration
+[Oval 26] 3
+[TextBox 28] Evaluate / impact
+[TextBox 29] POST /impact/evaluate
+[Oval 31] 4
+[TextBox 33] Run approved / solver
+[TextBox 34] POST /solver-runs
+[Oval 36] 5
+[TextBox 38] Evidence + / approval
+[TextBox 39] POST /promote
+[Oval 41] 6
+[TextBox 43] Operations / feedback
+[TextBox 44] AIM + PI / CONNECT
+[TextBox 57] Siemens-grade / configuration
+[TextBox 59] PTC-grade / traceability
+[TextBox 61] NAPA-grade / calculation
+[TextBox 63] Dassault-grade / decision context
+[TextBox 65] AVEVA lifecycle / context
+[TextBox 89] 17
+[TextBox 5] VISUAL PROOF: ONE CLOSED ASSURANCE LOOP
+[TextBox 11] Configuration → affected scenarios → approved solver evidence → human / class approval  → operations feedback
+[TextBox 12] AI diagnoses and holds gates; accountable humans retain release authority.
+[TextBox 21] BOUNDED SCENARIO
+[TextBox 45] One hull / block · selected loading cases · one approved solver adapter · seeded change and failure cases
+[TextBox 48] DELIVERABLE + RELEASE GOVERNANCE
+[TextBox 49] Configuration + assurance graph · signed evidence pack · AI proposes / holds · naval architect and class authority release
+[TextBox 91] MINIMUM ACCEPTANCE
+[TextBox 93] Configuration >=99%
+[TextBox 95] Impact recall >=95%
+[TextBox 97] Provenance 100%
+[TextBox 99] Approval <=5 s
+
+========== SLIDE 18 ==========
+[TextBox 88] Requirement → AI-built VCRM & Checklist (admin-editable, approved in Impact+Approval)
+[TextBox 91] Enter a requirement →AI builds the VCRM + Checklist → admin can add/delete sub-items → attach deliverables → VCRM & Checklist are approved together in the Impact + Approval step before production.
+[TextBox 97] Future PLM  —  Requirements & Verification   ·   /api/v1
+[Rounded Rectangle 98] ADMIN
+[TextBox 100] RUNNING
+[TextBox 102] REQUIREMENT
+[Rounded Rectangle 103] REQ-014 · Ballast Water Treatment · cap >= 250 m3/h · IMO D-2
+[Rounded Rectangle 105] POST /api/v1/requirements
+[Hexagon 106] AI
+[TextBox 107] AI → VCRM + Checklist + risk flags
+[TextBox 109] VCRM — Verification Cross-Reference Matrix  (Large Category)
+[TextBox 111] Checklist — Cautions & Requirement Reflection  (Large Category)
+[Rounded Rectangle 112] + Add item
+[Rounded Rectangle 113] × Delete
+[TextBox 114] admin · POST / DELETE  /api/v1/vcrm/items
+[Rounded Rectangle 115] + Add item
+[Rounded Rectangle 116] × Delete
+[TextBox 117] admin · POST / DELETE  /api/v1/checklist/items
+[Rounded Rectangle 118] 1.1   Capacity >= 250 m3/h
+[TextBox 120] verify: analysis/test
+[TextBox 121] ×
+[Rounded Rectangle 122] capacity_calc.pdf
+[Rounded Rectangle 123] Verified
+[Rounded Rectangle 124] 1.2   IMO D-2 compliance
+[TextBox 126] verify: certification
+[TextBox 127] ×
+[Rounded Rectangle 128] IMO_D2_cert.pdf
+[Rounded Rectangle 129] Certified
+[Rounded Rectangle 130] 1.3   Power & energy budget
+[TextBox 133] ×
+[Rounded Rectangle 134] power_test.pdf
+[Rounded Rectangle 135] Verified
+[Rounded Rectangle 136] 1.4   Piping / HVAC interface
+[TextBox 139] ×
+[Rounded Rectangle 140] P&ID + 3D ref
+[Rounded Rectangle 141] Linked
+[Rounded Rectangle 142] 1.5   Maintenance access
+[TextBox 145] ×
+[Rounded Rectangle 146] access_review.docx
+[Rounded Rectangle 147] Verified
+[Rounded Rectangle 148] Class & IMO rules applied
+[Rounded Rectangle 149] Caution
+[TextBox 151] ×
+[Rounded Rectangle 152] rule_check.pdf
+[Rounded Rectangle 153] OK
+[Rounded Rectangle 154] Material / coating spec correct
+[Rounded Rectangle 155] Caution
+[TextBox 157] ×
+[Rounded Rectangle 158] material_spec.pdf
+[Rounded Rectangle 159] OK
+[Rounded Rectangle 160] 3D clash check (interfaces)
+[Rounded Rectangle 161] Caution
+[TextBox 163] ×
+[Rounded Rectangle 164] clash_report.html
+[Rounded Rectangle 165] OK
+[Rounded Rectangle 166] All REQ items mapped to VCRM
+[Rounded Rectangle 167] Reflect
+[TextBox 169] ×
+[Rounded Rectangle 170] trace_matrix.xlsx
+[Rounded Rectangle 171] OK
+[Rounded Rectangle 172] Test / inspection evidence
+[Rounded Rectangle 173] Reflect
+[TextBox 175] ×
+[Rounded Rectangle 176] evidence_pack.zip
+[Rounded Rectangle 177] OK
+[TextBox 179] APPROVED IN THE  'IMPACT + APPROVAL' STEP
+[Rounded Rectangle 180] VCRM  5/5  OK
+[TextBox 181] +
+[Rounded Rectangle 182] Checklist  OK
+[TextBox 183] +
+[Rounded Rectangle 184] All requirements reflected  OK
+[Rounded Rectangle 186] PRODUCTION  RELEASED
+[TextBox 187] VCRM & Checklist are approval items inside the Impact + Approval step — production releases only when all are approved together.
+[Text 2] Future Industrial PLM
+[Text 13] 18
+[Rounded Rectangle 3] × Delete
+[Rounded Rectangle 4] × Delete
+[Rounded Rectangle 5] × Delete
+[Rounded Rectangle 6] × Delete
+[Rounded Rectangle 7] × Delete
+[Rounded Rectangle 12] × Delete
+[Rounded Rectangle 13] × Delete
+[Rounded Rectangle 14] × Delete
+[Rounded Rectangle 15] × Delete
+[TextBox 16] verify: Test
+[TextBox 17] verify: 3D/Inspection
+[TextBox 18] verify: Design Review
+[Rounded Rectangle 20] × Delete
+
+========== SLIDE 19 ==========
+[TextBox 88] AI-gated flow across AVEVA design tools and the API-built PLM
+[TextBox 96] Design in AVEVA (E3D/Marine + Draw on Windows) → Local Agent/Plugin callbacks → governed & tracked in the Linux API-built PLM, AI-gated at every step
+[Rounded Rectangle 97] Hull & outfitting 3D model
+[Oval 99] 1
+[TextBox 101] AVEVA E3D Design
+[Rounded Rectangle 102] AVEVA E3D/Marine
+[Rounded Rectangle 104] modeled  OK
+[Rounded Rectangle 105] Generate 2D sheet → export AutoCAD DWG / DXF
+[Oval 107] 2
+[TextBox 109] 2D Production Drawing
+[Rounded Rectangle 110] AVEVA Draw
+[Rounded Rectangle 112] DWG issued  OK
+[Rounded Rectangle 113] Material take-off / eng. BOM from model
+[Oval 115] 3
+[TextBox 117] E-BOM / MTO
+[Rounded Rectangle 118] AVEVA MTO
+[Rounded Rectangle 120] extracted  OK
+[Rounded Rectangle 121] Approver signs off in the API-built PLM
+[Oval 123] 4
+[TextBox 125] Approval
+[Rounded Rectangle 126] PLM · API
+[Rounded Rectangle 128] approved  OK
+[Rounded Rectangle 129] Hull / Block / Zone / Date
+[Oval 131] 5
+[TextBox 133] Effectivity
+[Rounded Rectangle 134] PLM · API
+[Rounded Rectangle 136] scoped  OK
+[Rounded Rectangle 137] Frozen configuration / released rev
+[Oval 139] 6
+[TextBox 141] Baseline
+[Rounded Rectangle 142] PLM · API
+[Rounded Rectangle 144] baselined  OK
+[Rounded Rectangle 145] Change request → change order
+[Oval 147] 7
+[TextBox 149] ECR → ECO
+[Rounded Rectangle 150] PLM · API
+[Rounded Rectangle 152] ECO closed  OK
+[Rounded Rectangle 153] Manufacturing BOM + mfg change order
+[Oval 155] 8
+[TextBox 157] M-BOM + MCO
+[Rounded Rectangle 158] PLM·API + ERM
+[Rounded Rectangle 160] released  OK
+[Rounded Rectangle 161] Affected objects + VCRM & Checklist approval
+[Oval 163] 9
+[TextBox 165] Impact + Approval
+[Rounded Rectangle 166] PLM · API
+[Rounded Rectangle 168] approved  OK
+[Hexagon 177] AI
+[Hexagon 178] AI
+[Hexagon 179] AI
+[Hexagon 180] AI
+[Hexagon 181] AI
+[Hexagon 182] AI
+[Hexagon 183] AI
+[Hexagon 184] AI
+[TextBox 185] AI gate at every step = error check + anomaly diagnosis  ·  PASS → auto-promote  ·  FAIL → block & flag (no promote)
+[TextBox 186] PLM live status:  modeled → DWG issued  → MTO extracted → approved  → scoped → baselined → ECO closed → released → approved
+[Text 2] Future Industrial PLM
+[Text 13] 19
+[TextBox 91] AVEVA E3D/Marine 3D → AVEVA Draw 2D (AutoCAD DWG/DXF) → MTO/E-BOM → Approval → Effectivity → Baseline → ECR/ECO → M-BOM/MCO → Impact
+[Rounded Rectangle 92] Future PLM   -   API workspace   ·   served at /api/v1   ·   live status tracked
+[TextBox 95] RUNNING
+
+========== SLIDE 20 ==========
+[TextBox 2] Design tool →  2D production drawing (AutoCAD DWG/DXF) →  registered in the API-built PLM
+[TextBox 5] AVEVA E3D/Marine model → AVEVA Draw issues the 2D sheet → export AutoCAD DWG/DXF (+MTO) → AI checks drawing standards → registered & status-tracked in the PLM.
+[TextBox 11] AVEVA E3D Design  —  Draw (Draughting)   ·   Hull / Block B12 / Panel P3
+[TextBox 13] MODEL TREE  (E3D)
+[TextBox 14] Hull
+[TextBox 15] Block B12
+[TextBox 16] Panel P3
+[TextBox 17] Stiffeners
+[TextBox 18] Brackets
+[TextBox 19] Block B13
+[TextBox 26] 3D model (E3D / Marine)
+[TextBox 31] 12 000
+[TextBox 36] PLAN
+[Rectangle 37] ELEVATION
+[TextBox 43] ISO / DETAIL
+[TextBox 45] AVEVA Draw
+[TextBox 46] Block B12 · Panel P3
+[TextBox 47] Sheet 1/3 · 1:50 · A1
+[TextBox 48] rev A · format DWG
+[TextBox 49] drawing-standard: OK
+[Rounded Rectangle 50] Export  →  AutoCAD DWG / DXF
+[Rounded Rectangle 51] A1 · 1:50 · layers mapped
+[TextBox 52] Registered in the API-built PLM
+[Rounded Rectangle 53] B12-P3_revA.dwg     ·     + MTO
+[TextBox 56] drawing & standard check: title block, layers, refs
+[TextBox 59] POST  /api/v1/drawings
+[TextBox 60] { "block":"B12", "sheet":"P3", /   "rev":"A", "format":"DWG", /   "file":"B12-P3_revA.dwg" } / → 201  drawing_id: 8842
+[Rounded Rectangle 62] registered   OK
+[Rounded Rectangle 63] linked to Block B12 / Panel P3
+[Rounded Rectangle 64] rev A · current · status-tracked
+[TextBox 65] AVEVA Draw issues the 2D production drawing (DWG/DXF) from the E3D/Marine model;  / the API-built PLM registers it with its MTO, AI-checks drawing standards, and tracks revision & status across the digital thread.
+[Text 2] Future Industrial PLM
+[Text 13] 20
+[Hexagon 55] AI
+
+========== SLIDE 21 ==========
+[TextBox 41] E3D / Hull design - version control approach
+[TextBox 44] The digital thread drives version control - we do not treat 3D design like source code.
+[TextBox 46] CHALLENGE
+[TextBox 47] 3D files are huge - per-save Git is too heavy  ·  a central server bottlenecks with many concurrent designers  ·  manual upload misses versions
+[TextBox 51] 1
+[TextBox 52] DB-based, not file-based
+[TextBox 53] database elements, not whole files
+[TextBox 54] E3D is database-driven. Version its native element & extract/merge change history plus PLM metadata and relationships - lightweight, with no whole-file snapshots.
+[TextBox 58] 2
+[TextBox 59] Content-addressed geometry
+[TextBox 60] store heavy 3D once
+[TextBox 61] Heavy geometry is stored once in object storage (Git-LFS / S3 style, de-duplicated). PLM keeps only references and deltas, so the design tool and server stay light.
+[TextBox 65] 3
+[TextBox 66] Event-driven snapshots
+[TextBox 67] on promote / baseline, not every save
+[TextBox 68] Version on promote / AI-gate / baseline approval - not on every save. The governance flow already designed becomes the version trigger.
+[TextBox 72] 4
+[TextBox 73] Async queued capture
+[TextBox 74] background, no bottleneck
+[TextBox 75] Snapshots are captured in the background via a queue on the Linux control-plane servers; AVEVA E3D authoring runs on Windows clients, so many concurrent designers never hit a bottleneck.
+[TextBox 77] CORE
+[TextBox 78] E3D is not source code.  DB-element + metadata versioning · content-addressed geometry · versions triggered by promote/baseline events and captured asynchronously - the digital thread drives version control.
+[Text 2] Future Industrial PLM
+[Text 13] 21
+
+========== SLIDE 22 ==========
+[TextBox 2] Continuous Naval Assurance Control Plane - API concept
+[TextBox 3] Windows Local Agent/Plugin emits each promoted E3D/Hull revision; Linux control plane evaluates affected scenarios and publishes evidence + approval state.
+[TextBox 4] Future Industrial PLM
+[TextBox 5] 22
+[TextBox 7] captured  →  affected  →  calculated  →  explained  →  approved  →  learned
+[Oval 10] 1
+[TextBox 12] Design-change event
+[TextBox 13] Windows E3D/Marine + Local Agent
+[TextBox 14] Promoted revision or baseline emits a typed event with hull, block, option and date effectivity.
+[TextBox 16] POST /api/v1/revisions
+[Oval 19] 2
+[TextBox 21] Assurance impact graph
+[TextBox 22] customer-owned graph
+[TextBox 23] Find affected compartments, loading cases, rules, downstream objects and previous evidence.
+[TextBox 25] POST /api/v1/assurance/impact
+[Oval 28] 3
+[TextBox 30] Federated solver run
+[TextBox 31] NAPA + class / CFD / FEM adapters
+[TextBox 32] Execute only affected scenarios; preserve certified solver results and provenance.
+[TextBox 34] POST /api/v1/solver-runs
+[Oval 37] 4
+[TextBox 39] Physics-guarded AI diagnosis
+[TextBox 40] explain + propose alternatives
+[TextBox 41] Explain margin erosion; rank counterfactual options across safety, weight, cost, buildability and operations.
+[TextBox 43] GET /api/v1/diagnostics/{run}
+[Oval 46] 5
+[TextBox 48] Evidence + approval pack
+[TextBox 49] OCX / class / baseline / approval
+[TextBox 50] Publish signed results, rule trace, affected objects, evidence pack and release decision.
+[TextBox 52] POST /api/v1/evidence-packs
+[Oval 55] 6
+[TextBox 57] Operations calibration
+[TextBox 58] PI System + CONNECT
+[TextBox 59] Compare design assumptions with live draught, tank, trim and performance data; feed learning back.
+[TextBox 61] POST /api/v1/operations/calibration
+[TextBox 68] operational learning loop
+[Rounded Rectangle 69] AI prioritizes, explains and proposes; certified solvers calculate; the naval architect and class authority make the release decision. This is how the platform moves faster without weakening assurance.
+[TextBox 70] GUARDRAIL
+[TextBox 72] Official-source basis: NAPA naval architecture + Node Network + OCX; AVEVA E3D Design + CONNECT + PI System official product pages. Concept architecture is a proposed AVEVA-based PLM extension.
+
+========== SLIDE 23 ==========
+[TextBox 2] User-Configurable PLM Process — Altering the Entire Flow via API (Admin Privileges)
+[TextBox 5] Admins reorder, add or remove steps and reconfigure AI gates through governed API calls; the live PLM flow updates immediately — versioned, role-gated and audited.
+[Rounded Rectangle 7] Future PLM  —  Process Designer  ·  admin  ·  /api/v1
+[TextBox 12] Drag to reorder   ·   gate = configure AI gate   ·   x = remove   ·   + add step
+[TextBox 14] ≡
+[TextBox 16] Requirement
+[TextBox 17] ↑  ↓     gate     ×
+[Rounded Rectangle 18] moved
+[TextBox 20] ≡
+[TextBox 22] Design (E3D / Marine)
+[TextBox 23] ↑  ↓     gate     ×
+[TextBox 25] ≡
+[TextBox 27] 2D Drawing (AVEVA Draw)
+[TextBox 28] ↑  ↓     gate     ×
+[TextBox 30] ≡
+[TextBox 32] E-BOM / MTO
+[TextBox 33] ↑  ↓     gate     ×
+[TextBox 35] ≡
+[TextBox 37] Approval
+[TextBox 38] ↑  ↓     gate     ×
+[TextBox 40] ≡
+[TextBox 42] Effectivity
+[TextBox 43] ↑  ↓     gate     ×
+[TextBox 45] ≡
+[TextBox 47] Baseline
+[TextBox 48] ↑  ↓     gate     ×
+[TextBox 50] ≡
+[TextBox 52] ECR / ECO
+[TextBox 53] ↑  ↓     gate     ×
+[TextBox 55] ≡
+[TextBox 57] M-BOM / MCO
+[TextBox 58] ↑  ↓     gate     ×
+[TextBox 60] ≡
+[TextBox 62] Impact + Approval
+[TextBox 63] ↑  ↓     gate     ×
+[Rounded Rectangle 64] + Add step
+[Rounded Rectangle 65] Save & version process
+[TextBox 66] Process configuration API   (admin · role-gated)
+[TextBox 68] REST · OpenAPI 3.1 · OIDC
+[TextBox 69] GET     /api/v1/process/definition / PUT     /api/v1/process/steps/{id}/order     # reorder / POST    /api/v1/process/steps                # add step / DELETE  /api/v1/process/steps/{id}           # remove / PUT     /api/v1/process/gates/{id}           # AI gate
+[TextBox 70] versioned · role-gated (admin) · audit-logged · takes effect immediately
+[TextBox 71] Example change: move Requirement before Design
+[TextBox 73] BEFORE
+[Rounded Rectangle 74] Design (E3D)
+[Rounded Rectangle 76] Requirement
+[TextBox 77] (req after design)
+[Rounded Rectangle 78] PUT /api/v1/process/steps/requirement/order  { "before": "design" }
+[TextBox 79] AFTER
+[Rounded Rectangle 80] Requirement
+[Rounded Rectangle 82] Design (E3D)
+[TextBox 83] → rest of flow
+[TextBox 84] Other changes via the same API:
+[Rounded Rectangle 85] POST /steps →  / + Class Approval
+[Rounded Rectangle 86] DELETE /steps/{id}
+[Rounded Rectangle 87] PUT /gates  →  threshold
+[TextBox 88] AI re-validates the reconfigured process; every user immediately sees the updated flow, gates and live status — no redeploy, fully audited.
+[Text 2] Future Industrial PLM
+[Text 13] 23
+
+========== SLIDE 24 ==========
+[Text 0] Executable gate flow
+[Text 1] Quality and impact rules use the same evaluate → promote governance pattern
+[Text 2] Future Industrial PLM
+[Text 4] 1. Evaluate / Rules produce candidates without changing official records.
+[Text 5] 2. Review / Planner / engineer checks candidates, severity, object context and evidence.
+[Text 6] 3. Promote / Authorized role promotes candidates into official quality issues or change impacts.
+[Text 7] 4. Measure / Dashboard updates KPI, gate status and readiness with traceable audit.
+[Text 8] Why this matters / It separates automated detection from controlled engineering decisions.
+[Text 9] 24
+
+========== SLIDE 25 ==========
+[TextBox 6] Delivery WBS - consolidated after the full solution scope
+[TextBox 7] Six KPI-gated packages: configuration first, then Continuous Naval Assurance and shipyard adoption
+[TextBox 8] Future Industrial PLM
+[TextBox 61] G1
+[TextBox 62] wk2
+[TextBox 65] G2
+[TextBox 66] wk6
+[TextBox 69] G3
+[TextBox 70] wk12
+[TextBox 73] G4
+[TextBox 74] wk16
+[TextBox 77] G5
+[TextBox 78] wk22
+[TextBox 81] G6
+[TextBox 82] wk26
+[TextBox 84] start
+[TextBox 86] WBS 0
+[TextBox 87] Readiness
+[TextBox 89] 2 wks
+[TextBox 90] Backlog · environment · source · roles
+[TextBox 91] WBS 1
+[TextBox 92] Phase 1 hardening
+[TextBox 94] 4 wks
+[TextBox 95] S6 gates · OIDC · dashboard · CI
+[TextBox 96] WBS 2
+[TextBox 97] Configuration core
+[TextBox 99] 6 wks
+[TextBox 100] BOM · effectivity · baseline · APIs
+[TextBox 101] WBS 3
+[TextBox 102] Change impact
+[TextBox 104] 4 wks
+[TextBox 105] ECR/ECO/MOC · impact graph · promote
+[TextBox 106] WBS 4
+[TextBox 107] Naval assurance
+[TextBox 109] 6 wks
+[TextBox 110] E3D/Hull event · solver adapters · evidence
+[TextBox 111] WBS 5
+[TextBox 112] Pilot adoption
+[TextBox 114] 4 wks
+[TextBox 115] Shipyard UAT · class review · performance
+[TextBox 116] Gates → G1 ready | G2 E2E/OIDC | G3 BOM/effectivity 99% | G4 impact recall >=95% | G5 solver provenance + evidence 100% | G6 UAT / response <=5s
+[Rounded Rectangle 117] Control principle: every package ships API contract, seed truth set, E2E test, KPI threshold, evidence and demo scenario.
+[TextBox 119] 25
+
+========== SLIDE 26 ==========
+[TextBox 6] KPI model - configuration and naval assurance acceptance
+[TextBox 7] Objective gates measure correctness, evidence provenance and decision speed - not subjective progress
+[TextBox 8] Future Industrial PLM
+[TextBox 12] API contract coverage
+[TextBox 69] 100%
+[TextBox 72] All committed features ship with OpenAPI + tests
+[TextBox 75] E2E gate pass rate
+[TextBox 76] >=95%
+[TextBox 79] CI validates seed, evaluate, promote and rollback
+[TextBox 82] BOM / effectivity accuracy
+[TextBox 83] >=99%
+[TextBox 86] Correct levels, quantities and scoped configuration
+[TextBox 89] Impact graph recall
+[TextBox 90] >=95%
+[TextBox 93] Find all seeded affected objects and naval scenarios
+[TextBox 96] Solver-run provenance
+[TextBox 97] 100%
+[TextBox 100] Version, input, result and approval source retained
+[TextBox 103] Evidence-pack completeness
+[TextBox 104] 100%
+[TextBox 107] Rule trace, affected objects and approval pack present
+[TextBox 110] AI diagnostic precision
+[TextBox 111] >=85%
+[TextBox 114] Useful ranked explanations without release authority
+[TextBox 117] Dashboard / approval response
+[TextBox 118] <=5 s
+[TextBox 121] Status, margin and approval summary under pilot load
+[Rounded Rectangle 122] PASS | CONDITIONAL PASS with backlog | FAIL + remediation sprint. AI never owns the certified release decision.
+[TextBox 123] GATE DECISION
+[TextBox 125] 26
+
+========== SLIDE 27 ==========
+[TextBox 57] Future-state comparison - AVEVA wins by orchestrating the full assurance loop
+[TextBox 58] Proposed open AVEVA control plane versus NAPA, Siemens / Dassault PLM and other ship design tools
+[TextBox 59] Future Industrial PLM
+[Rounded Rectangle 113] Distinctive position = Siemens-grade configuration + Dassault-grade collaboration + NAPA-grade assurance, connected by customer-owned APIs and AVEVA lifecycle context.
+[TextBox 114] TAKEAWAY
+[TextBox 116] Future-state concept comparison; proposed capabilities require pilot validation and class / customer agreement.
+[TextBox 117] 27
+  TBLROW: Capability | AVEVA + Continuous Naval Assurance | NAPA | Siemens / Dassault PLM platforms | Other ship design tools
+  TBLROW: Certified stability / hydrostatics | ◆  Federated | ●  Strong | ○  Limited | ◐  Partial
+  TBLROW: Hull + outfitting + production | ●  Strong | ◐  Partial | ◐  Partial | ●  Strong
+  TBLROW: Configuration / change / effectivity | ●  Strong | ◐  Partial | ●  Strong | ◐  Partial
+  TBLROW: Cross-domain assurance impact graph | ◆  Strong - new | ◐  Partial | ◐  Partial | ○  Limited
+  TBLROW: Evidence + approval orchestration | ◆  Strong - new | ◐  Partial | ●  Strong | ◐  Partial
+  TBLROW: Operations calibration / learning | ◆  Strong - new | ◐  Partial | ◐  Partial | ◐  Partial
+  TBLROW: Customer-owned API / process | ●  Strong | ◐  Partial | ◐  Partial | ◐  Partial
+
+========== SLIDE 28 ==========
+[TextBox 5] Review ownership and operating model
+[TextBox 6] A cross-functional review board sees the same KPI, risk, evidence and release state before any capability is promoted
+[TextBox 7] Future Industrial PLM
+[TextBox 9] ACCOUNTABLE REVIEW BOARD
+[TextBox 13] PRODUCT PLANNING
+[TextBox 14] Roadmap · MVP scope · user outcomes · KPI thresholds
+[TextBox 44] NAVAL ARCHITECTURE + CLASS
+[TextBox 45] Criteria · solver validation · evidence adequacy · release
+[TextBox 48] SOLUTION ARCHITECTURE
+[TextBox 49] Data model · assurance graph · OpenAPI · adapters · NFRs
+[TextBox 52] DEVELOPMENT TEAM
+[TextBox 53] Implementation · automation · security · performance · defects
+[TextBox 55] WEEKLY STEERING + REVIEW
+[TextBox 56] 1  KPI + evidence dashboard     2  Failing configuration / assurance gates     3  Class and naval-architecture issues / 4  Scope-change decisions     5  Promote completed capabilities + update risk burndown
+[TextBox 57] 28
+
+========== SLIDE 29 ==========
+[TextBox 4] Key review risks and mitigations
+[TextBox 5] Continuous Naval Assurance adds value only when certified authority, provenance and scope boundaries stay explicit
+[TextBox 6] Future Industrial PLM
+[TextBox 72] High
+[TextBox 73] Med
+[TextBox 74] Low
+[TextBox 75] Low
+[TextBox 76] Med
+[TextBox 77] High
+[TextBox 78] Impact →
+[TextBox 79] Likelihood
+[TextBox 81] 1
+[TextBox 83] 2
+[TextBox 85] 3
+[TextBox 87] 4
+[TextBox 89] 5
+[TextBox 90] Risk → mitigation
+[TextBox 93] 1
+[TextBox 94] Scope creep
+[TextBox 95] Pilot one E3D/Hull scenario; adapters orchestrate solvers instead of rewriting them.
+[TextBox 98] 2
+[TextBox 99] Solver / class acceptance
+[TextBox 100] Certified solver remains source of truth; immutable provenance and human/class release.
+[TextBox 103] 3
+[TextBox 104] Data and model mapping
+[TextBox 105] Seeded truth cases validate hull, compartment, weight, loading case and rule links.
+[TextBox 108] 4
+[TextBox 109] AI overreach / security
+[TextBox 110] AI proposes and explains only; OIDC/RBAC, signed evidence and full audit trail.
+[TextBox 113] 5
+[TextBox 114] Adoption and ownership
+[TextBox 115] Naval architect, engineering, IT and planning jointly own pilot and KPI decisions.
+[TextBox 116] 29
+
+========== SLIDE 30 ==========
+[TextBox 2] Evidence base and assumption boundaries
+[TextBox 3] Official product signals support the direction; proposed AVEVA control-plane capabilities still require pilot validation
+[TextBox 4] Future Industrial PLM
+[TextBox 8] AVEVA
+[TextBox 9] PUBLIC SIGNAL / Data-centric engineering + industrial intelligence
+[TextBox 11] DESIGN USE / Engineering-to-operations lifecycle context
+[TextBox 48] SIEMENS
+[TextBox 49] PUBLIC SIGNAL / Digital thread / twin + PLM process automation
+[TextBox 51] DESIGN USE / Configuration rigor and lifecycle governance
+[TextBox 54] DASSAULT
+[TextBox 55] PUBLIC SIGNAL / Model-based collaboration + virtual twins
+[TextBox 57] DESIGN USE / Role context and executable twin decisions
+[TextBox 60] HEXAGON
+[TextBox 61] PUBLIC SIGNAL / Asset lifecycle from design through maintenance
+[TextBox 63] DESIGN USE / Completions, handover and operations context
+[TextBox 66] PTC
+[TextBox 67] PUBLIC SIGNAL / Requirements, risk, test traceability + AI
+[TextBox 69] DESIGN USE / Verification gates and affected-object trace
+[TextBox 72] NAPA
+[TextBox 73] PUBLIC SIGNAL / Naval calculations, rules and workflows
+[TextBox 75] DESIGN USE / Approved solver-of-record adapter
+[TextBox 77] ASSUMPTION / BOUNDARY
+[TextBox 78] Deployment boundary: E3D/Marine/Unified Engineering authoring is Windows-centered; AIM/PI/CONNECT/Edge vary by product/config. / Linux hosts API, SQL, AI Gate, evidence and integration; validate scope with vendors and class authorities.
+[TextBox 79] Official product pages checked 6 Jun 2026: aveva.com | siemens.com/teamcenter | 3ds.com/3dexperience/enovia | hexagon.com/asset-lifecycle | ptc.com/codebeamer/windchill | napa.fi
+[TextBox 80] 30
+
+========== SLIDE 31 ==========
+[TextBox 7] Recommended decision
+[TextBox 8] Approve the bounded next increment that proves Windows Authoring + Linux Control Plane in a real shipbuilding change scenario
+[TextBox 9] Future Industrial PLM
+[TextBox 13] APPROVE NOW
+[TextBox 14] Phase 2 configuration core + bounded Continuous Naval Assurance pilot
+[Oval 15] 1
+[TextBox 17] PRODUCT POSITION
+[TextBox 18] Open AVEVA control plane above specialist tools
+[Oval 19] 2
+[TextBox 21] DELIVERY INCREMENT
+[TextBox 22] One E3D/Hull Local Agent change-to-evidence pilot slice
+[Oval 23] 3
+[TextBox 25] GOVERNANCE
+[TextBox 26] 26-week WBS, KPI gates, customer + class release
+[TextBox 27] WHAT APPROVAL UNLOCKS
+[TextBox 30] 0-6 WEEKS
+[TextBox 31] Harden reference
+[TextBox 32] OIDC · seed truth · E2E gates
+[TextBox 35] 6-16 WEEKS
+[TextBox 36] Configuration + impact
+[TextBox 37] BOM · effectivity · baseline · graph
+[TextBox 40] 16-26 WEEKS
+[TextBox 41] Assurance + UAT
+[TextBox 42] Solver evidence · approvals · class review
+[TextBox 47] PROOF AT G6: ONE CLOSED, AUDITABLE LOOP
+[Rounded Rectangle 48] E3D/Hull event
+[Rounded Rectangle 50] Affected / scenarios
+[Rounded Rectangle 52] Approved solver / evidence
+[Rounded Rectangle 54] Human / class / approval
+[Rounded Rectangle 56] Operations / feedback
+[TextBox 62] Success means the customer can see, explain, approve and replay every state transition - without replacing certified specialist solvers.
+[Rounded Rectangle 63] WHY NOW  |  The executable reference is ready; the next differentiator is controlled configuration + cross-domain evidence + lifecycle learning.
+[TextBox 65] 31
+
+========== SLIDE 32 ==========
+[TextBox 2] Glossary 1 / 3 - PLM, configuration and change terms
+[TextBox 3] Appendix · quick reference — terms are kept in editable PowerPoint tables, not standalone text boxes.
+  TBLROW: Abbreviation | Full Term | Definition
+  TBLROW: PLM | Product Lifecycle Management | Managing product data and lifecycle across stages.
+  TBLROW: BOM | Bill of Materials | Structured list of parts, quantities and relationships.
+  TBLROW: E-BOM | Engineering BOM | As-designed structure taken from the 3D model.
+  TBLROW: M-BOM | Manufacturing BOM | As-built structure used on the shop floor.
+  TBLROW: MTO | Material Take-Off | Quantities and materials extracted from model/drawings.
+  TBLROW: ECR | Engineering Change Request | Request to initiate a change.
+  TBLROW: ECO | Engineering Change Order | Authorized engineering change order.
+  TBLROW: MCO | Manufacturing Change Order | Authorized manufacturing change.
+  TBLROW: MOC | Management of Change | Governance process for controlled operational or engineering change.
+  TBLROW: Abbreviation | Full Term | Definition
+  TBLROW: Effectivity | Effectivity | Rule for when/where a configuration applies: hull, block, option or date.
+  TBLROW: Baseline | Baseline | Frozen, released configuration snapshot.
+  TBLROW: Digital thread | Digital Thread | Connected data trail linking design, build and operations.
+  TBLROW: VCRM | Verification Cross-Reference Matrix | Maps each requirement to verification evidence.
+  TBLROW: CoG | Centre of Gravity | Key weight-and-stability quantity.
+  TBLROW: OCX | Open Class eXchange | Open standard for sending hull data to class societies.
+  TBLROW: Class society | Classification Society | Body that approves designs against rules.
+  TBLROW: Loading case | Loading Case | Defined loading / ballast condition checked for stability.
+[TextBox 7] Quick-reference appendix · product names are trademarks of their respective owners.
+[TextBox 8] Appendix
+[TextBox 9] Future Industrial PLM
+[TextBox 10] 32
+
+========== SLIDE 33 ==========
+[TextBox 2] Glossary 2 / 3 - Marine, naval and product terms
+[TextBox 3] Appendix · quick reference — terms are kept in editable PowerPoint tables, not standalone text boxes.
+  TBLROW: Abbreviation | Full Term | Definition
+  TBLROW: NAPA | Naval-architecture & stability software | Certified solver of record for naval architecture, rules and stability workflows.
+  TBLROW: IMO D-2 | IMO Ballast Water Standard | Ballast-water discharge-quality performance standard.
+  TBLROW: P&ID | Piping & Instrumentation Diagram | Diagram showing process piping, instruments and controls.
+  TBLROW: HVAC | Heating, Ventilation & Air-Conditioning | Ventilation, heating and cooling system domain.
+  TBLROW: CFD | Computational Fluid Dynamics | Engineering analysis for flow-related behavior.
+  TBLROW: FEM | Finite-Element Method | Engineering analysis for structures and loads.
+  TBLROW: Hydrostatics | Hydrostatics | Calculations proving the ship floats safely.
+  TBLROW: Stability | Ship Stability | Calculation proving safe loading, trim and margin.
+  TBLROW: Abbreviation / Product | Full Term | Definition
+  TBLROW: AVEVA E3D / Marine | AVEVA E3D / Marine | Windows-centered 3D ship/plant authoring; connect via Agent/Plugin/API bridge.
+  TBLROW: AVEVA Draw | AVEVA Draw | Produces 2D production drawings from the 3D model.
+  TBLROW: AVEVA AIM | Asset Information Management | Handover and operations data management.
+  TBLROW: AVEVA PI System | PI System | Operational time-series / historian platform.
+  TBLROW: AVEVA CONNECT | CONNECT | AVEVA industrial-intelligence cloud and ecosystem.
+  TBLROW: Teamcenter | Siemens Teamcenter | Siemens PLM platform and configuration benchmark.
+  TBLROW: 3DEXPERIENCE / ENOVIA | Dassault 3DEXPERIENCE / ENOVIA | Dassault collaboration and PLM platform.
+  TBLROW: Windchill / Codebeamer | PTC Windchill / Codebeamer | PTC PLM and requirements-traceability tools.
+  TBLROW: Hexagon SDx / Smart 3D / j5 | Hexagon ALI tools | Asset-lifecycle, 3D design and operations tools.
+[TextBox 7] Quick-reference appendix · product names are trademarks of their respective owners.
+[TextBox 8] Appendix
+[TextBox 9] Future Industrial PLM
+[TextBox 10] 33
+
+========== SLIDE 34 ==========
+[TextBox 2] Glossary 3 / 3 - Architecture, security and infrastructure terms
+[TextBox 3] Appendix · quick reference — terms are kept in editable PowerPoint tables, not standalone text boxes.
+  TBLROW: Abbreviation | Full Term | Definition
+  TBLROW: ERP | Enterprise Resource Planning | Enterprise business, procurement and finance system.
+  TBLROW: MES | Manufacturing Execution System | Shop-floor production execution system.
+  TBLROW: DWG / DXF | AutoCAD Drawing Formats | Common 2D drawing exchange file formats.
+  TBLROW: API | Application Programming Interface | How software systems call each other.
+  TBLROW: REST / OData | Web API styles | Common styles for reading and writing data.
+  TBLROW: OpenAPI 3.1 | OpenAPI Specification | Machine-readable contract describing every endpoint.
+  TBLROW: FastAPI | FastAPI | Python API framework used in the reference build.
+  TBLROW: Abbreviation | Full Term | Definition
+  TBLROW: OIDC / OAuth2 | OpenID Connect / OAuth2 | Identity login and authorization standards.
+  TBLROW: JWT | JSON Web Token | Signed access token proving who is calling.
+  TBLROW: RBAC | Role-Based Access Control | Who may do what.
+  TBLROW: PostgreSQL | PostgreSQL | Reference relational database.
+  TBLROW: Keycloak | Keycloak | Reference identity server.
+  TBLROW: E2E / CI | End-to-End / Continuous Integration | Automated tests and build validation.
+  TBLROW: HA / DR | High Availability / Disaster Recovery | System continuity and recovery concepts.
+  TBLROW: TLS / WAF / ZTNA | Security controls | Transport encryption, web firewall and zero-trust access.
+  TBLROW: SAN / NAS / WORM | Storage technologies | Storage network, network storage and write-once retention.
+[TextBox 7] Quick-reference appendix · product names are trademarks of their respective owners.
+[TextBox 8] Appendix
+[TextBox 9] Future Industrial PLM
+[TextBox 10] 34

@@ -1,0 +1,35 @@
+﻿PAGE=2 | Education, Certifications, Language and Technical Toolkit
+PAGE=3 | Career Summary
+PAGE=3 | Detailed Professional Experience
+PAGE=7 | Compensation / Salary Information
+PAGE=7 | Self-Introduction and Application Motivation
+--- page 2 content ---
+P2: [Application Issue Solving and Root-Cause Analysis: Strong ev]
+P2: [New Design / Product Development and Design-In Support: Expe]
+P2: [Technical Presentations and Solution Proposals: Experienced ]
+P2: [Harsh-Environment Reliability and Manufacturing Mindset: Pro]
+P2: [Independent, Self-Motivated and Travel-Ready Working Style: ]
+P2: [Product/Application Knowledge Integrated with ITT Cannon FAE]
+P2: [ITT Cannon Product Knowledge & Target-Market Fit]
+P2: [I understand that ITT Cannon FAE value comes from matching c]
+P2: [Aerospace & Defense: Familiar with D38999-style circular con]
+P2: [Transportation, Industrial, Heavy Vehicle and Energy: Unders]
+P2: [High-Speed / High-Power / RF Applications: Able to discuss c]
+P2: [Materials and Manufacturing Awareness: Understand that conne]
+P2: [FAE Customer Value: I can help customers clarify requirement]
+P2: [Education, Certifications, Language and Technical Toolkit]
+P2: [Category]
+P2: [Details]
+P2: [Education]
+P2: [M.S. in Electronic & Electrical Engineering, Embedded System]
+P2: [B.S. in Control & Instrumentation Engineering, University of]
+P2: [Certifications / Training]
+P2: [Certified NMEA 2000 Networking for marine communication inte]
+P2: [Defense PMBOK training for defense project execution;]
+P2: [Python and machine learning training for data-based issue an]
+P2: [Language]
+P2: [English technical meetings, customer communication,]
+P2: [VOC clarification and issue follow-up with global partners;]
+P2: [English study in Perth, Australia;]
+P2: [IELTS 5.0.]
+

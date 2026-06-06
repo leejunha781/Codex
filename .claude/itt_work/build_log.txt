@@ -1,0 +1,40 @@
+﻿OPENED Word
+OPENED doc
+STEP1 salary r1=True r2=True
+STEP2 split paragraphs=14 (targets=16)
+STEP3 inserts connector=True values=True
+STEP4 formatted inserted blocks
+STEP5 bolded phrases=6
+STEP6 bumped=72
+STEP7 heading color=7949855
+STEP7 bordered=15
+STEP8 saved
+STEP8 pdf
+PAGES=8 WORDS=4124 TABLES=10
+MIN_FONT=10
+--- headings(14/bold) ---
+  H: Professional Profile and Interest in ITT Cannon FAE Role
+  H: Key Strengths Matched to ITT Cannon FAE Role
+  H: ITT Cannon Connector Product Knowledge & Target-Market Fit
+  H: Education, Certifications, Language and Technical Toolkit
+  H: Career Summary
+  H: 
+  H: Detailed Professional Experience
+  H: Compensation / Salary Information
+  H: 
+  H: 
+  H: 
+  H: 
+  H: 
+  H: Alignment with ITT Purpose, Values & DNA
+  H: Self-Introduction and Application Motivation
+--- inserted readback ---
+  OK[sz=14 표준]: ITT Cannon Connector Product Knowledge & Targe
+  OK[sz=10 글머리 기호]: Aerospace & Defense (preferred): MIL-DTL-38999
+  OK[sz=14 표준]: Alignment with ITT Purpose, Values & DNA
+  OK[sz=10 글머리 기호]: Impeccable Character: 15+ years in defense and
+  OK[sz=10 글머리 기호]: "We Solve It" in practice: my evidence-based i
+--- salary readback ---
+  $: Above my current base salary (KRW 83.97M); negotiable
+  $: Open and negotiable based on total compensation, role level 
+

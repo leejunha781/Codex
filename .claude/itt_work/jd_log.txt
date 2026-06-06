@@ -1,0 +1,11 @@
+﻿opened  pages=9
+formfeeds_left=0
+total paras collected=357
+B1 extended OK
+B6 extended OK
+B8 extended OK
+bullets extended: B1=True B5=False B6=True B8=True Values=False
+--- verify keyword search ---
+FATAL: Exception calling "Substring" with "2" argument(s): "Index and length must refer to a location within the string.
+Parameter name: length"
+

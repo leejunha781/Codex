@@ -1,0 +1,36 @@
+# 홈 디렉터리 전체 제외 — 아래 명시된 작업 폴더만 추적
+/*
+/.*
+
+# 추적할 폴더
+!/.claude/
+!/.codex/
+
+# .codex 안에서 추적할 폴더만 허용 (대용량 DB·캐시 제외)
+/.codex/*
+!/.codex/skills/
+!/.codex/automations/
+
+# .claude 안 제외 항목
+/.claude/cache/
+/.claude/projects/C--Users-namma--claude/*/tool-results/
+
+# 공통 제외
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.docx
+*.pptx
+*.zip
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.wal
+*.shm
+Thumbs.db
+Desktop.ini
+~$*
+*.tmp
+NTUSER*
+ntuser*

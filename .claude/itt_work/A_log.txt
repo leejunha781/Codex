@@ -1,0 +1,10 @@
+﻿opened
+woven values paragraph before section 4
+formatted woven paragraph
+removed Values paragraphs=6 (expected 6)
+deleted requirement table
+removed requirement heading=1
+saved
+PAGES=8 TABLES=10
+Values heading still present: False
+

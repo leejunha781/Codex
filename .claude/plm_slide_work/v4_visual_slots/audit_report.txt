@@ -1,0 +1,314 @@
+﻿FILE: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Hybrid_Safety_Final_v4.pptx
+SLIDES: 34
+
+=== SLIDE 13 ===
+Picture 13                   L=  10.3 T=  97.2 W= 479.7 H= 338.4 
+Text 0                       L=  32.4 T=  20.2 W= 633.6 H=  30.2 Target architecture concept
+Text 1                       L=  33.8 T=  54.7 W= 612.0 H=   0.0 The win-above patterns converge into one open, customer-owned AVEVA control plane — Windows-based authoring + Linux-based control plane + Cloud/CONNECT integration
+Text 2                       L= 766.8 T=  23.8 W= 158.4 H=  18.7 Future Industrial PLM
+Text 4                       L= 507.6 T=  97.2 W= 435.4 H=  59.0 Experience Layer | Dassault-grade role collaboration, 3D context, assurance margins and executable gate views
+Text 5                       L= 507.6 T= 167.0 W= 435.4 H=  59.0 API Contract Layer | Customer-owned FastAPI/OpenAPI contracts, OIDC authority and solver-adapter contracts
+Text 6                       L= 507.6 T= 236.9 W= 435.4 H=  59.0 Assurance + Digital Thread Layer | NAPA-grade evidence lineage, assurance graph, rules and evaluate/promote flow
+Text 7                       L= 507.6 T= 306.7 W= 435.4 H=  59.0 Configuration Layer | Siemens-grade BOM, effectivity, baselines and change-impact governance
+Text 8                       L= 507.6 T= 376.6 W= 435.4 H=  59.0 Integration Layer Windows E3D/Marine/Hull authoring via Local Agent/PML.NET Bridge · AIM/PI/CONNECT + Edge/Adapter + NAPA/class + ERP/MES adapters
+Text 9                       L= 920.2 T=   8.6 W=  18.0 H=  11.5 13
+PICTURES=1
+PNG=C:\Users\namma\.claude\plm_slide_work\v4_visual_slots\slide13.png
+
+=== SLIDE 15 ===
+TextBox 2                    L=  26.0 T=  10.0 W= 908.0 H=  30.0 Hybrid: Windows Authoring + Linux Control Plane + Cloud/CONNECT
+TextBox 3                    L=  26.0 T=  42.0 W= 908.0 H=  29.1 Windows AVEVA E3D/Marine/Hull authoring + Linux Open PLM Control Plane (API/SQL/AI Gate/Evidence/Adapters/Callbacks) + Cloud/CONNECT
+TextBox 4                    L=  26.0 T=  70.0 W= 494.0 H=  29.1 A - Windows Authoring ↔ Linux Control Plane ↔ Local Agent / API callbacks
+TextBox 7                    L=  36.0 T= 100.0 W= 476.0 H=  29.1 1.  API LAYER
+TextBox 8                    L= 132.0 T= 100.0 W= 380.0 H=  29.1 FastAPI  -  REST / OData  -  OpenAPI 3.1  -  OIDC (OAuth2)
+Rounded Rectangle 9          L=  36.0 T= 124.0 W= 114.0 H=  24.0 POST /oauth/token
+Rounded Rectangle 10         L= 156.0 T= 124.0 W= 114.0 H=  24.0 GET /objects/{id}
+Rounded Rectangle 11         L= 276.0 T= 124.0 W= 114.0 H=  24.0 POST /structures
+Rounded Rectangle 12         L= 396.0 T= 124.0 W= 114.0 H=  24.0 POST /approvals
+TextBox 13                   L=  36.0 T= 154.0 W= 476.0 H=  29.1 Stateless, versioned, OpenAPI-documented endpoints, token-secured; every call returns JSON + an HTTP status, so each step is verifiable.
+TextBox 15                   L= 132.0 T= 200.0 W= 380.0 H=  29.1 REST commands ↔ Local Agent/Plugin executes ↔ JSON callbacks
+TextBox 18                   L=  36.0 T= 228.0 W= 476.0 H=  29.1 2.  OPEN PLM CONTROL PLANE (Linux) — API & services
+Rounded Rectangle 19         L=  36.0 T= 252.0 W= 152.0 H=  22.0 Objects & Vault
+Rounded Rectangle 20         L= 198.0 T= 252.0 W= 152.0 H=  22.0 Structures / eBOM
+Rounded Rectangle 21         L= 360.0 T= 252.0 W= 152.0 H=  22.0 ECR & Impact
+Rounded Rectangle 22         L=  36.0 T= 278.0 W= 152.0 H=  22.0 Approvals / Workflow
+Rounded Rectangle 23         L= 198.0 T= 278.0 W= 152.0 H=  22.0 AI Gate / Evidence
+Rounded Rectangle 24         L= 360.0 T= 278.0 W= 152.0 H=  22.0 Integration Gateway
+TextBox 25                   L=  36.0 T= 299.9 W= 476.0 H=   0.0 Linux control plane handles API, SQL, AI Gate, evidence, integration gateway and callback receiver; E3D authoring stays on Windows.
+TextBox 27                   L= 132.0 T= 328.0 W= 380.0 H=  29.1 Linux Control Plane ↔ Windows authoring via Local Agent / PML.NET Bridge
+TextBox 30                   L=  36.0 T= 356.0 W= 476.0 H=  29.1 3.  INFRASTRUCTURE — Linux cluster + Windows authoring tier
+Rounded Rectangle 31         L=  36.0 T= 378.0 W= 111.0 H=  96.0 4-node cluster - HA | 16 vCPU - 64 GB/node | Linux - containers
+TextBox 33                   L=  56.0 T= 383.0 W=  87.0 H=  29.1 App · API · AI Gate (Linux)
+Rounded Rectangle 35         L= 157.0 T= 378.0 W= 111.0 H=  96.0 PostgreSQL 16 - HA | 32 vCPU - 256 GB | NVMe RAID10 + standby
+TextBox 37                   L= 177.0 T= 383.0 W=  87.0 H=  29.1 Database
+Rounded Rectangle 39         L= 278.0 T= 378.0 W= 111.0 H=  96.0 SAN (FC) + NAS | 100 TB+ usable | Snapshots - WORM
+TextBox 41                   L= 298.0 T= 383.0 W=  87.0 H=  29.1 Vault / Storage
+Rounded Rectangle 43         L= 399.0 T= 378.0 W= 111.0 H=  96.0 API GW + LB (HA) | TLS 1.3 - WAF | OIDC/OAuth2 - ZTNA
+TextBox 45                   L= 419.0 T= 383.0 W=  99.0 H=  29.1 Gateway - Security
+TextBox 47                   L=  36.0 T= 474.0 W= 476.0 H=  42.0 Windows authoring tier: GPU workstations run AVEVA E3D · Marine · Hull · Draw in supported AVEVA environments, linked via Local Agent / Plugin / PML.NET Bridge (not hosted on Linux). Linux: HA API/SQL/evidence services + backup + AI gate observability.
+TextBox 49                   L= 538.0 T=  70.0 W= 396.0 H=  30.0 B - HD Hyundai: Using the API (simple, step-by-step, verifiable)
+TextBox 55                   L= 586.0 T= 110.0 W= 340.0 H=  16.0 plm_client.py  -  HD Hyundai PLM client  →  calls REST API
+TextBox 56                   L= 548.0 T= 130.0 W= 376.0 H=  29.1 import requests | API = "https://plm.hhi.co.kr/api/v1" | tok = requests.post(f"{API}/oauth/token", |                     data=CRED).json()["access_token"] | H = {"Authorization": f"Bearer {tok}"} | r = requests.get(f"{API}/objects/HD-ETO-1001", headers=H) | print(r.status_code, r.json()["name"])   # 200 OK → verified
+TextBox 57                   L= 538.0 T= 246.0 W= 396.0 H=  29.1 Each step calls one endpoint and returns a status you can check  (OK)
+Oval 60                      L= 550.0 T= 271.0 W=  26.0 H=  26.0 1
+TextBox 62                   L= 586.0 T= 267.0 W= 232.0 H=  29.1 Authenticate (OIDC) | POST /oauth/token
+Rounded Rectangle 63         L= 826.0 T= 272.0 W= 100.0 H=  24.0 200 - token  OK
+Oval 67                      L= 550.0 T= 323.0 W=  26.0 H=  26.0 2
+TextBox 69                   L= 586.0 T= 319.0 W= 232.0 H=  29.1 Read object | GET /objects/HD-ETO-1001
+Rounded Rectangle 70         L= 826.0 T= 324.0 W= 100.0 H=  24.0 200 - object  OK
+Oval 74                      L= 550.0 T= 375.0 W=  26.0 H=  26.0 3
+TextBox 76                   L= 586.0 T= 371.0 W= 232.0 H=  29.1 Create structure (eBOM) | POST /structures
+Rounded Rectangle 77         L= 826.0 T= 376.0 W= 100.0 H=  24.0 201 - struct_id  OK
+Oval 81                      L= 550.0 T= 427.0 W=  26.0 H=  26.0 4
+TextBox 83                   L= 586.0 T= 423.0 W= 232.0 H=  29.1 Raise ECR & run impact | POST /ecr/{id}/impact
+Rounded Rectangle 84         L= 826.0 T= 428.0 W= 100.0 H=  24.0 200 - impact  OK
+Oval 88                      L= 550.0 T= 479.0 W=  26.0 H=  26.0 5
+TextBox 90                   L= 586.0 T= 475.0 W= 232.0 H=  29.1 Approve | POST /approvals
+Rounded Rectangle 91         L= 826.0 T= 480.0 W= 100.0 H=  24.0 200 - APPROVED  OK
+TextBox 92                   L=  26.0 T= 515.0 W= 908.0 H=  22.0 Hybrid: Windows runs E3D/Marine/Hull authoring · Linux hosts API/SQL/AI Gate/Evidence/Integration · Local Agent/Plugin executes commands and returns callbacks.
+Text 2                       L= 766.8 T=  23.8 W= 158.4 H=  18.7 Future Industrial PLM
+Text 12                      L= 920.2 T=   8.6 W=  18.0 H=  11.5 15
+PICTURES=0
+PNG=C:\Users\namma\.claude\plm_slide_work\v4_visual_slots\slide15.png
+
+=== SLIDE 16 ===
+TextBox 1                    L=  39.6 T=  25.2 W= 821.1 H=  41.2 Final hybrid deployment correction - authoring vs control plane
+TextBox 2                    L=  39.6 T=  66.2 W= 900.0 H=  25.2 Final positioning: Windows-based AVEVA engineering authoring + Linux-based Open PLM Control Plane + Cloud/CONNECT integration
+Rounded Rectangle 3          L=  39.6 T= 111.6 W= 255.6 H= 234.0 Windows Authoring Zone | AVEVA E3D / Marine / Hull Design | AVEVA Draw / MTO | Local Agent / Plugin / PML.NET Bridge | Windows designer PCs or supported AVEVA environments. | No direct Linux hosting assumption.
+Rounded Rectangle 4          L= 342.0 T= 111.6 W= 255.6 H= 234.0 Linux Open PLM Control Plane | FastAPI / OpenAPI | PostgreSQL / Evidence Store | AI Gate + Rule Guardrails | Integration Gateway + Callback Receiver | Keycloak / OIDC / RBAC | Scalable API, SQL, evidence and governance layer.
+Rounded Rectangle 5          L= 644.4 T= 111.6 W= 255.6 H= 234.0 Cloud / CONNECT + Adapters | AVEVA CONNECT | AIM / PI Web API | AVEVA Edge / Adapter layer | NAPA / Class / CFD / FEM adapters | ERP / MES / Document Vault | Federates specialist tools without replacing them.
+Table 8                      L=  39.6 T= 363.6 W= 885.6 H= 150.1 TBL: Unsafe expression to avoid | Final corrected expression / TBL: “AVEVA Marine / E3D on Linux server” | “E3D/Marine/Hull runs in supported Windows authoring environments; Linux servers run API/SQL/AI Gate/Evidence/Integration Control Plane.” / TBL: “Linux server directly runs PLM and E3D” | “Linux runs the PLM Control Plane and integration layer; E3D/Hull links through Windows Authoring Client, Local Agent/Plugin or supported AVEVA adapters.” / TBL: “FastAPI directly calls E3D/Hull” | “FastAPI issues commands; Local Agent/Plugin executes E3D/Hull work and returns callbacks.” / TBL: “All AVEVA products integrated on Linux” | “Windows Authoring + Linux Control Plane + Cloud/CONNECT + Adapter-based Hybrid Architecture.”
+TextBox 9                    L=  39.6 T= 513.4 W= 866.6 H=  21.8 Interview line: E3D/Marine authoring stays Windows-centered; Linux owns FastAPI, PostgreSQL, AI Gate, Evidence Pack, Integration Gateway and Callback Receiver.
+Text 2                       L= 766.8 T=  23.8 W= 158.4 H=  18.7 Future Industrial PLM
+Text 12                      L= 920.2 T=   8.6 W=  18.0 H=  11.5 16
+PICTURES=0
+PNG=C:\Users\namma\.claude\plm_slide_work\v4_visual_slots\slide16.png
+
+=== SLIDE 17 ===
+Picture 2                    L=  38.0 T= 236.5 W= 520.0 H= 293.0 
+TextBox 6                    L=  34.0 T=  18.0 W= 790.0 H=  29.1 Phase 2 + Continuous Naval Assurance pilot scope
+TextBox 7                    L=  34.0 T=  54.0 W= 880.0 H=  29.1 A bounded executable slice proves configuration, impact, approved-solver evidence, approval authority and operations feedback
+TextBox 8                    L= 800.0 T=  24.0 W= 130.0 H=  29.1 Future Industrial PLM
+Oval 15                      L=  48.0 T= 119.0 W=  23.0 H=  23.0 1
+TextBox 17                   L=  77.0 T= 116.0 W=  83.0 H=  29.1 E3D / Hull | change
+TextBox 18                   L=  48.0 T= 159.0 W= 112.0 H=  29.1 Local Agent → POST /events
+Oval 20                      L= 198.0 T= 119.0 W=  23.0 H=  23.0 2
+TextBox 23                   L= 227.0 T= 116.0 W=  83.0 H=  29.1 Resolve | configuration
+TextBox 24                   L= 198.0 T= 159.0 W= 112.0 H=  29.1 GET /configuration
+Oval 26                      L= 348.0 T= 119.0 W=  23.0 H=  23.0 3
+TextBox 28                   L= 377.0 T= 116.0 W=  83.0 H=  29.1 Evaluate | impact
+TextBox 29                   L= 348.0 T= 159.0 W= 112.0 H=  29.1 POST /impact/evaluate
+Oval 31                      L= 498.0 T= 119.0 W=  23.0 H=  23.0 4
+TextBox 33                   L= 527.0 T= 116.0 W=  83.0 H=  29.1 Run approved | solver
+TextBox 34                   L= 498.0 T= 159.0 W= 112.0 H=  29.1 POST /solver-runs
+Oval 36                      L= 648.0 T= 119.0 W=  23.0 H=  23.0 5
+TextBox 38                   L= 677.0 T= 116.0 W=  83.0 H=  29.1 Evidence + | approval
+TextBox 39                   L= 648.0 T= 159.0 W= 112.0 H=  29.1 POST /promote
+Oval 41                      L= 798.0 T= 119.0 W=  23.0 H=  23.0 6
+TextBox 43                   L= 827.0 T= 116.0 W=  83.0 H=  29.1 Operations | feedback
+TextBox 44                   L= 798.0 T= 159.0 W= 112.0 H=  29.1 AIM + PI / CONNECT
+TextBox 57                   L= 191.0 T= 197.0 W= 126.0 H=  30.0 Siemens-grade | configuration
+TextBox 59                   L= 341.0 T= 197.0 W= 126.0 H=  30.0 PTC-grade | traceability
+TextBox 61                   L= 491.0 T= 197.0 W= 126.0 H=  30.0 NAPA-grade | calculation
+TextBox 63                   L= 641.0 T= 197.0 W= 126.0 H=  30.0 Dassault-grade | decision context
+TextBox 65                   L= 791.0 T= 197.0 W= 126.0 H=  30.0 AVEVA lifecycle | context
+TextBox 89                   L= 920.0 T=   9.0 W=  18.0 H=  29.1 17
+TextBox 5                    L=  54.0 T= 249.5 W= 474.0 H=  29.1 VISUAL PROOF: ONE CLOSED ASSURANCE LOOP
+TextBox 11                   L=  54.0 T= 467.5 W= 474.0 H=  29.1 Configuration → affected scenarios → approved solver evidence → human / class approval  → operations feedback
+TextBox 12                   L=  54.0 T= 505.5 W= 474.0 H=  29.1 AI diagnoses and holds gates; accountable humans retain release authority.
+TextBox 21                   L= 596.0 T= 249.5 W= 310.0 H=  29.1 BOUNDED SCENARIO
+TextBox 45                   L= 596.0 T= 273.5 W= 310.0 H=  29.1 One hull / block · selected loading cases · one approved solver adapter · seeded change and failure cases
+TextBox 48                   L= 596.0 T= 341.5 W= 310.0 H=  29.1 DELIVERABLE + RELEASE GOVERNANCE
+TextBox 49                   L= 596.0 T= 365.5 W= 310.0 H=  29.1 Configuration + assurance graph · signed evidence pack · AI proposes / holds · naval architect and class authority release
+TextBox 91                   L= 596.0 T= 433.5 W= 310.0 H=  29.1 MINIMUM ACCEPTANCE
+TextBox 93                   L= 599.0 T= 459.5 W= 139.0 H=  29.1 Configuration >=99%
+TextBox 95                   L= 760.0 T= 459.5 W= 139.0 H=  29.1 Impact recall >=95%
+TextBox 97                   L= 599.0 T= 493.5 W= 139.0 H=  29.1 Provenance 100%
+TextBox 99                   L= 760.0 T= 493.5 W= 139.0 H=  29.1 Approval <=5 s
+PICTURES=1
+PNG=C:\Users\namma\.claude\plm_slide_work\v4_visual_slots\slide17.png
+
+=== SLIDE 19 ===
+Picture 25                   L=  26.4 T=  66.8 W= 910.1 H= 420.2 
+TextBox 88                   L=  26.0 T=  10.0 W= 760.0 H=  29.1 AI-gated flow across AVEVA design tools and the API-built PLM
+TextBox 96                   L=  36.0 T=  90.0 W= 880.0 H=  29.1 Design in AVEVA (E3D/Marine + Draw on Windows) → Local Agent/Plugin callbacks → governed & tracked in the Linux API-built PLM, AI-gated at every step
+Rounded Rectangle 97         L=  40.0 T= 116.0 W= 240.0 H=  80.0 Hull & outfitting 3D model
+Oval 99                      L=  48.0 T= 124.0 W=  18.0 H=  18.0 1
+TextBox 101                  L=  70.0 T= 122.0 W= 126.0 H=  20.9 AVEVA E3D Design
+Rounded Rectangle 102        L= 196.0 T= 124.0 W=  78.0 H=  25.1 AVEVA E3D/Marine
+Rounded Rectangle 104        L=  50.0 T= 172.0 W= 150.0 H=  18.0 modeled  OK
+Rounded Rectangle 105        L= 360.0 T= 116.0 W= 240.0 H=  78.0 Generate 2D sheet → export AutoCAD DWG / DXF
+Oval 107                     L= 368.0 T= 124.0 W=  18.0 H=  18.0 2
+TextBox 109                  L= 390.0 T= 122.0 W= 126.0 H=  22.0 2D Production Drawing
+Rounded Rectangle 110        L= 518.0 T= 124.0 W=  76.0 H=  13.0 AVEVA Draw
+Rounded Rectangle 112        L= 370.0 T= 172.0 W= 150.0 H=  18.0 DWG issued  OK
+Rounded Rectangle 113        L= 680.0 T= 116.0 W= 240.0 H=  80.0 Material take-off / eng. BOM from model
+Oval 115                     L= 688.0 T= 124.0 W=  18.0 H=  18.0 3
+TextBox 117                  L= 710.0 T= 122.0 W= 126.0 H=  22.0 E-BOM / MTO
+Rounded Rectangle 118        L= 838.0 T= 124.0 W=  76.0 H=  13.0 AVEVA MTO
+Rounded Rectangle 120        L= 690.0 T= 172.0 W= 150.0 H=  18.0 extracted  OK
+Rounded Rectangle 121        L= 680.0 T= 259.9 W= 240.0 H=  80.0 Approver signs off in the API-built PLM
+Oval 123                     L= 688.0 T= 267.9 W=  18.0 H=  18.0 4
+TextBox 125                  L= 710.0 T= 265.9 W= 126.0 H=  23.1 Approval
+Rounded Rectangle 126        L= 838.0 T= 267.9 W=  76.0 H=  13.0 PLM · API
+Rounded Rectangle 128        L= 690.0 T= 318.0 W= 150.0 H=  18.0 approved  OK
+Rounded Rectangle 129        L= 360.0 T= 259.9 W= 240.0 H=  80.0 Hull / Block / Zone / Date
+Oval 131                     L= 368.0 T= 267.9 W=  18.0 H=  18.0 5
+TextBox 133                  L= 390.0 T= 265.9 W= 126.0 H=  21.0 Effectivity
+Rounded Rectangle 134        L= 518.0 T= 267.9 W=  76.0 H=  13.0 PLM · API
+Rounded Rectangle 136        L= 370.0 T= 318.0 W= 150.0 H=  18.0 scoped  OK
+Rounded Rectangle 137        L=  40.0 T= 259.9 W= 240.0 H=  80.0 Frozen configuration / released rev
+Oval 139                     L=  48.0 T= 267.9 W=  18.0 H=  18.0 6
+TextBox 141                  L=  70.0 T= 265.9 W= 126.0 H=  23.1 Baseline
+Rounded Rectangle 142        L= 198.0 T= 267.9 W=  76.0 H=  13.0 PLM · API
+Rounded Rectangle 144        L=  50.0 T= 318.0 W= 150.0 H=  18.0 baselined  OK
+Rounded Rectangle 145        L=  40.0 T= 402.0 W= 240.0 H=  80.0 Change request → change order
+Oval 147                     L=  48.0 T= 410.0 W=  18.0 H=  18.0 7
+TextBox 149                  L=  70.0 T= 408.0 W= 126.0 H=  21.0 ECR → ECO
+Rounded Rectangle 150        L= 198.0 T= 410.0 W=  76.0 H=  13.0 PLM · API
+Rounded Rectangle 152        L=  50.0 T= 460.0 W= 150.0 H=  18.0 ECO closed  OK
+Rounded Rectangle 153        L= 360.0 T= 402.0 W= 240.0 H=  80.0 Manufacturing BOM + mfg change order
+Oval 155                     L= 368.0 T= 410.0 W=  18.0 H=  18.0 8
+TextBox 157                  L= 390.0 T= 408.0 W= 126.0 H=  22.0 M-BOM + MCO
+Rounded Rectangle 158        L= 518.0 T= 410.0 W=  76.0 H=  13.0 PLM·API + ERM
+Rounded Rectangle 160        L= 370.0 T= 460.0 W= 150.0 H=  18.0 released  OK
+Rounded Rectangle 161        L= 680.0 T= 402.0 W= 240.0 H=  80.0 Affected objects + VCRM & Checklist approval
+Oval 163                     L= 688.0 T= 410.0 W=  18.0 H=  18.0 9
+TextBox 165                  L= 710.0 T= 408.0 W= 126.0 H=  22.0 Impact + Approval
+Rounded Rectangle 166        L= 838.0 T= 410.0 W=  76.0 H=  13.0 PLM · API
+Rounded Rectangle 168        L= 690.0 T= 460.0 W= 150.0 H=  18.0 approved  OK
+Hexagon 177                  L= 297.0 T= 143.0 W=  46.0 H=  40.0 AI
+Hexagon 178                  L= 617.0 T= 143.0 W=  46.0 H=  40.0 AI
+Hexagon 179                  L= 777.0 T= 205.8 W=  46.0 H=  40.0 AI
+Hexagon 180                  L= 617.0 T= 286.9 W=  46.0 H=  40.0 AI
+Hexagon 181                  L= 297.0 T= 286.9 W=  46.0 H=  40.0 AI
+Hexagon 182                  L= 137.0 T= 348.6 W=  46.0 H=  40.0 AI
+Hexagon 183                  L= 297.0 T= 429.0 W=  46.0 H=  40.0 AI
+Hexagon 184                  L= 617.0 T= 429.0 W=  46.0 H=  40.0 AI
+TextBox 185                  L=  36.0 T= 501.1 W= 880.0 H=  15.7 AI gate at every step = error check + anomaly diagnosis  ·  PASS → auto-promote  ·  FAIL → block & flag (no promote)
+TextBox 186                  L=  34.0 T= 517.8 W= 880.0 H=  20.6 PLM live status:  modeled → DWG issued  → MTO extracted → approved  → scoped → baselined → ECO closed → released → approved
+Text 2                       L= 766.8 T=  23.8 W= 158.4 H=  18.7 Future Industrial PLM
+Text 13                      L= 920.2 T=   8.6 W=  18.0 H=  11.5 19
+TextBox 91                   L=  26.0 T=  40.0 W= 923.1 H=  29.1 AVEVA E3D/Marine 3D → AVEVA Draw 2D (AutoCAD DWG/DXF) → MTO/E-BOM → Approval → Effectivity → Baseline → ECR/ECO → M-BOM/MCO → Impact
+Rounded Rectangle 92         L=  22.0 T=  64.0 W= 916.0 H=  22.0 Future PLM   -   API workspace   ·   served at /api/v1   ·   live status tracked
+TextBox 95                   L= 866.0 T=  64.0 W=  70.0 H=  23.1 RUNNING
+Step1ShipRaster              L= 223.5 T= 160.9 W=  48.0 H=  31.0 
+Picture 5                    L= 542.5 T= 158.4 W=  44.4 H=  34.7 
+Picture 8                    L= 872.0 T= 155.6 W=  28.0 H=  36.4 
+Picture 10                   L= 876.5 T= 303.8 W=  23.5 H=  30.7 
+Picture 12                   L= 547.9 T= 299.6 W=  35.6 H=  36.8 
+Picture 14                   L= 230.7 T= 297.6 W=  29.0 H=  40.4 
+Picture 21                   L= 553.5 T= 444.9 W=  33.4 H=  34.7 
+Picture 19                   L= 235.0 T= 441.4 W=  28.5 H=  36.2 
+Picture 23                   L= 872.0 T= 444.9 W=  28.0 H=  31.5 
+PICTURES=10
+PNG=C:\Users\namma\.claude\plm_slide_work\v4_visual_slots\slide19.png
+
+=== SLIDE 22 ===
+TextBox 2                    L=  26.0 T=  12.0 W= 820.0 H=  30.0 Continuous Naval Assurance Control Plane - API concept
+TextBox 3                    L=  26.0 T=  46.0 W= 900.0 H=   0.0 Windows Local Agent/Plugin emits each promoted E3D/Hull revision; Linux control plane evaluates affected scenarios and publishes evidence + approval state.
+TextBox 4                    L= 770.0 T=  14.0 W= 158.0 H=  29.1 Future Industrial PLM
+TextBox 5                    L= 920.0 T=   9.0 W=  18.0 H=  12.0 22
+TextBox 7                    L=  48.0 T=  78.0 W= 864.0 H=  29.1 captured  →  affected  →  calculated  →  explained  →  approved  →  learned
+Oval 10                      L=  52.0 T= 127.0 W=  28.0 H=  28.0 1
+TextBox 12                   L=  88.0 T= 125.0 W= 204.0 H=  29.1 Design-change event
+TextBox 13                   L=  88.0 T= 145.0 W= 204.0 H=  29.1 Windows E3D/Marine + Local Agent
+TextBox 14                   L=  54.0 T= 167.0 W= 238.0 H=  29.1 Promoted revision or baseline emits a typed event with hull, block, option and date effectivity.
+TextBox 16                   L=  57.0 T= 213.0 W= 232.0 H=  29.1 POST /api/v1/revisions
+Oval 19                      L= 359.0 T= 127.0 W=  28.0 H=  28.0 2
+TextBox 21                   L= 395.0 T= 125.0 W= 204.0 H=  29.1 Assurance impact graph
+TextBox 22                   L= 395.0 T= 145.0 W= 204.0 H=  29.1 customer-owned graph
+TextBox 23                   L= 361.0 T= 167.0 W= 238.0 H=  29.1 Find affected compartments, loading cases, rules, downstream objects and previous evidence.
+TextBox 25                   L= 364.0 T= 213.0 W= 232.0 H=  29.1 POST /api/v1/assurance/impact
+Oval 28                      L= 666.0 T= 127.0 W=  28.0 H=  28.0 3
+TextBox 30                   L= 702.0 T= 125.0 W= 204.0 H=  29.1 Federated solver run
+TextBox 31                   L= 702.0 T= 145.0 W= 204.0 H=  29.1 NAPA + class / CFD / FEM adapters
+TextBox 32                   L= 668.0 T= 167.0 W= 238.0 H=  29.1 Execute only affected scenarios; preserve certified solver results and provenance.
+TextBox 34                   L= 671.0 T= 213.0 W= 232.0 H=  29.1 POST /api/v1/solver-runs
+Oval 37                      L= 666.0 T= 311.0 W=  28.0 H=  28.0 4
+TextBox 39                   L= 702.0 T= 309.0 W= 204.0 H=  29.1 Physics-guarded AI diagnosis
+TextBox 40                   L= 702.0 T= 329.0 W= 204.0 H=  29.1 explain + propose alternatives
+TextBox 41                   L= 668.0 T= 351.0 W= 238.0 H=  29.1 Explain margin erosion; rank counterfactual options across safety, weight, cost, buildability and operations.
+TextBox 43                   L= 671.0 T= 397.0 W= 232.0 H=  29.1 GET /api/v1/diagnostics/{run}
+Oval 46                      L= 359.0 T= 311.0 W=  28.0 H=  28.0 5
+TextBox 48                   L= 395.0 T= 309.0 W= 204.0 H=  29.1 Evidence + approval pack
+TextBox 49                   L= 395.0 T= 329.0 W= 204.0 H=  29.1 OCX / class / baseline / approval
+TextBox 50                   L= 361.0 T= 351.0 W= 238.0 H=  29.1 Publish signed results, rule trace, affected objects, evidence pack and release decision.
+TextBox 52                   L= 364.0 T= 397.0 W= 232.0 H=  29.1 POST /api/v1/evidence-packs
+Oval 55                      L=  52.0 T= 311.0 W=  28.0 H=  28.0 6
+TextBox 57                   L=  88.0 T= 309.0 W= 204.0 H=  29.1 Operations calibration
+TextBox 58                   L=  88.0 T= 329.0 W= 204.0 H=  29.1 PI System + CONNECT
+TextBox 59                   L=  54.0 T= 351.0 W= 238.0 H=  29.1 Compare design assumptions with live draught, tank, trim and performance data; feed learning back.
+TextBox 61                   L=  57.0 T= 397.0 W= 232.0 H=  29.1 POST /api/v1/operations/calibration
+TextBox 68                   L= 105.0 T= 252.0 W= 136.0 H=  29.1 operational learning loop
+Rounded Rectangle 69         L=  36.0 T= 438.0 W= 888.0 H=  50.0 AI prioritizes, explains and proposes; certified solvers calculate; the naval architect and class authority make the release decision. This is how the platform moves faster without weakening assurance.
+TextBox 70                   L=  50.0 T= 438.0 W= 116.0 H=  29.1 GUARDRAIL
+TextBox 72                   L=  36.0 T= 505.0 W= 888.0 H=  29.1 Official-source basis: NAPA naval architecture + Node Network + OCX; AVEVA E3D Design + CONNECT + PI System official product pages. Concept architecture is a proposed AVEVA-based PLM extension.
+PICTURES=0
+PNG=C:\Users\namma\.claude\plm_slide_work\v4_visual_slots\slide22.png
+
+=== SLIDE 30 ===
+TextBox 2                    L=  34.0 T=  18.0 W= 790.0 H=  29.1 Evidence base and assumption boundaries
+TextBox 3                    L=  34.0 T=  54.0 W= 880.0 H=  29.1 Official product signals support the direction; proposed AVEVA control-plane capabilities still require pilot validation
+TextBox 4                    L= 800.0 T=  24.0 W= 130.0 H=  29.1 Future Industrial PLM
+TextBox 8                    L=  52.0 T= 126.0 W= 242.0 H=  29.1 AVEVA
+TextBox 9                    L=  52.0 T= 154.0 W= 242.0 H=  29.1 PUBLIC SIGNAL | Data-centric engineering + industrial intelligence
+TextBox 11                   L=  52.0 T= 210.0 W= 242.0 H=  29.1 DESIGN USE | Engineering-to-operations lifecycle context
+TextBox 48                   L= 360.0 T= 126.0 W= 242.0 H=  29.1 SIEMENS
+TextBox 49                   L= 360.0 T= 154.0 W= 242.0 H=  29.1 PUBLIC SIGNAL | Digital thread / twin + PLM process automation
+TextBox 51                   L= 360.0 T= 210.0 W= 242.0 H=  29.1 DESIGN USE | Configuration rigor and lifecycle governance
+TextBox 54                   L= 668.0 T= 126.0 W= 242.0 H=  29.1 DASSAULT
+TextBox 55                   L= 668.0 T= 154.0 W= 242.0 H=  29.1 PUBLIC SIGNAL | Model-based collaboration + virtual twins
+TextBox 57                   L= 668.0 T= 210.0 W= 242.0 H=  29.1 DESIGN USE | Role context and executable twin decisions
+TextBox 60                   L=  52.0 T= 284.0 W= 242.0 H=  29.1 HEXAGON
+TextBox 61                   L=  52.0 T= 312.0 W= 242.0 H=  29.1 PUBLIC SIGNAL | Asset lifecycle from design through maintenance
+TextBox 63                   L=  52.0 T= 368.0 W= 242.0 H=  29.1 DESIGN USE | Completions, handover and operations context
+TextBox 66                   L= 360.0 T= 284.0 W= 242.0 H=  29.1 PTC
+TextBox 67                   L= 360.0 T= 312.0 W= 242.0 H=  29.1 PUBLIC SIGNAL | Requirements, risk, test traceability + AI
+TextBox 69                   L= 360.0 T= 368.0 W= 242.0 H=  29.1 DESIGN USE | Verification gates and affected-object trace
+TextBox 72                   L= 668.0 T= 284.0 W= 242.0 H=  29.1 NAPA
+TextBox 73                   L= 668.0 T= 312.0 W= 242.0 H=  29.1 PUBLIC SIGNAL | Naval calculations, rules and workflows
+TextBox 75                   L= 668.0 T= 368.0 W= 242.0 H=  29.1 DESIGN USE | Approved solver-of-record adapter
+TextBox 77                   L=  54.0 T= 432.0 W= 132.0 H=  29.1 ASSUMPTION | BOUNDARY
+TextBox 78                   L= 194.0 T= 434.0 W= 714.0 H=   0.0 Deployment boundary: E3D/Marine/Unified Engineering authoring is Windows-centered; AIM/PI/CONNECT/Edge vary by product/config. | Linux hosts API, SQL, AI Gate, evidence and integration; validate scope with vendors and class authorities.
+TextBox 79                   L=  40.0 T= 505.0 W= 884.0 H=  29.1 Official product pages checked 6 Jun 2026: aveva.com | siemens.com/teamcenter | 3ds.com/3dexperience/enovia | hexagon.com/asset-lifecycle | ptc.com/codebeamer/windchill | napa.fi
+TextBox 80                   L= 920.0 T=   9.0 W=  18.0 H=  29.1 30
+PICTURES=0
+PNG=C:\Users\namma\.claude\plm_slide_work\v4_visual_slots\slide30.png
+
+=== SLIDE 31 ===
+TextBox 7                    L=  34.0 T=  18.0 W= 790.0 H=  29.1 Recommended decision
+TextBox 8                    L=  34.0 T=  54.0 W= 880.0 H=  29.1 Approve the bounded next increment that proves Windows Authoring + Linux Control Plane in a real shipbuilding change scenario
+TextBox 9                    L= 800.0 T=  24.0 W= 130.0 H=  29.1 Future Industrial PLM
+TextBox 13                   L=  58.0 T= 130.0 W= 270.0 H=  29.1 APPROVE NOW
+TextBox 14                   L=  58.0 T= 158.0 W= 270.0 H=  50.0 Phase 2 configuration core + bounded Continuous Naval Assurance pilot
+Oval 15                      L=  58.0 T= 230.0 W=  28.0 H=  28.0 1
+TextBox 17                   L=  98.0 T= 229.0 W= 226.0 H=  29.1 PRODUCT POSITION
+TextBox 18                   L=  98.0 T= 247.0 W= 226.0 H=  29.1 Open AVEVA control plane above specialist tools
+Oval 19                      L=  58.0 T= 296.0 W=  28.0 H=  28.0 2
+TextBox 21                   L=  98.0 T= 295.0 W= 226.0 H=  29.1 DELIVERY INCREMENT
+TextBox 22                   L=  98.0 T= 313.0 W= 226.0 H=  29.1 One E3D/Hull Local Agent change-to-evidence pilot slice
+Oval 23                      L=  58.0 T= 362.0 W=  28.0 H=  28.0 3
+TextBox 25                   L=  98.0 T= 361.0 W= 226.0 H=  29.1 GOVERNANCE
+TextBox 26                   L=  98.0 T= 379.0 W= 226.0 H=  29.1 26-week WBS, KPI gates, customer + class release
+TextBox 27                   L= 382.0 T= 108.0 W= 512.0 H=  29.1 WHAT APPROVAL UNLOCKS
+TextBox 30                   L= 394.0 T= 155.0 W= 136.0 H=  29.1 0-6 WEEKS
+TextBox 31                   L= 394.0 T= 181.0 W= 136.0 H=  29.1 Harden reference
+TextBox 32                   L= 394.0 T= 213.0 W= 136.0 H=  30.0 OIDC · seed truth · E2E gates
+TextBox 35                   L= 570.0 T= 155.0 W= 136.0 H=  29.1 6-16 WEEKS
+TextBox 36                   L= 570.0 T= 181.0 W= 136.0 H=  29.1 Configuration + impact
+TextBox 37                   L= 570.0 T= 213.0 W= 136.0 H=  30.0 BOM · effectivity · baseline · graph
+TextBox 40                   L= 746.0 T= 155.0 W= 136.0 H=  29.1 16-26 WEEKS
+TextBox 41                   L= 746.0 T= 181.0 W= 136.0 H=  29.1 Assurance + UAT
+TextBox 42                   L= 746.0 T= 213.0 W= 136.0 H=  30.0 Solver evidence · approvals · class review
+TextBox 47                   L= 398.0 T= 299.0 W= 480.0 H=  29.1 PROOF AT G6: ONE CLOSED, AUDITABLE LOOP
+Rounded Rectangle 48         L= 400.0 T= 336.0 W=  80.0 H=  46.0 E3D/Hull event
+Rounded Rectangle 50         L= 496.0 T= 336.0 W=  80.0 H=  46.0 Affected | scenarios
+Rounded Rectangle 52         L= 592.0 T= 336.0 W=  80.0 H=  46.0 Approved solver | evidence
+Rounded Rectangle 54         L= 688.0 T= 336.0 W=  80.0 H=  46.0 Human / class | approval
+Rounded Rectangle 56         L= 784.0 T= 336.0 W=  80.0 H=  46.0 Operations | feedback
+TextBox 62                   L= 400.0 T= 402.0 W= 478.0 H=  30.0 Success means the customer can see, explain, approve and replay every state transition - without replacing certified specialist solvers.
+Rounded Rectangle 63         L=  38.0 T= 472.0 W= 856.0 H=  34.0 WHY NOW  |  The executable reference is ready; the next differentiator is controlled configuration + cross-domain evidence + lifecycle learning.
+TextBox 65                   L= 920.0 T=   9.0 W=  18.0 H=  29.1 31
+PICTURES=0
+PNG=C:\Users\namma\.claude\plm_slide_work\v4_visual_slots\slide31.png

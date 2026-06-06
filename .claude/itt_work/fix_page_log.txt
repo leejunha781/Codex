@@ -1,0 +1,11 @@
+﻿opened pages=9 sections=1
+PageBreakBefore paragraphs=0
+sections=1
+STEP3 PageBreakBefore reset=0
+B5 candidate: [New Design / Product Development and Design-In Support: Expe]
+B5 extended OK
+Values para NOT FOUND
+saved
+pdf
+FINAL pages=9 words=4443
+
