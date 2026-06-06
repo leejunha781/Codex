@@ -36,3 +36,12 @@
 - Updated Windows Terminal settings at C:\Users\namma\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json so defaultProfile points to the PowerShell Core/7 profile {574e775e-4f2a-5b96-ac1e-a2962a402336}.
 - Created backup settings.json.bak_20260606_223639 beside the settings file before editing.
 - Note: Office COM document tasks should still explicitly use Windows PowerShell 5.1 (powershell.exe) when required by the Office automation workflow.
+
+2026-06-06 run (~18m)
+
+- Prepared final English AVEVA Marine development/planning meeting materials.
+- Based work on `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V6.pptx`, which already had 37 slides and 37 speaker-note pages.
+- Added a 4-slide English meeting-guide appendix: p.38 persuasion storyline, p.39 development-team explanation, p.40 planning-team explanation, p.41 closing future-direction argument.
+- Saved matching `Future_Industrial_PLM_Meeting_Deck_EN_V7.pptx`, default `Future_Industrial_PLM_Meeting_Deck_EN.pptx`, and `Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (`33,145,936` bytes, `2026-06-06 22:43:51`).
+- Exported final PDF `Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf` and created English brief files `Future_Industrial_PLM_Development_Planning_Meeting_Brief_EN.md/.txt`.
+- QA: 41 slides, 41 slides with speaker notes, 41 PNG renders in `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v7_render\`; visually checked p.2 and p.38-41.
