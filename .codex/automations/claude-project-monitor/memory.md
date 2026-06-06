@@ -97,3 +97,12 @@
 - p.38 layout changed to large closing statement, three proof cards (`CREDIBLE`, `DIFFERENT`, `APPROVE`), and a bottom meeting-ask banner.
 - Saved `Future_Industrial_PLM_Meeting_Deck_EN_V11.pptx`, default `Future_Industrial_PLM_Meeting_Deck_EN.pptx`, and `Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (`35,308,787` bytes, `2026-06-07 00:54:15`); exported final PDF (`3,844,838` bytes, `2026-06-07 00:54:26`).
 - QA: rendered all 41 pages to `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v11_slide38_visual_render\`; visually checked p.38 and p.1.
+
+2026-06-07 run (~18m)
+
+- Added generated content-matched background images to AVEVA deck pages 3-5 and saved as V12.
+- Generated three text-free images using the built-in image generation tool: p.3 decision path, p.4 development pipeline, p.5 planning/product strategy.
+- Project image copies: `C:\Users\namma\.claude\plm_slide_work\slide03_decision_path_background_v12.png`, `...\slide04_development_pipeline_background_v12.png`, and `...\slide05_planning_strategy_background_v12.png`.
+- Inserted each image as a full-slide background under existing editable PowerPoint text/shapes, with a dark readability wash on each changed slide.
+- Saved `Future_Industrial_PLM_Meeting_Deck_EN_V12.pptx`, default `Future_Industrial_PLM_Meeting_Deck_EN.pptx`, and `Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (`40,747,811` bytes, `2026-06-07 01:12:51`); exported final PDF (`4,282,474` bytes, `2026-06-07 01:13:04`).
+- QA: rendered all 41 pages to `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v12_slides3_5_generated_bg_render\`; visually checked p.1 and p.3-p.5. COM verification confirmed generated background + readability wash shapes on slides 3, 4, and 5.
