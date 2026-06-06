@@ -11,7 +11,7 @@ The user is preparing an **English executive slide deck** to support a job appli
 
 Working folder: `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\`. The user iterates via versioned filenames (`_Corrected`, `_Rebuilt`, `_v2`, etc.) and often has several of these decks **open in PowerPoint at once** while working. (Original main deck was `Future_Industrial_PLM_Meeting_Deck_EN_Rebuilt.pptx`, 18 slides.)
 
-**CURRENT CANONICAL EN deck (as of 2026-06-06): `Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Hybrid_Safety_Final_v4.pptx` — 36 slides, ~27.7 MB, hybrid-architecture corrected + AI slides repositioned into main flow.** This supersedes `..._Rebuilt_v2.pptx`. Full details + what's new are in the "learned v4" entry at the bottom of this file; edit/learn from v4 going forward.
+**CURRENT CANONICAL EN deck (as of 2026-06-06): `Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx` (default alias) and source version `Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V5.pptx` — 37 slides, 27,704,970 bytes, saved 2026-06-06 15:48:08.** This supersedes `..._Hybrid_Safety_Final_v4.pptx`, `..._Rebuilt_v2.pptx`, and earlier variants. Use the default alias for "basic/default" references and V5 when preserving the explicit version name matters.
 
 Theme/stack to stay consistent with: dark navy industrial look, white titles, translucent panels with cyan/orange accent bars, fonts **Aptos Display / Aptos**; the reference architecture is **FastAPI + PostgreSQL + OIDC (OAuth2) + E2E tests**, positioned as AVEVA-style Engineering-to-Operations PLM (digital thread, configuration/eBOM, change impact).
 
@@ -113,5 +113,7 @@ Later (2026-06-06, v4 AI slide graphics + reorganization): added column-card vis
 - MeetingNavRange6 (REVIEW): p.27–29 → **p.29–31**
 - MeetingNavRange7 (CLOSE): p.30 → **p.32**
 - GlossaryPointer: p.31–33 → **p.34–36** (also corrects a pre-existing 1-page offset in the pointer)
+
+Later (2026-06-06, default save): user asked "기본으로 저장" for `Future_Industrial_PLM_Meeting_Deck_EN_V5.pptx`. Created the same-folder default copy `Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx` from V5; both files are 27,704,970 bytes with LastWriteTime 2026-06-06 15:48:08. COM-opened V5 read-only and verified it has 37 slides. Treat `Future_Industrial_PLM_Meeting_Deck_EN.pptx` as the default working deck and `Future_Industrial_PLM_Meeting_Deck_EN_V5.pptx` as the explicit versioned source.
 
 Edit these decks with [[office-docs-com-automation]] (no Python/Node on this PC).
