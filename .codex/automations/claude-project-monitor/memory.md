@@ -106,3 +106,10 @@
 - Inserted each image as a full-slide background under existing editable PowerPoint text/shapes, with a dark readability wash on each changed slide.
 - Saved `Future_Industrial_PLM_Meeting_Deck_EN_V12.pptx`, default `Future_Industrial_PLM_Meeting_Deck_EN.pptx`, and `Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (`40,747,811` bytes, `2026-06-07 01:12:51`); exported final PDF (`4,282,474` bytes, `2026-06-07 01:13:04`).
 - QA: rendered all 41 pages to `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v12_slides3_5_generated_bg_render\`; visually checked p.1 and p.3-p.5. COM verification confirmed generated background + readability wash shapes on slides 3, 4, and 5.
+
+2026-06-07 run (~10m)
+
+- Fixed the AVEVA deck p.2 reference-text design issue and saved as V13.
+- Removed loose p.2 pointer text/shapes (`GlossaryPointer`, `PresenterGuidePointer`) and replaced them with top-right designed reference cards inside shapes: `MEETING PROCEDURE / Guide p.3–5` and `ABBREVIATIONS / Glossary p.39–41`.
+- Saved `Future_Industrial_PLM_Meeting_Deck_EN_V13.pptx`, default `Future_Industrial_PLM_Meeting_Deck_EN.pptx`, and `Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (`40,748,296` bytes, `2026-06-07 01:41:40`); exported final PDF (`4,286,085` bytes, `2026-06-07 01:41:52`).
+- QA: rendered all 41 pages to `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v13_slide2_reference_cards_render\`; visually checked p.1, p.2, p.3-p.5, p.38, and p.41. COM verification confirmed 41 slides, V13 reference-card shapes present, and old loose pointer text absent.

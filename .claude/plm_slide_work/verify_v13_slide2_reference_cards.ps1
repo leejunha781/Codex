@@ -59,7 +59,11 @@ $lines = New-Object System.Collections.Generic.List[string]
 
 try {
     $ppt = Get-PowerPointApplication
-    $ppt.Visible = [Microsoft.Office.Core.MsoTriState]::msoFalse
+    try {
+        $ppt.Visible = [Microsoft.Office.Core.MsoTriState]::msoFalse
+    } catch {
+        # Some PowerPoint COM sessions reject hiding the application window.
+    }
     $pres = $ppt.Presentations.Open($deckPath, [Microsoft.Office.Core.MsoTriState]::msoTrue, [Microsoft.Office.Core.MsoTriState]::msoFalse, [Microsoft.Office.Core.MsoTriState]::msoFalse)
 
     $slideCount = $pres.Slides.Count

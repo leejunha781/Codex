@@ -1,0 +1,19 @@
+﻿Deck: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V13.pptx
+Slide count: 41
+Required V13 reference shapes present: True
+Old pointer shapes absent: True
+Loose old pointer text absent: True
+Required missing count: 0
+Old remaining count: 0
+Loose text remaining count: 0
+File: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V13.pptx | 40748296 bytes | 2026-06-07 01:41:40
+File: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx | 40748296 bytes | 2026-06-07 01:41:40
+File: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx | 40748296 bytes | 2026-06-07 01:41:40
+File: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf | 4286085 bytes | 2026-06-07 01:41:52
+Slide 2 reference card text:
+  TextBox 11: Meeting procedure - development + planning decision flow
+  TextBox 13: Start with the meeting procedure, then move from facts to ideas, delivery plan and final decision
+  ProcedureGuideLabelV13: MEETING PROCEDURE
+  ProcedureGuideRangeV13: Guide  p.3–5
+  GlossaryGuideLabelV13: ABBREVIATIONS
+  GlossaryGuideRangeV13: Glossary  p.39–41
