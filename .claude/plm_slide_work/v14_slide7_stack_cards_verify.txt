@@ -1,0 +1,11 @@
+﻿Deck: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V14.pptx
+Slide count: 41
+Required V14 stack-card shapes present: True
+Old slide 7 stack-list shape names absent: True
+Key redesigned slide 7 text present: True
+Missing count: 0
+Old remaining count: 0
+File: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V14.pptx | 40749477 bytes | 2026-06-07 01:57:19
+File: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx | 40749477 bytes | 2026-06-07 01:57:20
+File: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx | 40749477 bytes | 2026-06-07 01:57:21
+File: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf | 4288639 bytes | 2026-06-07 01:58:41
