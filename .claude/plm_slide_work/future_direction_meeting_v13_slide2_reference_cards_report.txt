@@ -1,0 +1,19 @@
+﻿Future Industrial PLM V13 - slide 2 reference-card redesign
+Generated: 2026-06-07 01:41:55 +09:00
+Scope: fix loose top reference text on slide 2 by moving content into designed navigation cards.
+Backup folder: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\_backup_20260607_slide2_reference_cards_v13_20260607_014058
+
+Removed loose pointer/text shapes: 2
+Cover revision replacements: 1
+Changes:
+- Removed loose GlossaryPointer / PresenterGuidePointer text from slide 2.
+- Added right-side reference toolbar with two rounded navigation cards.
+- Card 1: MEETING PROCEDURE / Guide p.3–5.
+- Card 2: ABBREVIATIONS / Glossary p.39–41.
+- Cover revision updated to Rev. V13 · 2026-06-07.
+
+Saved files:
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V13.pptx	40748296	2026-06-07 01:41:40
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx	40748296	2026-06-07 01:41:40
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx	40748296	2026-06-07 01:41:40
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf	4286085	2026-06-07 01:41:52
