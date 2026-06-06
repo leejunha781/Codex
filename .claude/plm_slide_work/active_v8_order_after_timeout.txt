@@ -1,0 +1,46 @@
+﻿Presentation: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V8.pptx
+SavedBefore: 0
+SlideCount: 41
+SavedAfter: -1
+
+1. Meeting Guide - persuasion storyline
+2. What development teams must hear
+3. What planning teams must hear
+4. Current-state comparison - no vendor owns the complete loop
+5. Current PLM landscape
+6. Where we are now
+7. Meeting thesis - win above tool silos
+8. Meeting structure - seven decisions in order
+9. Strategic gap to fill
+10. What to absorb - and where AVEVA must go beyond
+11. Win above Siemens - make configuration rigor open and operations-aware
+12. Win above Dassault - make the virtual twin executable and evidence-driven
+13. AVEVA AI Capabilities — AI assists, the control plane governs
+14. AI deployment path — start light, then scale to AVEVA CONNECT
+15. Lightweight Piping Routing — deterministic pilot
+16. Target architecture concept
+17. Executable reference package
+18. Hybrid: Windows Authoring + Linux Control Plane + Cloud/CONNECT
+19. Hybrid deployment overview — Windows authoring + Linux control plane
+20. Phase 2 + Continuous Naval Assurance pilot scope
+21. Requirement → AI-built VCRM & Checklist (admin-editable, approved in Impact+Approval)
+22. Public product + roadmap signals - official emphasis only
+23. Design tool → 2D production drawing (AutoCAD DWG/DXF) → registered in the API-built PLM
+24. AI-gated flow across AVEVA design tools and the API-built PLM
+25. E3D / Hull design - version control approach
+26. Continuous Naval Assurance Control Plane - API concept
+27. Win above NAPA - own the continuous naval assurance loop
+28. User-Configurable PLM Process — Altering the Entire Flow via API (Admin Privileges)
+29. Executable gate flow
+30. Delivery WBS - consolidated after the full solution scope
+31. Company-by-company benchmark, win-above strategies, open AVEVA control plane, delivery WBS and KPI gates
+32. KPI model - configuration and naval assurance acceptance
+33. Future-state comparison - AVEVA wins by orchestrating the full assurance loop
+34. Review ownership and operating model
+35. Key review risks and mitigations
+36. Evidence base and assumption boundaries
+37. Recommended decision
+38. Glossary 1 / 3 - PLM, configuration and change terms
+39. Glossary 2 / 3 - Marine, naval and product terms
+40. Glossary 3 / 3 - Architecture, security and infrastructure terms
+41. Closing argument - future AVEVA Marine direction
