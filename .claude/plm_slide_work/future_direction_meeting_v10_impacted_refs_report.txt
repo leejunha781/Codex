@@ -1,17 +1,17 @@
 ﻿Future Industrial PLM V10 - impacted page/content reference correction
-Generated: 2026-06-07 00:32:46 +09:00
+Generated: 2026-06-07 00:34:41 +09:00
 Scope: correct content affected by adding/moving meeting-procedure pages 3-5.
 
 Changes:
-- Slide 1: Rev. V9 -> Rev. V10 (1 replacement)
-- Slide 18: WBS page reference p.28 -> p.31 (1 replacement)
+- Slide 1: revision/date updated to Rev. V10 - 2026-06-07 (1 replacement)
+- Slide 18: shortened WBS reference and corrected p.28 -> p.31 (1 replacement)
 - Slide 38: footer section Meeting Procedure -> Close (1 replacement)
 - Slide 2: normalized meeting guide range p.3-5 -> p.3–5 (1 replacement)
 
-Backup folder: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\_backup_20260607_impacted_refs_v10_20260607_003222
+Backup folder: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\_backup_20260607_impacted_refs_v10_20260607_003416
 
 Saved files:
-D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V10.pptx	33151579	2026-06-07 00:32:26
-D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx	33151579	2026-06-07 00:32:26
-D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx	33151579	2026-06-07 00:32:26
-D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf	3633067	2026-06-07 00:32:43
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V10.pptx	33151550	2026-06-07 00:34:23
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx	33151550	2026-06-07 00:34:23
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx	33151550	2026-06-07 00:34:23
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf	3632712	2026-06-07 00:34:40

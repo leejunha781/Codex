@@ -98,16 +98,20 @@ try {
     $ppt = Get-PowerPointApplication
     $pres = $ppt.Presentations.Open($v10Deck, $false, $false, $false)
 
-    $c = Replace-InSlide -Slide $pres.Slides.Item(1) -OldText 'Rev. V9' -NewText 'Rev. V10'
-    [void]$changes.Add("Slide 1: Rev. V9 -> Rev. V10 ($c replacement)")
+    $c = Replace-InSlide -Slide $pres.Slides.Item(1) -OldText 'Rev. V9 - 2026-06-06' -NewText 'Rev. V10 - 2026-06-07'
+    if ($c -eq 0) {
+        $c = Replace-InSlide -Slide $pres.Slides.Item(1) -OldText 'Rev. V9' -NewText 'Rev. V10'
+        $c = $c + (Replace-InSlide -Slide $pres.Slides.Item(1) -OldText 'Rev. V10 - 2026-06-06' -NewText 'Rev. V10 - 2026-06-07')
+    }
+    [void]$changes.Add("Slide 1: revision/date updated to Rev. V10 - 2026-06-07 ($c replacement)")
 
     $oldSlide18 = 'Scope: future-phase concept; separate from Phase 2 Naval Assurance WBS 0–5 (p.28).'
-    $newSlide18 = 'Scope: future-phase concept; separate from Phase 2 Naval Assurance WBS 0–5 (p.31).'
+    $newSlide18 = 'Scope: future-phase concept; WBS 0-5 on p.31.'
     $c = Replace-InSlide -Slide $pres.Slides.Item(18) -OldText $oldSlide18 -NewText $newSlide18
     if ($c -eq 0) {
-        $c = Replace-InSlide -Slide $pres.Slides.Item(18) -OldText '(p.28)' -NewText '(p.31)'
+        $c = Replace-InSlide -Slide $pres.Slides.Item(18) -OldText 'separate from Phase 2 Naval Assurance WBS 0–5 (p.28).' -NewText 'WBS 0-5 on p.31.'
     }
-    [void]$changes.Add("Slide 18: WBS page reference p.28 -> p.31 ($c replacement)")
+    [void]$changes.Add("Slide 18: shortened WBS reference and corrected p.28 -> p.31 ($c replacement)")
 
     $c = Replace-InSlide -Slide $pres.Slides.Item(38) -OldText 'Future Industrial PLM / Meeting Procedure' -NewText 'Future Industrial PLM / Close'
     [void]$changes.Add("Slide 38: footer section Meeting Procedure -> Close ($c replacement)")
