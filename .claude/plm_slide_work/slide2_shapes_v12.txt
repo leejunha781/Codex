@@ -1,0 +1,36 @@
+﻿SlideWidth=960 SlideHeight=540
+TextBox 11	Type=17	L=34.0	T=18.0	W=740.0	H=29.1	TEXT=Meeting procedure - development + planning decision flow
+TextBox 13	Type=17	L=34.0	T=54.0	W=840.0	H=29.1	TEXT=Start with the meeting procedure, then move from facts to ideas, delivery plan and final decision
+TextBox 14	Type=17	L=800.0	T=24.0	W=130.0	H=29.1	TEXT=Future Industrial PLM
+TextBox 18	Type=17	L=60.0	T=111.0	W=28.0	H=29.1	TEXT=1
+TextBox 19	Type=17	L=102.0	T=109.0	W=210.0	H=29.1	TEXT=CURRENT STATE
+TextBox 20	Type=17	L=102.0	T=125.0	W=792.0	H=29.1	TEXT=Competitor vs AVEVA comparison, PLM position and today's executable baseline
+TextBox 23	Type=17	L=60.0	T=163.0	W=28.0	H=29.1	TEXT=2
+TextBox 24	Type=17	L=102.0	T=161.0	W=210.0	H=29.1	TEXT=PUBLIC SIGNALS
+TextBox 25	Type=17	L=102.0	T=177.0	W=792.0	H=29.1	TEXT=Official product and roadmap signals; confirmed versus directional
+TextBox 28	Type=17	L=60.0	T=215.0	W=28.0	H=29.1	TEXT=3
+TextBox 29	Type=17	L=102.0	T=213.0	W=210.0	H=29.1	TEXT=WINNING IDEAS
+TextBox 30	Type=17	L=102.0	T=229.0	W=792.0	H=29.1	TEXT=Meeting thesis + win-above NAPA / Siemens / Dassault patterns
+TextBox 33	Type=17	L=60.0	T=267.0	W=28.0	H=29.1	TEXT=4
+TextBox 34	Type=17	L=102.0	T=265.0	W=210.0	H=29.1	TEXT=PROPOSAL + DELIVERY
+TextBox 35	Type=17	L=102.0	T=281.0	W=792.0	H=29.1	TEXT=Architecture, workflows and pilot scope - then WBS and KPI gates
+TextBox 38	Type=17	L=60.0	T=319.0	W=28.0	H=29.1	TEXT=5
+TextBox 39	Type=17	L=102.0	T=317.0	W=210.0	H=29.1	TEXT=FUTURE-STATE COMPARE
+TextBox 40	Type=17	L=102.0	T=333.0	W=792.0	H=29.1	TEXT=Re-score AVEVA after the proposed ideas are applied
+TextBox 43	Type=17	L=60.0	T=371.0	W=28.0	H=29.1	TEXT=6
+TextBox 44	Type=17	L=102.0	T=369.0	W=210.0	H=29.1	TEXT=REVIEW
+TextBox 45	Type=17	L=102.0	T=385.0	W=792.0	H=29.1	TEXT=Ownership, risks, evidence and assumptions requiring agreement
+TextBox 48	Type=17	L=60.0	T=423.0	W=28.0	H=29.1	TEXT=7
+TextBox 49	Type=17	L=102.0	T=421.0	W=210.0	H=29.1	TEXT=CLOSE
+TextBox 50	Type=17	L=102.0	T=437.0	W=792.0	H=29.1	TEXT=Approve the next increment and the assurance pilot
+TextBox 52	Type=17	L=60.0	T=474.0	W=840.0	H=29.1	TEXT=Procedure rule: align how the room will decide first; WBS and KPI appear only after capabilities and pilot scope are clear.
+TextBox 53	Type=17	L=920.0	T=9.0	W=18.0	H=12.0	TEXT=2
+GlossaryPointer	Type=17	L=540.0	T=55.0	W=334.0	H=29.1	TEXT=Abbreviations → Glossary appendix, p.39–41
+MeetingNavRange1	Type=1	L=858.0	T=114.0	W=50.0	H=17.0	TEXT=p.6–8
+MeetingNavRange2	Type=1	L=858.0	T=166.0	W=50.0	H=17.0	TEXT=p.9
+MeetingNavRange3	Type=1	L=858.0	T=218.0	W=50.0	H=17.0	TEXT=p.10–18
+MeetingNavRange4	Type=1	L=858.0	T=270.0	W=50.0	H=17.0	TEXT=p.19–32
+MeetingNavRange5	Type=1	L=858.0	T=322.0	W=50.0	H=17.0	TEXT=p.33
+MeetingNavRange6	Type=1	L=858.0	T=374.0	W=50.0	H=17.0	TEXT=p.34–36
+MeetingNavRange7	Type=1	L=858.0	T=426.0	W=50.0	H=17.0	TEXT=p.37–38
+PresenterGuidePointer	Type=17	L=540.0	T=72.0	W=360.0	H=14.3	TEXT=Meeting procedure guide -> p.3–5
