@@ -1,23 +1,23 @@
 ﻿Future Industrial PLM V8 reordered by SlideID for development/planning meeting procedure
-Generated: 2026-06-06 23:58:41 +09:00
+Generated: 2026-06-07 00:00:34 +09:00
 Slide count: 41
 Slides with notes: 41
 PNG render count: 41
 Render folder: C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v8_reordered_render
-Backup folder: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\_backup_20260606_reorder_v8_slideid_20260606_235744
+Backup folder: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\_backup_20260606_reorder_v8_slideid_20260606_235939
 
 Saved files:
-D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V8.pptx	33146124	2026-06-06 23:58:18
-D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx	33146124	2026-06-06 23:58:18
-D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx	33146124	2026-06-06 23:58:18
-D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf	3613737	2026-06-06 23:58:32
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V8.pptx	33146092	2026-06-07 00:00:13
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx	33146092	2026-06-07 00:00:13
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx	33146092	2026-06-07 00:00:13
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf	3615046	2026-06-07 00:00:27
 
 Final slide order:
-1. Company-by-oompany benohmark, win-above strategies, open AVEVA oontrol plane, delivery WBS and KPI gates
+1. Company-by-company benchmark, win-above strategies, open AVEVA control plane, delivery WBS and KPI gates
 2. Meeting procedure - development + planning decision flow
 3. Meeting Procedure - persuasion storyline
-4. What dxvxlopmxnt txams must hxar
-5. What planning txams must hxar
+4. What development teams must hear
+5. What planning teams must hear
 6. Current-state comparison - no vendor owns the complete loop
 7. Current PLM landscape
 8. Where we are now
@@ -50,7 +50,7 @@ Final slide order:
 35. Key review risks and mitigations
 36. Evidence base and assumption boundaries
 37. Recommended decision
-38. Closing argumxnt - futurx AVEVA Marinx dirxction
+38. Closing argument - future AVEVA Marine direction
 39. Glossary 1 / 3 - PLM, configuration and change terms
 40. Glossary 2 / 3 - Marine, naval and product terms
 41. Glossary 3 / 3 - Architecture, security and infrastructure terms
