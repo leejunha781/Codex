@@ -11,7 +11,7 @@ The user is preparing an **English executive slide deck** to support a job appli
 
 Working folder: `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\`. The user iterates via versioned filenames (`_Corrected`, `_Rebuilt`, `_v2`, etc.) and often has several of these decks **open in PowerPoint at once** while working. (Original main deck was `Future_Industrial_PLM_Meeting_Deck_EN_Rebuilt.pptx`, 18 slides.)
 
-**CURRENT CANONICAL EN deck (as of 2026-06-06): `Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Hybrid_Safety_Final_v4.pptx` — 34 slides, 25.6 MB, hybrid-architecture corrected.** This supersedes `..._Rebuilt_v2.pptx`. Full details + what's new are in the "learned v4" entry at the bottom of this file; edit/learn from v4 going forward.
+**CURRENT CANONICAL EN deck (as of 2026-06-06): `Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Hybrid_Safety_Final_v4.pptx` — 36 slides, ~27.7 MB, hybrid-architecture corrected + AI slides repositioned into main flow.** This supersedes `..._Rebuilt_v2.pptx`. Full details + what's new are in the "learned v4" entry at the bottom of this file; edit/learn from v4 going forward.
 
 Theme/stack to stay consistent with: dark navy industrial look, white titles, translucent panels with cyan/orange accent bars, fonts **Aptos Display / Aptos**; the reference architecture is **FastAPI + PostgreSQL + OIDC (OAuth2) + E2E tests**, positioned as AVEVA-style Engineering-to-Operations PLM (digital thread, configuration/eBOM, change impact).
 
@@ -81,5 +81,37 @@ Later (2026-06-06, v4 lightweight AI slide): user asked for lightweight alternat
   - Why: CONNECT AI needs cloud sub + data indexing + GDPR review; Generative Design AI needs Unified Engineering license + GPU workstations; Tier 0-1 runs on existing 4-node Linux HA cluster + PostgreSQL
   - Phased path: Tier 0 (now, no license, no GPU, rules) → Tier 1 (4-8 wks, OSS free, CPU/1 GPU, on-prem RAG) → Tier 2 (scale, AVEVA subscription, cloud GPU, CONNECT AI) → Tier 3 (full, Unified Engineering, workstation GPU, Generative Design AI)
 - Footer: "Tier 0-1 OSS stack: FastAPI (MIT) | PostgreSQL | pgvector (MIT) | Ollama (MIT) — all run on the existing Linux HA cluster and PostgreSQL already in the reference architecture."
+
+Later (2026-06-06, v4 AI slide graphics + reorganization): added column-card visuals to slides 35-36 and repositioned them from the appendix into the main meeting flow. Deck is now **36 slides**, ~27,697,151 bytes, saved 2026-06-06 15:15. Backup before this pass: `Proposal\_backup_20260606_reorganize\v4_BEFORE_REORGANIZE.pptx`. Script: `plm_slide_work\reorganize_deck_v4.ps1`. QA renders in `plm_slide_work\ai_render\slide*_v5.png`.
+
+**Visual enhancements (slides 13-14):** Each slide now has four new shapes: left column rounded-rect card (`AICardLeft`/`LWCardLeft`, dark navy fill + teal border, ZOrder to back), right column rounded-rect card (`AICardRight`/`LWCardRight`, same), thin teal accent bar under subtitle (`AIAccentBar`/`LWAccentBar`), and thin teal vertical divider line between columns (`AIDivider`/`LWDivider`).
+
+**Repositioning:** Old slides 35 → new slide 13 ("AVEVA AI Capabilities"), old slide 36 → new slide 14 ("Lightweight AI Alternative"). `Slides.Item(35).MoveTo(13)` then `Slides.Item(36).MoveTo(14)` — after first MoveTo, old 36 stays at index 36 (it was after the moved slide); second MoveTo correctly inserts it at 14. Old slides 13-34 shift to positions 15-36.
+
+**New deck slide order:**
+- p.1-2: Cover / Agenda
+- p.3-5: Current State (competitor comparison, PLM landscape, Phase 1 baseline)
+- p.6: Public Signals
+- p.7-12: Win-Above (thesis, gap, NAPA, Siemens, Dassault, absorb-and-move-beyond)
+- **p.13: AVEVA AI Capabilities** (Industrial AI Assistant + Generative Design AI — WHAT IT IS / USE CASES / ADVANTAGE / CONSTRAINT for each)
+- **p.14: Lightweight AI Alternative** (Tier 0-3 model: rule-based gate → on-prem RAG → AVEVA CONNECT → Generative Design AI)
+- p.15-27: Proposal + Delivery (Target Architecture, Executable Ref, Hybrid HW, Hybrid Correction, Pilot, VCRM, AI-gated Flow, 2D Drawing, Version Control, Naval Assurance, Process Config, Gate Flow, WBS)
+- p.28: KPI gates
+- p.29-31: Review (Future-state compare, Review board, Risks)
+- p.32: Close (Evidence base)
+- p.33: Decision
+- p.34-36: Glossary 1/3, 2/3, 3/3
+
+**Page numbers updated:** All 24 slides updated (no misses). New slides 13-14 page numbers changed from "35"/"36" to "13"/"14" (shapes AIPgNum/LWPgNum). Old slides 13-34 (now 15-36) page numbers all incremented by 2 — found via exact text-match of old page number string on each slide; shape names varied per slide.
+
+**Section labels:** Footer "Appendix" chip on slides 13-14 changed to "AI STRATEGY" (shapes AIAppendix/LWAppendix).
+
+**Slide 2 navigation updated:**
+- MeetingNavRange3 (WINNING IDEAS): p.7–12 → **p.7–14** (AI strategy slides added to winning-ideas section)
+- MeetingNavRange4 (PROPOSAL + DELIVERY): p.13–25 → **p.15–27**
+- MeetingNavRange5 (FUTURE-STATE COMPARE): p.26 → **p.28**
+- MeetingNavRange6 (REVIEW): p.27–29 → **p.29–31**
+- MeetingNavRange7 (CLOSE): p.30 → **p.32**
+- GlossaryPointer: p.31–33 → **p.34–36** (also corrects a pre-existing 1-page offset in the pointer)
 
 Edit these decks with [[office-docs-com-automation]] (no Python/Node on this PC).
