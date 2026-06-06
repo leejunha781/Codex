@@ -70,4 +70,16 @@ Later (2026-06-06, v4 AI capabilities reinforcement): user provided detailed con
 - **AVEVA Industrial AI Assistant (AVEVA CONNECT)**: Industry-specific LLM on the CONNECT cloud platform. Use: drawing review Q&A, asset spec lookup, change history tracking, onboarding. Pro: confidential data stays inside CONNECT (no external exposure), role-gated access. Con: initial data connection/indexing required; scope limited by user permissions.
 - **AVEVA Generative / Predictive Design AI (Unified Engineering)**: Design automation and predictive AI in AVEVA Unified Engineering. Use: piping layout optimisation, 3D clash detection/resolution, AI-suggested routing, simulation acceleration. Pro: automated optimised pipe routing in complex ship spaces, reduces lead time. Con: outputs must be manually validated by marine engineer against classification/shipbuilding standards before release.
 
+Later (2026-06-06, v4 lightweight AI slide): user asked for lightweight alternatives to the heavy AVEVA AI tools and wanted them added to the presentation. Added **slide 36** "Lightweight AI Alternative — Rule-Based Gate → On-Prem RAG → AVEVA CONNECT" to `Future_Industrial_PLM_Meeting_Deck_EN_Hybrid_Safety_Final_v4.pptx` (now **36 slides**, ~27,695,844 bytes). Also updated **slide 9 TextBox 52** to append "CONNECT (AI Asst.) + Lightweight RAG (pgvector + Ollama)" to the AVEVA differentiation item list. Backup: `Proposal\_backup_20260606_lightweight_ai\v4_BEFORE_LIGHTWEIGHT_AI.pptx`. Script: `plm_slide_work\add_lightweight_ai_slide36.ps1`. QA renders in `plm_slide_work\ai_render\slide9_lw.png`, `slide36_lw.png`.
+
+**Slide 36 structure (2-column, dark navy, white text, teal/amber headers):**
+- Left "LIGHTWEIGHT STACK (Tier 0 + Tier 1)":
+  - TIER 0 — RULE-BASED AI GATE (zero license, immediate): FastAPI+Pydantic validation rules for drawing standards, PLM metadata, VCRM coverage; deterministic <10ms, no GPU
+  - TIER 1 — ON-PREM RAG (pgvector + Ollama, existing Linux nodes): pgvector = one `CREATE EXTENSION vector` on existing PostgreSQL; embed ship drawings/specs/asset data/change history as vectors; Ollama = local LLM (Llama 3.2 3B/8B, Phi-3 Mini, Mistral 7B), OpenAI-compatible API, CPU-only viable for 7B, no data leaves shipyard; drop-in `/ai/query` + `/ai/embed` FastAPI endpoints
+  - LIGHTWEIGHT PIPING OPTIMISATION: Python scipy+networkx constraint solver with naval engineering rules + 3D voxel clash grid (no ML model, no Generative Design AI license)
+- Right "WHY LIGHTWEIGHT FIRST + PHASED UPGRADE PATH":
+  - Why: CONNECT AI needs cloud sub + data indexing + GDPR review; Generative Design AI needs Unified Engineering license + GPU workstations; Tier 0-1 runs on existing 4-node Linux HA cluster + PostgreSQL
+  - Phased path: Tier 0 (now, no license, no GPU, rules) → Tier 1 (4-8 wks, OSS free, CPU/1 GPU, on-prem RAG) → Tier 2 (scale, AVEVA subscription, cloud GPU, CONNECT AI) → Tier 3 (full, Unified Engineering, workstation GPU, Generative Design AI)
+- Footer: "Tier 0-1 OSS stack: FastAPI (MIT) | PostgreSQL | pgvector (MIT) | Ollama (MIT) — all run on the existing Linux HA cluster and PostgreSQL already in the reference architecture."
+
 Edit these decks with [[office-docs-com-automation]] (no Python/Node on this PC).
