@@ -55,9 +55,9 @@ try {
 
     # Page 31: review ownership must include planning/development responsibility for AI/routing scope.
     $s = $pres.Slides.Item(31)
-    Set-ShapeText $s 'TextBox 14' 'Roadmap · MVP scope · AI/routing pilot outcomes · KPI thresholds'
+    Set-ShapeText $s 'TextBox 14' 'Roadmap · MVP scope · AI/routing outcomes · KPI thresholds'
     Set-ShapeText $s 'TextBox 53' 'Implementation · AI gate/routing service · automation · security · performance'
-    Set-ShapeText $s 'TextBox 56' '1 KPI + evidence dashboard 2 Failing configuration / assurance gates 3 AI/routing pilot issues 4 Scope-change decisions 5 Promote completed capabilities + update risk burndown'
+    Set-ShapeText $s 'TextBox 56' 'KPI + evidence dashboard | Failed gates | AI/routing pilot issues | Scope decisions | Promote + risk burndown'
 
     # Page 32: risk language must keep AI and generated routes advisory.
     $s = $pres.Slides.Item(32)
