@@ -63,6 +63,46 @@ function Replace-InSlide {
     return $count
 }
 
+function Set-TextContainingInShapes {
+    param(
+        $Shapes,
+        [Parameter(Mandatory = $true)][string]$Needle,
+        [Parameter(Mandatory = $true)][string]$NewText,
+        [Parameter(Mandatory = $true)][ref]$Count
+    )
+
+    foreach ($shape in $Shapes) {
+        try {
+            if ($shape.Type -eq 6) {
+                Set-TextContainingInShapes -Shapes $shape.GroupItems -Needle $Needle -NewText $NewText -Count $Count
+            } elseif ($shape.HasTextFrame -and $shape.TextFrame.HasText) {
+                $textRange = $shape.TextFrame.TextRange
+                $before = $textRange.Text
+                if ($before -like "*$Needle*") {
+                    $textRange.Text = $NewText
+                    $textRange.Font.Size = [single]10.5
+                    $textRange.Font.Color.RGB = 16777215
+                    $textRange.Font.Bold = [int]-1
+                    try { $shape.TextFrame.VerticalAnchor = 3 } catch {}
+                    try { $shape.TextFrame.MarginTop = 4; $shape.TextFrame.MarginBottom = 4 } catch {}
+                    $Count.Value = $Count.Value + 1
+                }
+            }
+        } catch {}
+    }
+}
+
+function Set-SlideTextContaining {
+    param(
+        $Slide,
+        [Parameter(Mandatory = $true)][string]$Needle,
+        [Parameter(Mandatory = $true)][string]$NewText
+    )
+    $count = 0
+    Set-TextContainingInShapes -Shapes $Slide.Shapes -Needle $Needle -NewText $NewText -Count ([ref]$count)
+    return $count
+}
+
 function Get-PowerPointApplication {
     try {
         return [System.Runtime.InteropServices.Marshal]::GetActiveObject('PowerPoint.Application')
@@ -117,6 +157,7 @@ try {
     if ($c -eq 0) {
         $c = Replace-InSlide -Slide $pres.Slides.Item(18) -OldText 'separate from Phase 2 Naval Assurance WBS 0–5 (p.28).' -NewText 'WBS p.31.'
     }
+    $c = $c + (Set-SlideTextContaining -Slide $pres.Slides.Item(18) -Needle 'Pilot value:' -NewText 'Pilot value: auditable Linux-based route proposals with human/class validation. | Scope: future phase; WBS p.31.')
     [void]$changes.Add("Slide 18: shortened WBS reference and corrected p.28 -> p.31 ($c replacement)")
 
     $c = Replace-InSlide -Slide $pres.Slides.Item(38) -OldText 'Future Industrial PLM / Meeting Procedure' -NewText 'Future Industrial PLM / Close'
