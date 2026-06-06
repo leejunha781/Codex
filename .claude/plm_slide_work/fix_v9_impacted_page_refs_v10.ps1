@@ -103,13 +103,19 @@ try {
         $c = Replace-InSlide -Slide $pres.Slides.Item(1) -OldText 'Rev. V9' -NewText 'Rev. V10'
         $c = $c + (Replace-InSlide -Slide $pres.Slides.Item(1) -OldText 'Rev. V10 - 2026-06-06' -NewText 'Rev. V10 - 2026-06-07')
     }
+    $c = $c + (Replace-InSlide -Slide $pres.Slides.Item(1) -OldText '2026-06-06' -NewText '2026-06-07')
     [void]$changes.Add("Slide 1: revision/date updated to Rev. V10 - 2026-06-07 ($c replacement)")
 
+    $oldSlide18Full = 'Pilot value: deterministic, auditable route proposals on existing Linux control-plane infrastructure; no automatic E3D promote without human/class validation. | Scope: future-phase concept; separate from Phase 2 Naval Assurance WBS 0–5 (p.28).'
+    $newSlide18Full = 'Pilot value: auditable Linux-based route proposals with human/class validation. | Scope: future phase; WBS p.31.'
+    $c = Replace-InSlide -Slide $pres.Slides.Item(18) -OldText $oldSlide18Full -NewText $newSlide18Full
     $oldSlide18 = 'Scope: future-phase concept; separate from Phase 2 Naval Assurance WBS 0–5 (p.28).'
-    $newSlide18 = 'Scope: future-phase concept; WBS 0-5 on p.31.'
-    $c = Replace-InSlide -Slide $pres.Slides.Item(18) -OldText $oldSlide18 -NewText $newSlide18
+    $newSlide18 = 'Scope: future phase; WBS p.31.'
     if ($c -eq 0) {
-        $c = Replace-InSlide -Slide $pres.Slides.Item(18) -OldText 'separate from Phase 2 Naval Assurance WBS 0–5 (p.28).' -NewText 'WBS 0-5 on p.31.'
+        $c = Replace-InSlide -Slide $pres.Slides.Item(18) -OldText $oldSlide18 -NewText $newSlide18
+    }
+    if ($c -eq 0) {
+        $c = Replace-InSlide -Slide $pres.Slides.Item(18) -OldText 'separate from Phase 2 Naval Assurance WBS 0–5 (p.28).' -NewText 'WBS p.31.'
     }
     [void]$changes.Add("Slide 18: shortened WBS reference and corrected p.28 -> p.31 ($c replacement)")
 
