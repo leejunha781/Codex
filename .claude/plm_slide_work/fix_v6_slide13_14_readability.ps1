@@ -54,67 +54,67 @@ try {
     # Slide 13: widen the two explanatory cards and enlarge their text;
     # keep the visual but trim its footprint so the content reads at meeting distance.
     $img13 = Get-ShapeByName $slide13 'Picture 96'
-    $img13.Left = 580
-    $img13.Top = 172
-    $img13.Width = 344
-    $img13.Height = 193.5
+    $img13.Left = 594
+    $img13.Top = 170
+    $img13.Width = 330
+    $img13.Height = 185.6
 
     $card13a = Get-ShapeByName $slide13 'Rounded Rectangle 53'
     $card13b = Get-ShapeByName $slide13 'Rounded Rectangle 61'
     $card13a.Left = 24
     $card13a.Top = 200
-    $card13a.Width = 257
-    $card13a.Height = 150
-    $card13b.Left = 288
+    $card13a.Width = 265
+    $card13a.Height = 152
+    $card13b.Left = 296
     $card13b.Top = 200
-    $card13b.Width = 257
-    $card13b.Height = 150
+    $card13b.Width = 265
+    $card13b.Height = 152
 
-    Set-TextShape (Get-ShapeByName $slide13 'TextBox 54') 34 208 235 16 13.5
-    Set-TextShape (Get-ShapeByName $slide13 'TextBox 62') 298 208 231 16 13.5
+    Set-TextShape (Get-ShapeByName $slide13 'TextBox 54') 34 208 246 16 13.2
+    Set-TextShape (Get-ShapeByName $slide13 'TextBox 62') 306 208 244 16 13.2
 
     $box13a = Get-ShapeByName $slide13 'Rounded Rectangle 55'
     $box13a.Left = 40
     $box13a.Top = 236
-    $box13a.Width = 92
+    $box13a.Width = 88
     $box13a.Height = 52
-    Set-TextShape (Get-ShapeByName $slide13 'TextBox 56') 48 245 76 32 11.5
+    Set-TextShape (Get-ShapeByName $slide13 'TextBox 56') 46 245 76 32 11.1
 
     $chip13a = Get-ShapeByName $slide13 'Rounded Rectangle 57'
-    $chip13a.Left = 45
-    $chip13a.Top = 300
-    $chip13a.Width = 82
+    $chip13a.Left = 44
+    $chip13a.Top = 302
+    $chip13a.Width = 80
     $chip13a.Height = 15
-    Set-TextShape (Get-ShapeByName $slide13 'TextBox 58') 47 303.5 78 9 9
+    Set-TextShape (Get-ShapeByName $slide13 'TextBox 58') 46 305 76 8 8.5
 
-    Set-TextShape (Get-ShapeByName $slide13 'TextBox 59') 145 236 112 73 10
-    Set-TextShape (Get-ShapeByName $slide13 'TextBox 60') 145 315 113 20 10.5
+    Set-TextShape (Get-ShapeByName $slide13 'TextBox 59') 136 235 136 86 9
+    Set-TextShape (Get-ShapeByName $slide13 'TextBox 60') 136 325 136 27 9.3
 
     $box13b = Get-ShapeByName $slide13 'Rounded Rectangle 63'
-    $box13b.Left = 303
+    $box13b.Left = 308
     $box13b.Top = 236
     $box13b.Width = 84
     $box13b.Height = 52
-    Set-TextShape (Get-ShapeByName $slide13 'TextBox 75') 313 278 62 9 8.7
+    Set-TextShape (Get-ShapeByName $slide13 'TextBox 75') 317 278 66 9 8.4
 
     $chip13b = Get-ShapeByName $slide13 'Rounded Rectangle 76'
-    $chip13b.Left = 306
-    $chip13b.Top = 300
+    $chip13b.Left = 309
+    $chip13b.Top = 302
     $chip13b.Width = 78
     $chip13b.Height = 15
-    Set-TextShape (Get-ShapeByName $slide13 'TextBox 77') 308 303.5 74 9 9
+    Set-TextShape (Get-ShapeByName $slide13 'TextBox 77') 311 305 72 8 8.5
 
-    Set-TextShape (Get-ShapeByName $slide13 'TextBox 78') 398 236 123 73 10
-    Set-TextShape (Get-ShapeByName $slide13 'TextBox 79') 398 315 122 20 10.5
+    Set-TextShape (Get-ShapeByName $slide13 'TextBox 78') 402 235 139 86 9
+    Set-TextShape (Get-ShapeByName $slide13 'TextBox 79') 402 325 139 27 9.3
 
     $principle13 = Get-ShapeByName $slide13 'Rounded Rectangle 80'
     $principle13.Left = 24
-    $principle13.Top = 362
-    $principle13.Width = 520
+    $principle13.Top = 366
+    $principle13.Width = 536
     $principle13.Height = 29
-    Set-TextShape (Get-ShapeByName $slide13 'TextBox 81') 36 370 73 10 9.6
-    Set-TextShape (Get-ShapeByName $slide13 'TextBox 82') 110 367.5 416 14 10.2
-    Set-TextShape (Get-ShapeByName $slide13 'TextBox 83') 28 397 510 8.5 7.4
+    Set-TextShape (Get-ShapeByName $slide13 'TextBox 81') 36 374 73 10 9.4
+    Set-TextShape (Get-ShapeByName $slide13 'TextBox 82') 114 371 426 14 9.8
+    Set-TextShape (Get-ShapeByName $slide13 'TextBox 83') 28 398 526 8.5 7.2
 
     # Make the top 4-step strip slightly taller and easier to read.
     $stepBoxes13 = @('Rounded Rectangle 30','Rounded Rectangle 36','Rounded Rectangle 42','Rounded Rectangle 48')
@@ -135,10 +135,10 @@ try {
 
     # Slide 14: enlarge the tier roadmap and both explanatory panels.
     $img14 = Get-ShapeByName $slide14 'Picture 1'
-    $img14.Left = 578
+    $img14.Left = 592
     $img14.Top = 160
-    $img14.Width = 346
-    $img14.Height = 194.6
+    $img14.Width = 332
+    $img14.Height = 186.8
 
     $tierBoxes14 = @('Rounded Rectangle 30','Rounded Rectangle 37','Rounded Rectangle 44','Rounded Rectangle 51')
     $tierSmallTags14 = @('TextBox 31','TextBox 38','TextBox 45','TextBox 52')
@@ -151,11 +151,11 @@ try {
         $shape = Get-ShapeByName $slide14 $tierBoxes14[$i]
         $shape.Left = $tierLefts14[$i]
         $shape.Top = 160
-        $shape.Width = 124
+        $shape.Width = 127
         $shape.Height = 48
         Set-TextShape (Get-ShapeByName $slide14 $tierSmallTags14[$i]) ($tierLefts14[$i] + 7) 166 32 9 8.6
-        Set-TextShape (Get-ShapeByName $slide14 $tierTitles14[$i]) ($tierLefts14[$i] + 7) 176 112 14 13.3
-        Set-TextShape (Get-ShapeByName $slide14 $tierSubs14[$i]) ($tierLefts14[$i] + 7) 190 112 10 8.9
+        Set-TextShape (Get-ShapeByName $slide14 $tierTitles14[$i]) ($tierLefts14[$i] + 7) 176 115 14 13.2
+        Set-TextShape (Get-ShapeByName $slide14 $tierSubs14[$i]) ($tierLefts14[$i] + 7) 190 115 10 8.7
         $pill = Get-ShapeByName $slide14 $tierPills14[$i]
         $pill.Left = $tierLefts14[$i] + 8
         $pill.Top = 202
@@ -168,49 +168,49 @@ try {
     $panel14b = Get-ShapeByName $slide14 'Rounded Rectangle 75'
     $panel14a.Left = 24
     $panel14a.Top = 224
-    $panel14a.Width = 255
-    $panel14a.Height = 120
-    $panel14b.Left = 286
+    $panel14a.Width = 264
+    $panel14a.Height = 122
+    $panel14b.Left = 294
     $panel14b.Top = 224
-    $panel14b.Width = 255
-    $panel14b.Height = 120
-    Set-TextShape (Get-ShapeByName $slide14 'TextBox 58') 35 231 228 13 13
-    Set-TextShape (Get-ShapeByName $slide14 'TextBox 76') 297 231 228 13 13
+    $panel14b.Width = 264
+    $panel14b.Height = 122
+    Set-TextShape (Get-ShapeByName $slide14 'TextBox 58') 35 231 236 13 12.8
+    Set-TextShape (Get-ShapeByName $slide14 'TextBox 76') 303 231 230 13 12.8
 
     $stackRects14 = @('Rounded Rectangle 59','Rounded Rectangle 63','Rounded Rectangle 67','Rounded Rectangle 71')
     $stackTopTexts14 = @('TextBox 60','TextBox 64','TextBox 68','TextBox 72')
     $stackBottomTexts14 = @('TextBox 61','TextBox 65','TextBox 69','TextBox 73')
-    $stackLefts14 = @(38, 96, 154, 212)
+    $stackLefts14 = @(40, 102, 164, 226)
     for ($i = 0; $i -lt 4; $i++) {
         $shape = Get-ShapeByName $slide14 $stackRects14[$i]
         $shape.Left = $stackLefts14[$i]
         $shape.Top = 252
-        $shape.Width = 48
+        $shape.Width = 50
         $shape.Height = 34
-        Set-TextShape (Get-ShapeByName $slide14 $stackTopTexts14[$i]) ($stackLefts14[$i] + 2) 258 44 18 8.7
-        Set-TextShape (Get-ShapeByName $slide14 $stackBottomTexts14[$i]) ($stackLefts14[$i] + 2) 276 44 7 7.5
+        Set-TextShape (Get-ShapeByName $slide14 $stackTopTexts14[$i]) ($stackLefts14[$i] + 2) 258 46 18 7.7
+        Set-TextShape (Get-ShapeByName $slide14 $stackBottomTexts14[$i]) ($stackLefts14[$i] + 2) 276 46 7 6.9
     }
 
-    Set-TextShape (Get-ShapeByName $slide14 'TextBox 74') 36 296 234 43 9.2
+    Set-TextShape (Get-ShapeByName $slide14 'TextBox 74') 36 296 244 44 8.5
 
     $reasonTitleBoxes = @('TextBox 79','TextBox 83','TextBox 87','TextBox 91')
     $reasonBodyBoxes = @('TextBox 80','TextBox 84','TextBox 88','TextBox 92')
     foreach ($name in $reasonTitleBoxes) {
         $shape = Get-ShapeByName $slide14 $name
-        Set-AllTextSize -Shape $shape -Size 10.4
+        Set-AllTextSize -Shape $shape -Size 10.2
     }
     foreach ($name in $reasonBodyBoxes) {
         $shape = Get-ShapeByName $slide14 $name
-        Set-AllTextSize -Shape $shape -Size 8.6
+        Set-AllTextSize -Shape $shape -Size 8.4
     }
 
     $interfaceBar14 = Get-ShapeByName $slide14 'Rounded Rectangle 93'
     $interfaceBar14.Left = 24
-    $interfaceBar14.Top = 356
-    $interfaceBar14.Width = 517
-    $interfaceBar14.Height = 24
-    Set-TextShape (Get-ShapeByName $slide14 'TextBox 94') 36 362 492 10 9.7
-    Set-TextShape (Get-ShapeByName $slide14 'TextBox 95') 36 383 492 8.5 7.6
+    $interfaceBar14.Top = 360
+    $interfaceBar14.Width = 536
+    $interfaceBar14.Height = 22
+    Set-TextShape (Get-ShapeByName $slide14 'TextBox 94') 36 365 514 10 9.1
+    Set-TextShape (Get-ShapeByName $slide14 'TextBox 95') 36 384 514 8.5 7.4
 
     $pres.Save()
     Copy-Item -LiteralPath $src -Destination $defaultAlias -Force
