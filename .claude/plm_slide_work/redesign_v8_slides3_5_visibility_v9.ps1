@@ -190,7 +190,7 @@ function Build-Slide3 {
     }
 
     Add-Card -Slide $Slide -Left 58 -Top 374 -Width 548 -Height 72 -Header 'PRESENTER RULE' -Body 'Do not sell this as a tool-replacement story. Sell it as a governed, auditable, operations-aware decision loop that makes existing tools more valuable.' -Accent $C.Cyan
-    Add-Card -Slide $Slide -Left 632 -Top 374 -Width 252 -Height 72 -Header 'DECISION OUTPUT' -Body 'Alignment on product direction, pilot scope, owners and first customer/class evidence scenario.' -Accent $C.Amber
+    Add-Card -Slide $Slide -Left 632 -Top 374 -Width 252 -Height 72 -Header 'DECISION OUTPUT' -Body 'Product direction, pilot scope, owners and first evidence scenario.' -Accent $C.Amber
 }
 
 function Build-Slide4 {
@@ -232,12 +232,22 @@ function Build-Slide5 {
     $hub.Line.ForeColor.RGB = $C.Cyan
     $hub.Line.Weight = 2
     Add-Text -Slide $Slide -Left 421 -Top 224 -Width 80 -Height 42 -Text "AVEVA`r`nCONTROL`r`nPLANE" -Size ([single]10) -Color $C.White -Bold 1 -Align 2 | Out-Null
-    Add-Arrow -Slide $Slide -X1 430 -Y1 226 -X2 347 -Y2 192 -Color $C.Cyan
-    Add-Arrow -Slide $Slide -X1 491 -Y1 226 -X2 575 -Y2 192 -Color $C.Teal
-    Add-Arrow -Slide $Slide -X1 430 -Y1 286 -X2 347 -Y2 331 -Color $C.Amber
-    Add-Arrow -Slide $Slide -X1 491 -Y1 286 -X2 575 -Y2 331 -Color $C.Cyan2
+    $ring = $Slide.Shapes.AddShape(9, 395, 189, 132, 132)
+    $ring.Fill.Visible = 0
+    $ring.Line.ForeColor.RGB = $C.Cyan
+    $ring.Line.Transparency = 0.55
+    $ring.Line.Weight = 1.1
 
-    Add-Card -Slide $Slide -Left 95 -Top 414 -Width 735 -Height 52 -Header 'PLANNING SUCCESS STATEMENT' -Body 'AVEVA Marine becomes the trusted system for seeing, approving and learning from every major shipbuilding change.' -Accent $C.Teal
+    $success = $Slide.Shapes.AddShape(5, 95, 406, 735, 76)
+    $success.Fill.ForeColor.RGB = $C.Panel
+    $success.Fill.Transparency = 0.02
+    $success.Line.ForeColor.RGB = $C.Teal
+    $success.Line.Weight = 1.25
+    $successBar = $Slide.Shapes.AddShape(1, 95, 406, 6, 76)
+    $successBar.Fill.ForeColor.RGB = $C.Teal
+    $successBar.Line.Visible = 0
+    Add-Text -Slide $Slide -Left 122 -Top 418 -Width 690 -Height 18 -Text 'PLANNING SUCCESS STATEMENT' -Size ([single]11.8) -Color $C.Teal -Bold 1 | Out-Null
+    Add-Text -Slide $Slide -Left 122 -Top 448 -Width 690 -Height 24 -Text 'AVEVA Marine becomes the trusted system for seeing, approving and learning from every major shipbuilding change.' -Size ([single]10.2) -Color $C.White -Bold 0 | Out-Null
 }
 
 $pp = New-PowerPoint
