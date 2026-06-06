@@ -18,6 +18,12 @@
 - 로그: `C:\Users\namma\.claude\cache\git-auto-init\watcher.log`
 - 원격 origin은 미설정 (로컬 추적만)
 
+**Git autosync** — `C:\Users\namma\.claude\git_autosync.ps1`
+- `C:\Users\namma\.claude`, `C:\Users\namma\.codex\skills`, `C:\Users\namma\.codex\automations` 변경 감지 후 `C:\Users\namma` 루트 repo에 자동 commit + push
+- 런처: `C:\Users\namma\.claude\git_autosync_launcher.ps1` (중복 실행 방지 pid 파일 사용)
+- 로그인 자동 시작: HKCU Run 키 `ClaudeCodexGitAutosync`
+- 로그: `C:\Users\namma\.claude\cache\git-autosync\autosync.log`
+
 **Codex automation `claude-project-monitor`** — 6시간마다 `C:\Users\namma\.claude` 전체 감시
 - 확인 항목: 최근 변경, 빠진 핵심 파일, 메모리 불일치, 위험한 설정/문서 변경, `itt_work`·`plm_slide_work` 이슈
 - 자동화 메모리: `C:\Users\namma\.codex\automations\claude-project-monitor\memory.md`

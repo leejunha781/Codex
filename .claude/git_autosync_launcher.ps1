@@ -10,9 +10,9 @@ New-Item -ItemType Directory -Force -Path (Split-Path $lockFile) | Out-Null
 
 # 기존 프로세스 살아있는지 확인
 if (Test-Path $lockFile) {
-    $pid = Get-Content $lockFile -ErrorAction SilentlyContinue
-    if ($pid -and (Get-Process -Id $pid -ErrorAction SilentlyContinue)) {
-        Add-Content $logFile "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')  launcher: already running (pid=$pid), skip"
+    $existingPid = Get-Content $lockFile -ErrorAction SilentlyContinue
+    if ($existingPid -and (Get-Process -Id $existingPid -ErrorAction SilentlyContinue)) {
+        Add-Content $logFile "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')  launcher: already running (pid=$existingPid), skip"
         exit 0
     }
 }

@@ -10,6 +10,11 @@ $watchPaths = @(
     "C:\Users\namma\.codex\skills",
     "C:\Users\namma\.codex\automations"
 )
+$watchSpecs = @(
+    ".claude/",
+    ".codex/skills/",
+    ".codex/automations/"
+)
 
 # 로그 폴더 준비
 New-Item -ItemType Directory -Force -Path (Split-Path $logFile) | Out-Null
@@ -21,74 +26,131 @@ function Write-Log($msg) {
 
 Write-Log "=== autosync started. watching: $($watchPaths -join ', ') ==="
 
-# 변경 타이머 공유 변수
-$script:lastChange = $null
-$script:pending    = $false
-
-# FileSystemWatcher 생성
-$watchers = @()
 foreach ($p in $watchPaths) {
-    if (-not (Test-Path $p)) { continue }
-    $w = New-Object System.IO.FileSystemWatcher
-    $w.Path                  = $p
-    $w.IncludeSubdirectories = $true
-    $w.NotifyFilter          = [System.IO.NotifyFilters]::LastWrite -bor
-                               [System.IO.NotifyFilters]::FileName  -bor
-                               [System.IO.NotifyFilters]::DirectoryName
-    # 제외 패턴 (git 내부, 렌더 이미지 등)
-    $w.Filter = "*"
-    $w.EnableRaisingEvents = $true
-
-    $action = {
-        $path = $Event.SourceEventArgs.FullPath
-        # git 내부 변경이나 이미지/바이너리는 무시
-        if ($path -match '\\\.git\\' -or
-            $path -match '\.(png|jpg|jpeg|pdf|docx|pptx|zip|sqlite|wal|shm|tmp)$' -or
-            $path -match '\\cache\\' -or
-            $path -match 'autosync\.log') { return }
-        $script:lastChange = Get-Date
-        $script:pending    = $true
+    if (Test-Path $p) {
+        Write-Log "watching: $p"
+    } else {
+        Write-Log "skip missing path: $p"
     }
-
-    Register-ObjectEvent $w "Changed" -Action $action | Out-Null
-    Register-ObjectEvent $w "Created" -Action $action | Out-Null
-    Register-ObjectEvent $w "Deleted" -Action $action | Out-Null
-    Register-ObjectEvent $w "Renamed" -Action $action | Out-Null
-    $watchers += $w
-    Write-Log "watching: $p"
 }
 
-Write-Log "debounce = ${debounce}s  |  loop started"
+function Get-ActiveWatchSpecs {
+    $active = @()
+    foreach ($spec in $watchSpecs) {
+        $relative = $spec.TrimEnd("/")
+        $fullPath = Join-Path $repoRoot $relative
+        if (Test-Path $fullPath) {
+            $active += $spec
+        }
+    }
+    return $active
+}
+
+function Should-IgnoreGitPath {
+    param([string]$Path)
+
+    return (
+        $Path -match '(^|/)\.git/' -or
+        $Path -match '(^|/)cache/' -or
+        $Path -match 'autosync\.log$' -or
+        $Path -match '\.(png|jpg|jpeg|pdf|docx|pptx|zip|sqlite|wal|shm|tmp)$'
+    )
+}
+
+function Get-ChangePaths {
+    $paths = @()
+    $activeSpecs = @(Get-ActiveWatchSpecs)
+    if ($activeSpecs.Count -eq 0) { return $paths }
+
+    Push-Location $repoRoot
+    try {
+        $statusLines = @(git status --porcelain -- @activeSpecs 2>$null)
+        foreach ($line in $statusLines) {
+            if (-not $line -or $line.Length -lt 4) { continue }
+            $pathPart = $line.Substring(3)
+
+            if ($pathPart -match ' -> ') {
+                foreach ($renamedPath in ($pathPart -split ' -> ')) {
+                    if ($renamedPath -and -not (Should-IgnoreGitPath -Path $renamedPath)) {
+                        $paths += $renamedPath
+                    }
+                }
+            } elseif (-not (Should-IgnoreGitPath -Path $pathPart)) {
+                $paths += $pathPart
+            }
+        }
+    } finally {
+        Pop-Location
+    }
+
+    return @($paths | Sort-Object -Unique)
+}
+
+function Invoke-GitSync {
+    param([string[]]$Paths)
+
+    if (-not $Paths -or $Paths.Count -eq 0) { return }
+
+    Push-Location $repoRoot
+    try {
+        git add --all -- @Paths 2>$null
+        if ($LASTEXITCODE -ne 0) {
+            Write-Log "ERROR: git add failed for $($Paths.Count) paths"
+            return
+        }
+
+        $staged = @(git diff --cached --name-only 2>$null)
+        if ($staged.Count -eq 0) { return }
+
+        $ts  = Get-Date -Format "yyyy-MM-dd HH:mm"
+        $msg = "auto-sync: $ts ($($staged.Count) files)"
+        $commit = git commit -m $msg 2>&1
+        if ($LASTEXITCODE -ne 0) {
+            Write-Log "ERROR: git commit failed | $commit"
+            return
+        }
+
+        $push = git push 2>&1
+        if ($LASTEXITCODE -eq 0) {
+            Write-Log "PUSHED  $msg  | $push"
+        } else {
+            Write-Log "ERROR: git push failed for $msg | $push"
+        }
+    } catch {
+        Write-Log "ERROR: $_"
+    } finally {
+        Pop-Location
+    }
+}
+
+Write-Log "debounce = ${debounce}s  |  polling loop started"
+
+$lastSignature = $null
+$lastChange = $null
 
 # 메인 루프
 while ($true) {
     Start-Sleep -Seconds 5
 
-    if ($script:pending -and $script:lastChange) {
-        $elapsed = ((Get-Date) - $script:lastChange).TotalSeconds
-        if ($elapsed -ge $debounce) {
-            $script:pending    = $false
-            $script:lastChange = $null
+    $changePaths = @(Get-ChangePaths)
+    if ($changePaths.Count -eq 0) {
+        $lastSignature = $null
+        $lastChange = $null
+        continue
+    }
 
-            Push-Location $repoRoot
-            try {
-                # 변경 파일 스테이징
-                git add ".claude/" ".codex/skills/" ".codex/automations/" 2>$null
+    $signature = ($changePaths | Sort-Object) -join "`n"
+    if ($signature -ne $lastSignature) {
+        $lastSignature = $signature
+        $lastChange = Get-Date
+        Write-Log "pending changes detected: $($changePaths.Count) paths"
+        continue
+    }
 
-                # 변경 있는지 확인
-                $diff = git diff --cached --name-only 2>$null
-                if ($diff) {
-                    $ts  = Get-Date -Format "yyyy-MM-dd HH:mm"
-                    $msg = "auto-sync: $ts ($($diff.Count) files)"
-                    git commit -m $msg 2>$null
-                    $push = git push 2>&1
-                    Write-Log "PUSHED  $msg  | $push"
-                }
-            } catch {
-                Write-Log "ERROR: $_"
-            } finally {
-                Pop-Location
-            }
-        }
+    $elapsed = ((Get-Date) - $lastChange).TotalSeconds
+    if ($elapsed -ge $debounce) {
+        Invoke-GitSync -Paths $changePaths
+        $lastSignature = $null
+        $lastChange = $null
     }
 }
