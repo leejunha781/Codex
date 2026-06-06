@@ -70,3 +70,11 @@
 - Scope: p.3 redesigned as a larger 4-step decision path; p.4 as larger BUILD/VALIDATE/AVOID development cards; p.5 as larger planning argument cards around an AVEVA Control Plane hub with a readable success statement.
 - Image decision: no generated raster image was attached; editable PowerPoint shapes/diagrams were clearer and safer for later editing.
 - QA: rendered all 41 slides to `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v9_slides3_5_visibility_render\`; visually checked p.3-p.5 and confirmed no major clipping/overlap.
+
+2026-06-07 run (~16m)
+
+- Corrected AVEVA deck content affected by adding/moving the p.3-5 meeting-procedure pages.
+- Created V10 from V9 and refreshed default/final files: `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V10.pptx`, `...\Future_Industrial_PLM_Meeting_Deck_EN.pptx`, and `...\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (`33,151,502` bytes, `2026-06-07 00:38:21`).
+- Exported final PDF `...\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf` (`3,633,108` bytes, `2026-06-07 00:38:39`).
+- Corrections: cover revision/date to `Rev. V10 · 2026-06-07`; slide 2 meeting guide pointer to `p.3–5`; slide 18 stale WBS reference `p.28` -> `p.31` and shortened to avoid clipping; slide 38 footer changed from Meeting Procedure to Close.
+- QA: rendered 41 PDF pages to `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v10_impacted_refs_pdf_render\`; visually checked p.1, p.2, p.18, p.38. COM text verification found no remaining `p.28`.
