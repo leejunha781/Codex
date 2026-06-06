@@ -1,3 +1,13 @@
+2026-06-07 run (~10m)
+
+- Read `C:\Users\namma\.claude\AGENTS.md`, automation memory, and `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md`, then broadly inspected recent workspace changes, project memory, autosync/init logs, `itt_work`, `plm_slide_work`, and the live AVEVA/ITT document folders under `D:\이력서\`.
+- Main actionable drift is now AVEVA memory lag: `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\aveva-plm-application-deck.md` still ends at V11, but disk state has already advanced to `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V12.pptx` plus refreshed default/final aliases (`40,747,811` bytes, `2026-06-07 01:12:51`) and `Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf` (`4,282,474` bytes, `01:13:04`). Supporting QA report exists at `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v12_slides3_5_generated_bg_report.txt`.
+- `AGENTS.md` is still stale for the persistent-memory path: it points to `projects/C--Users-namma--Codex/memory/`, while this workspace uses `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\`.
+- `itt_work` remains stable but its diagnostic dump `C:\Users\namma\.claude\itt_work\dump_full.txt` is still unreliable as current evidence: it duplicates the Daeyang-style detail block and does not show a distinct Intellian detail block, matching the previous stale-dump concern.
+- The earlier project auto-init inconsistency no longer reproduces: sampled folders under `C:\Users\namma\.claude\projects\C--Users-namma--claude\` now have `.git` directories, consistent with `cache\git-auto-init\watcher.log`.
+- Git autosync remains healthy through `2026-06-07 01:13:59` in `C:\Users\namma\.claude\cache\git-autosync\autosync.log`.
+- No live `WINWORD` or `POWERPNT` processes were present during this run, so there was no active orphan/stale-window risk at inspection time.
+
 2026-06-06 run (~9m)
 
 - Read `AGENTS.md`, automation memory, and `projects\C--Users-namma--claude\memory\*.md`.
