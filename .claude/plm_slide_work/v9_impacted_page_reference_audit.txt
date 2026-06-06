@@ -1,0 +1,189 @@
+﻿V9 impacted page/reference audit
+Deck: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V9.pptx
+Generated: 2026-06-07 00:26:08 +09:00
+Slides: 41
+
+SLIDE 1 TEXT: Decision expected today | Align on the winning product position, Phase 2 + Naval Assurance pilot, delivery governance and KPI-based acceptance.
+SLIDE 1 NOTE: Purpose: Open the meeting by making the decision objective explicit. The audience is not being asked to approve a vague vision; they are being asked to align on a concrete future direction, pilot scope, governance model and KPI-based acceptance plan. Talk track: Position AVEVA Marine as the platform that can connect engineering authoring, configuration control, certified solver evidence and operations feedback. Emphasize that the reference API package proves the direction is implementable, not only conceptual.
+SLIDE 2 TEXT: Meeting procedure - development + planning decision flow
+SLIDE 2 TEXT: Start with the meeting procedure, then move from facts to ideas, delivery plan and final decision
+SLIDE 2 TEXT: REVIEW
+SLIDE 2 TEXT: CLOSE
+SLIDE 2 TEXT: Procedure rule: align how the room will decide first; WBS and KPI appear only after capabilities and pilot scope are clear.
+SLIDE 2 TEXT: Abbreviations → Glossary appendix, p.39–41
+SLIDE 2 TEXT: p.6–8
+SLIDE 2 TEXT: p.9
+SLIDE 2 TEXT: p.10–18
+SLIDE 2 TEXT: p.19–32
+SLIDE 2 TEXT: p.33
+SLIDE 2 TEXT: p.34–36
+SLIDE 2 TEXT: p.37–38
+SLIDE 2 TEXT: Meeting procedure guide -> p.3-5
+SLIDE 2 NUMERIC-MISMATCH-CANDIDATE: '1'
+SLIDE 2 NUMERIC-MISMATCH-CANDIDATE: '3'
+SLIDE 2 NUMERIC-MISMATCH-CANDIDATE: '4'
+SLIDE 2 NUMERIC-MISMATCH-CANDIDATE: '5'
+SLIDE 2 NUMERIC-MISMATCH-CANDIDATE: '6'
+SLIDE 2 NUMERIC-MISMATCH-CANDIDATE: '7'
+SLIDE 3 TEXT: Meeting Procedure - decision path
+SLIDE 3 TEXT: Future Industrial PLM / Meeting Procedure
+SLIDE 3 TEXT: Position AVEVA Marine as the open decision control plane above specialist tools.
+SLIDE 3 TEXT: CLOSE THE PILOT
+SLIDE 3 TEXT: Do not sell this as a tool-replacement story. Sell it as a governed, auditable, operations-aware decision loop that makes existing tools more valuable.
+SLIDE 3 TEXT: DECISION OUTPUT
+SLIDE 3 NOTE: Use this slide only if the room needs a clearer storyline. The persuasive arc is gap -> strategic move -> feasible architecture -> bounded pilot decision.
+SLIDE 3 NUMERIC-MISMATCH-CANDIDATE: '1'
+SLIDE 3 NUMERIC-MISMATCH-CANDIDATE: '2'
+SLIDE 3 NUMERIC-MISMATCH-CANDIDATE: '4'
+SLIDE 4 TEXT: Future Industrial PLM / Meeting Procedure
+SLIDE 4 TEXT: Seed truth cases for hull, block, compartment, weight, loading case and affected scenarios. E2E tests for evaluate -> review -> promote and rollback. KPI gates for contract coverage, accuracy, provenance, response time and security.
+SLIDE 5 TEXT: Make the product story easy to explain: market position, customer value, roadmap discipline and decision ask.
+SLIDE 5 TEXT: Future Industrial PLM / Meeting Procedure
+SLIDE 5 TEXT: AVEVA owns the control plane above specialist tools. The customer keeps tool choice; AVEVA owns lifecycle decision, evidence and approval orchestration.
+SLIDE 5 TEXT: Fewer blind handovers, faster change impact review, visible assurance evidence, explainable approvals and replayable design-to-operations history.
+SLIDE 5 TEXT: DECISION REQUEST
+SLIDE 5 NOTE: For planning, keep the message tied to market differentiation, customer confidence, scope control and the approval decision requested in the meeting.
+SLIDE 6 TEXT: No current product closes design change → naval calculation → evidence → approval → operations feedback. That is the opportunity, not replacing every specialist tool.
+SLIDE 6 NOTE: Purpose: Establish the problem: no single vendor currently owns the full loop from design change to assurance evidence to operations feedback. Talk track: Use this slide to create urgency. The opportunity is not to replace every specialist tool, but to own the controlled decision layer that connects them.
+SLIDE 7 NOTE: Purpose: Place AVEVA in the competitive landscape. The key message is that AVEVA can move from a strong engineering and operations footprint into the center of governed lifecycle decisions. Talk track: Explain that the future opportunity sits between engineering data and live operations. That is the space where a Marine PLM control plane can be differentiated.
+SLIDE 10 NOTE: Purpose: State the central thesis clearly: win above tool silos. Talk track: AVEVA does not need to own every calculation or every authoring feature. The stronger position is to own the cross-domain decision, evidence, approval and learning loop around specialist tools.
+SLIDE 11 TEXT: Competitors own strong domains; nobody owns the open change-to-evidence-to-operations decision loop
+SLIDE 11 TEXT: Open AVEVA Decision Control Plane
+SLIDE 11 TEXT: CHANGE → DECISION LOOP
+SLIDE 11 TEXT: Own the decision, evidence and learning layer.
+SLIDE 11 NOTE: Purpose: Define the missing product category: an open AVEVA decision control plane. Talk track: Highlight the five linked capabilities: configuration, impact, evidence, approval and operations feedback. This is the future direction that makes AVEVA Marine more than a set of engineering applications.
+SLIDE 12 TEXT: Operations-ready, configuration-governed, approval-evidenced PLM - open enough to absorb the best specialist capability without surrendering the decision loop.
+SLIDE 12 TEXT: Five specialist strengths → one open decision control plane
+SLIDE 13 TEXT: NAPA is already a trusted stability engine. The defensible AVEVA opportunity is the decision, evidence and lifecycle-learning layer above every solver.
+SLIDE 13 TEXT: A governed graph of every safety decision
+SLIDE 13 TEXT: One graph links change → calculation → decision → evidence → revision.
+SLIDE 13 TEXT: Win with the closed loop.
+SLIDE 13 TEXT: NAPA = solver of record. AVEVA-based PLM = system of decision, evidence and lifecycle learning. Competitive moat: customer-owned APIs + assurance graph + closed-loop operational feedback.
+SLIDE 14 NOTE: Purpose: Show how AVEVA can match Siemens-grade configuration rigor without becoming a closed PLM stack. Talk track: Development should hear that open APIs, effectivity, baseline, impact graph and promote gates are the core build items. Planning should hear that this creates a differentiated, operations-aware PLM position.
+SLIDE 15 TEXT: Keep the context and collaboration that make complex decisions understandable.
+SLIDE 15 TEXT: Role / task / decision
+SLIDE 15 TEXT: Context → decision → evidence → approval → learning
+SLIDE 15 TEXT: Dassault = collaboration benchmark. AVEVA-based PLM = executable evidence twin. Competitive moat: every virtual-twin decision is measurable, auditable and connected to operations.
+SLIDE 15 NOTE: Purpose: Show how AVEVA can go beyond virtual-twin presentation into executable governance. Talk track: The important distinction is that a visual twin alone does not approve a change. The proposed direction turns context into evidence, gate decisions and auditable release states.
+SLIDE 16 TEXT: • Ask natural-language questions against connected engineering and asset data. • Good for drawing review support, asset specification lookup and change-history search. • Needs data connection, indexing and permission alignment before production use.
+SLIDE 16 TEXT: Use as decision support, not approval authority.
+SLIDE 16 TEXT: • Good for piping layout, route alternatives, clash analysis and design simulation acceleration. • AI output must pass marine engineering and class-standard validation. • PLM records prompt, result, evidence, reviewer and audit trail.
+SLIDE 16 NUMERIC-MISMATCH-CANDIDATE: '1'
+SLIDE 16 NUMERIC-MISMATCH-CANDIDATE: '2'
+SLIDE 16 NUMERIC-MISMATCH-CANDIDATE: '3'
+SLIDE 16 NUMERIC-MISMATCH-CANDIDATE: '4'
+SLIDE 17 TEXT: AI provider interface: POST /ai-gates/evaluate → diagnosis · evidence_refs · gate_decision · human_required
+SLIDE 17 TEXT: Design rule: AI is pluggable behind rule guardrails and never owns the certified release decision.
+SLIDE 17 NUMERIC-MISMATCH-CANDIDATE: '1'
+SLIDE 17 NUMERIC-MISMATCH-CANDIDATE: '2'
+SLIDE 17 NUMERIC-MISMATCH-CANDIDATE: '3'
+SLIDE 17 NUMERIC-MISMATCH-CANDIDATE: '4'
+SLIDE 18 TEXT: Review + promote
+SLIDE 18 TEXT: Pilot value: deterministic, auditable route proposals on existing Linux control-plane infrastructure; no automatic E3D promote without human/class validation. | Scope: future-phase concept; separate from Phase 2 Naval Assurance WBS 0–5 (p.28).
+SLIDE 18 NUMERIC-MISMATCH-CANDIDATE: '1'
+SLIDE 18 NUMERIC-MISMATCH-CANDIDATE: '2'
+SLIDE 18 NUMERIC-MISMATCH-CANDIDATE: '3'
+SLIDE 18 NUMERIC-MISMATCH-CANDIDATE: '4'
+SLIDE 20 NOTE: Purpose: Prove that the concept has an executable foundation. Talk track: Point out that FastAPI, PostgreSQL, OIDC, Docker Compose and tests already demonstrate the API-first control pattern. The meeting decision is about approving the next bounded extension.
+SLIDE 20 NUMERIC-MISMATCH-CANDIDATE: '1'
+SLIDE 20 NUMERIC-MISMATCH-CANDIDATE: '2'
+SLIDE 20 NUMERIC-MISMATCH-CANDIDATE: '3'
+SLIDE 20 NUMERIC-MISMATCH-CANDIDATE: '4'
+SLIDE 20 NUMERIC-MISMATCH-CANDIDATE: '5'
+SLIDE 20 NUMERIC-MISMATCH-CANDIDATE: '6'
+SLIDE 21 NUMERIC-MISMATCH-CANDIDATE: '1'
+SLIDE 21 NUMERIC-MISMATCH-CANDIDATE: '2'
+SLIDE 21 NUMERIC-MISMATCH-CANDIDATE: '3'
+SLIDE 21 NUMERIC-MISMATCH-CANDIDATE: '4'
+SLIDE 21 NUMERIC-MISMATCH-CANDIDATE: '5'
+SLIDE 23 TEXT: Dassault-grade decision context
+SLIDE 23 TEXT: VISUAL PROOF: ONE CLOSED ASSURANCE LOOP
+SLIDE 23 NOTE: Purpose: Define the pilot scope so the future direction feels achievable. Talk track: The pilot should prove one closed loop rather than attempt full enterprise PLM at once. Planning should protect scope; development should protect adapter, schema, test and evidence quality.
+SLIDE 23 NUMERIC-MISMATCH-CANDIDATE: '1'
+SLIDE 23 NUMERIC-MISMATCH-CANDIDATE: '2'
+SLIDE 23 NUMERIC-MISMATCH-CANDIDATE: '3'
+SLIDE 23 NUMERIC-MISMATCH-CANDIDATE: '4'
+SLIDE 23 NUMERIC-MISMATCH-CANDIDATE: '5'
+SLIDE 23 NUMERIC-MISMATCH-CANDIDATE: '6'
+SLIDE 24 TEXT: access_review.docx
+SLIDE 24 TEXT: verify: Design Review
+SLIDE 25 TEXT: ECO closed OK
+SLIDE 25 TEXT: PLM live status: modeled → DWG issued → MTO extracted → approved → scoped → baselined → ECO closed → released → approved
+SLIDE 25 NUMERIC-MISMATCH-CANDIDATE: '1'
+SLIDE 25 NUMERIC-MISMATCH-CANDIDATE: '2'
+SLIDE 25 NUMERIC-MISMATCH-CANDIDATE: '3'
+SLIDE 25 NUMERIC-MISMATCH-CANDIDATE: '4'
+SLIDE 25 NUMERIC-MISMATCH-CANDIDATE: '5'
+SLIDE 25 NUMERIC-MISMATCH-CANDIDATE: '6'
+SLIDE 25 NUMERIC-MISMATCH-CANDIDATE: '7'
+SLIDE 25 NUMERIC-MISMATCH-CANDIDATE: '8'
+SLIDE 25 NUMERIC-MISMATCH-CANDIDATE: '9'
+SLIDE 26 TEXT: AVEVA E3D Design — Draw (Draughting) · Hull / Block B12 / Panel P3
+SLIDE 26 TEXT: Panel P3
+SLIDE 26 TEXT: Block B12 · Panel P3
+SLIDE 26 TEXT: B12-P3_revA.dwg · + MTO
+SLIDE 26 TEXT: { "block":"B12", "sheet":"P3", "rev":"A", "format":"DWG", "file":"B12-P3_revA.dwg" } → 201 drawing_id: 8842
+SLIDE 26 TEXT: linked to Block B12 / Panel P3
+SLIDE 27 NUMERIC-MISMATCH-CANDIDATE: '1'
+SLIDE 27 NUMERIC-MISMATCH-CANDIDATE: '2'
+SLIDE 27 NUMERIC-MISMATCH-CANDIDATE: '3'
+SLIDE 27 NUMERIC-MISMATCH-CANDIDATE: '4'
+SLIDE 28 TEXT: Publish signed results, rule trace, affected objects, evidence pack and release decision.
+SLIDE 28 TEXT: AI prioritizes, explains and proposes; certified solvers calculate; the naval architect and class authority make the release decision. This is how the platform moves faster without weakening assurance.
+SLIDE 28 NOTE: Purpose: Explain Continuous Naval Assurance as an API concept, not a standalone solver. Talk track: The control plane records solver runs, diagnostics, evidence packs and approvals. It federates trusted calculation engines while making the decision trail visible and replayable.
+SLIDE 28 NUMERIC-MISMATCH-CANDIDATE: '1'
+SLIDE 28 NUMERIC-MISMATCH-CANDIDATE: '2'
+SLIDE 28 NUMERIC-MISMATCH-CANDIDATE: '3'
+SLIDE 28 NUMERIC-MISMATCH-CANDIDATE: '4'
+SLIDE 28 NUMERIC-MISMATCH-CANDIDATE: '5'
+SLIDE 28 NUMERIC-MISMATCH-CANDIDATE: '6'
+SLIDE 30 TEXT: 2. Review Planner / engineer checks candidates, severity, object context and evidence.
+SLIDE 30 TEXT: Why this matters It separates automated detection from controlled engineering decisions.
+SLIDE 30 NOTE: Purpose: Explain the gate mechanism behind the proposed platform. Talk track: The audience should see that evaluate, review and promote are deliberate lifecycle states. This prevents accidental release and creates auditable acceptance criteria.
+SLIDE 31 TEXT: Shipyard UAT · class review · performance
+SLIDE 32 TEXT: Objective gates measure correctness, evidence provenance and decision speed - not subjective progress
+SLIDE 32 TEXT: PASS | CONDITIONAL PASS with backlog | FAIL + remediation sprint. AI never owns the certified release decision.
+SLIDE 32 TEXT: GATE DECISION
+SLIDE 34 TEXT: Review ownership and operating model
+SLIDE 34 TEXT: A cross-functional review board sees the same KPI, risk, evidence and release state before any capability is promoted
+SLIDE 34 TEXT: ACCOUNTABLE REVIEW BOARD
+SLIDE 34 TEXT: WEEKLY STEERING + REVIEW
+SLIDE 34 TEXT: 1 KPI + evidence dashboard 2 Failing configuration / assurance gates 3 Class and naval-architecture issues 4 Scope-change decisions 5 Promote completed capabilities + update risk burndown
+SLIDE 34 NOTE: Purpose: Define who owns decisions after the meeting. Talk track: The future direction requires product planning, naval architecture, solution architecture and development to share one evidence dashboard. This prevents strategy from separating from implementation.
+SLIDE 35 TEXT: Key review risks and mitigations
+SLIDE 35 TEXT: Naval architect, engineering, IT and planning jointly own pilot and KPI decisions.
+SLIDE 35 NUMERIC-MISMATCH-CANDIDATE: '1'
+SLIDE 35 NUMERIC-MISMATCH-CANDIDATE: '2'
+SLIDE 35 NUMERIC-MISMATCH-CANDIDATE: '3'
+SLIDE 35 NUMERIC-MISMATCH-CANDIDATE: '4'
+SLIDE 35 NUMERIC-MISMATCH-CANDIDATE: '5'
+SLIDE 35 NUMERIC-MISMATCH-CANDIDATE: '1'
+SLIDE 35 NUMERIC-MISMATCH-CANDIDATE: '2'
+SLIDE 35 NUMERIC-MISMATCH-CANDIDATE: '3'
+SLIDE 35 NUMERIC-MISMATCH-CANDIDATE: '4'
+SLIDE 35 NUMERIC-MISMATCH-CANDIDATE: '5'
+SLIDE 36 TEXT: DESIGN USE Role context and executable twin decisions
+SLIDE 37 TEXT: Recommended decision
+SLIDE 37 TEXT: Solver evidence · approvals · class review
+SLIDE 37 TEXT: PROOF AT G6: ONE CLOSED, AUDITABLE LOOP
+SLIDE 37 NOTE: Purpose: Close with the decision request. Talk track: Ask for approval of the bounded next increment: Phase 2 configuration core plus Continuous Naval Assurance pilot. The proof point is one closed, auditable loop from E3D/Hull event to approved evidence and operations feedback.
+SLIDE 37 NUMERIC-MISMATCH-CANDIDATE: '1'
+SLIDE 37 NUMERIC-MISMATCH-CANDIDATE: '2'
+SLIDE 37 NUMERIC-MISMATCH-CANDIDATE: '3'
+SLIDE 38 TEXT: Future Industrial PLM / Meeting Procedure
+SLIDE 38 NOTE: Use this as the final spoken close if the room needs the whole proposal compressed into one message. The ask is alignment, bounded pilot approval, ownership and first scenario validation.
+SLIDE 39 TEXT: Glossary 1 / 3 - PLM, configuration and change terms
+SLIDE 39 TEXT: Appendix · quick reference — terms are kept in editable PowerPoint tables, not standalone text boxes.
+SLIDE 39 TEXT: Quick-reference appendix · product names are trademarks of their respective owners.
+SLIDE 39 TEXT: Appendix
+SLIDE 39 NOTE: Purpose: Use this appendix only when terms block understanding. Talk track: Do not present every glossary row in the main meeting. Refer to it when PLM, BOM, effectivity, baseline, VCRM or class terms need quick clarification.
+SLIDE 40 TEXT: Glossary 2 / 3 - Marine, naval and product terms
+SLIDE 40 TEXT: Appendix · quick reference — terms are kept in editable PowerPoint tables, not standalone text boxes.
+SLIDE 40 TEXT: Quick-reference appendix · product names are trademarks of their respective owners.
+SLIDE 40 TEXT: Appendix
+SLIDE 40 NOTE: Purpose: Clarify marine and AVEVA product terminology. Talk track: Use this appendix to align mixed development and planning audiences. It prevents confusion between authoring tools, AI tools, solvers and PLM control-plane functions.
+SLIDE 41 TEXT: Glossary 3 / 3 - Architecture, security and infrastructure terms
+SLIDE 41 TEXT: Appendix · quick reference — terms are kept in editable PowerPoint tables, not standalone text boxes.
+SLIDE 41 TEXT: Quick-reference appendix · product names are trademarks of their respective owners.
+SLIDE 41 TEXT: Appendix
+SLIDE 41 NOTE: Purpose: Clarify architecture, security and infrastructure terminology. Talk track: Use this appendix when discussing implementation feasibility, identity, APIs, PostgreSQL, CI, HA/DR or security. It keeps technical questions grounded in shared definitions.
