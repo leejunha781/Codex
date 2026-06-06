@@ -61,3 +61,12 @@
 - Saved matching `Future_Industrial_PLM_Meeting_Deck_EN_V8.pptx`, default `Future_Industrial_PLM_Meeting_Deck_EN.pptx`, and `Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (`33,146,092` bytes, `2026-06-07 00:00:13`). Exported `Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf` (`3,615,046` bytes).
 - QA: 41 slides, 41 speaker-note pages, 41 PNG renders in `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v8_reordered_render\`; visually checked p.2, p.3, p.4, p.5, p.37, p.38, p.39 and p.41.
 - Note: initial text-title reorder attempt was discarded because agenda text caused false title matches; final successful script used immutable PowerPoint `SlideID` mapping from clean V7.
+
+2026-06-07 run (~10m)
+
+- Improved AVEVA V8 presentation pages 3-5 visibility/design and saved as V9.
+- Final files: `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V9.pptx`, default `...\Future_Industrial_PLM_Meeting_Deck_EN.pptx`, and `...\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (`33,151,410` bytes, `2026-06-07 00:11:34`).
+- Exported final PDF `...\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf` (`3,633,665` bytes, `2026-06-07 00:11:44`).
+- Scope: p.3 redesigned as a larger 4-step decision path; p.4 as larger BUILD/VALIDATE/AVOID development cards; p.5 as larger planning argument cards around an AVEVA Control Plane hub with a readable success statement.
+- Image decision: no generated raster image was attached; editable PowerPoint shapes/diagrams were clearer and safer for later editing.
+- QA: rendered all 41 slides to `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v9_slides3_5_visibility_render\`; visually checked p.3-p.5 and confirmed no major clipping/overlap.
