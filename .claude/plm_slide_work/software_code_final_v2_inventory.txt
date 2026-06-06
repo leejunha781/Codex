@@ -1,11 +1,13 @@
 ﻿AVEVA Marine PLM Control Plane code package inventory
-Generated: 2026-06-06 21:20:16 +09:00
+Generated: 2026-06-06 21:22:09 +09:00
 ZIP: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\AVEVA_Marine_PLM_Control_Plane_FastAPI_SQL_IndustrialAI_FINAL_v2.zip
 ZIP bytes: 185527
 ZIP LastWriteTime: 2026-06-06 21:14:22
 ZIP SHA256: B743D8482D3CC353C1059C5F1E29A48DEB22F255F60D6C7B7AF827160E7721A7
 Extracted folder: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\AVEVA_Marine_PLM_Control_Plane_FastAPI_SQL_IndustrialAI_FINAL_v2
-File count: 108
+Original ZIP file count: 108
+Current extracted file count: 109
+Generated save note excluded from original-file hash table: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\AVEVA_Marine_PLM_Control_Plane_FastAPI_SQL_IndustrialAI_FINAL_v2\CODE_CONTENTS_SAVED.txt
 
 RelPath`tBytes`tSHA256`tLastWriteTime
 .pytest_cache\.gitignore`t37`t3ED731B65D06150C138E2DADB0BE0697550888A6B47EB8C45ECC9ADBA8B8E9BD`t2026-06-06 12:11:26
