@@ -1,0 +1,44 @@
+﻿T2 bg=16247773 font=7949855 | Education
+T2 bg=16247773 font=7949855 | Certifications / Training
+T2 bg=16247773 font=7949855 | Language
+T2 bg=16247773 font=7949855 | Technical Toolkit
+T2 bg=16247773 font=7949855 | Documentation
+T3 bg=7949855 font=16777215 | Period
+T3 bg=7949855 font=16777215 | Company
+T3 bg=7949855 font=16777215 | Position
+T3 bg=7949855 font=16777215 | ITT Cannon FAE Relevance
+T4 bg=16247773 font=7949855 | Role
+T4 bg=16247773 font=7949855 | FAE Fit
+T5 bg=16247773 font=7949855 | Role
+T5 bg=16247773 font=7949855 | FAE Fit
+T6 bg=16247773 font=7949855 | Role
+T6 bg=16247773 font=7949855 | FAE Fit
+T7 bg=16247773 font=7949855 | Role
+T7 bg=16247773 font=7949855 | FAE Fit
+T8 bg=16247773 font=7949855 | Role
+T8 bg=16247773 font=7949855 | FAE Fit
+T9 bg=16247773 font=7949855 | Role
+T9 bg=16247773 font=7949855 | FAE Fit
+T10 bg=7949855 font=16777215 | Category
+T10 bg=7949855 font=16777215 | Item
+T10 bg=7949855 font=16777215 | Details
+T10 bg=16247513 font=-16777216 | CurrentCompensation
+T10 bg=16512494 font=-16777216 | Basic salary / contract annual
+T10 bg=16777215 font=-16777216 | KRW 83.97M
+T10 bg=16512494 font=-16777216 | Meal allowance
+T10 bg=16777215 font=-16777216 | KRW 1.80M separate
+T10 bg=16512494 font=-16777216 | Transportation allowance
+T10 bg=16777215 font=-16777216 | KRW 1.80M separate
+T10 bg=16512494 font=-16777216 | Performance incentive
+T10 bg=16777215 font=-16777216 | KRW 6.67M separate
+T10 bg=16512494 font=-16777216 | Current annual cash reference
+T10 bg=16777215 font=-16777216 | KRW 94.24M when the above sepa
+T10 bg=16247513 font=-16777216 | ExpectedCompensation
+T10 bg=16512494 font=-16777216 | Expected basic salary
+T10 bg=16777215 font=-16777216 | Above my current base salary (
+T10 bg=16512494 font=-16777216 | Negotiation basis
+T10 bg=16777215 font=-16777216 | Open and negotiable based on t
+T11 bg=7949855 font=16777215 | ITT Cannon FAE Requirement
+T11 bg=7949855 font=16777215 | Condensed Career Evidence
+T11 bg=7949855 font=16777215 | Value to ITT Cannon
+

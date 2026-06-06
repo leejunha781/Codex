@@ -1,0 +1,16 @@
+﻿opened pages=9
+FIXED: 'Professional Profile' + ' and Interest in ITT Cannon FAE Role'
+FIXED: 'Key Strengths' + ' Matched to ITT Cannon FAE Role'
+--- headings after fix ---
+  H: Professional Profile and Interest in ITT Cannon FAE Role
+  H: Key Strengths Matched to ITT Cannon FAE Role
+  H: Product/Application Knowledge Integrated with ITT Cannon FAE Role
+  H: Education, Certifications, Language and Technical Toolkit
+  H: Career Summary
+  H: Detailed Professional Experience
+  H: Compensation / Salary Information
+  H: Self-Introduction and Application Motivation
+saved
+pdf
+FINAL pages=9 words=4551
+

@@ -1,0 +1,16 @@
+﻿opened pages=9
+Values woven BEFORE '4. Contribution'
+Values para formatted OK
+--- all 14pt bold headings ---
+  H: Professional Profile
+  H: Key Strengths
+  H: Product/Application Knowledge Integrated with ITT Cannon FAE Role
+  H: Education, Certifications, Language and Technical Toolkit
+  H: Career Summary
+  H: Detailed Professional Experience
+  H: Compensation / Salary Information
+  H: Self-Introduction and Application Motivation
+saved
+pdf
+FINAL pages=9 words=4538
+

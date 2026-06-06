@@ -1,0 +1,10 @@
+﻿Education block range = 6078 .. 7274
+Cut Education block.
+Pasted Education block before Compensation heading.
+ORDER:
+  1. Professional Profile
+  2. Career Summary
+  3. Detailed Professional Experience
+  4. Compensation / Salary Information
+  5. Self-Introduction and Application Motivation
+RESULT pages=8 words=4220 tables=10

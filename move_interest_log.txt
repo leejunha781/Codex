@@ -1,0 +1,7 @@
+﻿1) Heading renamed to 'Professional Profile'.
+2) Removed redundant Profile interest paragraph.
+   deleted=True
+VERIFY interestParas=1 (expect 1, in Self-Intro) ; careerAroundParas=0 (expect 0)
+VERIFY newHeading=True oldHeading=False
+VERIFY missingHeadings=Reason for Interest in ITT Cannon FAE Role
+RESULT pages=9 words=4490

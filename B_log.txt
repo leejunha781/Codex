@@ -1,0 +1,19 @@
+﻿opened
+old header photo count=1
+inserted separator paragraph
+new table added; cols=3 rows=6
+filled
+merged title row
+merged photo column
+photo copied; images=1
+old header deleted
+removed leading sep para
+c1 fail
+c2 fail
+c3 fail
+styled
+bumped=0
+saved
+pdf refreshed
+PAGES=9 TABLES=10 INLINESHAPES=1
+

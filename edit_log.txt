@@ -1,0 +1,35 @@
+﻿OPENED Word instance
+OPENED doc
+STEP1 salary r1=True r2=True
+STEP2 inserted block
+STEP3 formatted block
+STEP4 normalized compensation heading
+STEP5 global bumped=90
+STEP6 bordered=9
+STEP7 saved
+STEP7 pdf exported
+PAGES=9
+WORDS=4132
+TABLES=11
+MIN_FONT_SIZE=10
+--- headings (14/bold) ---
+  H: Professional Profile and Interest in ITT Cannon FAE Role
+  H: Key Strengths Matched to ITT Cannon FAE Role
+  H: ITT Cannon Connector Product Knowledge & Target-Market Fit
+  H: Career Summary
+  H: Education, Certifications, Language and Technical Toolkit
+  H: Detailed Professional Experience
+  H: Compensation / Salary Information
+  H: Self-Introduction and Application Motivation
+  H: Attachment: Condensed ITT Cannon FAE Requirement Match
+--- inserted readback ---
+  OK[sz=14 style=표준]: ITT Cannon Connector Product Knowledge & Target-
+  OK[sz=10 style=표준]: ITT Cannon connector families mapped to the Fiel
+  OK[sz=10 style=글머리 기호]: Aerospace & Defense (preferred): MIL-DTL-38999 /
+  OK[sz=10 style=글머리 기호]: Transportation & Industrial (Rail, Heavy Vehicle
+  OK[sz=10 style=글머리 기호]: Harsh-environment circular, electrical cabling, 
+  OK[sz=10 style=글머리 기호]: Materials & manufacturing (high-performance ther
+--- expected comp readback ---
+  COMP: KRW 90M+ base (above my current base of KRW 83.97M)
+  COMP: Negotiable on base, incentive and role level to the ITT Cann
+

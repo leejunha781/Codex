@@ -1,0 +1,8 @@
+﻿opened
+header-fills->charcoal=10  light-fills->gray=26  navy-text->charcoal=17
+saved
+pdf fail: 이 파일은 읽기 전용이므로 저장할 수 없습니다.
+변경 내용을 유지하려면 문서를 새 이름으로 저장하거나 다른 위치에 저장해야 합니다.
+--- remaining fills ---
+done-scan
+

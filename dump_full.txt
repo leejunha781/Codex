@@ -1,0 +1,129 @@
+﻿===== TABLE 1 : rows=6 cols=3 =====
+   cell[r1,c1]: Resume
+   cell[r2,c1]: Name
+   cell[r2,c2]: Joonha Lee
+   cell[r2,c3]: /
+   cell[r3,c1]: Position Applied
+   cell[r3,c2]: Field Application Engineer (FAE) - ITT Cannon Connector Korea
+   cell[r4,c1]: Location
+   cell[r4,c2]: Gunpo-si, Gyeonggi-do, Korea
+   cell[r5,c1]: Phone
+   cell[r5,c2]: +82-10-2731-4581
+   cell[r6,c1]: Email
+   cell[r6,c2]: leejunha781@gmail.com
+
+===== TABLE 2 : rows=6 cols=2 =====
+   cell[r1,c1]: Category
+   cell[r1,c2]: Details
+   cell[r2,c1]: Education
+   cell[r2,c2]: M.S. in Electronic & Electrical Engineering, Embedded Systems, Pusan National University (2013-2018); B.S. in Control & Instrumentation Engineering, University of Ulsan (1992-2002).
+   cell[r3,c1]: Certifications / Training
+   cell[r3,c2]: Certified NMEA 2000 Networking for marine communication interfaces;  Defense PMBOK training for defense project execution;  Python and machine learning training for data-based issue analysis and technical reporting.
+   cell[r4,c1]: Language
+   cell[r4,c2]: English technical meetings, customer communication,  VOC clarification and issue follow-up with global partners;  English study in Perth, Australia;  IELTS 5.0.
+   cell[r5,c1]: Technical Toolkit
+   cell[r5,c2]: Connector/cable applications, RF/coaxial paths, power/control/signal interfaces, Ethernet/high-speed data, board-to-system interconnects, ICDs, EMI/EMC, signal integrity, RF measurement equipment, Wireshark, iperf, embedded hardware, Linux and Microsoft Office.
+   cell[r6,c1]: Documentation
+   cell[r6,c2]: Customer requirements, ICDs, connector/cable interface review, technical proposals, test plans/reports, defect logs, root-cause evidence, ECO/BOM records, design-review documents and customer-facing issue summaries.
+
+===== TABLE 3 : rows=8 cols=4 =====
+   cell[r1,c1]: Period
+   cell[r1,c2]: Company
+   cell[r1,c3]: Position
+   cell[r1,c4]: ITT Cannon FAE Relevance
+   cell[r2,c1]: Aug 2025 - Present
+   cell[r2,c2]: Independent / Career Transition
+   cell[r2,c3]: Career Transition & Self-Study
+   cell[r2,c4]: Preparing for ITT Cannon FAE role; strengthening connector/application, field-support and troubleshooting readiness.
+   cell[r3,c1]: Mar 2023 - Jul 2025
+   cell[r3,c2]: Intellian Technologies
+   cell[r3,c3]: Senior Engineer / Hardware Platform Lead
+   cell[r3,c4]: LEO satellite terminal integration, RF/antenna and network interface validation, field issue analysis, production validation and global customer support.
+   cell[r4,c1]: Aug 2022 - Mar 2023
+   cell[r4,c2]: Genohco
+   cell[r4,c3]: Lead Engineer / Principal Research Engineer
+   cell[r4,c4]: Defense/aerospace electronics, RFP/requirements review, EMI/EMC planning, technical proposals and test documentation.
+   cell[r5,c1]: May 2007 - Apr 2022
+   cell[r5,c2]: Daeyang Electric Co., Ltd.
+   cell[r5,c3]: Principal Engineer / Project Manager
+   cell[r5,c4]: ROK Navy ship/submarine systems, shipboard networks, installation, FAT/HAT/SAT, commissioning, sea trials, acceptance and after-delivery support.
+   cell[r6,c1]: Jan 2006 - May 2007
+   cell[r6,c2]: Excure Hitron
+   cell[r6,c3]: Engineer
+   cell[r6,c4]: CCTV/IR dome camera control boards, power/signal interface debugging, production issue analysis and EMC/RoHS support.
+   cell[r7,c1]: Jun 2005 - Oct 2005
+   cell[r7,c2]: Esetel
+   cell[r7,c3]: Engineer
+   cell[r7,c4]: ARM-based mobile hardware, RF/digital/power interface debugging and prototype support.
+   cell[r8,c1]: Jan 2004 - May 2005
+   cell[r8,c2]: NesLab
+   cell[r8,c3]: Engineer
+   cell[r8,c4]: ARM-based embedded hardware, HDD phone interface debugging, PCB support and board bring-up.
+
+===== TABLE 4 : rows=3 cols=2 =====
+   cell[r1,c1]: Item
+   cell[r1,c2]: Summary
+   cell[r2,c1]: Role
+   cell[r2,c2]: Defense/aerospace electronics PL/PM support, RFP analysis, technical proposal preparation, design review, external test coordination and delivery documentation.
+   cell[r3,c1]: FAE Fit
+   cell[r3,c2]: Converted aerospace and defense customer requirements, RFP items and technical constraints into practical technical proposals, execution plans, interface requirements, test procedures and customer deliverables. This is closely matched to ITT Cannon FAEs who must identify design requirements, understand customer pain points, communicate technical solutions and coordinate with engineering, product management and operations.
+
+===== TABLE 5 : rows=3 cols=2 =====
+   cell[r1,c1]: Item
+   cell[r1,c2]: Summary
+   cell[r2,c1]: Role
+   cell[r2,c2]: ROK Navy ship/submarine communication systems, shipboard networks, broadcasting systems, CCTV/VOD, C4I-linked systems and control-interface equipment from requirements analysis through installation, FAT/HAT/SAT, commissioning, sea trials, customer acceptance and after-delivery support.
+   cell[r3,c1]: FAE Fit
+   cell[r3,c2]: Built the strongest foundation for ITT Cannon’s Aerospace & Defense and harsh-environment connector markets. Worked for 15+ years in military shipboard and submarine environments where rugged cabling, RF antenna/cable interfaces, equipment connectors, power/control/signal lines, EMI/EMC awareness, installation constraints, formal documentation and customer acceptance evidence were essential.
+
+===== TABLE 6 : rows=3 cols=2 =====
+   cell[r1,c1]: Item
+   cell[r1,c2]: Summary
+   cell[r2,c1]: Role
+   cell[r2,c2]: ROK Navy ship/submarine communication systems, shipboard networks, broadcasting systems, CCTV/VOD, C4I-linked systems and control-interface equipment from requirements analysis through installation, FAT/HAT/SAT, commissioning, sea trials, customer acceptance and after-delivery support.
+   cell[r3,c1]: FAE Fit
+   cell[r3,c2]: Built the strongest foundation for ITT Cannon’s Aerospace & Defense and harsh-environment connector markets. Worked for 15+ years in military shipboard and submarine environments where rugged cabling, RF antenna/cable interfaces, equipment connectors, power/control/signal lines, EMI/EMC awareness, installation constraints, formal documentation and customer acceptance evidence were essential.
+
+===== TABLE 7 : rows=3 cols=2 =====
+   cell[r1,c1]: Item
+   cell[r1,c2]: Summary
+   cell[r2,c1]: Role
+   cell[r2,c2]: CCTV/IR dome camera control board development support, prototype verification, production issue analysis and certification support.
+   cell[r3,c1]: FAE Fit
+   cell[r3,c2]: Gained hands-on product-level electronics experience with control boards, power/signal interfaces, cable-connected camera equipment and early production stabilization. This provides useful background for understanding equipment-side connector applications, product behavior, production quality and customer troubleshooting.
+
+===== TABLE 8 : rows=3 cols=2 =====
+   cell[r1,c1]: Item
+   cell[r1,c2]: Summary
+   cell[r2,c1]: Role
+   cell[r2,c2]: ARM-based cellular mobile hardware development support, RF/digital/power interface debugging and board-level verification.
+   cell[r3,c1]: FAE Fit
+   cell[r3,c2]: Built early hands-on experience in RF, digital control and power interface behavior. This supports understanding of high-speed data, power and signal transfer requirements that are important in connector and interconnect application discussions.
+
+===== TABLE 9 : rows=3 cols=2 =====
+   cell[r1,c1]: Item
+   cell[r1,c2]: Summary
+   cell[r2,c1]: Role
+   cell[r2,c2]: ARM-based embedded hardware, Samsung HDD phone interface debugging, PCB support, board bring-up and prototype-to-production support.
+   cell[r3,c1]: FAE Fit
+   cell[r3,c2]: Established the basic engineering foundation for board-to-system interfaces, storage/device interfaces, power/signal paths, prototype bring-up and engineering-to-production handover. These skills remain relevant to connector and interconnect applications at system level.
+
+===== TABLE 10 : rows=7 cols=3 =====
+   cell[r1,c1]: Category
+   cell[r1,c2]: Item
+   cell[r1,c3]: Details
+   cell[r2,c1]: Current Compensation
+   cell[r2,c2]: Annual base salary
+   cell[r2,c3]: KRW 83.97M
+   cell[r3,c2]: Separate allowances
+   cell[r3,c3]: KRW 3.60M
+   cell[r4,c2]: Performance incentive
+   cell[r4,c3]: KRW 6.67M
+   cell[r5,c2]: Current annual cash
+   cell[r5,c3]: KRW 87.57M (excluding incentive)
+   cell[r6,c1]: Expected Compensation
+   cell[r6,c2]: Expected basic salary
+   cell[r6,c3]: Negotiable; target is KRW 87.57M+, excluding performance incentive.
+   cell[r7,c2]: Negotiation basis
+   cell[r7,c3]: Incentive and benefits to be discussed separately as part of the final total compensation package.
+
