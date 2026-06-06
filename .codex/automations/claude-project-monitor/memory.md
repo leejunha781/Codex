@@ -53,3 +53,11 @@
 - Plain-text companion: `...\AVEVA_Marine_Future_Direction_Development_Planning_Meeting_Materials_EN.txt`.
 - Document structure covers executive summary, future-direction rationale, target product position, hybrid architecture, AI governance, Continuous Naval Assurance pilot, dev/planning team messages, roadmap, KPIs, risks, facilitation guide and closing argument.
 - Word COM froze before saving on HTML and direct paragraph attempts, so final DOCX was produced via PowerShell/OpenXML packaging; validated `word/document.xml` exists and key section markers are present. PDF/PNG export skipped due Word COM instability.
+
+2026-06-07 run (~20m)
+
+- Rearranged AVEVA V7 presentation into V8 for development/planning meeting procedure.
+- Final order: cover, agenda/procedure, p.3-5 meeting procedure/dev/planning messages, current state/public signals, winning ideas/AI/routing, architecture/proposal/pilot/WBS/KPI, review/decision, closing argument, glossary.
+- Saved matching `Future_Industrial_PLM_Meeting_Deck_EN_V8.pptx`, default `Future_Industrial_PLM_Meeting_Deck_EN.pptx`, and `Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (`33,146,092` bytes, `2026-06-07 00:00:13`). Exported `Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf` (`3,615,046` bytes).
+- QA: 41 slides, 41 speaker-note pages, 41 PNG renders in `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v8_reordered_render\`; visually checked p.2, p.3, p.4, p.5, p.37, p.38, p.39 and p.41.
+- Note: initial text-title reorder attempt was discarded because agenda text caused false title matches; final successful script used immutable PowerPoint `SlideID` mapping from clean V7.
