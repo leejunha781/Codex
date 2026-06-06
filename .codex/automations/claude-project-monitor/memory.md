@@ -28,3 +28,11 @@
 - Created `C:\Users\namma\.claude\plm_slide_work\software_code_final_v2_inventory.txt` with original-file hashes and `C:\Users\namma\.claude\plm_slide_work\software_code_final_v2_code_contents.txt` with the consolidated source/SQL/docs/OpenAPI/test text dump.
 - Package scope checked: FastAPI app, PostgreSQL init SQL, OpenAPI JSON, docs, tests, Docker Compose, and requirements. Original ZIP has 108 files; extraction has 109 after adding `CODE_CONTENTS_SAVED.txt`.
 - Did not run Python/Node/tests due workspace constraints; this run only saved, extracted, hashed, and indexed the code contents.
+
+2026-06-06 run (~3m)
+
+- User asked to set the default PowerShell version to 7.
+- Confirmed the active Codex shell is already PowerShell 7.6.2 and pwsh.exe exists at C:\Program Files\PowerShell\7\pwsh.exe.
+- Updated Windows Terminal settings at C:\Users\namma\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json so defaultProfile points to the PowerShell Core/7 profile {574e775e-4f2a-5b96-ac1e-a2962a402336}.
+- Created backup settings.json.bak_20260606_223639 beside the settings file before editing.
+- Note: Office COM document tasks should still explicitly use Windows PowerShell 5.1 (powershell.exe) when required by the Office automation workflow.
