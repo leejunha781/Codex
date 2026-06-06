@@ -1,0 +1,15 @@
+﻿Future direction meeting materials V7
+Generated: 2026-06-06 22:44:06 +09:00
+Slide count: 41
+Slides with speaker notes: 41
+PNG render count: 41
+Render folder: C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v7_render
+Backup folder: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\_backup_20260606_future_direction_v7_20260606_224341
+
+Output files:
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V7.pptx	33145936	2026-06-06 22:43:51
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx	33145936	2026-06-06 22:43:51
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx	33145936	2026-06-06 22:43:51
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf	3613033	2026-06-06 22:44:01
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Development_Planning_Meeting_Brief_EN.md	3335	2026-06-06 22:44:02
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Development_Planning_Meeting_Brief_EN.txt	3311	2026-06-06 22:44:02
