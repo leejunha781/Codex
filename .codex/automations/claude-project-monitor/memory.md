@@ -19,3 +19,12 @@
 - Resume memory already flags `IELTS 5.0` as an optional content risk; no new structural break proven in the canonical doc from this run.
 - `AGENTS.md` path guidance is stale for this workspace: it points to `projects/C--Users-namma--Codex/memory/`, but the live memory path here is `projects/C--Users-namma--claude/memory/`.
 - A titleless `POWERPNT` process was present during inspection, and COM attach failed with `0x80070520`; matches the recorded stale-window/orphan risk. Avoid saving any stale visible PowerPoint window until the deck is reopened from disk.
+
+2026-06-06 run (~8m)
+
+- Saved the user-supplied AVEVA software code package `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\AVEVA_Marine_PLM_Control_Plane_FastAPI_SQL_IndustrialAI_FINAL_v2.zip`.
+- Extracted it to `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\AVEVA_Marine_PLM_Control_Plane_FastAPI_SQL_IndustrialAI_FINAL_v2\`.
+- Recorded ZIP metadata: `185,527` bytes, LastWriteTime `2026-06-06 21:14:22`, SHA256 `B743D8482D3CC353C1059C5F1E29A48DEB22F255F60D6C7B7AF827160E7721A7`.
+- Created `C:\Users\namma\.claude\plm_slide_work\software_code_final_v2_inventory.txt` with original-file hashes and `C:\Users\namma\.claude\plm_slide_work\software_code_final_v2_code_contents.txt` with the consolidated source/SQL/docs/OpenAPI/test text dump.
+- Package scope checked: FastAPI app, PostgreSQL init SQL, OpenAPI JSON, docs, tests, Docker Compose, and requirements. Original ZIP has 108 files; extraction has 109 after adding `CODE_CONTENTS_SAVED.txt`.
+- Did not run Python/Node/tests due workspace constraints; this run only saved, extracted, hashed, and indexed the code contents.

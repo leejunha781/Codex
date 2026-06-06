@@ -1,0 +1,173 @@
+﻿DECK=D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx
+SLIDES=37
+[01] pics=0 tables=0 textShapes=5 :: Company-by-company benchmark, win-above strategies, open AVEVA control plane, delivery WBS and KPI g
+[02] pics=0 tables=0 textShapes=34 :: Meeting structure - seven decisions in order
+  AGENDA/TEXT:
+    Meeting structure - seven decisions in order
+    Move from facts to ideas, then validate the delivery plan and final decision
+    Future Industrial PLM
+    1
+    CURRENT STATE
+    Competitor vs AVEVA comparison, PLM position and today's executable baseline
+    2
+    PUBLIC SIGNALS
+    Official product and roadmap signals; confirmed versus directional
+    3
+    WINNING IDEAS
+    Meeting thesis + win-above NAPA / Siemens / Dassault patterns
+    4
+    PROPOSAL + DELIVERY
+    Architecture, workflows and pilot scope - then WBS and KPI gates
+    5
+    FUTURE-STATE COMPARE
+    Re-score AVEVA after the proposed ideas are applied
+    6
+    REVIEW
+    Ownership, risks, evidence and assumptions requiring agreement
+    7
+    CLOSE
+    Approve the next increment and the assurance pilot
+    Sequencing rule: WBS and KPI appear only after all proposed capabilities and pilot ideas are consolidated.
+    2
+    Abbreviations → Glossary appendix, p.35–37
+    p.3–5
+    p.6
+    p.7–15
+    p.16–28
+    p.29
+    p.30–32
+    p.33
+[03] pics=0 tables=1 textShapes=7 :: Current-state comparison - no vendor owns the complete loop
+[04] pics=0 tables=0 textShapes=31 :: Current PLM landscape
+[05] pics=1 tables=0 textShapes=10 :: Where we are now
+[06] pics=0 tables=0 textShapes=24 :: Public product + roadmap signals - official emphasis only
+[07] pics=1 tables=0 textShapes=7 :: Meeting thesis - win above tool silos
+[08] pics=0 tables=0 textShapes=30 :: Strategic gap to fill
+[09] pics=1 tables=0 textShapes=31 :: What to absorb - and where AVEVA must go beyond
+[10] pics=0 tables=0 textShapes=33 :: Win above NAPA - own the continuous naval assurance loop
+[11] pics=0 tables=0 textShapes=31 :: Win above Siemens - make configuration rigor open and operations-aware
+[12] pics=0 tables=0 textShapes=31 :: Win above Dassault - make the virtual twin executable and evidence-driven
+[13] pics=1 tables=0 textShapes=29 :: 13
+  TEXT:
+    13
+    Future Industrial PLM
+    AVEVA AI Capabilities — AI assists, the control plane governs
+    CONNECT Industrial AI + Unified Engineering AI become useful when wrapped by rule gates, evidence and accountable human approval.
+    1
+    CONNECT AI
+    secure Q&A on ship data
+    2
+    Unified Eng. AI
+    routing / clash suggestions
+    3
+    AI + Rules Gate
+    diagnose and hold risks
+    4
+    Human + Class
+    approve release
+    1. Industrial AI Assistant in CONNECT
+    CONNECT Industrial AI Assistant
+    role-gated answer
+    • Ask natural-language questions against connected engineering and asset data. • Good for drawing review support, asset specification lookup and change-history search. • Needs data connection, indexing and permission ali
+    Use as decision support, not approval authority.
+    2. Unified Engineering Design AI
+    engineer validates
+    • Good for piping layout, route alternatives, clash analysis and design simulation acceleration. • AI output must pass marine engineering and class-standard validation. • PLM records prompt, result, evidence, reviewer an
+    AI proposes; engineering authority releases.
+    CONTROL PRINCIPLE
+    AI diagnoses and recommends; rule guardrails hold gates; certified solvers calculate; humans and class authorities release.
+    Reference basis: AVEVA CONNECT Industrial AI Assistant and Unified Engineering AI public product pages; diagrams are original meeting-deck visualizations.
+    route option
+[14] pics=1 tables=0 textShapes=45 :: 14
+  TEXT:
+    14
+    Future Industrial PLM
+    AI deployment path — start light, then scale to AVEVA CONNECT
+    A practical roadmap: deterministic gates first, on-prem RAG next, then enterprise CONNECT and Unified Engineering AI when governance is ready.
+    TIER 0
+    Rule Gate
+    FastAPI + Pydantic
+    Immediate · no GPU
+    TIER 1
+    On-prem RAG
+    pgvector + Ollama
+    4–8 wk pilot
+    TIER 2
+    CONNECT AI
+    Industrial AI Assistant
+    Scale
+    TIER 3
+    Design AI
+    Unified Engineering AI
+    Full design AI
+    Linux control-plane AI stack
+    FastAPI AI Gate
+    validate
+    PostgreSQL pgvector
+    retrieve
+    Ollama / CONNECT API
+    reason
+    Evidence Approval
+    record
+    • Tier 0 catches deterministic PLM errors immediately. • Tier 1 enables semantic search over drawings, specs, evidence packs and change history. • Tier 2–3 can reuse the same provider interface when CONNECT / Unified Eng
+    Why this is easier to approve
+    1
+    Fast pilot
+    Rules run on existing Linux nodes.
+    2
+    Data sovereignty
+    RAG keeps shipyard IP on-prem.
+    3
+    Upgradeable
+    Swap provider: Ollama → CONNECT AI.
+    4
+    Auditable
+    All answers link to evidence and approval.
+    AI provider interface: POST /ai-gates/evaluate → diagnosis · evidence_refs · gate_decision · human_required
+    Design rule: AI is pluggable behind rule guardrails and never owns the certified release decision.
+[15] pics=1 tables=0 textShapes=22 :: 15
+  TEXT:
+    15
+    Future Industrial PLM
+    Lightweight Piping Routing — deterministic pilot
+    scipy + networkx + 3D voxel grid: useful routing suggestions without requiring full Generative Design AI in the first pilot.
+    A. Voxel routing concept
+    Start → valid cells → avoid obstacles → lowest-cost path → end
+    B. Algorithm pipeline + gate
+    1
+    Input from E3D/Marine
+    Local Agent exports compartments, keep-outs, endpoints and constraints.
+    2
+    Build 3D voxel grid
+    Mark blocked cells and assign length, bend and zone costs.
+    3
+    Solve with scipy + networkx
+    Run Dijkstra/A* under class-driven hard constraints.
+    4
+    Review + promote
+    Engineer validates in E3D; class-rule gate approves before promote.
+    Cost function
+    minimize length + bend penalty + zone cost; obey bend radius, support spacing and clearance rules.
+    Pilot value: deterministic, auditable route proposals on existing Linux control-plane infrastructure; no automatic E3D promote without human/class validation.
+[16] pics=1 tables=0 textShapes=9 :: Target architecture concept
+[17] pics=0 tables=0 textShapes=30 :: Executable reference package
+[18] pics=0 tables=0 textShapes=52 :: Hybrid: Windows Authoring + Linux Control Plane + Cloud/CONNECT
+[19] pics=1 tables=1 textShapes=9 :: Final hybrid deployment correction - authoring vs control plane
+[20] pics=1 tables=0 textShapes=39 :: Phase 2 + Continuous Naval Assurance pilot scope
+[21] pics=0 tables=0 textShapes=88 :: Requirement → AI-built VCRM & Checklist (admin-editable, approved in Impact+Approval)
+[22] pics=10 tables=0 textShapes=62 :: AI-gated flow across AVEVA design tools and the API-built PLM
+[23] pics=0 tables=0 textShapes=34 :: Design tool → 2D production drawing (AutoCAD DWG/DXF) → registered in the API-built PLM
+[24] pics=0 tables=0 textShapes=24 :: E3D / Hull design - version control approach
+[25] pics=0 tables=0 textShapes=39 :: Continuous Naval Assurance Control Plane - API concept
+[26] pics=0 tables=0 textShapes=58 :: User-Configurable PLM Process — Altering the Entire Flow via API (Admin Privileges)
+[27] pics=1 tables=0 textShapes=9 :: Executable gate flow
+[28] pics=0 tables=0 textShapes=43 :: Delivery WBS - consolidated after the full solution scope
+[29] pics=0 tables=0 textShapes=30 :: KPI model - configuration and naval assurance acceptance
+[30] pics=0 tables=1 textShapes=7 :: Future-state comparison - AVEVA wins by orchestrating the full assurance loop
+[31] pics=0 tables=0 textShapes=15 :: Review ownership and operating model
+[32] pics=0 tables=0 textShapes=33 :: Key review risks and mitigations
+[33] pics=0 tables=0 textShapes=25 :: Evidence base and assumption boundaries
+[34] pics=0 tables=0 textShapes=33 :: Recommended decision
+[35] pics=0 tables=2 textShapes=6 :: Glossary 1 / 3 - PLM, configuration and change terms
+[36] pics=0 tables=2 textShapes=6 :: Glossary 2 / 3 - Marine, naval and product terms
+[37] pics=0 tables=2 textShapes=6 :: Glossary 3 / 3 - Architecture, security and infrastructure terms

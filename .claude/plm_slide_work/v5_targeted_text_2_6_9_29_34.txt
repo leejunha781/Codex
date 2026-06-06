@@ -1,0 +1,241 @@
+﻿--- SLIDE 2 ---
+TextBox 11: Meeting structure - seven decisions in order
+TextBox 13: Move from facts to ideas, then validate the delivery plan and final decision
+TextBox 14: Future Industrial PLM
+TextBox 18: 1
+TextBox 19: CURRENT STATE
+TextBox 20: Competitor vs AVEVA comparison, PLM position and today's executable baseline
+TextBox 23: 2
+TextBox 24: PUBLIC SIGNALS
+TextBox 25: Official product and roadmap signals; confirmed versus directional
+TextBox 28: 3
+TextBox 29: WINNING IDEAS
+TextBox 30: Meeting thesis + win-above NAPA / Siemens / Dassault patterns
+TextBox 33: 4
+TextBox 34: PROPOSAL + DELIVERY
+TextBox 35: Architecture, workflows and pilot scope - then WBS and KPI gates
+TextBox 38: 5
+TextBox 39: FUTURE-STATE COMPARE
+TextBox 40: Re-score AVEVA after the proposed ideas are applied
+TextBox 43: 6
+TextBox 44: REVIEW
+TextBox 45: Ownership, risks, evidence and assumptions requiring agreement
+TextBox 48: 7
+TextBox 49: CLOSE
+TextBox 50: Approve the next increment and the assurance pilot
+TextBox 52: Sequencing rule: WBS and KPI appear only after all proposed capabilities and pilot ideas are consolidated.
+TextBox 53: 2
+GlossaryPointer: Abbreviations → Glossary appendix, p.35–37
+MeetingNavRange1: p.3–5
+MeetingNavRange2: p.6
+MeetingNavRange3: p.7–15
+MeetingNavRange4: p.16–28
+MeetingNavRange5: p.29
+MeetingNavRange6: p.30–32
+MeetingNavRange7: p.33
+--- SLIDE 6 ---
+TextBox 13: Public product + roadmap signals - official emphasis only
+TextBox 14: What vendors publicly emphasize, translated into design implications for the proposed AVEVA platform
+TextBox 15: Future Industrial PLM
+TextBox 19: AVEVA
+TextBox 20: CONNECT - Industrial AI Assistant (LLM) - Unified Engineering - Generative / Predictive Design AI - AIM - PI System lifecycle context
+TextBox 21: Opportunity: secure AI Q&A on ship data, generative design automation and design-to-operations feedback.
+TextBox 24: Siemens
+TextBox 25: Teamcenter digital twin/thread, lifecycle process automation and AI built for PLM
+TextBox 26: Absorb: cloud-ready configuration and lifecycle automation.
+TextBox 29: Dassault
+TextBox 30: 3DEXPERIENCE / ENOVIA cloud-native collaboration, model-based engineering and virtual twins
+TextBox 31: Absorb: role-based collaboration and virtual-twin validation.
+TextBox 34: Hexagon
+TextBox 35: Octave asset lifecycle intelligence spanning design, projects, completions and operations
+TextBox 36: Absorb: AIM, completions, project controls and handover.
+TextBox 39: PTC
+TextBox 40: Windchill + Codebeamer requirements, risk, test, end-to-end traceability and AI assistance
+TextBox 41: Absorb: requirements, software trace and AI-assisted change.
+TextBox 44: NAPA
+TextBox 45: Naval architecture, hydrostatics, stability, rule compliance and calculation workflows
+TextBox 46: Integrate: certified naval calculations and approval evidence.
+TextBox 48: PRINCIPLE
+TextBox 49: Treat public signals as directional, not guaranteed scope. Build adapters and an assurance graph that can absorb change without rewriting the platform.
+TextBox 50: 6
+--- SLIDE 9 ---
+TextBox 2: What to absorb - and where AVEVA must go beyond
+TextBox 3: Absorb proven strengths company by company; make them executable through AVEVA engineering-to-operations context
+TextBox 12: Future Industrial PLM
+TextBox 15: COMPANY / PLATFORM
+TextBox 16: ABSORB THE BEST
+TextBox 17: AVEVA MOVE BEYOND
+TextBox 20: SIEMENS Teamcenter
+TextBox 22: BOM · variants · baselines change · lifecycle automation
+TextBox 24: Open promote APIs + operations-aware configuration
+TextBox 28: DASSAULT 3DEXPERIENCE / ENOVIA
+TextBox 30: Role collaboration · virtual twin model-based engineering-to-mfg
+TextBox 33: Twin action → auditable API event + evidence
+TextBox 37: HEXAGON Octave / ALI
+TextBox 39: Asset info · completions project controls · operations
+TextBox 41: Link asset state to configuration + approval
+TextBox 45: PTC Codebeamer / Windchill
+TextBox 47: Requirements · risk · test end-to-end traceability + AI
+TextBox 49: Tie requirements to hull, BOM, solver and approval
+TextBox 91: NAPA Naval architecture
+TextBox 93: Hydrostatics · stability · rules calculation workflows
+TextBox 95: Keep solver of record; own continuous assurance loop
+TextBox 116: OUTCOME
+TextBox 117: Operations-ready, configuration-governed, approval-evidenced PLM - open enough to absorb the best specialist capability without surrendering the decision loop.
+TextBox 118: Public product-positioning basis checked 6 Jun 2026; capability details and integration boundaries require customer / vendor validation.
+TextBox 119: 9
+TextBox 9: NEW AVEVA-BASED PLM
+TextBox 10: Five specialist strengths → one open decision control plane
+TextBox 13: AVEVA DIFFERENTIATION
+TextBox 52: E3D / Marine + Unified Engineering + AIM + PI + CONNECT (AI Asst.) + Lightweight RAG (pgvector + Ollama)
+TextBox 54: Customer-owned OpenAPI + configuration / assurance graph
+TextBox 56: Industrial AI Assistant (CONNECT LLM) + Generative / Predictive Design AI + federated solvers + physics-guarded AI + evidence + operations learning
+--- SLIDE 29 ---
+TextBox 6: KPI model - configuration and naval assurance acceptance
+TextBox 7: Objective gates measure correctness, evidence provenance and decision speed - not subjective progress
+TextBox 8: Future Industrial PLM
+TextBox 12: API contract coverage
+TextBox 69: 100%
+TextBox 72: All committed features ship with OpenAPI + tests
+TextBox 75: E2E gate pass rate
+TextBox 76: >=95%
+TextBox 79: CI validates seed, evaluate, promote and rollback
+TextBox 82: BOM / effectivity accuracy
+TextBox 83: >=99%
+TextBox 86: Correct levels, quantities and scoped configuration
+TextBox 89: Impact graph recall
+TextBox 90: >=95%
+TextBox 93: Find all seeded affected objects and naval scenarios
+TextBox 96: Solver-run provenance
+TextBox 97: 100%
+TextBox 100: Version, input, result and approval source retained
+TextBox 103: Evidence-pack completeness
+TextBox 104: 100%
+TextBox 107: Rule trace, affected objects and approval pack present
+TextBox 110: AI diagnostic precision
+TextBox 111: >=85%
+TextBox 114: Useful ranked explanations without release authority
+TextBox 117: Dashboard / approval response
+TextBox 118: <=5 s
+TextBox 121: Status, margin and approval summary under pilot load
+Rounded Rectangle 122: PASS | CONDITIONAL PASS with backlog | FAIL + remediation sprint. AI never owns the certified release decision.
+TextBox 123: GATE DECISION
+TextBox 125: 29
+--- SLIDE 30 ---
+TextBox 57: Future-state comparison - AVEVA wins by orchestrating the full assurance loop
+TextBox 58: Proposed open AVEVA control plane versus NAPA, Siemens / Dassault PLM and other ship design tools
+TextBox 59: Future Industrial PLM
+Rounded Rectangle 113: Distinctive position = Siemens-grade configuration + Dassault-grade collaboration + NAPA-grade assurance, connected by customer-owned APIs and AVEVA lifecycle context.
+TextBox 114: TAKEAWAY
+TextBox 116: Future-state concept comparison; proposed capabilities require pilot validation and class / customer agreement.
+TextBox 117: 30
+--- SLIDE 31 ---
+TextBox 5: Review ownership and operating model
+TextBox 6: A cross-functional review board sees the same KPI, risk, evidence and release state before any capability is promoted
+TextBox 7: Future Industrial PLM
+TextBox 9: ACCOUNTABLE REVIEW BOARD
+TextBox 13: PRODUCT PLANNING
+TextBox 14: Roadmap · MVP scope · user outcomes · KPI thresholds
+TextBox 44: NAVAL ARCHITECTURE + CLASS
+TextBox 45: Criteria · solver validation · evidence adequacy · release
+TextBox 48: SOLUTION ARCHITECTURE
+TextBox 49: Data model · assurance graph · OpenAPI · adapters · NFRs
+TextBox 52: DEVELOPMENT TEAM
+TextBox 53: Implementation · automation · security · performance · defects
+TextBox 55: WEEKLY STEERING + REVIEW
+TextBox 56: 1 KPI + evidence dashboard 2 Failing configuration / assurance gates 3 Class and naval-architecture issues 4 Scope-change decisions 5 Promote completed capabilities + update risk burndown
+TextBox 57: 31
+--- SLIDE 32 ---
+TextBox 4: Key review risks and mitigations
+TextBox 5: Continuous Naval Assurance adds value only when certified authority, provenance and scope boundaries stay explicit
+TextBox 6: Future Industrial PLM
+TextBox 72: High
+TextBox 73: Med
+TextBox 74: Low
+TextBox 75: Low
+TextBox 76: Med
+TextBox 77: High
+TextBox 78: Impact →
+TextBox 79: Likelihood
+TextBox 81: 1
+TextBox 83: 2
+TextBox 85: 3
+TextBox 87: 4
+TextBox 89: 5
+TextBox 90: Risk → mitigation
+TextBox 93: 1
+TextBox 94: Scope creep
+TextBox 95: Pilot one E3D/Hull scenario; adapters orchestrate solvers instead of rewriting them.
+TextBox 98: 2
+TextBox 99: Solver / class acceptance
+TextBox 100: Certified solver remains source of truth; immutable provenance and human/class release.
+TextBox 103: 3
+TextBox 104: Data and model mapping
+TextBox 105: Seeded truth cases validate hull, compartment, weight, loading case and rule links.
+TextBox 108: 4
+TextBox 109: AI overreach / security
+TextBox 110: AI proposes and explains only; OIDC/RBAC, signed evidence and full audit trail.
+TextBox 113: 5
+TextBox 114: Adoption and ownership
+TextBox 115: Naval architect, engineering, IT and planning jointly own pilot and KPI decisions.
+TextBox 116: 32
+--- SLIDE 33 ---
+TextBox 2: Evidence base and assumption boundaries
+TextBox 3: Official product signals support the direction; proposed AVEVA control-plane capabilities still require pilot validation
+TextBox 4: Future Industrial PLM
+TextBox 8: AVEVA
+TextBox 9: PUBLIC SIGNAL Data-centric engineering + industrial intelligence
+TextBox 11: DESIGN USE Engineering-to-operations lifecycle context
+TextBox 48: SIEMENS
+TextBox 49: PUBLIC SIGNAL Digital thread / twin + PLM process automation
+TextBox 51: DESIGN USE Configuration rigor and lifecycle governance
+TextBox 54: DASSAULT
+TextBox 55: PUBLIC SIGNAL Model-based collaboration + virtual twins
+TextBox 57: DESIGN USE Role context and executable twin decisions
+TextBox 60: HEXAGON
+TextBox 61: PUBLIC SIGNAL Asset lifecycle from design through maintenance
+TextBox 63: DESIGN USE Completions, handover and operations context
+TextBox 66: PTC
+TextBox 67: PUBLIC SIGNAL Requirements, risk, test traceability + AI
+TextBox 69: DESIGN USE Verification gates and affected-object trace
+TextBox 72: NAPA
+TextBox 73: PUBLIC SIGNAL Naval calculations, rules and workflows
+TextBox 75: DESIGN USE Approved solver-of-record adapter
+TextBox 77: ASSUMPTION BOUNDARY
+TextBox 78: Deployment boundary: E3D/Marine/Unified Engineering authoring is Windows-centered; AIM/PI/CONNECT/Edge vary by product/config. Linux hosts API, SQL, AI Gate, evidence and integration; validate scope with vendors and class authorities.
+TextBox 79: Official product pages checked 6 Jun 2026: aveva.com | siemens.com/teamcenter | 3ds.com/3dexperience/enovia | hexagon.com/asset-lifecycle | ptc.com/codebeamer/windchill | napa.fi
+TextBox 80: 33
+--- SLIDE 34 ---
+TextBox 7: Recommended decision
+TextBox 8: Approve the bounded next increment that proves Windows Authoring + Linux Control Plane in a real shipbuilding change scenario
+TextBox 9: Future Industrial PLM
+TextBox 13: APPROVE NOW
+TextBox 14: Phase 2 configuration core + bounded Continuous Naval Assurance pilot
+Oval 15: 1
+TextBox 17: PRODUCT POSITION
+TextBox 18: Open AVEVA control plane above specialist tools
+Oval 19: 2
+TextBox 21: DELIVERY INCREMENT
+TextBox 22: One E3D/Hull Local Agent change-to-evidence pilot slice
+Oval 23: 3
+TextBox 25: GOVERNANCE
+TextBox 26: 26-week WBS, KPI gates, customer + class release
+TextBox 27: WHAT APPROVAL UNLOCKS
+TextBox 30: 0-6 WEEKS
+TextBox 31: Harden reference
+TextBox 32: OIDC · seed truth · E2E gates
+TextBox 35: 6-16 WEEKS
+TextBox 36: Configuration + impact
+TextBox 37: BOM · effectivity · baseline · graph
+TextBox 40: 16-26 WEEKS
+TextBox 41: Assurance + UAT
+TextBox 42: Solver evidence · approvals · class review
+TextBox 47: PROOF AT G6: ONE CLOSED, AUDITABLE LOOP
+Rounded Rectangle 48: E3D/Hull event
+Rounded Rectangle 50: Affected scenarios
+Rounded Rectangle 52: Approved solver evidence
+Rounded Rectangle 54: Human / class approval
+Rounded Rectangle 56: Operations feedback
+TextBox 62: Success means the customer can see, explain, approve and replay every state transition - without replacing certified specialist solvers.
+Rounded Rectangle 63: WHY NOW | The executable reference is ready; the next differentiator is controlled configuration + cross-domain evidence + lifecycle learning.
+TextBox 65: 34
