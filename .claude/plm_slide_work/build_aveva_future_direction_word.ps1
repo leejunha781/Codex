@@ -1,0 +1,232 @@
+$ErrorActionPreference = 'Stop'
+
+$workDir = 'C:\Users\namma\.claude\plm_slide_work\word_future_direction'
+$proposal = 'D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal'
+$tempHtml = Join-Path $workDir 'AVEVA_Marine_Future_Direction_Meeting_Materials_EN.html'
+$tempDocx = Join-Path $workDir 'AVEVA_Marine_Future_Direction_Meeting_Materials_EN.docx'
+$tempPdf = Join-Path $workDir 'AVEVA_Marine_Future_Direction_Meeting_Materials_EN.pdf'
+$finalDocx = Join-Path $proposal 'AVEVA_Marine_Future_Direction_Development_Planning_Meeting_Materials_EN.docx'
+$finalPdf = Join-Path $proposal 'AVEVA_Marine_Future_Direction_Development_Planning_Meeting_Materials_EN.pdf'
+$finalHtml = Join-Path $proposal 'AVEVA_Marine_Future_Direction_Development_Planning_Meeting_Materials_EN.html'
+$stamp = Get-Date -Format 'yyyyMMdd_HHmmss'
+$backupDir = Join-Path $proposal ("_backup_20260606_word_future_direction_" + $stamp)
+
+if (-not (Test-Path -LiteralPath $workDir)) {
+    New-Item -ItemType Directory -Path $workDir | Out-Null
+}
+foreach ($p in @($tempHtml, $tempDocx, $tempPdf)) {
+    if (Test-Path -LiteralPath $p) { Remove-Item -LiteralPath $p -Force }
+}
+
+$today = '6 June 2026'
+$html = @"
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AVEVA Marine Future Direction - Development and Planning Meeting Materials</title>
+<style>
+body { font-family: Aptos, Calibri, Arial, sans-serif; color: #162033; line-height: 1.35; font-size: 10.5pt; }
+h1 { color: #0b2340; font-size: 22pt; margin: 0 0 8pt 0; }
+h2 { color: #083e61; font-size: 15pt; border-bottom: 2px solid #1bcad6; padding-bottom: 3pt; margin-top: 18pt; }
+h3 { color: #0d5b72; font-size: 12pt; margin-top: 12pt; }
+p { margin: 5pt 0; }
+ul { margin-top: 4pt; margin-bottom: 8pt; }
+li { margin-bottom: 3pt; }
+table { width: 100%; border-collapse: collapse; margin: 8pt 0 12pt 0; }
+th { background: #0b2340; color: white; font-weight: bold; border: 1px solid #5b6c7e; padding: 6pt; text-align: left; }
+td { border: 1px solid #9cadbd; padding: 6pt; vertical-align: top; }
+.cover { border: 2px solid #1bcad6; padding: 18pt; background: #f3f8fb; }
+.subtitle { font-size: 12pt; color: #43576b; }
+.callout { border-left: 5px solid #1bcad6; padding: 8pt 10pt; background: #eef8fb; margin: 10pt 0; }
+.decision { border-left: 5px solid #ffb049; padding: 8pt 10pt; background: #fff7ea; margin: 10pt 0; }
+.risk { border-left: 5px solid #ff7070; padding: 8pt 10pt; background: #fff2f2; margin: 10pt 0; }
+.small { font-size: 9pt; color: #5a6c7d; }
+.pagebreak { page-break-before: always; }
+</style>
+</head>
+<body>
+
+<div class="cover">
+<h1>AVEVA Marine Development Future Direction</h1>
+<p class="subtitle"><b>Final English Meeting Materials for Development and Planning Teams</b></p>
+<p><b>Prepared for:</b> AVEVA Marine PLM development, product planning and stakeholder alignment meeting</p>
+<p><b>Date:</b> $today</p>
+<p><b>Purpose:</b> Clearly explain and persuade the audience on the future development direction for AVEVA Marine: an open, governed, evidence-driven control plane that connects shipbuilding design, configuration, certified assurance, approval and operations feedback.</p>
+</div>
+
+<h2>1. Executive Summary</h2>
+<div class="callout">
+<p><b>Core message:</b> AVEVA Marine should become the open, governed decision control plane that lets shipyards see, explain, approve and replay every major engineering state transition across design, assurance and operations.</p>
+</div>
+<p>The future development direction should not be framed as another isolated engineering tool, a standalone dashboard or a replacement for specialist solvers. The stronger position is to make AVEVA Marine the trusted layer above specialist tools: the layer that owns configuration, impact analysis, evidence, approval, auditability and lifecycle learning.</p>
+<p>This direction is persuasive for development teams because it is implementable through bounded interfaces: FastAPI/OpenAPI contracts, PostgreSQL evidence storage, OIDC/RBAC security, Local Agent or Plugin bridges from Windows authoring tools, and automated KPI-based tests. It is persuasive for planning teams because it creates a differentiated product position: AVEVA can combine engineering authoring, lifecycle context, AI assistance, solver federation and operations feedback without forcing the customer into a closed tool replacement strategy.</p>
+
+<div class="decision">
+<p><b>Decision requested:</b> Approve the Phase 2 configuration core plus one bounded Continuous Naval Assurance pilot. Use the 26-week delivery WBS and objective KPI gates as the acceptance model.</p>
+</div>
+
+<h2>2. Why the Future Direction Must Change</h2>
+<p>Marine development is moving beyond single-tool productivity. Shipyards need confidence that every engineering decision can be traced from requirement to design revision, BOM/effectivity, affected scenario, solver evidence, approval and operations feedback. Today, that loop is fragmented across authoring systems, PLM systems, calculation tools, handover repositories and operations systems.</p>
+<table>
+<tr><th>Current gap</th><th>Consequence</th><th>Future AVEVA response</th></tr>
+<tr><td>No vendor owns the complete change-to-assurance-to-operations loop.</td><td>Teams rely on manual reconciliation, local knowledge and disconnected approvals.</td><td>Own the cross-domain decision control plane, not every specialist calculation.</td></tr>
+<tr><td>Design tools, PLM records, certified solvers and operations data remain loosely coupled.</td><td>Impact decisions are slower, harder to audit and harder to explain to class/customer reviewers.</td><td>Connect authoring, configuration, evidence and approval through explicit API contracts.</td></tr>
+<tr><td>AI is attractive but risky if it appears to replace engineering authority.</td><td>Planning may oversell AI; development may build unsafe automation assumptions.</td><td>Use AI for diagnosis, recommendations and gate holds only. Humans and class authorities retain release authority.</td></tr>
+</table>
+
+<h2>3. Target Product Position</h2>
+<p>The proposed future product category is an <b>Open AVEVA Marine Decision Control Plane</b>. It does not remove AVEVA E3D, Marine, Hull, Draw, NAPA or other approved tools. Instead, it makes their outputs governable and auditable across the lifecycle.</p>
+<table>
+<tr><th>Layer</th><th>What AVEVA should own</th><th>Why it persuades the customer</th></tr>
+<tr><td>Configuration</td><td>BOM, effectivity, baseline, revision and affected-object relationships.</td><td>The customer can understand which hull, block, option, date or operational state is affected.</td></tr>
+<tr><td>Impact</td><td>Cross-domain impact graph linking requirement, design, BOM, solver scenario and approval.</td><td>Engineering change becomes explainable before release, not discovered later in production.</td></tr>
+<tr><td>Evidence</td><td>Solver-run provenance, rule trace, diagnostic findings, evidence packs and audit history.</td><td>Class/customer reviewers can replay the evidence behind the decision.</td></tr>
+<tr><td>Approval</td><td>Evaluate, review, hold, promote and override states with role-gated authority.</td><td>No AI or automated service silently becomes the release authority.</td></tr>
+<tr><td>Operations learning</td><td>Feedback from AIM, PI, CONNECT and operations calibration into future engineering decisions.</td><td>The platform learns from real asset behavior and improves lifecycle decisions.</td></tr>
+</table>
+
+<h2>4. Architecture Direction</h2>
+<p>The architecture must be explained carefully because it is a major feasibility point for development teams. The correct boundary is hybrid:</p>
+<ul>
+<li><b>Windows Authoring Tier:</b> AVEVA E3D, Marine, Hull and Draw remain Windows-centered authoring environments. They connect through Local Agent, Plugin or PML.NET bridge patterns.</li>
+<li><b>Linux Control Plane:</b> API, SQL, AI Gate, evidence services, integration gateway and dashboard services run on Linux infrastructure.</li>
+<li><b>Cloud/CONNECT Integration:</b> AVEVA CONNECT, AIM, PI and other cloud or edge services are integrated through governed adapters, not assumed to be a single monolithic runtime.</li>
+<li><b>Certified Solver Federation:</b> NAPA and other approved solvers remain solver-of-record systems. AVEVA records, orchestrates and governs their evidence.</li>
+</ul>
+<div class="risk">
+<p><b>Implementation boundary to protect:</b> Do not assume E3D/Marine/Hull is hosted directly on Linux. Linux hosts the control plane. Windows authoring tools connect through agents, plugins or callback receivers.</p>
+</div>
+
+<h2>5. AI and Automation Governance</h2>
+<p>AI should be positioned as a controlled assistant, not as a certification authority. This makes the proposal more credible to engineers, planners, class reviewers and security stakeholders.</p>
+<table>
+<tr><th>AI capability</th><th>Recommended use</th><th>Boundary</th></tr>
+<tr><td>Rule-based AI Gate</td><td>Immediate deterministic validation of metadata, drawing standards, VCRM coverage, missing evidence and approval readiness.</td><td>No model uncertainty. Good for first pilot and CI gates.</td></tr>
+<tr><td>On-prem RAG</td><td>Semantic search over drawings, specifications, change history, evidence packs and asset context using local data.</td><td>Use for explanations and retrieval. Do not use as release authority.</td></tr>
+<tr><td>AVEVA CONNECT Industrial AI</td><td>Secure Q&A and decision support over connected engineering and asset data when governance is ready.</td><td>Requires data connection, indexing, permission alignment and customer approval.</td></tr>
+<tr><td>Unified Engineering AI / Design AI</td><td>Routing suggestions, clash alternatives and simulation acceleration.</td><td>Engineer and class validation remain mandatory before release.</td></tr>
+</table>
+<p><b>Control principle:</b> AI diagnoses and recommends; rule guardrails hold gates; certified solvers calculate; humans and class authorities release.</p>
+
+<h2>6. Continuous Naval Assurance Pilot</h2>
+<p>The pilot should be deliberately narrow. It should prove one closed, auditable loop rather than attempt enterprise-wide PLM replacement.</p>
+<table>
+<tr><th>Pilot step</th><th>What happens</th><th>Evidence produced</th></tr>
+<tr><td>1. E3D/Hull event</td><td>A design change or revision event is emitted through a Local Agent or Plugin.</td><td>Authoring source, revision ID, affected object and timestamp.</td></tr>
+<tr><td>2. Configuration impact</td><td>The control plane resolves BOM, effectivity, baseline and affected scenarios.</td><td>Affected objects, hull/block scope and impact graph.</td></tr>
+<tr><td>3. Solver evidence</td><td>NAPA or another approved solver runs against the defined scenario.</td><td>Solver version, input, output, diagnostic findings and margin.</td></tr>
+<tr><td>4. AI/rule gate</td><td>Rules and AI assistance rank issues, missing evidence and review concerns.</td><td>Gate decision, findings, confidence and required human review.</td></tr>
+<tr><td>5. Approval and promote</td><td>Engineer/class authority approves or holds the state.</td><td>Approval record, release authority, comment and audit trace.</td></tr>
+<tr><td>6. Operations feedback</td><td>Relevant operational context is linked back to future decisions.</td><td>Calibration note, operational evidence and learning record.</td></tr>
+</table>
+
+<h2>7. What Development Teams Must Hear</h2>
+<table>
+<tr><th>Build</th><th>Validate</th><th>Avoid</th></tr>
+<tr>
+<td>OpenAPI contracts for objects, BOM, effectivity, baseline, change impact and assurance evidence.<br><br>Local Agent or Plugin callbacks from Windows authoring tools.<br><br>AI Gate provider interface: rules first, RAG next, CONNECT later.</td>
+<td>Seed truth cases for hull, block, compartment, weight, loading case and affected scenarios.<br><br>E2E tests for evaluate -> review -> promote and rollback.<br><br>KPI gates for contract coverage, accuracy, provenance, response time and security.</td>
+<td>No direct Linux hosting assumption for E3D/Marine/Hull.<br><br>No big-bang replacement of certified solvers.<br><br>No automatic AI release authority.<br><br>No unbounded process customization without approval gates.</td>
+</tr>
+</table>
+<p><b>Development success statement:</b> A small number of interfaces become reliable enough that planning, engineering and class reviewers can trust the decision state.</p>
+
+<h2>8. What Planning Teams Must Hear</h2>
+<table>
+<tr><th>Planning concern</th><th>Message to deliver</th></tr>
+<tr><td>Product position</td><td>AVEVA owns the control plane above specialist tools. The customer keeps tool choice, but AVEVA owns lifecycle decision, evidence and approval orchestration.</td></tr>
+<tr><td>Customer value</td><td>Fewer blind handovers, faster change impact review, visible assurance evidence, explainable approvals and replayable history from design to operations.</td></tr>
+<tr><td>Roadmap discipline</td><td>A 26-week gate model prevents wishful scope. Each capability must pass measurable acceptance before promotion.</td></tr>
+<tr><td>Decision request</td><td>Approve the bounded Phase 2 + Continuous Naval Assurance increment and agree owners, KPI thresholds, assumption boundaries and pilot scenario.</td></tr>
+</table>
+<p><b>Planning success statement:</b> The future product direction becomes easy to explain: AVEVA Marine becomes the trusted system for seeing, approving and learning from every major shipbuilding change.</p>
+
+<h2>9. Delivery Roadmap</h2>
+<table>
+<tr><th>Window</th><th>Focus</th><th>Expected proof</th></tr>
+<tr><td>0-2 weeks</td><td>Readiness, backlog, source data, roles and test environment.</td><td>Agreed scope, named owners and usable seed data.</td></tr>
+<tr><td>2-6 weeks</td><td>Phase 1 hardening: OIDC, dashboard, CI, seed truth and current gates.</td><td>Reference package is stable and testable.</td></tr>
+<tr><td>6-12 weeks</td><td>Configuration core: BOM, effectivity, baseline and APIs.</td><td>Seeded configuration cases resolve correctly.</td></tr>
+<tr><td>12-16 weeks</td><td>Change impact: ECR/ECO/MOC, impact graph and promote flow.</td><td>Affected objects and scenarios are found reliably.</td></tr>
+<tr><td>16-22 weeks</td><td>Naval assurance: E3D/Hull event, solver adapters and evidence pack.</td><td>Solver provenance and evidence are recorded end to end.</td></tr>
+<tr><td>22-26 weeks</td><td>UAT, adoption, class/customer review and pilot closeout.</td><td>One closed, auditable loop accepted by stakeholders.</td></tr>
+</table>
+
+<h2>10. KPI Acceptance Model</h2>
+<table>
+<tr><th>KPI</th><th>Target</th><th>Why it matters</th></tr>
+<tr><td>API contract coverage</td><td>100%</td><td>Every committed capability is visible, testable and integrable.</td></tr>
+<tr><td>E2E gate pass rate</td><td>>=95%</td><td>Promote/rollback behavior is reliable under CI.</td></tr>
+<tr><td>BOM/effectivity accuracy</td><td>>=99%</td><td>Configuration decisions are trusted.</td></tr>
+<tr><td>Impact graph recall</td><td>>=95%</td><td>Affected objects and naval scenarios are not missed.</td></tr>
+<tr><td>Solver-run provenance</td><td>100%</td><td>Evidence is replayable and defensible.</td></tr>
+<tr><td>Evidence-pack completeness</td><td>100%</td><td>Approval has the required rule trace and affected-object context.</td></tr>
+<tr><td>AI diagnostic precision</td><td>>=85%</td><td>AI explanations are useful without becoming release authority.</td></tr>
+<tr><td>Dashboard/approval response</td><td><=5 seconds</td><td>Reviewers can use the system in real meeting and approval workflows.</td></tr>
+</table>
+
+<h2>11. Risks and Mitigations</h2>
+<table>
+<tr><th>Risk</th><th>Mitigation</th></tr>
+<tr><td>Scope creep</td><td>Pilot one E3D/Hull scenario. Federate solvers instead of rewriting them.</td></tr>
+<tr><td>Solver or class acceptance</td><td>Keep certified solver as source of calculation truth. Preserve immutable provenance and human/class release.</td></tr>
+<tr><td>Data/model mapping complexity</td><td>Use seeded truth cases for hull, compartment, weight, loading case and rule links.</td></tr>
+<tr><td>AI overreach or security concern</td><td>Limit AI to recommendation and gate-hold support. Enforce OIDC/RBAC, signed evidence and audit trail.</td></tr>
+<tr><td>Adoption and ownership</td><td>Use a cross-functional review board with product planning, naval architecture, solution architecture and development.</td></tr>
+</table>
+
+<h2>12. Meeting Facilitation Guide</h2>
+<table>
+<tr><th>Meeting phase</th><th>Slides</th><th>Speaker intent</th></tr>
+<tr><td>Current state and signals</td><td>3-6</td><td>Create urgency and show that the direction follows public product and market signals.</td></tr>
+<tr><td>Winning idea</td><td>7-15</td><td>Explain why AVEVA should win above tool silos and how AI/routing should be bounded.</td></tr>
+<tr><td>Proposal and delivery</td><td>16-29</td><td>Translate strategy into architecture, pilot scope, WBS and objective acceptance criteria.</td></tr>
+<tr><td>Review and close</td><td>30-34</td><td>Re-score the future state, address ownership/risk/evidence and ask for the decision.</td></tr>
+<tr><td>Presenter guide</td><td>38-41</td><td>Use when the room needs a more explicit persuasion structure for development or planning stakeholders.</td></tr>
+</table>
+
+<h2>13. Recommended Closing Argument</h2>
+<div class="callout">
+<p>The next differentiator for AVEVA Marine is not another isolated tool feature. It is a governed, auditable, operations-aware control plane that lets customers see, explain, approve and replay every major engineering state transition.</p>
+</div>
+<p><b>Final ask:</b> Align on the product direction, approve the bounded pilot scope, assign owners, validate the first customer/class evidence scenario and use KPI gates to decide promotion.</p>
+
+<p class="small">Reference deck: Future_Industrial_PLM_Meeting_Deck_EN_V7.pptx. This Word document is written as standalone English meeting material for development and planning teams.</p>
+
+</body>
+</html>
+"@
+
+[System.IO.File]::WriteAllText($tempHtml, $html, [System.Text.Encoding]::UTF8)
+
+$word = New-Object -ComObject Word.Application
+$doc = $null
+try {
+    $word.Visible = $false
+    $doc = $word.Documents.Open($tempHtml, $false, $false)
+    $doc.PageSetup.TopMargin = 54
+    $doc.PageSetup.BottomMargin = 54
+    $doc.PageSetup.LeftMargin = 54
+    $doc.PageSetup.RightMargin = 54
+    $doc.SaveAs2($tempDocx, 16)
+    $doc.ExportAsFixedFormat($tempPdf, 17)
+    $doc.Close([ref]$true)
+    $doc = $null
+} finally {
+    if ($doc -ne $null) { $doc.Close([ref]$false) }
+    if ($word.Documents.Count -eq 0) { $word.Quit() }
+}
+
+New-Item -ItemType Directory -Path $backupDir | Out-Null
+foreach ($p in @($finalDocx, $finalPdf, $finalHtml)) {
+    if (Test-Path -LiteralPath $p) {
+        Copy-Item -LiteralPath $p -Destination (Join-Path $backupDir (Split-Path $p -Leaf)) -Force
+    }
+}
+
+Copy-Item -LiteralPath $tempDocx -Destination $finalDocx -Force
+Copy-Item -LiteralPath $tempPdf -Destination $finalPdf -Force
+Copy-Item -LiteralPath $tempHtml -Destination $finalHtml -Force
+
+Get-Item -LiteralPath $tempDocx, $tempPdf, $finalDocx, $finalPdf, $finalHtml | Select-Object FullName, Length, LastWriteTime
