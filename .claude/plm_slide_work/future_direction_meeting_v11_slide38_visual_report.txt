@@ -1,0 +1,20 @@
+﻿Future Industrial PLM V11 - slide 38 visual redesign
+Generated: 2026-06-07 00:54:26 +09:00
+Scope: redesign slide 38 for higher visibility and add generated control-plane image.
+Generated source image: C:\Users\namma\.codex\generated_images\019e9c6d-6c87-7662-88d9-1f7f01934a80\ig_01db6af15a727d80016a244111e51c8191aad498a09cbbfcc2.png
+Project image copy: C:\Users\namma\.claude\plm_slide_work\future_direction_control_plane_background_v11.png
+Backup folder: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\_backup_20260607_slide38_visual_v11_20260607_005349
+
+Changes:
+- Slide 38 rebuilt as full-bleed generated marine control-plane visual with dark readability panel.
+- Enlarged closing argument into one high-contrast hero statement.
+- Reworked supporting content into three proof cards: CREDIBLE / DIFFERENT / APPROVE.
+- Added strong bottom meeting-ask banner and kept footer/page number.
+- Cover revision updated to Rev. V11 · 2026-06-07.
+
+Saved files:
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V11.pptx	35308787	2026-06-07 00:54:15
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx	35308787	2026-06-07 00:54:15
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx	35308787	2026-06-07 00:54:15
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf	3844838	2026-06-07 00:54:26
+C:\Users\namma\.claude\plm_slide_work\future_direction_control_plane_background_v11.png	2156887	2026-06-07 00:49:06
