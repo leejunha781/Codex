@@ -1,0 +1,152 @@
+﻿Future Industrial PLM - English meeting speaker notes
+Generated: 2026-06-06 22:18:52 +09:00
+Deck: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V6.pptx
+
+===== SLIDE 1 =====
+Purpose: Open the meeting by making the decision objective explicit. The audience is not being asked to approve a vague vision; they are being asked to align on a concrete future direction, pilot scope, governance model and KPI-based acceptance plan.
+Talk track: Position AVEVA Marine as the platform that can connect engineering authoring, configuration control, certified solver evidence and operations feedback. Emphasize that the reference API package proves the direction is implementable, not only conceptual.
+
+===== SLIDE 2 =====
+Purpose: Explain the meeting structure before going into detail. This avoids the common objection that architecture, AI, WBS and KPI topics are disconnected.
+Talk track: The deck moves from facts to strategy, then from strategy to a bounded delivery plan. Ask development to focus on feasibility and sequencing; ask planning to focus on product position, customer value and approval gates.
+
+===== SLIDE 3 =====
+Purpose: Establish the problem: no single vendor currently owns the full loop from design change to assurance evidence to operations feedback.
+Talk track: Use this slide to create urgency. The opportunity is not to replace every specialist tool, but to own the controlled decision layer that connects them.
+
+===== SLIDE 4 =====
+Purpose: Place AVEVA in the competitive landscape. The key message is that AVEVA can move from a strong engineering and operations footprint into the center of governed lifecycle decisions.
+Talk track: Explain that the future opportunity sits between engineering data and live operations. That is the space where a Marine PLM control plane can be differentiated.
+
+===== SLIDE 5 =====
+Purpose: Anchor the future direction in the current executable baseline. This helps development teams see that the proposal extends existing capability rather than starting from zero.
+Talk track: Phase 1 already proves integration, standard data, handover readiness and dashboard value. The next step is configuration governance so every issue, BOM and change is traceable by effectivity.
+
+===== SLIDE 6 =====
+Purpose: Show that the direction follows public product signals while keeping assumptions explicit.
+Talk track: AVEVA, Siemens, Dassault, Hexagon, PTC and NAPA all point toward digital thread, AI, lifecycle and assurance themes. The proposal absorbs these signals through adapters and governance instead of assuming fixed vendor roadmaps.
+
+===== SLIDE 7 =====
+Purpose: State the central thesis clearly: win above tool silos.
+Talk track: AVEVA does not need to own every calculation or every authoring feature. The stronger position is to own the cross-domain decision, evidence, approval and learning loop around specialist tools.
+
+===== SLIDE 8 =====
+Purpose: Define the missing product category: an open AVEVA decision control plane.
+Talk track: Highlight the five linked capabilities: configuration, impact, evidence, approval and operations feedback. This is the future direction that makes AVEVA Marine more than a set of engineering applications.
+
+===== SLIDE 9 =====
+Purpose: Translate competitor strengths into AVEVA product moves.
+Talk track: The persuasive point is not that competitors are weak. It is that AVEVA can absorb their best patterns and go beyond them by combining E3D/Marine, Unified Engineering, AIM, PI, CONNECT, AI and customer-owned APIs.
+
+===== SLIDE 10 =====
+Purpose: Explain why NAPA should be federated, not displaced.
+Talk track: Keep certified naval calculations where trust already exists. AVEVA should own the assurance graph around revisions, scenarios, evidence packs, approvals and lifecycle learning.
+
+===== SLIDE 11 =====
+Purpose: Show how AVEVA can match Siemens-grade configuration rigor without becoming a closed PLM stack.
+Talk track: Development should hear that open APIs, effectivity, baseline, impact graph and promote gates are the core build items. Planning should hear that this creates a differentiated, operations-aware PLM position.
+
+===== SLIDE 12 =====
+Purpose: Show how AVEVA can go beyond virtual-twin presentation into executable governance.
+Talk track: The important distinction is that a visual twin alone does not approve a change. The proposed direction turns context into evidence, gate decisions and auditable release states.
+
+===== SLIDE 13 =====
+Purpose: Clarify the AI position before the audience overestimates or distrusts it.
+Talk track: AI assists, recommends and explains. The control plane governs; rules hold gates; certified solvers calculate; humans and class authorities release. This makes AI useful without making it unsafe.
+
+===== SLIDE 14 =====
+Purpose: Give a realistic AI adoption path.
+Talk track: Start with deterministic rules because they are fast, auditable and low-risk. Add on-prem RAG for semantic search, then scale to CONNECT and Unified Engineering AI after data, security and governance are ready.
+
+===== SLIDE 15 =====
+Purpose: Make the lightweight routing concept credible and bounded.
+Talk track: Present routing as an advisory deterministic pilot, not automatic design release. The value is auditable route proposals from existing control-plane infrastructure, followed by engineer and class validation.
+
+===== SLIDE 16 =====
+Purpose: Connect all strategy slides into one target architecture.
+Talk track: The future AVEVA Marine direction is hybrid by design: Windows authoring remains where E3D/Marine tools run, Linux hosts the open control plane, and Cloud/CONNECT is integrated through governed adapters.
+
+===== SLIDE 17 =====
+Purpose: Prove that the concept has an executable foundation.
+Talk track: Point out that FastAPI, PostgreSQL, OIDC, Docker Compose and tests already demonstrate the API-first control pattern. The meeting decision is about approving the next bounded extension.
+
+===== SLIDE 18 =====
+Purpose: Remove architecture ambiguity.
+Talk track: E3D/Marine/Hull authoring is Windows-centered. Linux does not host E3D; it hosts API, SQL, AI Gate, evidence and integration services. This boundary protects feasibility and prevents wrong implementation assumptions.
+
+===== SLIDE 19 =====
+Purpose: Show the deployment model as an operating architecture.
+Talk track: Emphasize that Local Agents or plugins bridge authoring tools to the control plane. This is safer than direct tool coupling and gives development a clear integration pattern.
+
+===== SLIDE 20 =====
+Purpose: Define the pilot scope so the future direction feels achievable.
+Talk track: The pilot should prove one closed loop rather than attempt full enterprise PLM at once. Planning should protect scope; development should protect adapter, schema, test and evidence quality.
+
+===== SLIDE 21 =====
+Purpose: Explain requirements governance in practical terms.
+Talk track: VCRM and checklist generation connect customer requirements to evidence and approval. The admin-editable model keeps planning flexibility while preserving traceability.
+
+===== SLIDE 22 =====
+Purpose: Show the end-to-end operating flow across design, PLM and approval.
+Talk track: Use this slide to make the workflow concrete. Each transition is governed, each output is recorded, and AI can hold or explain a gate but cannot release the final certified state.
+
+===== SLIDE 23 =====
+Purpose: Ground the architecture in a familiar engineering artifact: 2D production drawing output.
+Talk track: Show how AVEVA Draw and AutoCAD-format deliverables can be registered into the API-built PLM so drawings, MTO, checks and approvals remain connected.
+
+===== SLIDE 24 =====
+Purpose: Explain version control for E3D and Hull design data.
+Talk track: The future direction requires every design state to be identifiable, comparable and promotable. This is what lets downstream impact, evidence and approval become reliable.
+
+===== SLIDE 25 =====
+Purpose: Explain Continuous Naval Assurance as an API concept, not a standalone solver.
+Talk track: The control plane records solver runs, diagnostics, evidence packs and approvals. It federates trusted calculation engines while making the decision trail visible and replayable.
+
+===== SLIDE 26 =====
+Purpose: Show that the process is customer-configurable.
+Talk track: Planning can change the process sequence without asking development to rewrite the platform. Development should expose safe APIs and guardrails; planning should define which process variants are allowed.
+
+===== SLIDE 27 =====
+Purpose: Explain the gate mechanism behind the proposed platform.
+Talk track: The audience should see that evaluate, review and promote are deliberate lifecycle states. This prevents accidental release and creates auditable acceptance criteria.
+
+===== SLIDE 28 =====
+Purpose: Convert the future direction into a delivery plan.
+Talk track: The WBS is staged to reduce risk: harden the baseline, build configuration core, add change impact, then add naval assurance and shipyard adoption. KPI gates control movement between stages.
+
+===== SLIDE 29 =====
+Purpose: Define success in measurable terms.
+Talk track: These KPIs prevent subjective progress reporting. Development is measured by contracts, tests, accuracy, provenance and response time; planning is measured by whether the product value is accepted at each gate.
+
+===== SLIDE 30 =====
+Purpose: Re-score the competitive position after the proposed capabilities are applied.
+Talk track: The claim is that AVEVA can become distinctive by orchestrating the full assurance loop. Keep the wording future-state and pilot-validation based so the argument remains credible.
+
+===== SLIDE 31 =====
+Purpose: Define who owns decisions after the meeting.
+Talk track: The future direction requires product planning, naval architecture, solution architecture and development to share one evidence dashboard. This prevents strategy from separating from implementation.
+
+===== SLIDE 32 =====
+Purpose: Acknowledge risks before the audience raises them.
+Talk track: The proposal is persuasive because it does not hide scope, solver, data, AI or adoption risks. Each risk has a bounded mitigation tied to pilot scope and governance.
+
+===== SLIDE 33 =====
+Purpose: Separate official product signals from proposal assumptions.
+Talk track: This slide protects credibility. State clearly what is based on public direction and what must be validated with vendors, class authorities and the customer environment.
+
+===== SLIDE 34 =====
+Purpose: Close with the decision request.
+Talk track: Ask for approval of the bounded next increment: Phase 2 configuration core plus Continuous Naval Assurance pilot. The proof point is one closed, auditable loop from E3D/Hull event to approved evidence and operations feedback.
+
+===== SLIDE 35 =====
+Purpose: Use this appendix only when terms block understanding.
+Talk track: Do not present every glossary row in the main meeting. Refer to it when PLM, BOM, effectivity, baseline, VCRM or class terms need quick clarification.
+
+===== SLIDE 36 =====
+Purpose: Clarify marine and AVEVA product terminology.
+Talk track: Use this appendix to align mixed development and planning audiences. It prevents confusion between authoring tools, AI tools, solvers and PLM control-plane functions.
+
+===== SLIDE 37 =====
+Purpose: Clarify architecture, security and infrastructure terminology.
+Talk track: Use this appendix when discussing implementation feasibility, identity, APIs, PostgreSQL, CI, HA/DR or security. It keeps technical questions grounded in shared definitions.
+
