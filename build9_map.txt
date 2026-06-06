@@ -1,0 +1,84 @@
+Reference architecture, vendor benchmark, delivery WBS and KPI gate model|||레퍼런스 아키텍처 · 벤더 벤치마크 · 딜리버리 WBS · KPI 게이트 모델
+Meeting deck for overseas development and planning teams¶Based on the executable FastAPI + PostgreSQL + OIDC + E2E reference package|||해외 개발·기획 팀을 위한 미팅 자료¶실행 가능한 FastAPI + PostgreSQL + OIDC + E2E 레퍼런스 패키지 기반
+Decision expected today¶Align on the PLM direction, Phase 2 scope, delivery governance and KPI-based acceptance model.|||오늘 결정할 사항¶PLM 방향 · Phase 2 범위 · 딜리버리 거버넌스 · KPI 기반 인수 모델 합의
+Meeting outcomes|||미팅 목표(산출물)
+What we need from product planning and overseas development teams|||제품 기획팀 및 해외 개발팀에 필요한 사항
+1. Agree the product position¶AVEVA-style Engineering-to-Operations PLM, not a copy of classical product PLM.|||1. 제품 포지션 합의¶클래식 제품 PLM의 복제가 아닌 AVEVA형 엔지니어링→운영 PLM
+2. Confirm the MVP extension path¶Phase 1 is running reference; Phase 2 adds full configuration, BOM and change impact.|||2. MVP 확장 경로 확정¶Phase 1은 실행 중인 레퍼런스, Phase 2는 전체 형상관리·BOM·변경영향 추가
+3. Approve the delivery control model¶Backlog, WBS, API contracts, E2E tests and KPI gates become the steering mechanism.|||3. 딜리버리 통제 모델 승인¶백로그·WBS·API 계약·E2E 테스트·KPI 게이트를 운영 기준으로
+Output: shared roadmap + technical contract for Phase 2 execution.|||산출물: Phase 2 실행을 위한 공유 로드맵 + 기술 계약
+Executive thesis|||핵심 논지 (Executive Thesis)
+The future PLM opportunity is between engineering data and live operations|||미래 PLM의 기회는 엔지니어링 데이터와 실시간 운영 사이에 있다
+Traditional PLM wins on item, BOM and change control.¶Industrial operations platforms win on asset, historian and field context.¶Our opportunity is to connect both worlds for shipbuilding, EPC and asset-intensive industries.|||전통 PLM은 품목·BOM·변경관리에 강하다.¶산업 운영 플랫폼은 자산·히스토리안·현장 컨텍스트에 강하다.¶우리의 기회는 조선·EPC·자산집약 산업을 위해 두 세계를 연결하는 것이다.
+North Star¶Requirement → Engineering → BOM → Build → Commissioning → Handover → Operations → Maintenance → Change Feedback|||노스 스타(North Star)¶요구사항 → 엔지니어링 → BOM → 건조 → 시운전 → 인도 → 운영 → 정비 → 변경 피드백
+Strategic differentiation¶A vendor-neutral Digital Thread Hub with configuration governance, executable APIs, and measurable quality gates.|||전략적 차별화¶형상 거버넌스 · 실행 가능한 API · 측정 가능한 품질 게이트를 갖춘 벤더 중립 디지털 스레드 허브
+Current PLM landscape|||현재 PLM 지형
+Operations / Asset >|||운영 / 자산 >
+< Engineering / PLM|||< 엔지니어링 / PLM
+Unified platform (up)|||통합 플랫폼 (위)
+Siloed point tools (down)|||단절된 포인트 툴 (아래)
+Engineering → Operations sweet spot|||엔지니어링 → 운영 스위트스폿
+Stack & Position|||스택 & 포지션
+Engineering → Operations (the bridge)|||엔지니어링 → 운영 (브리지)
+PLM core backbone|||PLM 코어 백본
+Experience / virtual-twin platform|||익스피리언스 / 버추얼 트윈 플랫폼
+Asset lifecycle & operations|||자산 라이프사이클 & 운영
+PLM + IoT digital thread|||PLM + IoT 디지털 스레드
+Takeaway: don't compete as just another PLM backbone — build the engineering-to-operations layer that existing PLM, CAD, MES and historian platforms cannot easily unify.|||시사점: 또 하나의 PLM 백본으로 경쟁하지 말 것 — 기존 PLM·CAD·MES·히스토리안이 쉽게 통합하지 못하는 엔지니어링→운영 레이어를 구축하라.
+Public roadmap signals|||공개 로드맵 시그널
+Future feature direction from official public sources, translated into PLM design implications|||공식 공개 출처의 향후 기능 방향을 PLM 설계 시사점으로 해석
+AVEVA¶¶Industrial AI in CONNECT, ¶Unified Engineering, ¶PI Data Infrastructure, ¶Operations Control¶¶Design implication:¶Use AI for data quality, ¶tag mapping, ¶design assistant and operations feedback|||AVEVA¶¶CONNECT의 Industrial AI, ¶Unified Engineering, ¶PI Data Infrastructure, ¶Operations Control¶¶설계 시사점:¶데이터 품질·태그 매핑·¶설계 어시스턴트·¶운영 피드백에 AI 활용
+Siemens¶¶Teamcenter X SaaS and embedded AI across PLM processes¶¶Design implication:¶Adopt cloud-ready PLM services, ¶configuration and ¶lifecycle automation|||Siemens¶¶Teamcenter X SaaS 및 PLM 프로세스 전반의 내장 AI¶¶설계 시사점:¶클라우드 지향 PLM 서비스·¶형상관리·¶라이프사이클 자동화 채택
+Dassault¶¶3DEXPERIENCE cloud, ¶virtual twin, ¶single collaborative platform¶¶Design implication:¶Use role-based collaboration and ¶virtual twin validation flows|||Dassault¶¶3DEXPERIENCE 클라우드·¶버추얼 트윈·¶단일 협업 플랫폼¶¶설계 시사점:¶역할 기반 협업과 ¶버추얼 트윈 검증 플로우 활용
+Hexagon¶¶Octave asset lifecycle intelligence and connected operational context¶¶Design implication:¶Strengthen AIM, completions, ¶project controls and operational handover|||Hexagon¶¶Octave 자산 라이프사이클 인텔리전스와 연결된 운영 컨텍스트¶¶설계 시사점:¶AIM·완성관리(completions)·¶프로젝트 통제·운영 인도 강화
+PTC¶¶Windchill AI, Codebeamer AI, PLM-ALM traceability¶¶Design implication:¶Adopt AI-assisted change, requirements and ¶HW/SW traceability|||PTC¶¶Windchill AI · Codebeamer AI · PLM-ALM 추적성¶¶설계 시사점:¶AI 기반 변경·요구사항·¶HW/SW 추적성 채택
+Strategic gap to fill|||채워야 할 전략적 공백
+What the combined benchmark shows|||통합 벤치마크가 보여주는 것
+Classical PLM strength¶Item, revision, BOM, effectivity, change, maturity, baseline|||클래식 PLM 강점¶품목·리비전·BOM·유효성·변경·성숙도·기준선
+Industrial operations strength¶Tag, asset, historian, alarm, work order, commissioning, handover|||산업 운영 강점¶태그·자산·히스토리안·알람·작업지시·시운전·인도
+The missing product¶A configuration-governed Digital Thread Hub that connects engineering objects to operational assets and proves quality by executable gates.|||비어 있는 제품¶엔지니어링 객체와 운영 자산을 연결하고 실행 가능한 게이트로 품질을 입증하는, 형상 거버넌스 기반 디지털 스레드 허브
+Why teams should agree¶It complements existing PLM/CAD/MES tools instead of replacing them first. This lowers adoption risk and creates visible value early.|||합의가 필요한 이유¶기존 PLM/CAD/MES를 먼저 대체하지 않고 보완한다. 도입 리스크를 낮추고 초기에 가시적 가치를 만든다.
+Target architecture concept|||목표 아키텍처 개념
+A layered, vendor-neutral Industrial PLM reference platform|||계층형 · 벤더 중립 산업 PLM 레퍼런스 플랫폼
+Experience Layer¶React dashboard, 3D context view, gate report, collaboration views|||익스피리언스 레이어¶React 대시보드 · 3D 컨텍스트 뷰 · 게이트 리포트 · 협업 뷰
+API Contract Layer¶FastAPI, OpenAPI, JWT/OIDC, role-based promote authority|||API 계약 레이어¶FastAPI · OpenAPI · JWT/OIDC · 역할 기반 승급 권한
+Digital Thread Layer¶PostgreSQL + relationship graph + rule engine + evaluate/promote flow|||디지털 스레드 레이어¶PostgreSQL + 관계 그래프 + 룰 엔진 + 평가/승급 플로우
+Configuration Layer¶Multi-level BOM, effectivity, baseline, ECR/ECO/MOC impact analysis|||형상관리 레이어¶다단계 BOM · 유효성 · 기준선 · ECR/ECO/MOC 영향분석
+Integration Layer¶Adapters for E3D, Teamcenter, ENOVIA, SDx, Windchill, ERP, MES, PI|||통합 레이어¶E3D · Teamcenter · ENOVIA · SDx · Windchill · ERP · MES · PI 어댑터
+Executable reference package|||실행 가능한 레퍼런스 패키지
+The deck is backed by runnable architecture, not only concept slides|||개념 슬라이드가 아니라 실행 가능한 아키텍처로 뒷받침되는 자료
+DELIVERED REFERENCE¶API First|||제공된 레퍼런스¶API First
+FastAPI services|||FastAPI 서비스
+OpenAPI routes for KPI, readiness,¶coverage, quality issues and¶Phase 2 configuration APIs.|||KPI·준비도·커버리지·품질이슈 및¶Phase 2 형상관리 API를 위한¶OpenAPI 라우트
+Docker Compose|||Docker Compose
+Postgres + Keycloak + API +¶E2E tests with schema and¶seed auto-load.|||Postgres + Keycloak + API +¶스키마/시드 자동 적재 기반¶E2E 테스트
+E2E tests|||E2E 테스트
+Evaluate → promote flows for¶quality gates and Phase 2¶impact analysis.|||품질 게이트 및 Phase 2 영향분석을 위한¶평가 → 승급(promote)¶플로우
+PostgreSQL schema|||PostgreSQL 스키마
+Phase 1 S6 tables/views plus¶Phase 2 configuration, BOM,¶effectivity and change tables.|||Phase 1 S6 테이블/뷰 +¶Phase 2 형상·BOM·유효성·¶변경 테이블
+OIDC security|||OIDC 보안
+Keycloak realm, JWT validation¶and role-gated promote¶actions.|||Keycloak realm · JWT 검증 ·¶역할 기반(role-gated)¶승급 액션
+React dashboard|||React 대시보드
+Integrated FastAPI static¶serving for gate report and¶planning visibility.|||게이트 리포트 및 기획 가시성을 위한¶FastAPI 통합 정적 서빙
+Governance value¶The executable package becomes the contract between planning and development: API first, tests first, KPI gates first.|||거버넌스 가치¶실행 가능한 패키지가 기획-개발 간 계약이 된다: API 우선 · 테스트 우선 · KPI 게이트 우선
+Meeting objective: align overseas development and planning teams around an executable, measurable PLM reference architecture.|||미팅 목표: 실행 가능하고 측정 가능한 PLM 레퍼런스 아키텍처를 중심으로 해외 개발팀과 기획팀을 정렬한다.
+Where we are now|||현재 위치 (Phase 1)
+Phase 1 creates measurable data quality and handover value|||Phase 1은 측정 가능한 데이터 품질과 인도 가치를 만든다
+Phase 1 S6 Gate|||Phase 1 S6 게이트
+A. Integration Hub¶Source import, mapping, relationship creation|||A. 통합 허브¶소스 임포트 · 매핑 · 관계 생성
+B. Standard Model¶Project, system, equipment, tag, document, asset, model object|||B. 표준 모델¶프로젝트·시스템·장비·태그·문서·자산·모델 객체
+C. Handover/AIM¶Asset register, required document matrix, readiness calculation|||C. 인도/AIM¶자산 레지스터 · 필수 문서 매트릭스 · 준비도 산정
+D. Digital Twin Dashboard¶Coverage, quality issues, drill-down and gate report|||D. 디지털 트윈 대시보드¶커버리지 · 품질이슈 · 드릴다운 · 게이트 리포트
+Next: Phase 2 adds configuration governance so every issue, BOM and change can be traced by effectivity.|||다음: Phase 2는 형상 거버넌스를 추가해 모든 이슈·BOM·변경을 유효성으로 추적 가능하게 한다.
+Phase 2 scope|||Phase 2 범위
+Full configuration management: multi-level BOM, effectivity, baseline and change impact|||전체 형상관리: 다단계 BOM · 유효성 · 기준선 · 변경영향
+Design rule¶Configuration is not only a PLM function. It is the control layer that makes handover, commissioning, operations, and AI impact analysis reliable.|||설계 원칙¶형상관리는 단순한 PLM 기능이 아니다. 인도·시운전·운영·AI 영향분석을 신뢰할 수 있게 하는 통제 레이어다.
+Phase 2 output¶A governed configuration graph where every part, equipment, document, test, asset, punch and change impact is traceable by project effectivity.|||Phase 2 산출물¶모든 부품·장비·문서·시험·자산·펀치·변경영향이 프로젝트 유효성으로 추적되는, 거버넌스가 적용된 형상 그래프
+Minimum acceptance¶Multi-level BOM expansion works. ¶Effectivity filters return the correct configuration. ¶Impact candidates promote to official change impacts with audit trail.|||최소 인수기준¶다단계 BOM 전개가 동작한다. ¶유효성 필터가 올바른 형상을 반환한다. ¶영향 후보가 감사추적과 함께 공식 변경영향으로 승급된다.
+Requirement¶System / Equipment|||요구사항¶시스템 / 장비
+Engineering BOM¶Multi-Level BOM|||엔지니어링 BOM¶다단계 BOM
+Effectivity¶Hull / Block ¶/ Option / Date|||유효성¶호선 / 블록 ¶/ 옵션 / 일자
+Baseline¶Frozen Configuration|||기준선¶동결 형상(Frozen)
+Change¶ECR / ECO / MOC|||변경¶ECR / ECO / MOC
+Impact ¶Affected object + Approval|||영향¶영향 객체 + 승인
+Where we are now|||현재 위치 (Phase 1)

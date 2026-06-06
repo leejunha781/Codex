@@ -1,0 +1,32 @@
+제목: [최종 보강본 송부] AVEVA Marine PLM — 개발·기획 회의용 제안 자료
+
+김남배 전무님께,
+
+안녕하십니까, 전무님.
+
+출장 중이신 것으로 알고 있어 회신에 대한 부담을 드리지 않도록, 앞서 송부드린 자료의 최종 보강본만 간단히 전달드립니다. 복귀 후 편하실 때 참고해 주시면 감사하겠습니다.
+
+이번 최종본은 개발팀과 기획팀이 실제 내부 회의를 진행할 수 있도록 다음 내용을 보강하였습니다.
+
+· AVEVA와 경쟁사 간 Current-State / Future-State 비교표
+· NAPA·Siemens·Dassault 대비 AVEVA의 차별화 방향
+· 고객이 API로 변경 가능한 PLM 프로세스와 AI 품질 게이트
+· Requirement → VCRM / Checklist → 설계·변경 → 생산 승인 흐름
+· Continuous Naval Assurance Control Plane 개념
+· 26주 WBS, KPI 승인 기준, 운영 주체와 주요 리스크
+· 개발·기획팀 이해를 위한 Glossary와 페이지별 회의 진행 구조
+
+핵심 제안은 AVEVA가 기존 전문 설계·해석 도구를 대체하는 것이 아니라, E3D/Marine·NAPA·Class·운영 데이터를 개방형 API와 증거 기반 승인 흐름으로 연결하여 HD현대중공업이 직접 통제할 수 있는 Engineering-to-Operations 플랫폼을 제공하는 것입니다.
+
+자료가 향후 HD현대중공업 제안 또는 내부 논의에 조금이나마 도움이 되기를 바랍니다. 추가 설명이나 보완이 필요한 경우 말씀 주시면 신속히 정리하겠습니다.
+
+감사합니다.
+
+[성명] 드림
+[연락처]
+[이메일]
+
+첨부 권장:
+1. Future_Industrial_PLM_Meeting_Deck_EN_Rebuilt_v2.pptx
+2. 전무님용_핵심요약_슬라이드.pptx 또는 1페이지 PDF
+

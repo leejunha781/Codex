@@ -1,0 +1,98 @@
+s1 [Text 1]  Company-by-company benchmark, win-above strategies, open AVEVA control plane, delivery WBS and KPI gates
+s1 [Text 2]  Meeting deck for overseas development and planning teams | Based on the executable FastAPI + PostgreSQL + OIDC + E2E reference package
+s3 [tbl r1 c2]  AVEVA E3D/Marine + AIM/PI
+s4 [TextBox 38]  E3D/Marine · AIM · PI · CONNECT
+s6 [TextBox 20]  CONNECT industrial intelligence, Unified Engineering, AIM and PI System lifecycle context
+s6 [TextBox 26]  Absorb: cloud-ready configuration and lifecycle automation.
+s6 [TextBox 30]  3DEXPERIENCE / ENOVIA cloud-native collaboration, model-based engineering and virtual twins
+s6 [TextBox 49]  Treat public signals as directional, not guaranteed scope. Build adapters and an assurance graph that can absorb change without rewriting the platform.
+s7 [Text 4]  Traditional PLM wins on item, BOM and change control. | Industrial operations platforms win on asset, historian and field context. | Our opportunity is to connect both worlds for shipbuilding, EPC and asset-intensive industries.
+s7 [Text 6]  Strategic differentiation | Open AVEVA control plane = Siemens-grade configuration + Dassault-grade collaboration + NAPA-grade assurance, connected by customer-owned APIs, evidence and operations feedback.
+s8 [TextBox 38]  Open AVEVA Decision Control Plane
+s8 [TextBox 65]  E3D / Marine design-change truth
+s8 [TextBox 69]  PI / CONNECT live operational truth
+s9 [TextBox 10]  Five specialist strengths → one open decision control plane
+s9 [TextBox 52]  E3D / Marine + Unified Engineering + AIM + PI + CONNECT
+s10 [TextBox 21]  NEW MOAT: CONTINUOUS NAVAL ASSURANCE CONTROL PLANE
+s10 [TextBox 52]  E3D / Marine design changes
+s10 [TextBox 58]  PI / CONNECT operational truth
+s10 [TextBox 65]  Official-source basis: napa.fi/software-and-services/ship-design/software/napa/  |  napa.fi/napa-release-2025-2/  |  napa.fi/extending-ocx/  |  aveva.com/en/solutions/connect/
+s11 [TextBox 3]  Teamcenter is strong at PLM governance. Win by preserving that rigor while making configuration customer-owned, API-native and connected to shipyard and operational truth.
+s11 [TextBox 21]  NEW MOAT: OPEN CONFIGURATION CONTROL PLANE
+s11 [TextBox 47]  Connect configuration to real work.
+s11 [TextBox 49]  E3D / Marine design objects
+s11 [TextBox 55]  PI / CONNECT operational truth
+s12 [TextBox 47]  Connect the twin to production truth.
+s12 [TextBox 49]  E3D / Marine production truth
+s12 [TextBox 53]  PI / CONNECT operating feedback
+s12 [TextBox 61]  Dassault = collaboration benchmark. AVEVA-based PLM = executable evidence twin. Competitive moat: every virtual-twin decision is measurable, auditable and connected to operations.
+s13 [Text 1]  The three win-above patterns converge into one open, customer-owned AVEVA control plane
+s13 [Text 5]  API Contract Layer | Customer-owned FastAPI/OpenAPI contracts, OIDC authority and solver-adapter contracts
+s13 [Text 8]  Integration Layer | AVEVA E3D/Marine (Windows authoring) · AIM/PI/CONNECT + NAPA/class/CFD/FEM + ERP/MES/PLM adapters
+s14 [TextBox 39]  FastAPI services
+s14 [Rounded Rectangle 65]  Integrated FastAPI static | serving for gate report and | planning visibility.
+s14 [Rounded Rectangle 84]  Governance value | The current executable package proves API-first contracts, security and gate patterns. Naval Assurance adapters, evidence lineage and operations calibration are the proposed pilot extension.
+s15 [TextBox 2]  Hybrid: Windows Authoring  ↔  Linux PLM Control Plane (API)
+s15 [TextBox 3]  Windows-based AVEVA E3D/Marine authoring + Linux PLM Control Plane (API/SQL/AI Gate/Evidence/Integration) + Cloud/CONNECT
+s15 [TextBox 4]  A - Windows Authoring  ↔  Linux Control Plane  ↔  API
+s15 [TextBox 8]  FastAPI  -  REST / OData  -  OpenAPI 3.1  -  OIDC (OAuth2)
+s15 [TextBox 15]  API issues commands  ↔  Control Plane returns JSON
+s15 [TextBox 18]  2.  OPEN PLM CONTROL PLANE (Linux) — API & services
+s15 [TextBox 25]  Linux control plane — objects, BOM/config rules, ECR/impact, approvals, AI gate, evidence and integration adapters, all exposed through the API layer above.
+s15 [TextBox 27]  Control Plane on Linux  ↔  authoring via Adapter
+s15 [TextBox 30]  3.  INFRASTRUCTURE — Linux cluster + Windows authoring tier
+s15 [Rounded Rectangle 31]  4-node cluster - HA | 16 vCPU - 64 GB/node | Linux - containers
+s15 [TextBox 33]  App · API · AI Gate (Linux)
+s15 [TextBox 47]  Windows authoring tier: GPU workstations run AVEVA E3D · Marine · Draw, linked to the Linux control plane via Local Agent / Adapter (not hosted on the cluster). | Linux: redundant 10/25 GbE backbone · Geo-DR (async replica) + continuous backup · GPU node for AI gate / digital-twin · observability (metrics · logs · traces).
+s15 [TextBox 92]  Hybrid: Windows runs AVEVA E3D/Marine authoring  ·  Linux hosts the Open PLM Control Plane & APIs  ·  the E3D/Hull Agent executes commands & returns callbacks.
+s16 [TextBox 17]  E3D / Hull | change
+s16 [TextBox 18]  Agent → POST /events
+s16 [TextBox 44]  AIM + PI / CONNECT
+s16 [TextBox 45]  One hull / block · selected loading cases · one approved solver adapter · seeded change and failure cases
+s18 [TextBox 96]  Design in AVEVA (E3D/Marine + Draw)  →  governed & tracked in the API-built PLM, AI-gated at every step
+s18 [TextBox 101]  AVEVA E3D Design
+s18 [Rounded Rectangle 102]  AVEVA E3D/Marine
+s18 [TextBox 91]  AVEVA E3D/Marine 3D → AVEVA Draw 2D (AutoCAD DWG/DXF) → MTO/E-BOM → Approval → Effectivity → Baseline → ECR/ECO → M-BOM/MCO → Impact
+s19 [TextBox 5]  AVEVA E3D/Marine model → AVEVA Draw issues the 2D sheet → export AutoCAD DWG/DXF (+MTO) → AI checks drawing standards → registered & status-tracked in the PLM.
+s19 [TextBox 11]  AVEVA E3D Design  —  Draw (Draughting)   ·   Hull / Block B12 / Panel P3
+s19 [TextBox 13]  MODEL TREE  (E3D)
+s19 [TextBox 26]  3D model (E3D / Marine)
+s19 [TextBox 65]  AVEVA Draw issues the 2D production drawing (DWG/DXF) from the E3D/Marine model;  | the API-built PLM registers it with its MTO, AI-checks drawing standards, and tracks revision & status across the digital thread.
+s20 [TextBox 41]  E3D / Hull design - version control approach
+s20 [TextBox 47]  3D files are huge - per-save Git is too heavy  ·  a central server bottlenecks with many concurrent designers  ·  manual upload misses versions
+s20 [TextBox 54]  E3D is database-driven. Version its native element & extract/merge change history plus PLM metadata and relationships - lightweight, with no whole-file snapshots.
+s20 [TextBox 61]  Heavy geometry is stored once in object storage (Git-LFS / S3 style, de-duplicated). PLM keeps only references and deltas, so the design tool and server stay light.
+s20 [TextBox 75]  Snapshots are captured in the background via a queue on the Linux control-plane servers; AVEVA E3D authoring runs on Windows clients, so many concurrent designers never hit a bottleneck.
+s20 [TextBox 78]  E3D is not source code.  DB-element + metadata versioning · content-addressed geometry · versions triggered by promote/baseline events and captured asynchronously - the digital thread drives version control.
+s21 [TextBox 2]  Continuous Naval Assurance Control Plane - API concept
+s21 [TextBox 3]  Every promoted E3D/Hull revision re-evaluates only affected naval-architecture scenarios, then publishes explainable margins, evidence and approval state in the user PLM.
+s21 [TextBox 13]  E3D/Marine (Windows) + PLM
+s21 [TextBox 31]  NAPA + class / CFD / FEM adapters
+s21 [TextBox 40]  explain + propose alternatives
+s21 [TextBox 58]  PI System + CONNECT
+s21 [TextBox 72]  Official-source basis: NAPA naval architecture + Node Network + OCX; AVEVA E3D Design + CONNECT + PI System official product pages. Concept architecture is a proposed AVEVA-based PLM extension.
+s22 [TextBox 22]  Design (E3D / Marine)
+s22 [Rounded Rectangle 74]  Design (E3D)
+s22 [Rounded Rectangle 82]  Design (E3D)
+s24 [TextBox 110]  E3D/Hull event · solver adapters · evidence
+s26 [TextBox 58]  Proposed open AVEVA control plane versus NAPA, Siemens / Dassault PLM and other ship design tools
+s26 [Rounded Rectangle 113]  Distinctive position = Siemens-grade configuration + Dassault-grade collaboration + NAPA-grade assurance, connected by customer-owned APIs and AVEVA lifecycle context.
+s27 [TextBox 49]  Data model · assurance graph · OpenAPI · adapters · NFRs
+s28 [TextBox 95]  Pilot one E3D/Hull scenario; adapters orchestrate solvers instead of rewriting them.
+s29 [TextBox 75]  DESIGN USE | Approved solver-of-record adapter
+s29 [TextBox 78]  Public signals are not product commitments. The assurance graph, solver adapters, AI diagnosis and closed-loop calibration are proposed AVEVA-based PLM extensions; validate scope, authority and evidence with HD Hyundai, vendors and class authorities.
+s30 [TextBox 8]  Approve the bounded next increment that proves the open AVEVA control plane in a real shipbuilding change scenario
+s30 [TextBox 18]  Open AVEVA control plane above specialist tools
+s30 [TextBox 22]  One E3D/Hull change-to-evidence pilot slice
+s30 [Rounded Rectangle 48]  E3D / Hull | change
+s31 [tbl r4 c3]  Connected data trail linking design, build and operations.
+s32 [TextBox 2]  Glossary 2 / 3 - Marine, naval and product terms
+s32 [tbl r2 c1]  AVEVA E3D / Marine
+s32 [tbl r2 c2]  AVEVA E3D / Marine
+s32 [tbl r6 c1]  AVEVA CONNECT
+s32 [tbl r6 c2]  CONNECT
+s32 [tbl r6 c3]  AVEVA industrial-intelligence cloud and ecosystem.
+s33 [tbl r8 c1]  FastAPI
+s33 [tbl r8 c2]  FastAPI
+s33 [tbl r2 c2]  OpenID Connect / OAuth2
+s33 [tbl r6 c3]  Reference identity server.

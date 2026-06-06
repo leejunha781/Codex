@@ -1,0 +1,108 @@
+[6 user] 프로젝트 모니터링 자동화를 설정하고 싶어. Codex에서 자동화가 어떻게 작동하는지 간단히 설명한 다음, 전체 프로젝트를 지켜봐줘
+
+
+[10 assistant] 먼저 자동화 도구를 확인하고, 이 프로젝트의 기존 메모리도 읽어서 “전체 프로젝트”의 범위를 잡아볼게요. 그다음 Codex 자동화가 어떻게 굴러가는지 짧게 설명하고 바로 설정까지 이어가겠습니다.
+
+[18 assistant] 메모리 경로가 문서에 적힌 그대로는 없네요. 아마 `.claude`와 `.codex` 사이에 경로가 갈린 듯해서 실제 위치를 먼저 찾아보고, 이미 같은 모니터링 자동화가 있는지도 확인하겠습니다.
+
+[28 assistant] 실제 메모리는 `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md`에 있었습니다. 이제 그 내용을 보고, 자동화는 중복 생성하지 않도록 실제 자동화 디렉터리들을 한 번 더 훑겠습니다.
+
+[38 assistant] Codex 자동화는 크게 두 갈래예요. 이 대화 자체를 나중에 다시 깨우는 `heartbeat`와, 지정한 작업 폴더에서 독립적으로 주기 실행되는 `cron`이 있는데, “전체 프로젝트 모니터링”은 후자가 맞습니다.  
+
+지금은 `C:\Users\namma\.claude` 전체를 대상으로, 중복 자동화가 없는 상태라 새 모니터를 만들겠습니다. 빈도는 부담이 과하지 않게 6시간마다로 잡을게요.
+
+[44 assistant] 설정 완료했어요.  
+
+Codex 자동화는 두 방식으로 동작합니다. `heartbeat`는 이 대화 스레드를 나중에 다시 깨워 이어서 작업하고, `cron`은 지정한 작업 폴더에서 독립적으로 주기 실행됩니다. 이번 요청은 프로젝트 전체 감시라서 `cron` 자동화로 만들었습니다.
+
+자동화 이름은 `Claude project monitor`, ID는 `claude-project-monitor`입니다.  
+범위는 `C:\Users\namma\.claude` 전체이고, 6시간마다 활성 상태로 실행됩니다. 실행 시 `AGENTS.md`와 프로젝트 메모리를 먼저 읽고, 최근 변경, 빠진 핵심 파일, 메모리 불일치, 위험한 설정/문서 변경, `itt_work`와 `plm_slide_work` 쪽 이슈를 확인하도록 설정해두었습니다.
+
+[49 user] [$skill-creator](C:\\Users\\namma\\.codex\\skills\\.system\\skill-creator\\SKILL.md) 
+
+
+[53 assistant] `skill-creator` 스킬을 열어볼게요. 지금 메시지는 스킬만 지정되어 있어서, 지침을 확인한 뒤 바로 무엇을 만들거나 수정할지 받을 준비를 하겠습니다.
+
+[58 assistant] `skill-creator` 지침 확인했어요.
+
+새 스킬을 만들거나 기존 스킬을 고치려면, 먼저 이 세 가지만 알려주세요:
+
+1. 만들고 싶은 스킬의 목적
+2. 어떤 사용자 요청에서 자동으로 발동되면 좋은지
+3. 새 스킬 위치를 기본값인 `C:\Users\namma\.codex\skills`에 만들면 되는지
+
+예: “Office COM으로 이력서/제안서 문서를 편집하고 PDF/PNG QA까지 하는 스킬 만들어줘.”
+
+[63 user] Office COM으로 이력서/제안서 문서를 편집하고 PDF/PNG QA까지 하는 스킬 만들어줘.
+
+
+[67 assistant] 좋아요. `skill-creator` 흐름으로 만들겠습니다. 위치는 기본 자동 발견 경로인 `C:\Users\namma\.codex\skills`로 두고, 이 PC의 제약 때문에 Python 초기화 스크립트는 쓰지 않고 같은 구조를 PowerShell/패치로 직접 만들겠습니다.
+
+[70 assistant] 먼저 기존 스킬 이름 충돌과 `agents/openai.yaml` 형식을 확인하겠습니다. 이 스킬은 반복 사용성이 높아서 `SKILL.md` 본문은 짧게 두고, COM 세부 주의사항과 QA 스크립트를 번들 리소스로 나누는 쪽이 맞아 보여요.
+
+[80 assistant] 이제 파일을 만들겠습니다. 스킬 이름은 `office-com-doc-qa`로 잡고, 핵심 지침, COM 세부 레퍼런스, 그리고 DOC/DOCX/PPT/PPTX/PDF를 PDF/PNG QA 산출물로 만드는 PowerShell 스크립트를 넣겠습니다.
+
+[85 assistant] 스켈레톤 디렉터리는 준비됐습니다. 지금부터는 생성 파일을 패치로 넣고, 스크립트는 PowerShell 파서와 작은 Word 샘플로 검증해볼게요.
+
+[92 assistant] 초안이 들어갔습니다. 이제 기본 형식과 PowerShell 구문을 확인하고, 가능하면 작은 DOCX를 만들어 export/render까지 한 번 실제로 태워보겠습니다.
+
+[102 assistant] 형식 검사는 통과했습니다. 실제 실행 검증은 Office COM과 WinRT PDF 렌더링까지 건드리는 부분이라, 임시 DOCX 하나만 만들어서 스크립트가 PDF와 PNG를 내는지 확인하겠습니다.
+
+[108 assistant] 실패 원인은 스킬 스크립트가 아니라 임시 샘플 DOCX를 만드는 COM 호출 방식이었습니다. Word의 `SaveAs` 참조 인자 변환이 꼬인 거라 `SaveAs2`로 샘플 생성만 바꿔서 다시 검증하겠습니다.
+
+[114 assistant] PDF 내보내기는 통과했고, PNG 렌더링에서 현재 셸이 WinRT 타입을 못 여는 문제가 드러났습니다. 이건 스킬이 실제로 PowerShell 5.1을 명시해야 하는 신호라서, 먼저 현재 셸 버전을 확인하고 스크립트/지침을 그에 맞춰 단단하게 고치겠습니다.
+
+[124 assistant] PowerShell 5.1로 돌리니 WinRT 타입 로딩은 지나갔지만, async helper가 메서드를 고르는 방식이 버전별로 너무 엄격했습니다. 이 부분을 실제 5.1 메서드 시그니처 기준으로 느슨하게 고치겠습니다.
+
+[130 assistant] 문제는 PowerShell 문자열에서 제네릭 타입명 backtick이 빠지는 아주 전형적인 함정이었습니다. async 메서드 탐지를 `FullName.StartsWith(...)` 방식으로 바꿔서 버전 차이를 덜 타게 만들겠습니다.
+
+[137 assistant] 수정했습니다. 이제 파서 확인 후 같은 DOCX smoke test를 다시 실행해 실제 PNG가 나오는지 보겠습니다.
+
+[145 assistant] 구문은 다시 깨끗합니다. 실제 테스트를 PowerShell 5.1 하위 프로세스로 한 번 더 돌립니다.
+
+[151 assistant] 이번에는 메서드 목록 중 매개변수 없는 항목을 먼저 건드려서 난 오류입니다. 필터 순서를 안전하게 바꾸면 됩니다. 작은 버그를 계속 smoke test로 잡아내고 있어서, 스킬은 오히려 더 믿을 만해지고 있어요.
+
+[158 assistant] 필터를 안전하게 고쳤습니다. 다시 구문 검사와 실제 export/render를 이어가겠습니다.
+
+[165 assistant] 좋습니다, 파서는 통과했습니다. 이제 실제 렌더 테스트 한 번 더 갑니다.
+
+[171 assistant] 같은 줄이지만 원인이 하나 더 있네요. 일부 COM/WinRT 메서드의 `FullName`이 null로 오는 케이스가 있어서, 이번에는 `Name`과 문자열화된 시그니처를 함께 쓰는 방식으로 더 넓게 잡겠습니다.
+
+[177 assistant] 확인해보니 PS 5.1에서 WinRT generic 타입의 `FullName`이 비어 있습니다. `Name`을 single-quoted literal로 비교하도록 고치면 됩니다.
+
+[184 assistant] 좋아요, 핵심 호환성 수정이 들어갔습니다. 다시 smoke test를 돌립니다.
+
+[190 assistant] 이제 PDF→PNG 자체는 성공했을 가능성이 높고, 마지막 결과 객체를 만들 때 1페이지짜리 결과가 단일 문자열로 풀려 `Count`가 없어서 죽었습니다. 반환값을 배열로 고정하면 됩니다.
+
+[197 assistant] 반환값 고정까지 넣었습니다. 마지막으로 실제 산출물 목록까지 확인해볼게요.
+
+[203 assistant] 실제 DOCX→PDF→PNG smoke test가 성공했습니다. 생성된 PNG도 한 번 눈으로 확인해서 렌더가 빈 이미지가 아닌지 보겠습니다.
+
+[209 assistant] 렌더 이미지도 정상입니다. 마지막으로 스킬 설명에 “현재 셸이 PowerShell 7일 수 있으니 `powershell.exe`로 5.1을 띄워라”는 안전장치를 넣고, 스크립트도 PS7에서 조용히 반쯤 실행되지 않게 초반에 명확히 실패하도록 고치겠습니다.
+
+[216 assistant] 지침과 스크립트에 PS 5.1 강제 조건을 반영했습니다. 이제 최종 검증으로 구문, PS7 조기 실패 메시지, PS5 실제 렌더를 확인하겠습니다.
+
+[225 assistant] 기본 검증은 통과했고, PS7에서는 이제 친절하게 초반 실패합니다. 최종으로 PS5.1 실제 DOCX→PDF→PNG 테스트를 한 번 더 확인하겠습니다.
+
+[231 assistant] Word 경로는 실제로 통과했습니다. 제안서/덱 쪽까지 커버하려고 PowerPoint 샘플도 하나 만들어 PPTX→PDF→PNG 경로를 smoke test 해보겠습니다.
+
+[237 assistant] PowerPoint 쪽 COM에서 `ExportAsFixedFormat` 호출이 이 환경에서는 인자 변환 문제를 냈습니다. PowerPoint는 `SaveAs(..., 32)` PDF 저장 경로가 더 단순하고 안정적이라 그쪽으로 바꿔서 다시 테스트하겠습니다.
+
+[244 assistant] PowerPoint PDF 저장 방식을 바꿨습니다. 구문 확인하고 PPTX smoke test를 다시 돌릴게요.
+
+[251 assistant] 구문은 괜찮습니다. 이제 PowerPoint 실제 변환 경로를 다시 확인합니다.
+
+[257 assistant] PPTX 경로도 통과했습니다. 마지막으로 PowerPoint 렌더 PNG가 실제 내용 있는 페이지인지 한 번 눈으로 확인하겠습니다.
+
+[263 assistant] 완료했어요. 새 스킬은 `C:\Users\namma\.codex\skills\office-com-doc-qa`에 만들었습니다.
+
+핵심 파일:
+- [SKILL.md](C:/Users/namma/.codex/skills/office-com-doc-qa/SKILL.md:1)
+- [Export-OfficePdfPng.ps1](C:/Users/namma/.codex/skills/office-com-doc-qa/scripts/Export-OfficePdfPng.ps1:1)
+- [office-com-patterns.md](C:/Users/namma/.codex/skills/office-com-doc-qa/references/office-com-patterns.md:1)
+
+검증도 했습니다. PowerShell 구문 검사 통과, PowerShell 7에서는 조기 실패 안내 확인, Windows PowerShell 5.1에서 DOCX→PDF→PNG와 PPTX→PDF→PNG smoke test 모두 성공했고 PNG 렌더도 직접 확인했습니다. Python은 이 환경 지침상 쓰지 않아서 `quick_validate.py` 대신 수동 frontmatter/구조 검사를 했습니다.
+
+앞으로는 `$office-com-doc-qa`로 호출하면 이력서/제안서 Office COM 편집과 PDF/PNG QA 흐름을 따르게 됩니다.
+
+

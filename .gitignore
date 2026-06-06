@@ -1,0 +1,15 @@
+# ?? ??? (??? ??)
+*.png
+*.jpg
+*.jpeg
+
+# ?? ??
+hybrid_render/
+visualreview_current/
+meeting_current/
+restructure_review_*/
+napa_review/
+napa_assurance_*/
+
+# ?? ??
+*.tmp
