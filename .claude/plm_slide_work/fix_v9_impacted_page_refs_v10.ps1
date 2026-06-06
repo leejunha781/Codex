@@ -63,6 +63,21 @@ function Replace-InSlide {
     return $count
 }
 
+function Get-PowerPointApplication {
+    try {
+        return [System.Runtime.InteropServices.Marshal]::GetActiveObject('PowerPoint.Application')
+    } catch {
+        try {
+            return (New-Object -ComObject PowerPoint.Application)
+        } catch {
+            $exe = 'C:\Program Files\Microsoft Office\root\Office16\POWERPNT.EXE'
+            Start-Process -FilePath $exe -WindowStyle Hidden
+            Start-Sleep -Seconds 8
+            return [System.Runtime.InteropServices.Marshal]::GetActiveObject('PowerPoint.Application')
+        }
+    }
+}
+
 New-Item -ItemType Directory -Path $backupDir -Force | Out-Null
 Backup-IfExists -Path $sourceDeck -BackupDir $backupDir
 Backup-IfExists -Path $v10Deck -BackupDir $backupDir
@@ -80,7 +95,7 @@ $ppt = $null
 $pres = $null
 $changes = New-Object System.Collections.Generic.List[string]
 try {
-    $ppt = New-Object -ComObject PowerPoint.Application
+    $ppt = Get-PowerPointApplication
     $pres = $ppt.Presentations.Open($v10Deck, $false, $false, $false)
 
     $c = Replace-InSlide -Slide $pres.Slides.Item(1) -OldText 'Rev. V9' -NewText 'Rev. V10'
@@ -108,7 +123,9 @@ try {
         try { $pres.Close() } catch {}
     }
     if ($ppt -ne $null) {
-        try { $ppt.Quit() } catch {}
+        try {
+            if ($ppt.Presentations.Count -eq 0) { $ppt.Quit() }
+        } catch {}
     }
     if ($pres -ne $null) {
         [System.Runtime.InteropServices.Marshal]::ReleaseComObject($pres) | Out-Null 2>$null
@@ -126,7 +143,7 @@ Copy-Item -LiteralPath $v10Deck -Destination $finalDeck -Force
 $ppt = $null
 $pres = $null
 try {
-    $ppt = New-Object -ComObject PowerPoint.Application
+    $ppt = Get-PowerPointApplication
     $pres = $ppt.Presentations.Open($finalDeck, $true, $false, $false)
     $pres.SaveAs($finalPdf, 32)
     $pres.Close()
@@ -136,7 +153,9 @@ try {
         try { $pres.Close() } catch {}
     }
     if ($ppt -ne $null) {
-        try { $ppt.Quit() } catch {}
+        try {
+            if ($ppt.Presentations.Count -eq 0) { $ppt.Quit() }
+        } catch {}
     }
     if ($pres -ne $null) {
         [System.Runtime.InteropServices.Marshal]::ReleaseComObject($pres) | Out-Null 2>$null
