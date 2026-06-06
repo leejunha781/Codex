@@ -57,6 +57,11 @@ function Get-ShapeText {
     return $texts
 }
 
+function New-Replacement {
+    param([string]$From, [string]$To, [string]$Mode)
+    return [pscustomobject]@{ From = $From; To = $To; Mode = $Mode }
+}
+
 function Replace-OnShape {
     param([object]$Shape, [object[]]$Pairs)
     try {
@@ -71,9 +76,9 @@ function Replace-OnShape {
         if (($Shape.HasTextFrame -eq -1) -and ($Shape.TextFrame.HasText -eq -1)) {
             $txt = $Shape.TextFrame.TextRange.Text
             foreach ($pair in $Pairs) {
-                $from = $pair[0]
-                $to = $pair[1]
-                $mode = $pair[2]
+                $from = $pair.From
+                $to = $pair.To
+                $mode = $pair.Mode
                 if ($mode -eq 'exact') {
                     if ($txt -eq $from) { $txt = $to }
                 } else {
@@ -148,31 +153,31 @@ try {
     }
 
     Replace-OnSlide -Slide $presentation.Slides.Item(1) -Pairs @(
-        @('Rev. V7', 'Rev. V8', 'contains')
+        (New-Replacement -From 'Rev. V7' -To 'Rev. V8' -Mode 'contains')
     )
 
     Replace-OnSlide -Slide $presentation.Slides.Item(2) -Pairs @(
-        @('Meeting structure - seven decisions in order', 'Meeting procedure - development + planning decision flow', 'exact'),
-        @('Move from facts to ideas, then validate the delivery plan and final decision', 'Start with the meeting procedure, then move from facts to ideas, delivery plan and final decision', 'exact'),
-        @('Presenter guide appendix -> p.38-41', 'Meeting procedure guide -> p.3-5', 'exact'),
-        @('Abbreviations → Glossary appendix, p.35–37', 'Abbreviations → Glossary appendix, p.39–41', 'exact'),
-        @('p.3–5', 'p.6–8', 'exact'),
-        @('p.6', 'p.9', 'exact'),
-        @('p.7–15', 'p.10–18', 'exact'),
-        @('p.16–29', 'p.19–32', 'exact'),
-        @('p.30', 'p.33', 'exact'),
-        @('p.31–33', 'p.34–36', 'exact'),
-        @('p.34', 'p.37–38', 'exact'),
-        @('Sequencing rule: WBS and KPI appear only after all proposed capabilities and pilot ideas are consolidated.', 'Procedure rule: align how the room will decide first; WBS and KPI appear only after capabilities and pilot scope are clear.', 'exact')
+        (New-Replacement -From 'Meeting structure - seven decisions in order' -To 'Meeting procedure - development + planning decision flow' -Mode 'exact'),
+        (New-Replacement -From 'Move from facts to ideas, then validate the delivery plan and final decision' -To 'Start with the meeting procedure, then move from facts to ideas, delivery plan and final decision' -Mode 'exact'),
+        (New-Replacement -From 'Presenter guide appendix -> p.38-41' -To 'Meeting procedure guide -> p.3-5' -Mode 'exact'),
+        (New-Replacement -From 'Abbreviations → Glossary appendix, p.35–37' -To 'Abbreviations → Glossary appendix, p.39–41' -Mode 'exact'),
+        (New-Replacement -From 'p.3–5' -To 'p.6–8' -Mode 'exact'),
+        (New-Replacement -From 'p.6' -To 'p.9' -Mode 'exact'),
+        (New-Replacement -From 'p.7–15' -To 'p.10–18' -Mode 'exact'),
+        (New-Replacement -From 'p.16–29' -To 'p.19–32' -Mode 'exact'),
+        (New-Replacement -From 'p.30' -To 'p.33' -Mode 'exact'),
+        (New-Replacement -From 'p.31–33' -To 'p.34–36' -Mode 'exact'),
+        (New-Replacement -From 'p.34' -To 'p.37–38' -Mode 'exact'),
+        (New-Replacement -From 'Sequencing rule: WBS and KPI appear only after all proposed capabilities and pilot ideas are consolidated.' -To 'Procedure rule: align how the room will decide first; WBS and KPI appear only after capabilities and pilot scope are clear.' -Mode 'exact')
     )
 
     Replace-OnSlide -Slide $presentation.Slides.Item(3) -Pairs @(
-        @('Meeting Guide - persuasion storyline', 'Meeting Procedure - persuasion storyline', 'exact'),
-        @('Future Industrial PLM / Meeting Guide', 'Future Industrial PLM / Meeting Procedure', 'exact')
+        (New-Replacement -From 'Meeting Guide - persuasion storyline' -To 'Meeting Procedure - persuasion storyline' -Mode 'exact'),
+        (New-Replacement -From 'Future Industrial PLM / Meeting Guide' -To 'Future Industrial PLM / Meeting Procedure' -Mode 'exact')
     )
-    Replace-OnSlide -Slide $presentation.Slides.Item(4) -Pairs @(@('Future Industrial PLM / Meeting Guide', 'Future Industrial PLM / Meeting Procedure', 'exact'))
-    Replace-OnSlide -Slide $presentation.Slides.Item(5) -Pairs @(@('Future Industrial PLM / Meeting Guide', 'Future Industrial PLM / Meeting Procedure', 'exact'))
-    Replace-OnSlide -Slide $presentation.Slides.Item(38) -Pairs @(@('Future Industrial PLM / Meeting Guide', 'Future Industrial PLM / Meeting Procedure', 'exact'))
+    Replace-OnSlide -Slide $presentation.Slides.Item(4) -Pairs @((New-Replacement -From 'Future Industrial PLM / Meeting Guide' -To 'Future Industrial PLM / Meeting Procedure' -Mode 'exact'))
+    Replace-OnSlide -Slide $presentation.Slides.Item(5) -Pairs @((New-Replacement -From 'Future Industrial PLM / Meeting Guide' -To 'Future Industrial PLM / Meeting Procedure' -Mode 'exact'))
+    Replace-OnSlide -Slide $presentation.Slides.Item(38) -Pairs @((New-Replacement -From 'Future Industrial PLM / Meeting Guide' -To 'Future Industrial PLM / Meeting Procedure' -Mode 'exact'))
 
     for ($i = 1; $i -le $presentation.Slides.Count; $i++) {
         Update-PageNumber -Slide $presentation.Slides.Item($i) -NewNo $i

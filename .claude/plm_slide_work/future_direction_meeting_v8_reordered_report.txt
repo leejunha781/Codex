@@ -1,0 +1,56 @@
+﻿Future Industrial PLM V8 reordered by SlideID for development/planning meeting procedure
+Generated: 2026-06-06 23:58:41 +09:00
+Slide count: 41
+Slides with notes: 41
+PNG render count: 41
+Render folder: C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v8_reordered_render
+Backup folder: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\_backup_20260606_reorder_v8_slideid_20260606_235744
+
+Saved files:
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V8.pptx	33146124	2026-06-06 23:58:18
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx	33146124	2026-06-06 23:58:18
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx	33146124	2026-06-06 23:58:18
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf	3613737	2026-06-06 23:58:32
+
+Final slide order:
+1. Company-by-oompany benohmark, win-above strategies, open AVEVA oontrol plane, delivery WBS and KPI gates
+2. Meeting procedure - development + planning decision flow
+3. Meeting Procedure - persuasion storyline
+4. What dxvxlopmxnt txams must hxar
+5. What planning txams must hxar
+6. Current-state comparison - no vendor owns the complete loop
+7. Current PLM landscape
+8. Where we are now
+9. Public product + roadmap signals - official emphasis only
+10. Meeting thesis - win above tool silos
+11. Strategic gap to fill
+12. What to absorb - and where AVEVA must go beyond
+13. Win above NAPA - own the continuous naval assurance loop
+14. Win above Siemens - make configuration rigor open and operations-aware
+15. Win above Dassault - make the virtual twin executable and evidence-driven
+16. AVEVA AI Capabilities — AI assists, the control plane governs
+17. AI deployment path — start light, then scale to AVEVA CONNECT
+18. Lightweight Piping Routing — deterministic pilot
+19. Target architecture concept
+20. Executable reference package
+21. Hybrid: Windows Authoring + Linux Control Plane + Cloud/CONNECT
+22. Hybrid deployment overview — Windows authoring + Linux control plane
+23. Phase 2 + Continuous Naval Assurance pilot scope
+24. Requirement → AI-built VCRM & Checklist (admin-editable, approved in Impact+Approval)
+25. AI-gated flow across AVEVA design tools and the API-built PLM
+26. Design tool → 2D production drawing (AutoCAD DWG/DXF) → registered in the API-built PLM
+27. E3D / Hull design - version control approach
+28. Continuous Naval Assurance Control Plane - API concept
+29. User-Configurable PLM Process — Altering the Entire Flow via API (Admin Privileges)
+30. Executable gate flow
+31. Delivery WBS - consolidated after the full solution scope
+32. KPI model - configuration and naval assurance acceptance
+33. Future-state comparison - AVEVA wins by orchestrating the full assurance loop
+34. Review ownership and operating model
+35. Key review risks and mitigations
+36. Evidence base and assumption boundaries
+37. Recommended decision
+38. Closing argumxnt - futurx AVEVA Marinx dirxction
+39. Glossary 1 / 3 - PLM, configuration and change terms
+40. Glossary 2 / 3 - Marine, naval and product terms
+41. Glossary 3 / 3 - Architecture, security and infrastructure terms
