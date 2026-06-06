@@ -1,0 +1,7 @@
+﻿AVEVA Marine PLM Control Plane FastAPI/SQL/IndustrialAI FINAL v2
+Saved from ZIP: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\AVEVA_Marine_PLM_Control_Plane_FastAPI_SQL_IndustrialAI_FINAL_v2.zip
+Extracted to: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\AVEVA_Marine_PLM_Control_Plane_FastAPI_SQL_IndustrialAI_FINAL_v2
+Inventory: C:\Users\namma\.claude\plm_slide_work\software_code_final_v2_inventory.txt
+Files: 108
+Top-level content: app/, sql/, docs/, openapi/, tests/, docker-compose.yml, requirements.txt, README.md
+Notes: package is preserved as supplied; generated .pytest_cache and __pycache__ entries are present in the ZIP and extraction.
