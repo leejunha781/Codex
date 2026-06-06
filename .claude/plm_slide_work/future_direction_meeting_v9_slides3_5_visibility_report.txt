@@ -1,0 +1,13 @@
+﻿Future Industrial PLM V9 - redesigned slides 3-5 for visibility
+Generated: 2026-06-07 00:08:58 +09:00
+Scope: redesigned p.3 meeting procedure, p.4 development team message, p.5 planning team message.
+Image decision: no raster image generated; slides use editable PowerPoint diagrams/icons because they improve readability without adding file dependencies.
+PNG render count: 41
+Render folder: C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v9_slides3_5_visibility_render
+Backup folder: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\_backup_20260607_slides3_5_visibility_v9_20260607_000800
+
+Saved files:
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V9.pptx	33151632	2026-06-07 00:08:43
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx	33151632	2026-06-07 00:08:43
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx	33151632	2026-06-07 00:08:43
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf	3634721	2026-06-07 00:08:54
