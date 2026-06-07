@@ -1,0 +1,61 @@
+﻿Deck: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx
+Slide count: 41
+Slide 2 shapes: 58
+ 1. TextBox 11 | Type=17 | L=34.0 T=18.0 W=740.0 H=29.1 | Text=Meeting procedure - development + planning decision flow
+ 2. TextBox 13 | Type=17 | L=34.0 T=54.0 W=840.0 H=29.1 | Text=Start with the meeting procedure, then move from facts to ideas, delivery plan and final decision
+ 3. TextBox 14 | Type=17 | L=800.0 T=24.0 W=130.0 H=29.1 | Text=Future Industrial PLM
+ 4. Rectangle 15 | Type=1 | L=34.0 T=82.0 W=892.0 H=1.0 | Text=
+ 5. Rounded Rectangle 16 | Type=1 | L=48.0 T=102.0 W=864.0 H=46.0 | Text=
+ 6. Oval 17 | Type=1 | L=60.0 T=111.0 W=28.0 H=28.0 | Text=
+ 7. TextBox 18 | Type=17 | L=60.0 T=111.0 W=28.0 H=29.1 | Text=1
+ 8. TextBox 19 | Type=17 | L=102.0 T=109.0 W=210.0 H=29.1 | Text=CURRENT STATE
+ 9. TextBox 20 | Type=17 | L=102.0 T=125.0 W=792.0 H=29.1 | Text=Competitor vs AVEVA comparison, PLM position and today's executable baseline
+10. Rounded Rectangle 21 | Type=1 | L=48.0 T=154.0 W=864.0 H=46.0 | Text=
+11. Oval 22 | Type=1 | L=60.0 T=163.0 W=28.0 H=28.0 | Text=
+12. TextBox 23 | Type=17 | L=60.0 T=163.0 W=28.0 H=29.1 | Text=2
+13. TextBox 24 | Type=17 | L=102.0 T=161.0 W=210.0 H=29.1 | Text=PUBLIC SIGNALS
+14. TextBox 25 | Type=17 | L=102.0 T=177.0 W=792.0 H=29.1 | Text=Official product and roadmap signals; confirmed versus directional
+15. Rounded Rectangle 26 | Type=1 | L=48.0 T=206.0 W=864.0 H=46.0 | Text=
+16. Oval 27 | Type=1 | L=60.0 T=215.0 W=28.0 H=28.0 | Text=
+17. TextBox 28 | Type=17 | L=60.0 T=215.0 W=28.0 H=29.1 | Text=3
+18. TextBox 29 | Type=17 | L=102.0 T=213.0 W=210.0 H=29.1 | Text=WINNING IDEAS
+19. TextBox 30 | Type=17 | L=102.0 T=229.0 W=792.0 H=29.1 | Text=Meeting thesis + win-above NAPA / Siemens / Dassault patterns
+20. Rounded Rectangle 31 | Type=1 | L=48.0 T=258.0 W=864.0 H=46.0 | Text=
+21. Oval 32 | Type=1 | L=60.0 T=267.0 W=28.0 H=28.0 | Text=
+22. TextBox 33 | Type=17 | L=60.0 T=267.0 W=28.0 H=29.1 | Text=4
+23. TextBox 34 | Type=17 | L=102.0 T=265.0 W=210.0 H=29.1 | Text=PROPOSAL + DELIVERY
+24. TextBox 35 | Type=17 | L=102.0 T=281.0 W=792.0 H=29.1 | Text=Architecture, workflows and pilot scope - then WBS and KPI gates
+25. Rounded Rectangle 36 | Type=1 | L=48.0 T=310.0 W=864.0 H=46.0 | Text=
+26. Oval 37 | Type=1 | L=60.0 T=319.0 W=28.0 H=28.0 | Text=
+27. TextBox 38 | Type=17 | L=60.0 T=319.0 W=28.0 H=29.1 | Text=5
+28. TextBox 39 | Type=17 | L=102.0 T=317.0 W=210.0 H=29.1 | Text=FUTURE-STATE COMPARE
+29. TextBox 40 | Type=17 | L=102.0 T=333.0 W=792.0 H=29.1 | Text=Re-score AVEVA after the proposed ideas are applied
+30. Rounded Rectangle 41 | Type=1 | L=48.0 T=362.0 W=864.0 H=46.0 | Text=
+31. Oval 42 | Type=1 | L=60.0 T=371.0 W=28.0 H=28.0 | Text=
+32. TextBox 43 | Type=17 | L=60.0 T=371.0 W=28.0 H=29.1 | Text=6
+33. TextBox 44 | Type=17 | L=102.0 T=369.0 W=210.0 H=29.1 | Text=REVIEW
+34. TextBox 45 | Type=17 | L=102.0 T=385.0 W=792.0 H=29.1 | Text=Ownership, risks, evidence and assumptions requiring agreement
+35. Rounded Rectangle 46 | Type=1 | L=48.0 T=414.0 W=864.0 H=46.0 | Text=
+36. Oval 47 | Type=1 | L=60.0 T=423.0 W=28.0 H=28.0 | Text=
+37. TextBox 48 | Type=17 | L=60.0 T=423.0 W=28.0 H=29.1 | Text=7
+38. TextBox 49 | Type=17 | L=102.0 T=421.0 W=210.0 H=29.1 | Text=CLOSE
+39. TextBox 50 | Type=17 | L=102.0 T=437.0 W=792.0 H=29.1 | Text=Approve the next increment and the assurance pilot
+40. Rounded Rectangle 51 | Type=1 | L=48.0 T=474.0 W=864.0 H=34.0 | Text=
+41. TextBox 52 | Type=17 | L=60.0 T=474.0 W=840.0 H=29.1 | Text=Procedure rule: align how the room will decide first; WBS and KPI appear only after capabilities and pilot scope are clear.
+42. TextBox 53 | Type=17 | L=920.0 T=9.0 W=18.0 H=12.0 | Text=2
+43. MeetingNavRange1 | Type=1 | L=858.0 T=114.0 W=50.0 H=17.0 | Text=p.6–8
+44. MeetingNavRange2 | Type=1 | L=858.0 T=166.0 W=50.0 H=17.0 | Text=p.9
+45. MeetingNavRange3 | Type=1 | L=858.0 T=218.0 W=50.0 H=17.0 | Text=p.10–18
+46. MeetingNavRange4 | Type=1 | L=858.0 T=270.0 W=50.0 H=17.0 | Text=p.19–32
+47. MeetingNavRange5 | Type=1 | L=858.0 T=322.0 W=50.0 H=17.0 | Text=p.33
+48. MeetingNavRange6 | Type=1 | L=858.0 T=374.0 W=50.0 H=17.0 | Text=p.34–36
+49. MeetingNavRange7 | Type=1 | L=858.0 T=426.0 W=50.0 H=17.0 | Text=p.37–38
+50. ReferenceToolbarPanelV13 | Type=1 | L=526.0 T=51.0 W=392.0 H=42.0 | Text=
+51. ProcedureGuideCardV13 | Type=1 | L=538.0 T=56.0 W=176.0 H=32.0 | Text=
+52. ProcedureGuideAccentBarV13 | Type=1 | L=538.0 T=56.0 W=4.0 H=32.0 | Text=
+53. ProcedureGuideLabelV13 | Type=17 | L=550.0 T=63.0 W=152.0 H=8.2 | Text=MEETING PROCEDURE
+54. ProcedureGuideRangeV13 | Type=17 | L=550.0 T=75.0 W=152.0 H=10.5 | Text=Guide  p.3–5
+55. GlossaryGuideCardV13 | Type=1 | L=724.0 T=56.0 W=184.0 H=32.0 | Text=
+56. GlossaryGuideAccentBarV13 | Type=1 | L=724.0 T=56.0 W=4.0 H=32.0 | Text=
+57. GlossaryGuideLabelV13 | Type=17 | L=736.0 T=63.0 W=160.0 H=8.2 | Text=ABBREVIATIONS
+58. GlossaryGuideRangeV13 | Type=17 | L=736.0 T=75.0 W=160.0 H=10.5 | Text=Glossary  p.39–41

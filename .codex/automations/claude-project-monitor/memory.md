@@ -1,3 +1,14 @@
+2026-06-07 run (~8m)
+
+- Read `C:\Users\namma\.claude\AGENTS.md`, automation memory, and `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md`, then inspected recent activity across the workspace, autosync/init logs, `itt_work`, `plm_slide_work`, and the live AVEVA/ITT document folders under `D:\이력서\`.
+- AVEVA project memory is now current through `V14`: `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\aveva-plm-application-deck.md` was updated on `2026-06-07 02:01:35` and matches the live canonical deck chain `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V14.pptx` -> `...\Future_Industrial_PLM_Meeting_Deck_EN.pptx` -> `...\Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (all `40,749,477` bytes, `2026-06-07 01:57:19-21`) plus `...\Future_Industrial_PLM_Meeting_Deck_EN_Final.pdf` (`4,288,639` bytes, `01:58:41`). Supporting QA exists at `C:\Users\namma\.claude\plm_slide_work\v14_slide7_stack_cards_verify.txt`.
+- The main remaining documentation drift is `C:\Users\namma\.claude\AGENTS.md`: it still points to `projects/C--Users-namma--Codex/memory/` and `.Codex\itt_work` / `.Codex\plm_slide_work`, while the active workspace uses `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\`, `C:\Users\namma\.claude\itt_work\`, and `C:\Users\namma\.claude\plm_slide_work\`.
+- Historical AVEVA version files are not immutable on disk, so older metadata recorded in memory should not be treated as frozen checkpoints: e.g. `...\Future_Industrial_PLM_Meeting_Deck_EN_V12.pptx` is now `45,741,932` bytes with LastWriteTime `2026-06-07 01:34:34`, which differs from the earlier V12 save recorded in project memory. The current V14/default/final files themselves are consistent.
+- `C:\Users\namma\.claude\itt_work\dump_full.txt` is still a stale diagnostic artifact. It still does not show a distinct Intellian detail block and should not be used as proof of the current resume state; rely on the canonical files in `D:\이력서\ITT Cannon\` instead.
+- Auto project tracking looks healthier than before: sampled folders under `C:\Users\namma\.claude\projects\C--Users-namma--claude\` now do have `.git` directories, consistent with `cache\git-auto-init\watcher.log`.
+- Git autosync remains healthy through `2026-06-07 02:02:47` in `C:\Users\namma\.claude\cache\git-autosync\autosync.log`.
+- No live `WINWORD` or `POWERPNT` processes were present during this run, so there was no active orphaned Office-process risk at inspection time.
+
 2026-06-07 run (~10m)
 
 - Read `C:\Users\namma\.claude\AGENTS.md`, automation memory, and `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md`, then broadly inspected recent workspace changes, project memory, autosync/init logs, `itt_work`, `plm_slide_work`, and the live AVEVA/ITT document folders under `D:\이력서\`.
