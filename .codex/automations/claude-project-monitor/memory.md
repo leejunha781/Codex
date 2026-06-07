@@ -131,3 +131,10 @@
 - Replaced the right-side plain text list with a structured card/table panel containing five color-coded vendor cards: AVEVA, Siemens, Dassault, Hexagon, and PTC. Kept the left positioning map and bottom takeaway unchanged.
 - Saved `Future_Industrial_PLM_Meeting_Deck_EN_V14.pptx`, default `Future_Industrial_PLM_Meeting_Deck_EN.pptx`, and `Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (`40,749,477` bytes, saved around `2026-06-07 01:57:19-21`); exported final PDF (`4,288,639` bytes, `2026-06-07 01:58:41`).
 - QA: rendered all 41 pages to `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v14_slide7_stack_cards_render\`; visually checked p.1, p.2, p.7, and p.41. COM verification confirmed 41 slides, V14 card shapes present, old p.7 list-shape names absent, and key redesigned text present.
+
+2026-06-07 run (~8m)
+
+- Rebuilt AVEVA deck p.2 agenda layout and saved as V15.
+- Removed the floating top reference cards and integrated them into the main agenda flow as same-size rows. The p.2 flow is now numbered 1-9: Meeting Procedure, Current State, Public Signals, Winning Ideas, Proposal + Delivery, Future-State Compare, Review, Close, and Abbreviations / Glossary.
+- Saved `Future_Industrial_PLM_Meeting_Deck_EN_V15.pptx`, default `Future_Industrial_PLM_Meeting_Deck_EN.pptx`, and `Future_Industrial_PLM_Meeting_Deck_EN_Final.pptx` (about `40,749,451-453` bytes, `2026-06-07 21:40:41-42`); exported final PDF (`4,288,159` bytes, `2026-06-07 21:42:06`).
+- QA: rendered all 41 pages to `C:\Users\namma\.claude\plm_slide_work\future_direction_meeting_v15_slide2_agenda_1_9_render\`; visually checked p.1, p.2, p.7, and p.41. COM verification confirmed 41 slides, V15 agenda rows present, old floating reference cards absent, and numbers 1-9 present.
