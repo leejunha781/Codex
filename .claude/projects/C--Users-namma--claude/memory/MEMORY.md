@@ -3,6 +3,7 @@
 - [Office docs via COM](office-docs-com-automation.md) — no Python/Node/LibreOffice here; edit pptx/docx via PowerShell + Office COM (with gotchas)
 - [AVEVA PLM application deck](aveva-plm-application-deck.md) — English exec deck for AVEVA Marine PLM SME role, target HD Hyundai, in D:\이력서
 - [ITT Cannon FAE resume](itt-cannon-fae-resume.md) — English resume for ITT Cannon Connector Korea FAE (via Adecco), D:\이력서\ITT Cannon
+- [MoaComm Korea HW resume](moacomm-korea-hw-resume.md) — Korean resume for 모아컴코리아 HW 설계 부장급, canonical ..._최종_v2.docx in D:\이력서\모아컴코리아 - HW 개발
 
 ## Workspace tooling (added 2026-06-06)
 
