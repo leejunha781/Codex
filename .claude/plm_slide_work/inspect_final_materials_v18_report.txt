@@ -1,9 +1,9 @@
 ﻿FILE METADATA
 D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V18.pptx | 40753839 bytes | 2026-06-09 13:14:14
-D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_EN.docx | 32129 bytes | 2026-06-09 13:51:03
-D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_EN.pdf | 185343 bytes | 2026-06-09 13:51:04
-D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_KO.docx | 34693 bytes | 2026-06-09 13:51:47
-D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_KO.pdf | 514127 bytes | 2026-06-09 13:51:51
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_EN.docx | 32613 bytes | 2026-06-09 13:56:01
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_EN.pdf | 164282 bytes | 2026-06-09 13:56:03
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_KO.docx | 33981 bytes | 2026-06-09 13:56:49
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_KO.pdf | 380000 bytes | 2026-06-09 13:56:52
 
 DECK INSPECTION
 Slides: 42
@@ -60,7 +60,7 @@ Slide titles:
 
 EN GUIDE
 Path: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_EN.docx
-Pages: 10
+Pages: 8
 Paragraphs: 131
 Tables: 0
 Characters: 17065
@@ -89,7 +89,7 @@ Detected headings / section markers:
 
 KO GUIDE
 Path: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_KO.docx
-Pages: 10
+Pages: 11
 Paragraphs: 131
 Tables: 0
 Characters: 9894
