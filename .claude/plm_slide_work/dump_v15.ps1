@@ -2,18 +2,8 @@ $ErrorActionPreference = "Stop"
 $path = "D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V15.pptx"
 $out  = "C:\Users\namma\.claude\plm_slide_work\dump_v15.txt"
 
-try {
-    $pp = [System.Runtime.InteropServices.Marshal]::GetActiveObject("PowerPoint.Application")
-} catch {
-    Start-Process "POWERPNT.EXE" -ArgumentList "/automation"
-    $tries = 0
-    do {
-        Start-Sleep -Milliseconds 800
-        try { $pp = [System.Runtime.InteropServices.Marshal]::GetActiveObject("PowerPoint.Application") } catch { $pp = $null }
-        $tries++
-    } while ($pp -eq $null -and $tries -lt 15)
-}
-if ($pp -eq $null) { throw "Could not start PowerPoint COM" }
+$pp = New-Object -ComObject PowerPoint.Application
+try { $pp.Visible = $true } catch {}
 $pres = $pp.Presentations.Open($path, $true, $false, $false)  # ReadOnly, Untitled=false, WithWindow=false
 
 $sb = New-Object System.Text.StringBuilder
