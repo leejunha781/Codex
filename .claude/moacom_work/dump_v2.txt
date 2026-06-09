@@ -1,0 +1,348 @@
+﻿=== FILE: D:\이력서\모아컴코리아 - HW 개발\이준하_모아컴코리아_HW설계_최종_v2.docx
+PAGES: 14  WORDS: 4179  TABLES: 2
+
+[001P] style=표준 font=맑은 고딕/14 bold=-1 lsr=0 sa=0 | ( 기본사항
+[002T] style=머리글 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 지 원 회 사
+[003T] style=일반 (웹) font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 모아컴코리아㈜
+[004T] style=머리글 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | /
+[005T] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[006T] style=머리글 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 지 원 분 야
+[007T] style=일반 (웹) font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | HW 설계
+[008T] style=머리글 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[009T] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[010T] style=머리글 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 성       명
+[011T] style=일반 (웹) font=맑은 고딕/10 bold=9999999 lsr=0 sa=0 | 이 준 하  (1974년생 / 만52세)
+[012T] style=일반 (웹) font=맑은 고딕/10 bold=0 lsr=0 sa=5 | 
+[013T] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[014T] style=머리글 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 총   경  력
+[015T] style=일반 (웹) font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 21년 7개월
+[016T] style=머리글 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 관 련 경 력
+[017T] style=일반 (웹) font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 약 18년
+[018T] style=일반 (웹) font=맑은 고딕/10 bold=0 lsr=0 sa=5 | 
+[019T] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[020T] style=머리글 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 주       소
+[021T] style=일반 (웹) font=맑은 고딕/9 bold=0 lsr=0 sa=0 | 경기도 군포시 광정로 25-25, 퇴계주공아파트 355동 2005호
+[022T] style=일반 (웹) font=맑은 고딕/10 bold=0 lsr=0 sa=5 | 
+[023T] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[024T] style=머리글 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 휴  대  폰
+[025T] style=일반 (웹) font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 010-2731-4581
+[026T] style=머리글 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[027T] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[028T] style=머리글 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | E-mail
+[029T] style=일반 (웹) font=맑은 고딕/10 bold=0 lsr=0 sa=0 | Leejunha781@gmail.com
+[030T] style=일반 (웹) font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[031T] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[032T] style=머리글 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 업  무  상
+[033T] style=머리글 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 주 요 강 점
+[034T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 안테나 제어·신호처리 모듈의 Digital H/W 회로 설계, 설계검토, board bring-up, 디버깅 및 개발관리 수행 역량
+[035T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | FPGA/DFE, CPU 제어부, Flash/Memory, ADC/DAC, Ethernet/SPI/DDR/PCIe 등 핵심 인터페이스 요구사항 정의 및 회로 리스크 분석
+[036T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | Ku-band ESA/Phased Array 안테나 검증 경험을 바탕으로 beam steering/control, calibration, EIRP/G/T/NF/C/N0 등 성능지표를 HW/RF 이슈로 해석
+[037T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | RF Module, Transceiver, UCU, Repeater, 5G/LTE RU, Digital&RF Module 구조를 Link/Power Budget 관점에서 설계 검토
+[038T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | RF/안테나/제어전자부/전원/네트워크를 연결해 field issue 재현, 원인분석, ECO/BOM 변경 및 양산 release 판단자료까지 주도
+[039T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 국방 통신/C4I 및 위성통신 단말 개발에서 고객 요구사항, ICD, 시험계획, FAT/SAT, 양산검증을 설계 산출물로 체계화
+[040T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 소수 정예 기술조직에 적합한 실무형 HW 설계 리더십: 직접 분석하고, 설계 리스크를 정리하며, 부서 간 의사결정을 이끄는 개발관리 역량
+[041T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 대양전기공업 약 15년: 국방 함정/잠수함 통신체계 PM/PL, CPU/I/O Board·Flash/Memory 회로 설계, RF 통신장비 성능시험, FAT/SAT 및 고객 인수 수행
+[042T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 인텔리안: LEO ESA 안테나의 제어전자부, FPGA/DFE·ADC/DAC, 네트워크, RF 성능을 통합 검증하고 field issue 분석 및 양산 안정화 주도
+[043T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | Eutelsat OneWeb, Marlink/STW 등 글로벌 고객과 영어 기반 Technical Review 및 품질 이슈 회의를 수행한 해외 고객 대응 역량
+[044T] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[045T] style=머리글 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 업 무 관 련
+[046T] style=머리글 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 보 유 기 술
+[047T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | [Digital H/W] FPGA/DFE 구조, ADC/DAC, CPU Board, Flash/Memory, SPI, EMIF, RMII/MDIO Ethernet, DDR/PCIe, USB, EtherCAT 회로·인터페이스 설계검토 및 디버깅
+[048T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | [RF/MW·Transceiver] Tx/Rx 경로, UCU/주파수 변환, BFIC/beam control, LO/clock, gain plan, NF, linearity, phase noise, EIRP/G/T/C/N0, Link/Power Budget 기반 RF 장비 Digital H/W 분석
+[049T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | [Antenna Control] Ku-band ESA/Phased Array 안테나 제어, beam steering/control, beamforming, calibration, scan loss, pointing error, RHCP/axial ratio, 안테나/제어전자부/네트워크 연계 검증
+[050T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | [HW/PCB] ARM Cortex-M3/Cortex-R 기반 CPU/I/O Board, 제어보드, RF/MW 연계 보드, 전원·신호 인터페이스, Flash/Memory 회로, OrCAD/Allegro/Altium 회로·PCB 설계 및 layout review
+[051T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | [Repeater·5G/LTE] 5G/LTE RU 및 디지털 광중계기 구조 이해, RF Repeater/NMS/SNMP remote control, Ethernet 기반 통신 성능시험, Wireshark/iperf, board-level debug
+[052T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | [시험·개발관리] Board bring-up, 기능시험, EMI/EMC, 진동·방수·환경시험, FAT/SAT, field test, pilot build, ECO/BOM 변경관리, defect log, release readiness 및 양산검증
+[053T] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | [방산·문서·협업] SRR/SDR, ICD, 시험계획서, 시험절차서, 시험성적서, 기술보고서, VCRM/evidence package 작성 및 고객·연구·품질·생산·협력사 기술조율
+[054T] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[055P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 
+[056P] style=표준 font=맑은 고딕/14 bold=-1 lsr=0 sa=0 | ( 학력 사항
+[057P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 부산대학교 대학원		/ 전자전기공학과 석사 졸업	/ 2013년 09월 ~ 2018년 08월
+[058P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 울산대학교		/ 제어계측공학과 졸업		/ 1992년 03월 ~ 2002년 02월
+[059P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 동천고등학교 (부산)	/ 자연계열 졸업			/ 1989년 03월 ~ 1992년 02월
+[060P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 
+[061P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 
+[062P] style=표준 font=맑은 고딕/14 bold=-1 lsr=0 sa=0 | ( 경력 사항
+[063P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | ㈜인텔리안테크놀로지스 / 판교연구소 SIT팀, Senior Engineer 	/ 2023년 03월 ~ 2025년 07월
+[064P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | ㈜제노코		 / 시스템기술연구소, Lead Engineer	/ 2022년 08월 ~ 2023년 03월
+[065P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 대양전기공업㈜	 / R&BD연구소, Principal Leader · PM 	/ 2007년 05월 ~ 2022년 04월
+[066P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | ㈜엑시큐어하이트론 	 / 연구소, Engineer			/ 2006년 01월 ~ 2007년 05월
+[067P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | ㈜에세텔		 / 연구소,대리				/ 2005년 06월 ~ 2005년 10월
+[068P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | ㈜네스랩		 / 연구소,대리				/ 2004년 01월 ~ 2005년 05월
+[069P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[070P] style=표준 font=맑은 고딕/14 bold=-1 lsr=0 sa=0 | ( 병역 사항
+[071P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 만기제대 [육군 / 병장 / 유선정비]    복무기간 : 1993년 12월 ~ 1996년 02월
+[072P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 
+[073P] style=표준 font=맑은 고딕/14 bold=-1 lsr=0 sa=0 | ( 상세 경력 사항
+[074P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 1. ㈜인텔리안테크놀로지스     부장     [기간: 2023.03 ~ 2025.07],     2년 5개월
+[075P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 회사소개 [ 위성통신 안테나 전문 글로벌 기업, KOSDAQ 상장, 주요 Item : LEO/GEO 위성통신 단말 및 ESA 안테나 ]
+[076P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 담당 분야 : Ku-band LEO 위성통신 단말/ESA 안테나 제어·신호처리 모듈의 통합검증 및 Digital H/W 설계 분석·디버깅, 양산 전환 개발관리, 글로벌 고객 대응
+[077P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[078P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 1) 주요업무
+[079P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | Eutelsat OneWeb 대상 Ku-band ESA 안테나 및 LEO 위성통신 단말의 안테나 제어·신호처리 모듈 통합검증 수행
+[080P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | RF/안테나 서브시스템, 제어전자부, DFE/ADC-DAC interface, 전원부, 네트워크 인터페이스, SW log, field data를 연결한 Digital H/W 수준 검증 수행
+[081P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | Phased Array / ESA 기반 beam steering/control, beamforming, calibration, scan loss, beam pointing error, axial ratio, RHCP 등 안테나 제어 성능지표 분석
+[082P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | EIRP, G/T, NF, C/N0, Power Budget, 수신품질, throughput, blockage, handover 영향을 Link Budget 관점에서 검토하고 HW/RF 개선 항목으로 전환
+[083P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | RF Module의 Tx/Rx 경로, BFIC/beam control, LO/clock, DFE, ADC/DAC interface, gain plan, noise figure, linearity, phase noise, EMI/EMC, power integrity 설계 리스크 검토
+[084P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | FPGA/DFE, CPU 제어부, Flash/Memory, Ethernet 등 디지털 회로 인터페이스 관점에서 board-level debug, defect log, ECO/BOM 변경관리 및 release 판단자료 작성
+[085P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | Wireshark/iperf 기반 TCP/UDP 통신 성능시험, SW log 분석, board bring-up, EMI/EMC·진동·방수 시험 대응 및 pilot build 양산검증 수행
+[086P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | Eutelsat OneWeb, 독일 Marlink/STW 등 글로벌 고객 및 파트너 대상 영어 기반 Weekly/Monthly Meeting, Technical Review, 품질 이슈 회의 대응
+[087P] style=표준 font=맑은 고딕/12 bold=0 lsr=0 sa=0 | 
+[088P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 2) 추진내용 및 성과
+[089P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | Ku-band ESA 기반 안테나 제어·신호처리 모듈 통합검증 수행
+[090P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | Eutelsat OneWeb 위성통신 단말 개발·양산 단계에서 RF/안테나, 제어전자부, DFE/ADC-DAC interface, 네트워크, 전원, SW log, field data를 종합 분석하며 안테나 제어 및 신호처리 모듈의 통합검증을 수행하였습니다. 단품 보드 확인에 머물지 않고, 실제 운용환경에서 수신품질, 링크 안정성, 네트워크 성능, blockage recovery, handover 이슈가 발생하는 원인을 HW/RF 및 소프트웨어 제어 조건까지 연결해 분석하였습니다.
+[091P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | Phased Array Antenna / ESA 제어 성능지표 분석 및 시험항목 전환
+[092P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | beam steering/control, beamforming, calibration, scan loss, beam pointing error, axial ratio, RHCP 등 phased array antenna 핵심 성능지표를 수신품질, throughput, field issue와 연결해 분석하였습니다. array factor, steering phase, pointing error, reacquisition time 등 ESA 운용 특성을 시험·검증 포인트로 정리하고 양산검증 항목에 반영하였습니다.
+[093P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | FPGA/DFE·CPU·Flash/Memory 연계 Digital H/W 설계 리스크 검토
+[094P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | DFE, ADC/DAC interface, Ethernet, 전원/clock, CPU 제어부, Flash/Memory, SW log를 함께 검토하여 안테나 제어 및 신호처리 모듈의 설계 리스크를 식별하였습니다. 수신품질 저하, throughput 저하, handover 불안정, blockage 발생 시 RF/안테나/제어부/네트워크 중 어느 영역에서 원인이 발생하는지 구분하고 개선 항목으로 전환하였습니다.
+[095P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | RF Module 및 Transceiver 관점의 HW/RF 설계검토
+[096P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | Tx/Rx 경로, BFIC/beam control, LO/clock, DFE, ADC/DAC interface, gain plan, noise figure, linearity, phase noise, EMI/EMC, power integrity를 종합적으로 검토하여 RF/안테나/제어전자부 간 설계 리스크를 식별하였습니다. RF 성능지표와 HW 회로 안정성, 전원 품질, 인터페이스 margin, SW 제어 조건을 함께 검토해 통합 단계의 문제를 조기에 파악하였습니다.
+[097P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | Field issue 분석 및 양산검증 개발관리 체계 운영
+[098P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | field issue 발생 시 defect log, SW log, 시험데이터, 네트워크 packet, field condition을 종합 분석하고, 문제 재현 조건 정의, 원인 분석, 개선안 수립, 검증 결과 정리, release decision 자료 작성까지 수행하였습니다. 400여 항목 설계검증 체크리스트를 기반으로 RF/안테나, 제어전자부, 네트워크, 환경, 양산 항목을 반복 검증하고 출하 판단 근거로 관리하였습니다.
+[099P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 글로벌 고객 기술 대응 및 HW/RF 협업 관리
+[100P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | Eutelsat OneWeb, Marlink/STW 등 글로벌 고객 및 파트너와 영어 기반 기술회의를 수행하며 field issue, 품질 이슈, 검증 결과, 개선현황을 설명하고 기술적 대응을 수행하였습니다. 연구, 품질, 생산, 협력사, 고객 간 이슈를 요구사항, 원인분석, corrective action, 검증자료, release 판단자료로 연결하여 프로젝트 리스크를 관리하였습니다.
+[101P] style=표준 font=맑은 고딕/12 bold=0 lsr=0 sa=0 | 
+[102P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 3) 퇴직사유
+[103P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 인텔리안테크놀로지스에서는 Eutelsat OneWeb 대상 LEO 위성통신 단말 및 ESA 안테나의 안테나 제어·신호처리 모듈 통합검증, field issue 분석, 양산검증, 글로벌 고객 대응을 수행하며 RF 장비 Digital H/W 분석 역량을 축적하였습니다. 이후에는 ESA 안테나 제어, Link/Power Budget 해석, FPGA/DFE·CPU 제어부 분석, HW-RF 통합검증으로 다져 온 역량을 방산·5G RF 장비의 Digital H/W 설계와 개발관리 직무에서 보다 직접적으로 발휘하고자 퇴직을 결정하였습니다.
+[104P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[105P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 2. ㈜제노코     수석연구원     [기간: 2022.08 ~ 2023.03],     0년 8개월
+[106P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 회사소개 [ 위성·항공 전자장비, 국책·방산 과제 수행 전문기업, KOSDAQ 상장 ]
+[107P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 담당 분야: 위성·항공 전자장비 PL, 정부·방산형 과제 운영, 보드 수준 설계검토 및 검증 산출물 관리
+[108P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[109P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 1) 주요업무
+[110P] style=목록 단락 font=맑은 고딕/10 bold=9999999 lsr=0 sa=0 | 위성·항공 전자장비 프로젝트 PL로서 시스템 요구사항을 보드 사양, 전원/신호 인터페이스, HW/SW 사양, 시험 요구사항, 기술문서로 전환
+[111P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 국책·방산형 과제의 제안요청서 분석, 기술제안서, 사업수행계획서, WBS, 원가산출, 시험계획서, 시험절차서, 시험성적서 작성
+[112P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | PCB 회로 및 layout review, power/signal integrity, EMI/EMC, 환경시험 요구사항 검토
+[113P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 외부 시험기관, 검사기관, 고객사 대상 기술 질의 응답 및 검증자료 대응
+[114P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 한화시스템 위상배열안테나 연관 체계 설계 참여를 통한 phased array 기반 전자장비 인터페이스 및 검증체계 이해
+[115P] style=표준 font=맑은 고딕/12 bold=0 lsr=0 sa=0 | 
+[116P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 2) 추진내용
+[117P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 시스템 요구사항을 HW/SW 사양 및 시험 요구사항으로 전환
+[118P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 위성·항공 전자장비 개발 과정에서 고객 요구사항과 상위 시스템 요구사항을 보드 사양, 전원/신호 인터페이스, HW/SW 사양, 시험조건, 기술문서로 구체화하였습니다. 이를 통해 요구사항 분석부터 설계검토, 시험자료 작성, 검증 evidence 관리까지 연결되는 시스템 엔지니어링 경험을 확보하였습니다.
+[119P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 위상배열안테나 연관 체계 설계 및 검증 관점 확보
+[120P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 한화시스템 위상배열안테나 연관 체계 설계에 참여하며 phased array 기반 전자장비에서 인터페이스 정합성, 전원/신호 품질, 시험 readiness, 문서 기반 검증체계가 중요하다는 점을 체득하였습니다. 이는 모아컴코리아의 안테나 제어·신호처리 모듈, RF/IF Sub Module, Digital&RF Module 개발에서 HW/RF/제어부 간 설계 연계와 검증 항목 도출에 직접 활용 가능한 경험입니다.
+[121P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 국책·방산 과제 산출물 작성 및 기술 대응
+[122P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 기술제안서, 사업수행계획서, WBS, 원가산출, 시험계획서, 시험절차서, 시험성적서, 기술보고서 등 과제 산출물을 작성하고, 외부 시험기관 및 검사기관의 기술 질의에 대응하였습니다. SRR/SDR 단계에서 요구되는 요구사항 검토, 설계검토, 시험계획, 검증자료 준비와 유사한 업무를 수행하였습니다.
+[123P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[124P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | PCB / HW 설계검토 및 환경시험 대응
+[125P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | PCB 회로와 layout review, power/signal integrity, EMI/EMC, 환경시험 계획을 검토하고, 설계 변경 시 발생 가능한 일정·품질·기술 리스크를 관리하였습니다. 위성·항공 전자장비 특성상 고신뢰성, 환경 내구성, 시험 증빙이 중요했으며, 이를 문서와 시험 결과로 체계화하는 업무를 수행하였습니다.
+[126P] style=표준 font=맑은 고딕/12 bold=0 lsr=0 sa=0 | 
+[127P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 3) 퇴직사유
+[128P] style=목록 단락 font=맑은 고딕/10 bold=9999999 lsr=0 sa=0 | 제노코에서는 위성·항공 전자장비 PL로서 국책·방산형 과제 운영, 보드 설계검토, 시험문서 작성, 환경시험 및 검사기관 대응 경험을 확보하였습니다. 다만 당시 담당 업무는 위성·항공 전자장비와 과제관리 중심이었으며, 실제 LEO 위성통신 단말 및 ESA 안테나 상용제품 개발·양산 단계에서 시스템 통합검증 경험을 더욱 확대할 수 있는 기회가 필요하다고 판단하였습니다. 이에 Eutelsat OneWeb 글로벌 프로젝트를 수행하는 인텔리안테크놀로지스로 이직하여 ESA 단말 통합검증, field issue 분석, 글로벌 고객 대응, 양산검증 역량을 강화하고자 하였습니다.
+[129P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[130P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 3. 대양전기공업㈜     차장     [기간: 2007.05 ~ 2022.04],     14년 11개월
+[131P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 회사소개 [ 국방·조선용 통신/C4I 시스템 전문 중견기업, KOSPI 상장, 함정·잠수함 통신체계 다수 수주 ]
+[132P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 담당 분야: 국방 통신·C4I 시스템 PM/PL, CPU/I/O Board·Flash/Memory 주변회로·통신 인터페이스 회로 및 PCB 설계, RF 통신장비 시험 및 시스템 통합 인수 총괄
+[133P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[134P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 1) 주요업무
+[135P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 장보고-II/III급 잠수함 및 수상함 통신체계, 함내망, 방송, CCTV/VOD, C4I 연동 시스템 PM/PL 수행
+[136P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 고객 요구사항을 시스템 아키텍처, Digital H/W 사양, CPU/I/O Board, ICD, 시험계획, FAT/SAT, 고객 인수 기준으로 구조화
+[137P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | ARM Cortex-M3 기반 CPU Board, I/O Module, 센서·통신 인터페이스, Flash/Memory 주변회로, 전원·제어회로, PCB 설계 및 임베디드 C 개발
+[138P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | VHF/UHF/HF 통신장비 RF tuning, 송수신 출력, 수신감도, 주파수 정렬, 링크 품질, 채널 안정성, 안테나/케이블/장비 인터페이스 시험 수행
+[139P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 시스템 통합시험, FAT/SAT, 시운전, 항해시험, 고객 인수시험, 품질 이슈 회의, 변경관리 및 협력사 기술조율 수행
+[140P] style=표준 font=맑은 고딕/12 bold=0 lsr=0 sa=0 | 
+[141P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 2) 추진내용
+[142P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 국방 통신체계 요구사항 분석 및 Digital H/W 아키텍처 구조화
+[143P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 잠수함 및 수상함 통신체계 프로젝트에서 고객 요구사항을 분석하고, 이를 시스템 구성, CPU/I/O Board, 통신 인터페이스, 전원·제어회로, HW/SW 사양, ICD, 시험계획, FAT/SAT 기준으로 전환하였습니다. 복수 장비와 외부 체계가 연동되는 국방 통신환경에서 요구사항 누락, 인터페이스 불일치, 시험 기준 불명확성을 최소화하였습니다.
+[144P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | CPU/I/O Board, Flash/Memory 및 임베디드 제어 HW 개발 경험
+[145P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | ARM Cortex-M3 기반 CPU Board, I/O Module, 센서·통신 인터페이스, Flash/Memory 주변회로, 전원·제어회로, PCB 설계 및 임베디드 C 개발을 수행하였습니다. 이를 통해 안테나 제어 모듈에 필요한 CPU 제어부, 디지털 I/O, 통신 인터페이스, 전원 안정성, board bring-up, 기능시험, 회로 디버깅 기본기를 확보하였습니다.
+[146P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | RF 통신장비 성능 측정 및 안테나/장비 인터페이스 tuning 경험
+[147P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | VHF/UHF/HF 통신장비의 송수신 출력, 수신감도, 주파수 정렬, 링크 품질, 채널 안정성을 확보하기 위해 Signal Generator, Spectrum/Signal Analyzer, RF Power Meter, Dummy Load 등을 활용하여 RF tuning 및 성능 측정을 수행하였습니다. 출력 편차, 감도 저하, 채널별 정합 오차, 안테나/케이블/장비 인터페이스 영향을 분석하고 시험 성적서 및 기술문서에 반영하였습니다.
+[148P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | C4I 및 전술데이터링크 연동 기반 신호처리·네트워크 검증
+[149P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | MOSCOS 연동 및 LINK-11 기반 C4I 전술데이터링크 검토를 수행하며 데이터 무결성, 지연, 통신 인터페이스, 네트워크 안정성, 현장 운용성을 검증하였습니다. 안테나, 통신장비, 네트워크가 결합된 체계에서 신호처리와 인터페이스를 검증한 이 경험은 Digital&RF Module, Repeater/NMS, 안테나 제어·신호처리 모듈의 시스템 통합검증에 바로 적용 가능합니다.
+[150P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | FAT/SAT, 시운전, 항해시험 및 고객 인수시험 개발관리
+[151P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 함내망, 방송, CCTV/VOD, 전장 연동 프로젝트에서 FAT/SAT, 시운전, 항해시험, 고객 인수시험을 수행하였고, 현장에서 발생하는 통신 불안정, 인터페이스 오류, 장비 간 호환성 문제를 분석하여 개선하였습니다. 시험계획서, 절차서, 성적서, 기술보고서 작성과 고객/조선소/협력사 기술회의 운영을 통해 현장 중심의 검증·인수 대응 역량을 확보하였습니다.
+[152P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 프로젝트 및 HW 설계 이슈 개발관리
+[153P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 프로젝트 진행회의, 품질 이슈 회의, 고객/조선소/협력사 기술회의를 운영하며 변경관리, defect log, risk register, 일정·품질·납기 조율을 수행하였습니다. 이는 모아컴코리아 HW 설계 직무가 요구하는 Digital H/W 설계 분석·디버깅 및 개발관리 역량과 직접 맞닿아 있는 경험입니다.
+[154P] style=표준 font=맑은 고딕/12 bold=0 lsr=0 sa=0 | 
+[155P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 3) 퇴직사유
+[156P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 대양전기공업에서는 약 15년간 국방 통신/C4I 시스템 PM/PL로 근무하며 요구사항 분석, CPU/I/O Board 및 PCB 설계, Flash/Memory 주변회로, RF 측정, 시스템 통합시험, FAT/SAT, 고객 인수시험까지 전 과정을 수행하였습니다. 장기 근속을 통해 방산 통신체계와 Digital H/W 개발관리 역량을 확보하였고, 이를 위성·항공 전자장비 분야로 확장하고자 ㈜제노코로 이직하였습니다.
+[157P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[158P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 4. ㈜엑시큐어하이트론     대리     [기간: 2006.01 ~ 2007.05],     1년 5개월
+[159P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 회사소개 [ CCTV 카메라, IR Dome Camera 등 영상보안장비 개발·생산 전문기업 ]
+[160P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 담당 분야: ARM 기반 CMOS CCTV Camera / IR Dome Camera 제어보드 개발 및 제품 안정화
+[161P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[162P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 1) 주요업무
+[163P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | CCTV 시스템, IR Dome Camera, ARM 기반 CMOS CCTV Camera 제어보드 개발
+[164P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | CMOS image sensor 연동, 영상 신호 경로, 전원·신호 인터페이스, 외부 I/O 회로 디버깅
+[165P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 보드 bring-up, 기능시험, 신호 측정, 초기 양산 불량 분석, EMC/RoHS 인증 대응
+[166P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 제어보드, 센서, 영상처리 회로, 전원부, 외부 인터페이스 간 시스템 안정성 검토
+[167P] style=표준 font=맑은 고딕/12 bold=0 lsr=0 sa=0 | 
+[168P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 2) 추진내용
+[169P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | ARM 기반 제어보드 개발 및 bring-up 수행
+[170P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | ARM 제어부, CMOS image sensor, 영상처리 회로, 전원부, 외부 인터페이스가 하나의 카메라 플랫폼으로 안정적으로 동작하도록 회로 검토, board bring-up, 기능시험, 신호 측정, 디버깅을 수행하였습니다.
+[171P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 센서·인터페이스·전원 안정성 검증 경험 확보
+[172P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 센서 연동, 영상 신호 경로, 전원 노이즈, 외부 I/O 신호 안정성을 검토하며 보드 레벨의 문제를 계측 기반으로 분석하였습니다. 이는 위성통신 단말의 제어전자부, 센서/인터페이스, 전원·신호 경로 검증에 활용 가능한 기반 경험입니다.
+[173P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 초기 양산 불량 분석 및 인증 대응
+[174P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 초기 양산 단계에서 발생하는 보드 불량, 기능 이상, 인터페이스 오류를 분석하고 EMC/RoHS 인증 대응을 수행하였습니다. 이를 통해 개발 이후 양산 전환 단계에서 요구되는 production readiness 관점을 확보하였습니다.
+[175P] style=표준 font=맑은 고딕/12 bold=0 lsr=0 sa=0 | 
+[176P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 3) 퇴직사유
+[177P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 엑시큐어하이트론에서는 ARM 기반 CMOS CCTV Camera 및 IR Dome Camera 제어보드 개발, 센서 연동, 보드 bring-up, 초기 양산 불량 분석 경험을 확보하였습니다. 이후 통신 단말 및 RF/MW 회로와 연계된 보다 복합적인 시스템 개발 경험을 확장하고자 대양전기공업으로 이직하였습니다.
+[178P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[179P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 5. ㈜에세텔     대리     [기간: 2005.06 ~ 2005.10],     0년 5개월
+[180P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 회사소개 [ ARM 기반 Cellular Mobile 단말 회로/플랫폼 개발 전문기업 ]
+[181P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 담당 분야: ARM 기반 Cellular Mobile 단말 회로 개발 및 RF/디지털/전원 회로 연동 검토
+[182P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[183P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 1) 주요업무
+[184P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | ARM 기반 Cellular Mobile 단말의 CPU 주변회로, RF 회로, 디지털 제어부, 전원부, 외부 인터페이스 디버깅
+[185P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 부팅 안정성, 통신 안정성, 전원 안정성, 신호 경로, 주변회로 연동 문제를 계측 기반으로 확인
+[186P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | RF/디지털/전원/인터페이스 블록 간 연동 검토 및 보드 레벨 이슈 분석
+[187P] style=표준 font=맑은 고딕/12 bold=0 lsr=0 sa=0 | 
+[188P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 2) 추진내용
+[189P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 통신 단말 플랫폼 회로 검토 및 디버깅
+[190P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | ARM 기반 Cellular Mobile 단말에서 CPU, RF 회로, 디지털 제어부, 전원부, 외부 인터페이스가 하나의 통신 단말 플랫폼으로 안정적으로 동작하도록 회로 검토 및 디버깅을 수행하였습니다.
+[191P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | RF/디지털/전원 회로 연동 이해 확보
+[192P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | RF 신호 경로, 전원 노이즈, clock 영향, 인터페이스 조건이 통신 성능과 시스템 안정성에 미치는 영향을 검토하였습니다. 이는 위성통신 단말 시스템에서 RF Module, 제어전자부, 전원부, DFE/ADC-DAC interface를 통합적으로 검토하는 데 필요한 기초 경험입니다.
+[193P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[194P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 3) 퇴직사유
+[195P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 에세텔에서는 ARM 기반 Cellular Mobile 단말 회로 개발과 RF/디지털/전원 회로 연동 검토 경험을 확보하였습니다. 다만 회사 사정 및 프로젝트 지속성 문제로 장기 근무가 어려웠고, 이후 ARM 기반 제어보드와 영상보안장비 양산 안정화 경험을 확장할 수 있는 기회가 있어 ㈜엑시큐어하이트론으로 이직하였습니다.
+[196P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[197P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 6. ㈜네스랩     대리     [기간: 2004.01 ~ 2005.05],     1년 5개월
+[198P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 회사소개 [ 삼성전자 모바일폰 개발 협력사, HDD Phone 등 모바일 단말 회로/플랫폼 개발 ]
+[199P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 담당 분야: 모바일폰 HDD Phone interface, RF/MW 회로, 전원·신호·제어보드 개발 기반 형성
+[200P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[201P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 1) 주요업무
+[202P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 삼성전자 모바일폰 개발 프로젝트 연계 HDD Phone interface 개발 및 디버깅
+[203P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | RF/MW 회로 검토, 전원·신호·제어보드 bring-up, 고속 인터페이스 디버깅
+[204P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | CPU, Memory, Storage Interface, RF, 전원부, 제어보드, 고속 인터페이스 간 연동 검토
+[205P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | Prototype-to-production 전환 과정에서 회로·부품·인터페이스 이슈 사전 식별 및 개선
+[206P] style=표준 font=맑은 고딕/12 bold=0 lsr=0 sa=0 | 
+[207P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 2) 추진내용
+[208P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 모바일 단말 HW 플랫폼 개발 기반 확보
+[209P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 모바일폰에 HDD 저장장치를 연동하고 MPEG 기반 동영상·음원 기능을 구현하는 개발 환경에서 CPU, Memory, Storage Interface, RF, 전원부, 제어보드, 고속 인터페이스가 하나의 제품 플랫폼으로 안정적으로 동작하도록 검토·디버깅하였습니다.
+[210P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | RF/MW 및 고속 인터페이스 디버깅 경험 확보
+[211P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | RF front-end, 주파수 변환부, 송수신 체인의 gain, output power, sensitivity, linearity, phase noise 등 RF 성능 항목을 계측 기반으로 검토하였고, 고속 인터페이스 및 전원·신호 무결성 문제를 분석하였습니다.
+[212P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 양산 전환 관점의 HW 이슈 대응
+[213P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | prototype-to-production 전환 과정에서 회로, 부품, 인터페이스 이슈를 사전에 식별하고 개선하였습니다. 이는 위성통신 단말의 RF/디지털/전원 회로 연동, 고속 인터페이스 검토, 양산 전환 검토 업무의 기반이 되었습니다.
+[214P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[215P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 3) 퇴직사유
+[216P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 네스랩에서는 삼성전자 모바일폰 개발 프로젝트를 통해 RF/MW 회로, HDD interface, 고속 디지털 인터페이스, 전원·신호·제어보드 디버깅 경험을 확보하였습니다. 이후 통신 단말 분야에서 RF/MW 회로 경험을 ARM 기반 Cellular Mobile 단말 개발과 결합하여 보다 직접적인 모바일 통신 플랫폼 개발 역량을 확장하고자 ㈜에세텔로 이직하였습니다.
+[217P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[218P] style=표준 font=맑은 고딕/14 bold=-1 lsr=0 sa=0 | ( 주요성과
+[219P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | Eutelsat OneWeb LEO 위성통신 단말/ESA 안테나 제어·신호처리 모듈 양산검증 체계 운영
+[220P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 400여 항목 설계검증 체크리스트 기반으로 RF/안테나, DFE/ADC-DAC interface, 제어전자부, 네트워크, 환경시험, 양산 항목을 반복 검증하고 release readiness 및 출하 판단 근거 표준화에 기여
+[221P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | Ku-band ESA 단말 field issue 분석 및 Digital H/W 안정화 기여
+[222P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | RF/안테나, 제어전자부, FPGA/DFE 구조, CPU 제어부, 전원부, 네트워크, SW log, 환경시험 결과를 통합 분석하여 문제 재현, 원인 분석, corrective action, ECO/BOM 변경관리 및 재발 방지 수행
+[223P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 안테나 제어 및 Phased Array / ESA 성능지표 기반 검증 항목 도출
+[224P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | EIRP, G/T, NF, C/N0, beamforming, calibration, scan loss, beam pointing, axial ratio, RHCP 등 핵심 성능지표를 수신품질, throughput, blockage recovery 관점으로 분석
+[225P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | RF/MW Transceiver 및 신호처리 모듈 설계 리스크 검토
+[226P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | Tx/Rx 경로, BFIC, LO/clock, DFE, ADC/DAC interface, gain plan, noise figure, linearity, phase noise, EMI/EMC, power integrity 리스크를 RF 장비 Digital H/W 관점에서 검토
+[227P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 장보고-II/III급 잠수함 통신체계 CPU/I/O Board 및 RF 성능 안정화
+[228P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | ARM Cortex-M3 기반 CPU/I/O Board, 통신 인터페이스, 전원·제어회로, VHF/UHF/HF 장비의 출력 편차, 감도 저하, 채널 정합 오차, 안테나/케이블 영향도를 분석·개선하여 운용 환경 통신 신뢰성 확보
+[229P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 국방 통신/C4I 시스템 통합시험 및 고객 인수 개발관리
+[230P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | FAT/SAT, 시운전, 항해시험, 고객 인수시험을 수행하고 HW/SW 사양, ICD, 시험절차서, 성적서 기반으로 시스템 검증 및 납품 안정화
+[231P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 방산·국책 과제 산출물 및 SRR/SDR 대응 기반 확보
+[232P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 기술제안서, 사업수행계획서, WBS, 시험계획서, 시험절차서, 성적서, 기술보고서, evidence package 작성 및 외부 시험기관 기술 대응 수행
+[233P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 글로벌 위성통신 고객 영어 기술 커뮤니케이션 수행
+[234P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | Eutelsat OneWeb, Marlink/STW와 영어 기반 Technical Review 및 품질 이슈 회의를 운영하며 field issue, 개선현황, release readiness, corrective action 조율
+[235P] style=목록 단락 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | HW/RF/Network/시험 조직 간 시스템 이슈 해결 체계화
+[236P] style=목록 단락 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 연구, RF, HW, SW, 품질, 생산, 협력사, 고객 간 기술 이슈를 defect log, 원인 분석, 개선안, 검증자료, release decision으로 연결하여 관리
+[237P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 
+[238P] style=표준 font=맑은 고딕/14 bold=-1 lsr=0 sa=0 | ( 특허 / 논문 및 수상내역 (표창)
+[239P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | ● 논문
+[240P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | 「Cortex-R 기반 RM57L843 마이크로프로세서를 이용한 임베디드 시스템 하드웨어 설계 및 제작」
+[241P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | Journal of KIIT, Vol. 16, No. 4, pp. 57-65, 2018.04.30.
+[242P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[243P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | ▶ TI Cortex-R 계열 RM57L843 기반 고신뢰 임베디드 제어보드 HW 설계·제작 연구 수행. 3상 모터 구동/제어 시스템을 대상으로 CPU 제어보드 HW, Flash/Memory 주변회로, 임베디드 펌웨어, 보호회로, 통신 인터페이스, 실시간 제어 안정성을 통합 설계하였으며, EtherCAT, RMII Ethernet, EMIF, USB 등 고속 디지털 인터페이스를 적용. 요구사항 분석부터 HW 사양 정의, SW 기능 연계, 인터페이스 정의, 시험 항목 도출까지 수행한 경험으로, 안테나 제어 및 신호처리 모듈의 CPU/디지털 인터페이스, 진단 로직, 보호회로, 실시간 제어 및 시스템 통합검증 역량의 기술적 기반 보유.
+[244P] style=표준 font=맑은 고딕/9 bold=0 lsr=0 sa=0 | 
+[245P] style=표준 font=맑은 고딕/14 bold=-1 lsr=0 sa=0 | ( 자격증 / 교육사항 / OA / 외국어
+[246P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | ● 자격증
+[247P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | - Certified NMEA 2000 Networking
+[248P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | ● 교육사항
+[249P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | - IBM Machine Learning with Python
+[250P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | - Python for Data Science, AI & Development (IBM)
+[251P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | - 국방 PMBOK 활용 교육 (PM/PL 직무 교육)
+[252P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | ● OA 능력
+[253P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | - MS Office (Word, Excel, PowerPoint) 능숙, Visio, OrCAD/Allegro/Altium, Wireshark, iperf, Linux, VMware
+[254P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | ● 외국어
+[255P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | - 영어 - IELTS 5.0, 영어 기술문서 작성 및 글로벌 기술회의 대응 가능 (OneWeb / Marlink·STW 영어 기술회의 정기 운영 경험)
+[256P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[257P] style=표준 font=맑은 고딕/14 bold=-1 lsr=0 sa=0 | ( 해외연수 및 출장경력
+[258P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | ● 해외연수
+[259P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | - 호주 어학연수 (ILA Perth Intermediate 과정 수료)                            1999. 06 ~ 2000. 01
+[260P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | ● 출장경력
+[261P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 1. 인도네시아 잠수함 오락방송장치 현지 기술지원	2016년 10월 ~ 2017년 03월(5개월)
+[262P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 2. 호주 OneWeb 평판안테나 활용 전시회 현장 지원	2024년 07월 ~ 2024년 08월(1개월)
+[263P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 3. 독일 Marlink / STW OneWeb 평판안테나 기술 지원	2024년 10월 (1주)
+[264P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[265P] style=표준 font=맑은 고딕/14 bold=-1 lsr=0 sa=0 | ( 주요 활동사항
+[266P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 1. 한국다문화재단 부산/울산/경남지부 지원부장 				   2021.05 ~ 2022.02
+[267P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 2. Eutelsat OneWeb Weekly·Monthly Report Meeting 및 Technical Review 주도 2023.05 ~ 2025.07
+[268P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[269P] style=표준 font=맑은 고딕/14 bold=-1 lsr=0 sa=0 | ( 연봉 정보
+[270T] style=표준 font=맑은 고딕/9.5 bold=-1 lsr=0 sa=0 | 희망연봉
+[271T] style=표준 font=맑은 고딕/9.5 bold=-1 lsr=0 sa=0 | 현재연봉
+[272T] style=표준 font=맑은 고딕/9.5 bold=-1 lsr=0 sa=0 | 성과급
+[273T] style=표준 font=맑은 고딕/9.5 bold=-1 lsr=0 sa=0 | 입사시기
+[274T] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[275T] style=표준 font=맑은 고딕/9 bold=0 lsr=0 sa=0 | 회사 내규 협의
+[276T] style=표준 font=맑은 고딕/9 bold=0 lsr=0 sa=0 | 기본 8,397만원
+[277T] style=표준 font=맑은 고딕/9 bold=0 lsr=0 sa=0 | (총 9,484만원)
+[278T] style=표준 font=맑은 고딕/9 bold=0 lsr=0 sa=0 | 변동상여 677만원
+[279T] style=표준 font=맑은 고딕/9 bold=0 lsr=0 sa=0 | 고정상여 377 만원
+[280T] style=표준 font=맑은 고딕/9 bold=0 lsr=0 sa=0 | 복지포인트 50만원
+[281T] style=표준 font=맑은 고딕/9 bold=0 lsr=0 sa=0 | 최종합격 후 1주 이내
+[282T] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[283P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[284P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[285P] style=표준 font=맑은 고딕/14 bold=-1 lsr=0 sa=0 | ( 자기소개서
+[286P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[287P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | [ 성장 과정 ]
+[288P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 저는 전자·통신·제어 기반 하드웨어 개발에서 출발하여 국방 함정/잠수함 통신체계, 위성·항공 전자장비, LEO 위성통신 단말/안테나 시스템까지 21년 이상 고신뢰 전자시스템의 개발·통합·검증 업무를 수행해 왔습니다. 초기에는 CPU/I/O Board, Flash/Memory 주변회로, 회로 및 PCB 설계, 임베디드 제어, board bring-up, RF/디지털/전원 인터페이스 디버깅을 수행하며 HW 설계 엔지니어로서의 기본기를 다졌고, 이후에는 고객 요구사항을 Digital H/W 사양, ICD, 시험 기준, 기술문서와 개발관리 체계로 전환하는 역할을 맡아 왔습니다.
+[289P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 부산대학교 대학원 전자전기공학 석사과정에서는 임베디드 시스템 하드웨어 설계와 실시간 제어 시스템을 연구하였습니다. TI Cortex-R 계열 RM57L843 마이크로프로세서를 활용한 고신뢰 임베디드 하드웨어 플랫폼 설계·제작 연구를 통해 CPU 제어보드 HW, Flash/Memory 주변회로, 임베디드 펌웨어, 보호회로, 통신 인터페이스, 실시간 제어 안정성을 통합적으로 검토하였습니다. 이 과정에서 EtherCAT, RMII Ethernet, EMIF, USB 등 디지털 인터페이스를 적용하며 요구사항 분석, HW 사양 정의, SW 기능 연계, 인터페이스 정의, 시험 항목 도출까지 이어지는 개발 절차를 체계적으로 경험하였습니다.
+[290P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 대양전기공업에서는 국방 통신/C4I 시스템과 함정·잠수함 통신체계 개발 과정에서 요구사항 분석, CPU/I/O Board 및 PCB 설계, Flash/Memory 주변회로, HW/SW 사양 정의, RF 성능 측정, FAT/SAT, 시운전, 항해시험, 고객 인수시험을 수행하였습니다. 특히 VHF/UHF/HF 통신장비의 RF tuning, 출력 편차, 감도 저하, 채널 정합 오차 개선 경험을 통해 방산 RF 장비의 Digital H/W 분석, 안테나/케이블/장비 인터페이스 검증, 운용환경 신뢰성 확보 역량을 축적하였습니다.
+[291P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 제노코에서는 위성·항공 전자장비와 국책·방산형 과제에서 보드 인터페이스 검토, 환경시험, 시험계획서·절차서·성적서 작성, 기술문서 및 산출물 대응을 수행하였습니다. 한화시스템 위상배열안테나 연관 체계 설계 참여를 통해 phased array 기반 전자장비의 인터페이스 정합성, 전원/신호 품질, 시험 readiness, evidence package의 중요성을 실무적으로 확인하였습니다.
+[292P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 인텔리안테크놀로지스에서는 Eutelsat OneWeb 대상 LEO 위성통신 단말/안테나 개발·양산 단계에서 Ku-band ESA 시스템의 안테나 제어·신호처리 모듈 통합검증, 글로벌 고객 대응, 품질 안정화, field issue 분석 및 개선 업무를 수행하였습니다. RF/안테나 서브시스템, DFE/ADC-DAC interface, 제어전자부, 네트워크 인터페이스, SW log, 환경시험 결과를 연계하여 시스템 수준의 원인을 분석하였고, 400여 항목 이상의 설계검증 체크리스트를 기반으로 반복 검증 체계를 운영하며 양산 출하 판단 근거를 표준화하였습니다.
+[293P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 이 경력은 모아컴코리아 HW 설계 직무가 요구하는 안테나 제어 및 신호처리 모듈의 Digital H/W 회로 설계·개발관리, FPGA/CPU/Flash Memory 관련 회로 설계검토, RF 장비 Digital H/W 분석 및 디버깅, 5G/LTE RU와 Digital&RF Module·Repeater 개발 방향과 정확히 맞닿아 있습니다.
+[294P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[295P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | [ 나의 장점 및 보완해야 할 점 ]
+[296P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 저의 가장 큰 강점은 요구사항을 실제 회로 설계 기준과 검증 항목으로 바꾸는 Digital H/W 시스템 엔지니어링 역량입니다. 고객 요구사항이나 상위 시스템 요구를 문서 수준에 머물게 하지 않고, FPGA/DFE 구조, CPU 제어부, Flash/Memory, RF/안테나 성능지표, 보드 인터페이스, 시험 조건, 검증 증빙, release 판단자료로 구체화해 개발 조직이 바로 실행할 수 있는 기준으로 정리해 왔습니다.
+[297P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | ESA 안테나 및 RF 장비에서는 Link Budget 관점에서 EIRP, G/T, NF, C/N0, Path Loss, Power Budget을 해석하고, 이를 안테나 제어부, RF Module, Transceiver, 신호처리 모듈, 네트워크 인터페이스 요구사항과 연결할 수 있습니다. RF Module 설계검토 시에는 Tx/Rx 경로, BFIC/beam control, LO/clock, DFE, ADC/DAC interface, gain plan, noise figure, linearity, phase noise, EMI/EMC, power integrity, interface margin을 함께 검토하여 설계 리스크를 식별하고 시험·검증 항목으로 전환해 왔습니다.
+[298P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 또 다른 강점은 검증 중심의 업무 방식과 개발관리 커뮤니케이션 역량입니다. 인텔리안테크놀로지스에서는 Eutelsat OneWeb LEO 위성통신 단말/ESA 안테나의 개발·양산 단계에서 field issue 분석, defect log 관리, ECO/BOM 변경관리, release readiness 검토를 수행하였고, 제노코와 대양전기공업에서는 방산형 과제 산출물 작성, 시스템 통합시험, FAT/SAT, 고객 인수시험을 수행하였습니다. 연구·품질·생산·협력사·고객 간 기술 이슈를 원인 분석, 개선안, 검증자료, 일정 조율로 연결해 온 경험은 모아컴코리아 부장급 HW 설계 직무에서 요구하는 개발관리 역량과 직접적으로 부합합니다.
+[299P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 보완해야 할 점은 FPGA RTL 세부 구현과 5G/LTE RU Digital H/W 최신 구조가 계속 고도화되고 있어 지속적인 업데이트가 필요하다는 점입니다. 이를 보완하기 위해 DFE, ADC/DAC, 고속 인터페이스, O-RAN/RU 구조, 디지털 광중계기 구조, NMS/SNMP remote control, 5G beamforming antenna 관련 기술을 집중적으로 학습·정리하고 있습니다. 기존 RF/안테나/CPU 보드/네트워크 검증 경험과 결합하여 모아컴코리아의 Digital&RF Module, Repeater, 방산·5G 솔루션 개발에 빠르게 적용하겠습니다.
+[300P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[301P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | [ 지원동기 및 포부 ]
+[302P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 모아컴코리아 HW 설계 직무는 RF/MW, Filter, Transceiver, UCU, Digital&RF Module, Repeater, Military & 5G Solution을 기반으로 안테나 제어 및 신호처리 모듈의 Digital H/W 회로 설계와 개발관리를 수행하는 핵심 직무라고 이해하고 있습니다. 특히 FPGA, CPU, Flash Memory 관련 회로 설계, RF 장비 Digital H/W 분석 및 디버깅, 5G/LTE RU와 디지털 광중계기 구조 이해가 함께 요구되는 직무입니다.
+[303P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 저는 전자·통신·제어 기반 하드웨어 개발에서 출발하여 국방 통신체계, 위성·항공 전자장비, LEO 위성통신 단말/안테나 시스템까지 경험을 확장해 왔습니다. 인텔리안테크놀로지스에서는 Eutelsat OneWeb 대상 Ku-band ESA 시스템의 안테나 제어·신호처리 모듈 통합검증, field issue 분석, 품질 안정화, 글로벌 고객 대응, 양산검증 체계 운영을 수행하였고, 대양전기공업에서는 국방 통신/C4I 시스템의 CPU/I/O Board 설계, RF 성능 측정, 시스템 통합시험, FAT/SAT 및 고객 인수시험을 수행하였습니다.
+[304P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 입사 후에는 모아컴코리아의 RF/MW 및 Digital&RF Module 개발에서 안테나 제어·신호처리 모듈 요구사항을 FPGA/DFE, CPU, Flash/Memory, ADC/DAC, 전원/clock, Ethernet/NMS, 시험·검증 관점으로 체계화하겠습니다. EIRP, G/T, NF, C/N0, scan loss, beam pointing 등 RF/안테나 성능지표와 Link/Power Budget을 기준으로 설계검토와 시험계획을 연결하고, RF Module의 Tx/Rx 경로, UCU/주파수 변환, DFE, ADC/DAC interface와 제어전자부·PCB 간 설계 리스크를 조기에 식별하겠습니다.
+[305P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 또한 400여 항목 이상의 설계검증 체크리스트 기반 반복 검증 경험을 활용하여 모아컴코리아의 방산·5G Digital H/W 개발 과정에서 시험 누락을 줄이고, field issue 발생 시 재현 조건 정의, 원인 분석, 개선안 수립, 검증자료 작성, release readiness 판단까지 일관된 검증 체계를 구축하겠습니다. 요구사항 정의부터 회로 설계검토, board bring-up, 디버깅, field test, 양산 안정화, 방산 고객 산출물 대응까지 연결되는 실행력 있는 개발 프로세스를 만드는 데 기여하겠습니다.
+[306P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+[307P] style=표준 font=맑은 고딕/10 bold=-1 lsr=0 sa=0 | [ 특별히 하고 싶은 말 ]
+[308P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 저는 단품 회로나 특정 장비만 개별적으로 보는 엔지니어가 아니라, 요구사항 정의부터 Digital H/W 회로 설계검토, FPGA/DFE·CPU·Flash/Memory 인터페이스 검증, RF/안테나 사양 연계, 통합검증, field test, 고객 대응, 기술문서 작성까지 전 과정을 연결해 개발 완성도를 높여 온 실무형 HW 설계 리더입니다.
+[309P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 위성통신 단말, 국방 통신체계, 위성·항공 전자장비 분야에서 축적한 경험을 바탕으로 복합 시스템의 요구사항을 설계 기준과 검증 항목으로 구조화하고, 문제 발생 시 원인 분석, 재현 조건 정의, 개선안 도출, 일정 조율, 검증 리포트 작성까지 끝까지 수행해 왔습니다. 인텔리안테크놀로지스에서는 Eutelsat OneWeb 대상 Ku-band ESA 기반 LEO 위성통신 안테나 시스템의 개발·양산 검증을 수행하며 안테나 제어·신호처리 모듈 통합검증, field issue 분석, 품질 안정화, 양산 검증 프로세스 운영, 글로벌 고객 대응을 경험하였습니다.
+[310P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 또한 독일 Marlink/STW 기술 지원과 Eutelsat OneWeb 정기 기술회의를 통해 영어 기반 기술 커뮤니케이션, 트러블 조율, 고객 요구사항 대응 역량도 실질적으로 축적하였습니다. 이러한 경험은 모아컴코리아가 추진하는 RF/MW 제품, Digital&RF Module, Repeater, RF system and Software, 5G beamforming antenna application, 해외 방산 고객 대응 및 수출 중심 사업에 직접적으로 활용될 수 있습니다.
+[311P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 모아컴코리아 입사 후에는 PCB/HW/SW/RF/안테나/시험 조직 간 협업을 구조화하고, 품질 회의·프로젝트 진행회의·기술 이슈 회의를 통해 일정, 품질, 검증 산출물, 대외 대응 자료를 체계적으로 관리하겠습니다. 저는 요구사항과 설계, 검증과 양산, 현장 이슈와 기술문서, 내부 협업과 고객 대응을 유기적으로 연결하여 모아컴코리아 HW 설계 조직의 실행력과 완성도를 높이겠습니다.
+[312P] style=표준 font=맑은 고딕/10 bold=0 lsr=0 sa=0 | 
+
+=== TABLES ===
+--- Table 1 : Rows=9 Cols=5
+  r1c1: 지 원 회 사
+  r1c2: 모아컴코리아㈜
+  r1c3: /
+  r2c1: 지 원 분 야
+  r2c2: HW 설계
+  r3c1: 성 명
+  r3c2: 이 준 하 (1974년생 / 만52세)
+  r4c1: 총 경 력
+  r4c2: 21년 7개월
+  r4c3: 관 련 경 력
+  r4c4: 약 18년
+  r5c1: 주 소
+  r5c2: 경기도 군포시 광정로 25-25, 퇴계주공아파트 355동 2005호
+  r6c1: 휴 대 폰
+  r6c2: 010-2731-4581
+  r7c1: E-mail
+  r7c2: Leejunha781@gmail.com
+  r8c1: 업 무 상 주 요 강 점
+  r8c2: 안테나 제어·신호처리 모듈의 Digital H/W 회로 설계, 설계검토, board bring-up, 디버깅 및 개발관리 수행 역량 FPGA/DFE, CPU 제어부, Flash/Memory, ADC/DAC, Ethernet/SPI/DDR/PCIe 등 핵심 인터페이스 요구사항 정의 및 회로 리스크 분석 Ku-band ESA/Phased Array 안테나 검증 경험을 바탕으로 beam steering/control, calibration, EIRP/G/T/NF/C/N0 등 성능지표를 HW/RF 이슈로 해석 RF Module, Transceiver, UCU, Repeater, 5G/LTE RU, Digital&RF Module 구조를 Link/Power Budget 관점에서 설계 검토 RF/안테나/제어전자부/전원/네트워크를 연결해 field issue 재현, 원인분석, ECO/BOM 변경 및 양산 release 판단자료까지 주도 국방 통신/C4I 및 위성통신 단말 개발에서 고객 요구사항, ICD, 시험계획, FAT/SAT, 양산검증을 설계 산출물로 체계화 소수 정예 기술조직에 적합한 실무형 HW 설계 리더십: 직접 분석하고, 설계 리스크를 정리하며, 부서 간 의사결정을 이끄는 개발관리 역량 대양전기공업 약 15년: 국방 함정/잠수함 통신체계 PM/PL, CPU/I/O Board·Flash/Memory 회로 설계, RF 통신장비 성능시험, FAT/SAT 및 고객 인수 수행 인텔리안: LEO ESA 안테나의 제어전자부, FPGA/DFE·ADC/DAC, 네트워크, RF 성능을 통합 검증하고 field issue 분석 및 양산 안정화 주도 Eutelsat OneWeb, Marlink/STW 등 글로벌 고객과 영어 기반 Technical Review 및 품질 이슈 회의를 수행한 해외 고객 대응 역량
+  r9c1: 업 무 관 련 보 유 기 술
+  r9c2: [Digital H/W] FPGA/DFE 구조, ADC/DAC, CPU Board, Flash/Memory, SPI, EMIF, RMII/MDIO Ethernet, DDR/PCIe, USB, EtherCAT 회로·인터페이스 설계검토 및 디버깅 [RF/MW·Transceiver] Tx/Rx 경로, UCU/주파수 변환, BFIC/beam control, LO/clock, gain plan, NF, linearity, phase noise, EIRP/G/T/C/N0, Link/Power Budget 기반 RF 장비 Digital H/W 분석 [Antenna Control] Ku-band ESA/Phased Array 안테나 제어, beam steering/control, beamforming, calibration, scan loss, pointing error, RHCP/axial ratio, 안테나/제어전자부/네트워크 연계 검증 [HW/PCB] ARM Cortex-M3/Cortex-R 기반 CPU/I/O Board, 제어보드, RF/MW 연계 보드, 전원·신호 인터페이스, Flash/Memory 회로, OrCAD/Allegro/Altium 회로·PCB 설계 및 layout review [Repeater·5G/LTE] 5G/LTE RU 및 디지털 광중계기 구조 이해, RF Repeater/NMS/SNMP remote control, Ethernet 기반 통신 성능시험, Wireshark/iperf, board-level debug [시험·개발관리] Board bring-up, 기능시험, EMI/EMC, 진동·방수·환경시험, FAT/SAT, field test, pilot build, ECO/BOM 변경관리, defect log, release readiness 및 양산검증 [방산·문서·협업] SRR/SDR, ICD, 시험계획서, 시험절차서, 시험성적서, 기술보고서, VCRM/evidence package 작성 및 고객·연구·품질·생산·협력사 기술조율
+--- Table 2 : Rows=2 Cols=4
+  r1c1: 희망연봉
+  r1c2: 현재연봉
+  r1c3: 성과급
+  r1c4: 입사시기
+  r2c1: 회사 내규 협의
+  r2c2: 기본 8,397만원 (총 9,484만원)
+  r2c3: 변동상여 677만원 고정상여 377 만원 복지포인트 50만원
+  r2c4: 최종합격 후 1주 이내
