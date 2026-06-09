@@ -114,12 +114,16 @@ try {
         $slideTitles.Add(('p.{0}: {1}' -f $s, $title))
         $deckDump.Add(('--- SLIDE {0}: {1}' -f $s, $title))
         foreach ($t in $texts) { $deckDump.Add($t) }
-        $deckDump.Add(('NOTES: {0}' -f (if ([string]::IsNullOrWhiteSpace($noteText)) { '<EMPTY>' } else { $noteText })))
+        $noteOut = $noteText
+        if ([string]::IsNullOrWhiteSpace($noteOut)) { $noteOut = '<EMPTY>' }
+        $deckDump.Add(('NOTES: {0}' -f $noteOut))
     }
 
     $deckBlob = ($allDeckText -join ' ')
     $lines.Add(('Cover revision text: {0}' -f $revisionText))
-    $lines.Add(('Slides without notes: {0}' -f ($(if ($slidesWithoutNotes.Count -eq 0) { 'none' } else { ($slidesWithoutNotes -join ', ') }))))
+    $slidesWithoutNotesText = 'none'
+    if ($slidesWithoutNotes.Count -ne 0) { $slidesWithoutNotesText = ($slidesWithoutNotes -join ', ') }
+    $lines.Add(('Slides without notes: {0}' -f $slidesWithoutNotesText))
     $lines.Add(('Contains V17 text refs: {0}' -f (($deckBlob -match 'V17').ToString())))
     $lines.Add(('Contains V18 text refs: {0}' -f (($deckBlob -match 'V18').ToString())))
     $lines.Add(('Contains p.40-42 glossary refs: {0}' -f (($deckBlob -match 'p\.40.?42|p\.40–42|p\.40-42').ToString())))

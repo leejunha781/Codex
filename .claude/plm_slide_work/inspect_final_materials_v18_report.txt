@@ -1,0 +1,117 @@
+﻿FILE METADATA
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V18.pptx | 40753839 bytes | 2026-06-09 13:14:14
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_EN.docx | 32005 bytes | 2026-06-09 12:30:16
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_EN.pdf | 184893 bytes | 2026-06-09 12:30:17
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_KO.docx | 34113 bytes | 2026-06-09 12:38:40
+D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_KO.pdf | 512486 bytes | 2026-06-09 12:38:43
+
+DECK INSPECTION
+Slides: 42
+Slide size: 960.0 x 540.0
+Cover revision text: Rev. V18 · 2026-06-09
+Slides without notes: none
+Contains V17 text refs: False
+Contains V18 text refs: True
+Contains p.40-42 glossary refs: True
+Contains p.39-41 glossary refs: False
+Slide titles:
+  p.1: Company-by-company benchmark, win-above strategies, open AVEVA control plane, delivery WBS and KPI gates
+  p.2: Technical meeting agenda
+  p.3: How to run the room – roles, decision criteria & ownership
+  p.4: Meeting Procedure - decision path
+  p.5: What development teams must hear
+  p.6: What planning teams must hear
+  p.7: Current-state comparison - no vendor owns the complete loop
+  p.8: Current PLM landscape
+  p.9: Where we are now
+  p.10: Public product + roadmap signals - official emphasis only
+  p.11: Meeting thesis - win above tool silos
+  p.12: Strategic gap to fill
+  p.13: What to absorb - and where AVEVA must go beyond
+  p.14: Win above NAPA - own the continuous naval assurance loop
+  p.15: Win above Siemens - make configuration rigor open and operations-aware
+  p.16: Win above Dassault - make the virtual twin executable and evidence-driven
+  p.17: AVEVA AI Capabilities — AI assists, the control plane governs
+  p.18: AI deployment path — start light, then scale to AVEVA CONNECT
+  p.19: Lightweight Piping Routing — deterministic pilot
+  p.20: Target architecture concept
+  p.21: Executable reference package
+  p.22: Hybrid: Windows Authoring + Linux Control Plane + Cloud/CONNECT
+  p.23: Hybrid deployment overview — Windows authoring + Linux control plane
+  p.24: Phase 2 + Continuous Naval Assurance pilot scope
+  p.25: Requirement → AI-built VCRM & Checklist (admin-editable, approved in Impact+Approval)
+  p.26: AI-gated flow across AVEVA design tools and the API-built PLM
+  p.27: Design tool → 2D production drawing (AutoCAD DWG/DXF) → registered in the API-built PLM
+  p.28: E3D / Hull design - version control approach
+  p.29: Continuous Naval Assurance Control Plane - API concept
+  p.30: User-Configurable PLM Process — Altering the Entire Flow via API (Admin Privileges)
+  p.31: Executable gate flow
+  p.32: Delivery WBS - consolidated after the full solution scope
+  p.33: KPI model - configuration and naval assurance acceptance
+  p.34: Future-state comparison - AVEVA wins by orchestrating the full assurance loop
+  p.35: Review ownership and operating model
+  p.36: Key review risks and mitigations
+  p.37: Evidence base and assumption boundaries
+  p.38: Recommended decision
+  p.39: Closing argument
+  p.40: Glossary 1 / 3 - PLM, configuration and change terms
+  p.41: Glossary 2 / 3 - Marine, naval and product terms
+  p.42: Glossary 3 / 3 - Architecture, security and infrastructure terms
+
+EN GUIDE
+Path: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_EN.docx
+Pages: 10
+Paragraphs: 130
+Tables: 0
+Characters: 16901
+Markdown artifacts (** / #### / [[PB]]): False
+Mentions V17: True
+Mentions V18: False
+Mentions 42 slides/pages: True
+Mentions glossary p.40-42: False
+Mentions deck file V18: False
+Detected headings / section markers:
+  1. How to use this guide
+  2. Meeting snapshot
+  3. Know your audience — and how to win each
+  4. Five delivery principles — how to earn the applause
+  1. Open strong and name the decision. The room should know within 90 seconds what they are deciding and why it matters.
+  2. Say the golden rule, then repeat it: "This is not a tool-replacement story. It is a governed, auditable, operations-aware decision loop that makes existing tools more valuable." This one line disarms most objections.
+  3. Lead with proof, not promises. Every claim should point to the executable reference, a KPI, or a bounded pilot. In a technical room, credibility is what earns applause.
+  4. Speak to both halves of the room. After each strategy point, give Development the feasibility hook and Planning the value hook. People applaud when they feel seen.
+  5. Close by inviting the decision, not begging for it. State the ask once, clearly, then stop and let the room decide. Confidence is contagious.
+  5. The opening — your first 90 seconds
+  6. Section-by-section talk track
+  7. Anticipated questions & confident answers
+  8. The close — land it
+  9. Facilitation logistics & live capture
+  10. One-page quick reference
+
+KO GUIDE
+Path: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Presenter_Facilitation_Guide_KO.docx
+Pages: 10
+Paragraphs: 130
+Tables: 0
+Characters: 9769
+Markdown artifacts (** / #### / [[PB]]): False
+Mentions V17: True
+Mentions V18: False
+Mentions 42 slides/pages: True
+Mentions glossary p.40-42: False
+Mentions deck file V18: False
+Detected headings / section markers:
+  1. 이 가이드 사용법
+  2. 회의 개요
+  3. 청중 파악 — 각 대상을 사로잡는 법
+  4. 다섯 가지 전달 원칙 — 박수를 이끌어내는 법
+  1. 강하게 열고 의사결정을 명시하십시오. 청중은 90초 안에 자신들이 무엇을 결정하는지, 왜 중요한지 알아야 합니다.
+  2. 황금률을 말하고 반복하십시오: "이것은 도구 교체 이야기가 아닙니다. 기존 도구를 더 가치 있게 만드는, 거버넌스되고 감사 가능하며 운영을 인지하는 의사결정 루프입니다." 이 한 문장이 대부분의 반론을 무력화합니다.
+  3. 약속이 아니라 증거로 이끄십시오. 모든 주장은 실행 가능한 레퍼런스, KPI, 또는 제한된 파일럿을 가리켜야 합니다. 기술 청중에게는 신뢰성이 곧 박수입니다.
+  4. 회의장의 양쪽 모두에게 말하십시오. 각 전략 포인트 뒤에 개발팀에게는 구현 가능성의 고리를, 기획팀에게는 가치의 고리를 주십시오. 사람들은 자신이 보이고 있다고 느낄 때 박수칩니다.
+  5. 요청을 구걸하지 말고 의사결정을 청하십시오. 요청을 한 번, 명확히 말한 뒤 멈추고 회의장이 결정하게 하십시오. 자신감은 전염됩니다.
+  5. 오프닝 — 첫 90초
+  6. 섹션별 대본
+  7. 예상 질문과 자신감 있는 답변
+  8. 마무리 — 확실히 매듭짓기
+  9. 진행 로지스틱스와 실시간 기록
+  10. 한 장 요약 카드
