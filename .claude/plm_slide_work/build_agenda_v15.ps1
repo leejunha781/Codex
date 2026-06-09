@@ -25,7 +25,12 @@ $muted  = 12626067    # #93A8C0
 $violet = 16419751    # RGB 167,139,250
 $hdrfill = 2826529    # darker navy RGB 33,34,43 -> just reuse a deep tone
 
-$pp = New-Object -ComObject PowerPoint.Application
+$pp = $null
+for ($a=0; $a -lt 6 -and $pp -eq $null; $a++) {
+    try { $pp = New-Object -ComObject PowerPoint.Application }
+    catch { Start-Sleep -Milliseconds 1200; $pp = $null }
+}
+if ($pp -eq $null) { throw "PowerPoint COM did not start after retries" }
 try { $pp.Visible = $true } catch {}
 
 # read source dimensions
