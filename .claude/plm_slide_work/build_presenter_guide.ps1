@@ -26,7 +26,19 @@ $ps.TopMargin=[single]56; $ps.BottomMargin=[single]56; $ps.LeftMargin=[single]64
 # style colors (brand dark blue) - RGB int = R + G*256 + B*65536
 $brand = 6567967   # RGB(31,56,100)
 $slate = 4408128   # RGB(64,64,67)-ish
+foreach($id in @(-1,-49)){
+    try{
+        $doc.Styles.Item([int]$id).Font.Name = "Aptos"
+        $doc.Styles.Item([int]$id).Font.Size = [single]10.5
+    }catch{}
+}
 foreach($id in @(-63,-2,-3,-4)){ try{ $doc.Styles.Item([int]$id).Font.Color = $brand }catch{} }
+foreach($id in @(-63,-2,-3,-4)){
+    try{
+        $doc.Styles.Item([int]$id).Font.Name = "Aptos Display"
+        $doc.Styles.Item([int]$id).Font.Bold = $true
+    }catch{}
+}
 
 $sel = $w.Selection
 

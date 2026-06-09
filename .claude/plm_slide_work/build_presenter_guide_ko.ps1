@@ -23,7 +23,21 @@ $ps = $doc.PageSetup
 $ps.TopMargin=[single]56; $ps.BottomMargin=[single]56; $ps.LeftMargin=[single]64; $ps.RightMargin=[single]64
 
 $brand = 6567967   # RGB(31,56,100)
+foreach($id in @(-1,-49)){
+    try{
+        $doc.Styles.Item([int]$id).Font.Name = "Malgun Gothic"
+        $doc.Styles.Item([int]$id).Font.NameFarEast = "Malgun Gothic"
+        $doc.Styles.Item([int]$id).Font.Size = [single]10.5
+    }catch{}
+}
 foreach($id in @(-63,-2,-3,-4)){ try{ $doc.Styles.Item([int]$id).Font.Color = $brand }catch{} }
+foreach($id in @(-63,-2,-3,-4)){
+    try{
+        $doc.Styles.Item([int]$id).Font.Name = "Malgun Gothic"
+        $doc.Styles.Item([int]$id).Font.NameFarEast = "Malgun Gothic"
+        $doc.Styles.Item([int]$id).Font.Bold = $true
+    }catch{}
+}
 
 $sel = $w.Selection
 function Set-Style($id){ $sel.Style = $doc.Styles.Item([int]$id) }
