@@ -91,7 +91,7 @@ try { $pres.Slides.Item(1).Shapes.Item("RevisionStamp").TextFrame.TextRange.Text
 $pres.Slides.Item(2).Delete()
 
 # ===== STEP 5: insert two blank slides at positions 2 and 3 =====
-$lay = $pres.SlideMaster.CustomLayouts.Item(7)
+$lay = $pres.Slides.Item(1).CustomLayout
 $null = $pres.Slides.AddSlide(2, $lay)
 $null = $pres.Slides.AddSlide(3, $lay)
 $sRun = Prep-Slide ($pres.Slides.Item(2))
