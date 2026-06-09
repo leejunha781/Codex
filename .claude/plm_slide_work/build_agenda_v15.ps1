@@ -170,7 +170,8 @@ Add-Box $s1 40 ($tTop+$tHeight+6) ($W-80) 18 $fn1 8.5 0 $muted $bodyFont 1 | Out
 
 # =================== SLIDE 2 : SUPPORT ===================
 $s2 = New-Slide $pres
-Add-Box $s2 40 22 ($W-80) 30 "How to run the room " + $nd + " roles, decision criteria & ownership" 22 1 $white $titleFont 1 | Out-Null
+$s2title = "How to run the room " + $nd + " roles, decision criteria & ownership"
+Add-Box $s2 40 22 ($W-80) 30 $s2title 22 1 $white $titleFont 1 | Out-Null
 Add-Box $s2 ($W-300) 18 250 18 "Future Industrial PLM" 9 0 $muted $bodyFont 3 | Out-Null
 Add-Box $s2 ($W-80) 18 40 20 "A2" 11 0 $muted $bodyFont 3 | Out-Null
 
