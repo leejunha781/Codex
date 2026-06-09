@@ -72,7 +72,7 @@ $bt=Add-Box $s 54 98 ($W-108) 38 $banTxt 11 1 $white $bodyFont 1
 $bt.TextFrame.VerticalAnchor=3
 
 $rows=@(
- @("#","Min","Agenda block","Deck","Lead " + $ar + " audience","Outcome to capture / decide"),
+ @("#","Min","Agenda block","Deck",("Lead " + $ar + " audience"),"Outcome to capture / decide"),
  @("0","5","Open & decision objective","p.1",("Facilitator " + $ar + " all"),"Confirm the exact approval requested today"),
  @("1","5",("How we'll decide " + $nd + " procedure"),("p.4" + $nd + "6"),("Facilitator " + $md + " PLM SME " + $ar + " all"),"Agree decision flow; set dev vs planning lenses"),
  @("2","10","Current state & why now",("p.7" + $nd + "10"),("PLM SME " + $ar + " both teams"),"Accept that the gap and urgency are real"),
@@ -153,19 +153,19 @@ Add-Box $h2 ($cRW+16) ($pTop1+10) ($cRWd-32) 18 "DECISION CRITERIA" 11.5 1 $gree
 $kpi="contract 100% " + $md + " config " + $ge + "99% " + $md + " impact recall " + $ge + "95% " + $md + " provenance 100% " + $md + " approval " + $le + "5s"
 $apTxt="APPROVE " + $ar + " Phase 2 configuration core + one bounded Continuous Naval Assurance pilot, with named owners; KPI thresholds (" + $kpi + "); assumption boundaries; and one pilot scenario (one hull/block " + $md + " selected loading cases " + $md + " one approved solver adapter " + $md + " seeded change & failure cases)."
 Add-Box $h2 ($cRW+16) ($pTop1+36) ($cRWd-32) 120 $apTxt 10 0 $ltgray $bodyFont 1 | Out-Null
-Add-Line $h2 ($cRW+16) ($pTop1+162) ($cRWd-32) $green | Out-Null
+Add-Line $h2 ($cRW+16) ($pTop1+150) ($cRWd-32) $green | Out-Null
 $ccTxt="CONDITIONAL " + $ar + " approve with a named backlog to clear before G1/G2." + $CR +
        "DEFER " + $ar + " list the specific blockers + the evidence needed to revisit."
-Add-Box $h2 ($cRW+16) ($pTop1+170) ($cRWd-32) 50 $ccTxt 10 0 $white $bodyFont 1 | Out-Null
+Add-Box $h2 ($cRW+16) ($pTop1+158) ($cRWd-32) 50 $ccTxt 10 0 $white $bodyFont 1 | Out-Null
 
 # Panel C : development owns
 $null=Add-Panel $h2 $cLW $pTop2 $cLWd $pH2 $panel $amber 1.4
 Add-Box $h2 ($cLW+16) ($pTop2+10) ($cLWd-32) 18 "DEVELOPMENT OWNS" 11.5 1 $amber $bodyFont 1 | Out-Null
 $buildTxt="BUILD: OpenAPI contracts (objects, BOM, effectivity, baseline, change impact, evidence); Local Agent / Plugin callbacks from Windows authoring; AI-gate provider interface (rules " + $ar + " RAG " + $ar + " CONNECT); seed truth cases; E2E tests; KPI gates."
 Add-Box $h2 ($cLW+16) ($pTop2+36) ($cLWd-32) 110 $buildTxt 10.5 0 $ltgray $bodyFont 1 | Out-Null
-Add-Line $h2 ($cLW+16) ($pTop2+150) ($cLWd-32) $amber | Out-Null
+Add-Line $h2 ($cLW+16) ($pTop2+118) ($cLWd-32) $amber | Out-Null
 $avoidTxt="AVOID: E3D / Marine / Hull on Linux; big-bang solver replacement; automatic AI release authority; unbounded process customization without approval gates."
-Add-Box $h2 ($cLW+16) ($pTop2+158) ($cLWd-32) 60 $avoidTxt 10.5 0 $white $bodyFont 1 | Out-Null
+Add-Box $h2 ($cLW+16) ($pTop2+126) ($cLWd-32) 70 $avoidTxt 10.5 0 $white $bodyFont 1 | Out-Null
 
 # Panel D : planning owns + capture
 $null=Add-Panel $h2 $cRW $pTop2 $cRWd $pH2 $panel $violet 1.4
