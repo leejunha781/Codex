@@ -75,6 +75,11 @@ foreach($raw in $lines){
 
 $sel.Style = $doc.Styles.Item([int]-1)
 $sel.ParagraphFormat.LeftIndent = [single]0
+try {
+    $lastPara = $doc.Paragraphs.Item($doc.Paragraphs.Count).Range
+    $lastText = (($lastPara.Text -replace "[\r\n\a\x07]", "") -replace "\s+", "").Trim()
+    if($lastText.Length -eq 0){ $lastPara.Delete() | Out-Null }
+} catch {}
 
 try {
     $ftr = $doc.Sections.Item(1).Footers.Item(1).Range
