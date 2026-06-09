@@ -94,8 +94,7 @@ $s1 = New-Slide $pres
 Add-Box $s1 40 22 760 36 "Technical meeting agenda" 26 1 $white $titleFont 1 | Out-Null
 $sub1 = "Future Industrial PLM " + $md + " AVEVA Marine " + $md + " Development + Planning decision meeting " + $md + " 90 minutes " + $md + " Deck V15 (41 slides)"
 Add-Box $s1 40 60 ($W-80) 22 $sub1 11.5 0 $ltgray $bodyFont 1 | Out-Null
-$pgt1 = Add-Box $s1 ($W-80) 18 40 20 "A1" 11 0 $muted $bodyFont 3
-$brand1 = Add-Box $s1 ($W-300) 18 250 18 "Future Industrial PLM" 9 0 $muted $bodyFont 3
+$brand1 = Add-Box $s1 ($W-300) 18 260 18 "Future Industrial PLM" 9 0 $muted $bodyFont 3
 
 # decision banner
 $ban = Add-Panel $s1 40 92 ($W-80) 50 $panel $cyan 1.5
@@ -107,14 +106,14 @@ $bt.TextFrame.VerticalAnchor = 3
 $rows = @(
  @("#","Min","Agenda block","Deck","Lead","Outcome to capture / decide"),
  @("0","5","Open & decision objective","p.1","Chair","Confirm the exact approval requested today"),
- @("1","5","How we'll decide " + $nd + " procedure","p.3" + $nd + "5","Chair " + $md + " SME","Agree decision flow; set dev vs planning lenses"),
- @("2","10","Current state & why now","p.6" + $nd + "9","SME","Accept that the gap and urgency are real"),
- @("3","15","Winning ideas / strategy","p.10" + $nd + "18","SME","Agree win-above position + the AI stance"),
- @("4","20","Proposal & architecture","p.19" + $nd + "29","SME " + $md + " Architect","Confirm hybrid architecture is feasible & bounded"),
- @("5","10","Delivery " + $nd + " WBS & KPI gates","p.30" + $nd + "32","SME","Agree the 26-wk staged plan + KPI acceptance"),
+ @("1","5",("How we'll decide " + $nd + " procedure"),("p.3" + $nd + "5"),("Chair " + $md + " SME"),"Agree decision flow; set dev vs planning lenses"),
+ @("2","10","Current state & why now",("p.6" + $nd + "9"),"SME","Accept that the gap and urgency are real"),
+ @("3","15","Winning ideas / strategy",("p.10" + $nd + "18"),"SME","Agree win-above position + the AI stance"),
+ @("4","20","Proposal & architecture",("p.19" + $nd + "29"),("SME " + $md + " Architect"),"Confirm hybrid architecture is feasible & bounded"),
+ @("5","10",("Delivery " + $nd + " WBS & KPI gates"),("p.30" + $nd + "32"),"SME","Agree the 26-wk staged plan + KPI acceptance"),
  @("6","5","Future-state payoff","p.33","SME","Judge the competitive upside credible"),
- @("7","10","Review " + $nd + " ownership, risks, evidence","p.34" + $nd + "36","Chair","Assign owners; accept risks & assumptions"),
- @("8","10","Decision & close","p.37" + $nd + "38","Chair","Record decision, scope, owners, first scenario")
+ @("7","10",("Review " + $nd + " ownership, risks, evidence"),("p.34" + $nd + "36"),"Chair","Assign owners; accept risks & assumptions"),
+ @("8","10","Decision & close",("p.37" + $nd + "38"),"Chair","Record decision, scope, owners, first scenario")
 )
 
 $tLeft = 40; $tTop = 152; $tWidth = ($W-80)
@@ -166,14 +165,13 @@ for ($r=1; $r -le $nRows; $r++) {
 
 # footer note
 $fn1 = "Glossary p.39" + $nd + "41 is a reference appendix " + $md + " use on demand, do not present every row."
-Add-Box $s1 40 ($tTop+$tHeight+6) ($W-80) 18 $fn1 8.5 0 $muted $bodyFont 1 | Out-Null
+Add-Box $s1 40 502 ($W-80) 18 $fn1 8.5 0 $muted $bodyFont 1 | Out-Null
 
 # =================== SLIDE 2 : SUPPORT ===================
 $s2 = New-Slide $pres
 $s2title = "How to run the room " + $nd + " roles, decision criteria & ownership"
 Add-Box $s2 40 22 ($W-80) 30 $s2title 22 1 $white $titleFont 1 | Out-Null
-Add-Box $s2 ($W-300) 18 250 18 "Future Industrial PLM" 9 0 $muted $bodyFont 3 | Out-Null
-Add-Box $s2 ($W-80) 18 40 20 "A2" 11 0 $muted $bodyFont 3 | Out-Null
+Add-Box $s2 ($W-300) 18 260 18 "Future Industrial PLM" 9 0 $muted $bodyFont 3 | Out-Null
 
 # panel geometry
 $pTop1 = 64; $pH1 = 222
