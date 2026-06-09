@@ -172,9 +172,9 @@ $null=Add-Panel $h2 $cRW $pTop2 $cRWd $pH2 $panel $violet 1.4
 Add-Box $h2 ($cRW+16) ($pTop2+10) ($cRWd-32) 18 "PLANNING OWNS  +  CAPTURE LIVE" 11.5 1 $violet $bodyFont 1 | Out-Null
 $planTxt="PLANNING OWNS: product position (control plane above tools); the customer-value story; 26-week gate discipline; the decision ask; which process variants are allowed."
 Add-Box $h2 ($cRW+16) ($pTop2+36) ($cRWd-32) 96 $planTxt 10.5 0 $ltgray $bodyFont 1 | Out-Null
-Add-Line $h2 ($cRW+16) ($pTop2+150) ($cRWd-32) $violet | Out-Null
+Add-Line $h2 ($cRW+16) ($pTop2+104) ($cRWd-32) $violet | Out-Null
 $capTxt="CAPTURE LIVE: Decision log " + $md + " Action log (action " + $md + " owner " + $md + " due " + $md + " gate) " + $md + " Parking lot for off-scope items (record, don't debate)."
-Add-Box $h2 ($cRW+16) ($pTop2+158) ($cRWd-32) 60 $capTxt 10.5 0 $white $bodyFont 1 | Out-Null
+Add-Box $h2 ($cRW+16) ($pTop2+112) ($cRWd-32) 70 $capTxt 10.5 0 $white $bodyFont 1 | Out-Null
 
 # save
 $pres.Save()
