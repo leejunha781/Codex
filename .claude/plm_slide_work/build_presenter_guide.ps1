@@ -63,6 +63,10 @@ foreach($raw in $lines){
     else { Render $line -1 $false 0 }
 }
 
+# normalize the trailing empty paragraph (remove inherited bullet)
+$sel.Style = $doc.Styles.Item([int]-1)
+$sel.ParagraphFormat.LeftIndent = [single]0
+
 # footer with page number
 try {
     $ftr = $doc.Sections.Item(1).Footers.Item(1).Range
