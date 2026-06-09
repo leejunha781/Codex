@@ -147,3 +147,13 @@
 - C:\Users\namma\.claude\itt_work\dump_full.txt is still a stale diagnostic dump: it now includes Intellian lines, but it still duplicates the Daeyang-style detail block and still says 15+ years despite canonical memory correcting Daeyang to 14y11m; do not treat it as authoritative resume evidence.
 - A titleless POWERPNT process (pid 19352, started 2026-06-07 21:53:12) was present during inspection. That is a moderate stale-process risk for future COM automation or accidental save-from-stale-window behavior.
 - plm_slide_work itself looks current through V15 with fresh render/verify artifacts, and projects\C--Users-namma--claude\* sample folders now have .git directories as expected. Workspace root C:\Users\namma\.claude is not a git repo; autosync is still pushing via the outer C:\Users\namma repo, last healthy push seen at 2026-06-07 21:49:19.
+
+2026-06-09 run (~45m)
+
+- Reviewed final AVEVA V18 meeting materials and polished the EN/KO presenter facilitation guides.
+- Deck `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V18.pptx` has 42 slides, `Rev. V18 · 2026-06-09`, all slide notes present, clean glossary refs p.40-42, and visual QA on p.1/p.2/p.3/p.42. No deck edits were needed; default/final deck files were already aligned to V18.
+- Found and fixed guide drift: EN/KO cover pages still referenced V17. Updated source Markdown and regenerated DOCX/PDF so both guides now reference `Future_Industrial_PLM_Meeting_Deck_EN_V18.pptx` (V18, 42 slides).
+- Improved guide polish: set EN fonts to Aptos/Aptos Display, KO fonts to Malgun Gothic, added explicit Glossary slides 40-42 pre-read wording, added a "capture before leaving" checklist to the quick reference, and removed trailing blank paragraph/page behavior.
+- Final guide files: EN DOCX `32,159` bytes + EN PDF `163,195` bytes (8-page PDF render); KO DOCX `34,032` bytes + KO PDF `379,903` bytes (12-page PDF render), saved 2026-06-09 around 14:01-14:02.
+- QA artifacts: `C:\Users\namma\.claude\plm_slide_work\inspect_final_materials_v18_report.txt`, `final_materials_v18_deck_render\`, `final_materials_v18_guide_en_render\`, and `final_materials_v18_guide_ko_render\`. COM verification found no V17 mentions in guides, V18 present, no markdown artifacts, and no Office processes left.
+- Backup folder: `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\_backup_20260609_final_materials_v18_review_20260609_134940\`.
