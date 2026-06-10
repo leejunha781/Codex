@@ -1,3 +1,4 @@
 {"type":"started","key":"v2:5b36c04daf6d01f835e6390a859525991a53dcccb01cc53f25265a0b5fef04ee","agentId":"a9918ee13924681b1"}
 {"type":"started","key":"v2:ab25c667053381d0f01103c3b33f92e213b2cb8a3ac6fbd97db85a34803a8bee","agentId":"ae10f5254a268a2a1"}
 {"type":"started","key":"v2:4bb94edf7e348ac35f7a429c6da48024e4b78436555862765cc646fe1db141d3","agentId":"aae96141ee410d14d"}
+{"type":"result","key":"v2:ab25c667053381d0f01103c3b33f92e213b2cb8a3ac6fbd97db85a34803a8bee","agentId":"ae10f5254a268a2a1","result":{"findings":[],"overallVerdict":"All numeric claims in formula_spec.json recompute correctly: 74.0 dB (12-bit SNR), 44.04 dB (jitter SNR), +40 dB gain chain, 350 MHz BW, 175.61 dB FSPL, 41 dBW EIRP, 75.1 K (NF 1 dB), Rb halving at -3 dB C/N0, |Γ|=0.333/11.1%/0.51 dB (VSWR 2.0), 0.536λ (±60°), 0.75/3.0 dB pointing loss, EVM 3.16% at SNR 30 dB, 3.5% 256QAM limit, and -228.60 dBW/K/Hz Boltzmann — no errors found."}}
