@@ -1,10 +1,18 @@
 {
+  "edits": [
+    {
+      "id": "E-scanloss-sign",
+      "anchor": "간단한 scan loss 근사",
+      "from": "Scan loss(dB) ≈ 10 log10(cos(theta))",
+      "to": "Scan loss(dB) ≈ -10 log10(cos(theta))"
+    }
+  ],
   "inserts": [
     {
       "id": "M1-adc-formulas",
       "anchor": "DFE나 ADC/DAC 문제는 단순히",
       "lines": [
-        "이때 판단 기준이 되는 수식은 세 가지입니다. Nyquist 조건은 Fs ≥ 2 × Fmax이고, 이상적인 ADC의 양자화 SNR은 SNR(dB) ≈ 6.02N + 1.76이며, clock jitter가 제한하는 SNR은 SNRjitter(dB) ≈ -20 log10(2π × fin × tj)입니다.",
+        "이때 판단 기준이 되는 수식은 세 가지입니다. Nyquist 조건은 Fs ≥ 2 × Fmax이고, 이상적인 ADC의 양자화 SNR은 SNR(dB) ≈ 6.02N + 1.76(full-scale 정현파 입력 기준)이며, clock jitter가 제한하는 SNR은 SNRjitter(dB) ≈ -20 log10(2π × fin × tj)입니다. 여기서 tj는 RMS jitter로, clock jitter와 ADC aperture jitter의 RSS 합으로 봅니다.",
         "예를 들어 12-bit ADC의 이상적 SNR은 약 74 dB이지만, 입력 1 GHz 신호에 clock jitter가 1 ps이면 jitter 제한 SNR은 약 44 dB까지 내려갑니다. bit 수가 아무리 높아도 clock 품질이 나쁘면 실제 성능은 jitter가 결정한다는 것을 수치로 보여줄 수 있어, ADC 선정과 clock 설계를 함께 본다는 답변의 근거가 됩니다."
       ]
     },
@@ -12,7 +20,7 @@
       "id": "M2-interface-timing",
       "anchor": "interface debug는 먼저 전기적",
       "lines": [
-        "interface 검토의 정량 기준은 timing budget과 대역폭입니다. setup 조건은 t_clk ≥ t_co + t_flight + t_setup + t_margin(skew/jitter)으로 닫혀야 하고, 신호가 실제로 차지하는 대역폭은 BW ≈ 0.35 / tr로 추정합니다. 예를 들어 rise time이 1 ns인 신호는 약 350 MHz 성분까지 포함하므로, 그 대역까지 impedance와 return path를 관리해야 reflection과 timing margin 문제를 막을 수 있습니다."
+        "interface 검토의 정량 기준은 timing budget과 대역폭입니다. setup 조건은 t_clk ≥ t_co + t_flight + t_setup + t_margin(skew/jitter)으로, hold 조건은 t_co(min) + t_flight(min) ≥ t_hold + t_skew로 함께 닫혀야 합니다. 신호의 등가 대역폭은 BW ≈ 0.35 / tr(tr은 10~90% rise time)로 추정하며, 예를 들어 rise time 1 ns 신호는 약 350 MHz까지의 성분을 포함하므로 그 대역까지 impedance와 return path를 관리해야 reflection과 timing margin 문제를 막을 수 있습니다."
       ]
     },
     {
@@ -26,14 +34,14 @@
       "id": "M4-nf-sensitivity",
       "anchor": "수신감도 저하는 단순히 RF gain 부족만의",
       "lines": [
-        "NF의 정의는 NF(dB) = 10 log10(F), F = SNRin / SNRout입니다. 여러 단이 이어진 수신 경로는 Friis 공식 Ftotal = F1 + (F2 - 1)/G1 + (F3 - 1)/(G1 × G2) + ... 로 계산하고, 수신감도는 Sensitivity(dBm) = -174 + 10 log10(B) + NF + SNRreq로 추정합니다. 이 두 식에서 첫 단 NF와 그 앞단 loss가 전체 감도를 지배한다는 결론이 나오므로, LNA 앞 connector와 filter loss를 가장 먼저 확인하는 디버깅 순서가 수식으로 정당화됩니다."
+        "NF의 정의는 NF(dB) = 10 log10(F), F = SNRin / SNRout입니다. 여러 단이 이어진 수신 경로는 Friis 공식 Ftotal = F1 + (F2 - 1)/G1 + (F3 - 1)/(G1 × G2) + ... 로 계산하고, 수신감도는 Sensitivity(dBm) = -174 + 10 log10(B[Hz]) + NF + SNRreq로 추정합니다. -174 dBm/Hz는 기준온도 290 K에서의 열잡음 밀도(kT0)입니다. 이 두 식에서 첫 단 NF와 그 앞단 loss가 전체 감도를 지배한다는 결론이 나오므로, LNA 앞 connector와 filter loss를 가장 먼저 확인하는 디버깅 순서가 수식으로 정당화됩니다."
       ]
     },
     {
       "id": "M5-linearity-ip3",
       "anchor": "출력만 높이는 것이 답이 아니라",
       "lines": [
-        "linearity는 P1dB와 IP3로 정량화합니다. 두 tone 시험에서 입력 기준 3차 혼변조 성분은 IM3(dBm) ≈ 3 × Pin - 2 × IIP3로 추정되고, 출력 기준으로는 OIP3 = IIP3 + Gain입니다. 입력이 1 dB 오를 때 IM3는 3 dB씩 커지므로 인접 채널 누설과 spurious 판단의 기준이 되며, 경험적으로 OP1dB는 OIP3보다 약 9~10 dB 낮은 지점에 형성됩니다."
+        "linearity는 P1dB와 IP3로 정량화합니다. 두 tone 시험에서 입력 기준 3차 혼변조 성분은 IM3(dBm) ≈ 3 × Pin - 2 × IIP3(Pin은 tone당 입력 전력)로 추정되고, 출력 기준으로는 OIP3 = IIP3 + Gain입니다. 입력이 1 dB 오를 때 IM3는 3 dB씩 커지므로 인접 채널 누설과 spurious 판단의 기준이 되며, 경험적으로 OP1dB는 OIP3보다 약 9~10 dB 낮은 지점에 형성됩니다."
       ]
     },
     {
@@ -47,7 +55,7 @@
       "id": "M7-beamsteering",
       "anchor": "안테나 제어는 단순히 beam을 움직이는 기능이",
       "lines": [
-        "조향각과 위상의 관계는 Δφ = (2π × d / λ) × sinθ로 계산합니다. d는 element 간격, λ는 파장, θ는 조향각입니다. grating lobe를 피하려면 d ≤ λ / (1 + |sinθmax|) 조건을 만족해야 하므로 조향 범위가 넓을수록 element를 더 촘촘히 배치해야 하고, 조향각이 커지면 유효 개구면이 줄어 scan loss(dB) ≈ 10 log10(cosθ)만큼 이득이 감소합니다. 이 세 식이 ESA의 element 배치, phase 분해능, 운용 각도 규격을 결정하는 출발점입니다."
+        "조향각과 위상의 관계는 Δφ = (2π × d / λ) × sinθ로 계산합니다. d는 element 간격, λ는 파장, θ는 조향각입니다. grating lobe를 피하려면 d ≤ λ / (1 + |sinθmax|) 조건을 만족해야 하므로 조향 범위가 넓을수록 element를 더 촘촘히 배치해야 하고, 조향각이 커지면 유효 개구면이 줄어 scan loss(dB) ≈ -10 log10(cosθ)만큼 이득이 감소합니다(60° 조향 시 약 3 dB). 실제 배열에서는 element pattern 영향으로 cos^1.3~1.5 특성에 가까워 손실이 이보다 더 커지는 경우가 많습니다. 이 식들이 ESA의 element 배치, phase 분해능, 운용 각도 규격을 결정하는 출발점입니다."
       ]
     },
     {
@@ -89,14 +97,14 @@
       "id": "M13-cn0-ebn0",
       "anchor": "현장에서 C/N0가 떨어지면 RF 입력 조건",
       "lines": [
-        "C/N0(dB-Hz) = EIRP + G/T - Ltotal + 228.6으로 계산하며, 228.6은 Boltzmann 상수(k = 1.38 × 10^-23 J/K, -228.6 dBW/K/Hz)에서 나온 값입니다. 데이터 속도와는 Eb/N0(dB) = C/N0(dB-Hz) - 10 log10(Rb[bps]) 관계로 연결되므로, C/N0가 3 dB 떨어지면 같은 Eb/N0를 유지하기 위해 전송 속도를 절반으로 낮춰야 한다는 계산이 바로 나옵니다. 현장에서 C/N0 저하가 곧 throughput 저하와 link drop으로 이어지는 이유를 이 한 줄로 설명할 수 있습니다."
+        "C/N0(dB-Hz) = EIRP(dBW) + G/T(dB/K) - Ltotal(dB) + 228.6으로 계산하며, 228.6은 Boltzmann 상수(k = 1.38 × 10^-23 J/K, -228.6 dBW/K/Hz)에서 나온 값입니다. EIRP를 dBm 기준으로 넣을 때는 상수가 198.6이 됩니다. 데이터 속도와는 Eb/N0(dB) = C/N0(dB-Hz) - 10 log10(Rb[bps]) 관계로 연결되므로, C/N0가 3 dB 떨어지면 같은 Eb/N0를 유지하기 위해 전송 속도를 절반으로 낮춰야 한다는 계산이 바로 나옵니다. 현장에서 C/N0 저하가 곧 throughput 저하와 link drop으로 이어지는 이유를 이 한 줄로 설명할 수 있습니다."
       ]
     },
     {
       "id": "M14-repeater-isolation",
       "anchor": "Repeater 개발에서는 RF 성능뿐 아니라",
       "lines": [
-        "중계기 설계의 기본 정량 조건은 발진 방지입니다. 도너 안테나와 서비스 안테나 사이 isolation을 I(dB), 중계기 이득을 G(dB)라 하면 G ≤ I - 15 dB 수준의 margin을 확보해야 궤환 발진 없이 안정적으로 동작합니다. 이 한 줄 때문에 gain 설정, 안테나 배치, 차폐 구조, 설치 환경이 모두 하나의 설계 문제로 묶입니다."
+        "중계기 설계의 기본 정량 조건은 발진 방지입니다. 도너 안테나와 서비스 안테나 사이 isolation을 I(dB), 중계기 이득을 G(dB)라 하면 G ≤ I - 15 dB 수준의 margin을 확보해야 궤환 발진 없이 안정적으로 동작합니다. 엄밀한 발진 경계는 G < I(궤환 loop gain < 0 dB)이고, 15 dB는 설치 환경과 안테나 패턴 변동을 고려한 권고 margin(통상 10~20 dB, 간섭제거 기능 적용 여부에 따라 조정)입니다. 이 조건 때문에 gain 설정, 안테나 배치, 차폐 구조, 설치 환경이 모두 하나의 설계 문제로 묶입니다."
       ]
     },
     {
@@ -124,7 +132,7 @@
       "id": "A3-ebn0-margin",
       "anchor": "C/N0는 현장 품질을 보는 중요한 지표입니다",
       "lines": [
-        "데이터 속도와의 연결은 Eb/N0(dB) = C/N0(dB-Hz) - 10 log10(Rb[bps])이고, Link margin(dB) = 달성 C/N0 - 요구 C/N0로 정의합니다. modulation/coding이 요구하는 Eb/N0와 비교해 margin이 남는지로 링크 성립 여부를 판단하며, margin이 0에 가까우면 비, blockage, pointing 변동만으로도 link drop이 발생할 수 있습니다."
+        "데이터 속도와의 연결은 Eb/N0(dB) = C/N0(dB-Hz) - 10 log10(Rb[bps])이고, Link margin(dB) = 달성 C/N0 - 요구 C/N0로 정의합니다. modulation/coding이 요구하는 Eb/N0와 비교해 margin이 남는지로 링크 성립 여부를 판단하며, margin이 0에 가까우면 비, blockage, pointing 변동만으로도 link drop이 발생할 수 있습니다. 이론적인 throughput 한계는 Shannon 공식 C = B × log2(1 + SNR)로 주어지므로, C/N0 저하가 modulation/coding 하향과 throughput 저하로 이어지는 구조도 한 식으로 설명할 수 있습니다."
       ]
     },
     {
@@ -138,7 +146,7 @@
       "id": "A5-oversampling",
       "anchor": "면접에서는 세부 알고리즘을 모두 설명하기보다",
       "lines": [
-        "oversampling과 decimation filtering에는 processing gain 개념이 따라옵니다. SNR 개선량 ≈ 10 log10(Fs / 2B)로, sampling rate가 신호 대역폭의 2배보다 높을수록 대역 밖 noise를 걸러내며 SNR을 추가로 확보할 수 있습니다. DFE의 decimation은 단순한 데이터 축소가 아니라 noise 대역을 줄이는 과정이기도 합니다."
+        "oversampling과 decimation filtering에는 processing gain 개념이 따라옵니다. SNR 개선량 ≈ 10 log10(Fs / 2B)로, sampling rate가 신호 대역폭의 2배보다 높을수록 대역 밖 noise를 걸러내며 SNR을 추가로 확보할 수 있습니다. 단, 이 gain은 대역에 백색으로 퍼진 잡음(양자화·열잡음)에만 적용되며, 대역 내 spur나 close-in phase noise에는 적용되지 않습니다."
       ]
     },
     {
@@ -175,7 +183,7 @@
       "id": "A10-im3-p1db",
       "anchor": "RF 출력만 높이는 것이 아니라 P1dB",
       "lines": [
-        "입력 기준 3차 혼변조 레벨은 IM3(dBm) ≈ 3 × Pin - 2 × IIP3로 추정하며, 경험적으로 OP1dB ≈ OIP3 - 9.6 dB 관계가 자주 사용됩니다. 두 식을 알면 datasheet의 IP3 값에서 실제 운용 입력 레벨의 spurious 여유를 바로 계산해 보일 수 있습니다."
+        "입력 기준 3차 혼변조 레벨은 IM3(dBm) ≈ 3 × Pin - 2 × IIP3(Pin은 two-tone 시험의 tone당 입력 전력)로 추정하며, 경험적으로 OP1dB ≈ OIP3 - 9.6 dB 관계가 자주 사용됩니다. 두 식을 알면 datasheet의 IP3 값에서 실제 운용 입력 레벨의 spurious 여유를 바로 계산해 보일 수 있습니다."
       ]
     },
     {
@@ -183,6 +191,37 @@
       "anchor": "5G/LTE RU나 Digital&RF Module에서는 EVM이 나빠졌을 때",
       "lines": [
         "EVM과 SNR은 EVM(%) ≈ 100 / √(SNRlinear), 즉 EVM(dB) ≈ -SNR(dB) 관계로 환산할 수 있습니다. 예를 들어 SNR 30 dB는 EVM 약 3.2%에 해당해 256QAM 요구 수준(약 3.5%)과 직접 비교할 수 있습니다."
+      ]
+    },
+    {
+      "id": "A12-thermal",
+      "anchor": "부록 G. Antenna",
+      "lines": [
+        "## Thermal 설계 기본식",
+        "Junction 온도: Tj = Ta + P × θJA",
+        "Tj는 junction 온도, Ta는 주변 온도, P는 소비전력, θJA는 junction-주변 열저항입니다. 예를 들어 소비전력 5 W에 θJA 10 °C/W이면 junction 온도는 주변보다 50 °C 높아집니다. thermal margin 검토는 결국 소비전력 산정과 방열 구조로 θJA를 낮추는 설계 문제로 귀결되며, FPGA/PA처럼 발열이 큰 부품은 derating 기준과 함께 관리해야 합니다.",
+        "면접 답변 포인트: “출력과 linearity를 올리는 설계는 항상 발열과 함께 옵니다. 저는 전원 budget과 thermal margin을 같은 표에서 관리해야 한다고 봅니다.”"
+      ]
+    },
+    {
+      "id": "A13-aclr",
+      "anchor": "EVM",
+      "anchorExact": true,
+      "lines": [
+        "## ACLR과 인접 채널 누설",
+        "ACLR(dB) = 10 log10(본 채널 전력 / 인접 채널 전력)",
+        "PA nonlinearity로 생긴 spectral regrowth가 인접 채널을 얼마나 침범하는지 보는 지표입니다. 3GPP 기지국 규격은 통상 45 dB 수준 이상을 요구하므로, ACLR은 PA back-off, linearity(IP3), DPD 적용 여부와 직결되는 송신 설계의 실질적인 목표값이 됩니다.",
+        "면접 답변 포인트: “ACLR이 나빠지면 PA 동작점과 back-off, DPD 보정 상태, 입력 신호 PAR을 함께 봅니다. 출력 스펙과 인접 채널 규격은 한 쌍으로 관리해야 합니다.”"
+      ]
+    },
+    {
+      "id": "A14-doppler",
+      "anchor": "부록 H. Linearity",
+      "lines": [
+        "## LEO Doppler shift",
+        "Doppler shift: fd = (v / c) × f",
+        "LEO 위성은 단말과의 상대속도가 크기 때문에 Doppler shift가 발생합니다. Ku-band 12 GHz에서 상대속도 7.5 km/s이면 약 ±300 kHz 수준이므로, 단말의 주파수 추적, 동기, handover 설계에 반영되어야 합니다. ESA tracking 성능과 함께 LEO 단말의 수신 안정성을 결정하는 정량 요소입니다.",
+        "면접 답변 포인트: “LEO 단말은 pointing뿐 아니라 Doppler 보정까지 포함해야 link가 유지됩니다. 위성이 빠르게 지나가는 환경에서는 추적과 주파수 동기가 한 묶음의 설계 문제입니다.”"
       ]
     }
   ]
