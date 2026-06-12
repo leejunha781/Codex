@@ -25,7 +25,7 @@ if (-not (Test-Path $outDir)) { New-Item -ItemType Directory -Path $outDir | Out
 $file = Await ([Windows.Storage.StorageFile]::GetFileFromPathAsync($pdfPath)) ([Windows.Storage.StorageFile])
 $pdfDoc = Await ([Windows.Data.Pdf.PdfDocument]::LoadFromFileAsync($file)) ([Windows.Data.Pdf.PdfDocument])
 Write-Output "PDF pages: $($pdfDoc.PageCount)"
-foreach ($idx in @(0, 1)) {
+foreach ($idx in @(0, 12, 13)) {
     $page = $pdfDoc.GetPage([uint32]$idx)
     $stream = New-Object Windows.Storage.Streams.InMemoryRandomAccessStream
     $opts = New-Object Windows.Data.Pdf.PdfPageRenderOptions
