@@ -7,12 +7,9 @@ $word = New-Object -ComObject Word.Application
 $word.Visible = $false
 $doc = $null
 try {
-    $doc = $word.Documents.Open($docx, $false, $false)
-    if ($doc.ReadOnly) {
-        throw "Document opened read-only. Please close the file if it is open in Word and retry."
-    }
-    $doc.Fields.Update() | Out-Null
-    $doc.Save()
+    # Export only. Opening read-only avoids Word save prompts if the file has
+    # transient write-reservation metadata, while still rendering the saved DOCX.
+    $doc = $word.Documents.Open($docx, $false, $true)
     $doc.ExportAsFixedFormat($pdf, 17)
     $pages = $doc.ComputeStatistics(2)
     $words = $doc.ComputeStatistics(0)
