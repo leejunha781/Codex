@@ -38,16 +38,16 @@ try {
 
     $table = $doc.Tables.Item(3)
     $cell = $table.Range.Cells.Item(6)
-    $newText = "ROKN ship/submarine programmes plus working understanding of HD Hyundai-style standard shipbuilding process: requirements -> basic/detail design -> E3D/Marine/Draw -> MTO/eBOM -> hull/block effectivity & baseline -> ECR/ECO -> production BOM/release -> commissioning/handover evidence."
+    $newText = "ROKN ship/submarine programmes plus working understanding of HD Hyundai standard process: requirements/VCRM -> basic/detail design -> E3D/Marine/Draw -> MTO/eBOM -> effectivity/baseline -> ECR/ECO -> production release/handover evidence."
 
     Set-RangeTextKeepMark -Range $cell.Range -Text $newText
     $cell.Range.Font.Name = "Arial"
-    $cell.Range.Font.Size = [single]10
+    $cell.Range.Font.Size = [single]9.5
     $cell.Range.Font.Bold = [int]0
     $cell.Range.ParagraphFormat.SpaceBefore = [single]0
     $cell.Range.ParagraphFormat.SpaceAfter = [single]0
     $cell.Range.ParagraphFormat.LineSpacingRule = 0
-    Bold-Substring -Range $cell.Range -Needle "HD Hyundai-style standard shipbuilding process"
+    Bold-Substring -Range $cell.Range -Needle "HD Hyundai standard process"
 
     $doc.Fields.Update() | Out-Null
     $doc.Save()
