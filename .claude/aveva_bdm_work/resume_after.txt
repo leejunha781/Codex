@@ -1,0 +1,402 @@
+﻿[001] Resume
+[002] Target: AVEVA - Business Development Manager - Engineering (Marine), Korea / Japan
+[003] Application Location: Seoul, Korea
+[004] 
+[005] Marine Engineering & Industrial Software Business Development Professional
+[006] Basic Information
+[007] Name
+[008] Joonha Lee
+[009] 
+[010] 
+[011] Date of Birth
+[012] 23 February 1974
+[013] 
+[014] 
+[015] Address
+[016] Gunpo-si, Gyeonggi-do, Korea | Application Location: Seoul, Korea
+[017] 
+[018] 
+[019] Total Experience
+[020] 21+ years
+[021] 
+[022] 
+[023] Mobile
+[024] +82-10-2731-4581
+[025] 
+[026] 
+[027] E-Mail
+[028] leejunha781@gmail.comm
+[029] 
+[030] 
+[031] 
+[032] Professional Summary
+[033] Marine and industrial engineering professional with 21+ years across ROK Navy shipbuilding programmes (FFX Batch-II, Jangbogo-III), defence electronics and a global LEO satellite terminal programme. Combines shipyard lifecycle credibility - requirements/VCRM, E3D/Marine design data, MTO/eBOM, baseline/effectivity, ECR/ECO, class evidence and handover - with technical value selling: translating marine pain points such as design rework and system integration into value propositions, benchmarks and qualified opportunities. Ready to support AVEVA regional sales teams, Account Managers and Pre-Sales Consultants in Korea/Japan with domain credibility, competitive PLM insight (Siemens, Dassault, Hexagon, PTC, NAPA) and Salesforce CRM-ready pipeline support.
+[034] 
+[035] Core Competencies
+[036] Marine Business Development / Pipeline Support
+[037] Shipbuilding and naval-domain credibility for discovering customer pain points, qualifying Marine Engineering opportunities, supporting lead generation and keeping pipeline actions Salesforce CRM-ready for regional account teams..
+[038] 
+[039] Technical Value Selling / Solution Positioning
+[040] Value-selling language for design rework, configuration inconsistency, limited digital continuity, compliance workload and lifecycle-data gaps.
+[041] 
+[042] Marine / Shipbuilding Lifecycle Domain
+[043] Practical understanding of ROKN programmes and the standard large-shipyard lifecycle: requirements/VCRM, basic/detail design, E3D/Marine/Draw, MTO/eBOM, baseline/effectivity, ECR/ECO, class/regulatory evidence and production handover..
+[044] 
+[045] Customer Engagement / Executive Communication
+[046] Customer meetings, technical reviews, proposal presentations and executive briefings translated into cost, schedule, risk, fleet readiness and lifecycle efficiency.
+[047] 
+[048] Competitive PLM / Engineering Software Insight
+[049] Working comparison of AVEVA E3D/Marine, Unified Engineering, AIM and PI/CONNECT against Siemens, Dassault, Hexagon, PTC and NAPA.
+[050] 
+[051] AVEVA Values / Sustainability / Trust
+[052] Working style aligned with Impact, Aspiration, Curiosity and Trust; sustainability narrative built on reduced rework, digital continuity, evidence-based decisions and responsible use of engineering resources.
+[053] 
+[054] 
+[055] Education
+[056] ✓ M.S. in Electronic & Electrical Engineering, Pusan National University, Korea (Sep 2013 - Aug 2018) - thesis research on industrial Ethernet-based three-phase motor control for actuator applications (ARM Cortex-M3))
+[057] ✓ B.S. in Control & Instrumentation Engineering, University of Ulsan, Korea (Mar 1992 - Feb 2002)
+[058] ✓ Dongcheon High School, Science Track, Busan, Korea (Mar 1989 - Feb 1992)
+[059] 
+[060] Career Summary
+[061] Period
+[062] Company
+[063] Team
+[064] Position
+[065] Role Relevance
+[066] 
+[067] Mar 2023 - Jul 2025
+[068] Intellian Technologies
+[069] SIT Team
+[070] General Manager
+[071] Led customer-facing SIT, verification governance and release-readiness control for a global LEO terminal programme; managed 400+ verification items.
+[072] 
+[073] Aug 2022 - Mar 2023
+[074] Genohco
+[075] System Technology R&D Center
+[076] Principal Research Engineer / PL-PM
+[077] Managed defence/aerospace RFPs, tender responses, cost/schedule planning, technical reviews and customer/partner coordination.
+[078] 
+[079] May 2007 - Apr 2022
+[080] Daeyang Electric Co., Ltd.
+[081] R&BD Business Team 1
+[082] Deputy General Manager / Naval System Engineer & PM/PL
+[083] Built 15 years of naval/shipbuilding delivery credibility across requirements, design, FAT/SAT, sea trial and handover; mapped shipyard pain points to standard large-shipyard lifecycle controls..
+[084] 
+[085] Jan 2006 - May 2007
+[086] Excure Hitronn
+[087] Electronic Technology Team
+[088] Assistant Manager
+[089] Resolved control-board and production issues through evidence-based analysis, certification support and engineering-to-production feedback.
+[090] 
+[091] Jun 2005 - Oct 2005
+[092] Essetel
+[093] Development Team
+[094] Assistant Manager
+[095] Developed RF/digital/power interface troubleshooting capability for communication hardware and system-level issue analysis.
+[096] 
+[097] Jan 2004 - May 2005
+[098] NesLab
+[099] Development Team
+[100] Assistant Manager
+[101] Supported embedded hardware, high-speed interface testing and prototype-to-production stabilization through disciplined failure analysis.
+[102] 
+[103] 
+[104] Job-Fit Map: AVEVA Marine BDM Requirements vs. Career Evidence
+[105] AVEVA BDM Requirement
+[106] Direct Evidence from Career
+[107] Value to AVEVA / Client
+[108] 
+[109] Grow Marine pipeline and qualify opportunities
+[110] Supported RFP analysis, technical proposals, customer meetings and issue prioritisation across naval, defence and satellite programmes.
+[111] Converts Korea/Japan marine pain points into qualified Engineering opportunities and CRM-ready next actions.
+[112] 
+[113] Bring marine domain and competitive insight
+[114] 15 years in ROK Navy and shipyard programmes; practical view of requirements/VCRM, E3D/Marine/Draw, MTO/eBOM, baseline/effectivity, ECR/ECO and handover evidence; benchmarked AVEVA against Siemens, Dassault, Hexagon, PTC and NAPA.
+[115] Creates credible discovery with shipyard, offshore and naval customers, grounded in real lifecycle process.
+[116] 
+[117] Build value propositions and benefit cases
+[118] Managed 400+ verification items, VCRM-style evidence, ECO/BOM impact, WBS schedules, cost estimates and acceptance criteria.
+[119] Supports benefit cases for lower rework, faster change-impact review, stronger configuration consistency and compliance efficiency.
+[120] 
+[121] Engage executives in business language
+[122] Prepared management reports, proposal presentations and risk/acceptance briefings for Navy, shipyard, defence and global customer stakeholders.
+[123] Translates technical detail into cost, schedule, risk, readiness and sustainability value.
+[124] 
+[125] Coordinate sales, pre-sales, partners and delivery teams
+[126] Coordinated engineering, quality, production, subcontractors, agencies and global partners through long-cycle delivery and acceptance work.
+[127] Fits regional account teams that require disciplined follow-up across sales, pre-sales, partners and customer functions.
+[128] 
+[129] Position AVEVA Marine PLM / Engineering differentiation
+[130] Defined an AVEVA narrative around an open decision layer linking configuration, impact, evidence, approval and operations feedback.
+[131] Positions AVEVA above document-centric workflows as the engineering-to-operations decision loop for marine customers.
+[132] 
+[133] 
+[134] 
+[135] 
+[136] Detailed Professional Experience
+[137] Intellian Technologies | General Manager, SITT
+[138] 2023.03 – 2025.07
+[139] 
+[140] ■ Main Responsibilities
+[141] Managed system integration testing, customer technical communication, quality-issue governance and release-readiness control for the Eutelsat OneWeb LEO satellite terminal and antenna programme. Converted requirements, defects, ECO/BOM changes and verification evidence into clear release decisions for engineering, quality, production and customer stakeholders.
+[142] Established a project-control discipline linking customer requirements, field issues, defect history, test evidence and approval criteria. The same discipline applies to Marine BDM work: turning customer pain points into solution fit, benefit evidence and qualified next actions.
+[143] ■ Role Description
+[144] 1. Customer Requirement-to-Value Translation and Lifecycle Evidence Management
+[145] (1) Customer Requirements, Evidence and Business Value Control
+[146] Organised customer requirements, defect history, test results, ECO/BOM changes, and release criteria from a VCRM perspective for the Eutelsat OneWeb LEO satellite antenna programme.
+[147] Linked verification items with supporting evidence so that each requirement could be traced to the relevant test result, technical judgement, and approval basis.
+[148] Clarified the technical grounds for customer approval, production transition, and shipment release decisions.
+[149] Built practical experience in requirements-to-evidence traceability, which is closely aligned with PLM-based lifecycle data control and customer acceptance management.
+[150] (2) Benchmark and Benefit Evidence from 400+ Verification Items
+[151] Operated more than 400 design verification checklist items across RF/antenna, control electronics, network interface, environmental verification, and production verification areas.
+[152] Organised test results into evidence-based reports for internal management, engineering, quality, production, and customer-facing decision making.
+[153] Supported release and shipment judgement by ensuring that verification results were reviewed through data and evidence rather than assumption.
+[154] Contributed to a structured product lifecycle review process by connecting design verification, production readiness, and customer approval criteria.
+[155] (3) Customer Pain Point Classification and Conversion to Action
+[156] Improved test and inspection processes and strengthened the regression verification flow for recurring issues.
+[157] Structured recurring issues by reproduction condition, root cause, corrective action, and re-verification result so that development, quality, and production teams could respond on the same basis.
+[158] Helped reduce repeated quality issues and shorten customer issue handling lead time by improving issue tracking discipline and verification readiness.
+[159] Built a practical working style suitable for customer technical support, PLM issue tracking, and product development feedback loops.
+[160] 
+[161] 
+[162] 2. Global Customer Engagement and Sales / Pre-Sales Support
+[163] (1) Customer Meetings, Technical Discovery and Follow-Up
+[164] Conducted recurring quality meetings and technical reviews with Eutelsat OneWeb, covering defect status, corrective actions, verification results, release status, and schedule risks.
+[165] Prepared clear issue summaries and follow-up actions before and after meetings so that execution owners, due dates, and decision points were aligned internally.
+[166] Reported key technical and quality issues to both customer and internal management in a structured and timely manner.
+[167] Developed customer-facing communication capability required for technical workshops, product reviews, and implementation support.
+[168] (2) Opportunity-Grade Issue Alignment Between Customer and Product Teams
+[169] Coordinated disputed or sensitive issues between the customer and internal development, quality, and production teams using reproduction conditions, evidence data, change impact, and corrective actions.
+[170] Presented both technical justification and schedule impact rather than accepting customer requests without review, helping maintain customer trust within practical delivery limits.
+[171] Prevented quality issues from escalating into wider disputes by keeping discussions evidence-based and solution-focused.
+[172] Gained relevant experience for AVEVA-style customer issue resolution between customers, product development, and portfolio or strategy teams.
+[173] 3. Product Readiness, Release Risk and Commercial Impact Support
+[174] (1) Pilot Build and Production Readiness Support
+[175] Supported pilot build reviews, ECO/BOM change control, and production readiness assessment for release preparation.
+[176] Addressed validation issues such as EMI/EMC, vibration, waterproof performance, and network reliability in relation to production transition risk.
+[177] Reviewed the impact of design changes on test, production, quality, and customer approval before release decisions were made.
+[178] Built hands-on experience in product lifecycle transition from engineering validation to production release.
+[179] (2) System-Level Field Issue Reproduction and Technical Analysis
+[180] Reproduced and analysed field issues through integrated checks of control boards, drive systems, position feedback, and network interfaces.
+[181] Used Wireshark and iperf-based network verification to narrow down symptoms and identify likely causes.
+[182] Assessed issues from a full system perspective rather than viewing hardware, firmware, network, and test results separately.
+[183] Strengthened troubleshooting capability applicable to technical support, solution implementation, and customer-site consulting.
+[184] (3) Global Technical Support and Customer Communication
+[185] Provided technical support for Marlink/STW in Germany and supported OneWeb antenna field and exhibition activities in Australia.
+[186] Built practical experience in English technical communication with global customers and partners.
+[187] Delivered customer-facing explanations and action plans within limited time, helping stabilise field issue handling.
+[188] Developed a professional support style suitable for international marine customers, shipyards, and global product teams.
+[189] 
+[190] Genohco | Principal Research Engineer / PL-PM
+[191] 2022.08 – 2023.03
+[192] 
+[193] ■ Main Responsibilities
+[194] Managed defence and aerospace electronics projects, including K2 sight test equipment and civil aircraft diagnostic systems, from RFP/proposal through development, testing, customer inspection and delivery. Led tender interpretation, technical proposal writing, cost/schedule planning, partner coordination and customer-facing reviews.
+[195] Controlled RFP analysis, execution planning, verification readiness and deliverables across customers, partners and external test agencies. Built a proposal-to-delivery rhythm suitable for opportunity qualification, benchmark discussion and value-based customer follow-up.
+[196] ■ Role Description
+[197] 1. Tender, Proposal and Value-Based Opportunity Support
+[198] (1) End-to-End Project Management
+[199] Managed project activities from proposal and contract stage through development, testing, customer inspection, and final delivery.
+[200] Interpreted customer requirements accurately during the bidding phase and controlled project execution based on schedule, deliverables, and acceptance criteria during the delivery phase, including tender conditions and contractual delivery terms.
+[201] Supported stable project execution by aligning technical scope, milestones, test requirements, and delivery conditions.
+[202] Built practical experience relevant to technical proposal preparation and Proof of Capability-style customer presentations.
+[203] (2) RFP Analysis, Solution Positioning and Technical Proposal Preparation
+[204] Analysed bid announcements and RFP documents and prepared technical proposals, project execution plans, cost estimates, and presentation materials.
+[205] Reflected requirement response strategy, development schedule, test plans, delivery criteria, and risk management in proposal materials.
+[206] Helped improve bidding competitiveness by translating customer requirements into practical execution plans.
+[207] Developed the ability to explain technical solutions in a customer-oriented and commercially aware manner.
+[208] 2. Requirements Review, Design Review and Verification Management
+[209] (1) Requirements Analysis and Board-Level Design Review
+[210] Reviewed requirements, board-level design, power and signal interfaces, and integration and verification readiness.
+[211] Managed the impact of design changes by checking not only functional implementation but also testability, delivery feasibility, and external certification readiness.
+[212] Supported stable design execution by linking technical review findings with downstream verification planning.
+[213] Built a structured approach to requirement interpretation, change impact review, and verification planning.
+[214] (2) Test Planning and External Test Agency Coordination
+[215] Managed EMI/EMC and environmental test planning, coordination with external test institutes, preparation of test procedures and reports, and change request handling.
+[216] Responded to test issues by defining root cause, corrective action, and re-verification criteria rather than simply rescheduling tests.
+[217] Improved document quality and schedule control through structured test readiness management.
+[218] Maintained traceability between technical requirements, test conditions, test results, and customer acceptance evidence.
+[219] (3) Deliverable and Traceability Control
+[220] Controlled development deliverables, verification records, customer response documents, and external test documents in a systematic manner.
+[221] Maintained explanation responsibility and traceability required in defence and public-sector projects.
+[222] Strengthened document discipline by ensuring that decisions were based on clear criteria and supporting evidence.
+[223] Established a working foundation relevant to PLM data control, lifecycle documentation, and technical support reporting.
+[224] 3. Stakeholder Coordination and Project Operation
+[225] (1) WBS-Based Schedule, Resource and Supplier Control
+[226] Managed WBS-based schedule planning, manpower and cost allocation, subcontractor coordination, and procurement schedule alignment.
+[227] Identified potential delays early and adjusted priorities across development, purchasing, partners, and external test agencies.
+[228] Supported delivery, quality, and cost targets by maintaining practical coordination across all project stakeholders.
+[229] Built project management capability for handling multiple commitments and competing technical priorities.
+[230] (2) Customer and Inspection Response Management
+[231] Supported customer technical discussions, change requests, inspection agency questions, and test result reporting.
+[232] Reviewed both technical necessity and schedule or cost impact when handling change requests.
+[233] Helped prevent unnecessary disruption to the project by balancing technical needs with delivery constraints.
+[234] 
+[235] Daeyang Electric | Deputy General Manager, Naval System Engineer & PM/PLr
+[236] 2007.05 – 2022.04
+[237] 
+[238] ■ Main Responsibilities
+[239] Delivered ROK Navy ship and submarine communication systems, shipboard broadcasting systems, internal networks, CCTV/VOD and C4I-linked systems from requirements analysis through design, installation, commissioning, acceptance and after-delivery support. Developed first-hand understanding of Korean shipyard workflows, naval customer language, system integration constraints and lifecycle documentation.
+[240] Managed marine system integration, technical documentation, FAT/SAT, sea trial support, customer acceptance, field issue response and coordination with Navy, shipyards, inspectors, subcontractors, production, quality and engineering teams. Mapped this delivery experience to large-shipyard lifecycle controls: requirements/VCRM, basic/detail design, E3D/Marine/Draw, MTO/eBOM, hull/block baseline, ECR/ECO, production release and handover evidence.
+[241] ■ Role Description
+[242] 1. End-to-End Marine Customer Engagement for Naval and Shipbuilding SI Projects
+[243] (1) Full Lifecycle Delivery of Naval Programmes
+[244] Participated as System Engineer, PM, and PL in Jangbogo-III integrated communication systems and FFX Batch-II wireless communication and shipboard broadcasting programmes.
+[245] Managed the full project lifecycle from proposal, design, implementation, installation, testing, customer acceptance, and sustainment support.
+[246] Controlled requirements, interface definitions, test criteria, and acceptance conditions consistently across each programme.
+[247] Built practical understanding of how shipbuilding projects require system architecture, detailed documentation, commissioning readiness, and customer acceptance discipline.
+[248] (2) Requirements Analysis, Customer Pain-Point Discovery and Proposal Planning
+[249] Analysed customer requirements from the Navy, shipyards, and defence authorities and translated them into system architecture, network configuration, equipment specifications, ICDs, technical proposals, and execution plans.
+[250] Supported proposal presentations and planning documents with a strong focus on operational concept, onboard installation constraints, and real shipboard conditions.
+[251] Converted customer needs into implementable system configurations and milestone-based execution plans.
+[252] Built experience directly relevant to AVEVA Marine PLM consulting, where customer needs must be translated into solution architecture, implementation scope, and technical proposal materials.
+[253] (3) WBS-Based Schedule, Budget and Risk Management
+[254] Managed WBS-based schedule plans, budget and manpower allocation, equipment deployment, subcontractor coordination, risk registers, and change control systems.
+[255] Identified schedule risks early and aligned purchasing, production, quality, and subcontractor actions to keep projects within delivery and acceptance targets.
+[256] Maintained milestone discipline and close-out control across long-cycle defence and shipbuilding programmes.
+[257] Managed multiple commitments and competing priorities across engineering, production, shipyard, customer, and inspection stakeholders.
+[258] 2. Marine Engineering Data, System Integration and Lifecycle Documentation Control
+[259] (1) Communication and C4I Interface Management
+[260] Reviewed MOSCOS integration and LINK-11-based C4I data link interface compatibility in submarine and surface ship communication systems.
+[261] Reflected data integrity, transmission delay, electrical interface, logical interface, and communication stability requirements into technical reviews and test criteria.
+[262] Helped ensure stable interaction between tactical data systems and shipboard communication environments.
+[263] Developed system architecture and interface-management experience relevant to next-generation shipbuilding platforms and marine PLM environments.
+[264] (2) Multi-Subsystem Integration and Documentation Standardisation
+[265] Integrated multiple shipboard subsystems, including internal networks, wireless communications, shipboard broadcasting, CCTV/VOD, and C4I-linked interfaces.
+[266] Standardised ICDs, test plans, test procedures, result reports, and acceptance documents so that all subsystem teams worked to the same criteria.
+[267] Improved consistency in testing and acceptance by maintaining common technical documentation standards.
+[268] Built a strong foundation in lifecycle documentation, interface traceability, and evidence-based acceptance control, which is highly relevant to Marine PLM implementation and consulting.
+[269] (3) Shipboard Technical Data, Customer Acceptance and Lifecycle Value Control
+[270] Managed technical documents and acceptance evidence required for naval shipbuilding projects, including interface documents, test plans, procedures, and result reports.
+[271] Coordinated with shipyards, Navy users, inspectors, subcontractors, and internal teams to align test criteria, defect closure, and retest scope.
+[272] Supported customer acceptance by ensuring that technical decisions were supported by formal documentation and measured evidence.
+[273] Developed a practical understanding of how engineering data, test evidence, and customer approval must be connected across the project lifecycle.
+[274] 3. Test, Commissioning, Acceptance and Field Support
+[275] (1) FAT, SAT, Sea Trial and Customer Acceptance Support
+[276] Led and supported FAT, SAT, commissioning, sea trial, and customer acceptance activities with the Navy, shipbuilders, inspectors, and subcontractors.
+[277] Coordinated test criteria, defect closure, retest scope, and reporting throughout the acceptance process.
+[278] Minimized project closing risk by resolving issues through cause analysis and corrective action rather than responsibility disputes.
+[279] Built customer-facing field support experience in real shipyard and onboard operating environments.
+[280] (2) RF Tuning, Measurement-Based Defect Analysis and Technical Reporting
+[281] Performed RF tuning and performance measurement for VHF, UHF, and HF communication equipment, including transmit and receive output, sensitivity, frequency alignment, link quality, channel stability, and operating margin.
+[282] Used Signal Generator, Spectrum/Signal Analyzer, RF Power Meter, and Dummy Load to analyse output deviation, sensitivity degradation, channel mismatch, and antenna/cable/equipment interface issues.
+[283] Reflected measured findings in test reports and technical documentation to support field operability and acceptance readiness.
+[284] Strengthened evidence-based troubleshooting capability required for customer support and technical consulting.
+[285] (3) Overseas Field Technical Support
+[286] Supported overseas submarine field technical assistance in Indonesia and gained practical experience in customer-facing troubleshooting under site constraints.
+[287] Worked directly with overseas customers, shipyards, and partners during field issue response and acceptance support.
+[288] Built a strong foundation in after-delivery technical support in challenging operational environments.
+[289] Developed the flexibility and professional attitude required for customer visits, on-site support, and potential international travel.
+[290] 
+[291] Excure Hitron | Assistant Manager, Electronic Technology Teamm
+[292] 2006.01 – 2007.05
+[293] 
+[294] ■ Main Responsibilities
+[295] Worked as a hardware engineer for CCTV systems and IR dome camera products, focusing on control boards, power and signal interface circuits, prototype verification, early production issue analysis, certification support and engineering-to-production handover.
+[296] Established a disciplined approach to board-level troubleshooting, product stabilisation, technical documentation and issue feedback between engineering, quality and production teams, with emphasis on interface clarification, verification evidence and engineering-to-production handover.
+[297] ■ Role Description
+[298] 1. CCTV and IR Dome Camera Hardware Development
+[299] (1) Control Board and Interface Circuit Development
+[300] Designed and debugged control circuits, power circuits and signal interface circuits for CCTV systems and IR dome camera products.
+[301] Reviewed power stability, signal paths, connector conditions and external interface matching to improve product-level hardware reliability.
+[302] Supported prototype bring-up and functional checks by measuring signals and verifying board behaviour against design intent.
+[303] Built practical experience in interpreting interface conditions and converting technical findings into corrective actions.
+[304] (2) Prototype Verification and Technical Issue Control
+[305] Verified prototype hardware performance by checking circuit operation, power behaviour, signal integrity and board-level interface conditions.
+[306] Analysed hardware issues by separating possible causes across circuit design, wiring, components, connectors and system interaction.
+[307] Organised issue findings into practical engineering feedback for design correction and production readiness.
+[308] Developed a structured troubleshooting approach relevant to customer technical support and implementation issue handling.
+[309] (3) Early Production Issue Analysis and Certification Support
+[310] Analysed early production defects and coordinated corrective actions with production and quality teams.
+[311] Participated in EMC/RoHS and other certification-related support activities, gaining practical understanding of compliance and production stabilisation.
+[312] Helped connect design output, verification results, production issues and corrective actions into a consistent product lifecycle flow.
+[313] Built the hardware troubleshooting discipline that later supported naval, defence and satellite system integration work.
+[314] 
+[315] Essetel | Assistant Manager, Development Team
+[316] 2005.06 – 2005.10
+[317] 
+[318] ■ Main Responsibilities
+[319] Supported development and verification of ARM-based cellular mobile hardware and RF/MW-related communication circuits, including schematic review, board-level checks, power and signal path verification, interface debugging and performance confirmation.
+[320] Strengthened practical understanding of RF signal paths, digital control interfaces, power behaviour, measurement-based debugging and communication equipment reliability, connecting technical data, interface conditions, verification results and field issues across the product lifecycle.
+[321] ■ Role Description
+[322] 1. RF/MW Circuit and Communication Hardware Verification
+[323] (1) RF Circuit Support and Measurement-Based Debugging
+[324] Supported RF/MW circuit development and debugging by reviewing signal paths, component application, impedance-related conditions and interface behaviour.
+[325] Conducted board-level checks and signal measurements to confirm basic circuit operation and identify abnormal behaviour.
+[326] Strengthened hands-on capability in using measured evidence rather than assumptions when analysing electronic hardware issues.
+[327] Developed the technical discipline to explain issue causes clearly based on data, which later supported customer-facing troubleshooting.
+[328] (2) ARM-Based Mobile Hardware and Interface Review
+[329] Supported ARM-based cellular mobile hardware development by checking circuit operation, power paths, signal routes and interface conditions.
+[330] Reviewed how RF, digital control, power and interface blocks interacted within a communication product.
+[331] Analysed how circuit changes or debugging results could affect overall equipment performance, verification results and production stability.
+[332] Built an early foundation in lifecycle thinking by connecting development issues with test, certification and production readiness.\
+[333] (3) Communication Equipment Engineering Foundation
+[334] Reviewed circuit behaviour and interface conditions from a practical product-development perspective.
+[335] Supported troubleshooting of power, signal, connector and board-interaction issues during development.
+[336] Built an engineering foundation later applicable to RF tuning, communication equipment verification and shipboard system troubleshooting.
+[337] Developed a system-level problem-solving approach useful for technical support, solution implementation and customer issue response.
+[338] 
+[339] NesLab | Assistant Manager, Development Teamm
+[340] 2004.01 – 2005.05
+[341] 
+[342] ■ Main Responsibilities
+[343] Began engineering career in embedded and control hardware development, PCB design support, prototype bring-up, high-speed interface debugging and product-level troubleshooting.
+[344] Developed a practical foundation in circuit behaviour, power integrity, signal-path analysis, firmware interaction, interface stability and manufacturability. This foundation later supported work in defence electronics, naval shipboard systems and satellite communication systems, where lifecycle documentation, interface traceability and customer acceptance evidence are critical.
+[345] ■ Role Description
+[346] 1. Embedded Hardware and PCB Development Foundation
+[347] (1) PCB Design, Control Board Debugging and Prototype Bring-Up
+[348] Supported PCB design and debugging for control boards and embedded hardware modules.
+[349] Conducted prototype bring-up, functional verification and signal-level checks after board fabrication.
+[350] Analysed circuit behaviour, wiring, component application, power integrity and interface conditions to resolve development issues.
+[351] Built practical understanding of how hardware design decisions influence verification, production and field reliability.
+[352] (2) High-Speed Interface and System-Level Debugging
+[353] Supported debugging of high-speed interface boards and related signal-path issues.
+[354] Reviewed interface stability, power behaviour and board interaction from a product-level perspective.
+[355] Analysed development issues by considering hardware, firmware and interface conditions together rather than separately.
+[356] Developed an early system-integration mindset that later supported naval communication systems and satellite terminal verification.
+[357] (3) Product-Level Troubleshooting and Lifecycle Awareness
+[358] Developed a practical troubleshooting approach by reviewing hardware, interface conditions and firmware interaction together.
+[359] Learned to connect design output with product reliability, manufacturability and field stability.
+[360] Built the basic engineering discipline that became the foundation for later defence electronics, naval systems and satellite communication system integration work.
+[361] Established the habit of using measured evidence, clear issue records and corrective actions, which aligns with PLM-oriented lifecycle support and customer technical consulting.
+[362] 
+[363] Certifications / Language / Technical Toolkit
+[364] Certifications / Training
+[365] Certified NMEA 2000 Networking;
+[366] Defence PMBOK training;
+[367] Machine Learning with Python;
+[368] Python for Data Science, AI & Development;
+[369] AVEVA Marine PLM / Engineering Data / Digital Thread working knowledge (self-built competitive strategy deck and KPI model)..
+[370] 
+[371] English Capability
+[372] Professional working English; English language study in Perth, Australia;
+[373] global customer technical meetings and English technical communication with Eutelsat OneWeb and international partners;
+[374] ready to support Korea/Japan regional opportunities in English.
+[375] 
+[376] Tools / Technical Domains
+[377] AVEVA E3D/Marine concepts, Unified Engineering, AIM, PI/CONNECT positioning, PLM, Digital Thread, Digital Twin, Smart Shipyard, ERP/MES/PLM boundaries, EPLAN concept, HART/Modbus/Fieldbus/Industrial Ethernet, Salesforce CRM awareness, ICD, VCRM, ECO/BOM, WBS, cost estimate, defect log, evidence package, Wireshark, iperf, Linux, VMware and RF measurement equipment..
+[378] 
+[379] 
+[380] Self-Introduction
+[381] 1. Motivation and AVEVA Fit
+[382] I am applying for the Business Development Manager - Engineering (Marine), Korea / Japan role in Seoul because it requires the exact combination I have built throughout my career: marine engineering credibility, customer-facing technical judgement, and the ability to translate complex project issues into business value. This role is not only about selling software; it is about understanding how shipyards, owners, engineering teams and executives make decisions when schedule, quality, compliance and lifecycle risk are all connected.
+[383] For more than 21 years, I have worked in high-reliability engineering environments covering naval shipbuilding, defence electronics, satellite communication systems and customer technical delivery. My strongest foundation is the 15 years I spent at Daeyang Electric, supporting ROK Navy ship and submarine programmes including FFX Batch-II and Jangbogo/KSS-III. In those projects, requirements, interfaces, test evidence, FAT/SAT, sea trials, acceptance records and after-delivery support had to be managed with discipline, because customer trust depended on clear evidence and reliable follow-up.
+[384] That experience is the reason AVEVA is highly attractive to me. Marine customers do not purchase software functions in isolation. They are looking for lower design rework, stronger configuration control, faster change-impact review, reliable approval evidence, better production handover and a trusted digital thread from engineering through build, operation and lifecycle learning. AVEVA Engineering / Marine is positioned to turn those engineering problems into measurable business outcomes.
+[385] I understand AVEVA values Impact, Aspiration, Curiosity and Trust. These values are close to my working style. In complex projects, I try to make practical impact, understand the customer goal, ask why before deciding, and build trust through clear evidence and follow-up. I also respect AVEVA's sustainability direction: connected engineering data should reduce waste, improve productivity, support better decisions and help customers use industrial resources more responsibly.
+[386] 2. Marine Customer and Lifecycle Expertise
+[387] My core strength is the ability to stand between the customer, engineering teams and business stakeholders, then convert technical reality into a clear action plan. In shipbuilding and defence projects, I learned that the real issue is often not a single defect or requirement. It is the lack of a shared view across configuration, interface, schedule, test evidence, approval status and downstream impact. This is exactly where a strong Marine BDM must create value.
+[388] At Daeyang Electric, I converted Navy and shipyard requirements into system architecture, equipment configuration, ICDs, test plans, test procedures, acceptance criteria and close-out documents. I also supported installation, commissioning, FAT, SAT, sea trial and customer acceptance activities with Navy users, shipyards, inspectors, subcontractors, production, quality and engineering teams. This gives me practical credibility when discussing real shipyard pain points, not only software concepts.
+[389] I can connect that experience to the standard large-shipyard lifecycle in Korea and Japan (for example HD Hyundai-class yards): requirements/VCRM, basic and detail design, E3D/Marine/Draw, MTO/eBOM, baseline and effectivity control, ECR/ECO, production release, classification approval evidence and handover. This process view is important for AVEVA because many customer conversations begin with symptoms such as document inconsistency, delayed change review, unclear ownership of engineering data, weak handover evidence or fragmented digital continuity..
+[390] At Intellian Technologies, I expanded this discipline in a global customer environment by managing requirements, field issues, defect history, ECO/BOM changes, verification evidence and release judgement for a LEO satellite-terminal programme. More than 400 verification checklist items had to be controlled across RF/antenna, control electronics, network interface, environmental verification and production verification. That experience reinforced a principle I would bring to AVEVA customer engagement: trust is built through evidence, not claims.
+[391] Commercially, this background fits the technical value-selling side of the BDM role. I can support Account Managers and Pre-Sales Consultants by structuring discovery questions, clarifying customer pain points, preparing value-proposition inputs, shaping Proof of Capability storylines and turning technical discussion into CRM-ready next actions. My contribution is strongest where customer needs must be interpreted accurately before a solution can be positioned credibly.
+[392] 3. AVEVA Marine PLM Perspective
+[393] I have studied AVEVA Marine / PLM in depth - from the viewpoints of product position, competitor strengths, customer pain points and future strategy - and consolidated that work into my own executive strategy deck, including a KPI-gated delivery and acceptance model covering configuration accuracy, change-impact recall, evidence completeness and approval response time. That work strengthened my motivation to join AVEVA because I could see a clear strategic opportunity in the marine industry, and it gives me concrete material for benchmark and benefit-estimation discussions with customers..
+[394] My practical comparison is as follows. Siemens Teamcenter is strong in configuration, BOM and change governance. Dassault 3DEXPERIENCE is strong in collaboration and virtual-twin positioning. Hexagon has strength in asset lifecycle and operations context. PTC is strong in requirements, ALM and traceability patterns. NAPA is trusted in naval architecture and stability calculation. AVEVA's opportunity is different: it can connect engineering truth, lifecycle context and operational feedback through E3D/Marine, Unified Engineering, AIM, PI/CONNECT and open integration, strengthened by AVEVA's public AI direction such as the CONNECT Industrial AI Assistant and Generative / Predictive Design AI. The white space is clear: no current vendor owns the complete loop from design change to naval calculation, evidence, approval and operations feedback, and AVEVA is the best-positioned company to own it..
+[395] For Korea and Japan marine customers, I would position AVEVA not as another closed PLM backbone, but as an open engineering-to-operations decision-control layer. This means linking configuration, change impact, approval evidence, production readiness, handover records and operations feedback above specialist tools, while respecting the customer's existing systems and data ownership. This message is practical for large shipyards because it does not ask them to abandon every specialist tool; it helps them control decisions across the full lifecycle.
+[396] This is also where AVEVA's sustainability message becomes concrete. Reduced rework, fewer duplicated documents, clearer configuration baselines, more reliable handover evidence and better lifecycle learning all support more efficient engineering and more responsible use of resources. I believe this is the right way to explain AVEVA's value to marine executives: not as digital transformation language alone, but as measurable improvement in engineering productivity, delivery risk, compliance confidence and lifecycle cost.
+[397] 4. Contribution to Korea / Japan Marine Growth
+[398] After joining, my first priority would be to align quickly with AVEVA's assigned portfolio, Korea/Japan account priorities, Salesforce pipeline discipline, partner and channel structure, regional marketing activities and the collaboration model between Account Managers, Pre-Sales Consultants, Business Development leadership and product teams. I understand that a BDM must create leverage for the sales organisation, not work as an isolated technical specialist.
+[399] My contribution would begin with customer discovery. I would help identify and organise marine pain points around design rework, system integration, hull/class configuration, limited digital continuity, compliance workload, production handover, MRO and lifecycle data ownership. These pain points can then be converted into value hypotheses, discovery questions, benchmark assumptions, benefit estimates, Proof of Capability themes and clear follow-up actions.
+[400] I would also support executive-level communication by translating technical detail into business language: cost, schedule, risk, readiness, compliance, productivity and sustainability. My experience with ICDs, test plans, VCRM, evidence packages, ECO/BOM changes, WBS schedules, cost estimates, defect logs and acceptance documents gives me the working discipline to make customer discussions specific and credible.
+[401] My goal is to help AVEVA grow meaningful Marine Engineering opportunities in Korea and Japan by combining marine-domain credibility, engineering-system understanding, competitive PLM insight and evidence-based customer engagement, while making AVEVA's value clear to customers who need practical answers to real shipbuilding lifecycle problems.
+[402] 
