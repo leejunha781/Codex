@@ -1,0 +1,184 @@
+﻿=== FILE: D:\이력서\AVEVA - Business Development Manager\AVEVA_BDM_Resume_Codex_Input.docx
+=== Paragraph count: 182; Tables: 3
+[001| |제목] AVEVA Business Development Manager - Engineering (Marine)Resume Codex Input Package
+[002| |표준] Target Role: Business Development Manager - Engineering (Marine), Korea / Japan | Company: AVEVA | Candidate: Joonha Lee
+[003| |표준] Purpose: Provide Codex with structured input to generate an ATS-optimized English resume and cover letter.
+[004| |표준] Important note: No resume can guarantee hiring. This package is designed to maximize alignment with the AVEVA job description by reframing the candidate as a Marine Engineering / Industrial Software / Technical Value Selling professional.
+[005| |제목 1] 1. Top-Level Codex Instruction
+[006| |Code Block] You are an expert global resume writer and ATS optimization specialist for industrial software, marine engineering, PLM, and business development roles.Create a highly targeted English resume for the following position:Target Role:Business Development Manager - Engineering (Marine), Korea / JapanCompany:AVEVALocation:Seoul, Korea or Tokyo, JapanEmployment:Regular full-time, hybrid work arrangementPrimary Objective:Build a resume that positions the candidate not as a pure engineer, but as a Marine Engineering / Industrial Software / Technical Value Selling professional who can support regional sales teams, engage marine customers, identify customer pain points, translate technical issues into AVEVA value propositions, support lead generation, qualify new marine business opportunities, and contribute to pipeline growth.The resume must be ATS-friendly, executive-level, concise, and strongly aligned to the job description.Use the candidate profile, positioning strategy, keyword list, achievements, and bullet guidance below. Avoid exaggeration, but reframe the candidate's engineering, shipbuilding, control system, actuator, industrial communication, EPLAN, PLM, and customer-facing technical experience into business development language.
+[007| |제목 1] 2. Target Job Interpretation
+[008| |글머리 기호] The role is Business Development Manager, Engineering (Marine), Korea / Japan at AVEVA.
+[009| |글머리 기호] The role supports existing regional sales teams to identify and develop new marine business opportunities related to the assigned product portfolio.
+[010| |글머리 기호] The role requires domain knowledge and expertise to help sales teams identify, qualify, and where appropriate help close new marine business.
+[011| |글머리 기호] Key stakeholders include marine customers, engineering customers, AVEVA sales leadership, account managers, partner/channel teams, business development leadership, technical/pre-sales consultants, and regional marketing.
+[012| |글머리 기호] KPIs include new Marine Business Pipeline growth measured through Salesforce CRM and adding value to regional sales teams by helping close new marine business opportunities.
+[013| |글머리 기호] Core competencies include marine industry knowledge, product/market domain knowledge, competitive understanding, communication, presentation, value proposition, benchmarks, benefit estimation, lead generation support, and opportunity conversion.
+[014| |표준] Practical interpretation: This is not a pure technical support role. The resume must show the candidate as someone who can convert marine customer pain points into AVEVA value propositions, qualified opportunities, and pipeline growth support.
+[015| |제목 1] 3. Candidate Positioning
+[016| |Code Block] Position the candidate as:A marine and industrial engineering professional with hands-on experience in shipbuilding communication systems, actuator/control technologies, industrial communication, engineering documentation, and technical issue resolution, now repositioned toward marine business development, technical value selling, and industrial software opportunity creation.The candidate's value is not only technical execution. The value is the ability to:- Understand marine and shipbuilding customer environments- Interpret engineering and control system pain points- Translate field and engineering issues into software value propositions- Support sales teams with domain credibility- Help qualify customer needs into structured business opportunities- Communicate with engineering users, technical decision makers, and commercial stakeholders- Support PLM, Smart Shipyard, Engineering Data, and Digital Thread discussions
+[017| |제목 1] 4. Recommended Resume Headline Options
+[018|T|표준] Option
+[019|T|표준] Resume Headline
+[020|T|표준] Recommendation
+[021|T|표준] 
+[022|T|표준] 1
+[023|T|표준] Marine Engineering & Industrial Software Business Development Professional
+[024|T|표준] Best recommended
+[025|T|표준] 
+[026|T|표준] 2
+[027|T|표준] Marine / Shipbuilding Technical Consultant with Business Development Focus
+[028|T|표준] Strong alternative
+[029|T|표준] 
+[030|T|표준] 3
+[031|T|표준] Industrial Engineering Systems Specialist | Marine Business Development | Technical Value Selling
+[032|T|표준] Good if a more technical tone is desired
+[033|T|표준] 
+[034|T|표준] 4
+[035|T|표준] Marine Engineering Domain Specialist | PLM, Engineering Data & Customer Value Proposition
+[036|T|표준] Good for PLM-heavy version
+[037|T|표준] 
+[038| |제목 1] 5. Professional Summary Guidance
+[039| |글머리 기호] Write a 4-5 line Professional Summary.
+[040| |글머리 기호] Emphasize marine / shipbuilding domain understanding.
+[041| |글머리 기호] Emphasize engineering systems and industrial control background.
+[042| |글머리 기호] Emphasize ability to translate technical customer pain points into business value.
+[043| |글머리 기호] Emphasize readiness to support sales teams, pre-sales consultants, and account managers.
+[044| |글머리 기호] Emphasize AVEVA-relevant preparation in PLM, Smart Shipyard, Engineering Data, and Digital Thread.
+[045| |글머리 기호] Avoid positioning the candidate only as an engineer; use terms such as domain expert, customer-facing technical professional, business opportunity, value proposition, pipeline support, sales enablement, and marine engineering customer needs.
+[046| |제목 2] Professional Summary Example
+[047| |Code Block] Marine and industrial engineering professional with experience across shipbuilding communication systems, actuator/control technologies, industrial communication, and engineering documentation. Strong ability to understand marine customer pain points and translate technical requirements into business value, solution positioning, and qualified opportunity discussions. Prepared to support regional sales teams, account managers, and pre-sales consultants with domain credibility, customer-facing technical communication, and value proposition development for marine engineering software solutions. Focused on PLM, Smart Shipyard, Engineering Data, Digital Thread, and AVEVA's industrial software portfolio.
+[048| |제목 1] 6. Core Competencies to Include
+[049|T|표준] Marine & Shipbuilding Domain Knowledge
+[050|T|표준] Engineering Software Business Development
+[051|T|표준] Marine Customer Pain Point Discovery
+[052|T|표준] 
+[053|T|표준] Technical Value Proposition Development
+[054|T|표준] Customer-Facing Technical Communication
+[055|T|표준] Sales Team & Pre-Sales Support
+[056|T|표준] 
+[057|T|표준] Lead Qualification & Opportunity Development
+[058|T|표준] Pipeline Support / Salesforce CRM Awareness
+[059|T|표준] Engineering Data Management
+[060|T|표준] 
+[061|T|표준] PLM / Digital Thread / Smart Shipyard Concepts
+[062|T|표준] Shipbuilding Communication Systems
+[063|T|표준] Industrial Control & Actuator Systems
+[064|T|표준] 
+[065|T|표준] HART / Modbus / Fieldbus / Industrial Ethernet
+[066|T|표준] Technical Documentation & Engineering Standards
+[067|T|표준] FAT / SAT / Commissioning Support
+[068|T|표준] 
+[069|T|표준] Benchmarking & Benefit Estimation Support
+[070|T|표준] Cross-Functional Collaboration
+[071|T|표준] Korea Marine Market Understanding
+[072|T|표준] 
+[073| |제목 1] 7. ATS Keywords
+[074| |표준] Business Development Manager; Marine Business Development; Engineering Software; Marine Industry; Shipbuilding; Marine End Users; Engineering Customers; Regional Sales Team; Account Managers; Pre-Sales Consultants; Partner / Channel Team; Sales Leadership; Pipeline Growth; Salesforce CRM; Lead Generation; Opportunity Qualification; Opportunity Conversion; Value Proposition; Benchmarks; Benefit Estimation; Customer Engagement; Customer Pain Points; Technical Presentation; Domain Knowledge; Competitive Differentiation; Industrial Software; PLM; Engineering Data; Smart Shipyard; Digital Thread; Digital Twin; AVEVA Marine; AVEVA Engineering; Control Systems; Industrial Communication; Actuator; Positioner; HART; Modbus; Fieldbus; Industrial Ethernet; FAT; SAT; Commissioning; Technical Support; Solution Consulting.
+[075| |제목 1] 8. Resume Reframing Rules
+[076| |글머리 기호] Do not write the resume as a pure technical engineer resume.
+[077| |글머리 기호] Reframe technical experience into business development relevance.
+[078| |글머리 기호] For every major experience bullet, connect the work to customer problem identification, technical requirement clarification, engineering workflow understanding, business value explanation, solution fit analysis, risk reduction, cost/schedule/quality/productivity impact, customer trust building, sales or proposal support, technical documentation supporting decision-making, and cross-functional coordination.
+[079| |제목 1] 9. Candidate Background Data for Codex
+[080| |제목 2] Shipbuilding / Marine Engineering
+[081| |글머리 기호] Experience related to shipbuilding communication system work.
+[082| |글머리 기호] Understanding of marine engineering workflows and shipyard customer environments.
+[083| |글머리 기호] Familiarity with shipyard engineering documentation and system integration needs.
+[084| |글머리 기호] Understanding of engineering data standardization needs in shipbuilding projects.
+[085| |제목 2] Industrial Control / Actuator / Valve Systems
+[086| |글머리 기호] Knowledge of actuator and positioner systems.
+[087| |글머리 기호] Understanding of control valve, actuator, motor/gearbox/brake, encoder/resolver/potentiometer concepts.
+[088| |글머리 기호] Experience or study related to HART, Modbus, Fieldbus, and industrial communication.
+[089| |글머리 기호] Understanding of diagnostics, alarms, fail-safe behavior, and field troubleshooting.
+[090| |제목 2] Engineering Automation / EPLAN / Documentation
+[091| |글머리 기호] Prepared EPLAN platform usage for shipbuilding communication system design automation.
+[092| |글머리 기호] Focus on electrical/control cabinet documentation, design data standardization, and engineering information structuring.
+[093| |글머리 기호] Able to connect EPLAN-type engineering automation to PLM and digital thread concepts.
+[094| |제목 2] PLM / Smart Shipyard / Digital Thread Preparation
+[095| |글머리 기호] Prepared extensively for AVEVA Marine PLM interview.
+[096| |글머리 기호] Studied AVEVA Marine, PLM architecture, Engineering Data, Digital Thread, Smart Shipyard, ERP/MES/PLM boundaries.
+[097| |글머리 기호] Able to discuss phased legacy integration, performance for large shipyard models, data ownership, governance, and acceptance criteria.
+[098| |글머리 기호] Able to explain how engineering requirements, design changes, and customer issues can become structured digital workflows.
+[099| |제목 2] Customer-Facing Technical Problem Solving
+[100| |글머리 기호] Strong ability to analyze technical issues.
+[101| |글머리 기호] Able to communicate with customers, engineers, and internal stakeholders.
+[102| |글머리 기호] Able to translate complex technical issues into clear documentation and action plans.
+[103| |글머리 기호] Able to support technical discussions, issue classification, and solution recommendations.
+[104| |제목 2] Research / Firmware / Motor Control
+[105| |글머리 기호] Master's research related to industrial Ethernet-based three-phase motor control for actuator control using ARM Cortex-M3.
+[106| |글머리 기호] Designed or studied firmware architecture for actuator control and state monitoring.
+[107| |글머리 기호] Covered run/stop/alarm/fail-safe logic, motor control, protection, diagnostics, and bench verification.
+[108| |제목 1] 10. Resume Bullet Library
+[109| |글머리 기호] Supported shipbuilding communication system engineering activities by analyzing technical requirements, system interfaces, and documentation needs across marine project environments.
+[110| |글머리 기호] Developed practical understanding of shipyard engineering workflows, including communication systems, control interfaces, design documentation, and customer-driven technical requirements.
+[111| |글머리 기호] Translated field-level control and communication issues into structured technical explanations, supporting faster issue clarification and stakeholder alignment.
+[112| |글머리 기호] Applied knowledge of actuator, positioner, control valve, and industrial communication technologies to analyze system behavior, alarms, diagnostics, and fail-safe requirements.
+[113| |글머리 기호] Prepared EPLAN-based engineering automation concepts to improve electrical/control documentation consistency, design data standardization, and structured engineering information management.
+[114| |글머리 기호] Studied and benchmarked AVEVA Marine, PLM, Smart Shipyard, Engineering Data, and Digital Thread concepts to connect marine customer pain points with industrial software value propositions.
+[115| |글머리 기호] Built understanding of how PLM, ERP, MES, and engineering data systems should define data ownership, integration boundaries, change governance, and lifecycle traceability in shipbuilding environments.
+[116| |글머리 기호] Created technical documentation, interview preparation materials, and value-oriented explanations for marine PLM, customer issue resolution, PoC planning, acceptance criteria, and engineering data governance.
+[117| |글머리 기호] Demonstrated ability to bridge engineering, control system, and customer communication perspectives, supporting solution-oriented discussions with technical and non-technical stakeholders.
+[118| |글머리 기호] Conducted research on ARM Cortex-M3-based three-phase motor control and industrial Ethernet communication for actuator control, including firmware logic, diagnostics, and fail-safe behavior.
+[119| |제목 1] 11. Business Development-Oriented Bullet Library
+[120| |글머리 기호] Able to support marine business development by identifying engineering pain points in shipbuilding environments and translating them into software-driven value propositions.
+[121| |글머리 기호] Capable of assisting regional sales teams and account managers with marine domain context, technical discovery questions, and customer-specific solution positioning.
+[122| |글머리 기호] Prepared to support opportunity qualification by mapping customer challenges in engineering data, design change, documentation, control systems, and shipyard workflows to AVEVA solution themes.
+[123| |글머리 기호] Able to contribute to lead generation and pipeline development through domain-based customer conversations, technical credibility, and structured problem-to-value framing.
+[124| |글머리 기호] Can support pre-sales consultants by clarifying customer requirements, preparing technical context, and linking marine engineering challenges to measurable benefits such as reduced rework, improved data consistency, faster engineering change handling, and better lifecycle traceability.
+[125| |글머리 기호] Understands the importance of benchmarks, benefit estimation, competitive differentiation, and business impact narratives in converting technical interest into qualified business opportunities.
+[126| |글머리 기호] Positioned to work with sales leadership, account managers, pre-sales consultants, partner/channel teams, and regional marketing to develop Korea/Japan marine opportunities.
+[127| |제목 1] 12. Differentiators
+[128| |글머리 기호] Marine + Control + Engineering Data Combination: The candidate is not only a marine domain person and not only a control engineer. The value is the combination of shipbuilding communication systems, control/actuator knowledge, engineering documentation, and PLM/Digital Thread preparation.
+[129| |글머리 기호] Customer Pain Point Translation: The candidate can understand field and engineering problems and translate them into solution value. This is directly relevant to business development.
+[130| |글머리 기호] Korea Marine Market Credibility: The candidate has Korea shipbuilding context and can communicate with marine engineering customers in Korea.
+[131| |글머리 기호] AVEVA-Relevant Preparation: The candidate has already prepared deeply for AVEVA Marine PLM topics, including architecture, customer issue handling, acceptance criteria, PoC storyline, data governance, and ERP/MES/PLM boundaries.
+[132| |글머리 기호] Technical Value Selling Potential: The candidate can support sales teams by explaining not just product features, but business benefits such as reduced rework, better design data consistency, faster change management, improved traceability, and lower project execution risk.
+[133| |제목 1] 13. Potential Gaps and How to Address Them
+[134|T|표준] Potential Gap
+[135|T|표준] How to Address It
+[136|T|표준] 
+[137|T|표준] The candidate may not have held a formal Business Development Manager title.
+[138|T|표준] Frame the candidate as a customer-facing technical professional with strong potential for technical business development, marine domain credibility, and value-based opportunity support.
+[139|T|표준] 
+[140|T|표준] Direct Salesforce CRM ownership may be limited.
+[141|T|표준] Use “pipeline support,” “opportunity qualification,” “CRM-aware sales collaboration,” or “Salesforce CRM awareness” rather than claiming direct expert-level Salesforce experience.
+[142|T|표준] 
+[143|T|표준] Japan market experience may be limited.
+[144|T|표준] Emphasize Korea marine market understanding, regional collaboration readiness, English communication, and willingness to support Korea/Japan opportunities through structured technical and customer-value discussions.
+[145|T|표준] 
+[146|T|표준] Direct software sales experience may be limited.
+[147|T|표준] Emphasize technical value selling, customer pain point discovery, solution positioning, pre-sales support, and business impact framing.
+[148|T|표준] 
+[149| |제목 1] 14. Recommended Resume Structure
+[150| |번호 매기기] Name / Contact: Joonha Lee, leejunha781@gmail.com, Korea, LinkedIn if available.
+[151| |번호 매기기] Target Headline: Marine Engineering & Industrial Software Business Development Professional.
+[152| |번호 매기기] Professional Summary: 4-5 lines focused on business development and marine engineering.
+[153| |번호 매기기] Core Competencies: 16-20 ATS keywords grouped logically.
+[154| |번호 매기기] Professional Experience: company, title, location, dates, and 4-6 bullets per role, rewritten around business value, customer pain points, sales/pre-sales support, marine domain knowledge, and engineering software relevance.
+[155| |번호 매기기] Selected Marine / PLM / AVEVA-Relevant Preparation: AVEVA Marine PLM, PLM architecture, Engineering Data, Smart Shipyard, Digital Thread, ERP/MES/PLM integration boundaries, customer issue resolution, PoC planning and acceptance criteria.
+[156| |번호 매기기] Technical Knowledge: Marine engineering systems, shipbuilding communication systems, control valve/actuator/positioner, HART/Modbus/Fieldbus/Industrial Ethernet, EPLAN, PLM, Engineering Data, Digital Thread, documentation and standardization.
+[157| |번호 매기기] Education / Research: Include Master’s research if applicable: Industrial Ethernet-based three-phase motor control for actuator control using ARM Cortex-M3.
+[158| |번호 매기기] Languages: Korean native; English professional working proficiency or adjust truthfully; Japanese only if true.
+[159| |번호 매기기] Optional Business Development Alignment Section: customer discovery, value proposition, opportunity qualification, pipeline support, pre-sales collaboration.
+[160| |제목 1] 15. Cover Letter Input Material
+[161| |Code Block] Create a one-page cover letter for AVEVA Business Development Manager - Engineering (Marine), Korea / Japan.Tone:Professional, confident, business-oriented, not overly technical.Key Messages:1. I understand marine and shipbuilding engineering environments.2. My background connects marine communication systems, industrial control, actuator technologies, engineering documentation, and customer-facing issue resolution.3. I can support sales teams by translating customer pain points into AVEVA value propositions and qualified business opportunities.4. I have prepared deeply in AVEVA Marine, PLM, Engineering Data, Smart Shipyard, Digital Thread, and shipyard digital transformation.5. I am ready to contribute to Korea/Japan marine business development by supporting customer engagement, technical discovery, value proposition development, and pipeline growth.Avoid:- Saying I am only looking for a technical support role.- Overemphasizing that I was rejected from another AVEVA role.- Overclaiming direct sales ownership if not true.- Writing too much about personal motivation.
+[162| |제목 2] Cover Letter Core Sentence
+[163| |Code Block] My value for this role is the ability to bridge marine engineering reality and business development execution. I can help sales and pre-sales teams understand shipyard customer pain points, structure technical discovery, and translate engineering challenges into AVEVA value propositions around Engineering Data, PLM, Smart Shipyard, and Digital Thread.
+[164| |제목 1] 16. Resume Mistakes to Avoid
+[165| |글머리 기호] Do not position the candidate only as a Technical Support Engineer.
+[166| |글머리 기호] Do not write a generic engineering resume.
+[167| |글머리 기호] Do not overemphasize actuator/control valve only; connect it to industrial software and marine customer value.
+[168| |글머리 기호] Do not claim direct Salesforce ownership unless true.
+[169| |글머리 기호] Do not claim Japanese business experience unless true.
+[170| |글머리 기호] Do not mention AVEVA Busan rejection.
+[171| |글머리 기호] Do not write long paragraphs.
+[172| |글머리 기호] Do not use weak phrases such as hard-working, passionate, or willing to learn without evidence.
+[173| |글머리 기호] Do not overuse studied or prepared; convert preparation into developed working knowledge of.
+[174| |글머리 기호] Do not make the resume look like a junior applicant.
+[175| |글머리 기호] Do not focus only on responsibilities; focus on value, customer impact, and business relevance.
+[176| |제목 1] 17. Final Codex Execution Prompt
+[177| |Code Block] Now generate a final ATS-optimized English resume for the AVEVA Business Development Manager - Engineering (Marine), Korea / Japan role.Requirements:- Length: 2 pages maximum- Style: Global enterprise resume style- Tone: Senior, business-oriented, technical-domain credible- ATS-friendly formatting- No tables- Use strong action verbs- Use bullet points- Make the resume read like a Marine Engineering Business Development / Technical Value Selling profile, not a pure engineering support resume- Include AVEVA-relevant keywords naturally- Include a strong Professional Summary- Include Core Competencies- Include Professional Experience bullets rewritten around business value, customer pain points, sales/pre-sales support, marine domain knowledge, and engineering software relevance- Include a section for AVEVA / PLM / Smart Shipyard / Digital Thread preparation if appropriate- Do not fabricate metrics. If metrics are needed, mark them as [add metric if available].- Do not claim direct experience in Salesforce, Japanese market, or formal sales quota ownership unless supported by the candidate's actual experience.
+[178| |제목 1] 18. Final Resume Strategy Principle
+[179| |표준] Core principle: The resume must show that the candidate can convert marine engineering and shipyard technical pain points into AVEVA business opportunities, value propositions, and pipeline support.
+[180| |표준] Recommended frame: Marine domain credibility + Engineering system understanding + Customer pain point discovery + Value proposition + Sales/pre-sales support + Pipeline growth contribution.
+[181| |제목 1] Source Note
+[182| |표준] This document is based on the previously analyzed AVEVA Business Development Manager - Engineering (Marine), Korea / Japan role and the candidate information provided in conversation. Verify all personal experience, metrics, titles, dates, language proficiency, and CRM/sales experience before submitting the final resume.
