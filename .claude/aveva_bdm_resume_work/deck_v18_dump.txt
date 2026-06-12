@@ -1,0 +1,1314 @@
+﻿PATH: D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V18.pptx
+SLIDES: 42
+SLIDE_SIZE: W=960; H=540
+
+== SLIDE 1: Slide 1 ==
+S01 Shape002 Text 1: Company-by-company benchmark, win-above strategies, open AVEVA control plane, delivery WBS and KPI gates
+S01 Shape003 Text 2: Meeting deck for overseas development and planning teams Based on the executable FastAPI + PostgreSQL + OIDC + E2E reference package
+S01 Shape004 Text 3: Decision expected today | Align on the winning product position, Phase 2 + Naval Assurance pilot, delivery governance and KPI-based acceptance.
+S01 Shape005 Text 4: 1
+S01 Shape006 TextBox 13: Future Industrial PLM
+S01 Shape007 RevisionStamp: Rev. V18 · 2026-06-09
+S01 Notes Notes Placeholder 2: Purpose: Open the meeting by making the decision objective explicit. The audience is not being asked to approve a vague vision; they are being asked to align on a concrete future direction, pilot scope, governance model and KPI-based acceptance plan. Talk track: Position AVEVA Marine as the platform that can connect engineering authoring, configuration control, certified solver evidence and operations feedback. Emphasize that the reference API package proves the direction is implementable, not only conceptual.
+S01 Notes Slide Number Placeholder 3: 1
+
+== SLIDE 2: Slide47 ==
+S02 Shape001 TextBox 1: Technical meeting agenda
+S02 Shape002 TextBox 2: Future Industrial PLM · AVEVA Marine · Development + Planning decision meeting · 90 minutes
+S02 Shape003 TextBox 3: Future Industrial PLM
+S02 Shape004 TextBox 4: 2
+S02 Shape006 TextBox 6: DECISION REQUESTED TODAY · Approve Phase 2 configuration core + one bounded Continuous Naval Assurance pilot → named owners, KPI thresholds, assumption boundaries and the first evidence scenario.
+S02 Table Table 7 R1: # | Min | Agenda block | Deck | Lead → audience | Outcome to capture / decide
+S02 Table Table 7 R2: 0 | 5 | Open & decision objective | p.1 | Facilitator → All | Confirm the exact approval requested today
+S02 Table Table 7 R3: 1 | 5 | How we'll decide – procedure | p.4–6 | Facilitator · Consultant (PLM SME) → All | Agree decision flow; set dev vs planning lenses
+S02 Table Table 7 R4: 2 | 10 | Current state & why now | p.7–10 | Consultant (PLM SME) → Dev + Planning | Accept that the gap and urgency are real
+S02 Table Table 7 R5: 3 | 15 | Winning ideas / strategy | p.11–19 | Consultant (PLM SME) → Planning (Dev on AI) | Agree win-above position + the AI stance
+S02 Table Table 7 R6: 4 | 20 | Proposal & architecture | p.20–30 | Consultant (PLM SME) + Architect → Dev (Planning on scope) | Confirm hybrid architecture is feasible & bounded
+S02 Table Table 7 R7: 5 | 10 | Delivery – WBS & KPI gates | p.31–33 | Consultant (PLM SME) → Dev + Planning | Agree the 26-wk staged plan + KPI acceptance
+S02 Table Table 7 R8: 6 | 5 | Future-state payoff | p.34 | Consultant (PLM SME) → Planning | Judge the competitive upside credible
+S02 Table Table 7 R9: 7 | 10 | Review – ownership, risks, evidence | p.35–37 | Facilitator → All | Assign owners; accept risks & assumptions
+S02 Table Table 7 R10: 8 | 10 | Decision & close | p.38–39 | Facilitator → All | Record decision, scope, owners, first scenario
+S02 Shape008 TextBox 8: Consultant (PLM SME) = Principal Technical Support & Consultant (presenter) · Facilitator = chair / decision owner · Architect = Solution Architect · Glossary p.40–42 = on-demand reference
+S02 Notes Notes Placeholder 2: Open by stating the single decision and the 90-minute path. Keep each block to its time box; the goal is a bounded approval, not a full PLM walkthrough.
+
+== SLIDE 3: Slide48 ==
+S03 Shape001 TextBox 20: How to run the room – roles, decision criteria & ownership
+S03 Shape002 TextBox 21: Future Industrial PLM
+S03 Shape003 TextBox 22: 3
+S03 Shape005 TextBox 24: ROLES & PRE-READS
+S03 Shape006 TextBox 25: Chair / decision owner · runs the room, holds the decision PLM SME (presenter) · walks the narrative Solution Architect · architecture & feasibility Development lead · feasibility, sequencing, estimates Planning lead · position, value, scope, gates Naval architecture / Class · solver & evidence acceptance Scribe · logs decisions, owners, actions
+S03 Shape008 TextBox 27: Pre-reads (24–48h before): p.1–2, p.20–23, p.32–33, p.38; Glossary p.40–42. Ground rule (p.4): not a tool-replacement story · a governed, auditable, operations-aware decision loop.
+S03 Shape010 TextBox 29: DECISION CRITERIA
+S03 Shape011 TextBox 30: APPROVE → Phase 2 configuration core + one bounded Continuous Naval Assurance pilot, with named owners; KPI thresholds (contract 100% · config ≥99% · impact recall ≥95% · provenance 100% · approval ≤5s); assumption boundaries; and one pilot scenario (one hull/block · selected loading cases · one approved solver adapter · seeded change & failure cases).
+S03 Shape013 TextBox 32: CONDITIONAL → approve with a named backlog to clear before G1/G2. DEFER → list the specific blockers + the evidence needed to revisit.
+S03 Shape015 TextBox 34: DEVELOPMENT OWNS
+S03 Shape016 TextBox 35: BUILD: OpenAPI contracts (objects, BOM, effectivity, baseline, change impact, evidence); Local Agent / Plugin callbacks from Windows authoring; AI-gate provider interface (rules → RAG → CONNECT); seed truth cases; E2E tests; KPI gates.
+S03 Shape018 TextBox 37: AVOID: E3D / Marine / Hull on Linux; big-bang solver replacement; automatic AI release authority; unbounded process customization without approval gates.
+S03 Shape020 TextBox 39: PLANNING OWNS + CAPTURE LIVE
+S03 Shape021 TextBox 40: PLANNING OWNS: product position (control plane above tools); the customer-value story; 26-week gate discipline; the decision ask; which process variants are allowed.
+S03 Shape023 TextBox 42: CAPTURE LIVE: Decision log · Action log (action · owner · due · gate) · Parking lot for off-scope items (record, don't debate).
+S03 Notes Notes Placeholder 2: Set expectations: development judges feasibility and sequencing; planning judges position, value and gates. Capture decision, owners, actions and parking-lot items live.
+
+== SLIDE 4: Slide43 ==
+S04 Shape020 Title: Meeting Procedure - decision path
+S04 Shape021 Subtitle: The room first agrees how to decide, then follows the evidence from gap to pilot approval.
+S04 Shape023 TextBox 43: Future Industrial PLM / Meeting Procedure
+S04 Shape024 TextBox 44: 4
+S04 Shape026 TextBox 46: 1
+S04 Shape029 TextBox 49: START WITH THE GAP
+S04 Shape030 TextBox 50: No vendor owns the complete change-to-assurance-to-operations loop.
+S04 Shape033 TextBox 53: 2
+S04 Shape036 TextBox 56: MAKE THE MOVE
+S04 Shape037 TextBox 57: Position AVEVA Marine as the open decision control plane above specialist tools.
+S04 Shape040 TextBox 60: 3
+S04 Shape043 TextBox 63: PROVE FEASIBILITY
+S04 Shape044 TextBox 64: Windows authoring + Linux control plane + Local Agent / Plugin adapters.
+S04 Shape047 TextBox 67: 4
+S04 Shape050 TextBox 70: CLOSE THE PILOT
+S04 Shape051 TextBox 71: Approve Phase 2 configuration core + one bounded assurance pilot.
+S04 Shape054 TextBox 74: PRESENTER RULE
+S04 Shape055 TextBox 75: Do not sell this as a tool-replacement story. Sell it as a governed, auditable, operations-aware decision loop that makes existing tools more valuable.
+S04 Shape058 TextBox 78: DECISION OUTPUT
+S04 Shape059 TextBox 79: Product direction, pilot scope, owners and first evidence scenario.
+S04 Notes Notes Placeholder 2: Use this slide only if the room needs a clearer storyline. The persuasive arc is gap -> strategic move -> feasible architecture -> bounded pilot decision.
+
+== SLIDE 5: Slide44 ==
+S05 Shape020 Title: What development teams must hear
+S05 Shape021 Subtitle: Translate the future direction into buildable interfaces, validation gates and explicit anti-patterns.
+S05 Shape023 TextBox 39: Future Industrial PLM / Meeting Procedure
+S05 Shape024 TextBox 40: 5
+S05 Shape027 TextBox 43: BUILD
+S05 Shape028 TextBox 44: OpenAPI contracts for objects, BOM, effectivity, baseline, change impact and assurance evidence. Local Agent / Plugin callbacks from Windows authoring tools. AI Gate provider interface: rules first, RAG next, CONNECT later.
+S05 Shape031 TextBox 47: VALIDATE
+S05 Shape032 TextBox 48: Seed truth cases for hull, block, compartment, weight, loading case and affected scenarios. E2E tests for evaluate -> review -> promote and rollback. KPI gates for contract coverage, accuracy, provenance, response time and security.
+S05 Shape035 TextBox 51: AVOID
+S05 Shape036 TextBox 52: No direct Linux hosting assumption for E3D / Marine / Hull. No big-bang replacement of certified solvers. No automatic AI release authority. No unbounded process customization without approval gates.
+S05 Shape038 TextBox 54: Windows Agent
+S05 Shape039 TextBox 55: OpenAPI
+S05 Shape040 TextBox 56: SQL Evidence
+S05 Shape041 TextBox 57: CI Gate
+S05 Shape045 TextBox 61: Trusted state
+S05 Notes Notes Placeholder 2: For development, stay concrete. The architecture is not a giant PLM rewrite. It is API contracts, schema, adapters, evidence objects, security and tests.
+
+== SLIDE 6: Slide45 ==
+S06 Shape020 Title: What planning teams must hear
+S06 Shape021 Subtitle: Make the product story easy to explain: market position, customer value, roadmap discipline and decision ask.
+S06 Shape023 TextBox 43: Future Industrial PLM / Meeting Procedure
+S06 Shape024 TextBox 44: 6
+S06 Shape027 TextBox 47: PRODUCT POSITION
+S06 Shape028 TextBox 48: AVEVA owns the control plane above specialist tools. The customer keeps tool choice; AVEVA owns lifecycle decision, evidence and approval orchestration.
+S06 Shape031 TextBox 51: CUSTOMER VALUE
+S06 Shape032 TextBox 52: Fewer blind handovers, faster change impact review, visible assurance evidence, explainable approvals and replayable design-to-operations history.
+S06 Shape035 TextBox 55: ROADMAP DISCIPLINE
+S06 Shape036 TextBox 56: A 26-week gate model prevents wishful scope. Each capability must pass measurable acceptance before promotion.
+S06 Shape039 TextBox 59: DECISION REQUEST
+S06 Shape040 TextBox 60: Approve bounded Phase 2 + Continuous Naval Assurance, agree owners, KPI thresholds, assumption boundaries and pilot scenario.
+S06 Shape041 Oval 61: AVEVA CONTROL PLANE
+S06 Shape045 TextBox 66: PLANNING SUCCESS STATEMENT
+S06 Shape046 TextBox 67: AVEVA Marine becomes the trusted system for seeing, approving and learning from every major shipbuilding change.
+S06 Notes Notes Placeholder 2: For planning, keep the message tied to market differentiation, customer confidence, scope control and the approval decision requested in the meeting.
+
+== SLIDE 7: Slide24 ==
+S07 Shape001 TextBox 10: Current-state comparison - no vendor owns the complete loop
+S07 Shape002 TextBox 12: Today's reality: NAPA leads naval architecture; classical PLM leads configuration; AVEVA leads engineering-to-operations context
+S07 Shape003 TextBox 13: Future Industrial PLM
+S07 Shape006 TextBox 56: CURRENT GAP
+S07 Shape007 TextBox 57: No current product closes design change → naval calculation → evidence → approval → operations feedback. That is the opportunity, not replacing every specialist tool.
+S07 Shape008 TextBox 58: General positioning from official public information; capability varies by version, configuration and implementation.
+S07 Shape009 TextBox 59: 7
+S07 Table NativeComparisonTable_3 R1: Capability | AVEVA E3D/Marine + AIM/PI | Siemens / Dassault PLM platforms | Hexagon / CADMATIC / FORAN | NAPA
+S07 Table NativeComparisonTable_3 R2: Configuration / BOM / change | ◐ Partial | ● Strong | ◐ Partial | ○ Limited
+S07 Table NativeComparisonTable_3 R3: Hull / outfitting / production | ● Strong | ◐ Partial | ● Strong | ◐ Partial
+S07 Table NativeComparisonTable_3 R4: Naval architecture / stability | ◐ Partial | ○ Limited | ◐ Partial | ● Strong
+S07 Table NativeComparisonTable_3 R5: Operations / asset context | ● Strong | ◐ Partial | ● Strong | ◐ Partial
+S07 Table NativeComparisonTable_3 R6: Customer-owned API / process | ◐ Partial | ◐ Partial | ◐ Partial | ◐ Partial
+S07 Notes Notes Placeholder 2: Purpose: Establish the problem: no single vendor currently owns the full loop from design change to assurance evidence to operations feedback. Talk track: Use this slide to create urgency. The opportunity is not to replace every specialist tool, but to own the controlled decision layer that connects them.
+S07 Notes Slide Number Placeholder 3: 7
+
+== SLIDE 8: Slide 4 ==
+S08 Shape001 TextBox 13: Current PLM landscape
+S08 Shape005 TextBox 19: Operations / Asset >
+S08 Shape006 TextBox 20: < Engineering / PLM
+S08 Shape007 TextBox 21: Unified Platform (up)
+S08 Shape008 TextBox 22: Siloed point tools (down)
+S08 Shape010 TextBox 24: Engineering → Operations Sweet Spot
+S08 Shape012 TextBox 26: Siemens
+S08 Shape014 TextBox 28: Dassault
+S08 Shape016 TextBox 30: PTC
+S08 Shape018 TextBox 32: Hexagon
+S08 Shape020 TextBox 34: AVEVA
+S08 Shape021 Rounded Rectangle 56: Takeaway: don't compete as just another PLM backbone — build the engineering-to-operations layer that existing PLM, CAD, MES and historian platforms cannot easily unify.
+S08 Shape022 Text 1: The future PLM opportunity is between engineering data and live operations
+S08 Shape023 Text 2: Future Industrial PLM
+S08 Shape024 Text 10: 8
+S08 Shape026 StackPositionTitleV14: Stack & Position
+S08 Shape027 StackPositionSubtitleV14: Who owns which layer in the marine PLM battlefield
+S08 Shape032 StackVendorV14_1_AVEVA: AVEVA
+S08 Shape033 StackProductsV14_1_AVEVA: E3D/Marine · AIM · PI · CONNECT
+S08 Shape034 StackPositionV14_1_AVEVA: Engineering → Operations bridge
+S08 Shape038 StackVendorV14_2_Siemens: Siemens
+S08 Shape039 StackProductsV14_2_Siemens: Teamcenter · NX · Opcenter
+S08 Shape040 StackPositionV14_2_Siemens: PLM core backbone
+S08 Shape044 StackVendorV14_3_Dassault: Dassault
+S08 Shape045 StackProductsV14_3_Dassault: 3DEXPERIENCE · CATIA · DELMIA
+S08 Shape046 StackPositionV14_3_Dassault: Experience / virtual-twin platform
+S08 Shape050 StackVendorV14_4_Hexagon: Hexagon
+S08 Shape051 StackProductsV14_4_Hexagon: SDx · Smart 3D · j5 · Completions
+S08 Shape052 StackPositionV14_4_Hexagon: Asset lifecycle & operations
+S08 Shape056 StackVendorV14_5_PTC: PTC
+S08 Shape057 StackProductsV14_5_PTC: Windchill · Codebeamer · ThingWorx
+S08 Shape058 StackPositionV14_5_PTC: PLM + IoT digital thread
+S08 Shape060 StackPositionInsightTextV14: Implication: AVEVA wins by connecting engineering truth to live operations.
+S08 Notes Notes Placeholder 2: Purpose: Place AVEVA in the competitive landscape. The key message is that AVEVA can move from a strong engineering and operations footprint into the center of governed lifecycle decisions. Talk track: Explain that the future opportunity sits between engineering data and live operations. That is the space where a Marine PLM control plane can be differentiated.
+S08 Notes Slide Number Placeholder 3: 8
+
+== SLIDE 9: Slide 9 ==
+S09 Shape001 Text 0: Where we are now
+S09 Shape002 Text 1: Phase 1 creates measurable data quality and handover value
+S09 Shape003 Text 2: Future Industrial PLM
+S09 Shape005 Text 4: Phase 1 S6 Gate
+S09 Shape006 Text 5: A. Integration Hub Source import, mapping, relationship creation
+S09 Shape007 Text 6: B. Standard Model Project, system, equipment, tag, document, asset, model object
+S09 Shape008 Text 7: C. Handover/AIM Asset register, required document matrix, readiness calculation
+S09 Shape009 Text 8: D. Digital Twin Dashboard Coverage, quality issues, drill-down and gate report
+S09 Shape010 Text 9: Next: Phase 2 adds configuration governance so every issue, BOM and change can be traced by effectivity.
+S09 Shape011 Text 10: 9
+S09 Notes Notes Placeholder 2: Purpose: Anchor the future direction in the current executable baseline. This helps development teams see that the proposal extends existing capability rather than starting from zero. Talk track: Phase 1 already proves integration, standard data, handover readiness and dashboard value. The next step is configuration governance so every issue, BOM and change is traceable by effectivity.
+S09 Notes Slide Number Placeholder 3: 9
+
+== SLIDE 10: Slide 5 ==
+S10 Shape001 TextBox 13: Public product + roadmap signals - official emphasis only
+S10 Shape002 TextBox 14: What vendors publicly emphasize, translated into design implications for the proposed AVEVA platform
+S10 Shape003 TextBox 15: Future Industrial PLM
+S10 Shape007 TextBox 19: AVEVA
+S10 Shape008 TextBox 20: CONNECT - Industrial AI Assistant (LLM) - Unified Engineering - Generative / Predictive Design AI - AIM - PI System lifecycle context
+S10 Shape009 TextBox 21: Opportunity: secure AI Q&A on ship data, generative design automation and design-to-operations feedback.
+S10 Shape012 TextBox 24: Siemens
+S10 Shape013 TextBox 25: Teamcenter digital twin/thread, lifecycle process automation and AI built for PLM
+S10 Shape014 TextBox 26: Absorb: cloud-ready configuration and lifecycle automation.
+S10 Shape017 TextBox 29: Dassault
+S10 Shape018 TextBox 30: 3DEXPERIENCE / ENOVIA cloud-native collaboration, model-based engineering and virtual twins
+S10 Shape019 TextBox 31: Absorb: role-based collaboration and virtual-twin validation.
+S10 Shape022 TextBox 34: Hexagon
+S10 Shape023 TextBox 35: Octave asset lifecycle intelligence spanning design, projects, completions and operations
+S10 Shape024 TextBox 36: Absorb: AIM, completions, project controls and handover.
+S10 Shape027 TextBox 39: PTC
+S10 Shape028 TextBox 40: Windchill + Codebeamer requirements, risk, test, end-to-end traceability and AI assistance
+S10 Shape029 TextBox 41: Absorb: requirements, software trace and AI-assisted change.
+S10 Shape032 TextBox 44: NAPA
+S10 Shape033 TextBox 45: Naval architecture, hydrostatics, stability, rule compliance and calculation workflows
+S10 Shape034 TextBox 46: Integrate: certified naval calculations and approval evidence.
+S10 Shape036 TextBox 48: PRINCIPLE
+S10 Shape037 TextBox 49: Treat public signals as directional, not guaranteed scope. Build adapters and an assurance graph that can absorb change without rewriting the platform.
+S10 Shape038 TextBox 50: 10
+S10 Notes Notes Placeholder 2: Purpose: Show that the direction follows public product signals while keeping assumptions explicit. Talk track: AVEVA, Siemens, Dassault, Hexagon, PTC and NAPA all point toward digital thread, AI, lifecycle and assurance themes. The proposal absorbs these signals through adapters and governance instead of assuming fixed vendor roadmaps.
+S10 Notes Slide Number Placeholder 3: 10
+
+== SLIDE 11: Slide 3 ==
+S11 Shape001 Text 0: Meeting thesis - win above tool silos
+S11 Shape002 Text 1: Own the change-to-assurance-to-operations loop, not every specialist calculation
+S11 Shape003 Text 2: Future Industrial PLM
+S11 Shape005 Text 4: Traditional PLM wins on item, BOM and change control. Industrial operations platforms win on asset, historian and field context. Our opportunity is to connect both worlds for shipbuilding, EPC and asset-intensive industries.
+S11 Shape006 Text 5: North Star Requirement → Engineering → Assure → BOM → Build → Commissioning → Handover → Operations → Maintenance → Change Feedback
+S11 Shape007 Text 6: Strategic differentiation Open AVEVA control plane = Siemens-grade configuration + Dassault-grade collaboration + NAPA-grade assurance, connected by customer-owned APIs, evidence and operations feedback.
+S11 Shape008 Text 7: 11
+S11 Notes Notes Placeholder 2: Purpose: State the central thesis clearly: win above tool silos. Talk track: AVEVA does not need to own every calculation or every authoring feature. The stronger position is to own the cross-domain decision, evidence, approval and learning loop around specialist tools.
+S11 Notes Slide Number Placeholder 3: 11
+
+== SLIDE 12: Slide 6 ==
+S12 Shape002 TextBox 13: Strategic gap to fill
+S12 Shape003 TextBox 14: Competitors own strong domains; nobody owns the open change-to-evidence-to-operations decision loop
+S12 Shape004 TextBox 16: Future Industrial PLM
+S12 Shape006 TextBox 18: SPECIALIST STRENGTHS TO FEDERATE
+S12 Shape009 TextBox 22: PRODUCT CONFIGURATION
+S12 Shape010 TextBox 23: Siemens / Dassault BOM · variants · baseline · change · collaboration
+S12 Shape014 TextBox 27: NAVAL ASSURANCE
+S12 Shape015 TextBox 28: NAPA / class solvers Hydrostatics · stability · rules · approved calculations
+S12 Shape019 TextBox 32: ASSET LIFECYCLE
+S12 Shape020 TextBox 33: Hexagon / AVEVA Handover · completions · asset and operations context
+S12 Shape024 TextBox 37: THE MISSING PRODUCT
+S12 Shape025 TextBox 38: Open AVEVA Decision Control Plane
+S12 Shape026 Oval 39: CHANGE → DECISION LOOP
+S12 Shape027 Rounded Rectangle 42: Configuration
+S12 Shape028 Rounded Rectangle 44: Impact
+S12 Shape029 Rounded Rectangle 46: Evidence
+S12 Shape030 Rounded Rectangle 48: Approval
+S12 Shape031 Rounded Rectangle 50: Operations
+S12 Shape037 Rounded Rectangle 57: policy + physics-guarded AI
+S12 Shape038 TextBox 59: Own the decision, evidence and learning layer.
+S12 Shape041 TextBox 62: WHY AVEVA CAN OWN IT
+S12 Shape042 TextBox 63: Engineering truth + lifecycle context
+S12 Shape044 TextBox 65: E3D / Marine design-change truth
+S12 Shape046 TextBox 67: Unified Engineering + AIM context
+S12 Shape048 TextBox 69: PI / CONNECT live operational truth
+S12 Shape050 TextBox 71: Open, vendor-neutral integration
+S12 Shape052 TextBox 73: Customer-owned API and process
+S12 Shape054 TextBox 75: Outcome: safer, faster change with visible accountability.
+S12 Shape055 Rounded Rectangle 76: PRODUCT BOUNDARY Federate specialist tools instead of replacing them. Own the cross-domain configuration, impact, evidence, approval and operations-feedback loop.
+S12 Shape056 TextBox 79: 12
+S12 Notes Notes Placeholder 2: Purpose: Define the missing product category: an open AVEVA decision control plane. Talk track: Highlight the five linked capabilities: configuration, impact, evidence, approval and operations feedback. This is the future direction that makes AVEVA Marine more than a set of engineering applications.
+S12 Notes Slide Number Placeholder 3: 12
+
+== SLIDE 13: Slide 14 ==
+S13 Shape002 TextBox 2: What to absorb - and where AVEVA must go beyond
+S13 Shape003 TextBox 3: Absorb proven strengths company by company; make them executable through AVEVA engineering-to-operations context
+S13 Shape004 TextBox 12: Future Industrial PLM
+S13 Shape006 TextBox 15: COMPANY / PLATFORM
+S13 Shape007 TextBox 16: ABSORB THE BEST
+S13 Shape008 TextBox 17: AVEVA MOVE BEYOND
+S13 Shape011 TextBox 20: SIEMENS Teamcenter
+S13 Shape013 TextBox 22: BOM · variants · baselines change · lifecycle automation
+S13 Shape015 TextBox 24: Open promote APIs + operations-aware configuration
+S13 Shape019 TextBox 28: DASSAULT 3DEXPERIENCE / ENOVIA
+S13 Shape021 TextBox 30: Role collaboration · virtual twin model-based engineering-to-mfg
+S13 Shape023 TextBox 33: Twin action → auditable API event + evidence
+S13 Shape027 TextBox 37: HEXAGON Octave / ALI
+S13 Shape029 TextBox 39: Asset info · completions project controls · operations
+S13 Shape031 TextBox 41: Link asset state to configuration + approval
+S13 Shape035 TextBox 45: PTC Codebeamer / Windchill
+S13 Shape037 TextBox 47: Requirements · risk · test end-to-end traceability + AI
+S13 Shape039 TextBox 49: Tie requirements to hull, BOM, solver and approval
+S13 Shape043 TextBox 91: NAPA Naval architecture
+S13 Shape045 TextBox 93: Hydrostatics · stability · rules calculation workflows
+S13 Shape047 TextBox 95: Keep solver of record; own continuous assurance loop
+S13 Shape050 TextBox 116: OUTCOME
+S13 Shape051 TextBox 117: Operations-ready, configuration-governed, approval-evidenced PLM - open enough to absorb the best specialist capability without surrendering the decision loop.
+S13 Shape052 TextBox 118: Public product-positioning basis checked 6 Jun 2026; capability details and integration boundaries require customer / vendor validation.
+S13 Shape053 TextBox 119: 13
+S13 Shape057 TextBox 9: NEW AVEVA-BASED PLM
+S13 Shape058 TextBox 10: Five specialist strengths → one open decision control plane
+S13 Shape060 TextBox 13: AVEVA DIFFERENTIATION
+S13 Shape062 TextBox 52: E3D / Marine + Unified Engineering + AIM + PI + CONNECT (AI Asst.) + Lightweight RAG (pgvector + Ollama)
+S13 Shape064 TextBox 54: Customer-owned OpenAPI + configuration / assurance graph
+S13 Shape066 TextBox 56: Industrial AI Assistant (CONNECT LLM) + Generative / Predictive Design AI + federated solvers + physics-guarded AI + evidence + operations learning
+S13 Notes Notes Placeholder 2: Purpose: Translate competitor strengths into AVEVA product moves. Talk track: The persuasive point is not that competitors are weak. It is that AVEVA can absorb their best patterns and go beyond them by combining E3D/Marine, Unified Engineering, AIM, PI, CONNECT, AI and customer-owned APIs.
+S13 Notes Slide Number Placeholder 3: 13
+
+== SLIDE 14: Slide30 ==
+S14 Shape002 TextBox 2: Win above NAPA - own the continuous naval assurance loop
+S14 Shape003 TextBox 3: NAPA is already a trusted stability engine. The defensible AVEVA opportunity is the decision, evidence and lifecycle-learning layer above every solver.
+S14 Shape004 TextBox 4: Future Industrial PLM
+S14 Shape005 TextBox 5: 14
+S14 Shape008 TextBox 8: TRUSTED CALCULATION ENGINES
+S14 Shape009 TextBox 9: Keep the certified math.
+S14 Shape011 TextBox 11: NAPA stability + hydrostatics
+S14 Shape013 TextBox 13: Class rules + approval criteria
+S14 Shape015 TextBox 15: CFD / FEM / flooding models
+S14 Shape017 TextBox 17: Other approved solvers
+S14 Shape018 TextBox 18: NAPA remains a solver of record for naval architecture, rule compliance and stability evidence.
+S14 Shape021 TextBox 21: NEW MOAT: CONTINUOUS NAVAL ASSURANCE CONTROL PLANE
+S14 Shape022 TextBox 22: A governed graph of every safety decision
+S14 Shape030 TextBox 30: NAVAL
+S14 Shape031 TextBox 31: ASSURANCE GRAPH
+S14 Shape033 TextBox 35: Revision / baseline
+S14 Shape035 TextBox 37: Hull / compartment
+S14 Shape037 TextBox 39: Weight / CoG
+S14 Shape039 TextBox 41: Loading cases
+S14 Shape041 TextBox 43: Rules / criteria
+S14 Shape043 TextBox 45: Margin + evidence
+S14 Shape044 TextBox 46: One graph links change → calculation → decision → evidence → revision.
+S14 Shape047 TextBox 49: AVEVA LIFECYCLE CONTEXT
+S14 Shape048 TextBox 50: Win with the closed loop.
+S14 Shape050 TextBox 52: E3D / Marine design changes
+S14 Shape052 TextBox 54: PLM configuration + approval
+S14 Shape054 TextBox 56: AIM documents + class evidence
+S14 Shape056 TextBox 58: PI / CONNECT operational truth
+S14 Shape057 TextBox 59: Add counterfactual design options, cross-domain impact and live operational learning - not another calculation silo.
+S14 Shape061 TextBox 63: WINNING POSITION
+S14 Shape062 TextBox 64: NAPA = solver of record. AVEVA-based PLM = system of decision, evidence and lifecycle learning. Competitive moat: customer-owned APIs + assurance graph + closed-loop operational feedback.
+S14 Shape063 TextBox 65: Official-source basis: napa.fi/software-and-services/ship-design/software/napa/ | napa.fi/napa-release-2025-2/ | napa.fi/extending-ocx/ | aveva.com/en/solutions/connect/
+S14 Shape065 TextBox 67: physics-guarded AI
+S14 Notes Notes Placeholder 2: Purpose: Explain why NAPA should be federated, not displaced. Talk track: Keep certified naval calculations where trust already exists. AVEVA should own the assurance graph around revisions, scenarios, evidence packs, approvals and lifecycle learning.
+
+== SLIDE 15: Slide32 ==
+S15 Shape001 TextBox 2: Win above Siemens - make configuration rigor open and operations-aware
+S15 Shape002 TextBox 3: Teamcenter is strong at PLM governance. Win by preserving that rigor while making configuration customer-owned, API-native and connected to shipyard and operational truth.
+S15 Shape003 TextBox 4: Future Industrial PLM
+S15 Shape007 TextBox 8: SIEMENS STRENGTH TO KEEP
+S15 Shape008 TextBox 9: Preserve enterprise-grade control.
+S15 Shape010 TextBox 11: Item / BOM / change governance
+S15 Shape012 TextBox 13: Effectivity + baseline discipline
+S15 Shape014 TextBox 15: Enterprise workflow + audit
+S15 Shape016 TextBox 17: Multi-domain configuration
+S15 Shape017 TextBox 18: Keep the rigor that makes complex product change governable.
+S15 Shape020 TextBox 21: NEW MOAT: OPEN CONFIGURATION CONTROL PLANE
+S15 Shape021 TextBox 22: A customer-owned graph that can execute the process
+S15 Shape027 Rounded Rectangle 28: OPEN CONFIGURATION CONTROL GRAPH
+S15 Shape028 Rounded Rectangle 31: Revision / baseline
+S15 Shape029 Rounded Rectangle 33: Hull / block / option / date
+S15 Shape030 Rounded Rectangle 35: ECR / ECO / MCO
+S15 Shape031 Rounded Rectangle 37: M-BOM / production status
+S15 Shape032 Rounded Rectangle 39: Approval / evidence
+S15 Shape033 Rounded Rectangle 41: policy-gated APIs
+S15 Shape034 TextBox 43: Event → policy → gate → evidence → promote
+S15 Shape037 TextBox 46: AVEVA LIFECYCLE CONTEXT
+S15 Shape038 TextBox 47: Connect configuration to real work.
+S15 Shape040 TextBox 49: E3D / Marine design objects
+S15 Shape042 TextBox 51: Draw / MTO / ERM production truth
+S15 Shape044 TextBox 53: AIM handover + documents
+S15 Shape046 TextBox 55: PI / CONNECT operational truth
+S15 Shape047 TextBox 56: Make every state visible, usable and measurable beyond the PLM specialist.
+S15 Shape051 TextBox 60: WINNING POSITION
+S15 Shape052 TextBox 61: Siemens = governance benchmark. AVEVA-based PLM = open system of configuration action. Competitive moat: customer-owned APIs + live engineering-to-operations context.
+S15 Shape053 TextBox 62: ARCHITECTURE HANDOFF → API Contract Layer + Configuration Layer + Integration Layer
+S15 Shape054 TextBox 63: 15
+S15 Notes Notes Placeholder 2: Purpose: Show how AVEVA can match Siemens-grade configuration rigor without becoming a closed PLM stack. Talk track: Development should hear that open APIs, effectivity, baseline, impact graph and promote gates are the core build items. Planning should hear that this creates a differentiated, operations-aware PLM position.
+
+== SLIDE 16: Slide33 ==
+S16 Shape002 TextBox 2: Win above Dassault - make the virtual twin executable and evidence-driven
+S16 Shape003 TextBox 3: 3DEXPERIENCE is strong at immersive collaboration and virtual-twin vision. Win by turning every twin interaction into an API contract, gate result, affected-object trace and operational learning event.
+S16 Shape004 TextBox 4: Future Industrial PLM
+S16 Shape008 TextBox 8: DASSAULT STRENGTH TO KEEP
+S16 Shape009 TextBox 9: Preserve the shared virtual experience.
+S16 Shape011 TextBox 11: Role-based collaboration spaces
+S16 Shape013 TextBox 13: Virtual twin + 3D experience
+S16 Shape015 TextBox 15: Engineering / manufacturing view
+S16 Shape017 TextBox 17: Visual simulation + validation
+S16 Shape018 TextBox 18: Keep the context and collaboration that make complex decisions understandable.
+S16 Shape021 TextBox 21: NEW MOAT: EXECUTABLE EVIDENCE TWIN
+S16 Shape022 TextBox 22: Every interaction becomes a governed next-state event
+S16 Shape028 Rounded Rectangle 28: EVIDENCE TWIN CONTROL GRAPH
+S16 Shape029 Rounded Rectangle 31: Role / task / decision
+S16 Shape030 Rounded Rectangle 33: Requirement / affected object
+S16 Shape031 Rounded Rectangle 35: AI diagnosis / solver result
+S16 Shape032 Rounded Rectangle 37: Approval / evidence pack
+S16 Shape033 Rounded Rectangle 39: Operations feedback
+S16 Shape034 Rounded Rectangle 41: twin action = API event
+S16 Shape035 TextBox 43: Context → decision → evidence → approval → learning
+S16 Shape038 TextBox 46: AVEVA LIFECYCLE CONTEXT
+S16 Shape039 TextBox 47: Connect the twin to production truth.
+S16 Shape041 TextBox 49: E3D / Marine production truth
+S16 Shape043 TextBox 51: AIM document + class context
+S16 Shape045 TextBox 53: PI / CONNECT operating feedback
+S16 Shape047 TextBox 55: Customer-configured workflows
+S16 Shape048 TextBox 56: Make the virtual twin drive measurable work, evidence and lifecycle learning.
+S16 Shape052 TextBox 60: WINNING POSITION
+S16 Shape053 TextBox 61: Dassault = collaboration benchmark. AVEVA-based PLM = executable evidence twin. Competitive moat: every virtual-twin decision is measurable, auditable and connected to operations.
+S16 Shape054 TextBox 62: ARCHITECTURE HANDOFF → Experience Layer + Assurance & Digital Thread Layer + Integration Layer
+S16 Shape055 TextBox 63: 16
+S16 Notes Notes Placeholder 2: Purpose: Show how AVEVA can go beyond virtual-twin presentation into executable governance. Talk track: The important distinction is that a visual twin alone does not approve a change. The proposed direction turns context into evidence, gate decisions and auditable release states.
+
+== SLIDE 17: Slide42 ==
+S17 Shape025 TextBox 26: 17
+S17 Shape026 TextBox 27: Future Industrial PLM
+S17 Shape027 TextBox 28: AVEVA AI Capabilities — AI assists, the control plane governs
+S17 Shape028 TextBox 29: CONNECT Industrial AI + Unified Engineering AI become useful when wrapped by rule gates, evidence and accountable human approval.
+S17 Shape031 TextBox 32: 1
+S17 Shape032 TextBox 33: CONNECT AI
+S17 Shape033 TextBox 34: secure Q&A on ship data
+S17 Shape037 TextBox 38: 2
+S17 Shape038 TextBox 39: Unified Eng. AI
+S17 Shape039 TextBox 40: routing / clash suggestions
+S17 Shape043 TextBox 44: 3
+S17 Shape044 TextBox 45: AI + Rules Gate
+S17 Shape045 TextBox 46: diagnose and hold risks
+S17 Shape049 TextBox 50: 4
+S17 Shape050 TextBox 51: Human + Class
+S17 Shape051 TextBox 52: approve release
+S17 Shape053 TextBox 54: 1. Industrial AI Assistant in CONNECT
+S17 Shape055 TextBox 56: CONNECT Industrial AI Assistant
+S17 Shape057 TextBox 58: role-gated answer
+S17 Shape058 TextBox 59: • Ask natural-language questions against connected engineering and asset data. • Good for drawing review support, asset specification lookup and change-history search. • Needs data connection, indexing and permission alignment before production use.
+S17 Shape059 TextBox 60: Use as decision support, not approval authority.
+S17 Shape061 TextBox 62: 2. Unified Engineering Design AI
+S17 Shape063 TextBox 77: engineer validates
+S17 Shape064 TextBox 78: • Good for piping layout, route alternatives, clash analysis and design simulation acceleration. • AI output must pass marine engineering and class-standard validation. • PLM records prompt, result, evidence, reviewer and audit trail.
+S17 Shape065 TextBox 79: AI proposes; engineering authority releases.
+S17 Shape067 TextBox 81: CONTROL PRINCIPLE
+S17 Shape069 TextBox 82: AI diagnoses and recommends; rule guardrails hold gates; certified solvers calculate; humans and class authorities release.
+S17 Shape071 TextBox 83: Reference basis: AVEVA CONNECT Industrial AI Assistant and Unified Engineering AI public product pages; diagrams are original meeting-deck visualizations.
+S17 Shape072 TextBox 75: route option
+S17 Notes Notes Placeholder 2: Purpose: Clarify the AI position before the audience overestimates or distrusts it. Talk track: AI assists, recommends and explains. The control plane governs; rules hold gates; certified solvers calculate; humans and class authorities release. This makes AI useful without making it unsafe.
+
+== SLIDE 18: Slide40 ==
+S18 Shape025 TextBox 26: 18
+S18 Shape026 TextBox 27: Future Industrial PLM
+S18 Shape027 TextBox 28: AI deployment path — start light, then scale to AVEVA CONNECT
+S18 Shape028 TextBox 29: A practical roadmap: deterministic gates first, on-prem RAG next, then enterprise CONNECT and Unified Engineering AI when governance is ready.
+S18 Shape030 TextBox 31: TIER 0
+S18 Shape031 TextBox 32: Rule Gate
+S18 Shape032 TextBox 33: FastAPI + Pydantic
+S18 Shape034 TextBox 35: Immediate · no GPU
+S18 Shape037 TextBox 38: TIER 1
+S18 Shape038 TextBox 39: On-prem RAG
+S18 Shape039 TextBox 40: pgvector + Ollama
+S18 Shape041 TextBox 42: 4–8 wk pilot
+S18 Shape044 TextBox 45: TIER 2
+S18 Shape045 TextBox 46: CONNECT AI
+S18 Shape046 TextBox 47: Industrial AI Assistant
+S18 Shape048 TextBox 49: Scale
+S18 Shape051 TextBox 52: TIER 3
+S18 Shape052 TextBox 53: Design AI
+S18 Shape053 TextBox 54: Unified Engineering AI
+S18 Shape055 TextBox 56: Full design AI
+S18 Shape057 TextBox 58: Linux control-plane AI stack
+S18 Shape059 TextBox 60: FastAPI AI Gate
+S18 Shape060 TextBox 61: validate
+S18 Shape063 TextBox 64: PostgreSQL pgvector
+S18 Shape064 TextBox 65: retrieve
+S18 Shape067 TextBox 68: Ollama / CONNECT API
+S18 Shape068 TextBox 69: reason
+S18 Shape071 TextBox 72: Evidence Approval
+S18 Shape072 TextBox 73: record
+S18 Shape073 TextBox 74: • Tier 0 catches deterministic PLM errors immediately. • Tier 1 enables semantic search over drawings, specs, evidence packs and change history. • Tier 2–3 can reuse the same provider interface when CONNECT / Unified Engineering are approved.
+S18 Shape075 TextBox 76: Why this is easier to approve
+S18 Shape076 Oval 77: 1
+S18 Shape077 TextBox 79: Fast pilot
+S18 Shape078 TextBox 80: Rules run on existing Linux nodes.
+S18 Shape079 Oval 81: 2
+S18 Shape080 TextBox 83: Data sovereignty
+S18 Shape081 TextBox 84: RAG keeps shipyard IP on-prem.
+S18 Shape082 Oval 85: 3
+S18 Shape083 TextBox 87: Upgradeable
+S18 Shape084 TextBox 88: Swap provider: Ollama → CONNECT AI.
+S18 Shape085 Oval 89: 4
+S18 Shape086 TextBox 91: Auditable
+S18 Shape087 TextBox 92: All answers link to evidence and approval.
+S18 Shape089 TextBox 94: AI provider interface: POST /ai-gates/evaluate → diagnosis · evidence_refs · gate_decision · human_required
+S18 Shape090 TextBox 95: Design rule: AI is pluggable behind rule guardrails and never owns the certified release decision.
+S18 Notes Notes Placeholder 2: Purpose: Give a realistic AI adoption path. Talk track: Start with deterministic rules because they are fast, auditable and low-risk. Add on-prem RAG for semantic search, then scale to CONNECT and Unified Engineering AI after data, security and governance are ready.
+
+== SLIDE 19: Slide41 ==
+S19 Shape025 TextBox 26: 19
+S19 Shape026 TextBox 27: Future Industrial PLM
+S19 Shape027 TextBox 28: Lightweight Piping Routing — deterministic pilot
+S19 Shape028 TextBox 29: scipy + networkx + 3D voxel grid: useful routing suggestions without requiring full Generative Design AI in the first pilot.
+S19 Shape030 TextBox 31: A. Voxel routing concept
+S19 Shape056 TextBox 32: Start → valid cells → avoid obstacles → lowest-cost path → end
+S19 Shape060 TextBox 153: B. Algorithm pipeline + gate
+S19 Shape062 TextBox 155: 1
+S19 Shape063 TextBox 156: Input from E3D/Marine
+S19 Shape064 TextBox 157: Local Agent exports compartments, keep-outs, endpoints and constraints.
+S19 Shape067 TextBox 160: 2
+S19 Shape068 TextBox 161: Build 3D voxel grid
+S19 Shape069 TextBox 162: Mark blocked cells and assign length, bend and zone costs.
+S19 Shape072 TextBox 165: 3
+S19 Shape073 TextBox 166: Solve with scipy + networkx
+S19 Shape074 TextBox 167: Run Dijkstra/A* under class-driven hard constraints.
+S19 Shape077 TextBox 170: 4
+S19 Shape078 TextBox 171: Review + promote
+S19 Shape079 TextBox 172: Engineer validates in E3D; class-rule gate approves before promote.
+S19 Shape081 TextBox 174: Cost function
+S19 Shape082 TextBox 175: minimize length + bend penalty + zone cost; obey bend radius, support spacing and clearance rules.
+S19 Shape084 TextBox 177: Pilot value: auditable Linux-based route proposals with human/class validation. | Scope: future phase; WBS p.32.
+S19 Notes Notes Placeholder 2: Purpose: Make the lightweight routing concept credible and bounded. Talk track: Present routing as an advisory deterministic pilot, not automatic design release. The value is auditable route proposals from existing control-plane infrastructure, followed by engineer and class validation.
+
+== SLIDE 20: Slide 7 ==
+S20 Shape002 Text 0: Target architecture concept
+S20 Shape003 Text 1: The win-above patterns converge into one open, customer-owned AVEVA control plane — Windows-based authoring + Linux-based control plane + Cloud/CONNECT integration
+S20 Shape004 Text 2: Future Industrial PLM
+S20 Shape006 Text 4: Experience Layer Dassault-grade role collaboration, 3D context, assurance margins and executable gate views
+S20 Shape007 Text 5: API Contract Layer Customer-owned FastAPI/OpenAPI contracts, OIDC authority and solver-adapter contracts
+S20 Shape008 Text 6: Assurance + Digital Thread Layer NAPA-grade evidence lineage, assurance graph, rules and evaluate/promote flow
+S20 Shape009 Text 7: Configuration Layer Siemens-grade BOM, effectivity, baselines and change-impact governance
+S20 Shape010 Text 8: Integration Layer Windows E3D/Marine/Hull authoring via Local Agent/PML.NET Bridge · AIM/PI/CONNECT + Edge/Adapter + NAPA/class + ERP/MES adapters
+S20 Shape011 Text 9: 20
+S20 Notes Notes Placeholder 2: Purpose: Connect all strategy slides into one target architecture. Talk track: The future AVEVA Marine direction is hybrid by design: Windows authoring remains where E3D/Marine tools run, Linux hosts the open control plane, and Cloud/CONNECT is integrated through governed adapters.
+S20 Notes Slide Number Placeholder 3: 20
+
+== SLIDE 21: Slide 8 ==
+S21 Shape001 Text 0: Executable reference package
+S21 Shape002 Text 1: The deck is backed by runnable architecture, not only concept slides
+S21 Shape003 Text 2: Future Industrial PLM
+S21 Shape005 Text 12: 21
+S21 Shape015 Rounded Rectangle 31: DELIVERED REFERENCE API First
+S21 Shape025 TextBox 33: API Services
+S21 Shape026 TextBox 34: Data Schema
+S21 Shape027 TextBox 35: Security OIDC
+S21 Shape028 TextBox 36: Gates & E2E
+S21 Shape029 Rounded Rectangle 45: OpenAPI routes for KPI, readiness, coverage, quality issues and Phase 2 configuration APIs.
+S21 Shape030 Oval 46: 1
+S21 Shape031 TextBox 39: FastAPI services
+S21 Shape032 Rounded Rectangle 49: Postgres + Keycloak + API + E2E tests with schema and seed auto-load.
+S21 Shape033 Oval 50: 2
+S21 Shape034 TextBox 43: Docker Compose
+S21 Shape036 Oval 54: 3
+S21 Shape037 TextBox 47: E2E tests
+S21 Shape038 TextBox 48: Evaluate → promote flows for quality gates and Phase 2 impact analysis.
+S21 Shape039 Rounded Rectangle 57: Phase 1 S6 tables/views plus Phase 2 configuration, BOM, effectivity and change tables.
+S21 Shape040 Oval 58: 4
+S21 Shape041 TextBox 51: PostgreSQL schema
+S21 Shape042 Rounded Rectangle 61: Keycloak realm, JWT validation and role-gated promote actions.
+S21 Shape043 Oval 62: 5
+S21 Shape044 TextBox 55: OIDC security
+S21 Shape045 Rounded Rectangle 65: Integrated FastAPI static serving for gate report and planning visibility.
+S21 Shape046 Oval 66: 6
+S21 Shape047 TextBox 59: React dashboard
+S21 Shape056 TextBox 69: test gates
+S21 Shape057 Rounded Rectangle 84: Governance value The current executable package proves API-first contracts, security and gate patterns. Naval Assurance adapters, evidence lineage and operations calibration are the proposed pilot extension.
+S21 Shape058 TextBox 71: Meeting objective: agree the executable baseline, then approve the bounded Continuous Naval Assurance pilot extension.
+S21 Notes Notes Placeholder 2: Purpose: Prove that the concept has an executable foundation. Talk track: Point out that FastAPI, PostgreSQL, OIDC, Docker Compose and tests already demonstrate the API-first control pattern. The meeting decision is about approving the next bounded extension.
+S21 Notes Slide Number Placeholder 3: 21
+
+== SLIDE 22: Slide19 ==
+S22 Shape001 TextBox 2: Hybrid: Windows Authoring + Linux Control Plane + Cloud/CONNECT
+S22 Shape002 TextBox 3: Windows AVEVA E3D/Marine/Hull authoring + Linux Open PLM Control Plane (API/SQL/AI Gate/Evidence/Adapters/Callbacks) + Cloud/CONNECT
+S22 Shape003 TextBox 4: A - Windows Authoring ↔ Linux Control Plane ↔ Local Agent / API callbacks
+S22 Shape006 TextBox 7: 1. API LAYER
+S22 Shape007 TextBox 8: FastAPI - REST / OData - OpenAPI 3.1 - OIDC (OAuth2)
+S22 Shape008 Rounded Rectangle 9: POST /oauth/token
+S22 Shape009 Rounded Rectangle 10: GET /objects/{id}
+S22 Shape010 Rounded Rectangle 11: POST /structures
+S22 Shape011 Rounded Rectangle 12: POST /approvals
+S22 Shape012 TextBox 13: Stateless, versioned, OpenAPI-documented endpoints, token-secured; every call returns JSON + an HTTP status, so each step is verifiable.
+S22 Shape014 TextBox 15: REST commands ↔ Local Agent/Plugin executes ↔ JSON callbacks
+S22 Shape017 TextBox 18: 2. OPEN PLM CONTROL PLANE (Linux) — API & services
+S22 Shape018 Rounded Rectangle 19: Objects & Vault
+S22 Shape019 Rounded Rectangle 20: Structures / eBOM
+S22 Shape020 Rounded Rectangle 21: ECR & Impact
+S22 Shape021 Rounded Rectangle 22: Approvals / Workflow
+S22 Shape022 Rounded Rectangle 23: AI Gate / Evidence
+S22 Shape023 Rounded Rectangle 24: Integration Gateway
+S22 Shape024 TextBox 25: Linux control plane handles API, SQL, AI Gate, evidence, integration gateway and callback receiver; E3D authoring stays on Windows.
+S22 Shape026 TextBox 27: Linux Control Plane ↔ Windows authoring via Local Agent / PML.NET Bridge
+S22 Shape029 TextBox 30: 3. INFRASTRUCTURE — Linux cluster + Windows authoring tier
+S22 Shape030 Rounded Rectangle 31: 4-node cluster - HA 16 vCPU - 64 GB/node Linux - containers
+S22 Shape032 TextBox 33: App · API · AI Gate (Linux)
+S22 Shape033 Rounded Rectangle 35: PostgreSQL 16 - HA 32 vCPU - 256 GB NVMe RAID10 + standby
+S22 Shape035 TextBox 37: Database
+S22 Shape036 Rounded Rectangle 39: SAN (FC) + NAS 100 TB+ usable Snapshots - WORM
+S22 Shape038 TextBox 41: Vault / Storage
+S22 Shape039 Rounded Rectangle 43: API GW + LB (HA) TLS 1.3 - WAF OIDC/OAuth2 - ZTNA
+S22 Shape041 TextBox 45: Gateway - Security
+S22 Shape044 TextBox 49: B - Using the API (simple, step-by-step, verifiable)
+S22 Shape050 TextBox 55: plm_client.py - PLM client → calls REST API
+S22 Shape051 TextBox 56: import requests API = "https://plm.hhi.co.kr/api/v1" tok = requests.post(f"{API}/oauth/token", data=CRED).json()["access_token"] H = {"Authorization": f"Bearer {tok}"} r = requests.get(f"{API}/objects/HD-ETO-1001", headers=H) print(r.status_code, r.json()["name"]) # 200 OK → verified
+S22 Shape052 TextBox 57: Each step calls one endpoint and returns a status you can check (OK)
+S22 Shape055 Oval 60: 1
+S22 Shape056 TextBox 62: Authenticate (OIDC) POST /oauth/token
+S22 Shape057 Rounded Rectangle 63: 200 - token OK
+S22 Shape061 Oval 67: 2
+S22 Shape062 TextBox 69: Read object GET /objects/HD-ETO-1001
+S22 Shape063 Rounded Rectangle 70: 200 - object OK
+S22 Shape067 Oval 74: 3
+S22 Shape068 TextBox 76: Create structure (eBOM) POST /structures
+S22 Shape069 Rounded Rectangle 77: 201 - struct_id OK
+S22 Shape073 Oval 81: 4
+S22 Shape074 TextBox 83: Raise ECR & run impact POST /ecr/{id}/impact
+S22 Shape075 Rounded Rectangle 84: 200 - impact OK
+S22 Shape079 Oval 88: 5
+S22 Shape080 TextBox 90: Approve POST /approvals
+S22 Shape081 Rounded Rectangle 91: 200 - APPROVED OK
+S22 Shape082 Text 2: Future Industrial PLM
+S22 Shape083 Text 12: 22
+S22 Shape084 WindowsAuthoringTierCard: Windows Authoring Tier GPU/Citrix workstations: AVEVA E3D · Marine · Hull · Draw Local Agent / Plugin / PML.NET Bridge → Linux Control Plane; not hosted on Linux
+S22 Shape086 TextBox 92: Hybrid: Windows runs E3D/Marine/Hull authoring · Linux hosts API/SQL/AI Gate/Evidence/Integration · Local Agent/Plugin executes commands and returns callbacks.
+S22 Notes Notes Placeholder 2: Purpose: Remove architecture ambiguity. Talk track: E3D/Marine/Hull authoring is Windows-centered. Linux does not host E3D; it hosts API, SQL, AI Gate, evidence and integration services. This boundary protects feasibility and prevents wrong implementation assumptions.
+
+== SLIDE 23: Slide38 ==
+S23 Shape002 TextBox 1: Hybrid deployment overview — Windows authoring + Linux control plane
+S23 Shape003 TextBox 2: Final positioning: Windows-based AVEVA engineering authoring + Linux-based Open PLM Control Plane + Cloud/CONNECT integration
+S23 Shape004 Rounded Rectangle 3: Windows Authoring Zone AVEVA E3D / Marine / Hull · Draw / MTO Local Agent / Plugin / PML.NET Bridge Windows designer PCs or supported AVEVA environments No direct Linux hosting assumption
+S23 Shape005 Rounded Rectangle 4: Linux Open PLM Control Plane FastAPI / OpenAPI · PostgreSQL / Evidence Store AI Gate + Rule Guardrails Integration Gateway + Callback Receiver Keycloak / OIDC / RBAC
+S23 Shape006 Rounded Rectangle 5: Cloud / CONNECT + Adapters CONNECT · AIM / PI Web API · AVEVA Edge / Adapter layer NAPA / Class / CFD / FEM adapters ERP / MES / Document Vault Federates specialist tools without replacing them
+S23 Table Table 8 R1: Unsafe expression to avoid | Final corrected expression
+S23 Table Table 8 R2: “AVEVA Marine / E3D on Linux server” | “E3D/Marine/Hull runs in supported Windows authoring environments; Linux servers run API/SQL/AI Gate/Evidence/Integration Control Plane.”
+S23 Table Table 8 R3: “Linux server directly runs PLM and E3D” | “Linux runs the PLM Control Plane and integration layer; E3D/Hull links through Windows Authoring Client, Local Agent/Plugin or supported AVEVA adapters.”
+S23 Table Table 8 R4: “FastAPI directly calls E3D/Hull” | “FastAPI issues commands; Local Agent/Plugin executes E3D/Hull work and returns callbacks.”
+S23 Table Table 8 R5: “All AVEVA products integrated on Linux” | “Windows Authoring + Linux Control Plane + Cloud/CONNECT + Adapter-based Hybrid Architecture.”
+S23 Shape008 TextBox 9: Key architecture point: E3D/Marine authoring stays Windows-centered; Linux owns FastAPI, PostgreSQL, AI Gate, Evidence Pack, Integration Gateway and Callback Receiver.
+S23 Shape009 HybridBoundaryCaption: Visual boundary: Windows authoring -> Local Agent/Plugin bridge -> Linux control plane -> Cloud/CONNECT adapters
+S23 Shape010 Text 2: Future Industrial PLM
+S23 Shape011 Text 12: 23
+S23 Notes Notes Placeholder 2: Purpose: Show the deployment model as an operating architecture. Talk track: Emphasize that Local Agents or plugins bridge authoring tools to the control plane. This is safer than direct tool coupling and gives development a clear integration pattern.
+
+== SLIDE 24: Slide 10 ==
+S24 Shape002 TextBox 6: Phase 2 + Continuous Naval Assurance pilot scope
+S24 Shape003 TextBox 7: A bounded executable slice proves configuration, impact, approved-solver evidence, approval authority and operations feedback
+S24 Shape004 TextBox 8: Future Industrial PLM
+S24 Shape007 Oval 15: 1
+S24 Shape008 TextBox 17: E3D / Hull change
+S24 Shape009 TextBox 18: Local Agent → POST /events
+S24 Shape011 Oval 20: 2
+S24 Shape012 TextBox 23: Resolve configuration
+S24 Shape013 TextBox 24: GET /configuration
+S24 Shape015 Oval 26: 3
+S24 Shape016 TextBox 28: Evaluate impact
+S24 Shape017 TextBox 29: POST /impact/evaluate
+S24 Shape019 Oval 31: 4
+S24 Shape020 TextBox 33: Run approved solver
+S24 Shape021 TextBox 34: POST /solver-runs
+S24 Shape023 Oval 36: 5
+S24 Shape024 TextBox 38: Evidence + approval
+S24 Shape025 TextBox 39: POST /promote
+S24 Shape027 Oval 41: 6
+S24 Shape028 TextBox 43: Operations feedback
+S24 Shape029 TextBox 44: AIM + PI / CONNECT
+S24 Shape036 TextBox 57: Siemens-grade configuration
+S24 Shape038 TextBox 59: PTC-grade traceability
+S24 Shape040 TextBox 61: NAPA-grade calculation
+S24 Shape042 TextBox 63: Dassault-grade decision context
+S24 Shape044 TextBox 65: AVEVA lifecycle context
+S24 Shape045 TextBox 89: 24
+S24 Shape047 TextBox 5: VISUAL PROOF: ONE CLOSED ASSURANCE LOOP
+S24 Shape048 TextBox 11: Configuration → affected scenarios → approved solver evidence → human / class approval → operations feedback
+S24 Shape049 TextBox 12: AI diagnoses and recommends; rule guardrails hold gates; accountable humans retain release authority.
+S24 Shape052 TextBox 21: BOUNDED SCENARIO
+S24 Shape053 TextBox 45: One hull / block · selected loading cases · one approved solver adapter · seeded change and failure cases
+S24 Shape056 TextBox 48: DELIVERABLE + RELEASE GOVERNANCE
+S24 Shape057 TextBox 49: Configuration + assurance graph · signed evidence pack · AI proposes / holds · naval architect and class authority release
+S24 Shape060 TextBox 91: MINIMUM ACCEPTANCE
+S24 Shape062 TextBox 93: Configuration >=99%
+S24 Shape064 TextBox 95: Impact recall >=95%
+S24 Shape066 TextBox 97: Provenance 100%
+S24 Shape068 TextBox 99: Approval <=5 s
+S24 Notes Notes Placeholder 2: Purpose: Define the pilot scope so the future direction feels achievable. Talk track: The pilot should prove one closed loop rather than attempt full enterprise PLM at once. Planning should protect scope; development should protect adapter, schema, test and evidence quality.
+S24 Notes Slide Number Placeholder 3: 24
+
+== SLIDE 25: Slide25 ==
+S25 Shape001 TextBox 88: Requirement → AI-built VCRM & Checklist (admin-editable, approved in Impact+Approval)
+S25 Shape002 TextBox 91: Enter a requirement →AI builds the VCRM + Checklist → admin can add/delete sub-items → attach deliverables → VCRM & Checklist are approved together in the Impact + Approval step before production.
+S25 Shape008 TextBox 97: Future PLM — Requirements & Verification · /api/v1
+S25 Shape009 Rounded Rectangle 98: ADMIN
+S25 Shape011 TextBox 100: RUNNING
+S25 Shape013 TextBox 102: REQUIREMENT
+S25 Shape014 Rounded Rectangle 103: REQ-014 · Ballast Water Treatment · cap >= 250 m3/h · IMO D-2
+S25 Shape015 Rounded Rectangle 105: POST /api/v1/requirements
+S25 Shape016 Hexagon 106: AI
+S25 Shape017 TextBox 107: AI → VCRM + Checklist + risk flags
+S25 Shape019 TextBox 109: VCRM — Verification Cross-Reference Matrix (Large Category)
+S25 Shape021 TextBox 111: Checklist — Cautions & Requirement Reflection (Large Category)
+S25 Shape022 Rounded Rectangle 112: + Add item
+S25 Shape023 Rounded Rectangle 113: × Delete
+S25 Shape024 TextBox 114: admin · POST / DELETE /api/v1/vcrm/items
+S25 Shape025 Rounded Rectangle 115: + Add item
+S25 Shape026 Rounded Rectangle 116: × Delete
+S25 Shape027 TextBox 117: admin · POST / DELETE /api/v1/checklist/items
+S25 Shape028 Rounded Rectangle 118: 1.1 Capacity >= 250 m3/h
+S25 Shape029 TextBox 120: verify: analysis/test
+S25 Shape030 TextBox 121: ×
+S25 Shape031 Rounded Rectangle 122: capacity_calc.pdf
+S25 Shape032 Rounded Rectangle 123: Verified
+S25 Shape033 Rounded Rectangle 124: 1.2 IMO D-2 compliance
+S25 Shape034 TextBox 126: verify: certification
+S25 Shape035 TextBox 127: ×
+S25 Shape036 Rounded Rectangle 128: IMO_D2_cert.pdf
+S25 Shape037 Rounded Rectangle 129: Certified
+S25 Shape038 Rounded Rectangle 130: 1.3 Power & energy budget
+S25 Shape039 TextBox 133: ×
+S25 Shape040 Rounded Rectangle 134: power_test.pdf
+S25 Shape041 Rounded Rectangle 135: Verified
+S25 Shape042 Rounded Rectangle 136: 1.4 Piping / HVAC interface
+S25 Shape043 TextBox 139: ×
+S25 Shape044 Rounded Rectangle 140: P&ID + 3D ref
+S25 Shape045 Rounded Rectangle 141: Linked
+S25 Shape046 Rounded Rectangle 142: 1.5 Maintenance access
+S25 Shape047 TextBox 145: ×
+S25 Shape048 Rounded Rectangle 146: access_review.docx
+S25 Shape049 Rounded Rectangle 147: Verified
+S25 Shape050 Rounded Rectangle 148: Class & IMO rules applied
+S25 Shape051 Rounded Rectangle 149: Caution
+S25 Shape052 TextBox 151: ×
+S25 Shape053 Rounded Rectangle 152: rule_check.pdf
+S25 Shape054 Rounded Rectangle 153: OK
+S25 Shape055 Rounded Rectangle 154: Material / coating spec correct
+S25 Shape056 Rounded Rectangle 155: Caution
+S25 Shape057 TextBox 157: ×
+S25 Shape058 Rounded Rectangle 158: material_spec.pdf
+S25 Shape059 Rounded Rectangle 159: OK
+S25 Shape060 Rounded Rectangle 160: 3D clash check (interfaces)
+S25 Shape061 Rounded Rectangle 161: Caution
+S25 Shape062 TextBox 163: ×
+S25 Shape063 Rounded Rectangle 164: clash_report.html
+S25 Shape064 Rounded Rectangle 165: OK
+S25 Shape065 Rounded Rectangle 166: All REQ items mapped to VCRM
+S25 Shape066 Rounded Rectangle 167: Reflect
+S25 Shape067 TextBox 169: ×
+S25 Shape068 Rounded Rectangle 170: trace_matrix.xlsx
+S25 Shape069 Rounded Rectangle 171: OK
+S25 Shape070 Rounded Rectangle 172: Test / inspection evidence
+S25 Shape071 Rounded Rectangle 173: Reflect
+S25 Shape072 TextBox 175: ×
+S25 Shape073 Rounded Rectangle 176: evidence_pack.zip
+S25 Shape074 Rounded Rectangle 177: OK
+S25 Shape076 TextBox 179: APPROVED IN THE 'IMPACT + APPROVAL' STEP
+S25 Shape077 Rounded Rectangle 180: VCRM 5/5 OK
+S25 Shape078 TextBox 181: +
+S25 Shape079 Rounded Rectangle 182: Checklist OK
+S25 Shape080 TextBox 183: +
+S25 Shape081 Rounded Rectangle 184: All requirements reflected OK
+S25 Shape083 Rounded Rectangle 186: PRODUCTION RELEASED
+S25 Shape084 TextBox 187: VCRM & Checklist are approval items inside the Impact + Approval step — production releases only when all are approved together.
+S25 Shape085 Text 2: Future Industrial PLM
+S25 Shape086 Text 13: 25
+S25 Shape087 Rounded Rectangle 3: × Delete
+S25 Shape088 Rounded Rectangle 4: × Delete
+S25 Shape089 Rounded Rectangle 5: × Delete
+S25 Shape090 Rounded Rectangle 6: × Delete
+S25 Shape091 Rounded Rectangle 7: × Delete
+S25 Shape092 Rounded Rectangle 12: × Delete
+S25 Shape093 Rounded Rectangle 13: × Delete
+S25 Shape094 Rounded Rectangle 14: × Delete
+S25 Shape095 Rounded Rectangle 15: × Delete
+S25 Shape096 TextBox 16: verify: Test
+S25 Shape097 TextBox 17: verify: 3D/Inspection
+S25 Shape098 TextBox 18: verify: Design Review
+S25 Shape099 Rounded Rectangle 20: × Delete
+S25 Notes Notes Placeholder 2: Purpose: Explain requirements governance in practical terms. Talk track: VCRM and checklist generation connect customer requirements to evidence and approval. The admin-editable model keeps planning flexibility while preserving traceability.
+
+== SLIDE 26: Slide26 ==
+S26 Shape003 TextBox 88: AI-gated flow across AVEVA design tools and the API-built PLM
+S26 Shape004 TextBox 96: Design in AVEVA (E3D/Marine + Draw on Windows) → Local Agent/Plugin callbacks → governed & tracked in the Linux API-built PLM, AI-gated at every step
+S26 Shape005 Rounded Rectangle 97: Hull & outfitting 3D model
+S26 Shape007 Oval 99: 1
+S26 Shape008 TextBox 101: AVEVA E3D Design
+S26 Shape009 Rounded Rectangle 102: AVEVA E3D/Marine
+S26 Shape010 Rounded Rectangle 104: modeled OK
+S26 Shape011 Rounded Rectangle 105: Generate 2D sheet → export AutoCAD DWG / DXF
+S26 Shape013 Oval 107: 2
+S26 Shape014 TextBox 109: 2D Production Drawing
+S26 Shape015 Rounded Rectangle 110: AVEVA Draw
+S26 Shape016 Rounded Rectangle 112: DWG issued OK
+S26 Shape017 Rounded Rectangle 113: Material take-off / eng. BOM from model
+S26 Shape019 Oval 115: 3
+S26 Shape020 TextBox 117: E-BOM / MTO
+S26 Shape021 Rounded Rectangle 118: AVEVA MTO
+S26 Shape022 Rounded Rectangle 120: extracted OK
+S26 Shape023 Rounded Rectangle 121: Approver signs off in the API-built PLM
+S26 Shape025 Oval 123: 4
+S26 Shape026 TextBox 125: Approval
+S26 Shape027 Rounded Rectangle 126: PLM · API
+S26 Shape028 Rounded Rectangle 128: approved OK
+S26 Shape029 Rounded Rectangle 129: Hull / Block / Zone / Date
+S26 Shape031 Oval 131: 5
+S26 Shape032 TextBox 133: Effectivity
+S26 Shape033 Rounded Rectangle 134: PLM · API
+S26 Shape034 Rounded Rectangle 136: scoped OK
+S26 Shape035 Rounded Rectangle 137: Frozen configuration / released rev
+S26 Shape037 Oval 139: 6
+S26 Shape038 TextBox 141: Baseline
+S26 Shape039 Rounded Rectangle 142: PLM · API
+S26 Shape040 Rounded Rectangle 144: baselined OK
+S26 Shape041 Rounded Rectangle 145: Change request → change order
+S26 Shape043 Oval 147: 7
+S26 Shape044 TextBox 149: ECR → ECO
+S26 Shape045 Rounded Rectangle 150: PLM · API
+S26 Shape046 Rounded Rectangle 152: ECO closed OK
+S26 Shape047 Rounded Rectangle 153: Manufacturing BOM + mfg change order
+S26 Shape049 Oval 155: 8
+S26 Shape050 TextBox 157: M-BOM + MCO
+S26 Shape051 Rounded Rectangle 158: PLM·API + ERM
+S26 Shape052 Rounded Rectangle 160: released OK
+S26 Shape053 Rounded Rectangle 161: Affected objects + VCRM & Checklist approval
+S26 Shape055 Oval 163: 9
+S26 Shape056 TextBox 165: Impact + Approval
+S26 Shape057 Rounded Rectangle 166: PLM · API
+S26 Shape058 Rounded Rectangle 168: approved OK
+S26 Shape067 Hexagon 177: AI
+S26 Shape068 Hexagon 178: AI
+S26 Shape069 Hexagon 179: AI
+S26 Shape070 Hexagon 180: AI
+S26 Shape071 Hexagon 181: AI
+S26 Shape072 Hexagon 182: AI
+S26 Shape073 Hexagon 183: AI
+S26 Shape074 Hexagon 184: AI
+S26 Shape075 TextBox 185: AI gate at every step: error check + anomaly diagnosis - AI-assisted routing suggestions + clash detection - PASS = auto-promote / FAIL = block & flag
+S26 Shape076 TextBox 186: PLM live status: modeled → DWG issued → MTO extracted → approved → scoped → baselined → ECO closed → released → approved
+S26 Shape077 Text 2: Future Industrial PLM
+S26 Shape078 Text 13: 26
+S26 Shape079 TextBox 91: AVEVA E3D/Marine 3D → AVEVA Draw 2D (AutoCAD DWG/DXF) → MTO/E-BOM → Approval → Effectivity → Baseline → ECR/ECO → M-BOM/MCO → Impact
+S26 Shape080 Rounded Rectangle 92: Future PLM - API workspace · served at /api/v1 · live status tracked
+S26 Shape082 TextBox 95: RUNNING
+S26 Notes Notes Placeholder 2: Purpose: Show the end-to-end operating flow across design, PLM and approval. Talk track: Use this slide to make the workflow concrete. Each transition is governed, each output is recorded, and AI can hold or explain a gate but cannot release the final certified state.
+
+== SLIDE 27: Slide27 ==
+S27 Shape001 TextBox 2: Design tool → 2D production drawing (AutoCAD DWG/DXF) → registered in the API-built PLM
+S27 Shape002 TextBox 5: AVEVA E3D/Marine model → AVEVA Draw issues the 2D sheet → export AutoCAD DWG/DXF (+MTO) → AI checks drawing standards → registered & status-tracked in the PLM.
+S27 Shape008 TextBox 11: AVEVA E3D Design — Draw (Draughting) · Hull / Block B12 / Panel P3
+S27 Shape010 TextBox 13: MODEL TREE (E3D)
+S27 Shape011 TextBox 14: Hull
+S27 Shape012 TextBox 15: Block B12
+S27 Shape013 TextBox 16: Panel P3
+S27 Shape014 TextBox 17: Stiffeners
+S27 Shape015 TextBox 18: Brackets
+S27 Shape016 TextBox 19: Block B13
+S27 Shape023 TextBox 26: 3D model (E3D / Marine)
+S27 Shape028 TextBox 31: 12 000
+S27 Shape033 TextBox 36: PLAN
+S27 Shape034 Rectangle 37: ELEVATION
+S27 Shape039 TextBox 43: ISO / DETAIL
+S27 Shape041 TextBox 45: AVEVA Draw
+S27 Shape042 TextBox 46: Block B12 · Panel P3
+S27 Shape043 TextBox 47: Sheet 1/3 · 1:50 · A1
+S27 Shape044 TextBox 48: rev A · format DWG
+S27 Shape045 TextBox 49: drawing-standard: OK
+S27 Shape046 Rounded Rectangle 50: Export → AutoCAD DWG / DXF
+S27 Shape047 Rounded Rectangle 51: A1 · 1:50 · layers mapped
+S27 Shape048 TextBox 52: Registered in the API-built PLM
+S27 Shape049 Rounded Rectangle 53: B12-P3_revA.dwg · + MTO
+S27 Shape051 TextBox 56: drawing & standard check: title block, layers, refs
+S27 Shape054 TextBox 59: POST /api/v1/drawings
+S27 Shape055 TextBox 60: { "block":"B12", "sheet":"P3", "rev":"A", "format":"DWG", "file":"B12-P3_revA.dwg" } → 201 drawing_id: 8842
+S27 Shape057 Rounded Rectangle 62: registered OK
+S27 Shape058 Rounded Rectangle 63: linked to Block B12 / Panel P3
+S27 Shape059 Rounded Rectangle 64: rev A · current · status-tracked
+S27 Shape060 TextBox 65: AVEVA Draw issues the 2D production drawing (DWG/DXF) from the E3D/Marine model; the API-built PLM registers it with its MTO, AI-checks drawing standards, and tracks revision & status across the digital thread.
+S27 Shape061 Text 2: Future Industrial PLM
+S27 Shape063 Text 13: 27
+S27 Shape064 Hexagon 55: AI
+S27 Notes Notes Placeholder 2: Purpose: Ground the architecture in a familiar engineering artifact: 2D production drawing output. Talk track: Show how AVEVA Draw and AutoCAD-format deliverables can be registered into the API-built PLM so drawings, MTO, checks and approvals remain connected.
+
+== SLIDE 28: Slide28 ==
+S28 Shape001 TextBox 41: E3D / Hull design - version control approach
+S28 Shape002 TextBox 44: The digital thread drives version control - we do not treat 3D design like source code.
+S28 Shape004 TextBox 46: CHALLENGE
+S28 Shape005 TextBox 47: 3D files are huge - per-save Git is too heavy · a central server bottlenecks with many concurrent designers · manual upload misses versions
+S28 Shape009 TextBox 51: 1
+S28 Shape010 TextBox 52: DB-based, not file-based
+S28 Shape011 TextBox 53: database elements, not whole files
+S28 Shape012 TextBox 54: E3D is database-driven. Version its native element & extract/merge change history plus PLM metadata and relationships - lightweight, with no whole-file snapshots.
+S28 Shape016 TextBox 58: 2
+S28 Shape017 TextBox 59: Content-addressed geometry
+S28 Shape018 TextBox 60: store heavy 3D once
+S28 Shape019 TextBox 61: Heavy geometry is stored once in object storage (Git-LFS / S3 style, de-duplicated). PLM keeps only references and deltas, so the design tool and server stay light.
+S28 Shape023 TextBox 65: 3
+S28 Shape024 TextBox 66: Event-driven snapshots
+S28 Shape025 TextBox 67: on promote / baseline, not every save
+S28 Shape026 TextBox 68: Version on promote / AI-gate / baseline approval - not on every save. The governance flow already designed becomes the version trigger.
+S28 Shape030 TextBox 72: 4
+S28 Shape031 TextBox 73: Async queued capture
+S28 Shape032 TextBox 74: background, no bottleneck
+S28 Shape033 TextBox 75: Snapshots are captured in the background via a queue on the Linux control-plane servers; AVEVA E3D authoring runs on Windows clients, so many concurrent designers never hit a bottleneck.
+S28 Shape035 TextBox 77: CORE
+S28 Shape036 TextBox 78: E3D is not source code. DB-element + metadata versioning · content-addressed geometry · versions triggered by promote/baseline events and captured asynchronously - the digital thread drives version control.
+S28 Shape037 Text 2: Future Industrial PLM
+S28 Shape038 Text 13: 28
+S28 Notes Notes Placeholder 2: Purpose: Explain version control for E3D and Hull design data. Talk track: The future direction requires every design state to be identifiable, comparable and promotable. This is what lets downstream impact, evidence and approval become reliable.
+
+== SLIDE 29: Slide31 ==
+S29 Shape001 TextBox 2: Continuous Naval Assurance Control Plane - API concept
+S29 Shape002 TextBox 3: Windows Local Agent/Plugin emits each promoted E3D/Hull revision; Linux control plane evaluates affected scenarios and publishes evidence + approval state.
+S29 Shape003 TextBox 4: Future Industrial PLM
+S29 Shape004 TextBox 5: 29
+S29 Shape006 TextBox 7: captured → affected → calculated → explained → approved → learned
+S29 Shape009 Oval 10: 1
+S29 Shape010 TextBox 12: Design-change event
+S29 Shape011 TextBox 13: Windows E3D/Marine + Local Agent
+S29 Shape012 TextBox 14: Promoted revision or baseline emits a typed event with hull, block, option and date effectivity.
+S29 Shape014 TextBox 16: POST /api/v1/revisions
+S29 Shape017 Oval 19: 2
+S29 Shape018 TextBox 21: Assurance impact graph
+S29 Shape019 TextBox 22: customer-owned graph
+S29 Shape020 TextBox 23: Find affected compartments, loading cases, rules, downstream objects and previous evidence.
+S29 Shape022 TextBox 25: POST /api/v1/assurance/impact
+S29 Shape025 Oval 28: 3
+S29 Shape026 TextBox 30: Federated solver run
+S29 Shape027 TextBox 31: NAPA + class / CFD / FEM adapters
+S29 Shape028 TextBox 32: Execute only affected scenarios; preserve certified solver results and provenance.
+S29 Shape030 TextBox 34: POST /api/v1/solver-runs
+S29 Shape033 Oval 37: 4
+S29 Shape034 TextBox 39: Physics-guarded AI diagnosis
+S29 Shape035 TextBox 40: explain + propose alternatives
+S29 Shape036 TextBox 41: Explain margin erosion; rank counterfactual options across safety, weight, cost, buildability and operations.
+S29 Shape038 TextBox 43: GET /api/v1/diagnostics/{run}
+S29 Shape041 Oval 46: 5
+S29 Shape042 TextBox 48: Evidence + approval pack
+S29 Shape043 TextBox 49: OCX / class / baseline / approval
+S29 Shape044 TextBox 50: Publish signed results, rule trace, affected objects, evidence pack and release decision.
+S29 Shape046 TextBox 52: POST /api/v1/evidence-packs
+S29 Shape049 Oval 55: 6
+S29 Shape050 TextBox 57: Operations calibration
+S29 Shape051 TextBox 58: PI System + CONNECT
+S29 Shape052 TextBox 59: Compare design assumptions with live draught, tank, trim and performance data; feed learning back.
+S29 Shape054 TextBox 61: POST /api/v1/operations/calibration
+S29 Shape061 TextBox 68: operational learning loop
+S29 Shape062 Rounded Rectangle 69: AI prioritizes, explains and proposes; certified solvers calculate; the naval architect and class authority make the release decision. This is how the platform moves faster without weakening assurance.
+S29 Shape063 TextBox 70: GUARDRAIL
+S29 Shape064 TextBox 72: Official-source basis: NAPA naval architecture + Node Network + OCX; AVEVA E3D Design + CONNECT + PI System official product pages. Concept architecture is a proposed AVEVA-based PLM extension.
+S29 Notes Notes Placeholder 2: Purpose: Explain Continuous Naval Assurance as an API concept, not a standalone solver. Talk track: The control plane records solver runs, diagnostics, evidence packs and approvals. It federates trusted calculation engines while making the decision trail visible and replayable.
+
+== SLIDE 30: Slide23 ==
+S30 Shape001 TextBox 2: User-Configurable PLM Process — Altering the Entire Flow via API (Admin Privileges)
+S30 Shape002 TextBox 5: Admins reorder, add or remove steps and reconfigure AI gates through governed API calls; the live PLM flow updates immediately — versioned, role-gated and audited.
+S30 Shape004 Rounded Rectangle 7: Future PLM — Process Designer · admin · /api/v1
+S30 Shape008 TextBox 12: Drag to reorder · gate = configure AI gate · x = remove · + add step
+S30 Shape010 TextBox 14: ≡
+S30 Shape012 TextBox 16: Requirement
+S30 Shape013 TextBox 17: ↑ ↓ gate ×
+S30 Shape014 Rounded Rectangle 18: moved
+S30 Shape016 TextBox 20: ≡
+S30 Shape018 TextBox 22: Design (E3D / Marine)
+S30 Shape019 TextBox 23: ↑ ↓ gate ×
+S30 Shape021 TextBox 25: ≡
+S30 Shape023 TextBox 27: 2D Drawing (AVEVA Draw)
+S30 Shape024 TextBox 28: ↑ ↓ gate ×
+S30 Shape026 TextBox 30: ≡
+S30 Shape028 TextBox 32: E-BOM / MTO
+S30 Shape029 TextBox 33: ↑ ↓ gate ×
+S30 Shape031 TextBox 35: ≡
+S30 Shape033 TextBox 37: Approval
+S30 Shape034 TextBox 38: ↑ ↓ gate ×
+S30 Shape036 TextBox 40: ≡
+S30 Shape038 TextBox 42: Effectivity
+S30 Shape039 TextBox 43: ↑ ↓ gate ×
+S30 Shape041 TextBox 45: ≡
+S30 Shape043 TextBox 47: Baseline
+S30 Shape044 TextBox 48: ↑ ↓ gate ×
+S30 Shape046 TextBox 50: ≡
+S30 Shape048 TextBox 52: ECR / ECO
+S30 Shape049 TextBox 53: ↑ ↓ gate ×
+S30 Shape051 TextBox 55: ≡
+S30 Shape053 TextBox 57: M-BOM / MCO
+S30 Shape054 TextBox 58: ↑ ↓ gate ×
+S30 Shape056 TextBox 60: ≡
+S30 Shape058 TextBox 62: Impact + Approval
+S30 Shape059 TextBox 63: ↑ ↓ gate ×
+S30 Shape060 Rounded Rectangle 64: + Add step
+S30 Shape061 Rounded Rectangle 65: Save & version process
+S30 Shape062 TextBox 66: Process configuration API (admin · role-gated)
+S30 Shape064 TextBox 68: REST · OpenAPI 3.1 · OIDC
+S30 Shape065 TextBox 69: GET /api/v1/process/definition PUT /api/v1/process/steps/{id}/order # reorder POST /api/v1/process/steps # add step DELETE /api/v1/process/steps/{id} # remove PUT /api/v1/process/gates/{id} # AI gate
+S30 Shape066 TextBox 70: versioned · role-gated (admin) · audit-logged · takes effect immediately
+S30 Shape067 TextBox 71: Example change: move Requirement before Design
+S30 Shape069 TextBox 73: BEFORE
+S30 Shape070 Rounded Rectangle 74: Design (E3D)
+S30 Shape072 Rounded Rectangle 76: Requirement
+S30 Shape073 TextBox 77: (req after design)
+S30 Shape074 Rounded Rectangle 78: PUT /api/v1/process/steps/requirement/order { "before": "design" }
+S30 Shape075 TextBox 79: AFTER
+S30 Shape076 Rounded Rectangle 80: Requirement
+S30 Shape078 Rounded Rectangle 82: Design (E3D)
+S30 Shape079 TextBox 83: → rest of flow
+S30 Shape080 TextBox 84: Other changes via the same API:
+S30 Shape081 Rounded Rectangle 85: POST /steps → + Class Approval
+S30 Shape082 Rounded Rectangle 86: DELETE /steps/{id}
+S30 Shape083 Rounded Rectangle 87: PUT /gates → threshold
+S30 Shape084 TextBox 88: AI re-validates the reconfigured process; every user immediately sees the updated flow, gates and live status — no redeploy, fully audited.
+S30 Shape085 Text 2: Future Industrial PLM
+S30 Shape086 Text 13: 30
+S30 Notes Notes Placeholder 2: Purpose: Show that the process is customer-configurable. Talk track: Planning can change the process sequence without asking development to rewrite the platform. Development should expose safe APIs and guardrails; planning should define which process variants are allowed.
+
+== SLIDE 31: Slide 11 ==
+S31 Shape001 Text 0: Executable gate flow
+S31 Shape002 Text 1: Quality and impact rules use the same evaluate → promote governance pattern
+S31 Shape003 Text 2: Future Industrial PLM
+S31 Shape005 Text 4: 1. Evaluate Rules produce candidates without changing official records.
+S31 Shape006 Text 5: 2. Review Planner / engineer checks candidates, severity, object context and evidence.
+S31 Shape007 Text 6: 3. Promote Authorized role promotes candidates into official quality issues or change impacts.
+S31 Shape008 Text 7: 4. Measure Dashboard updates KPI, gate status and readiness with traceable audit.
+S31 Shape009 Text 8: Why this matters It separates automated detection from controlled engineering decisions.
+S31 Shape010 Text 9: 31
+S31 Notes Notes Placeholder 2: Purpose: Explain the gate mechanism behind the proposed platform. Talk track: The audience should see that evaluate, review and promote are deliberate lifecycle states. This prevents accidental release and creates auditable acceptance criteria.
+S31 Notes Slide Number Placeholder 3: 31
+
+== SLIDE 32: Slide 12 ==
+S32 Shape001 TextBox 6: Delivery WBS - consolidated after the full solution scope
+S32 Shape002 TextBox 7: Six KPI-gated packages: configuration first, then Continuous Naval Assurance and shipyard adoption
+S32 Shape003 TextBox 8: Future Industrial PLM
+S32 Shape006 TextBox 61: G1
+S32 Shape007 TextBox 62: wk2
+S32 Shape010 TextBox 65: G2
+S32 Shape011 TextBox 66: wk6
+S32 Shape014 TextBox 69: G3
+S32 Shape015 TextBox 70: wk12
+S32 Shape018 TextBox 73: G4
+S32 Shape019 TextBox 74: wk16
+S32 Shape022 TextBox 77: G5
+S32 Shape023 TextBox 78: wk22
+S32 Shape026 TextBox 81: G6
+S32 Shape027 TextBox 82: wk26
+S32 Shape029 TextBox 84: start
+S32 Shape031 TextBox 86: WBS 0
+S32 Shape032 TextBox 87: Readiness
+S32 Shape034 TextBox 89: 2 wks
+S32 Shape035 TextBox 90: Backlog · environment · source · roles
+S32 Shape036 TextBox 91: WBS 1
+S32 Shape037 TextBox 92: Phase 1 hardening
+S32 Shape039 TextBox 94: 4 wks
+S32 Shape040 TextBox 95: S6 gates · OIDC · dashboard · CI
+S32 Shape041 TextBox 96: WBS 2
+S32 Shape042 TextBox 97: Configuration core
+S32 Shape044 TextBox 99: 6 wks
+S32 Shape045 TextBox 100: BOM · effectivity · baseline · APIs
+S32 Shape046 TextBox 101: WBS 3
+S32 Shape047 TextBox 102: Change impact
+S32 Shape049 TextBox 104: 4 wks
+S32 Shape050 TextBox 105: ECR/ECO/MOC · impact graph · promote
+S32 Shape051 TextBox 106: WBS 4
+S32 Shape052 TextBox 107: Naval assurance
+S32 Shape054 TextBox 109: 6 wks
+S32 Shape055 TextBox 110: E3D/Hull event · solver adapters · evidence
+S32 Shape056 TextBox 111: WBS 5
+S32 Shape057 TextBox 112: Pilot adoption
+S32 Shape059 TextBox 114: 4 wks
+S32 Shape060 TextBox 115: Shipyard UAT · class review · performance
+S32 Shape061 TextBox 116: Gates → G1 ready | G2 E2E/OIDC | G3 BOM/effectivity 99% | G4 impact recall >=95% | G5 solver provenance + evidence 100% | G6 UAT / response <=5s
+S32 Shape062 Rounded Rectangle 117: Control principle: every package ships API contract, seed truth set, E2E test, KPI threshold, evidence and demo scenario.
+S32 Shape063 TextBox 119: 32
+S32 Notes Notes Placeholder 2: Purpose: Convert the future direction into a delivery plan. Talk track: The WBS is staged to reduce risk: harden the baseline, build configuration core, add change impact, then add naval assurance and shipyard adoption. KPI gates control movement between stages.
+S32 Notes Slide Number Placeholder 3: 32
+
+== SLIDE 33: Slide 13 ==
+S33 Shape001 TextBox 6: KPI model - configuration and naval assurance acceptance
+S33 Shape002 TextBox 7: Objective gates measure correctness, evidence provenance and decision speed - not subjective progress
+S33 Shape003 TextBox 8: Future Industrial PLM
+S33 Shape007 TextBox 12: API contract coverage
+S33 Shape008 TextBox 69: 100%
+S33 Shape011 TextBox 72: All committed features ship with OpenAPI + tests
+S33 Shape014 TextBox 75: E2E gate pass rate
+S33 Shape015 TextBox 76: >=95%
+S33 Shape018 TextBox 79: CI validates seed, evaluate, promote and rollback
+S33 Shape021 TextBox 82: BOM / effectivity accuracy
+S33 Shape022 TextBox 83: >=99%
+S33 Shape025 TextBox 86: Correct levels, quantities and scoped configuration
+S33 Shape028 TextBox 89: Impact graph recall
+S33 Shape029 TextBox 90: >=95%
+S33 Shape032 TextBox 93: Find all seeded affected objects and naval scenarios
+S33 Shape035 TextBox 96: Solver-run provenance
+S33 Shape036 TextBox 97: 100%
+S33 Shape039 TextBox 100: Version, input, result and approval source retained
+S33 Shape042 TextBox 103: Evidence-pack completeness
+S33 Shape043 TextBox 104: 100%
+S33 Shape046 TextBox 107: Rule trace, affected objects and approval pack present
+S33 Shape049 TextBox 110: AI diagnostic precision
+S33 Shape050 TextBox 111: >=85%
+S33 Shape053 TextBox 114: Useful ranked explanations without release authority
+S33 Shape056 TextBox 117: Dashboard / approval response
+S33 Shape057 TextBox 118: <=5 s
+S33 Shape060 TextBox 121: Status, margin and approval summary under pilot load
+S33 Shape061 Rounded Rectangle 122: PASS | CONDITIONAL PASS with backlog | FAIL + remediation sprint. AI never owns the certified release decision.
+S33 Shape062 TextBox 123: GATE DECISION
+S33 Shape063 TextBox 125: 33
+S33 Notes Notes Placeholder 2: Purpose: Define success in measurable terms. Talk track: These KPIs prevent subjective progress reporting. Development is measured by contracts, tests, accuracy, provenance and response time; planning is measured by whether the product value is accepted at each gate.
+S33 Notes Slide Number Placeholder 3: 33
+
+== SLIDE 34: Slide29 ==
+S34 Shape001 TextBox 57: Future-state comparison - AVEVA wins by orchestrating the full assurance loop
+S34 Shape002 TextBox 58: Proposed open AVEVA control plane versus NAPA, Siemens / Dassault PLM and other ship design tools
+S34 Shape003 TextBox 59: Future Industrial PLM
+S34 Shape005 Rounded Rectangle 113: Distinctive position = Siemens-grade configuration + Dassault-grade collaboration + NAPA-grade assurance, connected by customer-owned APIs and AVEVA lifecycle context.
+S34 Shape006 TextBox 114: TAKEAWAY
+S34 Shape007 TextBox 116: Future-state concept comparison; proposed capabilities require pilot validation and class / customer agreement.
+S34 Shape008 TextBox 117: 34
+S34 Table NativeComparisonTable_26 R1: Capability | AVEVA + Continuous Naval Assurance | NAPA | Siemens / Dassault PLM platforms | Other ship design tools
+S34 Table NativeComparisonTable_26 R2: Certified stability / hydrostatics | ◆ Federated | ● Strong | ○ Limited | ◐ Partial
+S34 Table NativeComparisonTable_26 R3: Hull + outfitting + production | ● Strong | ◐ Partial | ◐ Partial | ● Strong
+S34 Table NativeComparisonTable_26 R4: Configuration / change / effectivity | ● Strong | ◐ Partial | ● Strong | ◐ Partial
+S34 Table NativeComparisonTable_26 R5: Cross-domain assurance impact graph | ◆ Strong - new | ◐ Partial | ◐ Partial | ○ Limited
+S34 Table NativeComparisonTable_26 R6: Evidence + approval orchestration | ◆ Strong - new | ◐ Partial | ● Strong | ◐ Partial
+S34 Table NativeComparisonTable_26 R7: Operations calibration / learning | ◆ Strong - new | ◐ Partial | ◐ Partial | ◐ Partial
+S34 Table NativeComparisonTable_26 R8: Customer-owned API / process | ● Strong | ◐ Partial | ◐ Partial | ◐ Partial
+S34 Notes Notes Placeholder 2: Purpose: Re-score the competitive position after the proposed capabilities are applied. Talk track: The claim is that AVEVA can become distinctive by orchestrating the full assurance loop. Keep the wording future-state and pilot-validation based so the argument remains credible.
+
+== SLIDE 35: Slide 15 ==
+S35 Shape002 TextBox 5: Review ownership and operating model
+S35 Shape003 TextBox 6: A cross-functional review board sees the same KPI, risk, evidence and release state before any capability is promoted
+S35 Shape004 TextBox 7: Future Industrial PLM
+S35 Shape006 TextBox 9: ACCOUNTABLE REVIEW BOARD
+S35 Shape009 TextBox 13: PRODUCT PLANNING
+S35 Shape010 TextBox 14: Roadmap · MVP scope · user outcomes · KPI thresholds
+S35 Shape013 TextBox 44: NAVAL ARCHITECTURE + CLASS
+S35 Shape014 TextBox 45: Criteria · solver validation · evidence adequacy · release
+S35 Shape017 TextBox 48: SOLUTION ARCHITECTURE
+S35 Shape018 TextBox 49: Data model · assurance graph · OpenAPI · adapters · NFRs
+S35 Shape021 TextBox 52: DEVELOPMENT TEAM
+S35 Shape022 TextBox 53: Implementation · automation · security · performance · defects
+S35 Shape024 TextBox 55: WEEKLY STEERING + REVIEW
+S35 Shape025 TextBox 56: 1 KPI + evidence dashboard 2 Failing configuration / assurance gates 3 Class and naval-architecture issues 4 Scope-change decisions 5 Promote completed capabilities + update risk burndown
+S35 Shape026 TextBox 57: 35
+S35 Notes Notes Placeholder 2: Purpose: Define who owns decisions after the meeting. Talk track: The future direction requires product planning, naval architecture, solution architecture and development to share one evidence dashboard. This prevents strategy from separating from implementation.
+S35 Notes Slide Number Placeholder 3: 35
+
+== SLIDE 36: Slide 16 ==
+S36 Shape001 TextBox 4: Key review risks and mitigations
+S36 Shape002 TextBox 5: Continuous Naval Assurance adds value only when certified authority, provenance and scope boundaries stay explicit
+S36 Shape003 TextBox 6: Future Industrial PLM
+S36 Shape014 TextBox 72: High
+S36 Shape015 TextBox 73: Med
+S36 Shape016 TextBox 74: Low
+S36 Shape017 TextBox 75: Low
+S36 Shape018 TextBox 76: Med
+S36 Shape019 TextBox 77: High
+S36 Shape020 TextBox 78: Impact →
+S36 Shape021 TextBox 79: Likelihood
+S36 Shape023 TextBox 81: 1
+S36 Shape025 TextBox 83: 2
+S36 Shape027 TextBox 85: 3
+S36 Shape029 TextBox 87: 4
+S36 Shape031 TextBox 89: 5
+S36 Shape032 TextBox 90: Risk → mitigation
+S36 Shape035 TextBox 93: 1
+S36 Shape036 TextBox 94: Scope creep
+S36 Shape037 TextBox 95: Pilot one E3D/Hull scenario; adapters orchestrate solvers instead of rewriting them.
+S36 Shape040 TextBox 98: 2
+S36 Shape041 TextBox 99: Solver / class acceptance
+S36 Shape042 TextBox 100: Certified solver remains source of truth; immutable provenance and human/class release.
+S36 Shape045 TextBox 103: 3
+S36 Shape046 TextBox 104: Data and model mapping
+S36 Shape047 TextBox 105: Seeded truth cases validate hull, compartment, weight, loading case and rule links.
+S36 Shape050 TextBox 108: 4
+S36 Shape051 TextBox 109: AI overreach / security
+S36 Shape052 TextBox 110: AI proposes and explains only; OIDC/RBAC, signed evidence and full audit trail.
+S36 Shape055 TextBox 113: 5
+S36 Shape056 TextBox 114: Adoption and ownership
+S36 Shape057 TextBox 115: Naval architect, engineering, IT and planning jointly own pilot and KPI decisions.
+S36 Shape058 TextBox 116: 36
+S36 Notes Notes Placeholder 2: Purpose: Acknowledge risks before the audience raises them. Talk track: The proposal is persuasive because it does not hide scope, solver, data, AI or adoption risks. Each risk has a bounded mitigation tied to pilot scope and governance.
+S36 Notes Slide Number Placeholder 3: 36
+
+== SLIDE 37: Slide 17 ==
+S37 Shape001 TextBox 2: Evidence base and assumption boundaries
+S37 Shape002 TextBox 3: Official product signals support the direction; proposed AVEVA control-plane capabilities still require pilot validation
+S37 Shape003 TextBox 4: Future Industrial PLM
+S37 Shape007 TextBox 8: AVEVA
+S37 Shape008 TextBox 9: PUBLIC SIGNAL Data-centric engineering + industrial intelligence
+S37 Shape010 TextBox 11: DESIGN USE Engineering-to-operations lifecycle context
+S37 Shape013 TextBox 48: SIEMENS
+S37 Shape014 TextBox 49: PUBLIC SIGNAL Digital thread / twin + PLM process automation
+S37 Shape016 TextBox 51: DESIGN USE Configuration rigor and lifecycle governance
+S37 Shape019 TextBox 54: DASSAULT
+S37 Shape020 TextBox 55: PUBLIC SIGNAL Model-based collaboration + virtual twins
+S37 Shape022 TextBox 57: DESIGN USE Role context and executable twin decisions
+S37 Shape025 TextBox 60: HEXAGON
+S37 Shape026 TextBox 61: PUBLIC SIGNAL Asset lifecycle from design through maintenance
+S37 Shape028 TextBox 63: DESIGN USE Completions, handover and operations context
+S37 Shape031 TextBox 66: PTC
+S37 Shape032 TextBox 67: PUBLIC SIGNAL Requirements, risk, test traceability + AI
+S37 Shape034 TextBox 69: DESIGN USE Verification gates and affected-object trace
+S37 Shape037 TextBox 72: NAPA
+S37 Shape038 TextBox 73: PUBLIC SIGNAL Naval calculations, rules and workflows
+S37 Shape040 TextBox 75: DESIGN USE Approved solver-of-record adapter
+S37 Shape042 TextBox 77: ASSUMPTION BOUNDARY
+S37 Shape043 TextBox 78: Deployment boundary: E3D/Marine/Unified Engineering authoring is Windows-centered; AIM/PI/CONNECT/Edge vary by product/config. Linux hosts API, SQL, AI Gate, evidence and integration; validate scope with vendors and class authorities.
+S37 Shape044 TextBox 79: Official product pages checked 6 Jun 2026: aveva.com | siemens.com/teamcenter | 3ds.com/3dexperience/enovia | hexagon.com/asset-lifecycle | ptc.com/codebeamer/windchill | napa.fi
+S37 Shape045 TextBox 80: 37
+S37 Notes Notes Placeholder 2: Purpose: Separate official product signals from proposal assumptions. Talk track: This slide protects credibility. State clearly what is based on public direction and what must be validated with vendors, class authorities and the customer environment.
+S37 Notes Slide Number Placeholder 3: 37
+
+== SLIDE 38: Slide 18 ==
+S38 Shape002 TextBox 7: Recommended decision
+S38 Shape003 TextBox 8: Approve the bounded next increment that proves Windows Authoring + Linux Control Plane in a real shipbuilding change scenario
+S38 Shape004 TextBox 9: Future Industrial PLM
+S38 Shape008 TextBox 13: APPROVE NOW
+S38 Shape009 TextBox 14: Phase 2 configuration core + bounded Continuous Naval Assurance pilot
+S38 Shape010 Oval 15: 1
+S38 Shape011 TextBox 17: PRODUCT POSITION
+S38 Shape012 TextBox 18: Open AVEVA control plane above specialist tools
+S38 Shape013 Oval 19: 2
+S38 Shape014 TextBox 21: DELIVERY INCREMENT
+S38 Shape015 TextBox 22: One E3D/Hull Local Agent change-to-evidence pilot slice
+S38 Shape016 Oval 23: 3
+S38 Shape017 TextBox 25: GOVERNANCE
+S38 Shape018 TextBox 26: 26-week WBS, KPI gates, customer + class release
+S38 Shape019 TextBox 27: WHAT APPROVAL UNLOCKS
+S38 Shape022 TextBox 30: 0-6 WEEKS
+S38 Shape023 TextBox 31: Harden reference
+S38 Shape024 TextBox 32: OIDC · seed truth · E2E gates
+S38 Shape027 TextBox 35: 6-16 WEEKS
+S38 Shape028 TextBox 36: Configuration + impact
+S38 Shape029 TextBox 37: BOM · effectivity · baseline · graph
+S38 Shape032 TextBox 40: 16-26 WEEKS
+S38 Shape033 TextBox 41: Assurance + UAT
+S38 Shape034 TextBox 42: Solver evidence · approvals · class review
+S38 Shape039 TextBox 47: PROOF AT G6: ONE CLOSED, AUDITABLE LOOP
+S38 Shape040 Rounded Rectangle 48: E3D/Hull event
+S38 Shape041 Rounded Rectangle 50: Affected scenarios
+S38 Shape042 Rounded Rectangle 52: Approved solver evidence
+S38 Shape043 Rounded Rectangle 54: Human / class approval
+S38 Shape044 Rounded Rectangle 56: Operations feedback
+S38 Shape049 TextBox 62: Success means the customer can see, explain, approve and replay every state transition - without replacing certified specialist solvers.
+S38 Shape050 Rounded Rectangle 63: WHY NOW | The executable reference is ready; the next differentiator is controlled configuration + cross-domain evidence + lifecycle learning.
+S38 Shape051 TextBox 65: 38
+S38 Notes Notes Placeholder 2: Purpose: Close with the decision request. Talk track: Ask for approval of the bounded next increment: Phase 2 configuration core plus Continuous Naval Assurance pilot. The proof point is one closed, auditable loop from E3D/Hull event to approved evidence and operations feedback.
+S38 Notes Slide Number Placeholder 3: 38
+
+== SLIDE 39: Slide46 ==
+S39 Shape004 Slide38TitleV11: Closing argument
+S39 Shape005 Slide38SubtitleV11: Future AVEVA Marine direction - one decision, one governed loop
+S39 Shape008 HeroStatementTextV11: AVEVA Marine should become the open, governed control plane for every shipbuilding state transition.
+S39 Shape010 Slide38CredibleHeaderV11: CREDIBLE
+S39 Shape011 Slide38CredibleBodyV11: Executable FastAPI + PostgreSQL + OIDC reference package.
+S39 Shape013 Slide38DifferentHeaderV11: DIFFERENT
+S39 Shape014 Slide38DifferentBodyV11: Decision, evidence and operations learning above specialist tools.
+S39 Shape016 Slide38ApproveHeaderV11: APPROVE
+S39 Shape017 Slide38ApproveBodyV11: Phase 2 core + one bounded Continuous Naval Assurance pilot.
+S39 Shape019 MeetingAskTextV11: Meeting ask: align product direction, approve pilot scope, assign owners, and validate the first customer/class evidence scenario.
+S39 Shape021 DecisionHubTextV11: OPEN GOVERNED CONTROL PLANE
+S39 Shape022 Slide38FooterV11: Future Industrial PLM / Close
+S39 Shape023 Slide38PageNumV11: 39
+S39 Notes Notes Placeholder 2: Use this as the final spoken close if the room needs the whole proposal compressed into one message. The ask is alignment, bounded pilot approval, ownership and first scenario validation.
+
+== SLIDE 40: Slide35 ==
+S40 Shape001 TextBox 2: Glossary 1 / 3 - PLM, configuration and change terms
+S40 Shape002 TextBox 3: Appendix · quick reference — terms are kept in editable PowerPoint tables, not standalone text boxes.
+S40 Table Table 5 R1: Abbreviation | Full Term | Definition
+S40 Table Table 5 R2: PLM | Product Lifecycle Management | Managing product data and lifecycle across stages.
+S40 Table Table 5 R3: BOM | Bill of Materials | Structured list of parts, quantities and relationships.
+S40 Table Table 5 R4: E-BOM | Engineering BOM | As-designed structure taken from the 3D model.
+S40 Table Table 5 R5: M-BOM | Manufacturing BOM | As-built structure used on the shop floor.
+S40 Table Table 5 R6: MTO | Material Take-Off | Quantities and materials extracted from model/drawings.
+S40 Table Table 5 R7: ECR | Engineering Change Request | Request to initiate a change.
+S40 Table Table 5 R8: ECO | Engineering Change Order | Authorized engineering change order.
+S40 Table Table 5 R9: MCO | Manufacturing Change Order | Authorized manufacturing change.
+S40 Table Table 5 R10: MOC | Management of Change | Governance process for controlled operational or engineering change.
+S40 Table Table 6 R1: Abbreviation | Full Term | Definition
+S40 Table Table 6 R2: Effectivity | Effectivity | Rule for when/where a configuration applies: hull, block, option or date.
+S40 Table Table 6 R3: Baseline | Baseline | Frozen, released configuration snapshot.
+S40 Table Table 6 R4: Digital thread | Digital Thread | Connected data trail linking design, build and operations.
+S40 Table Table 6 R5: VCRM | Verification Cross-Reference Matrix | Maps each requirement to verification evidence.
+S40 Table Table 6 R6: CoG | Centre of Gravity | Key weight-and-stability quantity.
+S40 Table Table 6 R7: OCX | Open Class eXchange | Open standard for sending hull data to class societies.
+S40 Table Table 6 R8: Class society | Classification Society | Body that approves designs against rules.
+S40 Table Table 6 R9: Loading case | Loading Case | Defined loading / ballast condition checked for stability.
+S40 Shape005 TextBox 7: Quick-reference appendix · product names are trademarks of their respective owners.
+S40 Shape006 TextBox 8: Appendix
+S40 Shape007 TextBox 9: Future Industrial PLM
+S40 Shape008 TextBox 10: 40
+S40 Notes Notes Placeholder 2: Purpose: Use this appendix only when terms block understanding. Talk track: Do not present every glossary row in the main meeting. Refer to it when PLM, BOM, effectivity, baseline, VCRM or class terms need quick clarification.
+
+== SLIDE 41: Slide36 ==
+S41 Shape001 TextBox 2: Glossary 2 / 3 - Marine, naval and product terms
+S41 Shape002 TextBox 3: Appendix · quick reference — terms are kept in editable PowerPoint tables, not standalone text boxes.
+S41 Table Table 5 R1: Abbreviation | Full Term | Definition
+S41 Table Table 5 R2: NAPA | Naval-architecture & stability software | Certified solver of record for naval architecture, rules and stability workflows.
+S41 Table Table 5 R3: IMO D-2 | IMO Ballast Water Standard | Ballast-water discharge-quality performance standard.
+S41 Table Table 5 R4: P&ID | Piping & Instrumentation Diagram | Diagram showing process piping, instruments and controls.
+S41 Table Table 5 R5: HVAC | Heating, Ventilation & Air-Conditioning | Ventilation, heating and cooling system domain.
+S41 Table Table 5 R6: CFD | Computational Fluid Dynamics | Engineering analysis for flow-related behavior.
+S41 Table Table 5 R7: FEM | Finite-Element Method | Engineering analysis for structures and loads.
+S41 Table Table 5 R8: Hydrostatics | Hydrostatics | Calculations proving the ship floats safely.
+S41 Table Table 5 R9: Stability | Ship Stability | Calculation proving safe loading, trim and margin.
+S41 Table Table 6 R1: Abbreviation / Product | Full Term | Definition
+S41 Table Table 6 R2: AVEVA E3D / Marine | AVEVA E3D / Marine | Windows-centered 3D ship/plant authoring; connect via Agent/Plugin/API bridge.
+S41 Table Table 6 R3: AVEVA Draw | AVEVA Draw | Produces 2D production drawings from the 3D model.
+S41 Table Table 6 R4: AVEVA AIM | Asset Information Management | Handover and operations data management.
+S41 Table Table 6 R5: AVEVA PI System | PI System | Operational time-series / historian platform.
+S41 Table Table 6 R6: AVEVA CONNECT | CONNECT | AVEVA industrial-intelligence cloud and ecosystem.
+S41 Table Table 6 R7: AVEVA Industrial AI Asst. | Industrial AI Assistant (AVEVA CONNECT) | Secure industrial LLM on CONNECT; drawing Q&A, asset specs, change history, onboarding; no data leaves CONNECT; role-gated access.
+S41 Table Table 6 R8: AVEVA Generative Design AI | Generative / Predictive Design AI (Unified Engineering) | AI-suggested piping routing, clash resolution, design simulation; requires human validation against class / marine standards.
+S41 Table Table 6 R9: Teamcenter | Siemens Teamcenter | Siemens PLM platform and configuration benchmark.
+S41 Table Table 6 R10: 3DEXPERIENCE / ENOVIA | Dassault 3DEXPERIENCE / ENOVIA | Dassault collaboration and PLM platform.
+S41 Table Table 6 R11: Windchill / Codebeamer | PTC Windchill / Codebeamer | PTC PLM and requirements-traceability tools.
+S41 Table Table 6 R12: Hexagon SDx / Smart 3D / j5 | Hexagon ALI tools | Asset-lifecycle, 3D design and operations tools.
+S41 Shape005 TextBox 7: Quick-reference appendix · product names are trademarks of their respective owners.
+S41 Shape006 TextBox 8: Appendix
+S41 Shape007 TextBox 9: Future Industrial PLM
+S41 Shape008 TextBox 10: 41
+S41 Notes Notes Placeholder 2: Purpose: Clarify marine and AVEVA product terminology. Talk track: Use this appendix to align mixed development and planning audiences. It prevents confusion between authoring tools, AI tools, solvers and PLM control-plane functions.
+
+== SLIDE 42: Slide37 ==
+S42 Shape001 TextBox 2: Glossary 3 / 3 - Architecture, security and infrastructure terms
+S42 Shape002 TextBox 3: Appendix · quick reference — terms are kept in editable PowerPoint tables, not standalone text boxes.
+S42 Table Table 5 R1: Abbreviation | Full Term | Definition
+S42 Table Table 5 R2: ERP | Enterprise Resource Planning | Enterprise business, procurement and finance system.
+S42 Table Table 5 R3: MES | Manufacturing Execution System | Shop-floor production execution system.
+S42 Table Table 5 R4: DWG / DXF | AutoCAD Drawing Formats | Common 2D drawing exchange file formats.
+S42 Table Table 5 R5: API | Application Programming Interface | How software systems call each other.
+S42 Table Table 5 R6: REST / OData | Web API styles | Common styles for reading and writing data.
+S42 Table Table 5 R7: OpenAPI 3.1 | OpenAPI Specification | Machine-readable contract describing every endpoint.
+S42 Table Table 5 R8: FastAPI | FastAPI | Python API framework used in the reference build.
+S42 Table Table 6 R1: Abbreviation | Full Term | Definition
+S42 Table Table 6 R2: OIDC / OAuth2 | OpenID Connect / OAuth2 | Identity login and authorization standards.
+S42 Table Table 6 R3: JWT | JSON Web Token | Signed access token proving who is calling.
+S42 Table Table 6 R4: RBAC | Role-Based Access Control | Who may do what.
+S42 Table Table 6 R5: PostgreSQL | PostgreSQL | Reference relational database.
+S42 Table Table 6 R6: Keycloak | Keycloak | Reference identity server.
+S42 Table Table 6 R7: E2E / CI | End-to-End / Continuous Integration | Automated tests and build validation.
+S42 Table Table 6 R8: HA / DR | High Availability / Disaster Recovery | System continuity and recovery concepts.
+S42 Table Table 6 R9: TLS / WAF / ZTNA | Security controls | Transport encryption, web firewall and zero-trust access.
+S42 Table Table 6 R10: SAN / NAS / WORM | Storage technologies | Storage network, network storage and write-once retention.
+S42 Shape005 TextBox 7: Quick-reference appendix · product names are trademarks of their respective owners.
+S42 Shape006 TextBox 8: Appendix
+S42 Shape007 TextBox 9: Future Industrial PLM
+S42 Shape008 TextBox 10: 42
+S42 Notes Notes Placeholder 2: Purpose: Clarify architecture, security and infrastructure terminology. Talk track: Use this appendix when discussing implementation feasibility, identity, APIs, PostgreSQL, CI, HA/DR or security. It keeps technical questions grounded in shared definitions.
