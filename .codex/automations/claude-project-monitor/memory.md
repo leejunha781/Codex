@@ -2,6 +2,17 @@
 
 - `C:\Users\namma\.claude\git_autosync.ps1` was hardened after the monitor report below: watched paths are now filtered for nested `.git` boundaries before root `git add`, so no-HEAD nested repos are skipped by autosync instead of causing repeated `git add failed` loops. Verification used a throwaway no-HEAD nested repo under `.claude`; raw `git status` saw it, but the patched collector excluded it.
 
+2026-06-21 project monitor follow-up (~9m)
+
+- `C:\Users\namma\.claude\AGENTS.md` is now aligned with the live `.claude` workspace paths; the earlier stale `.Codex` / `projects/C--Users-namma--Codex` guidance is resolved.
+- `D:\이력서` was mounted this run. Canonical docs verified on disk: `D:\이력서\ITT Cannon\Joonha_Lee_ITT_Cannon_FAE_Resume_Final_Integrated_v2.docx/.pdf` and the AVEVA deck alias set `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx`, `..._EN_V18.pptx`, and `..._EN_Final.pptx` all exist with 2026-06-09 timestamps around the recorded V18 state.
+- `C:\Users\namma\.claude\cache\git-autosync\autosync.log` shows the autosync issue is no longer active after the 2026-06-21 11:13 restart. There were startup failures and one non-fast-forward push rejection at 11:09, but pushes have been succeeding continuously from 11:34 through 13:40, and root `git status` is clean.
+- Auto-init remains partially inconsistent. `C:\Users\namma\.claude\cache\git-auto-init\watcher.log` still claims repos were initialized for `C:\Users\namma\.claude\projects\C--Users-namma--claude\6408bafd-8d68-49e5-8a93-5305b48a717d` and `...\baeb5d66-046c-4315-b5b7-4f26997e0fc2`, but both directories currently have no `.git` directory, while sibling project folders do.
+- `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md` is stale by omission relative to current activity. Today’s active local work areas `C:\Users\namma\.claude\abb_resume_work\`, `C:\Users\namma\.claude\hrbros_resume_work\`, and `C:\Users\namma\.claude\aveva_bdm_resume_work\` plus their canonical `D:\이력서\ABB - Portfolio and Industry Manager\` outputs are not indexed there yet.
+- `C:\Users\namma\.claude\plm_slide_work\word_future_direction\~$EVA_Marine_Future_Direction_Meeting_Materials_EN.html` is still a stale Office lock/temp artifact. No active `POWERPNT` process was present during the check; only a visible `WINWORD` session for an ABB resume was open.
+
+Run time: ~9 minutes.
+
 2026-06-21 project monitor summary
 
 - Root autosync is still blocked, and the failure mode is now fully confirmed. `C:\Users\namma\.claude\git_autosync.ps1` collects changed paths from the parent repo without excluding nested repos (`C:\Users\namma\.claude\git_autosync.ps1:49-57`, `60-87`). In `C:\Users\namma`, `git add --all --` fails on `C:\Users\namma\.claude\projects\C--Users-namma--claude\6408bafd-8d68-49e5-8a93-5305b48a717d\` and `...\baeb5d66-046c-4315-b5b7-4f26997e0fc2\` because both repos are initialized but have **no initial commit** (`git status` = `## No commits yet on main`; `git rev-parse HEAD` fails). The autosync loop kept retrying through `C:\Users\namma\.claude\cache\git-autosync\autosync.log:1758-1837`.
