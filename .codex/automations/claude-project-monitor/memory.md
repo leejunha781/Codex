@@ -1,3 +1,7 @@
+2026-06-21 autosync fix follow-up
+
+- `C:\Users\namma\.claude\git_autosync.ps1` was hardened after the monitor report below: watched paths are now filtered for nested `.git` boundaries before root `git add`, so no-HEAD nested repos are skipped by autosync instead of causing repeated `git add failed` loops. Verification used a throwaway no-HEAD nested repo under `.claude`; raw `git status` saw it, but the patched collector excluded it.
+
 2026-06-21 project monitor summary
 
 - Root autosync is still blocked, and the failure mode is now fully confirmed. `C:\Users\namma\.claude\git_autosync.ps1` collects changed paths from the parent repo without excluding nested repos (`C:\Users\namma\.claude\git_autosync.ps1:49-57`, `60-87`). In `C:\Users\namma`, `git add --all --` fails on `C:\Users\namma\.claude\projects\C--Users-namma--claude\6408bafd-8d68-49e5-8a93-5305b48a717d\` and `...\baeb5d66-046c-4315-b5b7-4f26997e0fc2\` because both repos are initialized but have **no initial commit** (`git status` = `## No commits yet on main`; `git rev-parse HEAD` fails). The autosync loop kept retrying through `C:\Users\namma\.claude\cache\git-autosync\autosync.log:1758-1837`.

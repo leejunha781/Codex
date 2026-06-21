@@ -21,6 +21,7 @@
 
 **Git autosync** — `C:\Users\namma\.claude\git_autosync.ps1`
 - `C:\Users\namma\.claude`, `C:\Users\namma\.codex\skills`, `C:\Users\namma\.codex\automations` 변경 감지 후 `C:\Users\namma` 루트 repo에 자동 commit + push
+- 2026-06-21 hardening: autosync now detects nested `.git` boundaries under watched paths and excludes those paths before root `git add`, so no-HEAD nested repos do not cause repeated `git add failed` loops. The UUID project-folder skip remains, but generic nested-repo filtering is now the main guard.
 - 런처: `C:\Users\namma\.claude\git_autosync_launcher.ps1` (중복 실행 방지 pid 파일 사용)
 - 로그인 자동 시작: HKCU Run 키 `ClaudeCodexGitAutosync`
 - 로그: `C:\Users\namma\.claude\cache\git-autosync\autosync.log`
