@@ -23,7 +23,10 @@ $doc = $null
 
 try {
     Write-Host "OPENING"
-    $doc = $word.Documents.OpenNoRepairDialog($Path, $false, $true, $false, "", "", $false, "", "", 0, $false, $false, $false, $false, $false, $false)
+    $confirmConversions = $false
+    $readOnly = $true
+    $addToRecentFiles = $false
+    $doc = $word.Documents.Open([ref]$Path, [ref]$confirmConversions, [ref]$readOnly, [ref]$addToRecentFiles)
     Write-Host "OPENED"
     $lines = New-Object System.Collections.Generic.List[string]
     $lines.Add("PATH: $Path")
