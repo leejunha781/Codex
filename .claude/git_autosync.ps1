@@ -15,6 +15,7 @@ $watchSpecs = @(
     ".codex/skills/",
     ".codex/automations/"
 )
+$repoRootFull = (Resolve-Path -LiteralPath $repoRoot).ProviderPath.TrimEnd('\')
 
 # 로그 폴더 준비
 New-Item -ItemType Directory -Force -Path (Split-Path $logFile) | Out-Null
@@ -46,11 +47,36 @@ function Get-ActiveWatchSpecs {
     return $active
 }
 
+function Test-IsNestedGitRepoPath {
+    param([string]$Path)
+
+    $normalized = ($Path -replace '\\','/').Trim('/')
+    if ([string]::IsNullOrWhiteSpace($normalized)) { return $false }
+
+    $parts = @($normalized -split '/')
+    for ($i = $parts.Count; $i -ge 1; $i--) {
+        $candidateRel = ($parts[0..($i - 1)] -join '/')
+        $candidateFull = Join-Path $repoRoot ($candidateRel -replace '/', [System.IO.Path]::DirectorySeparatorChar)
+        $resolved = Resolve-Path -LiteralPath $candidateFull -ErrorAction SilentlyContinue
+        if (-not $resolved) { continue }
+
+        $candidateRoot = $resolved.ProviderPath.TrimEnd('\')
+        if ($candidateRoot -ieq $repoRootFull) { continue }
+
+        if (Test-Path -LiteralPath (Join-Path $candidateRoot '.git')) {
+            return $true
+        }
+    }
+
+    return $false
+}
+
 function Should-IgnoreGitPath {
     param([string]$Path)
 
     return (
         $Path -match '(^|/)\.git/' -or
+        (Test-IsNestedGitRepoPath -Path $Path) -or
         $Path -match '^\.claude/projects/C--Users-namma--claude/[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}(/|$)' -or
         $Path -match '(^|/)cache/' -or
         $Path -match 'autosync\.log$' -or
