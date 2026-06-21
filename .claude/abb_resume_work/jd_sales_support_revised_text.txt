@@ -1,0 +1,447 @@
+﻿0001: Resume
+0002: Target: ABB - Portfolio & Industry Manager, Machine Automation / Industrial Automation, South Korea
+0003: Application Location: Seoul, Korea
+0005: Technical Strategy & Portfolio Business Development Professional | Machine Automation | Marine & Defense | Industrial Automation
+0006: Basic Information
+0007: Name
+0008: Joonha Lee
+0011: Date of Birth
+0012: 23 February 1974
+0015: Address
+0016: Gunpo-si, Gyeonggi-do, Korea | Application Location: Seoul, Korea
+0019: Total Experience
+0020: 21 years 02 months
+0023: Mobile
+0024: +82-10-2731-4581
+0027: E-Mail
+0028: leejunha781@gmail.com
+0032: Professional Summary
+0033: Senior Technical Strategy & Systems Engineering professional with over 21 years of experience in mission-critical industries, including Marine & Defense Systems, naval shipbuilding, defense electronics and global LEO satellite communications. Adept at structuring complex customer problems, eliciting unspoken technical requirements, and translating field issues into offering strategy, solution portfolio mapping, go-to-market narratives, sales enablement tools and qualified business opportunities. Combines first-hand system integration, commissioning, acceptance, cost-estimation and lifecycle evidence experience with cross-functional leadership across development, quality, production, sales and customer interfaces. Ready to support ABB Machine Automation and Industrial Automation growth in Korea by aligning portfolio strategy, segment strategy, market intelligence, roadmap planning and lifecycle management with measurable customer value.
+0035: Core Competencies
+0036: Portfolio Positioning / Industry Strategy & GTM
+0037: Ability to translate mission-critical customer requirements into offering strategy, portfolio positioning, segment strategy, GTM narratives, account hypotheses and CRM-ready pipeline actions for regional sales teams.
+0039: Customer Requirement Translation / Solution Portfolio Mapping
+0040: Technical synthesis capability to map complex customer requirements, unspoken needs, field issues and integration constraints into relevant automation, control, energy and lifecycle-service solution themes.
+0042: Marine & Defense Systems / Mission-Critical Infrastructure
+0043: Practical understanding of naval shipbuilding, submarine/surface-ship communication systems, C4I-linked interfaces, system integration, FAT/SAT, sea trials, customer acceptance and after-delivery support.
+0045: Technical Sales Enablement / Executive Customer Interface
+0046: Customer meetings, technical reviews, proposal presentations, cost-estimation support and executive briefings translated into cost, schedule, risk, uptime, product profitability, lifecycle efficiency and sustainability value.
+0048: Industrial Automation & Control / Power & Energy Infrastructure Adjacency
+0049: Systems-level understanding of control interfaces, industrial Ethernet, fieldbus concepts, shipboard networks, drive/control interaction, power/interface reliability and high-availability infrastructure requirements.
+0051: Lifecycle Business Management / Field-to-Business Value Creation
+0052: Working style focused on evidence-based trust, root-cause analysis, recurrence-prevention structures, lifecycle issue closure, service opportunity identification, portfolio feedback and responsible use of engineering and energy resources.
+0055: Education
+0056: ✓ M.S. in Electronic & Electrical Engineering, Pusan National University, Korea (Sep 2013 - Aug 2018) - thesis research on industrial Ethernet-based three-phase motor control for actuator applications (ARM Cortex-M3)
+0057: ✓ B.S. in Control & Instrumentation Engineering, University of Ulsan, Korea (Mar 1992 - Feb 2002)
+0058: ✓ Dongcheon High School, Science Track, Busan, Korea (Mar 1989 - Feb 1992)
+0060: Career Summary
+0061: Period
+0062: Company
+0063: Team
+0064: Position
+0065: Role Relevance
+0067: Mar 2023 - Jul 2025
+0068: Intellian Technologies
+0069: SIT Team
+0070: General Manager
+0071: Led customer-facing SIT, verification governance and release-readiness control for a global LEO terminal program; converted 400+ verification items into customer approval evidence and lifecycle risk insight.
+0073: Aug 2022 - Mar 2023
+0074: Genohco
+0075: System Technology R&D Center
+0076: Principal Research Engineer / PL-PM
+0077: Managed defense/aerospace RFPs, tender responses, cost/schedule planning, technical reviews and customer/partner coordination; translated requirements into proposal strategy and executable delivery plans.
+0079: May 2007 - Apr 2022
+0080: Daeyang Electric Co., Ltd.
+0081: R&BD Business Team 1
+0082: Deputy General Manager / Naval System Engineer & PM/PL
+0083: Built 15 years of naval/shipbuilding delivery credibility across requirements, design, installation, FAT/SAT, sea trial and handover; supported Sales HQ on every new special-vessel opportunity with cost estimation, proposal inputs and value narratives, including a KRW 1.2B Indonesia submarine project win.
+0085: Jan 2006 - May 2007
+0086: Excure Hitron
+0087: Electronic Technology Team
+0088: Assistant Manager
+0089: Resolved control-board and production issues through evidence-based analysis, certification support and engineering-to-production feedback.
+0091: Jun 2005 - Oct 2005
+0092: Essetel
+0093: Development Team
+0094: Assistant Manager
+0095: Developed RF/digital/power interface troubleshooting capability for communication hardware and system-level issue analysis.
+0097: Jan 2004 - May 2005
+0098: NesLab
+0099: Development Team
+0100: Assistant Manager
+0101: Supported embedded hardware, high-speed interface testing and prototype-to-production stabilization through disciplined failure analysis.
+0111: Job-Fit Map: ABB Portfolio / Industry Manager Requirements vs. Career Evidence
+0112: ABB Role Requirement
+0113: Direct Evidence from Career
+0114: Value to ABB / Client
+0116: Offering strategy, portfolio positioning and industry strategy / GTM
+0117: Supported RFP analysis, technical proposals, customer meetings, cost estimates and issue prioritisation across naval, defence and satellite programs; built value narratives from real customer constraints and unspoken technical requirements.
+0118: Converts Korea/APAC industrial, marine, defense and infrastructure pain points into segment strategy, offering themes, qualified opportunities and CRM-ready next actions.
+0120: Translate customer requirements into solution portfolio mapping
+0121: 15 years in ROK Navy and shipyard programs plus global satellite SIT; practical view of requirements, interfaces, FAT/SAT, commissioning, acceptance evidence, ECO/BOM impact and field issue closure.
+0122: Creates credible discovery with shipyard, marine, defense, energy and infrastructure customers, grounded in real system integration and lifecycle process.
+0124: Build technical sales enablement and benefit cases
+0125: Managed 400+ verification items, evidence packages, ECO/BOM impact, WBS schedules, cost estimates, acceptance criteria, customer-facing issue justification and recurrence-prevention actions.
+0126: Supports benefit cases for lower integration risk, improved uptime/reliability, faster issue closure, stronger lifecycle service readiness and more confident investment decisions.
+0128: Engage executives and cross-functional stakeholders in business language
+0129: Prepared management reports, proposal presentations and risk/acceptance briefings for Navy, shipyard, defence and global customer stakeholders.
+0130: Translates technical detail into cost, schedule, risk, uptime, readiness, energy efficiency and sustainability value.
+0132: Lead cross-functional customer, sales, product and delivery interfaces
+0133: Coordinated engineering, quality, production, sales, subcontractors, agencies and global partners through long-cycle delivery, sales support and acceptance work.
+0134: Fits regional teams that require disciplined follow-up across sales, portfolio/product, partners, service, engineering, production and customer functions.
+0136: Convert field issues into lifecycle business and portfolio feedback
+0137: Built a repeatable way to classify field issues by customer impact, root cause, corrective action, re-verification evidence and lifecycle follow-up opportunity.
+0138: Helps ABB convert installed-base issues and site learnings into lifecycle service value, portfolio optimization and trusted long-term customer engagement.
+0141: Detailed Professional Experience
+0142: Intellian Technologies | General Manager, SIT
+0143: 2023.03 – 2025.07
+0145: ■ Main Responsibilities
+0146: Managed system integration testing, customer technical communication, quality-issue governance and release-readiness control for the Eutelsat OneWeb LEO satellite terminal and antenna program. Converted requirements, defects, ECO/BOM changes and verification evidence into clear release decisions for engineering, quality, production and customer stakeholders.
+0147: Established a project-control discipline linking customer requirements, field issues, defect history, test evidence and approval criteria. The same discipline applies to ABB portfolio and industry management work: turning customer pain points into solution fit, technical sales evidence and qualified next actions.
+0148: ■ Role Description
+0149: 1. Customer Requirement-to-Value Translation and Lifecycle Evidence Management
+0150: (1) Customer Requirements, Evidence and Business Value Control
+0151: Organized customer requirements, defect history, test results, ECO/BOM changes, and release criteria from a VCRM perspective for the Eutelsat OneWeb LEO satellite antenna program.
+0152: Linked verification items with supporting evidence so that each requirement could be traced to the relevant test result, technical judgement, and approval basis.
+0153: Clarified the technical grounds for customer approval, production transition, and shipment release decisions.
+0154: Built practical experience in requirements-to-evidence traceability, which is closely aligned with lifecycle business management, customer acceptance and mission-critical infrastructure governance.
+0155: (2) Benchmark and Benefit Evidence from 400+ Verification Items
+0156: Operated more than 400 design verification checklist items across RF/antenna, control electronics, network interface, environmental verification, and production verification areas.
+0157: Organised test results into evidence-based reports for internal management, engineering, quality, production, and customer-facing decision making.
+0158: Supported release and shipment judgement by ensuring that verification results were reviewed through data and evidence rather than assumption.
+0159: Contributed to a structured product lifecycle review process by connecting design verification, production readiness, and customer approval criteria.
+0160: (3) Customer Pain Point Classification and Conversion to Action
+0161: Improved test and inspection processes and strengthened the regression verification flow for recurring issues.
+0162: Structured recurring issues by reproduction condition, root cause, corrective action, and re-verification result so that development, quality, and production teams could respond on the same basis.
+0163: Helped reduce repeated quality issues and shorten customer issue handling lead time by improving issue tracking discipline and verification readiness.
+0164: Built a practical working style suitable for customer technical support, lifecycle issue tracking, product-development feedback and field-to-business opportunity conversion.
+0165: 2. Global Customer Engagement and Sales / Pre-Sales Support
+0166: (1) Customer Meetings, Technical Discovery and Follow-Up
+0167: Conducted recurring quality meetings and technical reviews with Eutelsat OneWeb, covering defect status, corrective actions, verification results, release status, and schedule risks.
+0168: Prepared clear issue summaries and follow-up actions before and after meetings so that execution owners, due dates, and decision points were aligned internally.
+0169: Reported key technical and quality issues to both customer and internal management in a structured and timely manner.
+0170: Developed customer-facing communication capability required for technical workshops, product reviews, and implementation support.
+0171: (2) Opportunity-Grade Issue Alignment Between Customer and Product Teams
+0172: Coordinated disputed or sensitive issues between the customer and internal development, quality, and production teams using reproduction conditions, evidence data, change impact, and corrective actions.
+0173: Presented both technical justification and schedule impact rather than accepting customer requests without review, helping maintain customer trust within practical delivery limits.
+0174: Prevented quality issues from escalating into wider disputes by keeping discussions evidence-based and solution-focused.
+0175: Gained relevant experience for ABB-style customer issue resolution between customers, product development, service, portfolio and strategy teams.
+0176: 3. Product Readiness, Release Risk and Commercial Impact Support
+0177: (1) Pilot Build and Production Readiness Support
+0178: Supported pilot build reviews, ECO/BOM change control, and production readiness assessment for release preparation.
+0179: Addressed validation issues such as EMI/EMC, vibration, waterproof performance, and network reliability in relation to production transition risk.
+0180: Reviewed the impact of design changes on test, production, quality, and customer approval before release decisions were made.
+0181: Built hands-on experience in product lifecycle transition from engineering validation to production release.
+0182: (2) System-Level Field Issue Reproduction and Technical Analysis
+0183: Reproduced and analysed field issues through integrated checks of control boards, drive systems, position feedback, and network interfaces.
+0184: Used Wireshark and iperf-based network verification to narrow down symptoms and identify likely causes.
+0185: Assessed issues from a full system perspective rather than viewing hardware, firmware, network, and test results separately.
+0186: Strengthened troubleshooting capability applicable to technical support, solution implementation, and customer-site consulting.
+0187: (3) Global Technical Support and Customer Communication
+0188: Provided technical support for Marlink/STW in Germany and supported OneWeb antenna field and exhibition activities in Australia.
+0189: Built practical experience in English technical communication with global customers and partners.
+0190: Delivered customer-facing explanations and action plans within limited time, helping stabilise field issue handling.
+0191: Developed a professional support style suitable for international marine customers, shipyards, and global product teams.
+0192: 
+0193: Genohco | Principal Research Engineer / PL-PM
+0194: 2022.08 – 2023.03
+0196: ■ Main Responsibilities
+0197: Managed defence and aerospace electronics projects, including K2 sight test equipment and civil aircraft diagnostic systems, from RFP/proposal through development, testing, customer inspection and delivery. Led tender interpretation, technical proposal writing, cost/schedule planning, partner coordination and customer-facing reviews.
+0198: Controlled RFP analysis, execution planning, verification readiness and deliverables across customers, partners and external test agencies. Built a proposal-to-delivery rhythm suitable for opportunity qualification, benchmark discussion and value-based customer follow-up.
+0199: ■ Role Description
+0200: 1. Tender, Proposal and Value-Based Opportunity Support
+0201: (1) End-to-End Project Management
+0202: Managed project activities from proposal and contract stage through development, testing, customer inspection, and final delivery.
+0203: Interpreted customer requirements accurately during the bidding phase and controlled project execution based on schedule, deliverables, and acceptance criteria during the delivery phase, including tender conditions and contractual delivery terms.
+0204: Supported stable project execution by aligning technical scope, milestones, test requirements, and delivery conditions.
+0205: Built practical experience relevant to technical proposal preparation and Proof of Capability-style customer presentations.
+0206: (2) RFP Analysis, Solution Positioning and Technical Proposal Preparation
+0207: Analysed bid announcements and RFP documents and prepared technical proposals, project execution plans, cost estimates, and presentation materials.
+0208: Reflected requirement response strategy, development schedule, test plans, delivery criteria, and risk management in proposal materials.
+0209: Helped improve bidding competitiveness by translating customer requirements into practical execution plans.
+0210: Developed the ability to explain technical solutions in a customer-oriented and commercially aware manner.
+0211: 2. Requirements Review, Design Review and Verification Management
+0212: (1) Requirements Analysis and Board-Level Design Review
+0213: Reviewed requirements, board-level design, power and signal interfaces, and integration and verification readiness.
+0214: Managed the impact of design changes by checking not only functional implementation but also testability, delivery feasibility, and external certification readiness.
+0215: Supported stable design execution by linking technical review findings with downstream verification planning.
+0216: Built a structured approach to requirement interpretation, change impact review, and verification planning.
+0217: (2) Test Planning and External Test Agency Coordination
+0218: Managed EMI/EMC and environmental test planning, coordination with external test institutes, preparation of test procedures and reports, and change request handling.
+0219: Responded to test issues by defining root cause, corrective action, and re-verification criteria rather than simply rescheduling tests.
+0220: Improved document quality and schedule control through structured test readiness management.
+0221: Maintained traceability between technical requirements, test conditions, test results, and customer acceptance evidence.
+0222: (3) Deliverable and Traceability Control
+0223: Controlled development deliverables, verification records, customer response documents, and external test documents in a systematic manner.
+0224: Maintained explanation responsibility and traceability required in defence and public-sector projects.
+0225: Strengthened document discipline by ensuring that decisions were based on clear criteria and supporting evidence.
+0226: Established a working foundation relevant to PLM data control, lifecycle documentation, and technical support reporting.
+0227: 3. Stakeholder Coordination and Project Operation
+0228: (1) WBS-Based Schedule, Resource and Supplier Control
+0229: Managed WBS-based schedule planning, manpower and cost allocation, subcontractor coordination, and procurement schedule alignment.
+0230: Identified potential delays early and adjusted priorities across development, purchasing, partners, and external test agencies.
+0231: Supported delivery, quality, and cost targets by maintaining practical coordination across all project stakeholders.
+0232: Built project management capability for handling multiple commitments and competing technical priorities.
+0233: (2) Customer and Inspection Response Management
+0234: Supported customer technical discussions, change requests, inspection agency questions, and test result reporting.
+0235: Reviewed both technical necessity and schedule or cost impact when handling change requests.
+0236: Helped prevent unnecessary disruption to the project by balancing technical needs with delivery constraints.
+0237: 
+0238: Daeyang Electric | Deputy General Manager, Naval System Engineer & PM/PL
+0239: 2007.05 – 2022.04
+0241: ■ Main Responsibilities
+0242: Delivered ROK Navy ship and submarine communication systems, shipboard broadcasting systems, internal networks, CCTV/VOD and C4I-linked systems from requirements analysis through design, installation, commissioning, acceptance and after-delivery support. Developed first-hand understanding of Korean shipyard workflows, naval customer language, system integration constraints, lifecycle documentation and new special-vessel sales support.
+0243: Managed marine system integration, technical documentation, FAT/SAT, sea trial support, customer acceptance, field issue response and coordination with Navy, shipyards, inspectors, subcontractors, production, quality, engineering and sales teams. For every new special-vessel sales opportunity during Daeyang Electric tenure, supported Sales HQ by translating customer requirements into technical configuration, scope, development cost, manpower, material/outsourcing cost, quotation logic and proposal content. Mapped this delivery and sales-support experience to ABB-relevant value themes: offering strategy, time-to-market, sales enablement, product profitability, lifecycle service readiness and trusted customer acceptance.
+0244: ■ Role Description
+0245: 1. End-to-End Marine Customer Engagement for Naval and Shipbuilding SI Projects
+0246: (1) Full Lifecycle Delivery of Naval Programs
+0247: Participated as System Engineer, PM, and PL in Jangbogo-III integrated communication systems and FFX Batch-II wireless communication and shipboard broadcasting programs.
+0248: Managed the full project lifecycle from proposal, design, implementation, installation, testing, customer acceptance, and sustainment support.
+0249: Controlled requirements, interface definitions, test criteria, and acceptance conditions consistently across each program.
+0250: Built practical understanding of how shipbuilding projects require system architecture, detailed documentation, commissioning readiness, and customer acceptance discipline.
+0251: (2) Requirements Analysis, Latent Need Discovery, Cost Estimation and Proposal Planning
+0252: Analysed customer requirements from the Navy, shipyards, and defence authorities, including requirements that customers could not fully articulate, and translated them into system architecture, network configuration, equipment specifications, ICDs, technical proposals, cost-estimation inputs and execution plans.
+0253: Supported proposal presentations and planning documents with a strong focus on operational concept, onboard installation constraints, real shipboard conditions, development scope, expected manpower, material/outsourcing cost and delivery risk.
+0254: Converted customer needs into implementable system configurations, quotation assumptions, milestone-based execution plans and sales-ready value propositions.
+0255: Built experience directly relevant to ABB portfolio and industry strategy, where customer needs must be translated into offering strategy, solution portfolio mapping, implementation scope, value narrative, sales tools and technical proposal materials.
+0256: (3) WBS-Based Schedule, Budget and Risk Management
+0257: Managed WBS-based schedule plans, budget and manpower allocation, development cost assumptions, equipment deployment, subcontractor coordination, risk registers, and change control systems.
+0258: Identified schedule and cost risks early and aligned sales, purchasing, production, quality, engineering and subcontractor actions to keep projects within quotation, delivery and acceptance targets.
+0259: Maintained milestone discipline and close-out control across long-cycle defence and shipbuilding programs.
+0260: Managed multiple commitments and competing priorities across engineering, production, sales, shipyard, customer, and inspection stakeholders, acting as a translator between technical reality and business commitments.
+0261: 2. Marine Engineering Data, System Integration and Lifecycle Documentation Control
+0262: (1) Communication and C4I Interface Management
+0263: Reviewed MOSCOS integration and LINK-11-based C4I data link interface compatibility in submarine and surface ship communication systems.
+0264: Reflected data integrity, transmission delay, electrical interface, logical interface, and communication stability requirements into technical reviews and test criteria.
+0265: Helped ensure stable interaction between tactical data systems and shipboard communication environments.
+0266: Developed system architecture and interface-management experience relevant to next-generation shipbuilding platforms, industrial automation interfaces and mission-critical marine infrastructure.
+0267: (2) Multi-Subsystem Integration and Documentation Standardisation
+0268: Integrated multiple shipboard subsystems, including internal networks, wireless communications, shipboard broadcasting, CCTV/VOD, and C4I-linked interfaces.
+0269: Standardised ICDs, test plans, test procedures, result reports, and acceptance documents so that all subsystem teams worked to the same criteria.
+0270: Improved consistency in testing and acceptance by maintaining common technical documentation standards.
+0271: Built a strong foundation in lifecycle documentation, interface traceability and evidence-based acceptance control, which is highly relevant to automation/control portfolio positioning and lifecycle business management.
+0272: (3) Shipboard Technical Data, Customer Acceptance and Lifecycle Value Control
+0273: Managed technical documents and acceptance evidence required for naval shipbuilding projects, including interface documents, test plans, procedures, and result reports.
+0274: Coordinated with shipyards, Navy users, inspectors, subcontractors, and internal teams to align test criteria, defect closure, and retest scope.
+0275: Supported customer acceptance by ensuring that technical decisions were supported by formal documentation and measured evidence.
+0276: Developed a practical understanding of how engineering data, test evidence, and customer approval must be connected across the project lifecycle.
+0277: 3. Test, Commissioning, Acceptance and Field Support
+0278: (1) FAT, SAT, Sea Trial and Customer Acceptance Support
+0279: Led and supported FAT, SAT, commissioning, sea trial, and customer acceptance activities with the Navy, shipbuilders, inspectors, and subcontractors, feeding site learnings back into recurrence-prevention structures and future quotation assumptions.
+0280: Coordinated test criteria, defect closure, retest scope, and reporting throughout the acceptance process.
+0281: Minimized project closing risk by resolving issues through root-cause analysis, corrective action and recurrence-prevention structures rather than responsibility disputes.
+0282: Built customer-facing field support experience in real shipyard and onboard operating environments.
+0283: (2) RF Tuning, Measurement-Based Defect Analysis and Technical Reporting
+0284: Performed RF tuning and performance measurement for VHF, UHF, and HF communication equipment, including transmit and receive output, sensitivity, frequency alignment, link quality, channel stability, and operating margin.
+0285: Used Signal Generator, Spectrum/Signal Analyzer, RF Power Meter, and Dummy Load to analyse output deviation, sensitivity degradation, channel mismatch, and antenna/cable/equipment interface issues.
+0286: Reflected measured findings in test reports and technical documentation to support field operability and acceptance readiness.
+0287: Strengthened evidence-based troubleshooting capability required for customer support and technical consulting.
+0288: (3) Overseas Field Technical Support
+0289: Supported overseas submarine field technical assistance in Indonesia and gained practical experience in customer-facing troubleshooting, local-site requirement discovery and sales-to-delivery follow-through under site constraints.
+0290: Worked directly with overseas customers, shipyards, partners and internal sales stakeholders during field issue response, acceptance support and business follow-up.
+0291: Built a strong foundation in after-delivery technical support in challenging operational environments.
+0292: Contributed to an approximately KRW 1.2B Indonesia submarine entertainment/broadcasting system opportunity by proposing a wireless network architecture, supporting cost estimation, persuading customer/shipyard stakeholders, and linking technology to business opportunity.
+0293: 
+0294: Excure Hitron | Assistant Manager, Electronic Technology Team
+0295: 2006.01 – 2007.05
+0297: ■ Main Responsibilities
+0298: Worked as a hardware engineer for CCTV systems and IR dome camera products, focusing on control boards, power and signal interface circuits, prototype verification, early production issue analysis, certification support and engineering-to-production handover.
+0299: Established a disciplined approach to board-level troubleshooting, product stabilisation, technical documentation and issue feedback between engineering, quality and production teams, with emphasis on interface clarification, verification evidence and engineering-to-production handover.
+0300: ■ Role Description
+0301: 1. CCTV and IR Dome Camera Hardware Development
+0302: (1) Control Board and Interface Circuit Development
+0303: Designed and debugged control circuits, power circuits and signal interface circuits for CCTV systems and IR dome camera products.
+0304: Reviewed power stability, signal paths, connector conditions and external interface matching to improve product-level hardware reliability.
+0305: Supported prototype bring-up and functional checks by measuring signals and verifying board behaviour against design intent.
+0306: Built practical experience in interpreting interface conditions and converting technical findings into corrective actions.
+0307: (2) Prototype Verification and Technical Issue Control
+0308: Verified prototype hardware performance by checking circuit operation, power behaviour, signal integrity and board-level interface conditions.
+0309: Analysed hardware issues by separating possible causes across circuit design, wiring, components, connectors and system interaction.
+0310: Organised issue findings into practical engineering feedback for design correction and production readiness.
+0311: Developed a structured troubleshooting approach relevant to customer technical support and implementation issue handling.
+0312: (3) Early Production Issue Analysis and Certification Support
+0313: Analysed early production defects and coordinated corrective actions with production and quality teams.
+0314: Participated in EMC/RoHS and other certification-related support activities, gaining practical understanding of compliance and production stabilisation.
+0315: Helped connect design output, verification results, production issues and corrective actions into a consistent product lifecycle flow.
+0316: Built the hardware troubleshooting discipline that later supported naval, defence and satellite system integration work.
+0317: 
+0318: Essetel | Assistant Manager, Development Team
+0319: 2005.06 – 2005.10
+0321: ■ Main Responsibilities
+0322: Supported development and verification of ARM-based cellular mobile hardware and RF/MW-related communication circuits, including schematic review, board-level checks, power and signal path verification, interface debugging and performance confirmation.
+0323: Strengthened practical understanding of RF signal paths, digital control interfaces, power behaviour, measurement-based debugging and communication equipment reliability, connecting technical data, interface conditions, verification results and field issues across the product lifecycle.
+0324: ■ Role Description
+0325: 1. RF/MW Circuit and Communication Hardware Verification
+0326: (1) RF Circuit Support and Measurement-Based Debugging
+0327: Supported RF/MW circuit development and debugging by reviewing signal paths, component application, impedance-related conditions and interface behaviour.
+0328: Conducted board-level checks and signal measurements to confirm basic circuit operation and identify abnormal behaviour.
+0329: Strengthened hands-on capability in using measured evidence rather than assumptions when analysing electronic hardware issues.
+0330: Developed the technical discipline to explain issue causes clearly based on data, which later supported customer-facing troubleshooting.
+0331: (2) ARM-Based Mobile Hardware and Interface Review
+0332: Supported ARM-based cellular mobile hardware development by checking circuit operation, power paths, signal routes and interface conditions.
+0333: Reviewed how RF, digital control, power and interface blocks interacted within a communication product.
+0334: Analysed how circuit changes or debugging results could affect overall equipment performance, verification results and production stability.
+0335: Built an early foundation in lifecycle thinking by connecting development issues with test, certification and production readiness.
+0336: (3) Communication Equipment Engineering Foundation
+0337: Reviewed circuit behaviour and interface conditions from a practical product-development perspective.
+0338: Supported troubleshooting of power, signal, connector and board-interaction issues during development.
+0339: Built an engineering foundation later applicable to RF tuning, communication equipment verification and shipboard system troubleshooting.
+0340: Developed a system-level problem-solving approach useful for technical support, solution implementation and customer issue response.
+0342: 
+0343: NesLab | Assistant Manager, Development Team
+0344: 2004.01 – 2005.05
+0346: ■ Main Responsibilities
+0347: Began engineering career in embedded and control hardware development, PCB design support, prototype bring-up, high-speed interface debugging and product-level troubleshooting.
+0348: Developed a practical foundation in circuit behaviour, power integrity, signal-path analysis, firmware interaction, interface stability and manufacturability. This foundation later supported work in defence electronics, naval shipboard systems and satellite communication systems, where lifecycle documentation, interface traceability and customer acceptance evidence are critical.
+0349: ■ Role Description
+0350: 1. Embedded Hardware and PCB Development Foundation
+0351: (1) PCB Design, Control Board Debugging and Prototype Bring-Up
+0352: Supported PCB design and debugging for control boards and embedded hardware modules.
+0353: Conducted prototype bring-up, functional verification and signal-level checks after board fabrication.
+0354: Analysed circuit behaviour, wiring, component application, power integrity and interface conditions to resolve development issues.
+0355: Built practical understanding of how hardware design decisions influence verification, production and field reliability.
+0356: (2) High-Speed Interface and System-Level Debugging
+0357: Supported debugging of high-speed interface boards and related signal-path issues.
+0358: Reviewed interface stability, power behaviour and board interaction from a product-level perspective.
+0359: Analysed development issues by considering hardware, firmware and interface conditions together rather than separately.
+0360: Developed an early system-integration mindset that later supported naval communication systems and satellite terminal verification.
+0361: (3) Product-Level Troubleshooting and Lifecycle Awareness
+0362: Developed a practical troubleshooting approach by reviewing hardware, interface conditions and firmware interaction together.
+0363: Learned to connect design output with product reliability, manufacturability and field stability.
+0364: Built the basic engineering discipline that became the foundation for later defence electronics, naval systems and satellite communication system integration work.
+0365: Established the habit of using measured evidence, clear issue records and corrective actions, which aligns with PLM-oriented lifecycle support and customer technical consulting.
+0372: Certifications / Language / Technical Toolkit
+0373: Certifications / Training
+0374: Certified NMEA 2000 Networking;
+0375: Defence PMBOK training;
+0376: Machine Learning with Python;
+0377: Python for Data Science, AI & Development;
+0378: ABB Marine & Ports / Industrial Automation portfolio-positioning working knowledge; self-built strategy narrative and KPI model for mission-critical marine and infrastructure customers.
+0380: English Capability
+0381: Professional working English; English language study in Perth, Australia;
+0382: global customer technical meetings and English technical communication with Eutelsat OneWeb and international partners;
+0383: ready to support Korea/APAC regional opportunities in English.
+0385: Tools / Technical Domains
+0386: ABB Machine Automation / Industrial Automation portfolio awareness, Marine & Ports portfolio awareness, offering strategy, product-line portfolio strategy, go-to-market model, segment strategy, market intelligence, roadmap planning, lifecycle management, sales enablement, value proposition, competitive benchmarking, drive/control interface awareness, PLC/control-system concepts, HART/Modbus/Fieldbus/Industrial Ethernet, System Integration, Mission-Critical Infrastructure, Digital Thread, Digital Twin, Smart Shipyard, Salesforce CRM awareness, ICD, VCRM, ECO/BOM, WBS, cost estimate, quotation logic, defect log, evidence package, Wireshark, iperf, Linux, VMware and RF measurement equipment.
+0389: Self-Introduction
+0390: 1. Motivation and ABB Fit
+0391: I am applying for ABB's Portfolio and Industry Manager role because it requires the exact combination I have built throughout my career: mission-critical engineering credibility, customer-facing technical judgement, and the ability to translate complex technical requirements into offering strategy, portfolio strategy, go-to-market direction and business value. This role is not simply about product explanation; it is about understanding how customers make investment decisions when uptime, safety, compliance, lifecycle cost, time-to-market, product profitability and operational risk are all connected.
+0392: For more than 21 years, I have worked in high-reliability engineering environments covering naval shipbuilding, defence electronics, satellite communication systems and customer technical delivery. My strongest foundation is the 15 years I spent at Daeyang Electric, supporting ROK Navy ship and submarine programs including FFX Batch-II and Jangbogo/KSS-III. In those projects, requirements, interfaces, test evidence, FAT/SAT, sea trials, acceptance records and after-delivery support had to be managed with discipline. In parallel, I supported Sales HQ whenever new special-vessel opportunities arose by structuring customer needs, estimating development cost, manpower, materials and outsourcing scope, and preparing technical proposal inputs.
+0393: That experience is the reason ABB is highly attractive to me. Industrial, machine automation, marine and infrastructure customers do not purchase automation, control, electrification or lifecycle services in isolation. They are looking for safer operations, higher uptime, stronger system integration, faster issue recovery, lower lifecycle risk, improved energy efficiency, shorter time-to-market and trusted local support. ABB's Machine Automation and Industrial Automation portfolio can turn these operational problems into measurable business outcomes when the offering strategy and segment strategy are grounded in real customer constraints.
+0394: I understand ABB's emphasis on sustainable, reliable and efficient industrial progress. This direction is close to my working style. In complex projects, I try to make practical impact, understand the customer's operational goal, ask why before deciding, and build trust through clear evidence and follow-up. I also respect ABB's sustainability message: automation, electrification and lifecycle services should reduce waste, improve productivity, support safer decisions and help customers use energy and industrial resources more responsibly.
+0395: 2. Customer Requirement Translation and Mission-Critical Domain Expertise
+0396: My core strength is the ability to stand between the customer, engineering teams and business stakeholders, then convert technical reality into a clear action plan. In shipbuilding and defense projects, I learned that the real issue is often not a single defect or requirement. It is the lack of a shared view across interfaces, operating conditions, schedule risk, cost assumptions, test evidence, acceptance status and downstream lifecycle impact. This is exactly where a strong portfolio and industry manager must create value by structuring complex problems, eliciting unspoken technical requirements, and translating them into offering priorities, sales enablement and portfolio feedback.
+0397: At Daeyang Electric, I converted Navy and shipyard requirements into system architecture, equipment configuration, ICDs, test plans, test procedures, acceptance criteria and close-out documents. I also supported Sales HQ on each new special-vessel opportunity by clarifying customer requirements, defining technical configuration, estimating development cost, manpower, material and outsourcing scope, reviewing quotation assumptions, and preparing proposal materials. In the Indonesia submarine entertainment/broadcasting project, this technical-sales support contributed to an approximately KRW 1.2B business win.
+0398: I can connect that experience to ABB-relevant customer environments in Korea and APAC: machine automation customers, shipyards, naval programs, ports, onboard systems, communication/control infrastructure, power and energy interfaces, and high-availability industrial operations. This process view is important because many customer conversations begin with symptoms such as recurring field issues, unclear root-cause ownership, delayed acceptance, interface instability, lifecycle service gaps, cost pressure, product-profitability constraints or fragmented operational data.
+0399: At Intellian Technologies, I expanded this discipline in a global customer environment by managing requirements, field issues, defect history, ECO/BOM changes, verification evidence and release judgement for a LEO satellite-terminal program. More than 400 verification checklist items had to be controlled across RF/antenna, control electronics, network interface, environmental verification and production verification. That experience reinforced a principle I would bring to ABB customer engagement: trust is built through evidence, not claims.
+0400: Commercially, this background fits the technical value-selling and portfolio-positioning side of the role. I can support Account Managers, Product/Portfolio teams and Pre-Sales or Service specialists by structuring discovery questions, clarifying customer pain points, preparing value-proposition inputs, shaping proof-of-value storylines, supporting sales tools and turning technical discussion into CRM-ready next actions. My contribution is strongest where customer needs must be interpreted accurately before an offering, product-line portfolio or GTM model can be positioned credibly.
+0401: 3. Portfolio / Industry Strategy Perspective
+0402: I have studied marine and industrial portfolio strategy from the viewpoints of product position, competitor strengths, customer pain points, market intelligence and future go-to-market logic, and consolidated that work into my own executive strategy materials and KPI-based value model. That work strengthened my motivation to move from pure engineering delivery into portfolio strategy and business development, because I can see clear strategic opportunities in machine automation, industrial automation, marine, ports and power/energy infrastructure customers.
+0403: My practical perspective is that ABB can win when its offering portfolio is positioned around customer outcomes rather than isolated hardware or software functions. Machine automation, marine and infrastructure customers care about mission continuity, automation/control reliability, time-to-market, energy efficiency, maintainability, cybersecurity-aware connectivity, lifecycle service response and local execution credibility. My background allows me to connect ABB's portfolio language to real customer conditions: control interfaces, commissioning constraints, acceptance evidence, field issue closure, after-delivery support, cost assumptions and executive-level business risk.
+0404: For Korea/APAC customers, I would position ABB as a trusted technology partner that connects reliable automation, control, electrification, digital lifecycle insight and field-service credibility. This means mapping customer requirements to the right offering themes, explaining integration and lifecycle value in business language, and feeding customer field insights back into portfolio optimization, roadmap planning, lifecycle management and GTM priorities.
+0405: This is also where ABB's sustainability message becomes concrete. Higher uptime, efficient energy use, fewer repeated failures, better lifecycle service planning and stronger evidence-based decisions all support safer operations and more responsible use of industrial resources. I believe this is the right way to explain ABB's value to executives: not as technology language alone, but as measurable improvement in operational reliability, delivery risk, compliance confidence, energy efficiency and lifecycle cost.
+0406: 4. Contribution to Korea / APAC Marine, Automation and Infrastructure Growth
+0407: After joining, my first priority would be to align quickly with ABB's assigned Machine Automation portfolio, Korea/Japan account priorities, pipeline discipline, partner and channel structure, regional marketing activities and the collaboration model between Account Managers, Portfolio/Product teams, Service teams, Business Development leadership and technical specialists. I understand that a portfolio or industry manager must create leverage for the sales organization by connecting offering strategy, segment strategy, sales enablement and product-line execution.
+0408: My contribution would begin with customer discovery and market intelligence. I would help identify and organize machine automation, marine, port, defense, energy and industrial pain points around system integration, automation/control reliability, field issue recurrence, commissioning risk, lifecycle service readiness, energy efficiency, operational data ownership and product profitability. These pain points can then be converted into value hypotheses, discovery questions, benchmark assumptions, benefit estimates, sales tools, proof-of-value themes and clear follow-up actions.
+0409: I would also support executive-level communication by translating technical detail into business language: cost, schedule, risk, uptime, readiness, compliance, productivity, time-to-market, product profitability, energy efficiency and sustainability. My experience with ICDs, test plans, VCRM-style evidence packages, ECO/BOM changes, WBS schedules, cost estimates, quotation assumptions, defect logs and acceptance documents gives me the working discipline to make customer discussions specific and credible.
+0410: My goal is to help ABB grow meaningful Machine Automation, Industrial Automation, Marine & Ports and Power/Energy Infrastructure opportunities in Korea/APAC by combining mission-critical domain credibility, system-integration understanding, offering/portfolio-positioning discipline and evidence-based customer engagement, while making ABB's value clear to customers who need practical answers to real operational, profitability and lifecycle problems.
+TABLE: Resume
+TABLE: Target: ABB - Portfolio & Industry Manager, Machine Automation / Industrial Automation, South Korea Application Location: Seoul, Korea
+TABLE: Name
+TABLE: Joonha Lee
+TABLE: Date of Birth
+TABLE: 23 February 1974
+TABLE: Address
+TABLE: Gunpo-si, Gyeonggi-do, Korea | Application Location: Seoul, Korea
+TABLE: Total Experience
+TABLE: 21 years 02 months
+TABLE: Mobile
+TABLE: +82-10-2731-4581
+TABLE: E-Mail
+TABLE: leejunha781@gmail.com
+TABLE: Portfolio Positioning / Industry Strategy & GTM
+TABLE: Ability to translate mission-critical customer requirements into offering strategy, portfolio positioning, segment strategy, GTM narratives, account hypotheses and CRM-ready pipeline actions for regional sales teams.
+TABLE: Customer Requirement Translation / Solution Portfolio Mapping
+TABLE: Technical synthesis capability to map complex customer requirements, unspoken needs, field issues and integration constraints into relevant automation, control, energy and lifecycle-service solution themes.
+TABLE: Marine & Defense Systems / Mission-Critical Infrastructure
+TABLE: Practical understanding of naval shipbuilding, submarine/surface-ship communication systems, C4I-linked interfaces, system integration, FAT/SAT, sea trials, customer acceptance and after-delivery support.
+TABLE: Technical Sales Enablement / Executive Customer Interface
+TABLE: Customer meetings, technical reviews, proposal presentations, cost-estimation support and executive briefings translated into cost, schedule, risk, uptime, product profitability, lifecycle efficiency and sustainability value.
+TABLE: Industrial Automation & Control / Power & Energy Infrastructure Adjacency
+TABLE: Systems-level understanding of control interfaces, industrial Ethernet, fieldbus concepts, shipboard networks, drive/control interaction, power/interface reliability and high-availability infrastructure requirements.
+TABLE: Lifecycle Business Management / Field-to-Business Value Creation
+TABLE: Working style focused on evidence-based trust, root-cause analysis, recurrence-prevention structures, lifecycle issue closure, service opportunity identification, portfolio feedback and responsible use of engineering and energy resources.
+TABLE: Period
+TABLE: Company
+TABLE: Team
+TABLE: Position
+TABLE: Role Relevance
+TABLE: Mar 2023 - Jul 2025
+TABLE: Intellian Technologies
+TABLE: SIT Team
+TABLE: General Manager
+TABLE: Led customer-facing SIT, verification governance and release-readiness control for a global LEO terminal program; converted 400+ verification items into customer approval evidence and lifecycle risk insight.
+TABLE: Aug 2022 - Mar 2023
+TABLE: Genohco
+TABLE: System Technology R&D Center
+TABLE: Principal Research Engineer / PL-PM
+TABLE: Managed defense/aerospace RFPs, tender responses, cost/schedule planning, technical reviews and customer/partner coordination; translated requirements into proposal strategy and executable delivery plans.
+TABLE: May 2007 - Apr 2022
+TABLE: Daeyang Electric Co., Ltd.
+TABLE: R&BD Business Team 1
+TABLE: Deputy General Manager / Naval System Engineer & PM/PL
+TABLE: Built 15 years of naval/shipbuilding delivery credibility across requirements, design, installation, FAT/SAT, sea trial and handover; supported Sales HQ on every new special-vessel opportunity with cost estimation, proposal inputs and value narratives, including a KRW 1.2B Indonesia submarine project win.
+TABLE: Jan 2006 - May 2007
+TABLE: Excure Hitron
+TABLE: Electronic Technology Team
+TABLE: Assistant Manager
+TABLE: Resolved control-board and production issues through evidence-based analysis, certification support and engineering-to-production feedback.
+TABLE: Jun 2005 - Oct 2005
+TABLE: Essetel
+TABLE: Development Team
+TABLE: Assistant Manager
+TABLE: Developed RF/digital/power interface troubleshooting capability for communication hardware and system-level issue analysis.
+TABLE: Jan 2004 - May 2005
+TABLE: NesLab
+TABLE: Development Team
+TABLE: Assistant Manager
+TABLE: Supported embedded hardware, high-speed interface testing and prototype-to-production stabilization through disciplined failure analysis.
+TABLE: ABB Role Requirement
+TABLE: Direct Evidence from Career
+TABLE: Value to ABB / Client
+TABLE: Offering strategy, portfolio positioning and industry strategy / GTM
+TABLE: Supported RFP analysis, technical proposals, customer meetings, cost estimates and issue prioritisation across naval, defence and satellite programs; built value narratives from real customer constraints and unspoken technical requirements.
+TABLE: Converts Korea/APAC industrial, marine, defense and infrastructure pain points into segment strategy, offering themes, qualified opportunities and CRM-ready next actions.
+TABLE: Translate customer requirements into solution portfolio mapping
+TABLE: 15 years in ROK Navy and shipyard programs plus global satellite SIT; practical view of requirements, interfaces, FAT/SAT, commissioning, acceptance evidence, ECO/BOM impact and field issue closure.
+TABLE: Creates credible discovery with shipyard, marine, defense, energy and infrastructure customers, grounded in real system integration and lifecycle process.
+TABLE: Build technical sales enablement and benefit cases
+TABLE: Managed 400+ verification items, evidence packages, ECO/BOM impact, WBS schedules, cost estimates, acceptance criteria, customer-facing issue justification and recurrence-prevention actions.
+TABLE: Supports benefit cases for lower integration risk, improved uptime/reliability, faster issue closure, stronger lifecycle service readiness and more confident investment decisions.
+TABLE: Engage executives and cross-functional stakeholders in business language
+TABLE: Prepared management reports, proposal presentations and risk/acceptance briefings for Navy, shipyard, defence and global customer stakeholders.
+TABLE: Translates technical detail into cost, schedule, risk, uptime, readiness, energy efficiency and sustainability value.
+TABLE: Lead cross-functional customer, sales, product and delivery interfaces
+TABLE: Coordinated engineering, quality, production, sales, subcontractors, agencies and global partners through long-cycle delivery, sales support and acceptance work.
+TABLE: Fits regional teams that require disciplined follow-up across sales, portfolio/product, partners, service, engineering, production and customer functions.
+TABLE: Convert field issues into lifecycle business and portfolio feedback
+TABLE: Built a repeatable way to classify field issues by customer impact, root cause, corrective action, re-verification evidence and lifecycle follow-up opportunity.
+TABLE: Helps ABB convert installed-base issues and site learnings into lifecycle service value, portfolio optimization and trusted long-term customer engagement.
+TABLE: Intellian Technologies | General Manager, SIT
+TABLE: 2023.03 – 2025.07
+TABLE: Genohco | Principal Research Engineer / PL-PM
+TABLE: 2022.08 – 2023.03
+TABLE: Daeyang Electric | Deputy General Manager, Naval System Engineer & PM/PL
+TABLE: 2007.05 – 2022.04
+TABLE: Excure Hitron | Assistant Manager, Electronic Technology Team
+TABLE: 2006.01 – 2007.05
+TABLE: Essetel | Assistant Manager, Development Team
+TABLE: 2005.06 – 2005.10
+TABLE: NesLab | Assistant Manager, Development Team
+TABLE: 2004.01 – 2005.05
+TABLE: Certifications / Training
+TABLE: Certified NMEA 2000 Networking; Defence PMBOK training; Machine Learning with Python; Python for Data Science, AI & Development; ABB Marine & Ports / Industrial Automation portfolio-positioning working knowledge; self-built strategy narrative and KPI model for mission-critical marine and infrastructure customers.
+TABLE: English Capability
+TABLE: Professional working English; English language study in Perth, Australia; global customer technical meetings and English technical communication with Eutelsat OneWeb and international partners; ready to support Korea/APAC regional opportunities in English.
+TABLE: Tools / Technical Domains
+TABLE: ABB Machine Automation / Industrial Automation portfolio awareness, Marine & Ports portfolio awareness, offering strategy, product-line portfolio strategy, go-to-market model, segment strategy, market intelligence, roadmap planning, lifecycle management, sales enablement, value proposition, competitive benchmarking, drive/control interface awareness, PLC/control-system concepts, HART/Modbus/Fieldbus/Industrial Ethernet, System Integration, Mission-Critical Infrastructure, Digital Thread, Digital Twin, Smart Shipyard, Salesforce CRM awareness, ICD, VCRM, ECO/BOM, WBS, cost estimate, quotation logic, defect log, evidence package, Wireshark, iperf, Linux, VMware and RF measurement equipment.
