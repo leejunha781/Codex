@@ -109,3 +109,17 @@ Run time: ~10 minutes. Current run time recorded: 2026-06-22 05:04 +09:00.
 - Autosync appears active: successful pushes continued through 2026-06-22 05:18 with a pending change logged at 05:20; `git -C C:\Users\namma status --short` was clean before this memory append.
 
 Run time: ~9 minutes. Current run time recorded: 2026-06-22 06:04 +09:00.
+
+2026-06-22 project monitor follow-up (~8m)
+
+- Read `C:\Users\namma\.claude\AGENTS.md`, `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md`, prior automation memory, recent git/autosync activity, active work folders, nested project repos, and canonical D:\ Office outputs.
+- No new workspace file changes were found since the previous monitor timestamp except this automation's own memory update commit `ca18de8` at 2026-06-22 06:04 +09:00; `git -C C:\Users\namma status --short` was clean before this memory append.
+- High-priority risk remains open: root repo `C:\Users\namma` still tracks `C:\Users\namma\.claude\.credentials.json`, `C:\Users\namma\.claude\mcp-needs-auth-cache.json`, and five `.claude\backups\.claude.json.backup.*` files.
+- Configuration risk remains open: `C:\Users\namma\.claude\config.toml` still has `command = "npx"` at line 3 and `enable_all_tools_auto_approval = true` at line 12.
+- Scheduled skill inconsistency remains open: `C:\Users\namma\.claude\Scheduled\daily-linkedin-post\SKILL.md` still tells agents to run bash `date` at line 9 and write into a fixed Claude local-session output directory at line 35.
+- Memory inconsistency remains open: `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\office-docs-com-automation.md` line 20 still recommends `Set-ExecutionPolicy -Scope Process Bypass -Force`, contradicting `AGENTS.md` and its own line 33.
+- Project memory remains stale by omission: `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md` does not index active folders `abb_resume_work`, `hrbros_resume_work`, `aveva_bdm_resume_work`, `aveva_bdm_work`, `moacom_work`, or `genohco_system_work`.
+- Auto-init still gives weak coverage: the five UUID project folders under `C:\Users\namma\.claude\projects\C--Users-namma--claude` all have `.git` directories but all return `NO_HEAD`.
+- Office work areas: `itt_work` is quiet/stable; `plm_slide_work` has no zero-byte files, no running `WINWORD` or `POWERPNT`, and the previously seen stale temp artifact was not present on direct recheck. Recent D:\ resume outputs include ABB and HRBros application files from 2026-06-21, reinforcing the memory-omission issue.
+
+Run time: ~8 minutes. Current run time recorded: 2026-06-22 07:04 +09:00.
