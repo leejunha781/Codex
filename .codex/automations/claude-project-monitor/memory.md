@@ -94,3 +94,18 @@ Run time: ~8 minutes. Current run time recorded: 2026-06-22 04:08 +09:00.
 - The stale Office temp artifact still exists at `C:\Users\namma\.claude\plm_slide_work\word_future_direction\~$EVA_Marine_Future_Direction_Meeting_Materials_EN.html`.
 
 Run time: ~10 minutes. Current run time recorded: 2026-06-22 05:04 +09:00.
+
+2026-06-22 project monitor follow-up (~9m)
+
+- Read `C:\Users\namma\.claude\AGENTS.md`, `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md`, prior automation memory, recent filesystem activity since the 05:04 run, root git/autosync logs, active work folders, nested project repos, and canonical D:\ Office outputs.
+- High-priority risk still open: root repo `C:\Users\namma` tracks `C:\Users\namma\.claude\.credentials.json`, `C:\Users\namma\.claude\mcp-needs-auth-cache.json`, and five `.claude\backups\.claude.json.backup.*` files. These were changed around 2026-06-22 04:26 and autosync has pushed related changes.
+- Configuration risk still open: `C:\Users\namma\.claude\config.toml` uses `command = "npx"` and `enable_all_tools_auto_approval = true`, conflicting with the workspace's no-Node constraint and increasing unattended tool approval risk.
+- Scheduled skill inconsistency still open: `C:\Users\namma\.claude\Scheduled\daily-linkedin-post\SKILL.md` was written at 2026-06-22 05:04 and still instructs a bash `date` command plus a fixed Claude local session output path.
+- Memory inconsistency narrowed: `office-docs-com-automation.md` contains the correct line saying `Set-ExecutionPolicy -Scope Process Bypass` is blocked, but line 20 still recommends `Set-ExecutionPolicy -Scope Process Bypass -Force; & script.ps1`, contradicting AGENTS.md and its own line 33.
+- Office artifacts remain present: ITT canonical DOCX/PDF exist at `D:\이력서\ITT Cannon\...Final_Integrated_v2.*`; AVEVA default/V18/final PPTX files exist at `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\` with 2026-06-09 timestamps and ~40.75 MB sizes.
+- Active Office work folders: `itt_work` remains quiet/stable; `plm_slide_work` still has the known stale Office temp artifact `C:\Users\namma\.claude\plm_slide_work\word_future_direction\~$EVA_Marine_Future_Direction_Meeting_Materials_EN.html`. No WINWORD or POWERPNT processes were running during the check.
+- Auto-init still gives weak coverage: all five UUID project folders now have `.git`, but every sampled repo returns `NO_HEAD`, so there is no usable per-project commit history.
+- Project memory remains stale by omission for active folders `abb_resume_work`, `hrbros_resume_work`, `aveva_bdm_resume_work`, `aveva_bdm_work`, and `moacom_work`; `genohco_system_work` is indexed.
+- Autosync appears active: successful pushes continued through 2026-06-22 05:18 with a pending change logged at 05:20; `git -C C:\Users\namma status --short` was clean before this memory append.
+
+Run time: ~9 minutes. Current run time recorded: 2026-06-22 06:04 +09:00.
