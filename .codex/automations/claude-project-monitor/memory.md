@@ -1,125 +1,24 @@
-2026-06-21 autosync fix follow-up
+# claude-project-monitor memory
 
-- `C:\Users\namma\.claude\git_autosync.ps1` was hardened after the monitor report below: watched paths are now filtered for nested `.git` boundaries before root `git add`, so no-HEAD nested repos are skipped by autosync instead of causing repeated `git add failed` loops. Verification used a throwaway no-HEAD nested repo under `.claude`; raw `git status` saw it, but the patched collector excluded it.
+Last run: 2026-06-22T08:03:09+09:00
 
-2026-06-21 project monitor follow-up (~9m)
+Baseline established because this automation memory file was missing at start of run.
 
-- `C:\Users\namma\.claude\AGENTS.md` is now aligned with the live `.claude` workspace paths; the earlier stale `.Codex` / `projects/C--Users-namma--Codex` guidance is resolved.
-- `D:\이력서` was mounted this run. Canonical docs verified on disk: `D:\이력서\ITT Cannon\Joonha_Lee_ITT_Cannon_FAE_Resume_Final_Integrated_v2.docx/.pdf` and the AVEVA deck alias set `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx`, `..._EN_V18.pptx`, and `..._EN_Final.pptx` all exist with 2026-06-09 timestamps around the recorded V18 state.
-- `C:\Users\namma\.claude\cache\git-autosync\autosync.log` shows the autosync issue is no longer active after the 2026-06-21 11:13 restart. There were startup failures and one non-fast-forward push rejection at 11:09, but pushes have been succeeding continuously from 11:34 through 13:40, and root `git status` is clean.
-- Auto-init remains partially inconsistent. `C:\Users\namma\.claude\cache\git-auto-init\watcher.log` still claims repos were initialized for `C:\Users\namma\.claude\projects\C--Users-namma--claude\6408bafd-8d68-49e5-8a93-5305b48a717d` and `...\baeb5d66-046c-4315-b5b7-4f26997e0fc2`, but both directories currently have no `.git` directory, while sibling project folders do.
-- `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md` is stale by omission relative to current activity. Today’s active local work areas `C:\Users\namma\.claude\abb_resume_work\`, `C:\Users\namma\.claude\hrbros_resume_work\`, and `C:\Users\namma\.claude\aveva_bdm_resume_work\` plus their canonical `D:\이력서\ABB - Portfolio and Industry Manager\` outputs are not indexed there yet.
-- `C:\Users\namma\.claude\plm_slide_work\word_future_direction\~$EVA_Marine_Future_Direction_Meeting_Materials_EN.html` is still a stale Office lock/temp artifact. No active `POWERPNT` process was present during the check; only a visible `WINWORD` session for an ABB resume was open.
+Scope checked:
+- Read `C:\Users\namma\.claude\AGENTS.md`.
+- Read `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md`.
+- Inspected project memory files and recent filesystem changes under `C:\Users\namma\.claude`.
+- Checked `itt_work`, `plm_slide_work`, canonical ITT resume files, canonical AVEVA PLM deck files, autosync/auto-init logs, nested git repositories, root git status, Office temp locks, and running Word/PowerPoint processes.
 
-Run time: ~9 minutes.
+Findings:
+- No `C:\Users\namma\.claude` source/work files changed after prior automation timestamp `2026-06-21T22:02:00Z`; only automation/log activity continued.
+- Root repo `C:\Users\namma` had clean `git status --short`.
+- Autosync had historical failures around 2026-06-21 11:04-11:09, including a push rejection, but later log tail showed repeated successful pushes through 2026-06-22 07:05 and no current failure loop.
+- Five nested project repos exist under `C:\Users\namma\.claude\projects\C--Users-namma--claude\...`; all have valid `HEAD` files.
+- AVEVA memory is current as of 2026-06-21: canonical deck is `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx` plus explicit `..._EN_V18.pptx`; both exist and are around 40.75 MB, last written 2026-06-09 13:14. V18 render folder has 42 PNG pages.
+- ITT canonical resume files exist: `D:\이력서\ITT Cannon\Joonha_Lee_ITT_Cannon_FAE_Resume_Final_Integrated_v2.docx` and `.pdf`, last written 2026-06-05.
+- One stale Office temp file exists: `C:\Users\namma\.claude\plm_slide_work\word_future_direction\~$EVA_Marine_Future_Direction_Meeting_Materials_EN.html`, 162 bytes, last written 2026-06-06 22:51. It is not beside canonical PPTX/DOCX files.
+- No WINWORD or POWERPNT processes were running.
+- Recent `D:\이력서` edits on 2026-06-21 were outside the two active monitored Office projects: ABB Portfolio/Industry Manager and HRB wireless comms research-center documents.
 
-2026-06-22 project monitor follow-up (~6m)
-
-- `C:\Users\namma\.claude\AGENTS.md` remains aligned with the live `.claude` workspace paths and constraints; no new path drift was found there.
-- Canonical Office outputs are mounted and consistent with current memory: `D:\이력서\ITT Cannon\Joonha_Lee_ITT_Cannon_FAE_Resume_Final_Integrated_v2.docx/.pdf` exist, and the AVEVA deck alias set `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx`, `..._EN_V18.pptx`, and `..._EN_Final.pptx` all exist with 2026-06-09 timestamps matching the V18/final state.
-- `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md` is still stale by omission. Active local work areas `C:\Users\namma\.claude\abb_resume_work\`, `C:\Users\namma\.claude\hrbros_resume_work\`, `C:\Users\namma\.claude\aveva_bdm_resume_work\`, `C:\Users\namma\.claude\moacom_work\`, and `C:\Users\namma\.claude\aveva_bdm_work\` are still not indexed.
-- Auto-init inconsistency still persists. `C:\Users\namma\.claude\cache\git-auto-init\watcher.log` reports initialization for `C:\Users\namma\.claude\projects\C--Users-namma--claude\6408bafd-8d68-49e5-8a93-5305b48a717d` and `...\baeb5d66-046c-4315-b5b7-4f26997e0fc2`, but both directories still have no `.git` directory, while the older sibling project folders do.
-- `C:\Users\namma\.claude\plm_slide_work\fix_v6_slide13_14_readability.ps1` is now correctly repointed to the V18/default alias paths despite the legacy filename, so the earlier V6 drift is resolved.
-- The stale hidden Office temp artifact remains in `C:\Users\namma\.claude\plm_slide_work\word_future_direction\~$EVA_Marine_Future_Direction_Meeting_Materials_EN.html` (162 bytes, last written 2026-06-06 22:51). No `WINWORD` or `POWERPNT` process was running during this check.
-- Root repo autosync remains healthy after the 2026-06-21 fix. `C:\Users\namma\.claude\cache\git-autosync\autosync.log` shows successful pushes through 2026-06-21 17:03, and `git -C C:\Users\namma status --short` returned clean during this run.
-
-Run time: ~6 minutes.
-
-2026-06-21 project monitor summary
-
-- Root autosync is still blocked, and the failure mode is now fully confirmed. `C:\Users\namma\.claude\git_autosync.ps1` collects changed paths from the parent repo without excluding nested repos (`C:\Users\namma\.claude\git_autosync.ps1:49-57`, `60-87`). In `C:\Users\namma`, `git add --all --` fails on `C:\Users\namma\.claude\projects\C--Users-namma--claude\6408bafd-8d68-49e5-8a93-5305b48a717d\` and `...\baeb5d66-046c-4315-b5b7-4f26997e0fc2\` because both repos are initialized but have **no initial commit** (`git status` = `## No commits yet on main`; `git rev-parse HEAD` fails). The autosync loop kept retrying through `C:\Users\namma\.claude\cache\git-autosync\autosync.log:1758-1837`.
-- `C:\Users\namma\.claude\AGENTS.md` is still stale versus the actual workspace. It still points to `C:\Users\namma\.Codex\itt_work\`, `C:\Users\namma\.Codex\plm_slide_work\`, and `projects/C--Users-namma--Codex/memory` (`C:\Users\namma\.claude\AGENTS.md:62-69`), while the live workspace and project memory are under `.claude`.
-- Project memory now overstates git coverage for work folders. `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md:16-17` says `itt_work` and `plm_slide_work` were git-initialized, but both folders currently have no `.git` directory at all.
-- Canonical Office document locations could not be verified this run because `D:\이력서` is not mounted in this environment. The paths referenced in `AGENTS.md` and the resume/deck memories are currently unavailable, so checks were limited to the local working folders under `C:\Users\namma\.claude\`.
-- `C:\Users\namma\.claude\plm_slide_work\fix_v6_slide13_14_readability.ps1` still hardcodes V6-era deck paths and backup naming (`:3-10`), so it no longer matches the later PLM deck lineage recorded in memory.
-- A stale Office temp artifact still exists in the local PLM work area with no live Office process: `C:\Users\namma\.claude\plm_slide_work\word_future_direction\~$EVA_Marine_Future_Direction_Meeting_Materials_EN.html` (last written 2026-06-06 22:51). No `WINWORD` or `POWERPNT` process was running during this check.
-- `C:\Users\namma\.claude\itt_work\` remains stable. The latest local scripts are still `rebuild_clean.ps1` and `render_all.ps1` from 2026-06-05, with no newer churn detected.
-- Recent workspace churn since the last run is concentrated in `C:\Users\namma\.claude\genohco_system_work\` plus memory/index updates on 2026-06-17. No additional risky configuration changes were found beyond the existing autosync backlog.
-
-Run time: ~14 minutes.
-
-2026-06-06 run (~9m)
-
-- Read `AGENTS.md`, automation memory, and `projects\C--Users-namma--claude\memory\*.md`.
-- AVEVA deck state drifted again: project memory still treats `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx` / `..._EN_V5.pptx` (37 slides, `27,704,970` bytes, `2026-06-06 15:48:08`) as canonical, but the newest same-family file on disk is `...\Future_Industrial_PLM_Meeting_Deck_EN__v4.pptx` (`32,903,742` bytes, `2026-06-06 16:03`), so "latest deck" is now ambiguous and needs explicit designation.
-- `plm_slide_work` is active and healthy for the newest V5 merge pass: fresh QA render folders `merge_v4_images_final*` exist through `18:56`, but older audit artifacts `visualreview_current\audit.txt` and `meeting_current\audit.txt` still describe 33-slide `...Rebuilt_v2...` decks and should not be used as current evidence.
-- `itt_work` looks stable and mostly archival; canonical resume files still exist in `D:\이력서\ITT Cannon\` with alias copies `Joonha_Lee_ITT_Cannon_FAE_Resume.docx/.pdf` saved minutes after `...Final_Integrated_v2...`, so there is mild filename ambiguity but no new break found.
-- `AGENTS.md` remains stale for memory-path guidance: it still points to `projects/C--Users-namma--Codex/memory/`, while the live workspace path is `projects/C--Users-namma--claude/memory/`.
-- Auto project tracking is inconsistent: watcher log says repos were initialized under `projects\C--Users-namma--claude\*`, but sampled project folders such as `35b0a916-8003-4154-8d9a-d79a2f0a1cff` and newer `6408bafd-8d68-49e5-8a93-5305b48a717d` have no `.git` directory. Treat auto-init as unreliable until verified/fixed.
-- Git autosync appears healthy at the root-repo level: `cache\git-autosync\autosync.log` shows repeated successful pushes through `2026-06-06 19:14`, with another pending change detected at `19:16`.
-
-2026-06-06 run (~11m)
-
-- Read `AGENTS.md`, `projects/C--Users-namma--claude/memory/MEMORY.md`, and both project memory files.
-- Workspace is not a git repo; monitoring is file/activity based.
-- Canonical AVEVA deck exists at `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_Hybrid_Safety_Final_v4.pptx`, but disk metadata moved past project memory: file now `27,688,693` bytes and `2026-06-06 13:16:24`, while memory still says `25,638,360` bytes and `12:52:43`.
-- `plm_slide_work` QA folders are mostly healthy but stale relative to the canonical deck: `visualreview_current\audit.txt` and `meeting_current\audit.txt` still target 33-slide `...Rebuilt_v2...` artifacts, not the 34-slide canonical v4 deck.
-- `itt_work` contains many intermediate backups/logs. The canonical resume exists at `D:\이력서\ITT Cannon\Joonha_Lee_ITT_Cannon_FAE_Resume_Final_Integrated_v2.docx` (`2026-06-05 22:32:09`).
-- `itt_work\dump_full.txt` still reflects a stale/inconsistent structure: duplicate Daeyang detail tables and no visible Intellian detail table, so local diagnostic dumps are not trustworthy as current-state evidence.
-- Resume memory already flags `IELTS 5.0` as an optional content risk; no new structural break proven in the canonical doc from this run.
-- `AGENTS.md` path guidance is stale for this workspace: it points to `projects/C--Users-namma--Codex/memory/`, but the live memory path here is `projects/C--Users-namma--claude/memory/`.
-- A titleless `POWERPNT` process was present during inspection, and COM attach failed with `0x80070520`; matches the recorded stale-window/orphan risk. Avoid saving any stale visible PowerPoint window until the deck is reopened from disk.
-
-2026-06-06 run (~8m)
-
-- Saved the user-supplied AVEVA software code package `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\AVEVA_Marine_PLM_Control_Plane_FastAPI_SQL_IndustrialAI_FINAL_v2.zip`.
-- Extracted it to `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\AVEVA_Marine_PLM_Control_Plane_FastAPI_SQL_IndustrialAI_FINAL_v2\`.
-- Recorded ZIP metadata: `185,527` bytes, LastWriteTime `2026-06-06 21:14:22`, SHA256 `B743D8482D3CC353C1059C5F1E29A48DEB22F255F60D6C7B7AF827160E7721A7`.
-- Created `C:\Users\namma\.claude\plm_slide_work\software_code_final_v2_inventory.txt` with original-file hashes and `C:\Users\namma\.claude\plm_slide_work\software_code_final_v2_code_contents.txt` with the consolidated source/SQL/docs/OpenAPI/test text dump.
-- Package scope checked: FastAPI app, PostgreSQL init SQL, OpenAPI JSON, docs, tests, Docker Compose, and requirements. Original ZIP has 108 files; extraction has 109 after adding `CODE_CONTENTS_SAVED.txt`.
-- Did not run Python/Node/tests due workspace constraints; this run only saved, extracted, hashed, and indexed the code contents.
-
-2026-06-22 project monitor follow-up (~8m)
-
-- Read C:\Users\namma\.claude\AGENTS.md, C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md, prior automation memory, recent filesystem changes, autosync/auto-init logs, active Office work folders, and canonical D:\이력서 Office outputs.
-- High-priority new risk: C:\Users\namma\.claude\.credentials.json, C:\Users\namma\.claude\mcp-needs-auth-cache.json, and C:\Users\namma\.claude\backups\*.backup.* are tracked by root repo C:\Users\namma; .credentials.json and auth cache changed at 2026-06-22 03:52 local and autosync pushed successfully afterward. Recommend confirming remote privacy/secret policy and untracking/rotating if unintended.
-- Autosync remains healthy: C:\Users\namma\.claude\cache\git-autosync\autosync.log shows successful pushes through 2026-06-22 04:06, and git -C C:\Users\namma status --short was clean before memory append.
-- Auto-init changed state: all sampled project folders under C:\Users\namma\.claude\projects\C--Users-namma--claude\ now have .git directories, including the two previously missing dirs, but every sampled nested repo still has NO_HEAD/no initial commit, so per-project history is not actually established.
-- Project memory remains stale by omission: active folders bb_resume_work, hrbros_resume_work, veva_bdm_resume_work, veva_bdm_work, and moacom_work are still not indexed in MEMORY.md; genohco_system_work is indexed.
-- Office document checks: canonical ITT resume docx/pdf and AVEVA deck aliases on D:\이력서 exist with expected 2026-06-05/2026-06-09 timestamps; no Word or PowerPoint processes were running. The known stale temp artifact remains at C:\Users\namma\.claude\plm_slide_work\word_future_direction\~.html.
-- Memory inconsistency: office-docs-com-automation.md still recommends Set-ExecutionPolicy -Scope Process Bypass -Force, conflicting with AGENTS.md which says Bypass is blocked and scripts should be run via Get-Content script.ps1 -Raw | Invoke-Expression.
-
-Run time: ~8 minutes. Current run time recorded: 2026-06-22 04:08 +09:00.
-
-2026-06-22 project monitor follow-up (~10m)
-
-- Read `C:\Users\namma\.claude\AGENTS.md`, `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md`, prior automation memory, project memory files, recent git/autosync activity, active work folders, and canonical D:\ Office artifacts.
-- High-priority risk remains confirmed: root repo `C:\Users\namma` tracks `C:\Users\namma\.claude\.credentials.json`, `C:\Users\namma\.claude\mcp-needs-auth-cache.json`, and `.claude/backups/.claude.json.backup.*`; autosync pushed successfully after these files changed.
-- New configuration risk: `C:\Users\namma\.claude\config.toml` now configures an MCP server with `command = "npx"` and `enable_all_tools_auto_approval = true`, conflicting with the workspace constraint that Node is unavailable and raising automation approval risk.
-- New scheduled-skill inconsistency: `C:\Users\namma\.claude\Scheduled\daily-linkedin-post\SKILL.md` was added after the last run but tells the agent to use a bash `date` command and a fixed local session output directory, which conflicts with PowerShell-only workspace guidance and may become stale.
-- Office artifact checks: ITT canonical DOCX/PDF exist; AVEVA default and V18 PPTX exist, both have 42 slide XML entries, 27 media entries, and matching render folder page count. Their hashes differ despite same timestamp/structure, so treat as equivalent lineage but not byte-identical.
-- PowerPoint COM slide-count verification could not run because COM startup failed with `CO_E_SERVER_EXEC_FAILURE`; non-invasive ZIP inspection was used instead. No Word/PowerPoint processes were listed before the COM attempt.
-- Project memory remains stale by omission for active folders: `abb_resume_work`, `hrbros_resume_work`, `aveva_bdm_resume_work`, `aveva_bdm_work`, and `moacom_work` are not indexed in `MEMORY.md`; `genohco_system_work` is indexed.
-- Auto-init inconsistency persists: sampled nested project repos now have `.git` directories, but `git rev-parse --verify HEAD` still returns no HEAD/no initial commit.
-- The stale Office temp artifact still exists at `C:\Users\namma\.claude\plm_slide_work\word_future_direction\~$EVA_Marine_Future_Direction_Meeting_Materials_EN.html`.
-
-Run time: ~10 minutes. Current run time recorded: 2026-06-22 05:04 +09:00.
-
-2026-06-22 project monitor follow-up (~9m)
-
-- Read `C:\Users\namma\.claude\AGENTS.md`, `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md`, prior automation memory, recent filesystem activity since the 05:04 run, root git/autosync logs, active work folders, nested project repos, and canonical D:\ Office outputs.
-- High-priority risk still open: root repo `C:\Users\namma` tracks `C:\Users\namma\.claude\.credentials.json`, `C:\Users\namma\.claude\mcp-needs-auth-cache.json`, and five `.claude\backups\.claude.json.backup.*` files. These were changed around 2026-06-22 04:26 and autosync has pushed related changes.
-- Configuration risk still open: `C:\Users\namma\.claude\config.toml` uses `command = "npx"` and `enable_all_tools_auto_approval = true`, conflicting with the workspace's no-Node constraint and increasing unattended tool approval risk.
-- Scheduled skill inconsistency still open: `C:\Users\namma\.claude\Scheduled\daily-linkedin-post\SKILL.md` was written at 2026-06-22 05:04 and still instructs a bash `date` command plus a fixed Claude local session output path.
-- Memory inconsistency narrowed: `office-docs-com-automation.md` contains the correct line saying `Set-ExecutionPolicy -Scope Process Bypass` is blocked, but line 20 still recommends `Set-ExecutionPolicy -Scope Process Bypass -Force; & script.ps1`, contradicting AGENTS.md and its own line 33.
-- Office artifacts remain present: ITT canonical DOCX/PDF exist at `D:\이력서\ITT Cannon\...Final_Integrated_v2.*`; AVEVA default/V18/final PPTX files exist at `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\` with 2026-06-09 timestamps and ~40.75 MB sizes.
-- Active Office work folders: `itt_work` remains quiet/stable; `plm_slide_work` still has the known stale Office temp artifact `C:\Users\namma\.claude\plm_slide_work\word_future_direction\~$EVA_Marine_Future_Direction_Meeting_Materials_EN.html`. No WINWORD or POWERPNT processes were running during the check.
-- Auto-init still gives weak coverage: all five UUID project folders now have `.git`, but every sampled repo returns `NO_HEAD`, so there is no usable per-project commit history.
-- Project memory remains stale by omission for active folders `abb_resume_work`, `hrbros_resume_work`, `aveva_bdm_resume_work`, `aveva_bdm_work`, and `moacom_work`; `genohco_system_work` is indexed.
-- Autosync appears active: successful pushes continued through 2026-06-22 05:18 with a pending change logged at 05:20; `git -C C:\Users\namma status --short` was clean before this memory append.
-
-Run time: ~9 minutes. Current run time recorded: 2026-06-22 06:04 +09:00.
-
-2026-06-22 project monitor follow-up (~8m)
-
-- Read `C:\Users\namma\.claude\AGENTS.md`, `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md`, prior automation memory, recent git/autosync activity, active work folders, nested project repos, and canonical D:\ Office outputs.
-- No new workspace file changes were found since the previous monitor timestamp except this automation's own memory update commit `ca18de8` at 2026-06-22 06:04 +09:00; `git -C C:\Users\namma status --short` was clean before this memory append.
-- High-priority risk remains open: root repo `C:\Users\namma` still tracks `C:\Users\namma\.claude\.credentials.json`, `C:\Users\namma\.claude\mcp-needs-auth-cache.json`, and five `.claude\backups\.claude.json.backup.*` files.
-- Configuration risk remains open: `C:\Users\namma\.claude\config.toml` still has `command = "npx"` at line 3 and `enable_all_tools_auto_approval = true` at line 12.
-- Scheduled skill inconsistency remains open: `C:\Users\namma\.claude\Scheduled\daily-linkedin-post\SKILL.md` still tells agents to run bash `date` at line 9 and write into a fixed Claude local-session output directory at line 35.
-- Memory inconsistency remains open: `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\office-docs-com-automation.md` line 20 still recommends `Set-ExecutionPolicy -Scope Process Bypass -Force`, contradicting `AGENTS.md` and its own line 33.
-- Project memory remains stale by omission: `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md` does not index active folders `abb_resume_work`, `hrbros_resume_work`, `aveva_bdm_resume_work`, `aveva_bdm_work`, `moacom_work`, or `genohco_system_work`.
-- Auto-init still gives weak coverage: the five UUID project folders under `C:\Users\namma\.claude\projects\C--Users-namma--claude` all have `.git` directories but all return `NO_HEAD`.
-- Office work areas: `itt_work` is quiet/stable; `plm_slide_work` has no zero-byte files, no running `WINWORD` or `POWERPNT`, and the previously seen stale temp artifact was not present on direct recheck. Recent D:\ resume outputs include ABB and HRBros application files from 2026-06-21, reinforcing the memory-omission issue.
-
-Run time: ~8 minutes. Current run time recorded: 2026-06-22 07:04 +09:00.
+Next run should compare against this baseline and watch whether the stale `~$...html` temp file persists or grows, and whether ABB/HRB become active enough to warrant project memory entries.
