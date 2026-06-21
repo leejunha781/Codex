@@ -13,6 +13,9 @@
 
 # .claude 안 제외 항목
 /.claude/cache/
+/.claude/projects/C--Users-namma--claude/*/
+!/.claude/projects/C--Users-namma--claude/memory/
+!/.claude/projects/C--Users-namma--claude/memory/**
 /.claude/projects/C--Users-namma--claude/*/tool-results/
 
 # 공통 제외
