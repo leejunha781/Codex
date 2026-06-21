@@ -16,10 +16,15 @@ function New-WordApplication {
 
 $word = New-WordApplication
 $word.Visible = $false
+try { $word.DisplayAlerts = 0 } catch {}
+try { $word.EventsEnabled = $false } catch {}
+try { $word.AutomationSecurity = 3 } catch {}
 $doc = $null
 
 try {
-    $doc = $word.Documents.Open($Path, $false, $true)
+    Write-Host "OPENING"
+    $doc = $word.Documents.OpenNoRepairDialog($Path, $false, $true, $false, "", "", $false, "", "", 0, $false, $false, $false, $false, $false, $false)
+    Write-Host "OPENED"
     $lines = New-Object System.Collections.Generic.List[string]
     $lines.Add("PATH: $Path")
     $lines.Add("PAGES: " + $doc.ComputeStatistics(2))
@@ -31,6 +36,7 @@ try {
 
     $idx = 0
     foreach ($p in $doc.Paragraphs) {
+        if (($idx % 50) -eq 0) { Write-Host ("PARA " + $idx) }
         $text = ($p.Range.Text -replace "[\r\n\a\x07]", "" -replace "\s+", " ").Trim()
         if ($text.Length -gt 0) {
             $idx++
@@ -41,6 +47,7 @@ try {
     $lines.Add("")
     $lines.Add("== TABLES ==")
     for ($ti = 1; $ti -le $doc.Tables.Count; $ti++) {
+        Write-Host ("TABLE " + $ti)
         $table = $doc.Tables.Item($ti)
         $lines.Add(("TABLE {0}: rows={1}, cols={2}" -f $ti, $table.Rows.Count, $table.Columns.Count))
         $ci = 0
