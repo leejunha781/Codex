@@ -80,3 +80,17 @@ Run time: ~14 minutes.
 - Memory inconsistency: office-docs-com-automation.md still recommends Set-ExecutionPolicy -Scope Process Bypass -Force, conflicting with AGENTS.md which says Bypass is blocked and scripts should be run via Get-Content script.ps1 -Raw | Invoke-Expression.
 
 Run time: ~8 minutes. Current run time recorded: 2026-06-22 04:08 +09:00.
+
+2026-06-22 project monitor follow-up (~10m)
+
+- Read `C:\Users\namma\.claude\AGENTS.md`, `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md`, prior automation memory, project memory files, recent git/autosync activity, active work folders, and canonical D:\ Office artifacts.
+- High-priority risk remains confirmed: root repo `C:\Users\namma` tracks `C:\Users\namma\.claude\.credentials.json`, `C:\Users\namma\.claude\mcp-needs-auth-cache.json`, and `.claude/backups/.claude.json.backup.*`; autosync pushed successfully after these files changed.
+- New configuration risk: `C:\Users\namma\.claude\config.toml` now configures an MCP server with `command = "npx"` and `enable_all_tools_auto_approval = true`, conflicting with the workspace constraint that Node is unavailable and raising automation approval risk.
+- New scheduled-skill inconsistency: `C:\Users\namma\.claude\Scheduled\daily-linkedin-post\SKILL.md` was added after the last run but tells the agent to use a bash `date` command and a fixed local session output directory, which conflicts with PowerShell-only workspace guidance and may become stale.
+- Office artifact checks: ITT canonical DOCX/PDF exist; AVEVA default and V18 PPTX exist, both have 42 slide XML entries, 27 media entries, and matching render folder page count. Their hashes differ despite same timestamp/structure, so treat as equivalent lineage but not byte-identical.
+- PowerPoint COM slide-count verification could not run because COM startup failed with `CO_E_SERVER_EXEC_FAILURE`; non-invasive ZIP inspection was used instead. No Word/PowerPoint processes were listed before the COM attempt.
+- Project memory remains stale by omission for active folders: `abb_resume_work`, `hrbros_resume_work`, `aveva_bdm_resume_work`, `aveva_bdm_work`, and `moacom_work` are not indexed in `MEMORY.md`; `genohco_system_work` is indexed.
+- Auto-init inconsistency persists: sampled nested project repos now have `.git` directories, but `git rev-parse --verify HEAD` still returns no HEAD/no initial commit.
+- The stale Office temp artifact still exists at `C:\Users\namma\.claude\plm_slide_work\word_future_direction\~$EVA_Marine_Future_Direction_Meeting_Materials_EN.html`.
+
+Run time: ~10 minutes. Current run time recorded: 2026-06-22 05:04 +09:00.
