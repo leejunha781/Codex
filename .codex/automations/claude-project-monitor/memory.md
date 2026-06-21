@@ -68,3 +68,15 @@ Run time: ~14 minutes.
 - Created `C:\Users\namma\.claude\plm_slide_work\software_code_final_v2_inventory.txt` with original-file hashes and `C:\Users\namma\.claude\plm_slide_work\software_code_final_v2_code_contents.txt` with the consolidated source/SQL/docs/OpenAPI/test text dump.
 - Package scope checked: FastAPI app, PostgreSQL init SQL, OpenAPI JSON, docs, tests, Docker Compose, and requirements. Original ZIP has 108 files; extraction has 109 after adding `CODE_CONTENTS_SAVED.txt`.
 - Did not run Python/Node/tests due workspace constraints; this run only saved, extracted, hashed, and indexed the code contents.
+
+2026-06-22 project monitor follow-up (~8m)
+
+- Read C:\Users\namma\.claude\AGENTS.md, C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md, prior automation memory, recent filesystem changes, autosync/auto-init logs, active Office work folders, and canonical D:\이력서 Office outputs.
+- High-priority new risk: C:\Users\namma\.claude\.credentials.json, C:\Users\namma\.claude\mcp-needs-auth-cache.json, and C:\Users\namma\.claude\backups\*.backup.* are tracked by root repo C:\Users\namma; .credentials.json and auth cache changed at 2026-06-22 03:52 local and autosync pushed successfully afterward. Recommend confirming remote privacy/secret policy and untracking/rotating if unintended.
+- Autosync remains healthy: C:\Users\namma\.claude\cache\git-autosync\autosync.log shows successful pushes through 2026-06-22 04:06, and git -C C:\Users\namma status --short was clean before memory append.
+- Auto-init changed state: all sampled project folders under C:\Users\namma\.claude\projects\C--Users-namma--claude\ now have .git directories, including the two previously missing dirs, but every sampled nested repo still has NO_HEAD/no initial commit, so per-project history is not actually established.
+- Project memory remains stale by omission: active folders bb_resume_work, hrbros_resume_work, veva_bdm_resume_work, veva_bdm_work, and moacom_work are still not indexed in MEMORY.md; genohco_system_work is indexed.
+- Office document checks: canonical ITT resume docx/pdf and AVEVA deck aliases on D:\이력서 exist with expected 2026-06-05/2026-06-09 timestamps; no Word or PowerPoint processes were running. The known stale temp artifact remains at C:\Users\namma\.claude\plm_slide_work\word_future_direction\~.html.
+- Memory inconsistency: office-docs-com-automation.md still recommends Set-ExecutionPolicy -Scope Process Bypass -Force, conflicting with AGENTS.md which says Bypass is blocked and scripts should be run via Get-Content script.ps1 -Raw | Invoke-Expression.
+
+Run time: ~8 minutes. Current run time recorded: 2026-06-22 04:08 +09:00.

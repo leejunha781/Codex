@@ -4,10 +4,10 @@ kind = "cron"
 name = "Claude project monitor"
 prompt = "Act as a project monitor for this workspace. Start by reading AGENTS.md and projects/C--Users-namma--claude/memory/MEMORY.md, then inspect the project broadly for notable recent changes, missing or inconsistent key files, stale project memory, risky configuration/document changes, and issues in the active Office document work areas such as itt_work and plm_slide_work. Follow the workspace constraints: use PowerShell 5.1 only, do not use Python, Node.js, or LibreOffice, and use Office COM automation for Office files if inspection is needed. Return a concise status report with actionable findings first, including exact file paths and severity where relevant; if nothing needs attention, return a brief all-clear with the scope checked."
 status = "ACTIVE"
-rrule = "FREQ=HOURLY;INTERVAL=6"
+rrule = "RRULE:FREQ=WEEKLY;BYHOUR=4;BYMINUTE=8;BYDAY=SU,MO,TU,WE,TH,FR,SA"
 model = "gpt-5.5"
 reasoning_effort = "medium"
 execution_environment = "local"
 cwds = ["C:\\Users\\namma\\.claude"]
 created_at = 1780719251018
-updated_at = 1782068735541
+updated_at = 1782068904322
