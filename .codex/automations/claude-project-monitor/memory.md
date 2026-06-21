@@ -13,6 +13,18 @@
 
 Run time: ~9 minutes.
 
+2026-06-22 project monitor follow-up (~6m)
+
+- `C:\Users\namma\.claude\AGENTS.md` remains aligned with the live `.claude` workspace paths and constraints; no new path drift was found there.
+- Canonical Office outputs are mounted and consistent with current memory: `D:\이력서\ITT Cannon\Joonha_Lee_ITT_Cannon_FAE_Resume_Final_Integrated_v2.docx/.pdf` exist, and the AVEVA deck alias set `D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx`, `..._EN_V18.pptx`, and `..._EN_Final.pptx` all exist with 2026-06-09 timestamps matching the V18/final state.
+- `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md` is still stale by omission. Active local work areas `C:\Users\namma\.claude\abb_resume_work\`, `C:\Users\namma\.claude\hrbros_resume_work\`, `C:\Users\namma\.claude\aveva_bdm_resume_work\`, `C:\Users\namma\.claude\moacom_work\`, and `C:\Users\namma\.claude\aveva_bdm_work\` are still not indexed.
+- Auto-init inconsistency still persists. `C:\Users\namma\.claude\cache\git-auto-init\watcher.log` reports initialization for `C:\Users\namma\.claude\projects\C--Users-namma--claude\6408bafd-8d68-49e5-8a93-5305b48a717d` and `...\baeb5d66-046c-4315-b5b7-4f26997e0fc2`, but both directories still have no `.git` directory, while the older sibling project folders do.
+- `C:\Users\namma\.claude\plm_slide_work\fix_v6_slide13_14_readability.ps1` is now correctly repointed to the V18/default alias paths despite the legacy filename, so the earlier V6 drift is resolved.
+- The stale hidden Office temp artifact remains in `C:\Users\namma\.claude\plm_slide_work\word_future_direction\~$EVA_Marine_Future_Direction_Meeting_Materials_EN.html` (162 bytes, last written 2026-06-06 22:51). No `WINWORD` or `POWERPNT` process was running during this check.
+- Root repo autosync remains healthy after the 2026-06-21 fix. `C:\Users\namma\.claude\cache\git-autosync\autosync.log` shows successful pushes through 2026-06-21 17:03, and `git -C C:\Users\namma status --short` returned clean during this run.
+
+Run time: ~6 minutes.
+
 2026-06-21 project monitor summary
 
 - Root autosync is still blocked, and the failure mode is now fully confirmed. `C:\Users\namma\.claude\git_autosync.ps1` collects changed paths from the parent repo without excluding nested repos (`C:\Users\namma\.claude\git_autosync.ps1:49-57`, `60-87`). In `C:\Users\namma`, `git add --all --` fails on `C:\Users\namma\.claude\projects\C--Users-namma--claude\6408bafd-8d68-49e5-8a93-5305b48a717d\` and `...\baeb5d66-046c-4315-b5b7-4f26997e0fc2\` because both repos are initialized but have **no initial commit** (`git status` = `## No commits yet on main`; `git rev-parse HEAD` fails). The autosync loop kept retrying through `C:\Users\namma\.claude\cache\git-autosync\autosync.log:1758-1837`.
