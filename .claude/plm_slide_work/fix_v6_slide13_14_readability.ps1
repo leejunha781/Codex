@@ -1,12 +1,12 @@
 $ErrorActionPreference = 'Stop'
 
-$src = 'D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V6.pptx'
+$src = 'D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN_V18.pptx'
 $defaultAlias = 'D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\Future_Industrial_PLM_Meeting_Deck_EN.pptx'
-$backupDir = 'D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\_backup_20260606_slide13_14_readability'
+$backupDir = 'D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\_backup_20260621_slide13_14_readability_v18'
 
 New-Item -ItemType Directory -Path $backupDir -Force | Out-Null
 $timestamp = Get-Date -Format 'yyyyMMdd_HHmmss'
-$backupPath = Join-Path $backupDir ("Future_Industrial_PLM_Meeting_Deck_EN_V6_BEFORE_SLIDE13_14_READABILITY_{0}.pptx" -f $timestamp)
+$backupPath = Join-Path $backupDir ("Future_Industrial_PLM_Meeting_Deck_EN_V18_BEFORE_SLIDE13_14_READABILITY_{0}.pptx" -f $timestamp)
 Copy-Item -LiteralPath $src -Destination $backupPath -Force
 
 function Get-ShapeByName {

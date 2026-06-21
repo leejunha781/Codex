@@ -1,0 +1,169 @@
+param(
+    [Parameter(Mandatory=$true)][string]$TemplatePath,
+    [Parameter(Mandatory=$true)][string]$OutputDocx,
+    [Parameter(Mandatory=$true)][string]$OutputPdf
+)
+
+$ErrorActionPreference = "Stop"
+
+function Normalize-WordText {
+    param([string]$Text)
+    if ($null -eq $Text) { return "" }
+    return (($Text -replace "[`r`n\a\x07]", "") -replace "\s+", " ").Trim()
+}
+
+function Set-RangeTextSafe {
+    param(
+        [object]$Range,
+        [string]$NewText
+    )
+    try {
+        $Range.Text = $NewText
+    }
+    catch {
+        $Range.Select()
+        $script:WordApp.Selection.TypeText($NewText)
+    }
+}
+
+function Replace-ParagraphByPrefix {
+    param(
+        [object]$Doc,
+        [string]$Prefix,
+        [string]$NewText,
+        [Nullable[single]]$FontSize = $null,
+        [Nullable[int]]$Bold = $null
+    )
+    $matched = $false
+    foreach ($p in $Doc.Paragraphs) {
+        $text = Normalize-WordText $p.Range.Text
+        if ($text.StartsWith($Prefix)) {
+            $r = $p.Range.Duplicate
+            if ($r.End -gt $r.Start) { $r.End = $r.End - 1 }
+            Set-RangeTextSafe $r $NewText
+            if ($FontSize -ne $null) { $p.Range.Font.Size = [single]$FontSize }
+            if ($Bold -ne $null) { $p.Range.Font.Bold = [int]$Bold }
+            try { $p.Range.Font.Name = "맑은 고딕" } catch {}
+            $matched = $true
+            break
+        }
+    }
+    if (-not $matched) { throw "Paragraph not found for prefix: $Prefix" }
+}
+
+function Replace-ParagraphExact {
+    param(
+        [object]$Doc,
+        [string]$Exact,
+        [string]$NewText,
+        [Nullable[single]]$FontSize = $null,
+        [Nullable[int]]$Bold = $null
+    )
+    $matched = $false
+    foreach ($p in $Doc.Paragraphs) {
+        $text = Normalize-WordText $p.Range.Text
+        if ($text -eq $Exact) {
+            $r = $p.Range.Duplicate
+            if ($r.End -gt $r.Start) { $r.End = $r.End - 1 }
+            Set-RangeTextSafe $r $NewText
+            if ($FontSize -ne $null) { $p.Range.Font.Size = [single]$FontSize }
+            if ($Bold -ne $null) { $p.Range.Font.Bold = [int]$Bold }
+            try { $p.Range.Font.Name = "맑은 고딕" } catch {}
+            $matched = $true
+            break
+        }
+    }
+    if (-not $matched) { throw "Paragraph not found for exact text: $Exact" }
+}
+
+$profile = "21년 7개월간 방산 통신체계, 위성·항공 전장품, LEO 위성통신 단말/ESA 안테나 분야에서 시스템 설계와 체계종합, 통합검증, 환경시험, 양산 readiness를 수행해 온 시스템 체계 엔지니어입니다. 제노코 시스템기술연구소에서는 Senior System Engineer로 위성·항공 전자장비 과제의 요구사항을 보드 사양, 전원·신호 인터페이스, HW/SW 사양, 시험조건, 기술문서로 전환하고 PCB 회로·layout review, power/signal integrity, EMI/EMC 및 환경시험 요구사항, 외부 시험기관 대응을 수행했습니다. 이후 인텔리안테크놀로지스에서는 Eutelsat OneWeb LEO 단말과 Ku-band ESA 안테나의 RF/안테나/제어전자부/네트워크/SW log/환경시험 데이터를 통합 분석하여 field issue를 corrective action, ECO/BOM, 재검증, release 판단자료로 연결했습니다. 대양전기공업에서는 KSS-III 잠수함 통합통신체계, FFX Batch-II 함내 무선통신·방송체계, C4I/MOSCOS/LINK-11 연동 검증을 수행하며 시스템 아키텍처, ICD, FAT/HAT/SAT, 고객 인수, 양산이관까지 전 주기를 경험했습니다. 제노코의 위성탑재체, 위성지상국, EGSE/정비장비, 항공전자, 방산 핵심부품 포트폴리오에서 요구되는 체계 설계·조립/통합 절차·우주환경시험·링크 버짓 분석 역량을 즉시 기여할 수 있습니다."
+
+$core = "[핵심역량] - 위성체 시스템 설계·체계종합 - 아키텍처·Link/Power Budget 분석 - 조립·통합·환경시험 절차화 - RF/HW/SW/Network 통합검증 - 방산 산출물·고객/시험기관 대응"
+
+$skillKeywords = "위성체 시스템 설계 체계종합 시스템 아키텍처 Link Budget Power Budget 위성통신 LEO SATCOM Ku-band ESA Phased Array Antenna RF 시스템 RF Module 안테나 제어전자부 DFE ADC DAC EMI/EMC 열진공 TVAC 진동 환경시험 EGSE 시험정비장비 위성탑재체 위성지상국 항공전자 방산 전장품 시스템 조립 통합 절차 ICD SRR SDR 시험계획서 시험절차서 시험성적서 VCRM Evidence Package PCB 회로 Layout Review Power Integrity Signal Integrity Board Bring-up 양산검증 Release Readiness Field Issue Corrective Action ECO BOM C4I MOSCOS LINK-11 KSS-III FFX Batch-II FAT HAT SAT 고객 인수 검사기관 대응 기술문서 WBS 원가산출 프로젝트 관리 PM PL R&D 품질 생산 협력사 조율"
+
+$systemDesignSkill = "• 위성·항공 전장품과 LEO 위성통신 단말의 요구사항을 시스템 아키텍처, HW/SW/RF/안테나 인터페이스, ICD, 시험항목, 검증 evidence로 전환한 경험. • Link/Power Budget, EIRP, G/T, NF, C/N0, beam pointing, calibration 등 성능지표를 통합검증 기준으로 구조화."
+
+$integrationSkill = "• 체계종합/통합검증: 제노코 위성·항공 전자장비 과제와 인텔리안 LEO ESA 단말, 대양전기공업 해군 통신체계에서 조립·통합 절차, FAT/HAT/SAT, field issue 분석, release readiness 관리 경험. • 환경시험/품질: 열진공(TVAC) 등 우주환경시험 요구사항 검토, EMI/EMC·진동·방수 시험 대응, 시험기관·검사기관 질의 및 산출물 대응."
+
+$intellian = "담당 분야: Eutelsat OneWeb LEO 위성통신 단말/Ku-band ESA 안테나 시스템 통합검증, Link/Power Budget 기반 성능 검토, field issue 분석, 양산 release readiness 관리 1) 주요 리더십 • RF/안테나, DFE/ADC-DAC interface, 제어전자부, 전원, 네트워크, SW log, 환경시험 결과를 통합 분석하여 제품 수준의 원인분석 체계 운영 • EIRP, G/T, NF, C/N0, scan loss, pointing error, beam steering/control, calibration 등 ESA 성능지표를 수신품질, throughput, blockage recovery, handover 이슈와 연결 • 400여 항목 이상의 설계검증 체크리스트를 기반으로 재현 조건, 원인, corrective action, ECO/BOM, 재검증 결과, release 판단자료를 추적관리 • Eutelsat OneWeb, Marlink/STW 등 글로벌 고객과 영어 기반 Technical Review를 수행하며 품질 이슈, 개선현황, 잔여 리스크를 설명 2) 대표 성과 • 반복불량과 고객 현장 이슈를 제품 신뢰성 개선 과제로 전환하여 월간 불량률 약 30% 감소와 고객 이슈 처리 리드타임 약 25% 단축에 기여 • 현장 품질 이슈 유형을 8개에서 2개 수준으로 축소하고, 비치명 잔여 이슈는 고객과 단계적 개선계획을 합의 • Tx/Rx 경로, BFIC, LO/clock, DFE, ADC/DAC interface, gain plan, noise figure, linearity, phase noise, EMI/EMC, power integrity 리스크를 HW/RF 통합 관점에서 검토 3) 퇴직사유 LEO 위성통신 단말과 ESA 안테나의 통합검증·품질 안정화 경험을 축적한 후, 제노코 시스템 체계 직무에서 위성체 시스템 설계, 체계종합, 조립/통합 절차, 우주환경시험 및 방산 산출물 역량을 직접 활용하고자 합니다."
+
+$genohco = "담당 분야: 위성·항공 전자장비 Senior System Engineer, 시스템 요구사항 분석, 보드 수준 설계검토, 시험·검증 산출물 및 임원/고객 보고 1) 주요 리더십 • 상위 체계 요구사항을 보드 사양, 전원/신호 인터페이스, HW/SW 사양, 시험조건, 기술문서로 전환 • 기술제안서, 사업수행계획서, WBS, 원가산출, 시험계획서, 시험절차서, 시험성적서 등 국책·방산형 과제 산출물을 체계화 • PCB 회로 및 layout review, power/signal integrity, EMI/EMC, 열진공(TVAC) 등 우주환경시험 요구사항 검토 및 외부 시험기관·검사기관 기술 질의 대응 • 한화시스템 위상배열안테나 연관 체계 설계 경험을 통해 phased array 기반 전자장비의 인터페이스 정합성, 전원/신호 품질, 시험 readiness 관점 확보 2) 대표 성과 • 요구사항 분석부터 설계검토, 시험자료 작성, evidence 관리까지 연결되는 시스템 엔지니어링 기반 확보 • 개발비·원가, 일정, 시험, 문서 산출물이 분리되지 않도록 프로젝트 실행 기준으로 정리 • 제노코 제품 포트폴리오와 조직 방식에 대한 이해를 확보하여 재입사 시 초기 적응 기간을 최소화할 수 있는 기반 형성 3) 이직사유 위성·항공 전자장비 PL 경험을 실제 LEO 위성통신 단말 및 ESA 안테나 상용제품의 통합검증과 글로벌 고객 대응까지 확장하기 위해 인텔리안테크놀로지스로 이직하였습니다."
+
+$daeyang = "담당 분야: 국방 통신·C4I 시스템 PM/PL, 함정·잠수함 통신장비 개발, RF 통신장비 성능검증, 시스템 통합시험, 고객 인수 및 양산이관 1) 주요 리더십 • 직접 최대 7명(SW 3명, HW 2명, 기구 2명)과 8명 규모 TFT, RFA/RF/SW/HW/기구/품질/생산 담당자를 조정하며 일정·인터페이스·이슈 종결 주도 • FFX Batch-II 함내 무선통신·방송체계 3척, KSS-III 통합통신체계 3척, 인도네시아 잠수함 오락방송장치 3척의 개발·통합·고객 인수활동 수행 • 고객 요구사항을 시스템 아키텍처, HW/SW 사양, ICD, 시험계획, FAT/HAT/SAT, 고객 인수 기준으로 구조화 • 프로젝트별 양산이관, 외주개발 범위 정의, 개발 공급업체 선정 및 기술·품질·납기 조정 수행 2) 대표 성과 • 인도네시아 잠수함 오락방송장치에 무선 네트워크 아키텍처를 제안하고 고객사·조선소를 설득하여 원가산정과 약 12억 원 규모 수주에 기여 • KSS-III 통합통신체계에서 백본망과 유·무선 Ethernet 통합 네트워크를 구축하여 함내 통신 인프라의 연동성, 확장성, 운용 안정성 확보 • VHF/UHF/HF 통신장비의 송수신 출력, 수신감도, 주파수 정렬, 링크 품질, 채널 안정성, 안테나/케이블/장비 인터페이스를 계측 기반으로 검증 • FAT/HAT/SAT, 시운전, 항해시험, 고객 인수시험을 수행하고 시험계획서, 절차서, 성적서, 기술보고서를 기반으로 결함 종결과 인수완료를 이끔 3) 퇴직사유 약 15년간 국방 통신/C4I 시스템 PM/PL로 요구사항 분석, 체계통합, 고객 인수, 양산이관 경험을 축적한 후, 위성·항공 전자장비와 고신뢰성 통신장비 분야로 기술 범위를 확장하기 위해 제노코로 이직하였습니다."
+
+$careerStatement = "1) 프로젝트명: Eutelsat OneWeb LEO 위성통신 단말 및 Ku-band ESA 안테나 통합검증·양산검증 - 연계/소속회사 : ㈜인텔리안테크놀로지스 / 판교연구소 SIT팀 - 주요 업무 : LEO 위성통신 단말, Ku-band ESA 안테나 통합검증, field issue 분석, Link/Power Budget 기반 성능 검토, 양산 release readiness 관리 - 담당 역할 : General Manager / Senior Engineer. RF·안테나·제어전자부·DFE/ADC-DAC·전원·네트워크·SW log·환경시험 데이터를 종합해 제품 수준의 원인을 분석하고, 고객 이슈를 corrective action, ECO/BOM, 재검증, release 판단자료로 연결했습니다. - 기술 스택 : Ku-band ESA, LEO SATCOM, Phased Array Antenna, beam steering/control, beamforming, calibration, EIRP, G/T, NF, C/N0, Link/Power Budget, FPGA/DFE, ADC/DAC, CPU 제어부, Ethernet, Wireshark, iperf, SW log 분석, EMI/EMC·진동·방수 시험, Windows/Linux 기반 시험환경 - 상세 내용 : 단품 보드 또는 개별 RF 성능만 확인하는 방식이 아니라 실제 고객 환경에서 발생한 수신품질 저하, throughput 변동, blockage recovery, handover, antenna pointing, 네트워크 불안정 문제를 시스템 관점에서 분석했습니다. 400여 항목 이상의 설계검증 체크리스트를 기반으로 반복 검증 체계를 운영했고, 월간 불량률 약 30% 감소, 고객 이슈 처리 리드타임 약 25% 단축, 현장 품질 이슈 유형 축소에 기여했습니다. 2) 프로젝트명: 위성·항공 전자장비 국책·방산 과제 시스템 체계 및 검증 산출물 체계화 - 연계/소속회사 : ㈜제노코 / 시스템기술연구소 - 주요 업무 : 위성·항공 전자장비 Senior System Engineer, 요구사항 분석, 보드 설계검토, 우주환경시험 요구사항, 시험문서 및 evidence 관리 - 담당 역할 : Senior System Engineer / 수석연구원. 고객과 상위 체계 요구사항을 보드 사양, 전원·신호 인터페이스, HW/SW 사양, 시험조건, 기술문서로 정리하고 과제 수행에 필요한 산출물과 검증 근거를 관리했습니다. - 기술 스택 : PCB 회로 및 layout review, power/signal integrity, EMI/EMC, 열진공(TVAC) 등 환경시험 요구사항, 위상배열안테나 연관 체계, WBS, 기술제안서, 사업수행계획서, 시험계획서, 시험절차서, 시험성적서, 검사기관 대응 - 상세 내용 : 제노코에서는 위성·항공 전장품 개발 과정에서 요구사항 추적성, 시험 증빙, 환경시험, 검사기관 대응을 중심으로 과제를 관리했습니다. 설계 변경이 일정·시험·고객 제출물에 미치는 영향을 함께 판단했고, 회로 설계와 문서, 시험, 대외 대응이 함께 움직여야 개발 품질이 확보된다는 점을 체득했습니다. 3) 프로젝트명: KSS-III 잠수함 통합통신체계 개발·통합·고객 인수 - 연계/소속회사 : 대양전기공업㈜ / R&BD연구소 - 주요 업무 : 잠수함 통합통신체계 PM/PL, 시스템 아키텍처, 통합 네트워크, ICD, FAT/HAT/SAT, 항해시험, 고객 인수 - 상세 내용 : 백본망과 유·무선 Ethernet을 결합한 통합 네트워크를 구축하고, 장비 간 ICD, RF 통신장비 성능시험, FAT/HAT/SAT, 시운전, 항해시험, 고객 인수시험을 수행했습니다. 운용환경, 보안성, 장비 간 연동, 고객 인수 기준이 엄격한 방산 통신체계에서 인터페이스와 시험 기준을 명확히 잡고 결함을 종결하는 경험을 축적했습니다. 4) 프로젝트명: FFX Batch-II 함내 무선통신·방송체계 개발 및 인수시험 - 주요 업무 : 수상함 함내 무선통신·방송체계 개발, RF 성능검증, 시스템 통합, 시험계획, 고객 인수 - 상세 내용 : VHF/UHF/HF 통신장비의 출력, 수신감도, 주파수 정렬, 채널 안정성, 안테나·케이블 영향도를 계측 기반으로 확인하고 시험 결과를 고객 제출자료와 인수 기준에 반영했습니다. 5) 프로젝트명: 인도네시아 잠수함 오락방송장치 무선 네트워크 아키텍처 제안·수주·현지 기술지원 - 주요 업무 : 무선 네트워크 구조 제안, 개발비·견적 산정, 고객·조선소 기술 설득, 현지 지원, 원가검증 대응 - 상세 내용 : 기술대안 비교와 무선 네트워크 아키텍처 제안을 통해 약 12억 원 규모 사업 수주에 기여했고, R&D가 수주·원가·품질·납기·고객 신뢰까지 함께 책임지는 사업기여 경험을 확보했습니다. 6) 프로젝트명: C4I/MOSCOS/LINK-11 전술데이터링크 연동 검토 및 통신체계 안정화 - 주요 업무 : 장비 간 데이터 흐름, 통신 프로토콜, latency, 데이터 무결성, 네트워크 안정성, 운용 시나리오 검토 - 상세 내용 : 단일 장비 중심 개발이 아니라 상위 체계와 현장 운용 시나리오를 고려해 요구사항, ICD, 시험절차, 검증 결과를 일관되게 관리했습니다. [제노코 시스템 체계 직무 관점 요약] 위 프로젝트들은 공통적으로 요구사항 분석, 시스템 아키텍처, RF/HW/SW/네트워크/품질 협업, 조립·통합 절차, 환경시험, 고객 인수, 양산 안정화, 대외 기술보고까지 연결됩니다. 특히 제노코 재입사 후에는 기존 조직·제품 이해와 인텔리안의 LEO ESA 상용제품 검증 경험, 대양전기공업의 방산 체계통합 경험을 결합하여 위성체 시스템 설계, 체계종합, 우주환경시험, 방산 산출물 품질을 빠르게 높일 수 있습니다."
+
+$intro1Title = "1. 지원동기 - 제노코 시스템 체계 직무에 다시 도전하는 이유"
+$intro1 = "제노코 시스템 체계 직무는 위성체 시스템 설계, 체계 종합, 시스템 조립·통합 절차, 우주환경시험, 아키텍처 및 링크 버짓 분석을 하나의 실행 흐름으로 연결해야 하는 자리라고 이해하고 있습니다. 저는 제노코 시스템기술연구소에서 위성·항공 전자장비 과제를 수행하며 요구사항, 보드 인터페이스, 시험계획, 검증 evidence, 검사기관 대응이 개발 품질을 좌우한다는 점을 직접 경험했습니다. 이후 인텔리안테크놀로지스에서 Eutelsat OneWeb LEO 단말과 Ku-band ESA 안테나의 통합검증, field issue 분석, 양산 release 판단자료 작성, 글로벌 고객 기술회의를 수행하며 실제 상용 위성통신 제품의 시스템 검증 경험을 확장했습니다. 다시 제노코에 지원하는 이유는 명확합니다. 제노코의 위성탑재체, 위성지상국, EGSE/정비장비, 항공전자, 방산 핵심부품 포트폴리오가 요구하는 시스템 체계 역량과 제가 축적한 방산 통신체계·위성통신 단말·위성항공 전장품 경험이 정확하게 맞닿아 있기 때문입니다. 기존 제노코 근무 경험을 바탕으로 조직과 개발 방식에 빠르게 적응하고, 새롭게 축적한 LEO ESA 통합검증과 양산검증 경험을 더해 더 높은 수준으로 기여하고자 합니다."
+
+$intro2Title = "2. 경력의 기반 - 방산 통신체계에서 LEO 위성통신 단말까지 확장해 왔습니다"
+$intro2 = "제 경력은 회로와 보드에서 시작해 시스템 체계와 통합검증으로 확장되어 왔습니다. 초기에는 RF/MW 회로, ARM 기반 제어보드, 전원·신호 인터페이스, board bring-up, 기능시험을 수행하며 하드웨어의 기본기를 쌓았습니다. 대양전기공업에서는 KSS-III 잠수함 통합통신체계, FFX Batch-II 함내 무선통신·방송체계, C4I/MOSCOS/LINK-11 연동 검증을 수행하며 고객 요구사항을 시스템 구성, HW/SW 사양, ICD, FAT/HAT/SAT, 고객 인수 기준으로 구조화했습니다. 제노코에서는 위성·항공 전자장비 과제에서 보드 수준 설계검토, power/signal integrity, EMI/EMC, 환경시험 요구사항, 시험계획서·절차서·성적서 작성과 검사기관 대응을 수행했습니다. 인텔리안에서는 LEO 위성통신 단말과 Ku-band ESA 안테나에서 RF/안테나, DFE/ADC-DAC, 제어전자부, 전원, 네트워크, SW log, 환경시험 결과를 통합 분석했습니다. 이 흐름은 단순한 이직 이력이 아니라 방산 체계통합, 위성항공 전장품, 상용 위성통신 단말 검증을 단계적으로 축적한 시스템 체계 경력입니다."
+
+$intro3Title = "3. 시스템 체계 역량 - 아키텍처와 링크 버짓을 검증 기준으로 전환합니다"
+$intro3 = "시스템 체계 엔지니어에게 중요한 것은 개별 부품의 성능을 확인하는 것에 그치지 않고, 상위 요구사항이 실제 설계와 시험에서 어떻게 검증되는지 연결하는 능력입니다. 저는 Link Budget과 Power Budget을 기준으로 EIRP, G/T, NF, C/N0, path loss, scan loss, pointing error, beam steering/control, calibration 등의 성능지표를 RF Module, 안테나 서브시스템, 제어전자부, DFE, ADC/DAC, 네트워크 인터페이스 요구사항과 연결해 검토했습니다. 또한 방산 통신체계에서는 장비 구성, 안테나·케이블 영향, VHF/UHF/HF 송수신 출력, 수신감도, 주파수 정렬, 채널 안정성, 데이터링크 연동성을 시험계획과 인수 기준으로 전환했습니다. 제노코 시스템 체계 직무에서도 동일한 방식으로 위성체 시스템 아키텍처를 요구사항, 인터페이스, 조립/통합 절차, 환경시험, 검증 evidence로 구조화하겠습니다. 문제가 발생하면 현상만 보지 않고 재현 조건, 원인 후보, 영향 범위, 개선안, 재검증 기준까지 정리해 개발조직이 같은 기준으로 움직이게 하겠습니다."
+
+$intro4Title = "4. 시험·품질 역량 - 환경시험과 양산 readiness를 끝까지 관리합니다"
+$intro4 = "위성·항공·방산 시스템은 설계가 완료되었다는 사실보다 검증 근거가 남아 있는지가 더 중요합니다. 제노코 근무 당시 저는 시험계획서, 시험절차서, 시험성적서, 기술제안서, 사업수행계획서, WBS, 원가산출 등 국책·방산형 산출물을 작성하고, PCB 회로 및 layout review, power/signal integrity, EMI/EMC, 열진공(TVAC) 등 우주환경시험 요구사항을 검토했습니다. 인텔리안에서는 400여 항목 이상의 설계검증 체크리스트를 기반으로 field issue, defect log, SW log, 시험데이터, 네트워크 packet, 환경시험 결과를 연결하여 release readiness와 출하 판단 근거를 관리했습니다. 그 결과 반복불량을 제품 신뢰성 개선 과제로 전환하고 월간 불량률 약 30% 감소와 고객 이슈 처리 리드타임 약 25% 단축에 기여했습니다. 저는 시험을 단순 통과 절차가 아니라 설계 품질과 고객 신뢰를 증명하는 체계로 봅니다. 제노코에서도 시험기관·검사기관·고객 대응에서 필요한 기술 근거를 명확히 정리하고, 설계 변경이 일정·품질·산출물에 미치는 영향을 선제적으로 관리하겠습니다."
+
+$intro5Title = "5. 제노코와의 적합성 - 기술·품질·효율을 함께 높이는 인재가 되겠습니다"
+$intro5 = "제노코는 위성통신, 위성탑재체, 위성지상국, EGSE/정비장비, 항공전자, 방산 핵심부품으로 확장해 온 항공우주·방산 전문기업입니다. 또한 인재를 만들고, 기술을 기본으로 하며, 품질을 중요시하고, 효율을 극대화하는 경영 방향을 강조하는 회사로 이해하고 있습니다. 저는 이 방향에 잘 맞는 사람입니다. 기술적으로는 회로·보드·RF·네트워크·시험을 모두 경험했고, 품질 측면에서는 defect log, corrective action, ECO/BOM, 재검증, evidence package를 끝까지 관리해 왔습니다. 효율 측면에서는 고객 요구사항을 시스템 아키텍처, ICD, 시험항목, 산출물로 정리해 불필요한 재작업을 줄이는 방식으로 일해 왔습니다. 조직적으로는 HW, SW, RF, 기구, 품질, 생산, 협력사, 고객 사이의 언어를 맞추는 역할을 수행했습니다. 제노코에서 이미 근무하며 회사의 과제 수행 방식과 방산 산출물 기준을 경험했다는 점도 강점입니다. 재입사 후에는 빠르게 실무 흐름을 파악하고, 이전보다 넓어진 LEO 위성통신 단말 검증 경험을 더해 제노코 시스템 체계 조직에 실질적인 성과로 기여하겠습니다."
+
+$intro6Title = "6. 입사 후 기여 방향 - 빠른 재적응과 체계종합 산출물 고도화"
+$intro6 = "입사 후 초기에는 담당 제품과 진행 과제의 요구사항, 인터페이스, 시험 일정, 환경시험 계획, 고객 제출 산출물, 잔여 리스크를 빠르게 파악하겠습니다. 특히 위성체 시스템 설계와 체계종합 관점에서 요구사항 추적표, ICD, 조립·통합 절차서, 시험계획서, 시험성적서, 변경관리 기준이 서로 일관되게 연결되어 있는지 확인하겠습니다. 이후에는 Link/Power Budget, RF/안테나 성능지표, 전원·신호 interface margin, EMI/EMC 및 열진공(TVAC) 등 환경시험 요구사항을 설계검토와 시험 readiness 체크리스트로 구체화하겠습니다. field issue가 발생하면 재현 조건, 원인 후보, 영향 범위, 개선안, 검증 결과, 고객 보고자료까지 한 흐름으로 관리하겠습니다. 중장기적으로는 제노코의 위성탑재체·위성지상국·EGSE·항공전자·방산 전장품 개발에서 체계 설계와 검증 산출물의 완성도를 높이고, KAI와의 항공우주·방산 성장 방향에 맞춰 더 높은 신뢰성과 납기 실행력을 만드는 엔지니어가 되겠습니다. 저는 제노코를 다시 배우러 가는 지원자가 아니라, 제노코에서 배운 체계와 이후 현장에서 강화한 위성통신 시스템 검증 역량을 가지고 돌아와 바로 기여할 준비가 된 지원자입니다."
+
+$word = $null
+$doc = $null
+try {
+    $word = New-Object -ComObject Word.Application
+    $script:WordApp = $word
+    $word.Visible = $false
+    try { $word.DisplayAlerts = [int]0 } catch {}
+    $doc = $word.Documents.Open($TemplatePath, $false, $false)
+    $wdFormatXMLDocument = 16
+    $doc.SaveAs2($OutputDocx, [ref]$wdFormatXMLDocument)
+
+    Replace-ParagraphByPrefix $doc "총 21년 5개월" "총 21년 7개월 (퇴사) （주）인텔리안테크놀로지스" 7.5 0
+    Replace-ParagraphByPrefix $doc "21년 5개월간 SI 개발" ($profile + "`r" + $core) 10.5 0
+    Replace-ParagraphByPrefix $doc "외주관리 생산기술" $skillKeywords 10 0
+    Replace-ParagraphExact $doc "시스템설계 상" "위성체 시스템 설계 상" 9 -1
+    Replace-ParagraphByPrefix $doc "• 도메인: 국방 C4I" $systemDesignSkill 7.5 0
+    Replace-ParagraphExact $doc "PM(프로젝트매니저) 상" "체계종합/통합검증 상" 9 -1
+    Replace-ParagraphByPrefix $doc "• 프로젝트 관리: PMBOK" $integrationSkill 7.5 0
+    Replace-ParagraphExact $doc "총 21년5개월" "총 21년7개월" 7.5 0
+    Replace-ParagraphByPrefix $doc "SI개발 · SIT팀" "SI개발 · SIT팀 / 부장(General Manager) · Senior Engineer" 7.5 0
+    Replace-ParagraphByPrefix $doc "담당 분야: Eutelsat OneWeb" $intellian 7.5 0
+    Replace-ParagraphExact $doc "개발PM" "시스템 체계 · Senior System Engineer / 수석연구원" 7.5 0
+    Replace-ParagraphByPrefix $doc "담당 분야: 위성·항공 전자장비 PL" $genohco 7.5 0
+    Replace-ParagraphExact $doc "2007.05 ~ 2022.05 · 15년 1개월" "2007.05 ~ 2022.04 · 14년 11개월" 7.5 0
+    Replace-ParagraphByPrefix $doc "담당 분야: 국방 통신·C4I 시스템 PM/PL" $daeyang 7.5 0
+    Replace-ParagraphByPrefix $doc "1) 프로젝트명: Eutelsat OneWeb" $careerStatement 7.5 0
+
+    Replace-ParagraphExact $doc "1. 지원동기 - 기술을 조직의 성과로 연결하는 연구소장을 목표로 합니다" $intro1Title 9 -1
+    Replace-ParagraphByPrefix $doc "통신장비 연구소장 직무는" $intro1 7.5 0
+    Replace-ParagraphExact $doc "2. 경력의 기반 - 회로 설계에서 시스템 개발과 연구소 운영 관점으로 확장해 왔습니다" $intro2Title 9 -1
+    Replace-ParagraphByPrefix $doc "제 경력의 출발점은 회로와 보드였습니다." $intro2 7.5 0
+    Replace-ParagraphExact $doc "3. 연구소장으로서의 강점 - 기술 판단을 조직 실행으로 바꾸는 힘이 있습니다" $intro3Title 9 -1
+    Replace-ParagraphByPrefix $doc "제가 생각하는 연구소장의 핵심 역량은" $intro3 7.5 0
+    Replace-ParagraphExact $doc "4. 품질과 고객 신뢰 - 현장에서 검증된 개선 경험이 있습니다" $intro4Title 9 -1
+    Replace-ParagraphByPrefix $doc "통신장비는 설계가 끝났다고 끝나는 제품이 아닙니다." $intro4 7.5 0
+    Replace-ParagraphExact $doc "5. 조직 운영 방식 - 기준은 명확하게, 실행은 끝까지 가져가겠습니다" $intro5Title 9 -1
+    Replace-ParagraphByPrefix $doc "입사 후 연구소를 맡게 된다면" $intro5 7.5 0
+    Replace-ParagraphExact $doc "6. 입사 후 기여 방향 - 제품 경쟁력과 연구소 실행력을 함께 높이겠습니다" $intro6Title 9 -1
+    Replace-ParagraphByPrefix $doc "첫 3개월은 진단과 정렬에 집중하겠습니다." $intro6 7.5 0
+
+    $doc.Save()
+    $doc.ExportAsFixedFormat($OutputPdf, 17)
+    $doc.Close([ref]$true)
+    $doc = $null
+}
+finally {
+    if ($doc -ne $null) {
+        try { $doc.Close([ref]$false) } catch {}
+    }
+    if ($word -ne $null) {
+        try {
+            if ($word.Documents.Count -eq 0) { $word.Quit() }
+        } catch {}
+    }
+}

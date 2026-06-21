@@ -3,6 +3,7 @@
 - [Office docs via COM](office-docs-com-automation.md) — no Python/Node/LibreOffice here; edit pptx/docx via PowerShell + Office COM (with gotchas)
 - [AVEVA PLM application deck](aveva-plm-application-deck.md) — English exec deck for AVEVA Marine PLM SME role, target HD Hyundai, in D:\이력서
 - [ITT Cannon FAE resume](itt-cannon-fae-resume.md) — English resume for ITT Cannon Connector Korea FAE (via Adecco), D:\이력서\ITT Cannon
+- [Genohco 시스템 체계 resume](genohco-system-resume.md) — 제노코 지원 이력서/포트폴리오 (rev2), D:\이력서\제노코 — 제노코 실직무=방산 정비장비(K2조준경·UAV) PL, 위성/TVAC 아님
 
 ## Workspace tooling (added 2026-06-06)
 
@@ -13,7 +14,7 @@
 - Smoke-tested: DOCX→PDF→PNG ✓, PPTX→PDF→PNG ✓ (2026-06-06)
 
 **Git auto-init** — `C:\Users\namma\.claude\auto_git_projects_entry.ps1`
-- `itt_work`, `plm_slide_work`, 기존 채팅 폴더 3개 로컬 git 초기화 완료 (`main` 브랜치, `.gitignore` 포함)
+- Auto-init is for new project folders under `C:\Users\namma\.claude\projects\C--Users-namma--claude`; as of 2026-06-21, `itt_work` and `plm_slide_work` are plain work folders with no local `.git` directory.
 - `C:\Users\namma\.claude\projects\C--Users-namma--claude` 아래 새 폴더 생성 시 자동 `git init` — 레지스트리 Run 키로 로그인 시 백그라운드 감시 스크립트 자동 시작
 - 로그: `C:\Users\namma\.claude\cache\git-auto-init\watcher.log`
 - 원격 origin은 미설정 (로컬 추적만)

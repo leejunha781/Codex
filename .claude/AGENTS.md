@@ -59,14 +59,14 @@ Reading a PDF's text: `$word.Documents.Open($pdfPath, $false, $true)` then `$doc
 
 | Folder | Contents |
 |---|---|
-| `C:\Users\namma\.Codex\itt_work\` | PowerShell build/edit scripts and PNG renders for the ITT Cannon FAE resume |
-| `C:\Users\namma\.Codex\plm_slide_work\` | PowerShell build scripts and PNG renders for the AVEVA PLM presentation deck |
+| `C:\Users\namma\.claude\itt_work\` | PowerShell build/edit scripts and PNG renders for the ITT Cannon FAE resume |
+| `C:\Users\namma\.claude\plm_slide_work\` | PowerShell build scripts and PNG renders for the AVEVA PLM presentation deck |
 | `D:\이력서\ITT Cannon\` | ITT Cannon FAE resume files (canonical: `..._Final_Integrated_v2.docx` + `.pdf`) |
 | `D:\이력서\` | Job application documents |
 
 ## Active projects
 
-See `projects/C--Users-namma--Codex/memory/` for persistent memory across sessions — always read `MEMORY.md` first for context. Key files:
+See `projects/C--Users-namma--claude/memory/` for persistent memory across sessions — always read `MEMORY.md` first for context. Key files:
 - `office-docs-com-automation.md` — full COM gotcha reference
 - `itt-cannon-fae-resume.md` — resume edit history, salary facts, JD alignment notes
 - `aveva-plm-application-deck.md` — presentation deck edit history

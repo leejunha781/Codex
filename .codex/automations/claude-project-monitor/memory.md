@@ -1,3 +1,16 @@
+2026-06-21 project monitor summary
+
+- Root autosync is still blocked, and the failure mode is now fully confirmed. `C:\Users\namma\.claude\git_autosync.ps1` collects changed paths from the parent repo without excluding nested repos (`C:\Users\namma\.claude\git_autosync.ps1:49-57`, `60-87`). In `C:\Users\namma`, `git add --all --` fails on `C:\Users\namma\.claude\projects\C--Users-namma--claude\6408bafd-8d68-49e5-8a93-5305b48a717d\` and `...\baeb5d66-046c-4315-b5b7-4f26997e0fc2\` because both repos are initialized but have **no initial commit** (`git status` = `## No commits yet on main`; `git rev-parse HEAD` fails). The autosync loop kept retrying through `C:\Users\namma\.claude\cache\git-autosync\autosync.log:1758-1837`.
+- `C:\Users\namma\.claude\AGENTS.md` is still stale versus the actual workspace. It still points to `C:\Users\namma\.Codex\itt_work\`, `C:\Users\namma\.Codex\plm_slide_work\`, and `projects/C--Users-namma--Codex/memory` (`C:\Users\namma\.claude\AGENTS.md:62-69`), while the live workspace and project memory are under `.claude`.
+- Project memory now overstates git coverage for work folders. `C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md:16-17` says `itt_work` and `plm_slide_work` were git-initialized, but both folders currently have no `.git` directory at all.
+- Canonical Office document locations could not be verified this run because `D:\이력서` is not mounted in this environment. The paths referenced in `AGENTS.md` and the resume/deck memories are currently unavailable, so checks were limited to the local working folders under `C:\Users\namma\.claude\`.
+- `C:\Users\namma\.claude\plm_slide_work\fix_v6_slide13_14_readability.ps1` still hardcodes V6-era deck paths and backup naming (`:3-10`), so it no longer matches the later PLM deck lineage recorded in memory.
+- A stale Office temp artifact still exists in the local PLM work area with no live Office process: `C:\Users\namma\.claude\plm_slide_work\word_future_direction\~$EVA_Marine_Future_Direction_Meeting_Materials_EN.html` (last written 2026-06-06 22:51). No `WINWORD` or `POWERPNT` process was running during this check.
+- `C:\Users\namma\.claude\itt_work\` remains stable. The latest local scripts are still `rebuild_clean.ps1` and `render_all.ps1` from 2026-06-05, with no newer churn detected.
+- Recent workspace churn since the last run is concentrated in `C:\Users\namma\.claude\genohco_system_work\` plus memory/index updates on 2026-06-17. No additional risky configuration changes were found beyond the existing autosync backlog.
+
+Run time: ~14 minutes.
+
 2026-06-06 run (~9m)
 
 - Read `AGENTS.md`, automation memory, and `projects\C--Users-namma--claude\memory\*.md`.

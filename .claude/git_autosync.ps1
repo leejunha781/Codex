@@ -51,6 +51,7 @@ function Should-IgnoreGitPath {
 
     return (
         $Path -match '(^|/)\.git/' -or
+        $Path -match '^\.claude/projects/C--Users-namma--claude/[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}(/|$)' -or
         $Path -match '(^|/)cache/' -or
         $Path -match 'autosync\.log$' -or
         $Path -match '\.(png|jpg|jpeg|pdf|docx|pptx|zip|sqlite|wal|shm|tmp)$'
