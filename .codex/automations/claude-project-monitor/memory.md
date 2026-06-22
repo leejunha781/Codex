@@ -27,3 +27,9 @@
 - plm_slide_work\final_materials_v18_deck_render has 42 PNGs, matching V18 memory. No ~$ temp files found in .claude work folders.
 - Findings to keep watching: C:\Users\namma\.claude\config.toml uses 
 px despite the workspace no-Node constraint and has nable_all_tools_auto_approval=true; C:\Users\namma\.claude\Scheduled\daily-linkedin-post\SKILL.md says to run bash/date; old stale lock file remains at D:\이력서\AVEVA - Marine Principal Technical Support & Consultant – PLM SME, Busan\Proposal\~.pptx; UUID project repos remain no-HEAD nested repos but autosync is currently pushing cleanly.
+
+## 2026-06-22 run
+- Run time: 2026-06-22 12:02 to 2026-06-22 12:04:41 +09:00 (Asia/Seoul local shell time).
+- Read C:\Users\namma\.claude\AGENTS.md, C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md, and the existing automation memory. Root repo C:\Users\namma was clean; latest post-last-run git activity was only C:\Users\namma\.codex\automations\claude-project-monitor\memory.md.
+- Confirmed active Office baselines still exist: ITT Final_Integrated_v2 DOCX/PDF; AVEVA PLM default, V18, Final PPTX files; V18 render folder still has page-01.png through page-42.png. No WINWORD/POWERPNT process was running.
+- Current actionable findings unchanged: C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md lacks entries for June 21 ABB, HRBros, and AVEVA BDM resume work folders; C:\Users\namma\.claude\config.toml uses npx and enable_all_tools_auto_approval=true; C:\Users\namma\.claude\Scheduled\daily-linkedin-post\SKILL.md still instructs bash/date; stale Office lock/temp files remain in HRBros, AVEVA PLM, and plm_slide_work; nested UUID project repos still contain untracked artifacts.
