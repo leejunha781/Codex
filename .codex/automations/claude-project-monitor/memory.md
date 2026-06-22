@@ -1,6 +1,16 @@
 # Claude project monitor memory
 
 ## 2026-06-22 run
+- Run time: 2026-06-22 10:25 to 11:04:52 +09:00 (Asia/Seoul local shell time).
+- Read C:\Users\namma\.claude\AGENTS.md, C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md, and tails/lists for the active project memories and Office work folders. No Office COM document open was needed; no WINWORD/POWERPNT process was running.
+- Root repo C:\Users\namma was clean when checked. Autosync log shows successful pushes through 2026-06-22 10:04 +09:00. Latest since last-run git activity observed: C:\Users\namma\.codex\automations\claude-project-monitor\memory.md only.
+- Active memories for ITT Cannon, AVEVA PLM, and Genohco still match existing canonical artifacts. ITT Final_Integrated_v2 DOCX/PDF exist; Genohco rev2 DOCX/PDF/PPTX/PDF exist; AVEVA PLM V18/default lineage is documented and C:\Users\namma\.claude\plm_slide_work\final_materials_v18_deck_render still contains 42 PNGs page-01.png through page-42.png.
+- New actionable findings: C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md lacks entries for June 21 work folders C:\Users\namma\.claude\abb_resume_work, C:\Users\namma\.claude\hrbros_resume_work, and C:\Users\namma\.claude\aveva_bdm_resume_work, all of which contain build/extract scripts and rendered/document outputs in D:\이력서. Add memory entries/canonical artifact notes before future edits.
+- Existing watch items remain: C:\Users\namma\.claude\config.toml was added 2026-06-22 and uses npx plus enable_all_tools_auto_approval=true despite workspace no-Node constraints; C:\Users\namma\.claude\Scheduled\daily-linkedin-post\SKILL.md was added/modified 2026-06-22 and still instructs a bash/date command.
+- Cleanup candidates: stale hidden Office lock/temp files with no active Office process at C:\Users\namma\.claude\plm_slide_work\word_future_direction\~$EVA_Marine_Future_Direction_Meeting_Materials_EN.html, D:\이력서\에이치알브로스 - 무선통신 전문기업 통신장비 연구소장\~$하_통신장비_연구소장_사람인양식_이력서_자기소개서정정.docx, plus three older stale locks in the AVEVA PLM SME folder.
+- Nested UUID project folders under C:\Users\namma\.claude\projects\C--Users-namma--claude still have .git directories but no initial commits/HEAD objects; several contain untracked .gitignore, subagents, or tool-results artifacts. Autosync is currently protected by nested-repo exclusion, but these repos remain a low-level hygiene risk.
+
+## 2026-06-22 run
 - Run time: 2026-06-22 10:01:21 +09:00 to about 10:16 +09:00 (Asia/Seoul local shell time).
 - Read C:\Users\namma\.claude\AGENTS.md, C:\Users\namma\.claude\projects\C--Users-namma--claude\memory\MEMORY.md, the Office COM QA skill, and the project memory files for Office COM, ITT Cannon, AVEVA PLM, and Genohco.
 - Since last run 2026-06-22T00:01:02Z, notable .claude changes were C:\Users\namma\.claude\cache\git-autosync\autosync.log and auto-created nested .git directories under UUID project folders. Root repo C:\Users\namma was clean; latest autosync commit observed was 7e54c99 at 2026-06-22 09:05 +09:00.
