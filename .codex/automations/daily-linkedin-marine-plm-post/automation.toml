@@ -6,8 +6,8 @@ prompt = "Quiet daily LinkedIn workflow. Use minimal tokens: no progress narrati
 status = "ACTIVE"
 rrule = "RRULE:FREQ=WEEKLY;BYHOUR=9;BYMINUTE=0;BYDAY=MO,TU,WE,TH,FR,SA,SU"
 model = "gpt-5.5"
-reasoning_effort = "medium"
+reasoning_effort = "low"
 execution_environment = "local"
 cwds = ["C:\\Users\\namma\\.claude"]
 created_at = 1782227546020
-updated_at = 1782227675648
+updated_at = 1782227710031

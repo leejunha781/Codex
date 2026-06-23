@@ -6,8 +6,8 @@ prompt = "Act as a project monitor for this workspace. Start by reading AGENTS.m
 status = "ACTIVE"
 rrule = "RRULE:FREQ=WEEKLY;BYHOUR=21;BYMINUTE=37;BYDAY=SU,MO,TU,WE,TH,FR,SA"
 model = "gpt-5.5"
-reasoning_effort = "medium"
+reasoning_effort = "low"
 execution_environment = "local"
 cwds = ["~"]
 created_at = 1780719251018
-updated_at = 1782226917406
+updated_at = 1782227703668
