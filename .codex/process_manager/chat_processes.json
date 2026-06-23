@@ -1,19 +1,6 @@
 [
   {
     "chatTitle": null,
-    "command": "git -C 'C:\\\\Users\\\\namma' lfs status",
-    "conversationId": "019e9b60-0833-7b00-8e01-fdf68ba6dc92",
-    "cwd": "C:\\Users\\namma\\.claude",
-    "itemId": "call_Nxc23Scj3y8nz3UpQFsMFZDR",
-    "osPid": null,
-    "processId": "65567",
-    "startedAtMs": 1782241517548,
-    "turnId": "019ef5d8-582b-78d3-a145-3a968aa6aa4f",
-    "id": "019e9b60-0833-7b00-8e01-fdf68ba6dc92:019ef5d8-582b-78d3-a145-3a968aa6aa4f:call_Nxc23Scj3y8nz3UpQFsMFZDR",
-    "updatedAtMs": 1782241517548
-  },
-  {
-    "chatTitle": null,
     "command": "git diff -- 'AGENTS.md' 'projects/C--Users-namma--claude/memory/MEMORY.md' 'projects/C--Users-namma--claude/memory/aveva-plm-application-deck.md' 'plm_slide_work/fix_v6_slide13_14_readability.ps1'",
     "conversationId": "019ee7ec-e3ac-7143-aaaf-df58f64b29c3",
     "cwd": "C:\\Users\\namma\\.claude",

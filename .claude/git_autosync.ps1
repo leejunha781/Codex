@@ -138,6 +138,23 @@ function Invoke-GitSync {
 
     Push-Location $repoRoot
     try {
+        $branch = git rev-parse --abbrev-ref HEAD 2>$null
+        if ($LASTEXITCODE -eq 0 -and -not [string]::IsNullOrWhiteSpace($branch) -and $branch.Trim() -ne 'HEAD') {
+            $branch = $branch.Trim()
+            $fetch = git fetch origin 2>&1
+            if ($LASTEXITCODE -eq 0) {
+                git rev-parse --verify "origin/$branch" 2>$null | Out-Null
+                if ($LASTEXITCODE -eq 0) {
+                    $pull = git pull --rebase --autostash origin $branch 2>&1
+                    if ($LASTEXITCODE -ne 0) {
+                        Write-Log "WARN: pull --rebase failed before sync | $pull"
+                    }
+                }
+            } else {
+                Write-Log "WARN: fetch failed before sync | $fetch"
+            }
+        }
+
         git add --all -- @Paths 2>$null
         if ($LASTEXITCODE -ne 0) {
             Write-Log "ERROR: git add failed for $($Paths.Count) paths"
