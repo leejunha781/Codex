@@ -25,7 +25,7 @@
 - 2026-06-24 chat sync expansion: Codex chat/code/cowork session JSONL and imported-session metadata are tracked in the root repo; Claude UUID chat helper folders still skip nested repo metadata but allow `subagents/*.json[l]` and `tool-results/*.txt`.
 - Root repo/origin guard: `C:\Users\namma\.claude\ensure_git_autosync_connection.ps1` verifies `C:\Users\namma\.git` and origin `https://github.com/leejunha781/Codex.git`, pulls `origin/<branch>` with `--rebase --autostash` plus `git lfs pull`, then starts autosync. Autosync also fetches/pulls before each commit+push cycle.
 - 런처: `C:\Users\namma\.claude\git_autosync_launcher.ps1` (중복 실행 방지 pid 파일 사용)
-- 로그인 자동 시작: HKCU Run 키 `ClaudeCodexGitAutosync` → `ensure_git_autosync_connection.ps1`
+- 2026-06-24 policy update: Windows login auto-start was disabled at user request. Run sync manually from Codex Automations or with `Get-Content C:\Users\namma\.claude\start_claude_codex_sync.ps1 -Raw | Invoke-Expression`.
 - 로그: `C:\Users\namma\.claude\cache\git-autosync\autosync.log`
 
 **Codex automation `claude-project-monitor`** — 6시간마다 `C:\Users\namma\.claude` 전체 감시

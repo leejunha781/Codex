@@ -2,9 +2,12 @@ $ErrorActionPreference = 'Stop'
 
 $runKey = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Run'
 $name = 'ClaudeCodexGitAutosync'
-$scriptPath = 'C:\Users\namma\.claude\ensure_git_autosync_connection.ps1'
-$psExe = 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe'
-$value = "$psExe -NoProfile -WindowStyle Hidden -Command ""Get-Content '$scriptPath' -Raw | Invoke-Expression"""
 
-New-ItemProperty -Path $runKey -Name $name -PropertyType String -Value $value -Force | Out-Null
-Write-Output "Registered Run key: $name"
+if (Get-ItemProperty -Path $runKey -Name $name -ErrorAction SilentlyContinue) {
+    Remove-ItemProperty -Path $runKey -Name $name
+    Write-Output "Removed Run key: $name"
+} else {
+    Write-Output "Run key already absent: $name"
+}
+
+Write-Output "Use Codex Automations entry 'Manual Claude Codex Sync' or run C:\Users\namma\.claude\start_claude_codex_sync.ps1 manually."
