@@ -1,6 +1,19 @@
 [
   {
     "chatTitle": null,
+    "command": "\"git -C 'C:\\\\Users\\\\namma' check-ignore -v '.claude/projects/C--Users-namma--claude/baeb5d66-046c-4315-b5b7-4f26997e0fc2/.gitignore' '.claude/projects/C--Users-namma--claude/baeb5d66-046c-4315-b5b7-4f26997e0fc2/.git/HEAD' 2>\"'$null'",
+    "conversationId": "019e9b60-0833-7b00-8e01-fdf68ba6dc92",
+    "cwd": "C:\\Users\\namma\\.claude",
+    "itemId": "call_b7tQaRnYYlgwMRkRkKtLMgK2",
+    "osPid": null,
+    "processId": "66457",
+    "startedAtMs": 1782241724730,
+    "turnId": "019ef5d8-582b-78d3-a145-3a968aa6aa4f",
+    "id": "019e9b60-0833-7b00-8e01-fdf68ba6dc92:019ef5d8-582b-78d3-a145-3a968aa6aa4f:call_b7tQaRnYYlgwMRkRkKtLMgK2",
+    "updatedAtMs": 1782241724730
+  },
+  {
+    "chatTitle": null,
     "command": "git diff -- 'AGENTS.md' 'projects/C--Users-namma--claude/memory/MEMORY.md' 'projects/C--Users-namma--claude/memory/aveva-plm-application-deck.md' 'plm_slide_work/fix_v6_slide13_14_readability.ps1'",
     "conversationId": "019ee7ec-e3ac-7143-aaaf-df58f64b29c3",
     "cwd": "C:\\Users\\namma\\.claude",
