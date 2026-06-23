@@ -1,45 +1,6 @@
 [
   {
     "chatTitle": null,
-    "command": "$paths = @('\"'C:\\\\Users\\\\namma\\\\.codex\\\\sessions','C:\\\\Users\\\\namma\\\\.codex\\\\archived_sessions','C:\\\\Users\\\\namma\\\\.codex\\\\attachments'); foreach (\"'$p in $paths) { $items=Get-ChildItem -LiteralPath $p -Recurse -File -ErrorAction SilentlyContinue; $bytes=($items | Measure-Object -Property Length -Sum).Sum; [PSCustomObject]@{Path=$p; Files=$items.Count; MB=[math]::Round(($bytes/1MB),2)} }",
-    "conversationId": "019e9b60-0833-7b00-8e01-fdf68ba6dc92",
-    "cwd": "C:\\Users\\namma\\.claude",
-    "itemId": "call_SfnUlxsuwNnMV1QuiNhxA4L5",
-    "osPid": null,
-    "processId": "82879",
-    "startedAtMs": 1782241358991,
-    "turnId": "019ef5d8-582b-78d3-a145-3a968aa6aa4f",
-    "id": "019e9b60-0833-7b00-8e01-fdf68ba6dc92:019ef5d8-582b-78d3-a145-3a968aa6aa4f:call_SfnUlxsuwNnMV1QuiNhxA4L5",
-    "updatedAtMs": 1782241358993
-  },
-  {
-    "chatTitle": null,
-    "command": "git -C 'C:\\\\Users\\\\namma' status --short -- '.codex/sessions/' '.codex/archived_sessions/' '.codex/session_index.jsonl' '.codex/external_agent_session_imports.json' '.codex/process_manager/chat_processes.json' '.codex/attachments/' '.claude/projects/C--Users-namma--claude/*/tool-results/*.txt' '.claude/projects/C--Users-namma--claude/*/subagents/*.jsonl' '.claude/projects/C--Users-namma--claude/*/subagents/*.json' | Measure-Object | Select-Object Count",
-    "conversationId": "019e9b60-0833-7b00-8e01-fdf68ba6dc92",
-    "cwd": "C:\\Users\\namma\\.claude",
-    "itemId": "call_MA2QvrdPH3E8mEZztjgcPDXf",
-    "osPid": null,
-    "processId": "82441",
-    "startedAtMs": 1782241358979,
-    "turnId": "019ef5d8-582b-78d3-a145-3a968aa6aa4f",
-    "id": "019e9b60-0833-7b00-8e01-fdf68ba6dc92:019ef5d8-582b-78d3-a145-3a968aa6aa4f:call_MA2QvrdPH3E8mEZztjgcPDXf",
-    "updatedAtMs": 1782241358979
-  },
-  {
-    "chatTitle": null,
-    "command": "Get-Content 'C:\\\\Users\\\\namma\\\\.claude\\\\cache\\\\git-autosync\\\\autosync.log' -Tail 28",
-    "conversationId": "019e9b60-0833-7b00-8e01-fdf68ba6dc92",
-    "cwd": "C:\\Users\\namma\\.claude",
-    "itemId": "call_WxFj2sURq7Z3z7BGk6L5SQFp",
-    "osPid": null,
-    "processId": "42578",
-    "startedAtMs": 1782241358959,
-    "turnId": "019ef5d8-582b-78d3-a145-3a968aa6aa4f",
-    "id": "019e9b60-0833-7b00-8e01-fdf68ba6dc92:019ef5d8-582b-78d3-a145-3a968aa6aa4f:call_WxFj2sURq7Z3z7BGk6L5SQFp",
-    "updatedAtMs": 1782241358959
-  },
-  {
-    "chatTitle": null,
     "command": "git diff -- 'AGENTS.md' 'projects/C--Users-namma--claude/memory/MEMORY.md' 'projects/C--Users-namma--claude/memory/aveva-plm-application-deck.md' 'plm_slide_work/fix_v6_slide13_14_readability.ps1'",
     "conversationId": "019ee7ec-e3ac-7143-aaaf-df58f64b29c3",
     "cwd": "C:\\Users\\namma\\.claude",
