@@ -24,6 +24,7 @@ function Is-TrackedProjectDir {
     if (-not (Test-Path -LiteralPath $Path -PathType Container)) { return $false }
     $name = Split-Path -Leaf $Path
     if ($excludeNames -contains $name) { return $false }
+    if ($name -match '^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$') { return $false }
     return $true
 }
 

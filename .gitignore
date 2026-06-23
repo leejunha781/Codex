@@ -1,6 +1,7 @@
 # 홈 디렉터리 전체 제외 — 아래 명시된 작업 폴더만 추적
 /*
 /.*
+!/.gitattributes
 
 # 추적할 폴더
 !/.claude/
@@ -9,16 +10,34 @@
 # .codex 안에서 추적할 폴더만 허용 (대용량 DB·캐시 제외)
 /.codex/*
 !/.codex/skills/
+!/.codex/skills/**
 !/.codex/automations/
+!/.codex/automations/**
+!/.codex/sessions/
+!/.codex/sessions/**
+!/.codex/archived_sessions/
+!/.codex/archived_sessions/**
+!/.codex/attachments/
+!/.codex/attachments/**/*.json
+!/.codex/attachments/**/*.txt
+!/.codex/session_index.jsonl
+!/.codex/external_agent_session_imports.json
+!/.codex/process_manager/
+!/.codex/process_manager/chat_processes.json
 
 # .claude 안 제외 항목
 /.claude/cache/
-/.claude/projects/C--Users-namma--claude/*/
+/.claude/projects/C--Users-namma--claude/*/*
 !/.claude/projects/C--Users-namma--claude/memory/
 !/.claude/projects/C--Users-namma--claude/memory/**
-/.claude/projects/C--Users-namma--claude/*/tool-results/
+!/.claude/projects/C--Users-namma--claude/*/subagents/
+!/.claude/projects/C--Users-namma--claude/*/subagents/*.json
+!/.claude/projects/C--Users-namma--claude/*/subagents/*.jsonl
+!/.claude/projects/C--Users-namma--claude/*/tool-results/
+!/.claude/projects/C--Users-namma--claude/*/tool-results/*.txt
 
 # 공통 제외
+**/.git/
 *.png
 *.jpg
 *.jpeg

@@ -1,6 +1,6 @@
 # git_autosync.ps1
 # Claude + Codex 작업 폴더 변경 감지 -> 자동 commit + push to GitHub
-# 감시 대상: C:\Users\namma\.claude\  +  C:\Users\namma\.codex\skills\  +  C:\Users\namma\.codex\automations\
+# 감시 대상: Claude + Codex 설정, 프로젝트, chat/code/cowork 세션 텍스트
 
 $repoRoot  = "C:\Users\namma"
 $logFile   = "C:\Users\namma\.claude\cache\git-autosync\autosync.log"
@@ -8,12 +8,24 @@ $debounce  = 45   # 마지막 변경 후 이 초 동안 새 변경 없으면 com
 $watchPaths = @(
     "C:\Users\namma\.claude",
     "C:\Users\namma\.codex\skills",
-    "C:\Users\namma\.codex\automations"
+    "C:\Users\namma\.codex\automations",
+    "C:\Users\namma\.codex\sessions",
+    "C:\Users\namma\.codex\archived_sessions",
+    "C:\Users\namma\.codex\attachments",
+    "C:\Users\namma\.codex\session_index.jsonl",
+    "C:\Users\namma\.codex\external_agent_session_imports.json",
+    "C:\Users\namma\.codex\process_manager\chat_processes.json"
 )
 $watchSpecs = @(
     ".claude/",
     ".codex/skills/",
-    ".codex/automations/"
+    ".codex/automations/",
+    ".codex/sessions/",
+    ".codex/archived_sessions/",
+    ".codex/attachments/",
+    ".codex/session_index.jsonl",
+    ".codex/external_agent_session_imports.json",
+    ".codex/process_manager/chat_processes.json"
 )
 $repoRootFull = (Resolve-Path -LiteralPath $repoRoot).ProviderPath.TrimEnd('\')
 
@@ -74,10 +86,12 @@ function Test-IsNestedGitRepoPath {
 function Should-IgnoreGitPath {
     param([string]$Path)
 
+    $isClaudeChatArtifact = $Path -match '^\.claude/projects/C--Users-namma--claude/[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}/(subagents|tool-results)/'
+
     return (
         $Path -match '(^|/)\.git/' -or
-        (Test-IsNestedGitRepoPath -Path $Path) -or
-        $Path -match '^\.claude/projects/C--Users-namma--claude/[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}(/|$)' -or
+        ((Test-IsNestedGitRepoPath -Path $Path) -and -not $isClaudeChatArtifact) -or
+        (($Path -match '^\.claude/projects/C--Users-namma--claude/[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}(/|$)') -and -not $isClaudeChatArtifact) -or
         $Path -match '(^|/)cache/' -or
         $Path -match 'autosync\.log$' -or
         $Path -match '\.(png|jpg|jpeg|pdf|docx|pptx|zip|sqlite|wal|shm|tmp)$'

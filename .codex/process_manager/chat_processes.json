@@ -1,0 +1,54 @@
+[
+  {
+    "chatTitle": null,
+    "command": "$scripts = @('\"'C:\\\\Users\\\\namma\\\\.claude\\\\git_autosync.ps1','C:\\\\Users\\\\namma\\\\.claude\\\\ensure_git_autosync_connection.ps1','C:\\\\Users\\\\namma\\\\.claude\\\\install_git_autosync_runkey.ps1','C:\\\\Users\\\\namma\\\\.claude\\\\auto_git_projects_entry.ps1'); foreach (\"'$s in $scripts) { [scriptblock]::Create((Get-Content $s -Raw)) | Out-Null; \"syntax ok: $s\" }",
+    "conversationId": "019e9b60-0833-7b00-8e01-fdf68ba6dc92",
+    "cwd": "C:\\Users\\namma\\.claude",
+    "itemId": "call_yccH2tBYZDcOaRQo6NXkHQLv",
+    "osPid": null,
+    "processId": "50822",
+    "startedAtMs": 1782241313571,
+    "turnId": "019ef5d8-582b-78d3-a145-3a968aa6aa4f",
+    "id": "019e9b60-0833-7b00-8e01-fdf68ba6dc92:019ef5d8-582b-78d3-a145-3a968aa6aa4f:call_yccH2tBYZDcOaRQo6NXkHQLv",
+    "updatedAtMs": 1782241313573
+  },
+  {
+    "chatTitle": null,
+    "command": "git diff -- 'AGENTS.md' 'projects/C--Users-namma--claude/memory/MEMORY.md' 'projects/C--Users-namma--claude/memory/aveva-plm-application-deck.md' 'plm_slide_work/fix_v6_slide13_14_readability.ps1'",
+    "conversationId": "019ee7ec-e3ac-7143-aaaf-df58f64b29c3",
+    "cwd": "C:\\Users\\namma\\.claude",
+    "id": "019ee7ec-e3ac-7143-aaaf-df58f64b29c3:019ee7ec-f826-7373-baec-6d66828093db:call_LaFDSQ2aPGlcWsO2RnD5KSkk",
+    "itemId": "call_LaFDSQ2aPGlcWsO2RnD5KSkk",
+    "osPid": null,
+    "processId": "2159",
+    "startedAtMs": 1782007714896,
+    "turnId": "019ee7ec-f826-7373-baec-6d66828093db",
+    "updatedAtMs": 1782007714895
+  },
+  {
+    "chatTitle": null,
+    "command": "'Get-ChildItem itt_work,plm_slide_work,moacom_work -Force | Where-Object { $_.Name -eq '\"'.git' } | Select-Object FullName,LastWriteTime\"",
+    "conversationId": "019ebb08-81d8-73a2-988b-412a931b83bf",
+    "cwd": "C:\\Users\\namma\\.claude",
+    "id": "019ebb08-81d8-73a2-988b-412a931b83bf:019ebb08-838d-7f10-b03f-57fe3bd1c92f:call_VVnpHIoKEQ3KBECccVA3QuGG",
+    "itemId": "call_VVnpHIoKEQ3KBECccVA3QuGG",
+    "osPid": null,
+    "processId": null,
+    "startedAtMs": 1781254475915,
+    "turnId": "019ebb08-838d-7f10-b03f-57fe3bd1c92f",
+    "updatedAtMs": 1781254475917
+  },
+  {
+    "chatTitle": null,
+    "command": "if (Test-Path itt_work\\\\.git) { \\\"--- itt_work ---\\\"; git -C itt_work status --short --branch; git -C itt_work log --oneline --decorate -5 }; if (Test-Path plm_slide_work\\\\.git) { \\\"--- plm_slide_work ---\\\"; git -C plm_slide_work status --short --branch; git -C plm_slide_work log --oneline --decorate -5 }; if (Test-Path moacom_work\\\\.git) { \\\"--- moacom_work ---\\\"; git -C moacom_work status --short --branch; git -C moacom_work log --oneline --decorate -5 }",
+    "conversationId": "019ebb08-81d8-73a2-988b-412a931b83bf",
+    "cwd": "C:\\Users\\namma\\.claude",
+    "id": "019ebb08-81d8-73a2-988b-412a931b83bf:019ebb08-838d-7f10-b03f-57fe3bd1c92f:call_qOLrZoLw1R9AnSdO1USInPMV",
+    "itemId": "call_qOLrZoLw1R9AnSdO1USInPMV",
+    "osPid": null,
+    "processId": null,
+    "startedAtMs": 1781254475873,
+    "turnId": "019ebb08-838d-7f10-b03f-57fe3bd1c92f",
+    "updatedAtMs": 1781254475876
+  }
+]

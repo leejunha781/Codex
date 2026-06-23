@@ -1,0 +1,2 @@
+.codex/sessions/**/*.jsonl filter=lfs diff=lfs merge=lfs -text
+.codex/archived_sessions/*.jsonl filter=lfs diff=lfs merge=lfs -text

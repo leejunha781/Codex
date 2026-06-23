@@ -1,0 +1,45 @@
+Every day, choose one topic from the keyword group below and create an English LinkedIn post with one supporting reference image. Use the proven LinkedIn Windows app posting workflow, not Chrome. The user confirmed the LinkedIn Windows app is installed and already logged in. Skip all login workflows and never attempt Google/LinkedIn login or credential entry. Keyword group: Marine, PLM, Digital Twin, AVEVA, Engineering Consultant, Business Development, Solution Architect, Technical Sales, Defense & Shipbuilding, Global Account, HART, Control Valve, Shipbuilding Data Integration, Space, Satellite, satellite communication, satellite communications, HF communication, VHF communication, UHF communication, maritime communications, defense communications, ship-to-shore communications, satellite-enabled marine operations. Cover only one clear topic per day and use a different angle from previous days. Topics may connect marine/shipbuilding engineering with space, satellite communication, and HF/VHF/UHF communication systems where relevant.
+
+
+
+Post language: English only. Write the LinkedIn post body, hook, practical points, and hashtags in professional, natural English. Do not write the final LinkedIn post in Korean unless the user explicitly changes the language again.
+
+
+
+Post format: Make it ready to publish on LinkedIn. Include a strong title or opening hook, 3-5 short body paragraphs, 3 practical application points, and 5-8 relevant hashtags. Assume the audience is professionals interested in shipbuilding, defense, marine engineering, PLM, digital twin, satellite communication, space-enabled communications, HF/VHF/UHF communication, technical sales, and solution architecture. Keep the tone practical and insight-led, not exaggerated or advertisement-like.
+
+
+
+Reference image format: Create one professional LinkedIn-ready reference image that visually summarizes the core message of the post at a glance. The image should be concise, compressed, and immediately understandable: one main idea, simple visual hierarchy, large readable elements, minimal short English labels, and no dense tables or small text. The image should capture the post's key concept in a shortened visual form. The default visual style should be a clean business infographic, conceptual architecture diagram, data flow diagram, digital twin operations screen, or communication architecture visual suited to shipbuilding/marine engineering, defense, satellite communication, space-enabled operations, HF/VHF/UHF communications, and digital transformation. Prefer a square or landscape ratio suitable for the LinkedIn feed. AVEVA and other trademarks may be mentioned in explanatory text where appropriate, but do not generate official logos or misleading brand imagery. Do not include watermarks, fake certification marks, or excessive promotional copy. Add a subtle handwritten-style English signature reading exactly "Joonha Lee" in the lower-right corner of the image. The signature should look like a personal cursive signature, remain small and tasteful, and not interfere with the infographic content.
+
+
+
+Save the generated image in the default generated-images folder and also copy it into the workspace outputs folder with a filename that includes the date and topic. The default generated-images folder to use for direct upload selection is: C:\Users\namma\.codex\generated_images\019eebbe-a20b-70e3-9dba-eb0f4a594ca8. Also save the final English post as a markdown file in the workspace outputs folder for backup. If image generation or attachment is not possible, output the final post plus the image prompt/composition notes in the current thread so the user can generate or attach it manually.
+
+
+
+Proven LinkedIn Windows app posting workflow:
+
+1. Open or focus the LinkedIn Windows app. Use the existing logged-in session. If the app unexpectedly shows logged-out state, Google account selection, 2FA, account security check, CAPTCHA, or any login/security screen, stop immediately and report the issue with the final English post and reference image.
+
+2. On the feed, click the visible "Start a post" control in the middle of the screen to open the Create post modal.
+
+3. Click the "Share your thoughts..." editor and enter the generated English post text. If accessibility set_value fails, use actual click plus type_text; this was the successful method.
+
+4. Click the image/Add media icon near the lower area of the composer.
+
+5. When the Windows Open file dialog appears, skip any separate "Upload from computer" button workflow. Work directly in the Open dialog.
+
+6. Select the generated image from C:\Users\namma\Documents\Codex\2026-06-22\marine-plm-digital-twin-aveva-engineering\outputs. Prefer the current-topic/newest generated PNG. The previously successful method was to click the visible File name field in the Open dialog, enter the full generated image path, and press Return/Open.
+
+7. When LinkedIn shows the image Editor/preview and the selected image is visible, click "Next".
+
+8. Confirm the final composer shows the English post text and attached image preview, with the "Post" button enabled.
+
+9. Because publishing to LinkedIn is external representational communication, do not click the final "Post" control without action-time user confirmation in the current interaction. If action-time confirmation is present, click "Post". Otherwise, leave the composer prepared and report that the post is ready for final posting.
+
+10. After clicking "Post", verify success by checking for "Post successful", "View post", or the new Joonha Lee feed post containing the generated topic text and image.
+
+
+
+If image attachment failure, file dialog navigation failure, final posting confirmation is unavailable, or any other user-intervention screen appears, stop immediately and report the final English post, reference image file or image prompt, and required user action in the current thread. If LinkedIn Windows app access, logged-in session, image generation, or image attachment is unavailable, output the final English post and reference image/image prompt in the current thread so the user can post manually.
