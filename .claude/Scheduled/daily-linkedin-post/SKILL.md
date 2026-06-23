@@ -15,7 +15,7 @@ STEP 2 — Write the post (professional English).
 - Also craft a SHORT image HEADLINE: a punchy 6–14 word distillation of the post's core idea (often a tightened version of the hook), suitable for a graphic.
 
 STEP 3 — Generate the matching branded image.
-The reusable generator lives in the persistent outputs folder at: C:\Users\namma\AppData\Roaming\Claude\local-agent-mode-sessions\dc934002-beb5-48c7-84bf-566d0d5aefca\d3453b4f-497b-4e7e-bbff-aa1b470046d5\local_ec2fa5d9-7315-476a-b5b2-5d99e69c367f\outputs\make_linkedin_image.py
+The reusable generator lives in the persistent outputs folder at: C:\Users\namma\Documents\Claude\outputs\make_linkedin_image.py
 In bash, locate the mounted outputs folder and run the generator:
   OUT=$(ls -d /sessions/*/mnt/outputs 2>/dev/null | head -1)
   python3 -c "import PIL" 2>/dev/null || pip install pillow --break-system-packages -q
