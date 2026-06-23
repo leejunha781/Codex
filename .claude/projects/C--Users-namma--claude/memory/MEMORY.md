@@ -20,7 +20,7 @@
 - 원격 origin은 미설정 (로컬 추적만)
 
 **Git autosync** — `C:\Users\namma\.claude\git_autosync.ps1`
-- `C:\Users\namma\.claude`, `C:\Users\namma\.codex\skills`, `C:\Users\namma\.codex\automations`, Codex `sessions`, `archived_sessions`, pasted-text `attachments`, `session_index.jsonl`, `external_agent_session_imports.json`, `process_manager\chat_processes.json` 변경 감지 후 `C:\Users\namma` 루트 repo에 자동 commit + push
+- `C:\Users\namma\.claude`, `C:\Users\namma\.codex\skills`, `C:\Users\namma\.codex\automations`, Codex `sessions`, `archived_sessions`, pasted-text `attachments`, `session_index.jsonl`, `external_agent_session_imports.json`, `process_manager\chat_processes.json`, root `.gitignore`/`.gitattributes` 변경 감지 후 `C:\Users\namma` 루트 repo에 자동 commit + push
 - 2026-06-21 hardening: autosync now detects nested `.git` boundaries under watched paths and excludes those paths before root `git add`, so no-HEAD nested repos do not cause repeated `git add failed` loops. The UUID project-folder skip remains, but generic nested-repo filtering is now the main guard.
 - 2026-06-24 chat sync expansion: Codex chat/code/cowork session JSONL and imported-session metadata are tracked in the root repo; Claude UUID chat helper folders still skip nested repo metadata but allow `subagents/*.json[l]` and `tool-results/*.txt`.
 - Root repo/origin guard: `C:\Users\namma\.claude\ensure_git_autosync_connection.ps1` verifies `C:\Users\namma\.git` and origin `https://github.com/leejunha781/Codex.git`, then starts autosync.

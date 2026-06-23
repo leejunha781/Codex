@@ -14,7 +14,9 @@ $watchPaths = @(
     "C:\Users\namma\.codex\attachments",
     "C:\Users\namma\.codex\session_index.jsonl",
     "C:\Users\namma\.codex\external_agent_session_imports.json",
-    "C:\Users\namma\.codex\process_manager\chat_processes.json"
+    "C:\Users\namma\.codex\process_manager\chat_processes.json",
+    "C:\Users\namma\.gitignore",
+    "C:\Users\namma\.gitattributes"
 )
 $watchSpecs = @(
     ".claude/",
@@ -25,7 +27,9 @@ $watchSpecs = @(
     ".codex/attachments/",
     ".codex/session_index.jsonl",
     ".codex/external_agent_session_imports.json",
-    ".codex/process_manager/chat_processes.json"
+    ".codex/process_manager/chat_processes.json",
+    ".gitignore",
+    ".gitattributes"
 )
 $repoRootFull = (Resolve-Path -LiteralPath $repoRoot).ProviderPath.TrimEnd('\')
 

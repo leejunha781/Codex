@@ -27,6 +27,7 @@
 
 # .claude 안 제외 항목
 /.claude/cache/
+/.claude/projects/C--Users-namma--claude/baeb5d66-046c-4315-b5b7-4f26997e0fc2/
 /.claude/projects/C--Users-namma--claude/*/*
 !/.claude/projects/C--Users-namma--claude/memory/
 !/.claude/projects/C--Users-namma--claude/memory/**
