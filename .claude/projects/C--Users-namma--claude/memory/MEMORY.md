@@ -29,3 +29,6 @@
 **Codex automation `claude-project-monitor`** — 6시간마다 `C:\Users\namma\.claude` 전체 감시
 - 확인 항목: 최근 변경, 빠진 핵심 파일, 메모리 불일치, 위험한 설정/문서 변경, `itt_work`·`plm_slide_work` 이슈
 - 자동화 메모리: `C:\Users\namma\.codex\automations\claude-project-monitor\memory.md`
+
+**LinkedIn image QA** — 2026-06-24
+- LinkedIn reference images must verify that every visible text label stays inside its backing shape/panel/chip. Measure text before rendering where possible; otherwise enlarge the backing shape, shorten/wrap text, or reduce font size. Do not post images where text crosses outside the intended background shape.
