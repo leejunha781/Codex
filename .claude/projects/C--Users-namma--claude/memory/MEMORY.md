@@ -15,7 +15,7 @@
 
 **Git auto-init** — `C:\Users\namma\.claude\auto_git_projects_entry.ps1`
 - Auto-init is for new project folders under `C:\Users\namma\.claude\projects\C--Users-namma--claude`; as of 2026-06-21, `itt_work` and `plm_slide_work` are plain work folders with no local `.git` directory.
-- `C:\Users\namma\.claude\projects\C--Users-namma--claude` 아래 새 폴더 생성 시 자동 `git init` — 레지스트리 Run 키로 로그인 시 백그라운드 감시 스크립트 자동 시작
+- `C:\Users\namma\.claude\projects\C--Users-namma--claude` 아래 새 폴더 생성 시 자동 `git init` helper. 2026-06-24 policy update: Windows login auto-start was disabled with the sync watcher; do not restore the `ClaudeProjectGitInitWatcher` Run key unless the user explicitly asks.
 - 로그: `C:\Users\namma\.claude\cache\git-auto-init\watcher.log`
 - 원격 origin은 미설정 (로컬 추적만)
 
