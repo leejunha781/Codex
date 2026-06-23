@@ -33,3 +33,4 @@
 **LinkedIn image QA** — 2026-06-24
 - LinkedIn reference images must verify that every visible text label stays inside its backing shape/panel/chip. Measure text before rendering where possible; otherwise enlarge the backing shape, shorten/wrap text, or reduce font size. Do not post images where text crosses outside the intended background shape.
 - Upload LinkedIn images directly from the run's workspace outputs folder (`C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\outputs`). Do not create separate direct-upload copies in generated-images folders unless the user explicitly asks.
+- Avoid connector/leader lines unless the line clearly terminates on the exact object or feature named by the label. If target mapping is ambiguous, omit the line and place the label near the visual element instead.
