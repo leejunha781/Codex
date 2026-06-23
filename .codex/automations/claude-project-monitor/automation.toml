@@ -8,6 +8,6 @@ rrule = "RRULE:FREQ=WEEKLY;BYHOUR=21;BYMINUTE=37;BYDAY=SU,MO,TU,WE,TH,FR,SA"
 model = "gpt-5.5"
 reasoning_effort = "medium"
 execution_environment = "local"
-cwds = ["C:\\Users\\namma\\.claude"]
+cwds = ["~"]
 created_at = 1780719251018
-updated_at = 1782218263474
+updated_at = 1782226917406
