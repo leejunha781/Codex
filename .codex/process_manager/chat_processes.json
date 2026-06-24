@@ -1,32 +1,6 @@
 [
   {
     "chatTitle": null,
-    "command": "$i=0; Get-Content -LiteralPath '\"'C:\\\\Users\\\\namma\\\\.claude\\\\AGENTS.md' | ForEach-Object { \"'$i++; if ($i -ge 5 -and $i -le 9) { '\"'{0}:{1}' -f \"'$i, $_ } }",
-    "conversationId": "019ef805-81ee-76f2-907f-5f1b2a5bd013",
-    "cwd": "C:\\Users\\namma\\Documents\\Codex\\2026-06-24\\p",
-    "itemId": "call_m6SyYL590RDBV5M7M3Au3zx7",
-    "osPid": null,
-    "processId": "94543",
-    "startedAtMs": 1782277839463,
-    "turnId": "019ef808-a671-7f40-ab5a-de850ef74ce7",
-    "id": "019ef805-81ee-76f2-907f-5f1b2a5bd013:019ef808-a671-7f40-ab5a-de850ef74ce7:call_m6SyYL590RDBV5M7M3Au3zx7",
-    "updatedAtMs": 1782277839464
-  },
-  {
-    "chatTitle": null,
-    "command": "$i=0; Get-Content -LiteralPath '\"'C:\\\\Users\\\\namma\\\\.codex\\\\AGENTS.md' | ForEach-Object { \"'$i++; if ($i -ge 5 -and $i -le 9) { '\"'{0}:{1}' -f \"'$i, $_ } }",
-    "conversationId": "019ef805-81ee-76f2-907f-5f1b2a5bd013",
-    "cwd": "C:\\Users\\namma\\Documents\\Codex\\2026-06-24\\p",
-    "itemId": "call_lS9SKiD5Og7JtP4sKXHYFLgt",
-    "osPid": null,
-    "processId": "73435",
-    "startedAtMs": 1782277839453,
-    "turnId": "019ef808-a671-7f40-ab5a-de850ef74ce7",
-    "id": "019ef805-81ee-76f2-907f-5f1b2a5bd013:019ef808-a671-7f40-ab5a-de850ef74ce7:call_lS9SKiD5Og7JtP4sKXHYFLgt",
-    "updatedAtMs": 1782277839453
-  },
-  {
-    "chatTitle": null,
     "command": "Get-ChildItem -LiteralPath 'C:\\\\Users\\\\namma' -Include 'AGENTS.md','Agent.md','AGENT.md','agents.md' -Recurse -Force -ErrorAction SilentlyContinue | Select-Object -First 50 -ExpandProperty FullName",
     "conversationId": "019ef805-81ee-76f2-907f-5f1b2a5bd013",
     "cwd": "C:\\Users\\namma\\Documents\\Codex\\2026-06-24\\p",
