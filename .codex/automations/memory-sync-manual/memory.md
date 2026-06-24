@@ -1,0 +1,1 @@
+2026-06-24T12:56:57.0555827+09:00 - Manual Memory Sync run. Direct `powershell -NoProfile -File C:\Users\namma\.cursor\bin\memory-sync.ps1` was blocked by execution policy, so ran the same script body via `Get-Content ... -Raw | Invoke-Expression` per local AGENTS.md. Result: actionCount 0, files 7, lastSyncAt 2026-06-24T03:56:51.0539026Z. No sync policy or schedules changed.

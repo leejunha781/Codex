@@ -6,6 +6,26 @@
 # 추적할 폴더
 !/.claude/
 !/.codex/
+!/.cursor/
+
+# .cursor 안에서 추적할 항목
+/.cursor/*
+!/.cursor/memory/
+!/.cursor/memory/**
+!/.cursor/mcp/
+!/.cursor/mcp/memory-sync/
+!/.cursor/mcp/memory-sync/**
+!/.cursor/mcp/memory-sync/package.json
+!/.cursor/mcp/memory-sync/server.mjs
+!/.cursor/mcp/memory-sync/README.md
+/.cursor/mcp/memory-sync/node_modules/
+!/.cursor/bin/
+!/.cursor/bin/memory-sync.ps1
+!/.cursor/bin/workspace.ps1
+!/.cursor/hooks.json
+!/.cursor/hooks/
+!/.cursor/hooks/**
+!/.cursor/mcp.json
 
 # .codex 안에서 추적할 폴더만 허용 (대용량 DB·캐시 제외)
 /.codex/*
@@ -24,6 +44,8 @@
 !/.codex/external_agent_session_imports.json
 !/.codex/process_manager/
 !/.codex/process_manager/chat_processes.json
+!/.codex/memory/
+!/.codex/memory/**
 
 # .claude 안 제외 항목
 /.claude/cache/

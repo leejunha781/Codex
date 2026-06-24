@@ -3,11 +3,11 @@ id = "manual-claude-codex-sync"
 kind = "cron"
 name = "Manual Claude Codex Sync"
 prompt = "Run a one-shot Claude/Codex Git sync for this Windows machine. Use PowerShell 5.1 from C:\\Users\\namma\\.claude and execute: Get-Content 'C:\\Users\\namma\\.claude\\start_claude_codex_sync.ps1' -Raw | Invoke-Expression. Then verify C:\\Users\\namma\\.claude\\cache\\git-autosync\\autosync.log shows the sync process started, report the latest relevant log lines, and report git -C C:\\Users\\namma status --short --branch. Do not create a new schedule or change the sync policy."
-status = "PAUSED"
-rrule = "FREQ=WEEKLY;BYDAY=MO;BYHOUR=9;BYMINUTE=0;BYSECOND=0"
+status = "ACTIVE"
+rrule = "RRULE:FREQ=WEEKLY;BYHOUR=9;BYMINUTE=0;BYDAY=MO"
 model = "gpt-5.5"
 reasoning_effort = "low"
 execution_environment = "local"
 cwds = ["C:\\Users\\namma\\.claude"]
 created_at = 1782242288611
-updated_at = 1782242313123
+updated_at = 1782273368105

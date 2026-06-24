@@ -1,0 +1,13 @@
+version = 1
+id = "memory-sync-manual"
+kind = "cron"
+name = "Manual Memory Sync"
+prompt = "Run a one-shot cross-platform memory sync on this Windows machine.\n\n1. Execute in PowerShell 5.1:\n   powershell -NoProfile -File C:\\Users\\namma\\.cursor\\bin\\memory-sync.ps1\n2. Read C:\\Users\\namma\\.cursor\\memory\\sync-state.json if present.\n3. Report: action count, synced filenames, platform paths, and lastSyncAt.\n4. Do not change sync policy or schedules."
+status = "ACTIVE"
+rrule = "FREQ=WEEKLY;BYDAY=MO;BYHOUR=9;BYMINUTE=0;BYSECOND=0"
+model = "gpt-5.5"
+reasoning_effort = "low"
+execution_environment = "local"
+cwds = ["C:\\Users\\namma\\.cursor"]
+created_at = 1782271200000
+updated_at = 1782271200000
