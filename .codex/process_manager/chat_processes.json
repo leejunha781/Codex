@@ -1,19 +1,6 @@
 [
   {
     "chatTitle": null,
-    "command": "$i=0; Get-Content -LiteralPath '\"'C:\\\\Users\\\\namma\\\\.codex\\\\memories\\\\extensions\\\\ad_hoc\\\\notes\\\\2026-06-24T14-12-40-nodejs-available.md' | ForEach-Object { \"'$i++; '\"'{0}:{1}' -f \"'$i, $_ }",
-    "conversationId": "019ef805-81ee-76f2-907f-5f1b2a5bd013",
-    "cwd": "C:\\Users\\namma\\Documents\\Codex\\2026-06-24\\p",
-    "itemId": "call_fDonTKlLptMxDXxPADVwSrzk",
-    "osPid": null,
-    "processId": "93866",
-    "startedAtMs": 1782277982078,
-    "turnId": "019ef80b-5068-76f2-acc8-0319eaa71657",
-    "id": "019ef805-81ee-76f2-907f-5f1b2a5bd013:019ef80b-5068-76f2-acc8-0319eaa71657:call_fDonTKlLptMxDXxPADVwSrzk",
-    "updatedAtMs": 1782277982073
-  },
-  {
-    "chatTitle": null,
     "command": "Stop-Process -Id 34964,11952 -Force -ErrorAction SilentlyContinue",
     "conversationId": "019ef5e3-90ec-7611-b918-f7c546b9a04c",
     "cwd": "C:\\Users\\namma\\Documents\\Codex\\2026-06-24\\https-developers-openai-com-codex",
