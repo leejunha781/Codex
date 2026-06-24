@@ -1,19 +1,6 @@
 [
   {
     "chatTitle": null,
-    "command": "Get-ChildItem -LiteralPath 'C:\\\\Users\\\\namma' -Include 'AGENTS.md','Agent.md','AGENT.md','agents.md' -Recurse -Force -ErrorAction SilentlyContinue | Select-Object -First 50 -ExpandProperty FullName",
-    "conversationId": "019ef805-81ee-76f2-907f-5f1b2a5bd013",
-    "cwd": "C:\\Users\\namma\\Documents\\Codex\\2026-06-24\\p",
-    "itemId": "call_rXHd1gZqrRPpY2NL4XTtx4bY",
-    "osPid": null,
-    "processId": "83128",
-    "startedAtMs": 1782277793423,
-    "turnId": "019ef808-a671-7f40-ab5a-de850ef74ce7",
-    "id": "019ef805-81ee-76f2-907f-5f1b2a5bd013:019ef808-a671-7f40-ab5a-de850ef74ce7:call_rXHd1gZqrRPpY2NL4XTtx4bY",
-    "updatedAtMs": 1782277793423
-  },
-  {
-    "chatTitle": null,
     "command": "Stop-Process -Id 34964,11952 -Force -ErrorAction SilentlyContinue",
     "conversationId": "019ef5e3-90ec-7611-b918-f7c546b9a04c",
     "cwd": "C:\\Users\\namma\\Documents\\Codex\\2026-06-24\\https-developers-openai-com-codex",
