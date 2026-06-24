@@ -1,16 +1,29 @@
 [
   {
     "chatTitle": null,
-    "command": "Get-ChildItem -Force -Recurse -Depth 2 | Select-Object FullName,Mode,Length,LastWriteTime | Format-Table -AutoSize",
+    "command": "Get-Content knowledge_base\\\\marine_plm_digital_twin_communications_master_note.md -TotalCount 80",
     "conversationId": "019ef7ca-e2f1-7e30-9d51-1d971f7c5d2d",
     "cwd": "C:\\Users\\namma\\Documents\\Daily Linkedin Posting",
-    "itemId": "call_vi7205lEzMvQ1wgUhx8XglH0",
+    "itemId": "call_Y7DxkjM28pj7GLpmKi1lHsih",
     "osPid": null,
-    "processId": "79429",
-    "startedAtMs": 1782273835371,
+    "processId": "13485",
+    "startedAtMs": 1782273947160,
     "turnId": "019ef7cb-d021-7331-9e06-1c01577f0135",
-    "id": "019ef7ca-e2f1-7e30-9d51-1d971f7c5d2d:019ef7cb-d021-7331-9e06-1c01577f0135:call_vi7205lEzMvQ1wgUhx8XglH0",
-    "updatedAtMs": 1782273835371
+    "id": "019ef7ca-e2f1-7e30-9d51-1d971f7c5d2d:019ef7cb-d021-7331-9e06-1c01577f0135:call_Y7DxkjM28pj7GLpmKi1lHsih",
+    "updatedAtMs": 1782273947161
+  },
+  {
+    "chatTitle": null,
+    "command": "git status --short",
+    "conversationId": "019ef7ca-e2f1-7e30-9d51-1d971f7c5d2d",
+    "cwd": "C:\\Users\\namma\\Documents\\Daily Linkedin Posting",
+    "itemId": "call_6SrYdcJ8EJboChgGpUnUqWQi",
+    "osPid": null,
+    "processId": "12614",
+    "startedAtMs": 1782273947160,
+    "turnId": "019ef7cb-d021-7331-9e06-1c01577f0135",
+    "id": "019ef7ca-e2f1-7e30-9d51-1d971f7c5d2d:019ef7cb-d021-7331-9e06-1c01577f0135:call_6SrYdcJ8EJboChgGpUnUqWQi",
+    "updatedAtMs": 1782273947161
   },
   {
     "chatTitle": null,
