@@ -1,6 +1,19 @@
 [
   {
     "chatTitle": null,
+    "command": "if (Test-Path C:\\\\Users\\\\namma\\\\.codex\\\\memories\\\\MEMORY.md) { Select-String -Path C:\\\\Users\\\\namma\\\\.codex\\\\memories\\\\MEMORY.md -Pattern 'Linkedin|Marine|PLM|AVEVA|shipbuilding|satellite|control valve|HART' -CaseSensitive:\"'$false | Select-Object -First 40 | Format-Table -AutoSize } else { '\"'NO_GLOBAL_MEMORY' }",
+    "conversationId": "019ef7ca-e2f1-7e30-9d51-1d971f7c5d2d",
+    "cwd": "C:\\Users\\namma\\Documents\\Daily Linkedin Posting",
+    "itemId": "call_Si8CXOehPF3eMOV9XWHcvpBB",
+    "osPid": null,
+    "processId": "52724",
+    "startedAtMs": 1782273801023,
+    "turnId": "019ef7cb-d021-7331-9e06-1c01577f0135",
+    "id": "019ef7ca-e2f1-7e30-9d51-1d971f7c5d2d:019ef7cb-d021-7331-9e06-1c01577f0135:call_Si8CXOehPF3eMOV9XWHcvpBB",
+    "updatedAtMs": 1782273801023
+  },
+  {
+    "chatTitle": null,
     "command": "Stop-Process -Id 34964,11952 -Force -ErrorAction SilentlyContinue",
     "conversationId": "019ef5e3-90ec-7611-b918-f7c546b9a04c",
     "cwd": "C:\\Users\\namma\\Documents\\Codex\\2026-06-24\\https-developers-openai-com-codex",
