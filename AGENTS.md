@@ -13,11 +13,46 @@ Both are caused by the same issue: Cursor cannot validate HTTPS to Cursor APIs (
 
 ### Windows fix (Node v24.17.0) — run all steps
 
-**1. Run the full fix script (PowerShell as your user):**
+**Important:** `scripts\...` paths only work inside the cloned repository folder.  
+Running from `C:\Windows\System32` will fail with *"does not exist"*.
+
+#### Option A — Standalone scripts (no repo clone; recommended)
+
+1. Save these two files to your **Desktop** from the repo `scripts/` folder:
+   - `cursor-diagnose-standalone.ps1`
+   - `cursor-fix-standalone.ps1`
+
+2. Run in PowerShell:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts/fix-node-tls-windows.ps1
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\Desktop\cursor-fix-standalone.ps1"
 ```
+
+3. Diagnose only:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\Desktop\cursor-diagnose-standalone.ps1"
+```
+
+#### Option B — From cloned repo folder
+
+```powershell
+cd C:\path\to\your\codex-repo
+powershell -ExecutionPolicy Bypass -File .\scripts\fix-node-tls-windows.ps1
+```
+
+Or double-click `scripts\run-fix.bat` / `scripts\run-diagnose.bat` in File Explorer.
+
+#### Option C — Download from GitHub (one command)
+
+```powershell
+$dir = "$env:USERPROFILE\Desktop\cursor-tls-scripts"
+New-Item -ItemType Directory -Force -Path $dir | Out-Null
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/leejunha781/Codex/cursor/fix-node-tls-certificate-3c96/scripts/cursor-fix-standalone.ps1" -OutFile "$dir\cursor-fix.ps1"
+powershell -ExecutionPolicy Bypass -File "$dir\cursor-fix.ps1"
+```
+
+**1. Run the full fix script (pick one option above).**
 
 This script:
 
@@ -44,13 +79,13 @@ This script:
 
 **4. Retry** on Profile and Automations pages.
 
-**4. If it still fails, run diagnostics and share the output:**
+**5. If it still fails, run diagnostics (use full path, not `scripts\...` from System32):**
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts/diagnose-node-tls-windows.ps1
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\Desktop\cursor-diagnose-standalone.ps1"
 ```
 
-**5. Alternative launch** (forces env vars for Cursor's process):
+**6. Alternative launch** (forces env vars for Cursor's process; run from repo `scripts` folder):
 
 ```bat
 scripts\start-cursor-with-tls.bat
