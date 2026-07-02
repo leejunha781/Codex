@@ -14,23 +14,26 @@ Node.js is using only its bundled CA store and does not trust a certificate that
 
 #### Fix in this repository (cloud agents)
 
-This repo includes `.cursor/environment.json`, which sets:
-
-- `NODE_USE_SYSTEM_CA=1` — trust the OS certificate store
-- `NODE_OPTIONS=--use-openssl-ca` — fallback on Node versions without `--use-system-ca`
-
-The `install` script (`.cursor/verify-node-tls.sh`) checks HTTPS to `registry.npmjs.org` and `api.github.com` before the agent runs.
+This repo includes `.cursor/environment.json`, which sets `NODE_USE_SYSTEM_CA=1` so cloud agents trust the OS certificate store. The `install` script (`.cursor/verify-node-tls.sh`) picks `--use-system-ca` on Node 22.15+ / 23.8+ / 24+ and falls back to `--use-openssl-ca` on older runtimes.
 
 #### Fix on your local machine (Cursor desktop / Profile page)
 
-Set the same variables in your **user** environment, then restart Cursor:
+**Windows + Node.js v24.17.0 (recommended):**
 
-**Windows (PowerShell):**
+Run the helper script from PowerShell, then restart Cursor:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/fix-node-tls-windows.ps1
+```
+
+Or set variables manually:
 
 ```powershell
 [System.Environment]::SetEnvironmentVariable("NODE_USE_SYSTEM_CA", "1", "User")
-[System.Environment]::SetEnvironmentVariable("NODE_OPTIONS", "--use-openssl-ca", "User")
+[System.Environment]::SetEnvironmentVariable("NODE_OPTIONS", "--use-system-ca", "User")
 ```
+
+Node v24.17.0 supports `--use-system-ca` natively (the flag shown in the error message).
 
 **macOS / Linux:**
 

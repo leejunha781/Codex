@@ -2,7 +2,19 @@
 set -euo pipefail
 
 export NODE_USE_SYSTEM_CA="${NODE_USE_SYSTEM_CA:-1}"
-export NODE_OPTIONS="${NODE_OPTIONS:---use-openssl-ca}"
+
+if [[ -z "${NODE_OPTIONS:-}" ]]; then
+  major="$(node -p "process.versions.node.split('.')[0]")"
+  minor="$(node -p "process.versions.node.split('.')[1]")"
+
+  if [[ "$major" -ge 24 ]] || [[ "$major" -eq 23 && "$minor" -ge 8 ]] || [[ "$major" -eq 22 && "$minor" -ge 15 ]]; then
+    export NODE_OPTIONS="--use-system-ca"
+  else
+    export NODE_OPTIONS="--use-openssl-ca"
+  fi
+fi
+
+echo "Node $(node --version) | NODE_USE_SYSTEM_CA=${NODE_USE_SYSTEM_CA} | NODE_OPTIONS=${NODE_OPTIONS}"
 
 node <<'NODE'
 const targets = [

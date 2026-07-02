@@ -1,7 +1,6 @@
 {
   "install": "bash .cursor/verify-node-tls.sh",
   "env": {
-    "NODE_USE_SYSTEM_CA": "1",
-    "NODE_OPTIONS": "--use-openssl-ca"
+    "NODE_USE_SYSTEM_CA": "1"
   }
 }
