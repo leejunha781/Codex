@@ -24,6 +24,7 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 |------|------------|-------|--------------------------|--------|
 | 2026-06-24 | satellite-enabled-marine-digital-twin | operational discipline for data priority, PLM context, degraded-network sync | degraded-network sync | prepared |
 | 2026-06-24 | satellite-enabled-marine-operations-data-loop | satellite-enabled marine operations data loop | operations data loop | blocked (LinkedIn focus) |
+| 2026-07-02 | ai-era-marine-plm-evidence-ownership | AI-era evidence ownership and release governance | BOM maturity + interface handoff evidence | prepared (quality not superior) |
 
 ---
 
@@ -40,3 +41,9 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Created post markdown and final image under `C:\Users\namma\Documents\Codex\2026-06-24\satellite-enabled-marine-operations-data-loop`.
 - Image generated as realistic maritime operations foundation with deterministic PowerShell text overlay; QA checked visually for text fit.
 - LinkedIn Windows app launch/focus failed during UI automation: app stayed obscured/blank behind Cursor/Codex surfaces, so composer was not prepared and no post was submitted.
+
+## 2026-07-02 03:00 UTC
+- Topic: ai-era-marine-plm-evidence-ownership.
+- Created sample post and image under `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-02/ai-era-marine-plm-evidence-ownership`.
+- QA comparison result: NOT VERIFIED for superior quality versus baseline; new sample is cleaner but less visually rich.
+- LinkedIn status: blocked in cloud test (no Windows app path).
