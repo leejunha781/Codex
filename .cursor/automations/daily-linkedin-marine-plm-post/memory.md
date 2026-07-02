@@ -26,6 +26,7 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 | 2026-06-24 | satellite-enabled-marine-operations-data-loop | satellite-enabled marine operations data loop | operations data loop | blocked (LinkedIn focus) |
 | 2026-07-02 | ai-era-marine-plm-evidence-ownership | AI-era evidence ownership and release governance | BOM maturity + interface handoff evidence | prepared (quality not superior) |
 | 2026-07-02 | ai-era-marine-plm-evidence-ownership-v2 | premium infographic v2 with unified thumbnail/icon language and stronger hierarchy | BOM maturity + interface handoff evidence | prepared (quality verified pass) |
+| 2026-07-02 | ai-era-marine-plm-evidence-ownership-v3 | diverse real-photo cuts per module (8 unique crops) | BOM maturity + interface handoff evidence | prepared (v3 quality verified pass) |
 
 ---
 
@@ -54,3 +55,9 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Created refined v2 image with higher visual richness, unified thumbnail/icon language, and stronger card/typography hierarchy.
 - QA comparison result: VERIFIED PASS on requested quality axes.
 - LinkedIn status: ready for final posting (cloud run; no Windows app action executed).
+
+## 2026-07-02 03:12 UTC
+- Topic: ai-era-marine-plm-evidence-ownership-v3.
+- Applied 8 unique real-photo crops (YARD, DASH, IFACE, REL, BOM, HANDOVER, CONTROL, VESSEL) with unified frame/icon system.
+- QA comparison vs v2: VERIFIED PASS on photo diversity and premium finish.
+- LinkedIn status: ready for final posting.
