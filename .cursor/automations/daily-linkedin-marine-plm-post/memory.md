@@ -76,3 +76,10 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Style: clean corporate maritime infographic with 7-step evidence pipeline, central vessel/satellite scene, Python automation sidebar, 3 summary cards, footer strip.
 - Image QA: text-fit pass | leader-lines pass (primary link + fallback path terminate correctly) | overlap QA pass | professional-grade pass.
 - LinkedIn status: ready for final posting.
+
+## 2026-07-02 03:43 UTC
+- Topic: satcom-fallback-evidence-management (v2 refinement).
+- Regenerated to closely match user reference: flat monochrome-blue vector icons, stylized (non-photoreal) vessel/satellite scene, exact 7-step pipeline content and icons, Operational Events legend, Python automation sidebar, 3 summary cards, footer strip.
+- Image QA: text-fit pass | leader-lines pass (primary cyan link + amber fallback path terminate on ship/satellite/shore gateway) | overlap pass | icon-consistency pass | professional-grade pass.
+- Replaced prior sample image at same path.
+- LinkedIn status: ready for final posting.
