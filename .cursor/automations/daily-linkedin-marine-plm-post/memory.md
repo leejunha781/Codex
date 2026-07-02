@@ -25,6 +25,7 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 | 2026-06-24 | satellite-enabled-marine-digital-twin | operational discipline for data priority, PLM context, degraded-network sync | degraded-network sync | prepared |
 | 2026-06-24 | satellite-enabled-marine-operations-data-loop | satellite-enabled marine operations data loop | operations data loop | blocked (LinkedIn focus) |
 | 2026-07-02 | ai-era-marine-plm-evidence-ownership | AI-era evidence ownership and release governance | BOM maturity + interface handoff evidence | prepared (quality not superior) |
+| 2026-07-02 | ai-era-marine-plm-evidence-ownership-v2 | premium infographic v2 with unified thumbnail/icon language and stronger hierarchy | BOM maturity + interface handoff evidence | prepared (quality verified pass) |
 
 ---
 
@@ -47,3 +48,9 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Created sample post and image under `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-02/ai-era-marine-plm-evidence-ownership`.
 - QA comparison result: NOT VERIFIED for superior quality versus baseline; new sample is cleaner but less visually rich.
 - LinkedIn status: blocked in cloud test (no Windows app path).
+
+## 2026-07-02 03:06 UTC
+- Topic: ai-era-marine-plm-evidence-ownership-v2.
+- Created refined v2 image with higher visual richness, unified thumbnail/icon language, and stronger card/typography hierarchy.
+- QA comparison result: VERIFIED PASS on requested quality axes.
+- LinkedIn status: ready for final posting (cloud run; no Windows app action executed).
