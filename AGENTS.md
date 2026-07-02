@@ -2,15 +2,14 @@
 
 ## Cursor Cloud specific instructions
 
-### Node.js TLS certificate error (`unable to verify the first certificate`)
+### Node.js TLS / Cursor cloud UI errors
 
-If the Cloud Agents **Profile** page or `npm install` / `fetch` fails with:
+Symptoms:
 
-```text
-unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca
-```
+- **Profile**: `unable to verify the first certificate`
+- **Automations**: `Unable to load automations`
 
-This usually means **SSL inspection** (Zscaler, Netskope, corporate proxy, Prompt Security, etc.) is re-signing HTTPS traffic. Setting only `NODE_USE_SYSTEM_CA` is often **not enough for Cursor** — Cursor also needs its own certificate settings.
+Both are caused by the same issue: Cursor cannot validate HTTPS to Cursor APIs (`api2.cursor.sh`, `api.cursor.com`) when SSL inspection is active.
 
 ### Windows fix (Node v24.17.0) — run all steps
 
@@ -24,7 +23,7 @@ This script:
 
 - Exports Windows Root/CA certificates to `%USERPROFILE%\.cursor\certs\windows-ca-bundle.pem`
 - Sets `NODE_USE_SYSTEM_CA`, `NODE_OPTIONS=--use-system-ca`, `NODE_EXTRA_CA_CERTS`, `SSL_CERT_FILE`
-- Patches `%APPDATA%\Cursor\User\settings.json`:
+- Patches **every** Cursor `settings.json` (user settings + profile-specific files)
 
 ```json
 {
@@ -34,9 +33,16 @@ This script:
 }
 ```
 
-**2. Fully quit Cursor** (tray icon included), then reopen.
+**2. In Cursor UI (required for Automations):**
 
-**3. Profile page → Retry**
+- Settings → **Network** → **HTTP Compatibility Mode** → `HTTP/1.1`
+- Search `systemCertificates` → enable **Http: System Certificates** and **Experimental: System Certificates V2**
+- If you use **Profiles**, open **Profiles → settings.json** and confirm the same 3 keys exist
+- Run **Network Diagnostic** in Settings → Network
+
+**3. Fully quit Cursor** (tray icon included), then reopen.
+
+**4. Retry** on Profile and Automations pages.
 
 **4. If it still fails, run diagnostics and share the output:**
 
@@ -58,10 +64,11 @@ Ask your IT team for the **corporate root CA** `.pem` / `.crt` file, then:
 [System.Environment]::SetEnvironmentVariable("NODE_EXTRA_CA_CERTS", "C:\path\to\corp-root.pem", "User")
 ```
 
-Also ask IT to **whitelist** these domains from SSL inspection (Cursor docs):
+Also ask IT to **whitelist** these domains from SSL inspection:
 
 - `*.cursor.sh`
 - `*.cursorapi.com`
+- `api.cursor.com`
 - `cursor-cdn.com`
 
 ### Cloud agents (this repo)

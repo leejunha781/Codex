@@ -17,4 +17,5 @@ if not exist "%CURSOR_EXE%" (
 )
 
 echo Starting Cursor with TLS env vars...
+echo After launch, retry Profile and Automations pages.
 start "" "%CURSOR_EXE%"
