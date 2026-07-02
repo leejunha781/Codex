@@ -28,6 +28,7 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 | 2026-07-02 | ai-era-marine-plm-evidence-ownership-v2 | premium infographic v2 with unified thumbnail/icon language and stronger hierarchy | BOM maturity + interface handoff evidence | prepared (quality verified pass) |
 | 2026-07-02 | ai-era-marine-plm-evidence-ownership-v3 | diverse real-photo cuts per module (8 unique crops) | BOM maturity + interface handoff evidence | prepared (v3 quality verified pass) |
 | 2026-07-02 | marine-plm-interface-readiness-governance | interface readiness governance, 8 unique crops (fixed rule applied) | interface handoff + BOM maturity | prepared (8/8 unique, QA pass) |
+| 2026-07-02 | satcom-fallback-evidence-management | SATCOM fallback managed as engineering evidence, not just network event | RF/SATCOM validation + shore-gateway logs + acceptance thresholds | prepared (pro-grade image, QA pass) |
 
 ---
 
@@ -67,4 +68,11 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Topic: marine-plm-interface-readiness-governance.
 - First sample generated under the fixed 8-crop photo diversity rule (YARD,DASH,IFACE,REL,BOM,HANDOVER,CONTROL,VESSEL).
 - Image QA: text-fit pass | leader-lines pass | overlap QA pass (title moved to 2 lines to clear target box) | photo-diversity 8/8 unique pass.
+- LinkedIn status: ready for final posting.
+
+## 2026-07-02 03:33 UTC
+- Topic: satcom-fallback-evidence-management.
+- Regenerated with the image generation tool (not Pillow hand-draw) to reach professional reference-grade quality per user feedback.
+- Style: clean corporate maritime infographic with 7-step evidence pipeline, central vessel/satellite scene, Python automation sidebar, 3 summary cards, footer strip.
+- Image QA: text-fit pass | leader-lines pass (primary link + fallback path terminate correctly) | overlap QA pass | professional-grade pass.
 - LinkedIn status: ready for final posting.
