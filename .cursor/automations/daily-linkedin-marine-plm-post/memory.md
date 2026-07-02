@@ -22,12 +22,25 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 
 | Date | topic-slug | angle | marine execution context | status |
 |------|------------|-------|--------------------------|--------|
+| 2026-07-02 | ai-era-marine-plm-adoption-gates | AI-assisted PLM validation scripts require accountable adoption gates and engineering ownership | BOM maturity, CAD/ERP/MES/document-control interfaces, supplier package readiness, class/test evidence, shipyard adoption gates | prepared artifacts; LinkedIn blocked (Windows app unavailable) |
 | 2026-06-24 | satellite-enabled-marine-digital-twin | operational discipline for data priority, PLM context, degraded-network sync | degraded-network sync | prepared |
 | 2026-06-24 | satellite-enabled-marine-operations-data-loop | satellite-enabled marine operations data loop | operations data loop | blocked (LinkedIn focus) |
 
 ---
 
 ## Prior run history
+
+## 2026-07-02 02:42 UTC
+- Topic: ai-era-marine-plm-adoption-gates
+- Angle: AI can generate Marine PLM validation scripts quickly, but developers and solution leaders must own proof gates, data ownership, traceability, and lifecycle support.
+- Marine execution context: BOM maturity; design-change control; supplier package readiness; CAD/ERP/MES/document-control interfaces; class/test records; shipyard adoption gates.
+- Repo post path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-02/ai-era-marine-plm-adoption-gates/linkedin-post.md`
+- Repo image path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-02/ai-era-marine-plm-adoption-gates/ai-era-marine-plm-adoption-gates-infographic.png`
+- Windows post path: `C:\Users\namma\Documents\Codex\2026-07-02\ai-era-marine-plm-adoption-gates\linkedin-post.md` (not mirrored; Windows path unavailable from Linux cloud environment)
+- Windows image path: `C:\Users\namma\Documents\Codex\2026-07-02\ai-era-marine-plm-adoption-gates\ai-era-marine-plm-adoption-gates-infographic.png` (not mirrored; Windows path unavailable from Linux cloud environment)
+- Image QA: text-fit pass; leader-lines pass; overlap QA pass.
+- LinkedIn status: blocked.
+- Blocker: LinkedIn Windows app and `C:\Users\namma\Documents\Codex` path were unavailable in the Linux cloud environment; ready for final posting.
 
 ## 2026-06-24
 - Topic: Satellite-enabled marine digital twin, angle: operational discipline for data priority, PLM context, degraded-network sync.
