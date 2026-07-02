@@ -15,6 +15,8 @@ $requiredPromptSections = @(
     "Post depth rule",
     "Professional mini-image rule",
     "Photo diversity rule",
+    "Image generation rule",
+    "Reference-grade flat vector style rule",
     "YARD",
     "VESSEL",
     "Image overlap QA rule",
