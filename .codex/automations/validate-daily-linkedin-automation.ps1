@@ -14,6 +14,9 @@ $requiredPromptSections = @(
     "Lead Developer Career Guide",
     "Post depth rule",
     "Professional mini-image rule",
+    "Photo diversity rule",
+    "YARD",
+    "VESSEL",
     "Image overlap QA rule",
     "ready for final posting",
     "Vibe Coding"

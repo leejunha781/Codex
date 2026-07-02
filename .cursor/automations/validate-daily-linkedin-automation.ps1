@@ -16,6 +16,9 @@ $requiredPromptSections = @(
     "Lead Developer Career Guide",
     "Post depth rule",
     "Professional mini-image rule",
+    "Photo diversity rule",
+    "YARD",
+    "VESSEL",
     "Image overlap QA rule",
     "ready for final posting",
     "Vibe Coding"
@@ -50,6 +53,13 @@ if ($failures.Count -eq 0) {
 $memory = if (Test-Path $MemoryPath) { Get-Content $MemoryPath -Raw } else { "" }
 if ($memory -notmatch "Topic rotation log") {
     $failures += "memory.md missing Topic rotation log section"
+}
+
+if ($failures.Count -eq 0 -and (Test-Path $PromptPath)) {
+    $prompt = Get-Content $PromptPath -Raw
+    if ($prompt -notmatch [regex]::Escape("Photo diversity rule")) {
+        $failures += "prompt.md missing Photo diversity rule section"
+    }
 }
 
 if ($failures.Count -gt 0) {

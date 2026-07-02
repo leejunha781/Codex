@@ -11,7 +11,7 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Marine execution context: <BOM maturity | design-change control | supplier package readiness | class/test records | handover evidence | CAD/ERP/MES interfaces | control-valve commissioning | RF/SATCOM validation | shipyard adoption gates | other>
 - Post path: C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\linkedin-post.md
 - Image path: C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\<topic-slug>-infographic.png
-- Image QA: text-fit pass/fail | leader-lines pass/fail | overlap QA pass/fail
+- Image QA: text-fit pass/fail | leader-lines pass/fail | overlap QA pass/fail | photo-diversity 8/8 unique (YARD,DASH,IFACE,REL,BOM,HANDOVER,CONTROL,VESSEL) pass/fail
 - LinkedIn status: composer prepared | posted | blocked
 - Blocker (if any): <concise reason>
 ```
