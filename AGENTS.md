@@ -10,52 +10,65 @@ If the Cloud Agents **Profile** page or `npm install` / `fetch` fails with:
 unable to verify the first certificate; if the root CA is installed locally, try running Node.js with --use-system-ca
 ```
 
-Node.js is using only its bundled CA store and does not trust a certificate that is already installed on the OS (common on corporate networks with SSL inspection).
+This usually means **SSL inspection** (Zscaler, Netskope, corporate proxy, Prompt Security, etc.) is re-signing HTTPS traffic. Setting only `NODE_USE_SYSTEM_CA` is often **not enough for Cursor** — Cursor also needs its own certificate settings.
 
-#### Fix in this repository (cloud agents)
+### Windows fix (Node v24.17.0) — run all steps
 
-This repo includes `.cursor/environment.json`, which sets `NODE_USE_SYSTEM_CA=1` so cloud agents trust the OS certificate store. The `install` script (`.cursor/verify-node-tls.sh`) picks `--use-system-ca` on Node 22.15+ / 23.8+ / 24+ and falls back to `--use-openssl-ca` on older runtimes.
-
-#### Fix on your local machine (Cursor desktop / Profile page)
-
-**Windows + Node.js v24.17.0 (recommended):**
-
-Run the helper script from PowerShell, then restart Cursor:
+**1. Run the full fix script (PowerShell as your user):**
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts/fix-node-tls-windows.ps1
 ```
 
-Or set variables manually:
+This script:
+
+- Exports Windows Root/CA certificates to `%USERPROFILE%\.cursor\certs\windows-ca-bundle.pem`
+- Sets `NODE_USE_SYSTEM_CA`, `NODE_OPTIONS=--use-system-ca`, `NODE_EXTRA_CA_CERTS`, `SSL_CERT_FILE`
+- Patches `%APPDATA%\Cursor\User\settings.json`:
+
+```json
+{
+  "http.systemCertificates": true,
+  "http.experimental.systemCertificatesv2": true,
+  "cursor.general.disableHttp2": true
+}
+```
+
+**2. Fully quit Cursor** (tray icon included), then reopen.
+
+**3. Profile page → Retry**
+
+**4. If it still fails, run diagnostics and share the output:**
 
 ```powershell
-[System.Environment]::SetEnvironmentVariable("NODE_USE_SYSTEM_CA", "1", "User")
-[System.Environment]::SetEnvironmentVariable("NODE_OPTIONS", "--use-system-ca", "User")
+powershell -ExecutionPolicy Bypass -File scripts/diagnose-node-tls-windows.ps1
 ```
 
-Node v24.17.0 supports `--use-system-ca` natively (the flag shown in the error message).
+**5. Alternative launch** (forces env vars for Cursor's process):
 
-**macOS / Linux:**
-
-```bash
-echo 'export NODE_USE_SYSTEM_CA=1' >> ~/.profile
-echo 'export NODE_OPTIONS=--use-openssl-ca' >> ~/.profile
+```bat
+scripts\start-cursor-with-tls.bat
 ```
 
-Restart Cursor completely after changing environment variables.
+### If SSL inspection is active (most common remaining cause)
 
-#### If the error persists (custom corporate root CA)
+Ask your IT team for the **corporate root CA** `.pem` / `.crt` file, then:
 
-1. Export your organization's root CA to a `.pem` / `.crt` file.
-2. Add a Cursor Cloud secret (or local env var):
+```powershell
+[System.Environment]::SetEnvironmentVariable("NODE_EXTRA_CA_CERTS", "C:\path\to\corp-root.pem", "User")
+```
 
-   ```text
-   NODE_EXTRA_CA_CERTS=C:\path\to\corporate-root-ca.pem
-   ```
+Also ask IT to **whitelist** these domains from SSL inspection (Cursor docs):
 
-3. Keep `NODE_USE_SYSTEM_CA=1` enabled.
+- `*.cursor.sh`
+- `*.cursorapi.com`
+- `cursor-cdn.com`
 
-Do **not** use `NODE_TLS_REJECT_UNAUTHORIZED=0` except for temporary local debugging; it disables all TLS verification.
+### Cloud agents (this repo)
+
+`.cursor/environment.json` sets `NODE_USE_SYSTEM_CA=1`. The install script `.cursor/verify-node-tls.sh` verifies HTTPS before agents run.
+
+Do **not** use `NODE_TLS_REJECT_UNAUTHORIZED=0` except for temporary local debugging.
 
 ### Repository state
 
