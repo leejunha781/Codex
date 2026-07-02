@@ -24,6 +24,7 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 |------|------------|-------|--------------------------|--------|
 | 2026-06-24 | satellite-enabled-marine-digital-twin | operational discipline for data priority, PLM context, degraded-network sync | degraded-network sync | prepared |
 | 2026-06-24 | satellite-enabled-marine-operations-data-loop | satellite-enabled marine operations data loop | operations data loop | blocked (LinkedIn focus) |
+| 2026-07-02 | ai-era-marine-comms-test-evidence-loop | AI-era developer leadership for marine communications test evidence | RF/SATCOM/HF/VHF/UHF validation, class/test records, handover evidence | ready for final posting |
 
 ---
 
@@ -40,3 +41,15 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Created post markdown and final image under `C:\Users\namma\Documents\Codex\2026-06-24\satellite-enabled-marine-operations-data-loop`.
 - Image generated as realistic maritime operations foundation with deterministic PowerShell text overlay; QA checked visually for text fit.
 - LinkedIn Windows app launch/focus failed during UI automation: app stayed obscured/blank behind Cursor/Codex surfaces, so composer was not prepared and no post was submitted.
+
+## 2026-07-02 02:42 UTC
+- Topic: ai-era-marine-comms-test-evidence-loop.
+- Angle: AI-era developer leadership turns AI-generated marine communication-system test scripts into auditable handover evidence.
+- Marine execution context: RF/SATCOM/HF/VHF/UHF validation, equipment configuration control, class/test records, document-control links, supplier evidence, and handover risk closure.
+- Repo post path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-02/ai-era-marine-comms-test-evidence-loop/linkedin-post.md`
+- Repo image path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-02/ai-era-marine-comms-test-evidence-loop/ai-era-marine-comms-test-evidence-loop-infographic.png`
+- Planned Windows post path: `C:\Users\namma\Documents\Codex\2026-07-02\ai-era-marine-comms-test-evidence-loop\linkedin-post.md`
+- Planned Windows image path: `C:\Users\namma\Documents\Codex\2026-07-02\ai-era-marine-comms-test-evidence-loop\ai-era-marine-comms-test-evidence-loop-infographic.png`
+- Image QA: text-fit pass | leader-lines pass (no leader lines used) | overlap QA pass.
+- LinkedIn status: blocked before composer preparation.
+- Blocker: Windows path and LinkedIn Windows app were unavailable from the Linux cloud environment; artifacts are ready for final posting.
