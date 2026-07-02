@@ -1,0 +1,6 @@
+{
+  "install": "bash .cursor/verify-node-tls.sh",
+  "env": {
+    "NODE_USE_SYSTEM_CA": "1"
+  }
+}
