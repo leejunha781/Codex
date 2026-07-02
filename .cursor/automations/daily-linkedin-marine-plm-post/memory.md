@@ -29,6 +29,7 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 | 2026-07-02 | ai-era-marine-plm-evidence-ownership-v3 | diverse real-photo cuts per module (8 unique crops) | BOM maturity + interface handoff evidence | prepared (v3 quality verified pass) |
 | 2026-07-02 | marine-plm-interface-readiness-governance | interface readiness governance, 8 unique crops (fixed rule applied) | interface handoff + BOM maturity | prepared (8/8 unique, QA pass) |
 | 2026-07-02 | satcom-fallback-evidence-management | SATCOM fallback managed as engineering evidence, not just network event | RF/SATCOM validation + shore-gateway logs + acceptance thresholds | prepared (pro-grade image, QA pass) |
+| 2026-07-02 | marine-plm-bom-validation-gates-test | BOM validation gates owned before AI scripts reach shipyard release line | BOM maturity + supplier package readiness + class/test records | prepared (image-gen tool, QA pass) |
 
 ---
 
@@ -83,3 +84,12 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Image QA: text-fit pass | leader-lines pass (primary cyan link + amber fallback path terminate on ship/satellite/shore gateway) | overlap pass | icon-consistency pass | professional-grade pass.
 - Replaced prior sample image at same path.
 - LinkedIn status: ready for final posting.
+
+## 2026-07-02 06:20 UTC
+- Topic: marine-plm-bom-validation-gates-test.
+- Test image generated with built-in image generation tool per Image generation rule + Reference-grade flat vector style rule.
+- Style: 7-step BOM validation gate pipeline, central digital-thread vessel scene, release-gates legend, Python automation sidebar, 3 summary cards, footer strip.
+- Image QA: text-fit pass | leader-lines pass (primary cyan + amber exception paths terminate correctly) | overlap QA pass | icon-consistency pass | professional-grade pass | photo-diversity N/A (flat vector).
+- Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-02/marine-plm-bom-validation-gates-test/`
+- Windows path: `C:\Users\namma\Documents\Codex\2026-07-02\marine-plm-bom-validation-gates-test\`
+- LinkedIn status: ready for final posting (cloud test; no Windows app action executed).
