@@ -30,6 +30,7 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 | 2026-07-02 | marine-plm-interface-readiness-governance | interface readiness governance, 8 unique crops (fixed rule applied) | interface handoff + BOM maturity | prepared (8/8 unique, QA pass) |
 | 2026-07-02 | satcom-fallback-evidence-management | SATCOM fallback managed as engineering evidence, not just network event | RF/SATCOM validation + shore-gateway logs + acceptance thresholds | prepared (pro-grade image, QA pass) |
 | 2026-07-02 | marine-plm-bom-validation-gates-test | BOM validation gates owned before AI scripts reach shipyard release line | BOM maturity + supplier package readiness + class/test records | prepared (image-gen tool, QA pass) |
+| 2026-07-03 | marine-plm-digital-thread-dashboard-governance | AI-assisted dashboards governed as release evidence, not reporting decoration | BOM maturity + CAD/ERP/MES/document-control interfaces + shipyard release gates | prepared (image-gen tool, QA pass) |
 
 ---
 
@@ -93,3 +94,14 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-02/marine-plm-bom-validation-gates-test/`
 - Windows path: `C:\Users\namma\Documents\Codex\2026-07-02\marine-plm-bom-validation-gates-test\`
 - LinkedIn status: ready for final posting (cloud test; no Windows app action executed).
+
+## 2026-07-03 00:02 UTC
+- Topic: marine-plm-digital-thread-dashboard-governance.
+- Angle: AI-assisted Marine PLM digital-thread dashboards must be governed as shipyard release evidence with accountable data owners, validation rules, thresholds, and decision actions.
+- Marine execution context: BOM maturity + design-change control + CAD/ERP/MES/document-control interfaces + class/test and handover evidence + shipyard adoption gates.
+- Post path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-03/marine-plm-digital-thread-dashboard-governance/linkedin-post.md`
+- Image path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-03/marine-plm-digital-thread-dashboard-governance/marine-plm-digital-thread-dashboard-governance-infographic.png`
+- Intended Windows path: `C:\Users\namma\Documents\Codex\2026-07-03\marine-plm-digital-thread-dashboard-governance\`
+- Image generation path: built-in image generation tool.
+- Image QA: text-fit pass | leader-lines pass | overlap QA pass | icon-consistency pass | professional-grade pass | photo-diversity N/A (flat vector).
+- LinkedIn status: ready for final posting (cloud run; Windows path/app unavailable).
