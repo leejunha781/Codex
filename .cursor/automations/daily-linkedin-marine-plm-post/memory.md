@@ -30,6 +30,7 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 | 2026-07-02 | marine-plm-interface-readiness-governance | interface readiness governance, 8 unique crops (fixed rule applied) | interface handoff + BOM maturity | prepared (8/8 unique, QA pass) |
 | 2026-07-02 | satcom-fallback-evidence-management | SATCOM fallback managed as engineering evidence, not just network event | RF/SATCOM validation + shore-gateway logs + acceptance thresholds | prepared (pro-grade image, QA pass) |
 | 2026-07-02 | marine-plm-bom-validation-gates-test | BOM validation gates owned before AI scripts reach shipyard release line | BOM maturity + supplier package readiness + class/test records | prepared (image-gen tool, QA pass) |
+| 2026-07-04 | marine-plm-supplier-package-release-gates | AI-assisted supplier-package checks governed as accountable shipyard release gates | supplier package readiness + design-change control + class/test records | ready for final posting (image-gen tool, QA pass) |
 
 ---
 
@@ -93,3 +94,14 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-02/marine-plm-bom-validation-gates-test/`
 - Windows path: `C:\Users\namma\Documents\Codex\2026-07-02\marine-plm-bom-validation-gates-test\`
 - LinkedIn status: ready for final posting (cloud test; no Windows app action executed).
+
+## 2026-07-04 00:00 UTC
+- Topic: marine-plm-supplier-package-release-gates.
+- Created English LinkedIn post and final infographic using the built-in image generation tool.
+- Angle: AI can draft supplier-package readiness checks, but Marine PLM leaders own release thresholds, exceptions, traceability, and post-release accountability.
+- Marine execution context: supplier package readiness + design-change control + class/test records + handover evidence.
+- Style: deep-navy corporate technical infographic with 6-step release-gate pipeline, central PLM/supplier/class evidence architecture scene, release-signal legend, Python/AI readiness sidebar, 3 summary cards, and footer takeaway strip.
+- Image QA: text-fit pass | leader-lines pass (cyan connectors terminate on visible architecture nodes) | overlap QA pass | icon-consistency pass | professional-grade pass | photo-diversity N/A (flat vector).
+- Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-04/marine-plm-supplier-package-release-gates/`
+- Windows path: `C:\Users\namma\Documents\Codex\2026-07-04\marine-plm-supplier-package-release-gates\`
+- LinkedIn status: ready for final posting (Linux cloud environment; Windows path and LinkedIn Windows app unavailable).
