@@ -1,0 +1,28 @@
+---
+description: Codex·Claude·Cursor 조합 AI 문서 작성 워크플로우
+alwaysApply: true
+---
+
+# AI 활용 워크플로우
+
+## 선호 도구 조합
+문서 작성·분석 시 여러 AI를 조합한다:
+
+1. **Codex** — 초안 작성
+2. **Claude** — 검토 및 보완
+3. **Cursor** — 최종 수정
+
+## Cursor에서의 역할
+- JD 분석, 이력서·커버레터·기술 문서의 **최종 편집·정제** 담당
+- ChatGPT·Claude·Codex 메모리/컨텍스트를 Rules로 이전하여 일관성 유지
+
+## 작업 유형별 활용
+- JD 분석
+- 이력서·커버레터 작성
+- 기술 문서 작성
+- LinkedIn 콘텐츠 작성
+- PLM 아키텍처 문서화
+
+## 응답 언어
+- Cursor와의 대화: **한국어** 선호
+- 지원 문서·기술 문서 본문: **Formal 영문** (요청 시 국문 병행)
