@@ -30,6 +30,7 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 | 2026-07-02 | marine-plm-interface-readiness-governance | interface readiness governance, 8 unique crops (fixed rule applied) | interface handoff + BOM maturity | prepared (8/8 unique, QA pass) |
 | 2026-07-02 | satcom-fallback-evidence-management | SATCOM fallback managed as engineering evidence, not just network event | RF/SATCOM validation + shore-gateway logs + acceptance thresholds | prepared (pro-grade image, QA pass) |
 | 2026-07-02 | marine-plm-bom-validation-gates-test | BOM validation gates owned before AI scripts reach shipyard release line | BOM maturity + supplier package readiness + class/test records | prepared (image-gen tool, QA pass) |
+| 2026-07-05 | marine-plm-exception-ownership-release-gates | exception ownership gates for AI-assisted Marine PLM validation | CAD/ERP/MES/document-control interfaces + class/test evidence | prepared (image-gen tool, QA pass) |
 
 ---
 
@@ -93,3 +94,14 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-02/marine-plm-bom-validation-gates-test/`
 - Windows path: `C:\Users\namma\Documents\Codex\2026-07-02\marine-plm-bom-validation-gates-test\`
 - LinkedIn status: ready for final posting (cloud test; no Windows app action executed).
+
+## 2026-07-05 00:18 UTC
+- Topic: marine-plm-exception-ownership-release-gates.
+- Angle: AI-assisted Marine PLM validators only improve delivery when every exception has an accountable owner, proof gate, and release decision.
+- Marine execution context: CAD/PLM/ERP/MES/document-control interfaces, class/test records, BOM maturity, supplier package readiness, and shipyard release gates.
+- Post path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-05/marine-plm-exception-ownership-release-gates/linkedin-post.md`
+- Image path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-05/marine-plm-exception-ownership-release-gates/marine-plm-exception-ownership-release-gates-infographic.png`
+- Windows path: `C:\Users\namma\Documents\Codex\2026-07-05\marine-plm-exception-ownership-release-gates\` unavailable from Linux cloud environment.
+- Image generation path: built-in image generation tool.
+- Image QA: text-fit pass | leader-lines pass | overlap QA pass | icon-consistency pass | professional-grade pass | photo-diversity N/A (flat vector).
+- LinkedIn status: ready for final posting (cloud run; Windows LinkedIn app unavailable).
