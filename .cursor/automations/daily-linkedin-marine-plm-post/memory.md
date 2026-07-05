@@ -30,6 +30,7 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 | 2026-07-02 | marine-plm-interface-readiness-governance | interface readiness governance, 8 unique crops (fixed rule applied) | interface handoff + BOM maturity | prepared (8/8 unique, QA pass) |
 | 2026-07-02 | satcom-fallback-evidence-management | SATCOM fallback managed as engineering evidence, not just network event | RF/SATCOM validation + shore-gateway logs + acceptance thresholds | prepared (pro-grade image, QA pass) |
 | 2026-07-02 | marine-plm-bom-validation-gates-test | BOM validation gates owned before AI scripts reach shipyard release line | BOM maturity + supplier package readiness + class/test records | prepared (image-gen tool, QA pass) |
+| 2026-07-05 | marine-plm-handover-evidence-governance | handover evidence model designed before commissioning, with lifecycle support reuse | class/test records + handover evidence + CAD/ERP/MES/document-control interfaces | ready for final posting (image-gen tool, QA pass) |
 
 ---
 
@@ -93,3 +94,13 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-02/marine-plm-bom-validation-gates-test/`
 - Windows path: `C:\Users\namma\Documents\Codex\2026-07-02\marine-plm-bom-validation-gates-test\`
 - LinkedIn status: ready for final posting (cloud test; no Windows app action executed).
+
+## 2026-07-05 00:00 UTC
+- Topic: marine-plm-handover-evidence-governance.
+- Angle: Marine PLM handover evidence should be designed before commissioning so class/test records, configuration baselines, exceptions, and support reuse are traceable from the start.
+- Marine execution context: class/test records + handover evidence + CAD/ERP/MES/document-control interfaces + RF/SATCOM validation.
+- Image generated with built-in image generation tool.
+- Image QA: text-fit pass | leader-lines pass | overlap QA pass | icon-consistency pass | professional-grade pass | photo-diversity N/A (flat vector).
+- Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-05/marine-plm-handover-evidence-governance/`
+- Windows path: `C:\Users\namma\Documents\Codex\2026-07-05\marine-plm-handover-evidence-governance\` unavailable from Linux cloud environment.
+- LinkedIn status: ready for final posting (cloud run; no Windows app action executed).
