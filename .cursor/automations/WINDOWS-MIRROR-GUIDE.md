@@ -1,37 +1,46 @@
 # Windows 미러링 가이드 (Cursor Pro / Codex)
 
 ## ⚠️ 가장 흔한 오류
-`C:\Users\namma>` 에서 실행하면 **실패**합니다.  
-스크립트는 **Codex repo 안**에 있습니다:
-
-`C:\Users\namma\Documents\Codex\.cursor\automations\mirror-linkedin-run-to-codex.ps1`
+`C:\Users\namma\.cursor\automations\mirror-linkedin-run-to-codex.ps1` 가 **없다**고 나오면  
+아직 **install** 을 하지 않은 상태입니다. (repo 안에만 있고 로컬 Cursor 폴더에는 없음)
 
 ---
 
-## 빠른 실행 (권장)
+## 1단계 — 최초 1회 설치 (필수)
 
-### 방법 A — repo 루트 배치 파일 (더블클릭)
-```
-C:\Users\namma\Documents\Codex\mirror-linkedin-to-codex.bat
-```
-
-### 방법 B — PowerShell에서 repo로 이동 후 실행
 ```powershell
 cd C:\Users\namma\Documents\Codex
 git fetch origin
 git checkout cursor/daily-linkedin-marine-plm-04c5
 git pull
-.\mirror-linkedin-to-codex.bat
+powershell -ExecutionPolicy Bypass -File .\.cursor\automations\install-linkedin-mirror.ps1
 ```
 
-### 방법 C — 절대 경로 (어디서든)
+또는 sync 스크립트 (설치 포함):
 ```powershell
-powershell -ExecutionPolicy Bypass -File "C:\Users\namma\Documents\Codex\.cursor\automations\mirror-linkedin-run-to-codex.ps1" -Latest
+cd C:\Users\namma\Documents\Codex
+.\.cursor\automations\sync-daily-linkedin-automation.ps1
 ```
 
-### 진단만 (Verify)
+설치 후 생성되는 파일:
+- `C:\Users\namma\.cursor\automations\mirror-linkedin-run-to-codex.ps1`
+- `C:\Users\namma\.cursor\automations\mirror-linkedin-run-to-codex.bat`
+- `C:\Users\namma\.cursor\automations\codex-repo.path`  ← repo 경로 저장
+
+---
+
+## 2단계 — 미러링 (어디서든)
+
 ```powershell
-powershell -ExecutionPolicy Bypass -File "C:\Users\namma\Documents\Codex\.cursor\automations\mirror-linkedin-run-to-codex.ps1" -Verify
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.cursor\automations\mirror-linkedin-run-to-codex.ps1" -Latest
+```
+
+또는 더블클릭:
+`C:\Users\namma\.cursor\automations\mirror-linkedin-run-to-codex.bat`
+
+### 진단 (Verify)
+```powershell
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\.cursor\automations\mirror-linkedin-run-to-codex.ps1" -Verify
 ```
 
 ## 출력 경로

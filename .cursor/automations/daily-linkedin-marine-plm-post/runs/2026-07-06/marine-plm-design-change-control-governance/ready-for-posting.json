@@ -13,7 +13,9 @@
   "mirrorScript": ".cursor/automations/mirror-linkedin-run-to-codex.ps1",
   "mirrorBatch": "mirror-linkedin-to-codex.bat",
   "mirrorBatchAlt": ".cursor/automations/mirror-linkedin-run-to-codex.bat",
-  "mirrorPs1Absolute": "C:\\Users\\namma\\Documents\\Codex\\.cursor\\automations\\mirror-linkedin-run-to-codex.ps1",
+  "installScript": ".cursor/automations/install-linkedin-mirror.ps1",
+  "installedMirrorPs1": "C:\\Users\\namma\\.cursor\\automations\\mirror-linkedin-run-to-codex.ps1",
+  "installedMirrorBat": "C:\\Users\\namma\\.cursor\\automations\\mirror-linkedin-run-to-codex.bat",
   "requiredBranch": "cursor/daily-linkedin-marine-plm-04c5",
   "mirrorGuide": ".cursor/automations/WINDOWS-MIRROR-GUIDE.md",
   "linkedInApp": "Windows LinkedIn app only; do not click Post without user confirmation"

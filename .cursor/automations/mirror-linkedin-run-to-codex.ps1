@@ -20,6 +20,25 @@ $ErrorActionPreference = "Stop"
 function Resolve-RepoRoot {
     param([string]$StartDir)
 
+    $knownRepoCandidates = @(
+        "C:\Users\namma\Documents\Codex",
+        (Join-Path $env:USERPROFILE "Documents\Codex"),
+        (Join-Path $env:USERPROFILE "OneDrive\Documents\Codex")
+    )
+
+    $configPath = Join-Path $env:USERPROFILE ".cursor\automations\codex-repo.path"
+    if (Test-Path -LiteralPath $configPath) {
+        $configured = (Get-Content -LiteralPath $configPath -Raw).Trim()
+        if ($configured) { $knownRepoCandidates = @($configured) + $knownRepoCandidates }
+    }
+
+    foreach ($candidate in ($knownRepoCandidates | Select-Object -Unique)) {
+        $runsCandidate = Join-Path $candidate ".cursor\automations\daily-linkedin-marine-plm-post\runs"
+        if (Test-Path -LiteralPath $runsCandidate) {
+            return (Resolve-Path -LiteralPath $candidate).Path
+        }
+    }
+
     $dir = (Resolve-Path -LiteralPath $StartDir).Path
     for ($i = 0; $i -lt 8; $i++) {
         $runsCandidate = Join-Path $dir ".cursor\automations\daily-linkedin-marine-plm-post\runs"
@@ -32,16 +51,20 @@ function Resolve-RepoRoot {
     }
 
     throw @"
-Could not locate repo runs folder.
-Start searching from: $StartDir
-Expected: <repo>\.cursor\automations\daily-linkedin-marine-plm-post\runs
+Could not locate Codex repo runs folder.
+
+Searched from: $StartDir
+Expected runs at: <repo>\.cursor\automations\daily-linkedin-marine-plm-post\runs
 
 Fix:
-  1) cd to your Codex repo root (e.g. C:\Users\namma\Documents\Codex)
+  1) Clone/pull repo to C:\Users\namma\Documents\Codex
   2) git fetch origin
-  3) git checkout cursor/daily-linkedin-marine-plm-04c5   # or merge PR #16 into main first
+  3) git checkout cursor/daily-linkedin-marine-plm-04c5
   4) git pull
-  5) re-run this script
+  5) Run install once:
+       powershell -ExecutionPolicy Bypass -File C:\Users\namma\Documents\Codex\.cursor\automations\install-linkedin-mirror.ps1
+  6) Then from anywhere:
+       powershell -ExecutionPolicy Bypass -File $env:USERPROFILE\.cursor\automations\mirror-linkedin-run-to-codex.ps1 -Latest
 "@
 }
 
