@@ -4,11 +4,28 @@ Use this guide to register the automation in **Cursor Desktop / cursor.com/autom
 
 ## 1. Sync repo files to local Cursor automations dir (Windows)
 
+If `sync-both-linkedin-automations.ps1` or `validate-daily-linkedin-automation.ps1` are missing under `C:\Users\namma\.cursor\automations\`, run bootstrap first:
+
 ```powershell
-cd <repo-root>\.cursor\automations
+# After git pull on branch cursor/fix-linkedin-local-mirror-0681 (or merged main)
+powershell -NoProfile -File C:\Users\namma\.cursor\automations\install-cursor-linkedin-automation-scripts.ps1
+```
+
+Then:
+
+```powershell
+cd C:\Users\namma\.cursor\automations
 .\sync-both-linkedin-automations.ps1
 .\validate-daily-linkedin-automation.ps1
 ```
+
+Required files in `C:\Users\namma\.cursor\automations\`:
+- `sync-both-linkedin-automations.ps1`
+- `sync-daily-linkedin-automation.ps1`
+- `validate-daily-linkedin-automation.ps1`
+- `mirror-linkedin-runs.ps1`
+- `post-linkedin-windows-app-prompt.md`
+- `install-cursor-linkedin-automation-scripts.ps1`
 
 Target: `C:\Users\namma\.cursor\automations\daily-linkedin-marine-plm-post\`
 

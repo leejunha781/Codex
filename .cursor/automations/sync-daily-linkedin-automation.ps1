@@ -11,6 +11,15 @@ if (-not (Test-Path (Join-Path $SourceDir "automation.toml"))) {
 }
 
 $CursorAutomationsDir = Join-Path $env:USERPROFILE ".cursor\automations"
+$UtilityScripts = @(
+    "sync-both-linkedin-automations.ps1",
+    "sync-daily-linkedin-automation.ps1",
+    "validate-daily-linkedin-automation.ps1",
+    "mirror-linkedin-runs.ps1",
+    "post-linkedin-windows-app-prompt.md",
+    "install-cursor-linkedin-automation-scripts.ps1"
+)
+
 New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null
 New-Item -ItemType Directory -Force -Path $CursorAutomationsDir | Out-Null
 New-Item -ItemType Directory -Force -Path (Join-Path $SourceDir "runs") | Out-Null
@@ -19,12 +28,20 @@ Copy-Item -Path (Join-Path $SourceDir "automation.toml") -Destination $TargetDir
 Copy-Item -Path (Join-Path $SourceDir "memory.md") -Destination $TargetDir -Force
 Copy-Item -Path (Join-Path $SourceDir "prompt.md") -Destination $TargetDir -Force
 Copy-Item -Path (Join-Path $SourceDir "cursor-cloud-registration.md") -Destination $TargetDir -Force
-Copy-Item -Path (Join-Path $PSScriptRoot "mirror-linkedin-runs.ps1") -Destination $CursorAutomationsDir -Force
-Copy-Item -Path (Join-Path $PSScriptRoot "post-linkedin-windows-app-prompt.md") -Destination $CursorAutomationsDir -Force
+
+foreach ($utility in $UtilityScripts) {
+    $sourcePath = Join-Path $PSScriptRoot $utility
+    if (-not (Test-Path $sourcePath)) {
+        throw "Required utility file not found in repo: $sourcePath"
+    }
+    Copy-Item -Path $sourcePath -Destination (Join-Path $CursorAutomationsDir $utility) -Force
+}
 
 Write-Host "Synced Cursor automation files to $TargetDir"
-Write-Host "Synced mirror script to $CursorAutomationsDir\mirror-linkedin-runs.ps1"
-Write-Host "Synced post prompt to $CursorAutomationsDir\post-linkedin-windows-app-prompt.md"
+Write-Host "Synced utility scripts to $CursorAutomationsDir"
+foreach ($utility in $UtilityScripts) {
+    Write-Host "  - $utility"
+}
 Write-Host ""
 Write-Host "Next steps in Cursor:"
 Write-Host "  1. Open https://cursor.com/automations/new"

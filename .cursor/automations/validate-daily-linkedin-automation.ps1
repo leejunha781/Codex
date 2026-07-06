@@ -4,8 +4,13 @@
 $ErrorActionPreference = "Stop"
 
 $AutomationDir = Join-Path $env:USERPROFILE ".cursor\automations\daily-linkedin-marine-plm-post"
-$MirrorScript = Join-Path $env:USERPROFILE ".cursor\automations\mirror-linkedin-runs.ps1"
-$PostPrompt = Join-Path $env:USERPROFILE ".cursor\automations\post-linkedin-windows-app-prompt.md"
+$AutomationsRoot = Join-Path $env:USERPROFILE ".cursor\automations"
+$MirrorScript = Join-Path $AutomationsRoot "mirror-linkedin-runs.ps1"
+$PostPrompt = Join-Path $AutomationsRoot "post-linkedin-windows-app-prompt.md"
+$SyncBothScript = Join-Path $AutomationsRoot "sync-both-linkedin-automations.ps1"
+$ValidateScript = Join-Path $AutomationsRoot "validate-daily-linkedin-automation.ps1"
+$SyncScript = Join-Path $AutomationsRoot "sync-daily-linkedin-automation.ps1"
+$InstallScript = Join-Path $AutomationsRoot "install-cursor-linkedin-automation-scripts.ps1"
 $TomlPath = Join-Path $AutomationDir "automation.toml"
 $MemoryPath = Join-Path $AutomationDir "memory.md"
 $PromptPath = Join-Path $AutomationDir "prompt.md"
@@ -33,7 +38,7 @@ $requiredPromptSections = @(
 
 $failures = @()
 
-foreach ($path in @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $PostPrompt)) {
+foreach ($path in @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $PostPrompt, $SyncBothScript, $ValidateScript, $SyncScript, $InstallScript)) {
     if (-not (Test-Path $path)) {
         $failures += "Missing file: $path"
     }
@@ -81,6 +86,10 @@ Write-Host "  memory.md: $MemoryPath"
 Write-Host "  prompt.md: $PromptPath"
 Write-Host "  mirror script: $MirrorScript"
 Write-Host "  post prompt: $PostPrompt"
+Write-Host "  sync-both: $SyncBothScript"
+Write-Host "  validate: $ValidateScript"
+Write-Host "  sync: $SyncScript"
+Write-Host "  install: $InstallScript"
 Write-Host "  Schedule: daily 09:00 cloud + 09:35 local mirror and LinkedIn auto-post"
 Write-Host "  Register at: https://cursor.com/automations/new"
 exit 0
