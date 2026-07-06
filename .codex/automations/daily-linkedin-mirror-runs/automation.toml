@@ -1,0 +1,13 @@
+version = 1
+id = "daily-linkedin-mirror-runs"
+kind = "cron"
+name = "Daily LinkedIn Mirror Runs"
+prompt = "Run the Windows mirror step for Daily LinkedIn Marine PLM Post cloud artifacts.\n\n1. Execute in PowerShell 5.1:\n   powershell -NoProfile -File C:\\Users\\namma\\.cursor\\automations\\mirror-linkedin-runs.ps1 -Pull -IncludeRemoteBranches\n2. Read C:\\Users\\namma\\.cursor\\automations\\cache\\linkedin-mirror\\mirror.log and report the latest mirror summary lines.\n3. Verify today's folder under C:\\Users\\namma\\Documents\\Codex\\YYYY-MM-DD\\ contains linkedin-post.md and *-infographic.png when cloud run artifacts exist.\n4. Report mirrored paths only; do not post to LinkedIn and do not change mirror policy."
+status = "ACTIVE"
+rrule = "RRULE:FREQ=WEEKLY;BYHOUR=9;BYMINUTE=30;BYDAY=MO,TU,WE,TH,FR,SA,SU"
+model = "gpt-5.5"
+reasoning_effort = "low"
+execution_environment = "local"
+cwds = ["C:\\Users\\namma"]
+created_at = 1783000000000
+updated_at = 1783000000000

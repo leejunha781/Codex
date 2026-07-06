@@ -18,6 +18,17 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 
 ---
 
+## Local mirror workflow (2026-07-06)
+
+Cloud Cursor runs save artifacts only to repo `.cursor/automations/daily-linkedin-marine-plm-post/runs/`.
+Windows output folder `C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\` is mirrored by:
+
+- Script: `.cursor/automations/mirror-linkedin-runs.ps1`
+- Scheduled Codex automation: `daily-linkedin-mirror-runs` (daily 09:30)
+- Manual: `.\sync-both-linkedin-automations.ps1` (sync + immediate mirror)
+
+---
+
 ## Topic rotation log
 
 | Date | topic-slug | angle | marine execution context | status |

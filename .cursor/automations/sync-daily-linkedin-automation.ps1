@@ -10,15 +10,19 @@ if (-not (Test-Path (Join-Path $SourceDir "automation.toml"))) {
     throw "Source automation.toml not found at $SourceDir"
 }
 
+$CursorAutomationsDir = Join-Path $env:USERPROFILE ".cursor\automations"
 New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null
+New-Item -ItemType Directory -Force -Path $CursorAutomationsDir | Out-Null
 New-Item -ItemType Directory -Force -Path (Join-Path $SourceDir "runs") | Out-Null
 
 Copy-Item -Path (Join-Path $SourceDir "automation.toml") -Destination $TargetDir -Force
 Copy-Item -Path (Join-Path $SourceDir "memory.md") -Destination $TargetDir -Force
 Copy-Item -Path (Join-Path $SourceDir "prompt.md") -Destination $TargetDir -Force
 Copy-Item -Path (Join-Path $SourceDir "cursor-cloud-registration.md") -Destination $TargetDir -Force
+Copy-Item -Path (Join-Path $PSScriptRoot "mirror-linkedin-runs.ps1") -Destination $CursorAutomationsDir -Force
 
 Write-Host "Synced Cursor automation files to $TargetDir"
+Write-Host "Synced mirror script to $CursorAutomationsDir\mirror-linkedin-runs.ps1"
 Write-Host ""
 Write-Host "Next steps in Cursor:"
 Write-Host "  1. Open https://cursor.com/automations/new"

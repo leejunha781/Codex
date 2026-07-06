@@ -18,6 +18,12 @@ Read this file at the start of each run. Choose a topic and angle different from
 
 ---
 
+## Local mirror workflow (2026-07-06)
+
+Cloud Cursor runs save artifacts to repo `runs/` only. Windows output at `C:\Users\namma\Documents\Codex\` is mirrored by `mirror-linkedin-runs.ps1` (Codex automation `daily-linkedin-mirror-runs`, daily 09:30).
+
+---
+
 ## Topic rotation log
 
 | Date | topic-slug | angle | marine execution context | status |

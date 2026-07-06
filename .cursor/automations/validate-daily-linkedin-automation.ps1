@@ -4,12 +4,15 @@
 $ErrorActionPreference = "Stop"
 
 $AutomationDir = Join-Path $env:USERPROFILE ".cursor\automations\daily-linkedin-marine-plm-post"
+$MirrorScript = Join-Path $env:USERPROFILE ".cursor\automations\mirror-linkedin-runs.ps1"
 $TomlPath = Join-Path $AutomationDir "automation.toml"
 $MemoryPath = Join-Path $AutomationDir "memory.md"
 $PromptPath = Join-Path $AutomationDir "prompt.md"
 
 $requiredPromptSections = @(
     "Cursor Cloud Agent addendum",
+    "mirror-linkedin-runs.ps1",
+    "daily-linkedin-mirror-runs",
     "Quiet daily LinkedIn workflow",
     "New AI-era developer leadership angle",
     "Beyond Vibe Coding",
@@ -28,7 +31,7 @@ $requiredPromptSections = @(
 
 $failures = @()
 
-foreach ($path in @($TomlPath, $MemoryPath, $PromptPath)) {
+foreach ($path in @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript)) {
     if (-not (Test-Path $path)) {
         $failures += "Missing file: $path"
     }
@@ -74,6 +77,7 @@ Write-Host "VALIDATION PASSED"
 Write-Host "  automation.toml: $TomlPath"
 Write-Host "  memory.md: $MemoryPath"
 Write-Host "  prompt.md: $PromptPath"
-Write-Host "  Schedule: daily 09:00 (cron 0 9 * * *)"
+Write-Host "  mirror script: $MirrorScript"
+Write-Host "  Schedule: daily 09:00 cloud + 09:30 local mirror"
 Write-Host "  Register at: https://cursor.com/automations/new"
 exit 0
