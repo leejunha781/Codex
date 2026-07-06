@@ -59,7 +59,8 @@ $RequiredUtilities = @(
 $OptionalUtilities = @(
     "install-cursor-linkedin-automation-scripts.ps1",
     "fetch-cursor-linkedin-scripts-from-github.ps1",
-    "force-update-linkedin-sync-scripts.ps1"
+    "force-update-linkedin-sync-scripts.ps1",
+    "test-linkedin-mirror-and-post.ps1"
 )
 
 New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null

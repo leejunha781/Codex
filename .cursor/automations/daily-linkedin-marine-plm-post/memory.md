@@ -113,5 +113,5 @@ Mirror + LinkedIn auto-post:
 - Angle: evidence-gated acceptance — pointing proof, modem lock, RF margin, failover, FAT/SAT records.
 - Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-06/leo-satellite-terminal-commissioning-gates/`
 - Windows mirror path: `C:\Users\namma\Documents\Codex\2026-07-06\leo-satellite-terminal-commissioning-gates\`
-- Image QA: text-fit pass | leader-lines pass | overlap pass | flat-vector reference style pass.
-- LinkedIn status: ready for final posting (pending Windows mirror + app test).
+- Image QA: text-fit pass | leader-lines pass | overlap pass | v2 executive graphic-design pass (anti-childish).
+- LinkedIn status: ready for final posting (v2 image; pending Windows mirror + app test).
