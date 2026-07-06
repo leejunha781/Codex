@@ -55,7 +55,8 @@ $UtilityScripts = @(
     "mirror-linkedin-runs.ps1",
     "post-linkedin-windows-app-prompt.md",
     "install-cursor-linkedin-automation-scripts.ps1",
-    "fetch-cursor-linkedin-scripts-from-github.ps1"
+    "fetch-cursor-linkedin-scripts-from-github.ps1",
+    "force-update-linkedin-sync-scripts.ps1"
 )
 
 New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null
