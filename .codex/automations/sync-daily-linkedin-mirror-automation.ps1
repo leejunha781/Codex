@@ -3,6 +3,10 @@
 
 $ErrorActionPreference = "Stop"
 
+$AutomationName = "daily-linkedin-mirror-and-post"
+$Repo = "leejunha781/Codex"
+$Branch = "memory"
+
 function Normalize-PathString {
     param([string]$Path)
     if ([string]::IsNullOrWhiteSpace($Path)) { return "" }
@@ -19,6 +23,24 @@ function Test-SamePath {
     return (Normalize-PathString $Left) -ieq (Normalize-PathString $Right)
 }
 
+function Ensure-AutomationToml {
+    param(
+        [string]$TargetDir,
+        [string]$RelativeRepoPath
+    )
+
+    New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null
+    $tomlPath = Join-Path $TargetDir "automation.toml"
+    if (Test-Path $tomlPath) {
+        return $tomlPath
+    }
+
+    $url = "https://raw.githubusercontent.com/$Repo/$Branch/$RelativeRepoPath/automation.toml"
+    Write-Host "FETCH $url"
+    Invoke-WebRequest -Uri $url -UseBasicParsing -OutFile $tomlPath
+    return $tomlPath
+}
+
 function Copy-IfDifferent {
     param([string]$Source, [string]$Destination)
     $destParent = Split-Path $Destination -Parent
@@ -31,16 +53,21 @@ function Copy-IfDifferent {
     Write-Host "OK   $Destination"
 }
 
-$SourceDir = Join-Path $PSScriptRoot "daily-linkedin-mirror-and-post"
-$TargetDir = Join-Path $env:USERPROFILE ".codex\automations\daily-linkedin-mirror-and-post"
+$SourceDir = Join-Path $PSScriptRoot $AutomationName
+$TargetDir = Join-Path $env:USERPROFILE ".codex\automations\$AutomationName"
 $LegacyDir = Join-Path $env:USERPROFILE ".codex\automations\daily-linkedin-mirror-runs"
+$RelativeRepoPath = ".codex/automations/$AutomationName"
 
 if (-not (Test-Path (Join-Path $SourceDir "automation.toml"))) {
-    throw "Source automation.toml not found at $SourceDir"
+    Write-Host "Source automation.toml not in repo path; ensuring live install from GitHub..."
+    Ensure-AutomationToml -TargetDir $TargetDir -RelativeRepoPath $RelativeRepoPath | Out-Null
+} else {
+    Copy-IfDifferent -Source (Join-Path $SourceDir "automation.toml") -Destination (Join-Path $TargetDir "automation.toml")
 }
 
-New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null
-Copy-IfDifferent -Source (Join-Path $SourceDir "automation.toml") -Destination (Join-Path $TargetDir "automation.toml")
+if (-not (Test-Path (Join-Path $TargetDir "automation.toml"))) {
+    throw "automation.toml still missing at $TargetDir"
+}
 
 if (Test-Path $LegacyDir) {
     Write-Host "Note: legacy automation dir still exists at $LegacyDir — disable 'Daily LinkedIn Mirror Runs' in Codex UI"

@@ -3,6 +3,10 @@
 
 $ErrorActionPreference = "Stop"
 
+$AutomationName = "daily-linkedin-marine-plm-post"
+$Repo = "leejunha781/Codex"
+$Branch = "memory"
+
 function Normalize-PathString {
     param([string]$Path)
     if ([string]::IsNullOrWhiteSpace($Path)) { return "" }
@@ -19,37 +23,54 @@ function Test-SamePath {
     return (Normalize-PathString $Left) -ieq (Normalize-PathString $Right)
 }
 
-function Copy-IfDifferent {
+function Ensure-AutomationFile {
     param(
-        [string]$Source,
-        [string]$Destination
+        [string]$TargetDir,
+        [string]$RelativeRepoPath,
+        [string]$FileName
     )
 
-    $destParent = Split-Path $Destination -Parent
-    if ($destParent) {
-        New-Item -ItemType Directory -Force -Path $destParent | Out-Null
+    New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null
+    $destPath = Join-Path $TargetDir $FileName
+    if (Test-Path $destPath) {
+        return $destPath
     }
 
+    $url = "https://raw.githubusercontent.com/$Repo/$Branch/$RelativeRepoPath/$FileName"
+    Write-Host "FETCH $url"
+    Invoke-WebRequest -Uri $url -UseBasicParsing -OutFile $destPath
+    return $destPath
+}
+
+function Copy-IfDifferent {
+    param([string]$Source, [string]$Destination)
+    $destParent = Split-Path $Destination -Parent
+    if ($destParent) { New-Item -ItemType Directory -Force -Path $destParent | Out-Null }
     if (Test-SamePath $Source $Destination) {
         Write-Host "SKIP (repo = live install): $Destination"
         return
     }
-
     Copy-Item -Path $Source -Destination $Destination -Force
     Write-Host "OK   $Destination"
 }
 
-$SourceDir = Join-Path $PSScriptRoot "daily-linkedin-marine-plm-post"
-$TargetDir = Join-Path $env:USERPROFILE ".codex\automations\daily-linkedin-marine-plm-post"
+$SourceDir = Join-Path $PSScriptRoot $AutomationName
+$TargetDir = Join-Path $env:USERPROFILE ".codex\automations\$AutomationName"
+$RelativeRepoPath = ".codex/automations/$AutomationName"
 
-if (-not (Test-Path (Join-Path $SourceDir "automation.toml"))) {
-    throw "Source automation.toml not found at $SourceDir"
+$sourceToml = Join-Path $SourceDir "automation.toml"
+if (Test-Path $sourceToml) {
+    Copy-IfDifferent -Source $sourceToml -Destination (Join-Path $TargetDir "automation.toml")
+    Copy-IfDifferent -Source (Join-Path $SourceDir "memory.md") -Destination (Join-Path $TargetDir "memory.md")
+} else {
+    Write-Host "Source files not in repo path; ensuring live install from GitHub..."
+    Ensure-AutomationFile -TargetDir $TargetDir -RelativeRepoPath $RelativeRepoPath -FileName "automation.toml" | Out-Null
+    Ensure-AutomationFile -TargetDir $TargetDir -RelativeRepoPath $RelativeRepoPath -FileName "memory.md" | Out-Null
 }
 
-New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null
-
-Copy-IfDifferent -Source (Join-Path $SourceDir "automation.toml") -Destination (Join-Path $TargetDir "automation.toml")
-Copy-IfDifferent -Source (Join-Path $SourceDir "memory.md") -Destination (Join-Path $TargetDir "memory.md")
+if (-not (Test-Path (Join-Path $TargetDir "automation.toml"))) {
+    throw "automation.toml still missing at $TargetDir"
+}
 
 Write-Host ""
 Write-Host "Codex automation ready at $TargetDir"
