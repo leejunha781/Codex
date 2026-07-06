@@ -30,6 +30,7 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 | 2026-07-02 | marine-plm-interface-readiness-governance | interface readiness governance, 8 unique crops (fixed rule applied) | interface handoff + BOM maturity | prepared (8/8 unique, QA pass) |
 | 2026-07-02 | satcom-fallback-evidence-management | SATCOM fallback managed as engineering evidence, not just network event | RF/SATCOM validation + shore-gateway logs + acceptance thresholds | prepared (pro-grade image, QA pass) |
 | 2026-07-02 | marine-plm-bom-validation-gates-test | BOM validation gates owned before AI scripts reach shipyard release line | BOM maturity + supplier package readiness + class/test records | prepared (image-gen tool, QA pass) |
+| 2026-07-06 | marine-plm-design-change-control-governance | AI drafts change impact, engineering-change board owns disposition/effectivity/traceable record | design-change control + configuration baseline/effectivity + CAD/ERP/MES/document-control interfaces + class/test re-verification | prepared (image-gen tool, QA pass) |
 
 ---
 
@@ -93,3 +94,16 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-02/marine-plm-bom-validation-gates-test/`
 - Windows path: `C:\Users\namma\Documents\Codex\2026-07-02\marine-plm-bom-validation-gates-test\`
 - LinkedIn status: ready for final posting (cloud test; no Windows app action executed).
+
+## 2026-07-06 00:02 UTC
+- Topic: marine-plm-design-change-control-governance.
+- Angle: AI drafts engineering-change (ECR/ECO) impact fast, but the change board must own the disposition, configuration effectivity, and traceable change record across the digital thread.
+- Marine execution context: design-change control + configuration baseline/effectivity + CAD/ERP/MES/document-control interfaces + class/test re-verification + shipyard adoption/handover evidence.
+- Image generated with the built-in image generation tool per Image generation rule + Reference-grade flat vector style rule.
+- Style: 6-step change-control pipeline (ECR → AI impact draft → baseline bind → board disposition → effectivity cut-in → evidence pack), central stylized vessel digital-thread scene (CAD/ERP/MES/DOC CONTROL) with cyan traced-change link and amber HOLD/ESCALATE path, Python automation sidebar, 3 summary cards, footer takeaway strip.
+- Image (v3, SATCOM-reference style per user request): regenerated to match `satcom-fallback-evidence-management` poster composition — 7-step pipeline with bullets, realistic F310 vessel scene, CHANGE EVENTS legend, PYTHON AUTOMATION sidebar (5 rows), 3 bottom summary cards, footer strip; cyan traced-change + amber HOLD/ESCALATE paths. Promoted to canonical run filename.
+- Image QA: text-fit pass | leader-lines pass | overlap pass | satcom-reference-style pass | professional-grade pass.
+- Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-06/marine-plm-design-change-control-governance/`
+- Windows path (canonical): `C:\Users\namma\Documents\Codex\2026-07-06\marine-plm-design-change-control-governance\` — unavailable from Linux cloud environment this run; Codex Windows agent handles the mirror + posting.
+- New standing rule: from 2026-07-06 onward, always produce excellent, highly detailed professional infographics (elite consulting tier) by default — see prompt "Excellent-design mandate".
+- LinkedIn status: ready for final posting (cloud run; LinkedIn Windows app unreachable). Cursor Pro handoff: `ready-for-posting.json` + `mirror-linkedin-run-to-codex.ps1` for Windows mirror after git pull.

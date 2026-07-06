@@ -1,0 +1,22 @@
+{
+  "topic": "marine-plm-design-change-control-governance",
+  "date": "2026-07-06",
+  "status": "ready_for_final_posting",
+  "angle": "AI drafts engineering-change impact; change board owns disposition, effectivity, and traceable record",
+  "imageStyle": "satcom-fallback-reference (7-step pipeline, realistic vessel scene, change-events legend, Python automation sidebar, 3 summary cards, footer strip)",
+  "imageVersion": "v3-satcom-reference-style",
+  "repoPath": ".cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-06/marine-plm-design-change-control-governance",
+  "windowsPath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-06\\marine-plm-design-change-control-governance",
+  "postPath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-06\\marine-plm-design-change-control-governance\\linkedin-post.md",
+  "imagePath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-06\\marine-plm-design-change-control-governance\\marine-plm-design-change-control-governance-infographic.png",
+  "imageQA": "text-fit pass | leader-lines pass | overlap pass | satcom-reference-style pass",
+  "mirrorScript": ".cursor/automations/mirror-linkedin-run-to-codex.ps1",
+  "mirrorBatch": "mirror-linkedin-to-codex.bat",
+  "mirrorBatchAlt": ".cursor/automations/mirror-linkedin-run-to-codex.bat",
+  "installScript": ".cursor/automations/install-linkedin-mirror.ps1",
+  "installedMirrorPs1": "C:\\Users\\namma\\.cursor\\automations\\mirror-linkedin-run-to-codex.ps1",
+  "installedMirrorBat": "C:\\Users\\namma\\.cursor\\automations\\mirror-linkedin-run-to-codex.bat",
+  "requiredBranch": "cursor/daily-linkedin-marine-plm-04c5",
+  "mirrorGuide": ".cursor/automations/WINDOWS-MIRROR-GUIDE.md",
+  "linkedInApp": "Windows LinkedIn app only; do not click Post without user confirmation"
+}

@@ -27,8 +27,9 @@ Target: `C:\Users\namma\.cursor\automations\daily-linkedin-marine-plm-post\`
 | Step | Codex (local) | Cursor (cloud) |
 |------|-----------------|----------------|
 | Topic rotation | `~/.codex/automations/.../memory.md` | Repo `memory.md` + Cursor Memories |
-| Post + image output | `C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\` | Repo `.cursor/automations/.../runs/YYYY-MM-DD/<topic-slug>/` |
-| LinkedIn composer | Windows LinkedIn app (full-access sandbox) | Computer use if Windows env available; else report **ready for final posting** |
+| Post + image output | `C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\` | Repo `.cursor/automations/.../runs/YYYY-MM-DD/<topic-slug>/` + `ready-for-posting.json` |
+| Windows mirror (Cursor Pro) | `.\.cursor\automations\mirror-linkedin-run-to-codex.ps1` after `git pull` | N/A (cloud creates repo artifacts) |
+| LinkedIn composer | Windows LinkedIn app (Computer use on Cursor Pro) | Computer use if Windows env available; else report **ready for final posting** |
 | Final Post click | User confirmation required | User confirmation required |
 
 ## 4. Activation checklist
