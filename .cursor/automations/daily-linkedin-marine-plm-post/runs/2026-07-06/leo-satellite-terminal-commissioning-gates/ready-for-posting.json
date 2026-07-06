@@ -1,0 +1,14 @@
+{
+  "topic": "leo-satellite-terminal-commissioning-gates",
+  "date": "2026-07-06",
+  "status": "ready_for_final_posting",
+  "angle": "LEO terminal acceptance is evidence-gated commissioning, not install-and-hope",
+  "category": "satellite-communications",
+  "repoPath": ".cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-06/leo-satellite-terminal-commissioning-gates",
+  "windowsMirrorPath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-06\\leo-satellite-terminal-commissioning-gates",
+  "postPath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-06\\leo-satellite-terminal-commissioning-gates\\linkedin-post.md",
+  "imagePath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-06\\leo-satellite-terminal-commissioning-gates\\leo-satellite-terminal-commissioning-gates-infographic.png",
+  "imageQA": "text-fit pass | leader-lines pass | overlap pass | flat-vector reference style pass",
+  "linkedInApp": "Windows LinkedIn app; scheduled automation may click Post",
+  "testRun": true
+}

@@ -42,6 +42,7 @@ Mirror + LinkedIn auto-post:
 | 2026-07-02 | marine-plm-interface-readiness-governance | interface readiness governance, 8 unique crops (fixed rule applied) | interface handoff + BOM maturity | prepared (8/8 unique, QA pass) |
 | 2026-07-02 | satcom-fallback-evidence-management | SATCOM fallback managed as engineering evidence, not just network event | RF/SATCOM validation + shore-gateway logs + acceptance thresholds | prepared (pro-grade image, QA pass) |
 | 2026-07-02 | marine-plm-bom-validation-gates-test | BOM validation gates owned before AI scripts reach shipyard release line | BOM maturity + supplier package readiness + class/test records | prepared (image-gen tool, QA pass) |
+| 2026-07-06 | leo-satellite-terminal-commissioning-gates | LEO terminal acceptance is evidence-gated commissioning, not install-and-hope | RF/SATCOM validation + FAT/SAT records + failover proof | test run (non-PLM) |
 
 ---
 
@@ -105,3 +106,12 @@ Mirror + LinkedIn auto-post:
 - Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-02/marine-plm-bom-validation-gates-test/`
 - Windows path: `C:\Users\namma\Documents\Codex\2026-07-02\marine-plm-bom-validation-gates-test\`
 - LinkedIn status: ready for final posting (cloud test; no Windows app action executed).
+
+## 2026-07-06 UTC (test run — non-PLM)
+- Topic: leo-satellite-terminal-commissioning-gates.
+- Category: LEO satellite terminal commissioning / SATCOM (not PLM).
+- Angle: evidence-gated acceptance — pointing proof, modem lock, RF margin, failover, FAT/SAT records.
+- Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-06/leo-satellite-terminal-commissioning-gates/`
+- Windows mirror path: `C:\Users\namma\Documents\Codex\2026-07-06\leo-satellite-terminal-commissioning-gates\`
+- Image QA: text-fit pass | leader-lines pass | overlap pass | flat-vector reference style pass.
+- LinkedIn status: ready for final posting (pending Windows mirror + app test).
