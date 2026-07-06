@@ -6,7 +6,7 @@
 
 [CmdletBinding()]
 param(
-    [string]$Branch = "cursor/fix-linkedin-local-mirror-0681",
+    [string]$Branch = "memory",
     [string]$Repo = "leejunha781/Codex",
     [string]$TargetDir = (Join-Path $env:USERPROFILE ".cursor\automations")
 )
