@@ -13,32 +13,41 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-$BaseRaw = "https://raw.githubusercontent.com/$Repo/$Branch/.cursor/automations"
+$CursorBaseRaw = "https://raw.githubusercontent.com/$Repo/$Branch/.cursor/automations"
+$CodexBaseRaw = "https://raw.githubusercontent.com/$Repo/$Branch/.codex/automations"
+$CursorTarget = $TargetDir
+$CodexTarget = Join-Path $env:USERPROFILE ".codex\automations"
 
-$Files = @(
-    "sync-both-linkedin-automations.ps1",
-    "sync-daily-linkedin-automation.ps1",
-    "validate-daily-linkedin-automation.ps1",
-    "mirror-linkedin-runs.ps1",
-    "post-linkedin-windows-app-prompt.md",
-    "install-cursor-linkedin-automation-scripts.ps1",
-    "fetch-cursor-linkedin-scripts-from-github.ps1",
-    "daily-linkedin-marine-plm-post/automation.toml",
-    "daily-linkedin-marine-plm-post/memory.md",
-    "daily-linkedin-marine-plm-post/prompt.md",
-    "daily-linkedin-marine-plm-post/cursor-cloud-registration.md"
+$FileMap = @(
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "sync-both-linkedin-automations.ps1" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "sync-daily-linkedin-automation.ps1" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "validate-daily-linkedin-automation.ps1" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "mirror-linkedin-runs.ps1" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "post-linkedin-windows-app-prompt.md" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "install-cursor-linkedin-automation-scripts.ps1" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "fetch-cursor-linkedin-scripts-from-github.ps1" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/automation.toml" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/memory.md" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/prompt.md" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/cursor-cloud-registration.md" },
+    @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "sync-daily-linkedin-automation.ps1" },
+    @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "sync-daily-linkedin-mirror-automation.ps1" },
+    @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "daily-linkedin-marine-plm-post/automation.toml" },
+    @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "daily-linkedin-marine-plm-post/memory.md" },
+    @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "daily-linkedin-mirror-and-post/automation.toml" }
 )
 
-New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null
-New-Item -ItemType Directory -Force -Path (Join-Path $TargetDir "daily-linkedin-marine-plm-post") | Out-Null
-New-Item -ItemType Directory -Force -Path (Join-Path $TargetDir "cache\linkedin-mirror") | Out-Null
+New-Item -ItemType Directory -Force -Path $CursorTarget | Out-Null
+New-Item -ItemType Directory -Force -Path $CodexTarget | Out-Null
+New-Item -ItemType Directory -Force -Path (Join-Path $CursorTarget "cache\linkedin-mirror") | Out-Null
 
 $ok = 0
 $failed = @()
 
-foreach ($rel in $Files) {
-    $url = "$BaseRaw/$($rel -replace '\\','/')"
-    $dest = Join-Path $TargetDir ($rel -replace '/', [System.IO.Path]::DirectorySeparatorChar)
+foreach ($entry in $FileMap) {
+    $rel = $entry.Rel
+    $url = "$($entry.Base)/$($rel -replace '\\','/')"
+    $dest = Join-Path $entry.Root ($rel -replace '/', [System.IO.Path]::DirectorySeparatorChar)
     $destParent = Split-Path $dest -Parent
     if ($destParent) {
         New-Item -ItemType Directory -Force -Path $destParent | Out-Null
@@ -58,7 +67,9 @@ foreach ($rel in $Files) {
 
 Write-Host ""
 if ($failed.Count -eq 0) {
-    Write-Host "FETCH COMPLETE: $ok files -> $TargetDir"
+    Write-Host "FETCH COMPLETE: $ok files"
+    Write-Host "  Cursor: $CursorTarget"
+    Write-Host "  Codex:  $CodexTarget"
     Write-Host ""
     Write-Host "Next:"
     Write-Host "  cd $TargetDir"

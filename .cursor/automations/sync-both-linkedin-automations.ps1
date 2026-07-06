@@ -3,22 +3,44 @@
 
 $ErrorActionPreference = "Stop"
 
-$RepoRoot = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
+function Get-RepoRootFromScript {
+    param([string]$ScriptDir)
+
+    $git = Get-Command git -ErrorAction SilentlyContinue
+    if ($git) {
+        $root = (& git -C $ScriptDir rev-parse --show-toplevel 2>$null)
+        if ($LASTEXITCODE -eq 0 -and -not [string]::IsNullOrWhiteSpace($root)) {
+            return $root.Trim()
+        }
+    }
+
+    return (Split-Path (Split-Path $ScriptDir -Parent) -Parent)
+}
+
+$RepoRoot = Get-RepoRootFromScript -ScriptDir $PSScriptRoot
 $CodexSync = Join-Path $RepoRoot ".codex\automations\sync-daily-linkedin-automation.ps1"
 $CodexMirrorSync = Join-Path $RepoRoot ".codex\automations\sync-daily-linkedin-mirror-automation.ps1"
 $CursorSync = Join-Path $PSScriptRoot "sync-daily-linkedin-automation.ps1"
 $MirrorScript = Join-Path $PSScriptRoot "mirror-linkedin-runs.ps1"
+$FetchScript = Join-Path $PSScriptRoot "fetch-cursor-linkedin-scripts-from-github.ps1"
+
+Write-Host "Repo root: $RepoRoot"
 
 if (Test-Path $CodexSync) {
     & $CodexSync
 } else {
     Write-Warning "Codex sync script not found: $CodexSync"
+    Write-Warning "Run: git pull origin memory  OR  fetch-cursor-linkedin-scripts-from-github.ps1"
 }
 
 if (Test-Path $CodexMirrorSync) {
     & $CodexMirrorSync
 } else {
     Write-Warning "Codex mirror sync script not found: $CodexMirrorSync"
+    if (Test-Path $FetchScript) {
+        Write-Host "Attempting GitHub fetch for missing Codex automation files..."
+        & $FetchScript
+    }
 }
 
 & $CursorSync
