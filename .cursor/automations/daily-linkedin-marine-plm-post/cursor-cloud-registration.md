@@ -4,11 +4,20 @@ Use this guide to register the automation in **Cursor Desktop / cursor.com/autom
 
 ## 1. Sync repo files to local Cursor automations dir (Windows)
 
-If `sync-both-linkedin-automations.ps1` or `validate-daily-linkedin-automation.ps1` are missing under `C:\Users\namma\.cursor\automations\`, run bootstrap first:
+If `sync-both-linkedin-automations.ps1` or `validate-daily-linkedin-automation.ps1` are missing under `C:\Users\namma\.cursor\automations\`, files are not on your current git branch (main/memory). Use GitHub fetch instead:
 
 ```powershell
-# After git pull on branch cursor/fix-linkedin-local-mirror-0681 (or merged main)
-powershell -NoProfile -File C:\Users\namma\.cursor\automations\install-cursor-linkedin-automation-scripts.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -Command "iwr -UseBasicParsing 'https://raw.githubusercontent.com/leejunha781/Codex/cursor/fix-linkedin-local-mirror-0681/.cursor/automations/fetch-cursor-linkedin-scripts-from-github.ps1' -OutFile $env:TEMP\fetch-linkedin.ps1; powershell -NoProfile -ExecutionPolicy Bypass -File $env:TEMP\fetch-linkedin.ps1"
+```
+
+Or after switching branch:
+
+```powershell
+cd C:\Users\namma
+git fetch origin cursor/fix-linkedin-local-mirror-0681
+git checkout cursor/fix-linkedin-local-mirror-0681
+git pull origin cursor/fix-linkedin-local-mirror-0681
+powershell -NoProfile -File .cursor\automations\install-cursor-linkedin-automation-scripts.ps1
 ```
 
 Then:
