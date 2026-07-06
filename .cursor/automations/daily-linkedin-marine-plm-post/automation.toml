@@ -20,7 +20,7 @@ rrule = "RRULE:FREQ=WEEKLY;BYHOUR=9;BYMINUTE=0;BYDAY=MO,TU,WE,TH,FR,SA,SU"
 model = "gpt-5.5"
 reasoning_effort = "low"
 execution_environment = "cloud"
-cwds = ["C:\\Users\\namma\\Documents\\Daily Linkedin Posting"]
+cwds = ["C:\\Users\\namma\\Documents\\Codex"]
 repo_runs_dir = ".cursor/automations/daily-linkedin-marine-plm-post/runs"
 created_at = 1782227546020
 updated_at = 1782972536818

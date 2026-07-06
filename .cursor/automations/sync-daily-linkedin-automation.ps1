@@ -20,6 +20,9 @@ Copy-Item -Path (Join-Path $SourceDir "cursor-cloud-registration.md") -Destinati
 
 Write-Host "Synced Cursor automation files to $TargetDir"
 Write-Host ""
+Write-Host "After a cloud run (git pull), mirror artifacts to Codex folder:"
+Write-Host "  .\.cursor\automations\mirror-linkedin-run-to-codex.ps1 -Latest"
+Write-Host ""
 Write-Host "Next steps in Cursor:"
 Write-Host "  1. Open https://cursor.com/automations/new"
 Write-Host "  2. Create scheduled automation: daily 09:00 (cron 0 9 * * *)"

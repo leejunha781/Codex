@@ -106,4 +106,4 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-06/marine-plm-design-change-control-governance/`
 - Windows path (canonical): `C:\Users\namma\Documents\Codex\2026-07-06\marine-plm-design-change-control-governance\` — unavailable from Linux cloud environment this run; Codex Windows agent handles the mirror + posting.
 - New standing rule: from 2026-07-06 onward, always produce excellent, highly detailed professional infographics (elite consulting tier) by default — see prompt "Excellent-design mandate".
-- LinkedIn status: ready for final posting (cloud run; LinkedIn Windows app unreachable, no post submitted).
+- LinkedIn status: ready for final posting (cloud run; LinkedIn Windows app unreachable). Cursor Pro handoff: `ready-for-posting.json` + `mirror-linkedin-run-to-codex.ps1` for Windows mirror after git pull.

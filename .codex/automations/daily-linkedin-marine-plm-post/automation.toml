@@ -14,6 +14,6 @@ rrule = "RRULE:FREQ=WEEKLY;BYHOUR=9;BYMINUTE=0;BYDAY=MO,TU,WE,TH,FR,SA,SU"
 model = "gpt-5.5"
 reasoning_effort = "low"
 execution_environment = "local"
-cwds = ["C:\\Users\\namma\\Documents\\Daily Linkedin Posting"]
+cwds = ["C:\\Users\\namma\\Documents\\Codex"]
 created_at = 1782227546020
 updated_at = 1782972536818
