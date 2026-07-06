@@ -101,7 +101,9 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 - Marine execution context: design-change control + configuration baseline/effectivity + CAD/ERP/MES/document-control interfaces + class/test re-verification + shipyard adoption/handover evidence.
 - Image generated with the built-in image generation tool per Image generation rule + Reference-grade flat vector style rule.
 - Style: 6-step change-control pipeline (ECR → AI impact draft → baseline bind → board disposition → effectivity cut-in → evidence pack), central stylized vessel digital-thread scene (CAD/ERP/MES/DOC CONTROL) with cyan traced-change link and amber HOLD/ESCALATE path, Python automation sidebar, 3 summary cards, footer takeaway strip.
-- Image QA: text-fit pass | leader-lines pass (cyan links + amber hold path terminate on nodes) | overlap QA pass | icon-consistency pass | professional-grade pass | photo-diversity N/A (flat vector).
+- Image (v2, excellent/detailed upgrade per user request): regenerated to elite consulting-grade detail — blueprint-grid depth, layered panels with soft borders, number badges + captions on the 6 pipeline cards, detailed vessel digital-thread scene, amber alert node on the HOLD/ESCALATE path, code-bracket automation sidebar icons. Promoted to canonical run filename.
+- Image QA: text-fit pass | leader-lines pass (cyan links + amber hold path terminate on nodes/alert) | overlap QA pass | icon-consistency pass | professional-grade pass (upgraded) | photo-diversity N/A (flat vector).
 - Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-06/marine-plm-design-change-control-governance/`
-- Windows path (planned): `C:\Users\namma\Documents\Codex\2026-07-06\marine-plm-design-change-control-governance\` — unavailable from Linux cloud environment.
+- Windows path (canonical): `C:\Users\namma\Documents\Codex\2026-07-06\marine-plm-design-change-control-governance\` — unavailable from Linux cloud environment this run; Codex Windows agent handles the mirror + posting.
+- New standing rule: from 2026-07-06 onward, always produce excellent, highly detailed professional infographics (elite consulting tier) by default — see prompt "Excellent-design mandate".
 - LinkedIn status: ready for final posting (cloud run; LinkedIn Windows app unreachable, no post submitted).
