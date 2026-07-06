@@ -18,9 +18,10 @@ Read this file at the start of each run. Choose a topic and angle different from
 
 ---
 
-## Local mirror workflow (2026-07-06)
+## Local mirror + auto-post workflow (2026-07-06)
 
-Cloud Cursor runs save artifacts to repo `runs/` only. Windows output at `C:\Users\namma\Documents\Codex\` is mirrored by `mirror-linkedin-runs.ps1` (Codex automation `daily-linkedin-mirror-runs`, daily 09:30).
+**Fixed Windows mirror folder:** `C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\`
+Codex automation `daily-linkedin-mirror-and-post` (09:35) mirrors repo runs then auto-posts via LinkedIn Windows app.
 
 ---
 

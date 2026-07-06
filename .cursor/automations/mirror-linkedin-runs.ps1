@@ -1,5 +1,6 @@
 # Mirror Daily LinkedIn run artifacts from repo to local Windows output folder.
 # Cloud Cursor runs write to repo runs/ only; this script copies to Documents\Codex.
+# Windows mirror path: C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\
 # Run from PowerShell 5.1 on Windows.
 
 [CmdletBinding()]
@@ -15,6 +16,8 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+
+$WindowsMirrorPathTemplate = "C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\"
 
 $RunsRelativeNormalized = ($RunsRelative -replace '\\', '/').Trim('/')
 $RunsSource = Join-Path $RepoRoot ($RunsRelativeNormalized -replace '/', [System.IO.Path]::DirectorySeparatorChar)
@@ -203,6 +206,58 @@ function Merge-ArtifactMaps {
     return $merged
 }
 
+function Get-WindowsMirrorFolder {
+    param(
+        [string]$TargetRoot,
+        [string]$RunDate,
+        [string]$TopicSlug
+    )
+
+    return Join-Path $TargetRoot (Join-Path $RunDate $TopicSlug)
+}
+
+function Write-ReadyForPostingManifest {
+    param(
+        [string]$TargetRoot,
+        [string]$RunDate,
+        [string]$TopicSlug,
+        [bool]$IsDryRun
+    )
+
+    $destDir = Get-WindowsMirrorFolder -TargetRoot $TargetRoot -RunDate $RunDate -TopicSlug $TopicSlug
+    $postPath = Join-Path $destDir "linkedin-post.md"
+    $imageCandidates = @(Get-ChildItem -Path $destDir -Filter "*-infographic.png" -File -ErrorAction SilentlyContinue)
+    $imagePath = if ($imageCandidates.Count -gt 0) { $imageCandidates[0].FullName } else { Join-Path $destDir "$TopicSlug-infographic.png" }
+
+    $manifest = [ordered]@{
+        topic                 = $TopicSlug
+        date                  = $RunDate
+        status                = "mirrored_ready_to_post"
+        windowsMirrorPath     = $destDir
+        windowsMirrorTemplate = $WindowsMirrorPathTemplate
+        postPath              = $postPath
+        imagePath             = $imagePath
+        linkedInApp           = "Windows LinkedIn app only"
+        autoPost              = $true
+        mirrorScript          = "C:\Users\namma\.cursor\automations\mirror-linkedin-runs.ps1"
+    }
+
+    $manifestPath = Join-Path $destDir "ready-for-posting.json"
+    if ($IsDryRun) {
+        Write-MirrorLog "[dry-run] would write manifest $manifestPath"
+        return $manifest
+    }
+
+    if (-not (Test-Path $postPath)) {
+        Write-MirrorLog "WARN: skip manifest for $RunDate/$TopicSlug (missing linkedin-post.md)"
+        return $null
+    }
+
+    $manifest | ConvertTo-Json -Depth 4 | Set-Content -Path $manifestPath -Encoding UTF8
+    Write-MirrorLog "Wrote manifest $manifestPath"
+    return $manifest
+}
+
 if ($Pull) {
     Write-MirrorLog "Pull requested for $RepoRoot"
     Invoke-GitPull -Root $RepoRoot
@@ -228,6 +283,7 @@ if ($artifacts.Count -eq 0) {
 
 $copied = 0
 $skipped = 0
+$topicKeys = @{}
 
 foreach ($entry in ($artifacts.GetEnumerator() | Sort-Object Name)) {
     $key = $entry.Key
@@ -238,6 +294,7 @@ foreach ($entry in ($artifacts.GetEnumerator() | Sort-Object Name)) {
     $runDate = $parts[0]
     $topicSlug = $parts[1]
     $fileName = $parts[2]
+    $topicKeys["$runDate/$topicSlug"] = $true
     $destDir = Join-Path $MirrorTarget (Join-Path $runDate $topicSlug)
     $destPath = Join-Path $destDir $fileName
 
@@ -273,5 +330,20 @@ foreach ($entry in ($artifacts.GetEnumerator() | Sort-Object Name)) {
     $copied++
 }
 
-Write-MirrorLog "Mirror complete: copied=$copied skipped=$skipped target=$MirrorTarget log=$LogFile"
+$manifests = @()
+foreach ($topicKey in ($topicKeys.Keys | Sort-Object)) {
+    $parts = $topicKey -split '/'
+    $manifest = Write-ReadyForPostingManifest -TargetRoot $MirrorTarget -RunDate $parts[0] -TopicSlug $parts[1] -IsDryRun:([bool]$DryRun)
+    if ($null -ne $manifest) {
+        $manifests += $manifest
+    }
+}
+
+if ($manifests.Count -gt 0 -and -not $DryRun) {
+    $summaryPath = Join-Path $LogDir "latest-mirror-runs.json"
+    $manifests | ConvertTo-Json -Depth 4 | Set-Content -Path $summaryPath -Encoding UTF8
+    Write-MirrorLog "Wrote mirror summary $summaryPath"
+}
+
+Write-MirrorLog "Mirror complete: copied=$copied skipped=$skipped target=$MirrorTarget template=$WindowsMirrorPathTemplate log=$LogFile"
 exit 0

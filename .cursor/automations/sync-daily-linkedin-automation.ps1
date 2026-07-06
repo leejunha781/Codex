@@ -20,9 +20,11 @@ Copy-Item -Path (Join-Path $SourceDir "memory.md") -Destination $TargetDir -Forc
 Copy-Item -Path (Join-Path $SourceDir "prompt.md") -Destination $TargetDir -Force
 Copy-Item -Path (Join-Path $SourceDir "cursor-cloud-registration.md") -Destination $TargetDir -Force
 Copy-Item -Path (Join-Path $PSScriptRoot "mirror-linkedin-runs.ps1") -Destination $CursorAutomationsDir -Force
+Copy-Item -Path (Join-Path $PSScriptRoot "post-linkedin-windows-app-prompt.md") -Destination $CursorAutomationsDir -Force
 
 Write-Host "Synced Cursor automation files to $TargetDir"
 Write-Host "Synced mirror script to $CursorAutomationsDir\mirror-linkedin-runs.ps1"
+Write-Host "Synced post prompt to $CursorAutomationsDir\post-linkedin-windows-app-prompt.md"
 Write-Host ""
 Write-Host "Next steps in Cursor:"
 Write-Host "  1. Open https://cursor.com/automations/new"

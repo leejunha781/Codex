@@ -5,6 +5,7 @@ $ErrorActionPreference = "Stop"
 
 $AutomationDir = Join-Path $env:USERPROFILE ".cursor\automations\daily-linkedin-marine-plm-post"
 $MirrorScript = Join-Path $env:USERPROFILE ".cursor\automations\mirror-linkedin-runs.ps1"
+$PostPrompt = Join-Path $env:USERPROFILE ".cursor\automations\post-linkedin-windows-app-prompt.md"
 $TomlPath = Join-Path $AutomationDir "automation.toml"
 $MemoryPath = Join-Path $AutomationDir "memory.md"
 $PromptPath = Join-Path $AutomationDir "prompt.md"
@@ -12,7 +13,8 @@ $PromptPath = Join-Path $AutomationDir "prompt.md"
 $requiredPromptSections = @(
     "Cursor Cloud Agent addendum",
     "mirror-linkedin-runs.ps1",
-    "daily-linkedin-mirror-runs",
+    "daily-linkedin-mirror-and-post",
+    "post-linkedin-windows-app-prompt",
     "Quiet daily LinkedIn workflow",
     "New AI-era developer leadership angle",
     "Beyond Vibe Coding",
@@ -31,7 +33,7 @@ $requiredPromptSections = @(
 
 $failures = @()
 
-foreach ($path in @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript)) {
+foreach ($path in @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $PostPrompt)) {
     if (-not (Test-Path $path)) {
         $failures += "Missing file: $path"
     }
@@ -78,6 +80,7 @@ Write-Host "  automation.toml: $TomlPath"
 Write-Host "  memory.md: $MemoryPath"
 Write-Host "  prompt.md: $PromptPath"
 Write-Host "  mirror script: $MirrorScript"
-Write-Host "  Schedule: daily 09:00 cloud + 09:30 local mirror"
+Write-Host "  post prompt: $PostPrompt"
+Write-Host "  Schedule: daily 09:00 cloud + 09:35 local mirror and LinkedIn auto-post"
 Write-Host "  Register at: https://cursor.com/automations/new"
 exit 0
