@@ -11,5 +11,8 @@
   "imagePath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-06\\marine-plm-design-change-control-governance\\marine-plm-design-change-control-governance-infographic.png",
   "imageQA": "text-fit pass | leader-lines pass | overlap pass | satcom-reference-style pass",
   "mirrorScript": ".cursor/automations/mirror-linkedin-run-to-codex.ps1",
+  "mirrorBatch": ".cursor/automations/mirror-linkedin-run-to-codex.bat",
+  "requiredBranch": "cursor/daily-linkedin-marine-plm-04c5",
+  "mirrorGuide": ".cursor/automations/WINDOWS-MIRROR-GUIDE.md",
   "linkedInApp": "Windows LinkedIn app only; do not click Post without user confirmation"
 }

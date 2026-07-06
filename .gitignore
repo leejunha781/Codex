@@ -64,6 +64,7 @@
 # 공통 제외
 **/.git/
 *.png
+!/.cursor/automations/daily-linkedin-marine-plm-post/runs/**/*-infographic.png
 *.jpg
 *.jpeg
 *.pdf
