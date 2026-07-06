@@ -4,12 +4,22 @@
 $ErrorActionPreference = "Stop"
 
 $AutomationDir = Join-Path $env:USERPROFILE ".cursor\automations\daily-linkedin-marine-plm-post"
+$AutomationsRoot = Join-Path $env:USERPROFILE ".cursor\automations"
+$MirrorScript = Join-Path $AutomationsRoot "mirror-linkedin-runs.ps1"
+$PostPrompt = Join-Path $AutomationsRoot "post-linkedin-windows-app-prompt.md"
+$SyncBothScript = Join-Path $AutomationsRoot "sync-both-linkedin-automations.ps1"
+$ValidateScript = Join-Path $AutomationsRoot "validate-daily-linkedin-automation.ps1"
+$SyncScript = Join-Path $AutomationsRoot "sync-daily-linkedin-automation.ps1"
+$InstallScript = Join-Path $AutomationsRoot "install-cursor-linkedin-automation-scripts.ps1"
 $TomlPath = Join-Path $AutomationDir "automation.toml"
 $MemoryPath = Join-Path $AutomationDir "memory.md"
 $PromptPath = Join-Path $AutomationDir "prompt.md"
 
 $requiredPromptSections = @(
     "Cursor Cloud Agent addendum",
+    "mirror-linkedin-runs.ps1",
+    "daily-linkedin-mirror-and-post",
+    "post-linkedin-windows-app-prompt",
     "Quiet daily LinkedIn workflow",
     "New AI-era developer leadership angle",
     "Beyond Vibe Coding",
@@ -28,9 +38,18 @@ $requiredPromptSections = @(
 
 $failures = @()
 
-foreach ($path in @($TomlPath, $MemoryPath, $PromptPath)) {
+$RequiredPaths = @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $PostPrompt, $SyncBothScript, $ValidateScript, $SyncScript)
+$OptionalPaths = @($InstallScript)
+
+foreach ($path in $RequiredPaths) {
     if (-not (Test-Path $path)) {
         $failures += "Missing file: $path"
+    }
+}
+
+foreach ($path in $OptionalPaths) {
+    if (-not (Test-Path $path)) {
+        Write-Host "WARN optional file missing: $path"
     }
 }
 
@@ -74,6 +93,12 @@ Write-Host "VALIDATION PASSED"
 Write-Host "  automation.toml: $TomlPath"
 Write-Host "  memory.md: $MemoryPath"
 Write-Host "  prompt.md: $PromptPath"
-Write-Host "  Schedule: daily 09:00 (cron 0 9 * * *)"
+Write-Host "  mirror script: $MirrorScript"
+Write-Host "  post prompt: $PostPrompt"
+Write-Host "  sync-both: $SyncBothScript"
+Write-Host "  validate: $ValidateScript"
+Write-Host "  sync: $SyncScript"
+Write-Host "  install: $InstallScript"
+Write-Host "  Schedule: daily 09:00 cloud + 09:35 local mirror and LinkedIn auto-post"
 Write-Host "  Register at: https://cursor.com/automations/new"
 exit 0

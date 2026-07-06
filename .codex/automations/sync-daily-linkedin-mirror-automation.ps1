@@ -1,9 +1,9 @@
-# Sync Daily LinkedIn automation to live Codex install
+# Sync Daily LinkedIn mirror-and-post automation to live Codex install
 # Run from PowerShell 5.1 on Windows after pulling repo changes.
 
 $ErrorActionPreference = "Stop"
 
-$AutomationName = "daily-linkedin-marine-plm-post"
+$AutomationName = "daily-linkedin-mirror-and-post"
 $Repo = "leejunha781/Codex"
 $Branch = "memory"
 
@@ -23,23 +23,22 @@ function Test-SamePath {
     return (Normalize-PathString $Left) -ieq (Normalize-PathString $Right)
 }
 
-function Ensure-AutomationFile {
+function Ensure-AutomationToml {
     param(
         [string]$TargetDir,
-        [string]$RelativeRepoPath,
-        [string]$FileName
+        [string]$RelativeRepoPath
     )
 
     New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null
-    $destPath = Join-Path $TargetDir $FileName
-    if (Test-Path $destPath) {
-        return $destPath
+    $tomlPath = Join-Path $TargetDir "automation.toml"
+    if (Test-Path $tomlPath) {
+        return $tomlPath
     }
 
-    $url = "https://raw.githubusercontent.com/$Repo/$Branch/$RelativeRepoPath/$FileName"
+    $url = "https://raw.githubusercontent.com/$Repo/$Branch/$RelativeRepoPath/automation.toml"
     Write-Host "FETCH $url"
-    Invoke-WebRequest -Uri $url -UseBasicParsing -OutFile $destPath
-    return $destPath
+    Invoke-WebRequest -Uri $url -UseBasicParsing -OutFile $tomlPath
+    return $tomlPath
 }
 
 function Copy-IfDifferent {
@@ -56,22 +55,23 @@ function Copy-IfDifferent {
 
 $SourceDir = Join-Path $PSScriptRoot $AutomationName
 $TargetDir = Join-Path $env:USERPROFILE ".codex\automations\$AutomationName"
+$LegacyDir = Join-Path $env:USERPROFILE ".codex\automations\daily-linkedin-mirror-runs"
 $RelativeRepoPath = ".codex/automations/$AutomationName"
 
-$sourceToml = Join-Path $SourceDir "automation.toml"
-if (Test-Path $sourceToml) {
-    Copy-IfDifferent -Source $sourceToml -Destination (Join-Path $TargetDir "automation.toml")
-    Copy-IfDifferent -Source (Join-Path $SourceDir "memory.md") -Destination (Join-Path $TargetDir "memory.md")
+if (-not (Test-Path (Join-Path $SourceDir "automation.toml"))) {
+    Write-Host "Source automation.toml not in repo path; ensuring live install from GitHub..."
+    Ensure-AutomationToml -TargetDir $TargetDir -RelativeRepoPath $RelativeRepoPath | Out-Null
 } else {
-    Write-Host "Source files not in repo path; ensuring live install from GitHub..."
-    Ensure-AutomationFile -TargetDir $TargetDir -RelativeRepoPath $RelativeRepoPath -FileName "automation.toml" | Out-Null
-    Ensure-AutomationFile -TargetDir $TargetDir -RelativeRepoPath $RelativeRepoPath -FileName "memory.md" | Out-Null
+    Copy-IfDifferent -Source (Join-Path $SourceDir "automation.toml") -Destination (Join-Path $TargetDir "automation.toml")
 }
 
 if (-not (Test-Path (Join-Path $TargetDir "automation.toml"))) {
     throw "automation.toml still missing at $TargetDir"
 }
 
-Write-Host ""
-Write-Host "Codex automation ready at $TargetDir"
-Write-Host "Next: verify ACTIVE in Codex Automations (codex://automations)"
+if (Test-Path $LegacyDir) {
+    Write-Host "Note: legacy automation dir still exists at $LegacyDir — disable 'Daily LinkedIn Mirror Runs' in Codex UI"
+}
+
+Write-Host "Mirror-and-post automation ready at $TargetDir"
+Write-Host "Schedule: daily 09:35 | Mirror: C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\"
