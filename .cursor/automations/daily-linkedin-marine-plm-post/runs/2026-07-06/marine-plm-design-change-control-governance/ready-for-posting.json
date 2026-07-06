@@ -3,13 +3,13 @@
   "date": "2026-07-06",
   "status": "ready_for_final_posting",
   "angle": "AI drafts engineering-change impact; change board owns disposition, effectivity, and traceable record",
+  "imageStyle": "satcom-fallback-reference (7-step pipeline, realistic vessel scene, change-events legend, Python automation sidebar, 3 summary cards, footer strip)",
+  "imageVersion": "v3-satcom-reference-style",
   "repoPath": ".cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-06/marine-plm-design-change-control-governance",
   "windowsPath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-06\\marine-plm-design-change-control-governance",
   "postPath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-06\\marine-plm-design-change-control-governance\\linkedin-post.md",
   "imagePath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-06\\marine-plm-design-change-control-governance\\marine-plm-design-change-control-governance-infographic.png",
-  "imageVersion": "v2-excellent-detailed",
-  "imageQA": "text-fit pass | leader-lines pass | overlap pass | icon-consistency pass | professional-grade pass",
+  "imageQA": "text-fit pass | leader-lines pass | overlap pass | satcom-reference-style pass",
   "mirrorScript": ".cursor/automations/mirror-linkedin-run-to-codex.ps1",
-  "linkedInApp": "Windows LinkedIn app only; do not click Post without user confirmation",
-  "cursorProHandoff": "On Windows: git pull, then run mirror-linkedin-run-to-codex.ps1 -Latest (or with -Date/-TopicSlug). Use Computer use to prepare LinkedIn composer if desired."
+  "linkedInApp": "Windows LinkedIn app only; do not click Post without user confirmation"
 }
