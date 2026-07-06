@@ -3,6 +3,42 @@
 
 $ErrorActionPreference = "Stop"
 
+function Normalize-PathString {
+    param([string]$Path)
+    if ([string]::IsNullOrWhiteSpace($Path)) { return "" }
+    try {
+        if (Test-Path -LiteralPath $Path) {
+            return (Resolve-Path -LiteralPath $Path).ProviderPath.TrimEnd('\')
+        }
+    } catch {}
+    return $Path.TrimEnd('\')
+}
+
+function Test-SamePath {
+    param([string]$Left, [string]$Right)
+    return (Normalize-PathString $Left) -ieq (Normalize-PathString $Right)
+}
+
+function Copy-IfDifferent {
+    param(
+        [string]$Source,
+        [string]$Destination
+    )
+
+    $destParent = Split-Path $Destination -Parent
+    if ($destParent) {
+        New-Item -ItemType Directory -Force -Path $destParent | Out-Null
+    }
+
+    if (Test-SamePath $Source $Destination) {
+        Write-Host "SKIP (repo = live install): $Destination"
+        return
+    }
+
+    Copy-Item -Path $Source -Destination $Destination -Force
+    Write-Host "OK   $Destination"
+}
+
 $SourceDir = Join-Path $PSScriptRoot "daily-linkedin-marine-plm-post"
 $TargetDir = Join-Path $env:USERPROFILE ".codex\automations\daily-linkedin-marine-plm-post"
 
@@ -12,14 +48,9 @@ if (-not (Test-Path (Join-Path $SourceDir "automation.toml"))) {
 
 New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null
 
-Copy-Item -Path (Join-Path $SourceDir "automation.toml") -Destination $TargetDir -Force
-Copy-Item -Path (Join-Path $SourceDir "memory.md") -Destination $TargetDir -Force
+Copy-IfDifferent -Source (Join-Path $SourceDir "automation.toml") -Destination (Join-Path $TargetDir "automation.toml")
+Copy-IfDifferent -Source (Join-Path $SourceDir "memory.md") -Destination (Join-Path $TargetDir "memory.md")
 
-Write-Host "Synced automation files to $TargetDir"
 Write-Host ""
-Write-Host "Next steps in Codex Desktop:"
-Write-Host "  1. Open Automations (codex://automations)"
-Write-Host "  2. Open 'Daily LinkedIn Marine PLM Post' (or create New Schedule with same prompt)"
-Write-Host "  3. Verify: ACTIVE, daily 09:00, local execution, full-access sandbox"
-Write-Host "  4. Project/CWD: C:\Users\namma\Documents\Daily Linkedin Posting"
-Write-Host "  5. Enable 'Prevent sleep while running' for scheduled runs"
+Write-Host "Codex automation ready at $TargetDir"
+Write-Host "Next: verify ACTIVE in Codex Automations (codex://automations)"
