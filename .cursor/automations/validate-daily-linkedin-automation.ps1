@@ -38,9 +38,18 @@ $requiredPromptSections = @(
 
 $failures = @()
 
-foreach ($path in @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $PostPrompt, $SyncBothScript, $ValidateScript, $SyncScript, $InstallScript)) {
+$RequiredPaths = @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $PostPrompt, $SyncBothScript, $ValidateScript, $SyncScript)
+$OptionalPaths = @($InstallScript)
+
+foreach ($path in $RequiredPaths) {
     if (-not (Test-Path $path)) {
         $failures += "Missing file: $path"
+    }
+}
+
+foreach ($path in $OptionalPaths) {
+    if (-not (Test-Path $path)) {
+        Write-Host "WARN optional file missing: $path"
     }
 }
 

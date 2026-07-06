@@ -48,12 +48,15 @@ if (-not (Test-Path (Join-Path $SourceDir "automation.toml"))) {
     throw "Source automation.toml not found at $SourceDir"
 }
 
-$UtilityScripts = @(
+$RequiredUtilities = @(
     "sync-both-linkedin-automations.ps1",
     "sync-daily-linkedin-automation.ps1",
     "validate-daily-linkedin-automation.ps1",
     "mirror-linkedin-runs.ps1",
-    "post-linkedin-windows-app-prompt.md",
+    "post-linkedin-windows-app-prompt.md"
+)
+
+$OptionalUtilities = @(
     "install-cursor-linkedin-automation-scripts.ps1",
     "fetch-cursor-linkedin-scripts-from-github.ps1",
     "force-update-linkedin-sync-scripts.ps1"
@@ -68,10 +71,19 @@ Copy-IfDifferent -Source (Join-Path $SourceDir "memory.md") -Destination (Join-P
 Copy-IfDifferent -Source (Join-Path $SourceDir "prompt.md") -Destination (Join-Path $TargetDir "prompt.md")
 Copy-IfDifferent -Source (Join-Path $SourceDir "cursor-cloud-registration.md") -Destination (Join-Path $TargetDir "cursor-cloud-registration.md")
 
-foreach ($utility in $UtilityScripts) {
+foreach ($utility in $RequiredUtilities) {
     $sourcePath = Join-Path $PSScriptRoot $utility
     if (-not (Test-Path $sourcePath)) {
         throw "Required utility file not found in repo: $sourcePath"
+    }
+    Copy-IfDifferent -Source $sourcePath -Destination (Join-Path $CursorAutomationsDir $utility)
+}
+
+foreach ($utility in $OptionalUtilities) {
+    $sourcePath = Join-Path $PSScriptRoot $utility
+    if (-not (Test-Path $sourcePath)) {
+        Write-Host "WARN optional utility missing (skipped): $sourcePath"
+        continue
     }
     Copy-IfDifferent -Source $sourcePath -Destination (Join-Path $CursorAutomationsDir $utility)
 }
