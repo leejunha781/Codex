@@ -1,0 +1,36 @@
+---
+description: PLM, Digital Thread, AVEVA, 조선소 PLM 아키텍처 설계 규칙
+globs:
+  - "**/*plm*"
+  - "**/*PLM*"
+  - "**/*aveva*"
+  - "**/*AVEVA*"
+  - "**/*digital-thread*"
+  - "**/*digital-twin*"
+alwaysApply: false
+---
+
+# PLM 및 디지털 스레드 프로젝트
+
+## 프로젝트 방향
+- 장기 목표: **새로운 PLM 플랫폼** 설계
+- 아키텍처 방향: **Windows 기반 AVEVA Engineering Authoring** + **Linux 기반 Open PLM Control Plane** 조합
+
+## 벤치마킹 프레임워크
+PLM·디지털 스레드·디지털 트윈 관련 작업에서는 아래 **4개 벤더를 함께 비교**하는 프레임워크를 기준으로 한다:
+1. **AVEVA**
+2. **Siemens**
+3. **Dassault Systèmes**
+4. **Hexagon**
+
+## 관련 키워드 작업 시 적용
+- 새로운 PLM 설계
+- AVEVA PLM 아키텍처
+- 조선소 PLM
+- PLM 벤치마킹
+- Digital Thread 설계
+
+## 산출물 기대 수준
+- 실제 업무에 사용 가능한 상세·전문 수준
+- 블록 다이어그램, 기술 도식, 표를 포함한다
+- 실무 적용 사례와 근거를 포함한다
