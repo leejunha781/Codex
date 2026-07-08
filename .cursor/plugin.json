@@ -1,0 +1,8 @@
+{
+  "name": "codex-ai-hub",
+  "version": "1.0.0",
+  "description": "Claude-grade AI configuration for Joonha Lee — rules, skills, and MCP for Cursor Pro + Claude Pro + Codex Pro",
+  "author": "Joonha Lee",
+  "rules": "./rules",
+  "skills": "./skills"
+}

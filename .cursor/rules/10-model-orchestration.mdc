@@ -1,0 +1,49 @@
+---
+description: Model selection — Cursor Pro + Claude + Codex orchestration for best results
+alwaysApply: true
+---
+
+# Model Orchestration (Cursor Pro + Claude + Codex)
+
+Use the right model for the job. Max Mode when context or reasoning depth matters.
+
+## Default Model Map
+
+| Task Type | Preferred Model | Mode |
+|-----------|-----------------|------|
+| Agent coding, refactors, PRs | GPT-5.3 Codex High / Composer 2.5 | Max for large repos |
+| Deep architecture, specs, trade-offs | Claude 4.6/4.7 Opus or Sonnet | Max Mode |
+| Long documents, resume/JD analysis | Claude Sonnet 5 or Opus | Max Mode |
+| Fast edits, small fixes | Auto or GPT-5.4 Mini | Default |
+| UI/visual from Figma | Claude Sonnet + Figma MCP | — |
+| Cloud Agents (async) | Same as task; enable in dashboard | — |
+
+## Cursor Pro Settings (User Action Required)
+
+In **Cursor → Settings → Models**:
+
+1. Enable **Claude 4.6/4.7 Opus**, **Claude Sonnet 5**, **GPT-5.3 Codex**, **GPT-5.4**.
+2. Turn on **Max Mode** for complex agent sessions.
+3. Set **Default Agent Model** to Auto for daily work; switch manually for heavy tasks.
+4. Monitor usage at [cursor.com/settings](https://cursor.com/settings) — Pro includes $20 API pool/month.
+
+## Claude Pro (claude.ai) — When to Use Alongside Cursor
+
+- Long research threads, artifact editing, Projects with uploaded docs.
+- Resume/cover letter polish after Cursor draft.
+- Paste Cursor output into Claude Projects for second-pass review.
+
+## Codex / OpenAI — When to Use
+
+- Heavy multi-file refactors and test-driven implementation in Cursor Agent.
+- CLI and API design (use `cli-for-agents` skill patterns).
+- Pair with Cursor Bugbot for PR review.
+
+## Multi-Model Pipeline (Recommended)
+
+```
+JD/요구사항 → Cursor Agent (분석·초안) → Claude Pro (문장·전략 검토) → Cursor (최종 파일·PR)
+코드 구현   → Codex/GPT-5.3 Codex (구현) → Claude Opus (아키텍처 리뷰) → CI/Bugbot
+```
+
+Do not run duplicate paid calls for the same subtask unless quality requires a second pass.

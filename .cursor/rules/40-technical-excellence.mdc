@@ -1,0 +1,32 @@
+---
+description: Code quality — TypeScript, testing, PR discipline, and verification
+globs: "**/*.{ts,tsx,js,jsx,py,go,rs}"
+alwaysApply: false
+---
+
+# Technical Excellence
+
+## Code Changes
+
+- Imports at top of file; no inline imports unless circular dependency is documented.
+- TypeScript: exhaustive `switch` with `never` in default for unions/enums.
+- Read before write; reuse existing abstractions; comments only for non-obvious logic.
+- Add tests only when requested or when they cover meaningful behavior.
+
+## Agent Execution
+
+- Run compile/lint/test after substantive edits.
+- Commit focused changes with clear messages; push before PR.
+- Use Cloud Agents for long-running tasks; verify locally when possible.
+
+## Verification Skills
+
+- `check-compiler-errors` — after code changes
+- `verify-this` — when validating a claim with evidence
+- `review-and-ship` — before opening PRs
+- `run-smoke-tests` — for UI changes
+
+## PR Quality
+
+- Small, reviewable diffs; descriptive PR body with verification steps.
+- No AI slop: remove redundant comments, dead code, and unnecessary abstractions.
