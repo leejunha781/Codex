@@ -54,6 +54,8 @@ Image leader-line rule: do not draw connector/leader lines unless each line clea
 
 Image overlap QA rule: before finalizing, inspect the finished image at full size. Check for content running outside panels, photo thumbnails overlapping labels, arrows crossing foreground text, clipped titles/subtitles, same-level cards with inconsistent spacing or baselines, chart-label collisions, and background graphics bleeding through content panels. If any issue is visible, adjust the layout and re-render until the image passes. Record the final QA result in the run summary or automation memory.
 
+C2PA strip rule (MANDATORY): AI-generated PNGs often embed C2PA Content Credentials (`caBX` chunk) that trigger LinkedIn's "Content credentials" CR badge. After final image export, strip metadata before upload using `strip-linkedin-image-c2pa.ps1` (Windows) or `strip-linkedin-image-c2pa.py` (cloud). `mirror-linkedin-runs.ps1` auto-strips mirrored infographic PNGs. FAIL QA if `caBX`/`c2pa` remains in file bytes.
+
 Save the final image and markdown post only to C:\\Users\\namma\\Documents\\Codex\\YYYY-MM-DD\\<topic-slug> with date/topic filenames. Do not create a separate direct-upload copy in any generated_images folder. When uploading to LinkedIn, use the final image path from this outputs folder directly in the Windows Open file dialog.
 
 Post via LinkedIn Windows app only, using existing logged-in session. Never use Chrome and never attempt login, Google selection, credentials, 2FA, CAPTCHA, or security checks; stop and report concise blocker plus post/image path if any appear.

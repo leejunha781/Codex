@@ -7,12 +7,14 @@
   "postPath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-09\\engineering-rca-evidence-structure\\linkedin-post.md",
   "imagePath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-09\\engineering-rca-evidence-structure\\engineering-rca-evidence-structure-infographic.png",
   "repoPath": ".cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-09/engineering-rca-evidence-structure/",
-  "imageSource": "Image Gen",
-  "imageVersion": "v3-commissioning-gates-reference",
+  "imageSource": "Image Gen + C2PA strip",
+  "imageVersion": "v4-c2pa-clean",
   "referenceStyle": "linkedin-reference-style-commissioning-gates.md",
+  "linkedinC2paRef": "https://www.linkedin.com/help/linkedin/answer/a6282984",
+  "c2paStripped": true,
   "designBrief": "design-brief.md",
-  "imageQA": "commissioning-gates-ref pass | text-fit pass | leader-lines pass | overlap pass | anti-simple-image pass",
+  "imageQA": "commissioning-gates-ref pass | c2pa-stripped pass | text-fit pass | overlap pass",
   "designGrade": "Pass",
   "status": "ready for final posting",
-  "createdAt": "2026-07-09T01:53:00Z"
+  "createdAt": "2026-07-09T02:05:00Z"
 }
