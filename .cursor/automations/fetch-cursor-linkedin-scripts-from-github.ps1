@@ -6,7 +6,7 @@
 
 [CmdletBinding()]
 param(
-    [string]$Branch = "memory",
+    [string]$Branch = "cursor/linkedin-figma-notion-claude-0681",
     [string]$Repo = "leejunha781/Codex",
     [string]$TargetDir = (Join-Path $env:USERPROFILE ".cursor\automations")
 )

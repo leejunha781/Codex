@@ -9,6 +9,7 @@ param(
     [string]$MirrorTarget = "C:\Users\namma\Documents\Codex",
     [string]$RunsRelative = ".cursor/automations/daily-linkedin-marine-plm-post/runs",
     [string]$Date,
+    [string]$Topic,
     [switch]$AllDates,
     [switch]$Pull,
     [switch]$IncludeRemoteBranches,
@@ -75,6 +76,7 @@ function Get-LocalRunArtifacts {
     param(
         [string]$SourceRoot,
         [string]$FilterDate,
+        [string]$FilterTopic,
         [bool]$IncludeAllDates
     )
 
@@ -90,6 +92,8 @@ function Get-LocalRunArtifacts {
 
         $topicDirs = Get-ChildItem -Path $dateDir.FullName -Directory -ErrorAction SilentlyContinue
         foreach ($topicDir in $topicDirs) {
+            if ($FilterTopic -and $topicDir.Name -ne $FilterTopic) { continue }
+
             $files = Get-ChildItem -Path $topicDir.FullName -File -ErrorAction SilentlyContinue
             foreach ($file in $files) {
                 if (-not (Test-IsRunArtifactName -FileName $file.Name)) { continue }
@@ -111,6 +115,7 @@ function Get-RemoteRunArtifacts {
         [string]$Root,
         [string]$RunsPrefix,
         [string]$FilterDate,
+        [string]$FilterTopic,
         [bool]$IncludeAllDates
     )
 
@@ -122,11 +127,15 @@ function Get-RemoteRunArtifacts {
     git -C $Root fetch origin --prune 2>&1 | Out-Null
 
     $branchPatterns = @(
+        "origin/cursor/linkedin-figma-notion-claude-0681",
+        "origin/cursor/fix-linkedin-local-mirror-0681",
+        "origin/cursor/daily-linkedin-test-non-plm-0681",
         "origin/cursor/daily-linkedin*",
         "origin/cursor/linkedin-daily*",
         "origin/cursor/linkedin-daily-automation-42c5",
         "origin/main",
-        "origin/master"
+        "origin/master",
+        "origin/memory"
     )
 
     $branches = @()
@@ -152,6 +161,7 @@ function Get-RemoteRunArtifacts {
 
             if (-not (Test-IsRunArtifactName -FileName $fileName)) { continue }
             if (-not $IncludeAllDates -and $FilterDate -and $runDate -ne $FilterDate) { continue }
+            if ($FilterTopic -and $topicSlug -ne $FilterTopic) { continue }
 
             $key = "$runDate/$topicSlug/$fileName"
             if (-not $artifacts.ContainsKey($key) -or $commitTime -gt $artifacts[$key].UpdatedAt) {
@@ -268,16 +278,17 @@ if (-not $AllDates -and [string]::IsNullOrWhiteSpace($filterDate)) {
     $filterDate = (Get-Date).ToString("yyyy-MM-dd")
 }
 
-$localArtifacts = Get-LocalRunArtifacts -SourceRoot $RunsSource -FilterDate $filterDate -IncludeAllDates:([bool]$AllDates)
+$localArtifacts = Get-LocalRunArtifacts -SourceRoot $RunsSource -FilterDate $filterDate -FilterTopic $Topic -IncludeAllDates:([bool]$AllDates)
 $remoteArtifacts = @{}
 if ($IncludeRemoteBranches -or $localArtifacts.Count -eq 0) {
-    $remoteArtifacts = Get-RemoteRunArtifacts -Root $RepoRoot -RunsPrefix $RunsRelativeNormalized -FilterDate $filterDate -IncludeAllDates:([bool]$AllDates)
+    $remoteArtifacts = Get-RemoteRunArtifacts -Root $RepoRoot -RunsPrefix $RunsRelativeNormalized -FilterDate $filterDate -FilterTopic $Topic -IncludeAllDates:([bool]$AllDates)
 }
 
 $artifacts = Merge-ArtifactMaps -Primary $localArtifacts -Secondary $remoteArtifacts
 
 if ($artifacts.Count -eq 0) {
-    Write-MirrorLog "No LinkedIn run artifacts found for mirror (date=$filterDate allDates=$AllDates)"
+    $topicMsg = if ($Topic) { " topic=$Topic" } else { "" }
+    Write-MirrorLog "No LinkedIn run artifacts found for mirror (date=$filterDate allDates=$AllDates$topicMsg)"
     exit 0
 }
 
