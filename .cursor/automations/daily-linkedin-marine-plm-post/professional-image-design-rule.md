@@ -2,7 +2,9 @@
 
 **MANDATORY.** Every LinkedIn post image must be a professionally designed engineering deliverable — never a simple AI poster, clipart slide, or generic infographic.
 
-Read with: `figma-notion-claude-integration.md`, `notion-config.json`, `linear-config.json`.
+Read with: `figma-notion-claude-integration.md`, `linkedin-reference-style-commissioning-gates.md`, `notion-config.json`, `linear-config.json`.
+
+**Canonical visual reference:** `linkedin-reference-style-commissioning-gates.md` — LEO Satellite Terminal Commissioning Gates solution-overview (photorealistic vessel + 7 gate cards with bullets + HUD overlay + sidebars + value pillars). Cursor Pro and Codex Pro MUST match this standard.
 
 ---
 
@@ -12,13 +14,26 @@ The final PNG must pass ALL of these:
 
 | Criterion | Requirement |
 |-----------|-------------|
-| Layout | Solution-overview poster: 5–7 step pipeline + central scene + sidebars + 3 summary cards + footer |
+| Layout | Commissioning Gates solution-overview: header + badge, 7 gate cards **with bullet details**, photorealistic center scene + HUD overlay, left event sidebar, right automation sidebar, 3 value pillars, footer |
+| Center visual | Photorealistic maritime/defense photo (vessel, shipyard, ops room) with technical overlay — NOT flat cartoon only |
+| Gate cards | Each of 7 cards: number, icon, bold title, 2–3 cyan bullet points with technical specifics |
+| Overlay links | TRACED LINK (solid cyan to hardware on photo); HOLD/ESCALATE (amber dashed, warning icon only) |
 | Typography | Clear hierarchy (title > section labels > body); no clipped or overflowing text |
 | Icons | Flat monochrome-blue vector, consistent line-weight — not cartoon, not 3D emoji |
 | Grid | Disciplined alignment, balanced whitespace, executive-grade composition |
 | Color | Deep-navy `#0A1628` background; cyan labels; white body; amber only for alert/fallback |
 | Resolution | Minimum 1080×1350 (LinkedIn portrait); export at 2× if possible |
-| Feel | Senior information designer / consulting deliverable — NOT stock AI infographic |
+| Feel | High-end B2B technical whitepaper / commissioning gates poster — NOT stock AI infographic |
+
+## Reference style check (compare to commissioning-gates)
+
+Before posting, verify image matches `linkedin-reference-style-commissioning-gates.md`:
+- [ ] SOLUTION OVERVIEW badge present
+- [ ] 7 gates with bullet-point detail (not icon-only)
+- [ ] Photorealistic center scene with HUD overlay
+- [ ] TRACED LINK line terminates on visible hardware
+- [ ] Left status sidebar + right automation sidebar
+- [ ] 3 bottom value pillars + footer takeaway
 
 ## BLOCKED — do not post if image shows any of these
 
@@ -63,14 +78,14 @@ Save `design-brief.md` in each run folder:
 ```markdown
 # Design Brief — <topic-slug>
 
-- Title / subtitle (English)
-- Pipeline steps (5–7): number, label, one-line description
-- Central scene: what system/architecture to show
-- Left legend items (3–5)
-- Right sidebar: automation/tooling bullets (3–4)
-- Bottom summary cards (3): title + one line each
-- Footer takeaway strip (one sentence)
-- Color notes: primary path cyan, exception path amber
+- Title / subtitle (English) + SOLUTION OVERVIEW badge
+- Pipeline gates (7): number, bold title, 2-3 bullet points each (technical detail)
+- Central scene: photorealistic subject + overlay nodes + TRACED LINK + HOLD/ESCALATE path
+- Left legend: 4 commissioning/status events with checkmarks
+- Right sidebar: Python automation tasks (4) with code icon header
+- Bottom value pillars (3): icon + title + one line each
+- Footer takeaway strip with target icon (one sentence)
+- Reference style: commissioning-gates-solution-overview
 ```
 
 Use this brief to drive Figma `use_figma` or Image Gen prompt.

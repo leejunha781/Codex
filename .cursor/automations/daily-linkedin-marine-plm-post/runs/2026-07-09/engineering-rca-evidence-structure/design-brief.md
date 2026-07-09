@@ -1,58 +1,42 @@
 # Design Brief — engineering-rca-evidence-structure
+Reference style: commissioning-gates-solution-overview
 
-**Date:** 2026-07-09  
-**Image target:** 1080×1350 LinkedIn portrait PNG
+## Header
+- Title (ALL CAPS): RCA EVIDENCE CHAIN: ENGINEERING GATES
+- Subtitle (cyan insight line): Evidence before root cause — not narrative-and-hope
+- Badge: SOLUTION OVERVIEW (top-right)
 
-## Title / Subtitle
+## 7 Gates (number, title, 2-3 bullets each)
+1. **INTAKE REQUEST** — Field symptom log captured; Equipment ID + mission context recorded; Owner assigned
+2. **SYMPTOM TIMELINE** — Time-stamped event sequence; Operator notes linked; Initial severity classified
+3. **TEST EVIDENCE** — BER/SNR + terminal logs captured; Shore-gateway correlation; Measurement thresholds logged
+4. **ENVIRONMENT CONTEXT** — Vessel motion + antenna state; Network routing path; Weather/obstruction noted
+5. **ROOT CAUSE PROOF** — Hypothesis documented; Verification test executed; Evidence linked to claim
+6. **CORRECTIVE ACTION** — Fix applied + owner; Re-test evidence captured; Change record updated
+7. **CLOSURE PACK** — Engineer sign-off gate; Customer-ready DOCX/PDF export; Acceptance record filed
 
-- **Title:** RCA Evidence Chain — From Field Symptom to Customer Closure
-- **Subtitle:** Engineering Document Automation for Defense & Satellite Programmes
+## Center scene
+- Photorealistic subject: Naval vessel at sea twilight with SATCOM terminal/antenna visible on deck
+- Overlay nodes: Field Intake → Terminal → Shore Gateway → Evidence Store → Ops Review
+- TRACED LINK target on photo: Cyan solid line from overlay "Terminal" icon to actual antenna hardware on vessel
+- HOLD/ESCALATE exception path: Amber dashed line + warning triangle on missing evidence link (gateway log gap)
 
-## Pipeline (7 steps)
+## Left sidebar — RCA EVENTS (4 status items)
+- Intake complete ✓
+- Evidence linked ✓
+- Root cause verified ✓
+- Closure signed ✓
 
-| # | Label | Description |
-|---|-------|-------------|
-| 1 | Intake | Field notes, photos, initial symptom log |
-| 2 | Symptom Log | Time-stamped event sequence |
-| 3 | Test Evidence | BER/SNR, terminal logs, measurements |
-| 4 | Environment | Vessel, rack, network, mission context |
-| 5 | Root Cause | Hypothesis + verification proof |
-| 6 | Corrective Action | Fix + ownership assignment |
-| 7 | Closure Pack | Customer-ready RCA export |
+## Right sidebar — PYTHON AUTOMATION (4 tasks)
+- Parse terminal + gateway logs
+- Compare RF thresholds
+- Flag missing evidence holds
+- Export review-ready closure pack
 
-## Central scene
-
-Satellite terminal on vessel deck linked to shore gateway. Cyan primary data path from terminal → gateway → evidence store. Amber dashed exception/fallback path for missing evidence links.
-
-## Left legend — Evidence Types
-
-- RF Metrics (BER/SNR)
-- Gateway Logs
-- Terminal State
-- Mission Context
-- Weather / Environment
-
-## Right sidebar — Python Automation
-
-- Normalize readings & timestamps
-- Parse gateway / terminal logs
-- Threshold & acceptance checks
-- Export DOCX/PDF closure pack
-
-## Bottom summary cards
-
-1. **Traceability** — Every claim linked to captured artifact
-2. **Review Gates** — Engineer sign-off before export
-3. **PLM Handoff** — Structured pack for acceptance records
+## Bottom pillars (3)
+1. **Traceable Baseline** — Every claim linked to captured artifact
+2. **Auditable Acceptance** — Engineer sign-off before export
+3. **Export Evidence** — Structured pack for customer + PLM handoff
 
 ## Footer takeaway
-
-AI drafts faster — engineers own the evidence chain.
-
-## Color notes
-
-- Background: `#0A1628` deep navy
-- Labels: cyan `#00B4D8`
-- Body text: white
-- Alert/missing path: amber `#F59E0B` only
-- Icons: flat monochrome blue, thin line-weight
+AI drafts faster — engineers own the evidence chain that keeps the RCA defensible.

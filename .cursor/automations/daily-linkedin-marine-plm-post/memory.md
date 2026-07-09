@@ -47,6 +47,8 @@ Daily pipeline with integrations:
 
 Figma account: View seat (leejunha781@gmail.com). **Figma MCP is now PRIMARY** for image production; Image Gen only when Figma blocked. Anti-simple-image rule: never post generic/basic AI posters.
 
+**Canonical image reference:** `linkedin-reference-style-commissioning-gates.md` — all images must match LEO Commissioning Gates solution-overview style (photorealistic center + 7 gate bullets + HUD overlay + sidebars + pillars + footer).
+
 Linear project: https://linear.app/joonha-lee/project/linkedin-content-pipeline-bf77c4a8e3b6 (Design QA per run).
 
 Notion seeded topics: 3 Ready + 4 Planned + 4 Freelance Planned.
@@ -80,7 +82,7 @@ Rotation rule: at least 1 in 4 posts uses a freelance angle. Alternate: Doc Auto
 | 2026-07-02 | marine-plm-interface-readiness-governance | interface readiness governance, 8 unique crops (fixed rule applied) | interface handoff + BOM maturity | prepared (8/8 unique, QA pass) |
 | 2026-07-02 | satcom-fallback-evidence-management | SATCOM fallback managed as engineering evidence, not just network event | RF/SATCOM validation + shore-gateway logs + acceptance thresholds | prepared (pro-grade image, QA pass) |
 | 2026-07-02 | marine-plm-bom-validation-gates-test | BOM validation gates owned before AI scripts reach shipyard release line | BOM maturity + supplier package readiness + class/test records | prepared (image-gen tool, QA pass) |
-| 2026-07-09 | engineering-rca-evidence-structure | Why RCA reports fail without traceable evidence chains | SATCOM link-loss RCA + naval acceptance records + class/test evidence | ready for final posting (freelance test) |
+| 2026-07-09 | engineering-rca-evidence-structure | Why RCA reports fail without traceable evidence chains | SATCOM link-loss RCA + naval acceptance records + class/test evidence | ready for final posting (v3 commissioning-gates image) |
 
 ---
 

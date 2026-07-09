@@ -75,6 +75,7 @@ Copy-IfDifferent -Source (Join-Path $SourceDir "notion-config.json") -Destinatio
 Copy-IfDifferent -Source (Join-Path $SourceDir "claude-review-prompt.md") -Destination (Join-Path $TargetDir "claude-review-prompt.md")
 Copy-IfDifferent -Source (Join-Path $SourceDir "freelance-topic-reference.md") -Destination (Join-Path $TargetDir "freelance-topic-reference.md")
 Copy-IfDifferent -Source (Join-Path $SourceDir "professional-image-design-rule.md") -Destination (Join-Path $TargetDir "professional-image-design-rule.md")
+Copy-IfDifferent -Source (Join-Path $SourceDir "linkedin-reference-style-commissioning-gates.md") -Destination (Join-Path $TargetDir "linkedin-reference-style-commissioning-gates.md")
 Copy-IfDifferent -Source (Join-Path $SourceDir "linear-config.json") -Destination (Join-Path $TargetDir "linear-config.json")
 
 foreach ($utility in $RequiredUtilities) {

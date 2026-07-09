@@ -26,7 +26,7 @@ Read `linkedin-post.md` and verify:
 6. Not promotional — decision-oriented (pain, data ownership, integration risk, proof gates)
 7. At least one concrete context: BOM maturity, design-change control, supplier package, class/test records, handover evidence, CAD/ERP/MES interfaces, control-valve commissioning, RF/SATCOM validation, or shipyard adoption gates
 8. **Freelance posts (if applicable):** consultative insight only — show process (intake → structure → draft → review → deliver); one concrete example; no price listing; soft CTA at most; position as engineering specialist, not generic freelancer
-9. **Design grade (MANDATORY):** image must meet `professional-image-design-rule.md` — solution-overview layout, executive composition, NOT simple/generic/childish AI poster. FAIL if image looks like a basic auto-generated infographic.
+9. **Design grade (MANDATORY):** image must match `linkedin-reference-style-commissioning-gates.md` — photorealistic center, 7 gate cards with bullets, HUD overlay, TRACED LINK, sidebars, value pillars, footer. FAIL if simple/generic AI poster.
 
 **Verdict:** PASS or FAIL with specific reason. FAIL on design grade → Blocked, do not proceed to mirror+post.
 
@@ -41,7 +41,8 @@ Inspect `<topic-slug>-infographic.png` (vision) against these gates:
 | overlap QA | No thumbnails over labels, clipped titles, inconsistent card spacing |
 | photo-diversity | If photo thumbnails used: 8/8 unique (YARD,DASH,IFACE,REL,BOM,HANDOVER,CONTROL,VESSEL) |
 | professional-grade | Reference-grade flat vector or premium engineering poster — NOT childish/cartoon/**NOT simple generic AI** |
-| design-layout | Solution-overview: pipeline + central scene + sidebars + 3 cards + footer — all present |
+| design-layout | Commissioning gates reference: 7 gates with bullets, photorealistic center, HUD overlay, TRACED LINK, sidebars, pillars, footer |
+| commissioning-gates-ref | Matches linkedin-reference-style-commissioning-gates.md |
 | style match | Deep-navy background, cyan labels, flat monochrome-blue icons, 7-step pipeline layout |
 
 **Verdict:** PASS or FAIL with specific issue.

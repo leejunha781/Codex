@@ -8,10 +8,11 @@
   "imagePath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-09\\engineering-rca-evidence-structure\\engineering-rca-evidence-structure-infographic.png",
   "repoPath": ".cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-09/engineering-rca-evidence-structure/",
   "imageSource": "Image Gen",
-  "imageVersion": "v2-professional-redesign",
+  "imageVersion": "v3-commissioning-gates-reference",
+  "referenceStyle": "linkedin-reference-style-commissioning-gates.md",
   "designBrief": "design-brief.md",
-  "imageQA": "text-fit pass | leader-lines pass | overlap pass | professional-grade pass | solution-overview layout pass | anti-simple-image pass",
+  "imageQA": "commissioning-gates-ref pass | text-fit pass | leader-lines pass | overlap pass | anti-simple-image pass",
   "designGrade": "Pass",
   "status": "ready for final posting",
-  "createdAt": "2026-07-09T01:39:00Z"
+  "createdAt": "2026-07-09T01:53:00Z"
 }
