@@ -8,10 +8,42 @@
 param(
     [string]$Branch = "cursor/linkedin-figma-notion-claude-0681",
     [string]$Repo = "leejunha781/Codex",
-    [string]$TargetDir = (Join-Path $env:USERPROFILE ".cursor\automations")
+    [string]$TargetDir = (Join-Path $env:USERPROFILE ".cursor\automations"),
+    [int]$RequestDelayMs = 750,
+    [int]$MaxRetries = 5
 )
 
 $ErrorActionPreference = "Stop"
+
+function Invoke-GitHubRawDownload {
+    param(
+        [string]$Url,
+        [string]$Destination,
+        [int]$DelayMs,
+        [int]$Retries
+    )
+
+    $attempt = 0
+    while ($true) {
+        $attempt++
+        try {
+            Invoke-WebRequest -Uri $Url -UseBasicParsing -OutFile $Destination -Headers @{ "User-Agent" = "Codex-LinkedIn-Automation" }
+            if ($DelayMs -gt 0) {
+                Start-Sleep -Milliseconds $DelayMs
+            }
+            return
+        } catch {
+            $message = $_.Exception.Message
+            $isRateLimit = ($message -match '429' -or $message -match 'Too Many Requests')
+            if (-not $isRateLimit -or $attempt -ge $Retries) {
+                throw
+            }
+            $waitSeconds = [Math]::Min(60, [Math]::Pow(2, $attempt))
+            Write-Host "     rate-limited (429); retry $attempt/$Retries in ${waitSeconds}s"
+            Start-Sleep -Seconds $waitSeconds
+        }
+    }
+}
 
 $CursorBaseRaw = "https://raw.githubusercontent.com/$Repo/$Branch/.cursor/automations"
 $CodexBaseRaw = "https://raw.githubusercontent.com/$Repo/$Branch/.codex/automations"
@@ -63,7 +95,7 @@ foreach ($entry in $FileMap) {
     }
 
     try {
-        Invoke-WebRequest -Uri $url -UseBasicParsing -OutFile $dest
+        Invoke-GitHubRawDownload -Url $url -Destination $dest -DelayMs $RequestDelayMs -Retries $MaxRetries
         Write-Host "OK  $rel"
         $ok++
     } catch {
@@ -88,4 +120,11 @@ if ($failed.Count -eq 0) {
 }
 
 Write-Host "FETCH INCOMPLETE: $($failed.Count) failed"
+Write-Host ""
+Write-Host "If failures are 429 rate limits, wait 1-2 minutes and re-run this script."
+Write-Host "Or fetch a single missing file with retry:"
+Write-Host '  $u="https://raw.githubusercontent.com/leejunha781/Codex/cursor/linkedin-figma-notion-claude-0681/.cursor/automations/daily-linkedin-marine-plm-post/linear-config.json"'
+Write-Host '  $d="$env:USERPROFILE\.cursor\automations\daily-linkedin-marine-plm-post\linear-config.json"'
+Write-Host '  New-Item -ItemType Directory -Force -Path (Split-Path $d) | Out-Null'
+Write-Host '  1..5 | % { try { iwr $u -UseBasicParsing -OutFile $d; "OK"; break } catch { Start-Sleep -Seconds ([Math]::Pow(2,$_)); "retry $_" } }'
 exit 1
