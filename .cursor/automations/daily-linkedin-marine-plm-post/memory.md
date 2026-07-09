@@ -30,6 +30,26 @@ Mirror + LinkedIn auto-post:
 
 ---
 
+## Figma + Notion + Claude integration (2026-07-09)
+
+**Notion Content Calendar:** https://app.notion.com/p/7ee8f488584e4ca290f3fcbfa3ea1314
+**Config:** `notion-config.json` (database_id, data_source_id, SQL queries)
+**Integration guide:** `figma-notion-claude-integration.md`
+**Claude QA prompt:** `claude-review-prompt.md`
+
+Daily pipeline with integrations:
+
+| Time | Automation | Action |
+|------|-----------|--------|
+| 09:00 | Cursor Cloud `daily-linkedin-marine-plm-post` | Query Notion topic → draft post → Figma or Image Gen infographic → save repo → Notion status QA Review |
+| 09:20 | Codex `daily-linkedin-claude-review` | Post + image QA → Notion status Ready or Blocked |
+| 09:35 | Codex `daily-linkedin-mirror-and-post` | Mirror → LinkedIn post → Notion status Posted |
+
+Figma account: View seat (leejunha781@gmail.com). Image Gen fallback active until Edit access available.
+Notion seeded topics: 3 Ready (2026-07-02, 2026-07-06) + 4 Planned (2026-07-09 through 2026-07-12).
+
+---
+
 ## Topic rotation log
 
 | Date | topic-slug | angle | marine execution context | status |

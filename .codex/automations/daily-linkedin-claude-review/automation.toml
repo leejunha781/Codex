@@ -1,0 +1,13 @@
+version = 1
+id = "daily-linkedin-claude-review"
+kind = "cron"
+name = "Daily LinkedIn Claude QA Review"
+prompt = "Scheduled Claude QA review for Daily LinkedIn Marine PLM Post. Runs at 09:20 after Cursor Cloud creates artifacts (09:00) and before mirror+post (09:35).\n\nRead and follow: C:\\Users\\namma\\.cursor\\automations\\daily-linkedin-marine-plm-post\\claude-review-prompt.md\n\nConfig: C:\\Users\\namma\\.cursor\\automations\\daily-linkedin-marine-plm-post\\notion-config.json\n\nSteps:\n1. Resolve today's run from repo runs/ or mirror cache manifest.\n2. Review linkedin-post.md (post quality checklist).\n3. Review infographic PNG (image QA gates: text-fit, leader-lines, overlap, photo-diversity, professional-grade).\n4. Update Notion Content Calendar status (Ready or Blocked).\n5. Append summary to .codex/automations/daily-linkedin-marine-plm-post/memory.md.\n\nIf post or image QA fails, set Notion status to Blocked and recommend blocking mirror+post.\nIf both pass, set Notion status to Ready and recommend proceeding to mirror+post at 09:35.\n\nReturn: topic, post QA verdict, image QA verdict, Notion status, recommendation."
+status = "ACTIVE"
+rrule = "RRULE:FREQ=WEEKLY;BYHOUR=9;BYMINUTE=20;BYDAY=MO,TU,WE,TH,FR,SA,SU"
+model = "gpt-5.5"
+reasoning_effort = "low"
+execution_environment = "local"
+cwds = ["C:\\Users\\namma\\Documents\\Daily Linkedin Posting"]
+created_at = 1783100000000
+updated_at = 1783100000000

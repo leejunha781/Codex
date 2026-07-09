@@ -70,6 +70,9 @@ Copy-IfDifferent -Source (Join-Path $SourceDir "automation.toml") -Destination (
 Copy-IfDifferent -Source (Join-Path $SourceDir "memory.md") -Destination (Join-Path $TargetDir "memory.md")
 Copy-IfDifferent -Source (Join-Path $SourceDir "prompt.md") -Destination (Join-Path $TargetDir "prompt.md")
 Copy-IfDifferent -Source (Join-Path $SourceDir "cursor-cloud-registration.md") -Destination (Join-Path $TargetDir "cursor-cloud-registration.md")
+Copy-IfDifferent -Source (Join-Path $SourceDir "figma-notion-claude-integration.md") -Destination (Join-Path $TargetDir "figma-notion-claude-integration.md")
+Copy-IfDifferent -Source (Join-Path $SourceDir "notion-config.json") -Destination (Join-Path $TargetDir "notion-config.json")
+Copy-IfDifferent -Source (Join-Path $SourceDir "claude-review-prompt.md") -Destination (Join-Path $TargetDir "claude-review-prompt.md")
 
 foreach ($utility in $RequiredUtilities) {
     $sourcePath = Join-Path $PSScriptRoot $utility

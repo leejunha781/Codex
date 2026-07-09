@@ -56,10 +56,23 @@ Scripts synced to `C:\Users\namma\.cursor\automations\`:
 
 | Step | Codex (local) | Cursor (cloud) |
 |------|-----------------|----------------|
-| Topic rotation | `~/.codex/automations/.../memory.md` | Repo `memory.md` + Cursor Memories |
+| Topic rotation | Notion Content Calendar + `memory.md` | Notion MCP query + `memory.md` + Cursor Memories |
 | Post + image output | `C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\` (direct, backup automation) | Repo `.cursor/automations/.../runs/YYYY-MM-DD/<topic-slug>/` |
+| Infographic design | Image Gen fallback (local) | Figma MCP (preferred) or Image Gen |
+| QA review | `daily-linkedin-claude-review` at 09:20 | Notion status → QA Review |
 | Windows mirror | `C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\` via `mirror-linkedin-runs.ps1` | Not available in cloud |
 | LinkedIn posting | `daily-linkedin-mirror-and-post` at 09:35 — auto-post via Windows LinkedIn app | Not available in cloud |
+| Archive | Notion status → Posted | Notion status → QA Review |
+
+## 3a. Figma + Notion + Claude integration
+
+See [figma-notion-claude-integration.md](figma-notion-claude-integration.md) for full guide.
+
+- **Notion Content Calendar:** https://app.notion.com/p/7ee8f488584e4ca290f3fcbfa3ea1314
+- **Config:** `notion-config.json`
+- **Claude QA:** `daily-linkedin-claude-review` at 09:20
+
+Enable **Notion** and **Figma** MCP in Cursor automation tools (alongside Memories and Computer use).
 
 ## 4. Local folder mirroring + auto-posting
 
@@ -67,10 +80,12 @@ Scripts synced to `C:\Users\namma\.cursor\automations\`:
 
 Daily pipeline:
 
-1. **09:00** — Cursor cloud generates artifacts in repo `runs/`
-2. **09:35** — Codex `daily-linkedin-mirror-and-post`:
+1. **09:00** — Cursor cloud: query Notion topic → generate artifacts in repo `runs/` → update Notion (QA Review)
+2. **09:20** — Codex `daily-linkedin-claude-review`: post + image QA → Notion status Ready or Blocked
+3. **09:35** — Codex `daily-linkedin-mirror-and-post`:
    - Mirrors to `C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\`
    - Auto-posts via LinkedIn Windows app (no user confirmation)
+   - Updates Notion status to Posted
 3. Files in mirror folder:
    - `linkedin-post.md`
    - `<topic-slug>-infographic.png`
@@ -85,7 +100,11 @@ cd <repo-root>\.cursor\automations
 
 ## 5. Activation checklist
 
-- [ ] Cursor cloud trigger: daily 09:00
+- [ ] Cursor cloud trigger: daily 09:00 (tools: Memories, Computer use, **Notion**, **Figma**)
+- [ ] Notion MCP authenticated in Cursor Desktop
+- [ ] Figma MCP authenticated in Cursor Desktop
+- [ ] Notion Content Calendar seeded: https://app.notion.com/p/7ee8f488584e4ca290f3fcbfa3ea1314
+- [ ] Codex `daily-linkedin-claude-review`: daily 09:20, ACTIVE
 - [ ] Codex `daily-linkedin-mirror-and-post`: daily 09:35, ACTIVE, local execution, full-access sandbox
 - [ ] Disable legacy `daily-linkedin-mirror-runs` if still present in Codex UI
 - [ ] LinkedIn Windows app installed and logged in
