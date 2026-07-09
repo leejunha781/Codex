@@ -49,18 +49,22 @@ function Invoke-GitCommand {
         [string[]]$GitArgs
     )
 
-    $previousPreference = $ErrorActionPreference
-    $ErrorActionPreference = "Continue"
-    try {
-        $output = & git -C $Root @GitArgs 2>&1
-        $exitCode = $LASTEXITCODE
-    }
-    finally {
-        $ErrorActionPreference = $previousPreference
-    }
+    $quotedArgs = ($GitArgs | ForEach-Object {
+        if ($null -eq $_) { return '""' }
+        $text = [string]$_
+        if ($text -match '[\s"]') {
+            '"' + ($text -replace '"', '\"') + '"'
+        } else {
+            $text
+        }
+    }) -join ' '
+
+    $command = "git -C `"$Root`" $quotedArgs"
+    $output = @(cmd.exe /c "$command 2>&1")
+    $exitCode = $LASTEXITCODE
 
     return @{
-        Output   = @($output)
+        Output   = $output
         ExitCode = $exitCode
     }
 }
