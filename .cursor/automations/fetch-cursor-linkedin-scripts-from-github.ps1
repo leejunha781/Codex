@@ -59,6 +59,7 @@ $FileMap = @(
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "strip-linkedin-image-c2pa.py" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "post-linkedin-windows-app-prompt.md" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "install-cursor-linkedin-automation-scripts.ps1" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "run-linkedin-automation-setup.ps1" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "fetch-cursor-linkedin-scripts-from-github.ps1" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/automation.toml" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/memory.md" },

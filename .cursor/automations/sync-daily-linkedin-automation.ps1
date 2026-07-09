@@ -60,6 +60,7 @@ $RequiredUtilities = @(
 $OptionalUtilities = @(
     "install-cursor-linkedin-automation-scripts.ps1",
     "fetch-cursor-linkedin-scripts-from-github.ps1",
+    "run-linkedin-automation-setup.ps1",
     "force-update-linkedin-sync-scripts.ps1"
 )
 

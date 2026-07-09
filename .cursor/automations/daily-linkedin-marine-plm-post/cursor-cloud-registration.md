@@ -113,8 +113,24 @@ cd <repo-root>\.cursor\automations
 
 ## 6. Keep Codex and Cursor in sync
 
+**If `running scripts is disabled` error appears**, use `-ExecutionPolicy Bypass`:
+
 ```powershell
-.\.cursor\automations\sync-both-linkedin-automations.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File "$env:USERPROFILE\.cursor\automations\run-linkedin-automation-setup.ps1"
+```
+
+Or run individually:
+
+```powershell
+cd $env:USERPROFILE\.cursor\automations
+powershell -NoProfile -ExecutionPolicy Bypass -File .\sync-both-linkedin-automations.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\validate-daily-linkedin-automation.ps1
+```
+
+One-time fix (optional, CurrentUser only):
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 ```
 
 This syncs automation definitions, mirror/post scripts, and runs an immediate mirror pass (no auto-post).
