@@ -1,4 +1,5 @@
 # Mirror Daily LinkedIn run artifacts from repo to local Windows output folder.
+# version: 2026-07-09-cmd-git
 # Cloud Cursor runs write to repo runs/ only; this script copies to Documents\Codex.
 # Windows mirror path: C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\
 # Run from PowerShell 5.1 on Windows.

@@ -1,5 +1,12 @@
 # Sync Daily LinkedIn automation to both Codex and Cursor installs
 # Run from PowerShell 5.1 on Windows after pulling repo changes.
+#
+# Optional: -RunMirror runs mirror-linkedin-runs.ps1 after sync (default: skip)
+
+[CmdletBinding()]
+param(
+    [switch]$RunMirror
+)
 
 $ErrorActionPreference = "Stop"
 
@@ -52,7 +59,7 @@ if (Test-Path $CodexClaudeSync) {
 
 & $CursorSync
 
-if (Test-Path $MirrorScript) {
+if ($RunMirror -and (Test-Path $MirrorScript)) {
     Write-Host ""
     Write-Host "Running local mirror (repo runs -> Documents\Codex)..."
     try {
@@ -60,8 +67,11 @@ if (Test-Path $MirrorScript) {
     } catch {
         Write-Warning "Mirror step failed (non-fatal): $($_.Exception.Message)"
     }
-} else {
+} elseif ($RunMirror) {
     Write-Warning "Mirror script not found: $MirrorScript"
+} else {
+    Write-Host ""
+    Write-Host "Mirror skipped (use -RunMirror to copy today's run to Documents\Codex)."
 }
 
 Write-Host ""
