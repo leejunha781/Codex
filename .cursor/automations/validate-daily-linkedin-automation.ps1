@@ -20,9 +20,17 @@ $NotionConfig = Join-Path $AutomationDir "notion-config.json"
 $ClaudeReviewPrompt = Join-Path $AutomationDir "claude-review-prompt.md"
 $FreelanceRef = Join-Path $AutomationDir "freelance-topic-reference.md"
 
+$ProfessionalDesignRule = Join-Path $AutomationDir "professional-image-design-rule.md"
+$LinearConfig = Join-Path $AutomationDir "linear-config.json"
+
 $requiredPromptSections = @(
     "Cursor Cloud Agent addendum",
-    "Figma + Notion + Claude integration",
+    "Figma + Notion + Linear + Claude integration",
+    "Professional image design rule",
+    "professional-image-design-rule.md",
+    "Figma-first image production rule",
+    "Anti-simple-image rule",
+    "Linear design tracking rule",
     "Notion topic selection rule",
     "Figma infographic rule",
     "Claude review handoff",
@@ -50,7 +58,7 @@ $requiredPromptSections = @(
 
 $failures = @()
 
-$RequiredPaths = @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $PostPrompt, $SyncBothScript, $ValidateScript, $SyncScript, $IntegrationGuide, $NotionConfig, $ClaudeReviewPrompt, $FreelanceRef)
+$RequiredPaths = @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $PostPrompt, $SyncBothScript, $ValidateScript, $SyncScript, $IntegrationGuide, $NotionConfig, $ClaudeReviewPrompt, $FreelanceRef, $ProfessionalDesignRule, $LinearConfig)
 $OptionalPaths = @($InstallScript)
 
 foreach ($path in $RequiredPaths) {

@@ -1,24 +1,26 @@
-# Figma + Notion + Claude LinkedIn Integration
+# Figma + Notion + Linear + Claude LinkedIn Integration
 
-Operational guide for the Daily LinkedIn Marine PLM Post pipeline using **Notion** (content calendar), **Figma** (infographic design), and **Claude** (QA review).
+Operational guide for the Daily LinkedIn Marine PLM Post pipeline using **Notion** (content calendar), **Figma** (professional infographic design), **Linear** (design QA tracking), and **Claude** (QA review).
+
+**Image quality:** Read `professional-image-design-rule.md` — all images must be professionally designed, never simple AI posters.
 
 ## Pipeline overview
 
 ```mermaid
 flowchart LR
-    N["Notion Calendar\n(topic + angle)"] --> C["Cursor Cloud 09:00\n(draft + image)"]
-    C --> F["Figma or Image Gen\n(infographic)"]
-    F --> R["Repo runs/\n+ Notion update"]
-    R --> CL["Claude Review 09:20\n(QA gate)"]
+    N["Notion Calendar\n(topic + angle)"] --> D["Design Brief\n+ Figma MCP"]
+    D --> C["Cursor Cloud 09:00\n(draft + pro image)"]
+    C --> L["Linear\nDesign QA issue"]
+    L --> CL["Claude Review 09:20\n(QA gate)"]
     CL --> M["Codex Mirror 09:35\n+ LinkedIn post"]
     M --> N2["Notion archive\n(status=Posted)"]
 ```
 
 | Time | Automation | Tool | Action |
 |------|-----------|------|--------|
-| 09:00 | Cursor Cloud `daily-linkedin-marine-plm-post` | Notion MCP, Figma MCP, Image Gen | Query today's topic → draft post → create infographic → save to repo → update Notion |
-| 09:20 | Codex `daily-linkedin-claude-review` | Claude (local) | Read draft from repo → image QA checklist → update Notion status |
-| 09:35 | Codex `daily-linkedin-mirror-and-post` | PowerShell + LinkedIn app | Mirror to Windows → auto-post → update Notion + memory.md |
+| 09:00 | Cursor Cloud `daily-linkedin-marine-plm-post` | Notion, **Figma MCP**, Linear | Query topic → design-brief → **Figma professional image** → save repo → Notion QA Review → Linear issue |
+| 09:20 | Codex `daily-linkedin-claude-review` | Claude (local) | Post + **design grade** QA → Notion/Linear Approved or Blocked |
+| 09:35 | Codex `daily-linkedin-mirror-and-post` | PowerShell + LinkedIn app | Mirror → post → Notion Posted |
 
 ---
 
@@ -93,17 +95,20 @@ Reference-grade flat vector infographic:
 - **Typography:** cyan section labels, white body text, amber for alert/fallback paths only
 - **Icons:** flat monochrome-blue vector, consistent thin line-weight
 
-### Image production priority
+### Image production priority (Figma-first — MANDATORY)
 
-1. **Figma Template** (preferred when edit access available):
-   - Open template file → populate title, pipeline steps, legend, sidebar, summary cards
-   - Export PNG at 1200×1500 or 1080×1350 (LinkedIn portrait)
-   - Save as `<topic-slug>-infographic.png`
-2. **Figma MCP `generate_figma_design`** (when template file exists):
-   - Capture reference layout into existing Figma file
-3. **Built-in Image Gen** (fallback — current default):
-   - Apply Reference-grade flat vector style rule from prompt.md
-4. **Pillow/PowerShell** (last resort only)
+See `professional-image-design-rule.md` for full spec.
+
+1. **Figma MCP** (PRIMARY — always attempt first):
+   - `search_design_system` → reuse components/tokens
+   - `get_design_context` → read template
+   - `use_figma` → populate title, pipeline, legend, sidebar, cards
+   - `download_assets` → export PNG 1080×1350+
+2. **generate_figma_design** (when template file exists)
+3. **Built-in Image Gen** (ONLY if Figma blocked — must pass anti-simple-image check, up to 3 re-renders)
+4. **Pillow/PowerShell** (last resort — document blocker)
+
+**Never post** a simple/generic/childish image. Block and re-render instead.
 
 ### View-seat limitation
 
@@ -120,6 +125,28 @@ When a template file is created, record its URL in:
 
 ---
 
+## Linear — Design QA Tracking
+
+**Project:** [LinkedIn Content Pipeline](https://linear.app/joonha-lee/project/linkedin-content-pipeline-bf77c4a8e3b6)
+
+**Config:** `linear-config.json`
+
+### Per-run workflow
+
+1. **Before image:** Create Linear issue `LinkedIn Design QA — <topic-slug>` in project LinkedIn Content Pipeline (team Joonha_Lee)
+2. **After image:** Set issue state to QA Review; link Figma URL, Notion page, repo path
+3. **Claude QA (09:20):** Update issue to Approved (pass) or Blocked (fail) with design grade notes
+4. **Blocked images:** Do not proceed to mirror+post until re-designed
+
+### Issue checklist (in description)
+
+- Solution-overview layout present
+- Professional typography and grid
+- Not childish/cartoon/generic AI
+- Text-fit, leader-lines, overlap QA pass
+
+---
+
 ## Claude — QA Review Gate
 
 **Automation:** `.codex/automations/daily-linkedin-claude-review/` (09:20 daily)
@@ -132,8 +159,9 @@ Claude reads the latest run from repo `runs/YYYY-MM-DD/<topic-slug>/` and checks
 
 1. **Post quality:** consultative tone, marine execution context, 3 application points, 5–8 hashtags
 2. **Image QA:** text-fit, leader-lines, overlap, photo-diversity (8/8 if applicable)
-3. **Professional grade:** reference-grade flat vector style, not childish/cartoon
-4. **Notion sync:** update status to Ready (pass) or Blocked (fail with reason)
+3. **Professional grade:** reference-grade flat vector style, not childish/cartoon/**not simple/generic AI poster**
+4. **Design grade:** Pass only if image meets `professional-image-design-rule.md` (solution-overview layout, executive composition). Fail → Blocked, update Linear issue.
+5. **Notion sync:** update status to Ready (pass) or Blocked (fail with reason)
 
 ### Memory sync
 
@@ -147,8 +175,9 @@ After review, append to:
 
 - [ ] Notion MCP authenticated in Cursor Desktop
 - [ ] Figma MCP authenticated in Cursor Desktop
+- [ ] Linear MCP authenticated in Cursor Desktop
 - [ ] Claude Desktop running with git autosync on Windows
-- [ ] Cursor automation tools: Memories, Computer use, **Notion**, **Figma**
+- [ ] Cursor automation tools: Memories, Computer use, **Notion**, **Figma**, **Linear**
 - [ ] Codex `daily-linkedin-claude-review`: daily 09:20, ACTIVE
 - [ ] Codex `daily-linkedin-mirror-and-post`: daily 09:35, ACTIVE
 - [ ] LinkedIn Content Calendar seeded with upcoming topics

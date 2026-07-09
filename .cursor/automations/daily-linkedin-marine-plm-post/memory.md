@@ -45,8 +45,11 @@ Daily pipeline with integrations:
 | 09:20 | Codex `daily-linkedin-claude-review` | Post + image QA → Notion status Ready or Blocked |
 | 09:35 | Codex `daily-linkedin-mirror-and-post` | Mirror → LinkedIn post → Notion status Posted |
 
-Figma account: View seat (leejunha781@gmail.com). Image Gen fallback active until Edit access available.
-Notion seeded topics: 3 Ready (2026-07-02, 2026-07-06) + 4 Planned (2026-07-09 through 2026-07-12) + 4 Freelance Planned (2026-07-13 through 2026-07-16).
+Figma account: View seat (leejunha781@gmail.com). **Figma MCP is now PRIMARY** for image production; Image Gen only when Figma blocked. Anti-simple-image rule: never post generic/basic AI posters.
+
+Linear project: https://linear.app/joonha-lee/project/linkedin-content-pipeline-bf77c4a8e3b6 (Design QA per run).
+
+Notion seeded topics: 3 Ready + 4 Planned + 4 Freelance Planned.
 
 ---
 
