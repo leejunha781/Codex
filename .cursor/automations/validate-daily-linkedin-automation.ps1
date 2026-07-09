@@ -6,6 +6,7 @@ $ErrorActionPreference = "Stop"
 $AutomationDir = Join-Path $env:USERPROFILE ".cursor\automations\daily-linkedin-marine-plm-post"
 $AutomationsRoot = Join-Path $env:USERPROFILE ".cursor\automations"
 $MirrorScript = Join-Path $AutomationsRoot "mirror-linkedin-runs.ps1"
+$C2paStripScript = Join-Path $AutomationsRoot "strip-linkedin-image-c2pa.ps1"
 $PostPrompt = Join-Path $AutomationsRoot "post-linkedin-windows-app-prompt.md"
 $SyncBothScript = Join-Path $AutomationsRoot "sync-both-linkedin-automations.ps1"
 $ValidateScript = Join-Path $AutomationsRoot "validate-daily-linkedin-automation.ps1"
@@ -40,6 +41,8 @@ $requiredPromptSections = @(
     "Freelance content angle rule",
     "freelance-topic-reference.md",
     "mirror-linkedin-runs.ps1",
+    "strip-linkedin-image-c2pa.ps1",
+    "C2PA",
     "daily-linkedin-mirror-and-post",
     "daily-linkedin-claude-review",
     "post-linkedin-windows-app-prompt",
@@ -61,7 +64,7 @@ $requiredPromptSections = @(
 
 $failures = @()
 
-$RequiredPaths = @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $PostPrompt, $SyncBothScript, $ValidateScript, $SyncScript, $IntegrationGuide, $NotionConfig, $ClaudeReviewPrompt, $FreelanceRef, $ProfessionalDesignRule, $CommissioningGatesRef, $LinearConfig)
+$RequiredPaths = @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $C2paStripScript, $PostPrompt, $SyncBothScript, $ValidateScript, $SyncScript, $IntegrationGuide, $NotionConfig, $ClaudeReviewPrompt, $FreelanceRef, $ProfessionalDesignRule, $CommissioningGatesRef, $LinearConfig)
 $OptionalPaths = @($InstallScript)
 
 foreach ($path in $RequiredPaths) {

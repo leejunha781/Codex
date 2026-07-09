@@ -92,6 +92,23 @@ Use this brief to drive Figma `use_figma` or Image Gen prompt.
 
 ---
 
+## C2PA / Content Credentials strip (MANDATORY before LinkedIn upload)
+
+LinkedIn displays a **"Content credentials" (CR)** badge when PNG/JPEG files contain **C2PA metadata** (often embedded by AI image tools such as DALL·E / Image Gen as a `caBX` PNG chunk).
+
+| Step | Action |
+|------|--------|
+| After image export | Strip C2PA metadata before saving final PNG |
+| Windows mirror | `mirror-linkedin-runs.ps1` auto-strips `*-infographic.png` after copy |
+| Manual strip | `.\strip-linkedin-image-c2pa.ps1 -ImagePath "...\topic-infographic.png"` |
+| Cloud/Linux | `python3 strip-linkedin-image-c2pa.py path/to/*-infographic.png` |
+
+**QA gate:** FAIL if `caBX`, `c2pa`, or `jumb` strings remain in the PNG bytes. Re-export clean PNG before posting.
+
+**Figma export:** If using Adobe/Figma Content Credentials, disable "Apply Content Credentials" on export when possible.
+
+---
+
 ## Tool integration per run
 
 ### Notion

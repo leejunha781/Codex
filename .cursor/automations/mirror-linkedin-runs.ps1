@@ -226,6 +226,37 @@ function Get-WindowsMirrorFolder {
     return Join-Path $TargetRoot (Join-Path $RunDate $TopicSlug)
 }
 
+function Test-PngHasC2paChunk {
+    param([string]$Path)
+
+    $bytes = [System.IO.File]::ReadAllBytes($Path)
+    $text = [System.Text.Encoding]::ASCII.GetString($bytes)
+    return ($text -match 'caBX' -or $text -match 'c2pa' -or $text -match 'jumb')
+}
+
+function Remove-C2paFromLinkedInPng {
+    param([string]$Path)
+
+    if (-not (Test-Path -LiteralPath $Path)) { return }
+    if ($Path -notmatch '\.png$') { return }
+    if (-not (Test-PngHasC2paChunk -Path $Path)) { return }
+
+    Add-Type -AssemblyName System.Drawing
+    $image = $null
+    try {
+        $image = [System.Drawing.Image]::FromFile($Path)
+        $tempPath = "$Path.tmp.png"
+        $image.Save($tempPath, [System.Drawing.Imaging.ImageFormat]::Png)
+        $image.Dispose()
+        $image = $null
+        Move-Item -LiteralPath $tempPath -Destination $Path -Force
+        Write-MirrorLog "Stripped C2PA metadata from $Path"
+    }
+    finally {
+        if ($null -ne $image) { $image.Dispose() }
+    }
+}
+
 function Write-ReadyForPostingManifest {
     param(
         [string]$TargetRoot,
@@ -337,6 +368,9 @@ foreach ($entry in ($artifacts.GetEnumerator() | Sort-Object Name)) {
     }
 
     (Get-Item $destPath).LastWriteTimeUtc = $meta.UpdatedAt
+    if ($fileName -like "*-infographic.png") {
+        Remove-C2paFromLinkedInPng -Path $destPath
+    }
     Write-MirrorLog "Mirrored $key -> $destPath"
     $copied++
 }

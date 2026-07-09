@@ -23,6 +23,8 @@ $FileMap = @(
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "sync-daily-linkedin-automation.ps1" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "validate-daily-linkedin-automation.ps1" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "mirror-linkedin-runs.ps1" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "strip-linkedin-image-c2pa.ps1" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "strip-linkedin-image-c2pa.py" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "post-linkedin-windows-app-prompt.md" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "install-cursor-linkedin-automation-scripts.ps1" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "fetch-cursor-linkedin-scripts-from-github.ps1" },

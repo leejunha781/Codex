@@ -53,6 +53,7 @@ $RequiredUtilities = @(
     "sync-daily-linkedin-automation.ps1",
     "validate-daily-linkedin-automation.ps1",
     "mirror-linkedin-runs.ps1",
+    "strip-linkedin-image-c2pa.ps1",
     "post-linkedin-windows-app-prompt.md"
 )
 
