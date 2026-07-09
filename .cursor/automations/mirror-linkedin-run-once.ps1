@@ -1,5 +1,5 @@
-# One-shot mirror for a single LinkedIn run from GitHub (no -Topic param required on old scripts).
-# Run in PowerShell 5.1 on Windows.
+# One-shot mirror for a single LinkedIn run from GitHub (PowerShell 5.1 safe).
+# Does NOT require git fetch — downloads directly from raw.githubusercontent.com.
 
 [CmdletBinding()]
 param(
@@ -15,60 +15,72 @@ $ErrorActionPreference = "Stop"
 
 $RunsPrefix = ".cursor/automations/daily-linkedin-marine-plm-post/runs"
 $DestDir = Join-Path $MirrorTarget (Join-Path $Date $Topic)
-$Files = @(
-    "linkedin-post.md",
-    "$Topic-infographic.png",
-    "ready-for-posting.json"
-)
+$BaseRaw = "https://raw.githubusercontent.com/$Repo/$Branch"
 
 New-Item -ItemType Directory -Force -Path $DestDir | Out-Null
 
-if (Test-Path (Join-Path $RepoRoot ".git")) {
-    Write-Host "Fetching origin/$Branch ..."
-    git -C $RepoRoot fetch origin $Branch 2>&1 | Out-Null
-}
+function Get-RemoteFile {
+    param(
+        [string]$RelativePath,
+        [string]$DestPath
+    )
 
-$BaseRaw = "https://raw.githubusercontent.com/$Repo/$Branch"
-$Copied = 0
-
-foreach ($file in $Files) {
-    $rel = "$RunsPrefix/$Date/$Topic/$file" -replace '\\', '/'
-    $dest = Join-Path $DestDir $file
-    $url = "$BaseRaw/$rel"
-
+    $url = "$BaseRaw/$($RelativePath -replace '\\', '/')"
     Write-Host "GET $url"
+
+    $prev = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
     try {
-        Invoke-WebRequest -Uri $url -UseBasicParsing -OutFile $dest
-        Write-Host "OK   $dest"
-        $Copied++
-    } catch {
-        # Fallback: git show if raw URL fails (e.g. PNG LFS)
-        if (Test-Path (Join-Path $RepoRoot ".git")) {
-            $gitPath = $rel
-            $gitRef = "origin/${Branch}:$gitPath"
-            Write-Host "TRY  git show $gitRef"
-            cmd.exe /c "git -C `"$RepoRoot`" show `"$gitRef`" > `"$dest`"" | Out-Null
-            if (Test-Path $dest) {
-                Write-Host "OK   $dest (git show)"
-                $Copied++
-            } else {
-                Write-Warning "FAIL $file"
-            }
-        } else {
-            Write-Warning "FAIL $file — $($_.Exception.Message)"
+        Invoke-WebRequest -Uri $url -UseBasicParsing -OutFile $DestPath -ErrorAction Stop
+        if ((Test-Path $DestPath) -and ((Get-Item $DestPath).Length -gt 0)) {
+            Write-Host "OK   $DestPath"
+            return $true
         }
+    } catch {
+        Write-Host "WARN raw download failed: $($_.Exception.Message)"
+    } finally {
+        $ErrorActionPreference = $prev
     }
+
+    if (-not (Test-Path (Join-Path $RepoRoot ".git"))) {
+        return $false
+    }
+
+    $gitRef = "origin/${Branch}:$($RelativePath -replace '\\', '/')"
+    Write-Host "TRY  git show $gitRef"
+    $quotedRoot = '"' + $RepoRoot + '"'
+    $quotedRef = '"' + $gitRef + '"'
+    $quotedDest = '"' + $DestPath + '"'
+    cmd.exe /c "git -C $quotedRoot fetch origin $Branch 2>nul & git -C $quotedRoot show $quotedRef > $quotedDest" | Out-Null
+
+    if ((Test-Path $DestPath) -and ((Get-Item $DestPath).Length -gt 0)) {
+        Write-Host "OK   $DestPath (git show)"
+        return $true
+    }
+
+    Write-Warning "FAIL $RelativePath"
+    return $false
 }
+
+$Copied = 0
+$postRel = "$RunsPrefix/$Date/$Topic/linkedin-post.md"
+$imageRel = "$RunsPrefix/$Date/$Topic/$Topic-infographic.png"
+$postDest = Join-Path $DestDir "linkedin-post.md"
+$imageDest = Join-Path $DestDir "$Topic-infographic.png"
+
+if (Get-RemoteFile -RelativePath $postRel -DestPath $postDest) { $Copied++ }
+if (Get-RemoteFile -RelativePath $imageRel -DestPath $imageDest) { $Copied++ }
 
 $manifest = [ordered]@{
     topic             = $Topic
     date              = $Date
     status            = "mirrored_ready_to_post"
     windowsMirrorPath = $DestDir
-    postPath          = Join-Path $DestDir "linkedin-post.md"
-    imagePath         = Join-Path $DestDir "$Topic-infographic.png"
+    postPath          = $postDest
+    imagePath         = $imageDest
     linkedInApp       = "Windows LinkedIn app only"
     autoPost          = $true
+    branch            = $Branch
 }
 $manifest | ConvertTo-Json -Depth 4 | Set-Content -Path (Join-Path $DestDir "ready-for-posting.json") -Encoding UTF8
 
@@ -76,9 +88,10 @@ Write-Host ""
 Write-Host "Mirror complete: copied=$Copied dest=$DestDir"
 if ($Copied -ge 2) {
     Write-Host "READY — open LinkedIn Windows app and post from:"
-    Write-Host "  Post:  $(Join-Path $DestDir 'linkedin-post.md')"
-    Write-Host "  Image: $(Join-Path $DestDir "$Topic-infographic.png")"
-} else {
-    Write-Host "WARN — some files missing. Check branch $Branch on GitHub."
-    exit 1
+    Write-Host "  Post:  $postDest"
+    Write-Host "  Image: $imageDest"
+    exit 0
 }
+
+Write-Host "WARN — some files missing. Check branch $Branch on GitHub."
+exit 1
