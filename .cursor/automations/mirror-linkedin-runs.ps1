@@ -1,4 +1,5 @@
 # Mirror Daily LinkedIn run artifacts from repo to local Windows output folder.
+# version: 2026-07-09-cmd-git
 # Cloud Cursor runs write to repo runs/ only; this script copies to Documents\Codex.
 # Windows mirror path: C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\
 # Run from PowerShell 5.1 on Windows.
@@ -9,6 +10,7 @@ param(
     [string]$MirrorTarget = "C:\Users\namma\Documents\Codex",
     [string]$RunsRelative = ".cursor/automations/daily-linkedin-marine-plm-post/runs",
     [string]$Date,
+    [string]$Topic,
     [switch]$AllDates,
     [switch]$Pull,
     [switch]$IncludeRemoteBranches,
@@ -42,6 +44,32 @@ function Test-IsRunArtifactName {
     )
 }
 
+function Invoke-GitCommand {
+    param(
+        [string]$Root,
+        [string[]]$GitArgs
+    )
+
+    $quotedArgs = ($GitArgs | ForEach-Object {
+        if ($null -eq $_) { return '""' }
+        $text = [string]$_
+        if ($text -match '[\s"]') {
+            '"' + ($text -replace '"', '\"') + '"'
+        } else {
+            $text
+        }
+    }) -join ' '
+
+    $command = "git -C `"$Root`" $quotedArgs"
+    $output = @(cmd.exe /c "$command 2>&1")
+    $exitCode = $LASTEXITCODE
+
+    return @{
+        Output   = $output
+        ExitCode = $exitCode
+    }
+}
+
 function Invoke-GitPull {
     param([string]$Root)
 
@@ -50,31 +78,43 @@ function Invoke-GitPull {
         return
     }
 
-    $branch = (git -C $Root rev-parse --abbrev-ref HEAD 2>$null).Trim()
+    $branch = (Invoke-GitCommand -Root $Root -GitArgs @("rev-parse", "--abbrev-ref", "HEAD")).Output
+    $branch = ($branch | Select-Object -First 1).ToString().Trim()
     if ([string]::IsNullOrWhiteSpace($branch) -or $branch -eq "HEAD") {
         Write-MirrorLog "WARN: detached HEAD at $Root; fetch only"
-        git -C $Root fetch origin --prune 2>&1 | Out-Null
+        $fetch = Invoke-GitCommand -Root $Root -GitArgs @("fetch", "origin", "--prune")
+        if ($fetch.ExitCode -ne 0) {
+            Write-MirrorLog "WARN: git fetch failed | $($fetch.Output -join ' ')"
+        }
         return
     }
 
-    git -C $Root fetch origin --prune 2>&1 | Out-Null
-    $remoteRef = git -C $Root rev-parse --verify "origin/$branch" 2>$null
-    if ($LASTEXITCODE -eq 0) {
-        $pull = git -C $Root pull --rebase --autostash origin $branch 2>&1
-        if ($LASTEXITCODE -eq 0) {
+    $fetch = Invoke-GitCommand -Root $Root -GitArgs @("fetch", "origin", "--prune")
+    if ($fetch.ExitCode -ne 0) {
+        Write-MirrorLog "WARN: git fetch failed | $($fetch.Output -join ' ')"
+    }
+
+    $remoteRef = Invoke-GitCommand -Root $Root -GitArgs @("rev-parse", "--verify", "origin/$branch")
+    if ($remoteRef.ExitCode -eq 0) {
+        $pull = Invoke-GitCommand -Root $Root -GitArgs @("pull", "--rebase", "--autostash", "origin", $branch)
+        if ($pull.ExitCode -eq 0) {
             Write-MirrorLog "Pulled origin/$branch"
         } else {
-            Write-MirrorLog "WARN: pull failed | $pull"
+            Write-MirrorLog "WARN: pull failed | $($pull.Output -join ' ')"
         }
     }
 
-    git -C $Root lfs pull 2>&1 | Out-Null
+    $lfs = Invoke-GitCommand -Root $Root -GitArgs @("lfs", "pull")
+    if ($lfs.ExitCode -ne 0) {
+        Write-MirrorLog "WARN: git lfs pull failed | $($lfs.Output -join ' ')"
+    }
 }
 
 function Get-LocalRunArtifacts {
     param(
         [string]$SourceRoot,
         [string]$FilterDate,
+        [string]$FilterTopic,
         [bool]$IncludeAllDates
     )
 
@@ -90,6 +130,8 @@ function Get-LocalRunArtifacts {
 
         $topicDirs = Get-ChildItem -Path $dateDir.FullName -Directory -ErrorAction SilentlyContinue
         foreach ($topicDir in $topicDirs) {
+            if ($FilterTopic -and $topicDir.Name -ne $FilterTopic) { continue }
+
             $files = Get-ChildItem -Path $topicDir.FullName -File -ErrorAction SilentlyContinue
             foreach ($file in $files) {
                 if (-not (Test-IsRunArtifactName -FileName $file.Name)) { continue }
@@ -111,6 +153,7 @@ function Get-RemoteRunArtifacts {
         [string]$Root,
         [string]$RunsPrefix,
         [string]$FilterDate,
+        [string]$FilterTopic,
         [bool]$IncludeAllDates
     )
 
@@ -119,29 +162,40 @@ function Get-RemoteRunArtifacts {
         return $artifacts
     }
 
-    git -C $Root fetch origin --prune 2>&1 | Out-Null
+    $fetch = Invoke-GitCommand -Root $Root -GitArgs @("fetch", "origin", "--prune")
+    if ($fetch.ExitCode -ne 0) {
+        Write-MirrorLog "WARN: remote fetch failed | $($fetch.Output -join ' ')"
+    }
 
     $branchPatterns = @(
+        "origin/cursor/linkedin-figma-notion-claude-0681",
+        "origin/cursor/fix-linkedin-local-mirror-0681",
+        "origin/cursor/daily-linkedin-test-non-plm-0681",
         "origin/cursor/daily-linkedin*",
         "origin/cursor/linkedin-daily*",
         "origin/cursor/linkedin-daily-automation-42c5",
         "origin/main",
-        "origin/master"
+        "origin/master",
+        "origin/memory"
     )
 
     $branches = @()
     foreach ($pattern in $branchPatterns) {
-        $branches += @(git -C $Root branch -r --list $pattern 2>$null)
+        $listed = Invoke-GitCommand -Root $Root -GitArgs @("branch", "-r", "--list", $pattern)
+        if ($listed.Output) {
+            $branches += @($listed.Output)
+        }
     }
-    $branches = @($branches | Where-Object { $_ } | Sort-Object -Unique)
+    $branches = @($branches | ForEach-Object { $_.ToString().Trim() } | Where-Object { $_ } | Sort-Object -Unique)
 
     foreach ($branch in $branches) {
-        $branch = $branch.Trim()
-        $commitIso = (git -C $Root log -1 --format=%cI $branch 2>$null).Trim()
+        $commitResult = Invoke-GitCommand -Root $Root -GitArgs @("log", "-1", "--format=%cI", $branch)
+        $commitIso = ($commitResult.Output | Select-Object -First 1).ToString().Trim()
         if ([string]::IsNullOrWhiteSpace($commitIso)) { continue }
 
         $commitTime = [datetime]::Parse($commitIso).ToUniversalTime()
-        $files = @(git -C $Root ls-tree -r --name-only $branch -- "$RunsPrefix/" 2>$null)
+        $treeResult = Invoke-GitCommand -Root $Root -GitArgs @("ls-tree", "-r", "--name-only", $branch, "--", "$RunsPrefix/")
+        $files = @($treeResult.Output | ForEach-Object { $_.ToString().Trim() } | Where-Object { $_ })
         foreach ($file in $files) {
             $normalized = ($file -replace '\\', '/')
             if ($normalized -notmatch 'runs/(\d{4}-\d{2}-\d{2})/([^/]+)/([^/]+)$') { continue }
@@ -152,6 +206,7 @@ function Get-RemoteRunArtifacts {
 
             if (-not (Test-IsRunArtifactName -FileName $fileName)) { continue }
             if (-not $IncludeAllDates -and $FilterDate -and $runDate -ne $FilterDate) { continue }
+            if ($FilterTopic -and $topicSlug -ne $FilterTopic) { continue }
 
             $key = "$runDate/$topicSlug/$fileName"
             if (-not $artifacts.ContainsKey($key) -or $commitTime -gt $artifacts[$key].UpdatedAt) {
@@ -216,6 +271,37 @@ function Get-WindowsMirrorFolder {
     return Join-Path $TargetRoot (Join-Path $RunDate $TopicSlug)
 }
 
+function Test-PngHasC2paChunk {
+    param([string]$Path)
+
+    $bytes = [System.IO.File]::ReadAllBytes($Path)
+    $text = [System.Text.Encoding]::ASCII.GetString($bytes)
+    return ($text -match 'caBX' -or $text -match 'c2pa' -or $text -match 'jumb')
+}
+
+function Remove-C2paFromLinkedInPng {
+    param([string]$Path)
+
+    if (-not (Test-Path -LiteralPath $Path)) { return }
+    if ($Path -notmatch '\.png$') { return }
+    if (-not (Test-PngHasC2paChunk -Path $Path)) { return }
+
+    Add-Type -AssemblyName System.Drawing
+    $image = $null
+    try {
+        $image = [System.Drawing.Image]::FromFile($Path)
+        $tempPath = "$Path.tmp.png"
+        $image.Save($tempPath, [System.Drawing.Imaging.ImageFormat]::Png)
+        $image.Dispose()
+        $image = $null
+        Move-Item -LiteralPath $tempPath -Destination $Path -Force
+        Write-MirrorLog "Stripped C2PA metadata from $Path"
+    }
+    finally {
+        if ($null -ne $image) { $image.Dispose() }
+    }
+}
+
 function Write-ReadyForPostingManifest {
     param(
         [string]$TargetRoot,
@@ -268,16 +354,17 @@ if (-not $AllDates -and [string]::IsNullOrWhiteSpace($filterDate)) {
     $filterDate = (Get-Date).ToString("yyyy-MM-dd")
 }
 
-$localArtifacts = Get-LocalRunArtifacts -SourceRoot $RunsSource -FilterDate $filterDate -IncludeAllDates:([bool]$AllDates)
+$localArtifacts = Get-LocalRunArtifacts -SourceRoot $RunsSource -FilterDate $filterDate -FilterTopic $Topic -IncludeAllDates:([bool]$AllDates)
 $remoteArtifacts = @{}
 if ($IncludeRemoteBranches -or $localArtifacts.Count -eq 0) {
-    $remoteArtifacts = Get-RemoteRunArtifacts -Root $RepoRoot -RunsPrefix $RunsRelativeNormalized -FilterDate $filterDate -IncludeAllDates:([bool]$AllDates)
+    $remoteArtifacts = Get-RemoteRunArtifacts -Root $RepoRoot -RunsPrefix $RunsRelativeNormalized -FilterDate $filterDate -FilterTopic $Topic -IncludeAllDates:([bool]$AllDates)
 }
 
 $artifacts = Merge-ArtifactMaps -Primary $localArtifacts -Secondary $remoteArtifacts
 
 if ($artifacts.Count -eq 0) {
-    Write-MirrorLog "No LinkedIn run artifacts found for mirror (date=$filterDate allDates=$AllDates)"
+    $topicMsg = if ($Topic) { " topic=$Topic" } else { "" }
+    Write-MirrorLog "No LinkedIn run artifacts found for mirror (date=$filterDate allDates=$AllDates$topicMsg)"
     exit 0
 }
 
@@ -326,6 +413,9 @@ foreach ($entry in ($artifacts.GetEnumerator() | Sort-Object Name)) {
     }
 
     (Get-Item $destPath).LastWriteTimeUtc = $meta.UpdatedAt
+    if ($fileName -like "*-infographic.png") {
+        Remove-C2paFromLinkedInPng -Path $destPath
+    }
     Write-MirrorLog "Mirrored $key -> $destPath"
     $copied++
 }

@@ -6,12 +6,44 @@
 
 [CmdletBinding()]
 param(
-    [string]$Branch = "memory",
+    [string]$Branch = "cursor/linkedin-figma-notion-claude-0681",
     [string]$Repo = "leejunha781/Codex",
-    [string]$TargetDir = (Join-Path $env:USERPROFILE ".cursor\automations")
+    [string]$TargetDir = (Join-Path $env:USERPROFILE ".cursor\automations"),
+    [int]$RequestDelayMs = 750,
+    [int]$MaxRetries = 5
 )
 
 $ErrorActionPreference = "Stop"
+
+function Invoke-GitHubRawDownload {
+    param(
+        [string]$Url,
+        [string]$Destination,
+        [int]$DelayMs,
+        [int]$Retries
+    )
+
+    $attempt = 0
+    while ($true) {
+        $attempt++
+        try {
+            Invoke-WebRequest -Uri $Url -UseBasicParsing -OutFile $Destination -Headers @{ "User-Agent" = "Codex-LinkedIn-Automation" }
+            if ($DelayMs -gt 0) {
+                Start-Sleep -Milliseconds $DelayMs
+            }
+            return
+        } catch {
+            $message = $_.Exception.Message
+            $isRateLimit = ($message -match '429' -or $message -match 'Too Many Requests')
+            if (-not $isRateLimit -or $attempt -ge $Retries) {
+                throw
+            }
+            $waitSeconds = [Math]::Min(60, [Math]::Pow(2, $attempt))
+            Write-Host "     rate-limited (429); retry $attempt/$Retries in ${waitSeconds}s"
+            Start-Sleep -Seconds $waitSeconds
+        }
+    }
+}
 
 $CursorBaseRaw = "https://raw.githubusercontent.com/$Repo/$Branch/.cursor/automations"
 $CodexBaseRaw = "https://raw.githubusercontent.com/$Repo/$Branch/.codex/automations"
@@ -23,15 +55,28 @@ $FileMap = @(
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "sync-daily-linkedin-automation.ps1" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "validate-daily-linkedin-automation.ps1" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "mirror-linkedin-runs.ps1" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "strip-linkedin-image-c2pa.ps1" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "strip-linkedin-image-c2pa.py" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "post-linkedin-windows-app-prompt.md" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "install-cursor-linkedin-automation-scripts.ps1" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "run-linkedin-automation-setup.ps1" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "fetch-cursor-linkedin-scripts-from-github.ps1" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/automation.toml" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/memory.md" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/prompt.md" },
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/cursor-cloud-registration.md" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/professional-image-design-rule.md" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/linkedin-reference-style-commissioning-gates.md" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/figma-notion-claude-integration.md" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/notion-config.json" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/linear-config.json" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/claude-review-prompt.md" },
+    @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/freelance-topic-reference.md" },
     @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "sync-daily-linkedin-automation.ps1" },
     @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "sync-daily-linkedin-mirror-automation.ps1" },
+    @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "sync-daily-linkedin-claude-review-automation.ps1" },
+    @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "daily-linkedin-claude-review/automation.toml" },
+    @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "daily-linkedin-claude-review/memory.md" },
     @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "daily-linkedin-marine-plm-post/automation.toml" },
     @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "daily-linkedin-marine-plm-post/memory.md" },
     @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "daily-linkedin-mirror-and-post/automation.toml" }
@@ -54,7 +99,7 @@ foreach ($entry in $FileMap) {
     }
 
     try {
-        Invoke-WebRequest -Uri $url -UseBasicParsing -OutFile $dest
+        Invoke-GitHubRawDownload -Url $url -Destination $dest -DelayMs $RequestDelayMs -Retries $MaxRetries
         Write-Host "OK  $rel"
         $ok++
     } catch {
@@ -79,4 +124,11 @@ if ($failed.Count -eq 0) {
 }
 
 Write-Host "FETCH INCOMPLETE: $($failed.Count) failed"
+Write-Host ""
+Write-Host "If failures are 429 rate limits, wait 1-2 minutes and re-run this script."
+Write-Host "Or fetch a single missing file with retry:"
+Write-Host '  $u="https://raw.githubusercontent.com/leejunha781/Codex/cursor/linkedin-figma-notion-claude-0681/.cursor/automations/daily-linkedin-marine-plm-post/linear-config.json"'
+Write-Host '  $d="$env:USERPROFILE\.cursor\automations\daily-linkedin-marine-plm-post\linear-config.json"'
+Write-Host '  New-Item -ItemType Directory -Force -Path (Split-Path $d) | Out-Null'
+Write-Host '  1..5 | % { try { iwr $u -UseBasicParsing -OutFile $d; "OK"; break } catch { Start-Sleep -Seconds ([Math]::Pow(2,$_)); "retry $_" } }'
 exit 1

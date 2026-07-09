@@ -6,6 +6,7 @@ $ErrorActionPreference = "Stop"
 $AutomationDir = Join-Path $env:USERPROFILE ".cursor\automations\daily-linkedin-marine-plm-post"
 $AutomationsRoot = Join-Path $env:USERPROFILE ".cursor\automations"
 $MirrorScript = Join-Path $AutomationsRoot "mirror-linkedin-runs.ps1"
+$C2paStripScript = Join-Path $AutomationsRoot "strip-linkedin-image-c2pa.ps1"
 $PostPrompt = Join-Path $AutomationsRoot "post-linkedin-windows-app-prompt.md"
 $SyncBothScript = Join-Path $AutomationsRoot "sync-both-linkedin-automations.ps1"
 $ValidateScript = Join-Path $AutomationsRoot "validate-daily-linkedin-automation.ps1"
@@ -15,10 +16,35 @@ $TomlPath = Join-Path $AutomationDir "automation.toml"
 $MemoryPath = Join-Path $AutomationDir "memory.md"
 $PromptPath = Join-Path $AutomationDir "prompt.md"
 
+$IntegrationGuide = Join-Path $AutomationDir "figma-notion-claude-integration.md"
+$NotionConfig = Join-Path $AutomationDir "notion-config.json"
+$ClaudeReviewPrompt = Join-Path $AutomationDir "claude-review-prompt.md"
+$FreelanceRef = Join-Path $AutomationDir "freelance-topic-reference.md"
+
+$ProfessionalDesignRule = Join-Path $AutomationDir "professional-image-design-rule.md"
+$CommissioningGatesRef = Join-Path $AutomationDir "linkedin-reference-style-commissioning-gates.md"
+$LinearConfig = Join-Path $AutomationDir "linear-config.json"
+
 $requiredPromptSections = @(
     "Cursor Cloud Agent addendum",
+    "Figma + Notion + Linear + Claude integration",
+    "Professional image design rule",
+    "professional-image-design-rule.md",
+    "linkedin-reference-style-commissioning-gates.md",
+    "Commissioning gates reference style rule",
+    "Figma-first image production rule",
+    "Anti-simple-image rule",
+    "Linear design tracking rule",
+    "Notion topic selection rule",
+    "Figma infographic rule",
+    "Claude review handoff",
+    "Freelance content angle rule",
+    "freelance-topic-reference.md",
     "mirror-linkedin-runs.ps1",
+    "strip-linkedin-image-c2pa.ps1",
+    "C2PA",
     "daily-linkedin-mirror-and-post",
+    "daily-linkedin-claude-review",
     "post-linkedin-windows-app-prompt",
     "Quiet daily LinkedIn workflow",
     "New AI-era developer leadership angle",
@@ -38,7 +64,7 @@ $requiredPromptSections = @(
 
 $failures = @()
 
-$RequiredPaths = @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $PostPrompt, $SyncBothScript, $ValidateScript, $SyncScript)
+$RequiredPaths = @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $C2paStripScript, $PostPrompt, $SyncBothScript, $ValidateScript, $SyncScript, $IntegrationGuide, $NotionConfig, $ClaudeReviewPrompt, $FreelanceRef, $ProfessionalDesignRule, $CommissioningGatesRef, $LinearConfig)
 $OptionalPaths = @($InstallScript)
 
 foreach ($path in $RequiredPaths) {
@@ -99,6 +125,10 @@ Write-Host "  sync-both: $SyncBothScript"
 Write-Host "  validate: $ValidateScript"
 Write-Host "  sync: $SyncScript"
 Write-Host "  install: $InstallScript"
-Write-Host "  Schedule: daily 09:00 cloud + 09:35 local mirror and LinkedIn auto-post"
+Write-Host "  integration: $IntegrationGuide"
+Write-Host "  notion config: $NotionConfig"
+Write-Host "  claude review: $ClaudeReviewPrompt"
+Write-Host "  freelance ref: $FreelanceRef"
+Write-Host "  Schedule: daily 09:00 cloud + 09:20 Claude QA (commissioning-gates) + 09:35 mirror/post"
 Write-Host "  Register at: https://cursor.com/automations/new"
 exit 0

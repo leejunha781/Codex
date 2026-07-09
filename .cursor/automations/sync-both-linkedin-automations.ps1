@@ -1,5 +1,12 @@
 # Sync Daily LinkedIn automation to both Codex and Cursor installs
 # Run from PowerShell 5.1 on Windows after pulling repo changes.
+#
+# Optional: -RunMirror runs mirror-linkedin-runs.ps1 after sync (default: skip)
+
+[CmdletBinding()]
+param(
+    [switch]$RunMirror
+)
 
 $ErrorActionPreference = "Stop"
 
@@ -20,6 +27,7 @@ function Get-RepoRootFromScript {
 $RepoRoot = Get-RepoRootFromScript -ScriptDir $PSScriptRoot
 $CodexSync = Join-Path $RepoRoot ".codex\automations\sync-daily-linkedin-automation.ps1"
 $CodexMirrorSync = Join-Path $RepoRoot ".codex\automations\sync-daily-linkedin-mirror-automation.ps1"
+$CodexClaudeSync = Join-Path $RepoRoot ".codex\automations\sync-daily-linkedin-claude-review-automation.ps1"
 $CursorSync = Join-Path $PSScriptRoot "sync-daily-linkedin-automation.ps1"
 $MirrorScript = Join-Path $PSScriptRoot "mirror-linkedin-runs.ps1"
 $FetchScript = Join-Path $PSScriptRoot "fetch-cursor-linkedin-scripts-from-github.ps1"
@@ -43,14 +51,27 @@ if (Test-Path $CodexMirrorSync) {
     }
 }
 
+if (Test-Path $CodexClaudeSync) {
+    & $CodexClaudeSync
+} else {
+    Write-Warning "Codex Claude QA sync script not found: $CodexClaudeSync"
+}
+
 & $CursorSync
 
-if (Test-Path $MirrorScript) {
+if ($RunMirror -and (Test-Path $MirrorScript)) {
     Write-Host ""
     Write-Host "Running local mirror (repo runs -> Documents\Codex)..."
-    & $MirrorScript -Pull -IncludeRemoteBranches
-} else {
+    try {
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $MirrorScript -IncludeRemoteBranches
+    } catch {
+        Write-Warning "Mirror step failed (non-fatal): $($_.Exception.Message)"
+    }
+} elseif ($RunMirror) {
     Write-Warning "Mirror script not found: $MirrorScript"
+} else {
+    Write-Host ""
+    Write-Host "Mirror skipped (use -RunMirror to copy today's run to Documents\Codex)."
 }
 
 Write-Host ""

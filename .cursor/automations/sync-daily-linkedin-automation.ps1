@@ -53,12 +53,14 @@ $RequiredUtilities = @(
     "sync-daily-linkedin-automation.ps1",
     "validate-daily-linkedin-automation.ps1",
     "mirror-linkedin-runs.ps1",
+    "strip-linkedin-image-c2pa.ps1",
     "post-linkedin-windows-app-prompt.md"
 )
 
 $OptionalUtilities = @(
     "install-cursor-linkedin-automation-scripts.ps1",
     "fetch-cursor-linkedin-scripts-from-github.ps1",
+    "run-linkedin-automation-setup.ps1",
     "force-update-linkedin-sync-scripts.ps1"
 )
 
@@ -70,6 +72,13 @@ Copy-IfDifferent -Source (Join-Path $SourceDir "automation.toml") -Destination (
 Copy-IfDifferent -Source (Join-Path $SourceDir "memory.md") -Destination (Join-Path $TargetDir "memory.md")
 Copy-IfDifferent -Source (Join-Path $SourceDir "prompt.md") -Destination (Join-Path $TargetDir "prompt.md")
 Copy-IfDifferent -Source (Join-Path $SourceDir "cursor-cloud-registration.md") -Destination (Join-Path $TargetDir "cursor-cloud-registration.md")
+Copy-IfDifferent -Source (Join-Path $SourceDir "figma-notion-claude-integration.md") -Destination (Join-Path $TargetDir "figma-notion-claude-integration.md")
+Copy-IfDifferent -Source (Join-Path $SourceDir "notion-config.json") -Destination (Join-Path $TargetDir "notion-config.json")
+Copy-IfDifferent -Source (Join-Path $SourceDir "claude-review-prompt.md") -Destination (Join-Path $TargetDir "claude-review-prompt.md")
+Copy-IfDifferent -Source (Join-Path $SourceDir "freelance-topic-reference.md") -Destination (Join-Path $TargetDir "freelance-topic-reference.md")
+Copy-IfDifferent -Source (Join-Path $SourceDir "professional-image-design-rule.md") -Destination (Join-Path $TargetDir "professional-image-design-rule.md")
+Copy-IfDifferent -Source (Join-Path $SourceDir "linkedin-reference-style-commissioning-gates.md") -Destination (Join-Path $TargetDir "linkedin-reference-style-commissioning-gates.md")
+Copy-IfDifferent -Source (Join-Path $SourceDir "linear-config.json") -Destination (Join-Path $TargetDir "linear-config.json")
 
 foreach ($utility in $RequiredUtilities) {
     $sourcePath = Join-Path $PSScriptRoot $utility

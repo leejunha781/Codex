@@ -1,0 +1,17 @@
+{
+  "team_id": "c48afb1e-fbf8-47b9-b929-b8478f8d9548",
+  "team_name": "Joonha_Lee",
+  "project_id": "0d9e94c6-fdfa-41de-87bd-82c5381e153b",
+  "project_name": "LinkedIn Content Pipeline",
+  "project_url": "https://linear.app/joonha-lee/project/linkedin-content-pipeline-bf77c4a8e3b6",
+  "issue_title_template": "LinkedIn Design QA — {topic-slug}",
+  "issue_labels": ["LinkedIn", "Design QA", "Infographic"],
+  "workflow_states": {
+    "design_brief": "Design Brief",
+    "in_design": "In Design",
+    "qa_review": "QA Review",
+    "approved": "Approved",
+    "blocked": "Blocked"
+  },
+  "issue_description_template": "## LinkedIn Infographic Design QA\n\n- **Topic:** {topic}\n- **Slug:** {topic-slug}\n- **Date:** {date}\n- **Notion:** {notion_url}\n- **Figma:** {figma_url}\n- **Repo:** {repo_path}\n- **Image Source:** {image_source}\n\n### Design checklist\n- [ ] Solution-overview layout (pipeline + scene + sidebars + cards + footer)\n- [ ] Professional typography and grid alignment\n- [ ] Not childish/cartoon/generic AI look\n- [ ] Text-fit, leader-lines, overlap QA pass\n\n### QA verdict\n- Post QA: \n- Image QA: \n- Design Grade: "
+}

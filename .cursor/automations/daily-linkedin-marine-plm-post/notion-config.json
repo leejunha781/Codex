@@ -1,0 +1,10 @@
+{
+  "database_id": "7ee8f488584e4ca290f3fcbfa3ea1314",
+  "data_source_id": "914de79f-0ac3-4f5d-b8ec-2aa455a568d5",
+  "database_url": "https://app.notion.com/p/7ee8f488584e4ca290f3fcbfa3ea1314",
+  "calendar_view_url": "https://app.notion.com/p/7ee8f488584e4ca290f3fcbfa3ea1314?v=3982392cd0dc8129ab71000c72c51fb0",
+  "status_values": ["Planned", "Drafting", "QA Review", "Ready", "Posted", "Blocked"],
+  "image_source_values": ["Figma Template", "Figma Generated", "Image Gen", "Pillow Fallback"],
+  "query_today_sql": "SELECT \"Topic\", \"Topic Slug\", \"Angle\", \"Marine Context\", \"Status\", \"Image Source\", \"Figma File\" FROM \"collection://914de79f-0ac3-4f5d-b8ec-2aa455a568d5\" WHERE \"date:Scheduled Date:start\" = ? AND \"Status\" IN ('Planned', 'Drafting') ORDER BY \"date:Scheduled Date:start\" ASC LIMIT 1",
+  "query_next_planned_sql": "SELECT \"Topic\", \"Topic Slug\", \"Angle\", \"Marine Context\", \"Status\", \"Image Source\", \"Figma File\" FROM \"collection://914de79f-0ac3-4f5d-b8ec-2aa455a568d5\" WHERE \"Status\" = 'Planned' ORDER BY \"date:Scheduled Date:start\" ASC LIMIT 1"
+}

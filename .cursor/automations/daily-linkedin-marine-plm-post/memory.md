@@ -30,6 +30,46 @@ Mirror + LinkedIn auto-post:
 
 ---
 
+## Figma + Notion + Claude integration (2026-07-09)
+
+**Notion Content Calendar:** https://app.notion.com/p/7ee8f488584e4ca290f3fcbfa3ea1314
+**Config:** `notion-config.json` (database_id, data_source_id, SQL queries)
+**Integration guide:** `figma-notion-claude-integration.md`
+**Claude QA prompt:** `claude-review-prompt.md`
+
+Daily pipeline with integrations:
+
+| Time | Automation | Action |
+|------|-----------|--------|
+| 09:00 | Cursor Cloud `daily-linkedin-marine-plm-post` | Query Notion topic → draft post → Figma or Image Gen infographic → save repo → Notion status QA Review |
+| 09:20 | Codex `daily-linkedin-claude-review` | commissioning-gates + C2PA QA → Notion Ready or **Blocked** |
+| 09:35 | Codex `daily-linkedin-mirror-and-post` | Mirror → LinkedIn post → Notion status Posted |
+
+Figma account: View seat (leejunha781@gmail.com). **Figma MCP is now PRIMARY** for image production; Image Gen only when Figma blocked. Anti-simple-image rule: never post generic/basic AI posters.
+
+**Canonical image reference:** `linkedin-reference-style-commissioning-gates.md` — all images must match LEO Commissioning Gates solution-overview style (photorealistic center + 7 gate bullets + HUD overlay + sidebars + pillars + footer).
+
+Linear project: https://linear.app/joonha-lee/project/linkedin-content-pipeline-bf77c4a8e3b6 (Design QA per run).
+
+Notion seeded topics: 3 Ready + 4 Planned + 4 Freelance Planned.
+
+---
+
+## Freelance content rotation (2026-07-09)
+
+Reference: `freelance-topic-reference.md` (4 service lines, 10 topic slugs).
+
+Rotation rule: at least 1 in 4 posts uses a freelance angle. Alternate: Doc Automation → Resume/LinkedIn → PLM Planning → Automation Tools.
+
+| Date | topic-slug | service line | status |
+|------|------------|--------------|--------|
+| 2026-07-13 | engineering-rca-evidence-structure | Doc Automation | Planned |
+| 2026-07-14 | technical-resume-global-engineering | Resume/LinkedIn | Planned |
+| 2026-07-15 | plm-concept-deck-planning | PLM Planning | Planned |
+| 2026-07-16 | rca-generator-engineering-automation | Automation Tools | Planned |
+
+---
+
 ## Topic rotation log
 
 | Date | topic-slug | angle | marine execution context | status |
@@ -42,6 +82,7 @@ Mirror + LinkedIn auto-post:
 | 2026-07-02 | marine-plm-interface-readiness-governance | interface readiness governance, 8 unique crops (fixed rule applied) | interface handoff + BOM maturity | prepared (8/8 unique, QA pass) |
 | 2026-07-02 | satcom-fallback-evidence-management | SATCOM fallback managed as engineering evidence, not just network event | RF/SATCOM validation + shore-gateway logs + acceptance thresholds | prepared (pro-grade image, QA pass) |
 | 2026-07-02 | marine-plm-bom-validation-gates-test | BOM validation gates owned before AI scripts reach shipyard release line | BOM maturity + supplier package readiness + class/test records | prepared (image-gen tool, QA pass) |
+| 2026-07-09 | engineering-rca-evidence-structure | Why RCA reports fail without traceable evidence chains | SATCOM link-loss RCA + naval acceptance records + class/test evidence | ready for final posting (v3 commissioning-gates image) |
 
 ---
 
