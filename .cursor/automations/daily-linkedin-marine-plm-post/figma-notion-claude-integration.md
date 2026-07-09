@@ -66,6 +66,14 @@ flowchart LR
 1. After LinkedIn post (or block), set Notion status to **Posted** or **Blocked**.
 2. Fill LinkedIn Status field.
 
+### Freelance topic rotation
+
+Reference: `freelance-topic-reference.md`
+
+- ~1 in 4 posts use a freelance service angle (Doc Automation, Resume/LinkedIn, PLM Planning, Automation Tools)
+- Notion calendar includes freelance Planned topics (2026-07-13 through 2026-07-16)
+- Posts remain consultative, not promotional
+
 ---
 
 ## Figma — Infographic Design

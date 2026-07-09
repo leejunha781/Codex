@@ -46,7 +46,22 @@ Daily pipeline with integrations:
 | 09:35 | Codex `daily-linkedin-mirror-and-post` | Mirror → LinkedIn post → Notion status Posted |
 
 Figma account: View seat (leejunha781@gmail.com). Image Gen fallback active until Edit access available.
-Notion seeded topics: 3 Ready (2026-07-02, 2026-07-06) + 4 Planned (2026-07-09 through 2026-07-12).
+Notion seeded topics: 3 Ready (2026-07-02, 2026-07-06) + 4 Planned (2026-07-09 through 2026-07-12) + 4 Freelance Planned (2026-07-13 through 2026-07-16).
+
+---
+
+## Freelance content rotation (2026-07-09)
+
+Reference: `freelance-topic-reference.md` (4 service lines, 10 topic slugs).
+
+Rotation rule: at least 1 in 4 posts uses a freelance angle. Alternate: Doc Automation → Resume/LinkedIn → PLM Planning → Automation Tools.
+
+| Date | topic-slug | service line | status |
+|------|------------|--------------|--------|
+| 2026-07-13 | engineering-rca-evidence-structure | Doc Automation | Planned |
+| 2026-07-14 | technical-resume-global-engineering | Resume/LinkedIn | Planned |
+| 2026-07-15 | plm-concept-deck-planning | PLM Planning | Planned |
+| 2026-07-16 | rca-generator-engineering-automation | Automation Tools | Planned |
 
 ---
 

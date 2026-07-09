@@ -25,6 +25,7 @@ Read `linkedin-post.md` and verify:
 5. 5–8 relevant hashtags
 6. Not promotional — decision-oriented (pain, data ownership, integration risk, proof gates)
 7. At least one concrete context: BOM maturity, design-change control, supplier package, class/test records, handover evidence, CAD/ERP/MES interfaces, control-valve commissioning, RF/SATCOM validation, or shipyard adoption gates
+8. **Freelance posts (if applicable):** consultative insight only — show process (intake → structure → draft → review → deliver); one concrete example; no price listing; soft CTA at most; position as engineering specialist, not generic freelancer
 
 **Verdict:** PASS or FAIL with specific reason.
 

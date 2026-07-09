@@ -18,6 +18,7 @@ $PromptPath = Join-Path $AutomationDir "prompt.md"
 $IntegrationGuide = Join-Path $AutomationDir "figma-notion-claude-integration.md"
 $NotionConfig = Join-Path $AutomationDir "notion-config.json"
 $ClaudeReviewPrompt = Join-Path $AutomationDir "claude-review-prompt.md"
+$FreelanceRef = Join-Path $AutomationDir "freelance-topic-reference.md"
 
 $requiredPromptSections = @(
     "Cursor Cloud Agent addendum",
@@ -25,6 +26,8 @@ $requiredPromptSections = @(
     "Notion topic selection rule",
     "Figma infographic rule",
     "Claude review handoff",
+    "Freelance content angle rule",
+    "freelance-topic-reference.md",
     "mirror-linkedin-runs.ps1",
     "daily-linkedin-mirror-and-post",
     "daily-linkedin-claude-review",
@@ -47,7 +50,7 @@ $requiredPromptSections = @(
 
 $failures = @()
 
-$RequiredPaths = @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $PostPrompt, $SyncBothScript, $ValidateScript, $SyncScript, $IntegrationGuide, $NotionConfig, $ClaudeReviewPrompt)
+$RequiredPaths = @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $PostPrompt, $SyncBothScript, $ValidateScript, $SyncScript, $IntegrationGuide, $NotionConfig, $ClaudeReviewPrompt, $FreelanceRef)
 $OptionalPaths = @($InstallScript)
 
 foreach ($path in $RequiredPaths) {
@@ -111,6 +114,7 @@ Write-Host "  install: $InstallScript"
 Write-Host "  integration: $IntegrationGuide"
 Write-Host "  notion config: $NotionConfig"
 Write-Host "  claude review: $ClaudeReviewPrompt"
+Write-Host "  freelance ref: $FreelanceRef"
 Write-Host "  Schedule: daily 09:00 cloud + 09:20 Claude QA + 09:35 local mirror and LinkedIn auto-post"
 Write-Host "  Register at: https://cursor.com/automations/new"
 exit 0
