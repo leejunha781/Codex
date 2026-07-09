@@ -55,7 +55,11 @@ if (Test-Path $CodexClaudeSync) {
 if (Test-Path $MirrorScript) {
     Write-Host ""
     Write-Host "Running local mirror (repo runs -> Documents\Codex)..."
-    & $MirrorScript -Pull -IncludeRemoteBranches
+    try {
+        & powershell -NoProfile -ExecutionPolicy Bypass -File $MirrorScript -IncludeRemoteBranches
+    } catch {
+        Write-Warning "Mirror step failed (non-fatal): $($_.Exception.Message)"
+    }
 } else {
     Write-Warning "Mirror script not found: $MirrorScript"
 }

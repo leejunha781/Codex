@@ -49,10 +49,18 @@ function Invoke-GitCommand {
         [string[]]$GitArgs
     )
 
-    $output = & git -C $Root @GitArgs 2>&1
-    $exitCode = $LASTEXITCODE
+    $previousPreference = $ErrorActionPreference
+    $ErrorActionPreference = "Continue"
+    try {
+        $output = & git -C $Root @GitArgs 2>&1
+        $exitCode = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $previousPreference
+    }
+
     return @{
-        Output   = $output
+        Output   = @($output)
         ExitCode = $exitCode
     }
 }
@@ -149,7 +157,10 @@ function Get-RemoteRunArtifacts {
         return $artifacts
     }
 
-    git -C $Root fetch origin --prune 2>&1 | Out-Null
+    $fetch = Invoke-GitCommand -Root $Root -GitArgs @("fetch", "origin", "--prune")
+    if ($fetch.ExitCode -ne 0) {
+        Write-MirrorLog "WARN: remote fetch failed | $($fetch.Output -join ' ')"
+    }
 
     $branchPatterns = @(
         "origin/cursor/linkedin-figma-notion-claude-0681",
@@ -165,17 +176,21 @@ function Get-RemoteRunArtifacts {
 
     $branches = @()
     foreach ($pattern in $branchPatterns) {
-        $branches += @(git -C $Root branch -r --list $pattern 2>$null)
+        $listed = Invoke-GitCommand -Root $Root -GitArgs @("branch", "-r", "--list", $pattern)
+        if ($listed.Output) {
+            $branches += @($listed.Output)
+        }
     }
-    $branches = @($branches | Where-Object { $_ } | Sort-Object -Unique)
+    $branches = @($branches | ForEach-Object { $_.ToString().Trim() } | Where-Object { $_ } | Sort-Object -Unique)
 
     foreach ($branch in $branches) {
-        $branch = $branch.Trim()
-        $commitIso = (git -C $Root log -1 --format=%cI $branch 2>$null).Trim()
+        $commitResult = Invoke-GitCommand -Root $Root -GitArgs @("log", "-1", "--format=%cI", $branch)
+        $commitIso = ($commitResult.Output | Select-Object -First 1).ToString().Trim()
         if ([string]::IsNullOrWhiteSpace($commitIso)) { continue }
 
         $commitTime = [datetime]::Parse($commitIso).ToUniversalTime()
-        $files = @(git -C $Root ls-tree -r --name-only $branch -- "$RunsPrefix/" 2>$null)
+        $treeResult = Invoke-GitCommand -Root $Root -GitArgs @("ls-tree", "-r", "--name-only", $branch, "--", "$RunsPrefix/")
+        $files = @($treeResult.Output | ForEach-Object { $_.ToString().Trim() } | Where-Object { $_ })
         foreach ($file in $files) {
             $normalized = ($file -replace '\\', '/')
             if ($normalized -notmatch 'runs/(\d{4}-\d{2}-\d{2})/([^/]+)/([^/]+)$') { continue }
