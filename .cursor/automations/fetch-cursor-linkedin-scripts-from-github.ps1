@@ -73,6 +73,9 @@ $FileMap = @(
     @{ Base = $CursorBaseRaw; Root = $CursorTarget; Rel = "daily-linkedin-marine-plm-post/freelance-topic-reference.md" },
     @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "sync-daily-linkedin-automation.ps1" },
     @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "sync-daily-linkedin-mirror-automation.ps1" },
+    @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "sync-daily-linkedin-claude-review-automation.ps1" },
+    @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "daily-linkedin-claude-review/automation.toml" },
+    @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "daily-linkedin-claude-review/memory.md" },
     @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "daily-linkedin-marine-plm-post/automation.toml" },
     @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "daily-linkedin-marine-plm-post/memory.md" },
     @{ Base = $CodexBaseRaw; Root = $CodexTarget; Rel = "daily-linkedin-mirror-and-post/automation.toml" }

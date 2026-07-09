@@ -129,6 +129,6 @@ Write-Host "  integration: $IntegrationGuide"
 Write-Host "  notion config: $NotionConfig"
 Write-Host "  claude review: $ClaudeReviewPrompt"
 Write-Host "  freelance ref: $FreelanceRef"
-Write-Host "  Schedule: daily 09:00 cloud + 09:20 Claude QA + 09:35 local mirror and LinkedIn auto-post"
+Write-Host "  Schedule: daily 09:00 cloud + 09:20 Claude QA (commissioning-gates) + 09:35 mirror/post"
 Write-Host "  Register at: https://cursor.com/automations/new"
 exit 0

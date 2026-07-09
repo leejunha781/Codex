@@ -42,7 +42,7 @@ Daily pipeline with integrations:
 | Time | Automation | Action |
 |------|-----------|--------|
 | 09:00 | Cursor Cloud `daily-linkedin-marine-plm-post` | Query Notion topic → draft post → Figma or Image Gen infographic → save repo → Notion status QA Review |
-| 09:20 | Codex `daily-linkedin-claude-review` | Post + image QA → Notion status Ready or Blocked |
+| 09:20 | Codex `daily-linkedin-claude-review` | commissioning-gates + C2PA QA → Notion Ready or **Blocked** |
 | 09:35 | Codex `daily-linkedin-mirror-and-post` | Mirror → LinkedIn post → Notion status Posted |
 
 Figma account: View seat (leejunha781@gmail.com). **Figma MCP is now PRIMARY** for image production; Image Gen only when Figma blocked. Anti-simple-image rule: never post generic/basic AI posters.

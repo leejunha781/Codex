@@ -20,6 +20,7 @@ function Get-RepoRootFromScript {
 $RepoRoot = Get-RepoRootFromScript -ScriptDir $PSScriptRoot
 $CodexSync = Join-Path $RepoRoot ".codex\automations\sync-daily-linkedin-automation.ps1"
 $CodexMirrorSync = Join-Path $RepoRoot ".codex\automations\sync-daily-linkedin-mirror-automation.ps1"
+$CodexClaudeSync = Join-Path $RepoRoot ".codex\automations\sync-daily-linkedin-claude-review-automation.ps1"
 $CursorSync = Join-Path $PSScriptRoot "sync-daily-linkedin-automation.ps1"
 $MirrorScript = Join-Path $PSScriptRoot "mirror-linkedin-runs.ps1"
 $FetchScript = Join-Path $PSScriptRoot "fetch-cursor-linkedin-scripts-from-github.ps1"
@@ -41,6 +42,12 @@ if (Test-Path $CodexMirrorSync) {
         Write-Host "Attempting GitHub fetch for missing Codex automation files..."
         & $FetchScript
     }
+}
+
+if (Test-Path $CodexClaudeSync) {
+    & $CodexClaudeSync
+} else {
+    Write-Warning "Codex Claude QA sync script not found: $CodexClaudeSync"
 }
 
 & $CursorSync
