@@ -43,6 +43,20 @@ function Test-IsRunArtifactName {
     )
 }
 
+function Invoke-GitCommand {
+    param(
+        [string]$Root,
+        [string[]]$GitArgs
+    )
+
+    $output = & git -C $Root @GitArgs 2>&1
+    $exitCode = $LASTEXITCODE
+    return @{
+        Output   = $output
+        ExitCode = $exitCode
+    }
+}
+
 function Invoke-GitPull {
     param([string]$Root)
 
@@ -51,25 +65,36 @@ function Invoke-GitPull {
         return
     }
 
-    $branch = (git -C $Root rev-parse --abbrev-ref HEAD 2>$null).Trim()
+    $branch = (Invoke-GitCommand -Root $Root -GitArgs @("rev-parse", "--abbrev-ref", "HEAD")).Output
+    $branch = ($branch | Select-Object -First 1).ToString().Trim()
     if ([string]::IsNullOrWhiteSpace($branch) -or $branch -eq "HEAD") {
         Write-MirrorLog "WARN: detached HEAD at $Root; fetch only"
-        git -C $Root fetch origin --prune 2>&1 | Out-Null
+        $fetch = Invoke-GitCommand -Root $Root -GitArgs @("fetch", "origin", "--prune")
+        if ($fetch.ExitCode -ne 0) {
+            Write-MirrorLog "WARN: git fetch failed | $($fetch.Output -join ' ')"
+        }
         return
     }
 
-    git -C $Root fetch origin --prune 2>&1 | Out-Null
-    $remoteRef = git -C $Root rev-parse --verify "origin/$branch" 2>$null
-    if ($LASTEXITCODE -eq 0) {
-        $pull = git -C $Root pull --rebase --autostash origin $branch 2>&1
-        if ($LASTEXITCODE -eq 0) {
+    $fetch = Invoke-GitCommand -Root $Root -GitArgs @("fetch", "origin", "--prune")
+    if ($fetch.ExitCode -ne 0) {
+        Write-MirrorLog "WARN: git fetch failed | $($fetch.Output -join ' ')"
+    }
+
+    $remoteRef = Invoke-GitCommand -Root $Root -GitArgs @("rev-parse", "--verify", "origin/$branch")
+    if ($remoteRef.ExitCode -eq 0) {
+        $pull = Invoke-GitCommand -Root $Root -GitArgs @("pull", "--rebase", "--autostash", "origin", $branch)
+        if ($pull.ExitCode -eq 0) {
             Write-MirrorLog "Pulled origin/$branch"
         } else {
-            Write-MirrorLog "WARN: pull failed | $pull"
+            Write-MirrorLog "WARN: pull failed | $($pull.Output -join ' ')"
         }
     }
 
-    git -C $Root lfs pull 2>&1 | Out-Null
+    $lfs = Invoke-GitCommand -Root $Root -GitArgs @("lfs", "pull")
+    if ($lfs.ExitCode -ne 0) {
+        Write-MirrorLog "WARN: git lfs pull failed | $($lfs.Output -join ' ')"
+    }
 }
 
 function Get-LocalRunArtifacts {
