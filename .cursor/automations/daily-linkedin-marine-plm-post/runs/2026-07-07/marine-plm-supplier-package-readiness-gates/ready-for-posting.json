@@ -1,0 +1,25 @@
+{
+  "date": "2026-07-07",
+  "topicSlug": "marine-plm-supplier-package-readiness-gates",
+  "topic": "Marine PLM supplier package readiness gates",
+  "angle": "AI and Python can draft supplier-package completeness checks quickly, but engineering leadership must own release evidence, exception disposition, and downstream adoption before yard impact.",
+  "marineExecutionContext": "supplier package readiness + BOM/tag/document/certificate completeness + CAD/ERP/MES/document-control interfaces + class/test records + shipyard adoption gates",
+  "repoRunDirectory": ".cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-07/marine-plm-supplier-package-readiness-gates/",
+  "repoPostPath": ".cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-07/marine-plm-supplier-package-readiness-gates/linkedin-post.md",
+  "repoImagePath": ".cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-07/marine-plm-supplier-package-readiness-gates/marine-plm-supplier-package-readiness-gates-infographic.png",
+  "windowsRunDirectory": "C:\\Users\\namma\\Documents\\Codex\\2026-07-07\\marine-plm-supplier-package-readiness-gates\\",
+  "windowsPostPath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-07\\marine-plm-supplier-package-readiness-gates\\linkedin-post.md",
+  "windowsImagePath": "C:\\Users\\namma\\Documents\\Codex\\2026-07-07\\marine-plm-supplier-package-readiness-gates\\marine-plm-supplier-package-readiness-gates-infographic.png",
+  "imageGenerationPath": "built-in image generation tool",
+  "imageStyle": "SATCOM-reference poster composition: seven-step top pipeline, central maritime digital-thread scene, left readiness-events legend, right Python automation sidebar, three bottom decision cards, footer takeaway strip.",
+  "imageQa": {
+    "textFit": "pass",
+    "leaderLines": "pass",
+    "overlap": "pass",
+    "satcomReferenceStyle": "pass",
+    "professionalGrade": "pass",
+    "photoDiversity": "not applicable; generated central maritime scene with no repeated thumbnail set"
+  },
+  "linkedinStatus": "ready for final posting",
+  "blocker": "LinkedIn Windows app is unavailable from Linux cloud environment; Cursor Pro Windows handoff should run .cursor\\automations\\mirror-linkedin-run-to-codex.ps1 -Latest after git pull."
+}
