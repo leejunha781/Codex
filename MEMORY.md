@@ -45,9 +45,14 @@
 
 - **Codex** (`leejunha781/Codex`) — AI configuration hub, rules, skills, career tooling
 
+## Active Applications (snapshot)
+
+- **Navarino Account Manager (Korea, 2026-07)** — Axis A Sales/FAE/Solution; revised CV in `career/navarino-account-manager/`; honest match ~74% after reframing. Details: `.cursor/memory/navarino-account-manager-202607.md`
+
 ## Related Files
 
 - `chatgpt-preferences.md` — exported ChatGPT preferences
 - `docs/SETUP_CURSOR_PRO_CLAUDE_CODEX.md` — subscription & settings guide
 - `.cursor/rules/` — project rules
 - `.cursor/skills/` — workflow skills
+- `.cursor/memory/` — durable topic notes
