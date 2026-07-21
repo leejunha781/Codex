@@ -53,10 +53,10 @@ def add_horizontal_line(paragraph):
 
 def set_narrow_margins(doc: Document):
     for section in doc.sections:
-        section.top_margin = Inches(0.55)
-        section.bottom_margin = Inches(0.55)
-        section.left_margin = Inches(0.65)
-        section.right_margin = Inches(0.65)
+        section.top_margin = Inches(0.5)
+        section.bottom_margin = Inches(0.5)
+        section.left_margin = Inches(0.6)
+        section.right_margin = Inches(0.6)
 
 
 def tight_paragraph(paragraph, before: float = 0, after: float = 4, line: float = 1.08):
@@ -155,8 +155,7 @@ def build_cv() -> Path:
         "Built durable customer trust through end-to-end maritime system delivery—from interface design and integration testing to FAT/SAT and commissioning handovers.",
         "Translated complex satcom and shipboard communication capabilities into clear acceptance criteria and stakeholder-aligned decisions for demanding maritime customers.",
         "Practised regulatory, traceability, and quality-control discipline across naval programmes—transferable to commercial fleet compliance, SLA, and performance-management conversations.",
-        "Operated as a reliable cross-functional interface between engineering, QA, and customer stakeholders, supporting pre-sale clarity and post-sale issue resolution.",
-        "Supported customer clarity in pre-sale technical discussions and post-sale validation handovers—practising the retention and expansion behaviours required for account management, while building commercial pipeline discipline for a full Account Manager remit.",
+        "Operated as a reliable cross-functional interface for pre-sale clarity and post-sale validation—practising retention/expansion behaviours and commercial pipeline discipline for a full Account Manager remit.",
     ]:
         add_bullet(doc, item)
 
@@ -210,10 +209,9 @@ def build_cv() -> Path:
     for b in [
         "Oversaw design, integration, and verification of LEO satellite terminal systems, aligning technical performance with customer acceptance expectations in a regulated maritime connectivity context.",
         "Managed embedded-system integration for LEO parabolic and AESA-related architectures, improving operational readiness and reducing ambiguity at customer validation milestones.",
-        "Led project scheduling and quality-assurance gates, creating a reliable cadence for cross-functional delivery and customer-facing technical reviews.",
-        "Supported FAT/SAT and commissioning-oriented engagement—translating RF, network, and system evidence into clear stakeholder communication suitable for commercial account care.",
+        "Led project scheduling and quality-assurance gates for cross-functional delivery and customer-facing technical reviews; supported FAT/SAT and commissioning with clear stakeholder communication.",
         "Acted as a professional company interface to customers and partners, reinforcing brand trust through disciplined delivery, documentation, and issue ownership.",
-        "Applied KPI-minded progress tracking and structured collaboration (including Jira/Confluence-style work management habits) to keep priorities visible across engineering and customer stakeholders.",
+        "Applied KPI-minded progress tracking and Jira/Confluence-style collaboration habits to keep priorities visible across engineering and customer stakeholders.",
     ]:
         add_bullet(doc, b)
 
@@ -239,12 +237,10 @@ def build_cv() -> Path:
         "Busan, South Korea",
     )
     for b in [
-        "Delivered multi-year naval communication and entertainment programmes for maritime customers, including the Indonesia submarine Entertainment System and PC Communication & Broadcasting Systems—managing interface clarity, integration outcomes, and customer satisfaction across long programme lifecycles.",
-        "Spearheaded Integrated Communication System (ICS) development for a 300-ton class submarine and supported 3000-ton class submarine ICS activities, coordinating shipboard communication architectures under demanding technical and regulatory constraints.",
-        "Developed internal wireless and broadcasting systems for Korean frigates, improving onboard communication effectiveness for operational users.",
-        "Performed V/UHF and satellite-communication signal specification analysis, designed wiring diagrams, executed integration testing, and corrected system/wiring defects—building an evidence-first culture transferable to commercial maritime SLA and quality conversations.",
-        "Designed interface boxes and connection schemes for military secure equipment, strengthening secure-integration literacy relevant to modern fleet cybersecurity and OT discussions.",
-        "Sustained long-horizon relationships with shipyards, technical managers, and programme stakeholders—demonstrating the retention and trust behaviours expected of an Account Manager in the maritime sector.",
+        "Delivered multi-year naval communication and entertainment programmes (Indonesia submarine Entertainment System; PC Communication & Broadcasting Systems), managing interface clarity, integration outcomes, and customer satisfaction across long programme lifecycles.",
+        "Spearheaded ICS development for a 300-ton class submarine and supported 3000-ton class submarine ICS; developed internal wireless/broadcasting for Korean frigates under demanding technical and regulatory constraints.",
+        "Performed V/UHF and satcom signal specification analysis, wiring diagrams, integration testing, and interface-box design for military secure equipment—building evidence-first, cybersecurity/OT-aware discipline transferable to commercial maritime SLA conversations.",
+        "Sustained long-horizon relationships with shipyards, technical managers, and programme stakeholders—demonstrating the retention and trust behaviours expected of a maritime Account Manager.",
     ]:
         add_bullet(doc, b)
 
@@ -258,11 +254,10 @@ def build_cv() -> Path:
     tight_paragraph(edu1b, before=0, after=2)
     e1b = edu1b.add_run("Pusan National University  ·  2013 – 2017  ·  GPA 3.79  ·  South Korea")
     set_run_font(e1b, size=9, color=GRAY)
-    for b in [
-        "Focus areas: embedded systems development, hardware/PCB design, industrial networking, OS-level programming (Linux/Windows), and real-time control interfaces.",
-        "Research emphasis on high-performance embedded control with industrial Ethernet (EtherCAT) for synchronized multi-peripheral systems.",
-    ]:
-        add_bullet(doc, b)
+    add_bullet(
+        doc,
+        "Focus: embedded systems, hardware/PCB design, industrial networking, OS-level programming (Linux/Windows); research on real-time embedded control with industrial Ethernet (EtherCAT).",
+    )
 
     edu2 = doc.add_paragraph()
     tight_paragraph(edu2, before=6, after=0)
@@ -276,10 +271,9 @@ def build_cv() -> Path:
     # Why Navarino
     add_heading_bar(doc, "Alignment with Navarino (Company Fit Narrative)")
     for b in [
-        "Vision fit: prepared to represent Navarino’s ambition to be the benchmark technology company of the maritime world—Integrity, Excellence, and Innovation in every customer interaction.",
-        "Portfolio conversation fluency (learning, not product ownership): connectivity (Starlink/hybrid), Infinity bandwidth/network management, Spectrum RMM/asset inventory, Quazar IT-as-a-Service, and cybersecurity/OT themes (Angel/Ozora/NEMO).",
-        "Commercial motion: account retention + expansion through consultative discovery with operators, technical managers, IT stakeholders, and compliance-adjacent roles (including growing fluency with DPA/crewing decision chains).",
-        "Digital ops adjacency: commercial PLM/ERP/Jira/Confluence/KPI literacy supports structured CRM hygiene, opportunity tracking, and measurable account performance without claiming proprietary Navarino product employment history.",
+        "Vision fit: represent Navarino’s ambition to be the benchmark maritime technology company—Integrity, Excellence, and Innovation in every customer interaction.",
+        "Portfolio conversation fluency (learning, not product ownership): Starlink/hybrid connectivity, Infinity bandwidth/network management, Spectrum RMM/asset inventory, Quazar IT-as-a-Service, cybersecurity/OT (Angel/Ozora/NEMO).",
+        "Commercial motion: retention and expansion via consultative discovery with operators, technical managers, IT, and compliance-adjacent roles; growing fluency with DPA/crewing decision chains; CRM hygiene via PLM/ERP/Jira/Confluence/KPI literacy.",
     ]:
         add_bullet(doc, b)
 
@@ -287,17 +281,10 @@ def build_cv() -> Path:
     add_heading_bar(doc, "Languages")
     lp = doc.add_paragraph()
     tight_paragraph(lp, before=2, after=2)
-    lr = lp.add_run("Korean (Native)  ·  English (Professional — customer engagement, written proposals, cross-border coordination)")
-    set_run_font(lr, size=9.5, color=GRAY)
-
-    note = doc.add_paragraph()
-    tight_paragraph(note, before=8, after=0)
-    nrn = note.add_run(
-        "Document control: Revised JD Fit for Navarino Account Manager (Korea) — 2026-07-21. "
-        "Canonical prior CV path preserved (not overwritten): "
-        "e:\\이력서\\Account Manager\\Joonha_Lee_NAVARINO_Account_Manager_Professional_CV.docx"
+    lr = lp.add_run(
+        "Korean (Native)  ·  English (Professional — customer engagement, written proposals, cross-border coordination)"
     )
-    set_run_font(nrn, size=8, color=RGBColor(0x77, 0x77, 0x77))
+    set_run_font(lr, size=9.5, color=GRAY)
 
     doc.save(CV_PATH)
     return CV_PATH
