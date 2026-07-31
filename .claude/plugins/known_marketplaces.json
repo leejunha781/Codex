@@ -1,10 +1,10 @@
 {
   "claude-plugins-official": {
     "source": {
-      "source": "git",
-      "url": "https://github.com/anthropics/claude-plugins-official.git"
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
     },
     "installLocation": "C:\\Users\\namma\\.claude\\plugins\\marketplaces\\claude-plugins-official",
-    "lastUpdated": "2026-06-05T19:47:53.936Z"
+    "lastUpdated": "2026-07-10T23:07:48.835Z"
   }
 }

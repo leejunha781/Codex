@@ -6,8 +6,18 @@ Streamlit demo for **Service 1: Engineering Document Automation**.
 
 ```powershell
 cd C:\Users\namma\freelance\04-tools\rca-generator
-pip install -r requirements.txt
-streamlit run app.py
+python -m pip install -r requirements.txt
+python -m streamlit run app.py
+```
+
+If PowerShell says `streamlit` is not recognized, use `python -m streamlit`
+as shown above. The Python module is installed, but the `streamlit.exe`
+launcher may not be on the Windows PATH.
+
+Shortcut:
+
+```powershell
+.\run_app.cmd
 ```
 
 ## Features

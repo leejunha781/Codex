@@ -24,6 +24,22 @@
 | 3 | Go-to-market | `03-marketing/` (LinkedIn, Fiverr, Upwork, outreach) |
 | 4 | Demo tool | `04-tools/rca-generator/` Streamlit app |
 
+## Launch playbooks
+
+| File | Purpose |
+|------|---------|
+| `EXECUTION_PLAYBOOK_KR.md` | Korean end-to-end launch plan: positioning, first 14 days, 30/90-day roadmap |
+| `PROFESSIONAL_REVENUE_UPGRADE_KR.md` | Professional upgrade: revenue model, offer ladder, retainers, tool roles, realistic targets |
+| `06-operations/platform-priority-and-fee-notes.md` | Current platform priority, fee notes, source links, and launch sequence |
+| `06-operations/14-day-launch-action-board.md` | Daily checklist for first two weeks |
+| `06-operations/revenue-model-and-pricing-ladder.md` | Revenue formula, pricing ladder, retainers, fee-aware pricing |
+| `06-operations/client-acquisition-sop.md` | Weekly acquisition SOP, outreach sequences, inquiry triage |
+| `06-operations/proposal-and-delivery-templates.md` | Quote, delivery, revision, testimonial, retainer, decline templates |
+| `06-operations/figma-revenue-system-diagram.md` | FigJam link and visual system notes |
+| `05-cursor-collaboration/cursor-task-briefs.md` | Cursor implementation briefs for tools and portfolio assets |
+| `05-cursor-collaboration/claude-cursor-openai-figma-operating-model.md` | Claude/Cursor/OpenAI/Figma quality gates and productization roadmap |
+| `07-learning/engineering-ai-freelance-learning-map.md` | Study map for RCA, FAT/SAT, PLM, Python/Streamlit, AI prompting, and sales |
+
 ## Folder map
 
 ```
@@ -33,6 +49,9 @@ freelance/
 ├── 03-marketing/         # Platform listings, outreach templates
 ├── 04-tools/             # Streamlit apps and automation
 │   └── rca-generator/
+├── 05-cursor-collaboration/
+├── 06-operations/
+├── 07-learning/
 └── templates/            # Reusable document templates
 ```
 

@@ -4,8 +4,8 @@ This file provides guidance to Codex (Codex.ai/code) when working with code in t
 
 ## Environment constraints
 
-- **No Python, Node.js, or LibreOffice** on this machine. All Office file editing must use **PowerShell + Office COM automation** (Microsoft Office 2016+ is installed at `C:\Program Files\Microsoft Office\root\Office16\`).
-- Shell is **Windows PowerShell 5.1**. No `&&` pipeline chaining — use `; if ($?) { ... }` or separate statements.
+- **Python and Node.js are installed** on this machine. **LibreOffice is not available**. All Office file editing must use **PowerShell + Office COM automation** (Microsoft Office 2016+ is installed at `C:\Program Files\Microsoft Office\root\Office16\`).
+- Default shell is **PowerShell 7.6.2**. Use **Windows PowerShell 5.1** only when a task specifically requires it, such as Office COM compatibility. No `&&` pipeline chaining — use `; if ($?) { ... }` or separate statements.
 - To run a `.ps1` script without changing execution policy: `Get-Content script.ps1 -Raw | Invoke-Expression` (using `-ExecutionPolicy Bypass` is blocked by the security hook).
 
 ## Office COM patterns (Word / PowerShell)
@@ -59,14 +59,33 @@ Reading a PDF's text: `$word.Documents.Open($pdfPath, $false, $true)` then `$doc
 
 | Folder | Contents |
 |---|---|
-| `C:\Users\namma\.claude\itt_work\` | PowerShell build/edit scripts and PNG renders for the ITT Cannon FAE resume |
-| `C:\Users\namma\.claude\plm_slide_work\` | PowerShell build scripts and PNG renders for the AVEVA PLM presentation deck |
+| `C:\Users\namma\.Codex\itt_work\` | PowerShell build/edit scripts and PNG renders for the ITT Cannon FAE resume |
+| `C:\Users\namma\.Codex\plm_slide_work\` | PowerShell build scripts and PNG renders for the AVEVA PLM presentation deck |
 | `D:\이력서\ITT Cannon\` | ITT Cannon FAE resume files (canonical: `..._Final_Integrated_v2.docx` + `.pdf`) |
 | `D:\이력서\` | Job application documents |
 
 ## Active projects
 
-See `projects/C--Users-namma--claude/memory/` for persistent memory across sessions — always read `MEMORY.md` first for context. Key files:
+Use `C:\Users\namma\.codex\memories\MEMORY.md` as the Codex-native durable registry and quick-pass index. `C:\Users\namma\.codex\memory\` is the cross-tool Claude-memory mirror, while `C:\Users\namma\.cursor\memory\` is the synchronization hub. For substantive work, search the native registry first, then open only the task-specific mirrored file it identifies; do not load the full corpus by default. Key mirrored files:
 - `office-docs-com-automation.md` — full COM gotcha reference
 - `itt-cannon-fae-resume.md` — resume edit history, salary facts, JD alignment notes
 - `aveva-plm-application-deck.md` — presentation deck edit history
+
+## Codex Pro operating mode
+
+When the user asks to act as "Codex pro", "evolve", or absorb Claude/Cursor strengths, treat it as a higher-initiative execution mode:
+
+- Invoke the personal `$codex-pro` skill for the reusable cowork workflow.
+- **Claude strengths to absorb:** selective durable-context boot, long-horizon continuity, explicit task framing, careful tone/structure review, and honest uncertainty.
+- **Codex strengths to use:** `AGENTS.md`, matching skills, native subagents, connectors/MCP, automations, browser/computer use, precise local edits, and command/test/visual-QA loops.
+- **Default loop:** boot relevant context -> define goal/constraints/exit criteria -> plan and parallelize independent reads when useful -> execute the smallest correct change -> verify -> independent review -> report artifacts and open risks.
+- **Outward-facing work:** resumes, cover letters, LinkedIn posts, decks, proposals, and interview material must receive an accuracy/tone/structure/confidentiality review pass and evidence-backed wording; verify current facts from authoritative sources.
+- **Autonomy:** prefer safe end-to-end execution over advice-only responses. Ask only when the missing answer materially changes the result, requires new authority, or makes a reasonable assumption risky.
+
+### Capability routing
+
+- Put durable environment and repository constraints in `AGENTS.md`; put repeatable procedures in focused skills; use MCP/connectors for live external or private data; use subagents for independent exploration, testing, or review.
+- For Word, PowerPoint, or Office-targeted PDF work on this machine, prefer the personal `office-com-doc-qa` skill and the Windows Office COM rules above. Do not route production Office edits through LibreOffice- or Python-dependent document workflows.
+- Do not weaken sandbox, trust, or approval settings merely to make Codex seem more capable. Permission breadth is not model intelligence.
+- Do not create stop hooks that automatically re-enter the same agent task; they can cause infinite execution loops. Use explicit automations only for genuinely scheduled work.
+- Keep memory retrieval selective and write durable memory only when the user explicitly asks to learn, remember, register, or persist it.
