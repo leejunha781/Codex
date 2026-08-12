@@ -27,7 +27,7 @@ Codex automation `daily-linkedin-mirror-and-post` (09:35) mirrors repo runs then
 
 ## Embedded ARM topic rotation (2026-08-12)
 
-Reference (Cursor folder): `embedded-arm-topic-reference.md`  
+Reference: `embedded-arm-topic-reference.md`  
 Rotate ARM Cortex-Mx / Cortex-Ax hardware, firmware, and peripheral drivers at least 1 in 4 posts.
 
 | Date | topic-slug | status |
