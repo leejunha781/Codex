@@ -8,7 +8,7 @@ Shared with Codex automation `daily-linkedin-marine-plm-post`. Read at the start
 ## YYYY-MM-DD HH:MM TZ
 - Topic: <topic-slug>
 - Angle: <one-line angle description>
-- Marine execution context: <BOM maturity | design-change control | supplier package readiness | class/test records | handover evidence | CAD/ERP/MES interfaces | control-valve commissioning | RF/SATCOM validation | shipyard adoption gates | other>
+- Marine execution context: <BOM maturity | design-change control | supplier package readiness | class/test records | handover evidence | CAD/ERP/MES interfaces | control-valve commissioning | RF/SATCOM validation | shipyard adoption gates | Cortex-M/A bring-up | peripheral driver validation | bootloader/OTA acceptance | device-tree/BSP | shipboard EMC/PCB | other>
 - Post path: C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\linkedin-post.md
 - Image path: C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\<topic-slug>-infographic.png
 - Image QA: text-fit pass/fail | leader-lines pass/fail | overlap QA pass/fail | photo-diversity 8/8 unique (YARD,DASH,IFACE,REL,BOM,HANDOVER,CONTROL,VESSEL) pass/fail
@@ -27,6 +27,21 @@ Mirror + LinkedIn auto-post:
 - Script: `.cursor/automations/mirror-linkedin-runs.ps1`
 - Post guide: `.cursor/automations/post-linkedin-windows-app-prompt.md`
 - Scheduled Codex automation: `daily-linkedin-mirror-and-post` (daily 09:35, auto-clicks Post in LinkedIn Windows app)
+
+---
+
+## Embedded ARM topic rotation (2026-08-12)
+
+Reference: `embedded-arm-topic-reference.md`
+
+Rotation rule: at least **1 in 4** posts uses ARM Cortex-Mx / Cortex-Ax embedded hardware, embedded software, or peripheral device-driver content. Prefer marine/defense/SATCOM bridge when natural.
+
+| Date | topic-slug | pillar | status |
+|------|------------|--------|--------|
+| 2026-08-13 | cortex-m-peripheral-driver-gates | Cortex-Mx drivers | Planned |
+| 2026-08-14 | cortex-a-bsp-device-tree-ownership | Cortex-Ax BSP | Planned |
+| 2026-08-15 | embedded-dma-isr-latency-budget | Driver timing | Planned |
+| 2026-08-16 | satcom-companion-mcu-lock-proof | Marine/SATCOM bridge | Planned |
 
 ---
 
