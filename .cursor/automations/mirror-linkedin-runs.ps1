@@ -295,6 +295,9 @@ function Remove-C2paFromLinkedInPng {
         $image.Dispose()
         $image = $null
         Move-Item -LiteralPath $tempPath -Destination $Path -Force
+        if (Test-PngHasC2paChunk -Path $Path) {
+            throw "C2PA metadata still present after strip: $Path"
+        }
         Write-MirrorLog "Stripped C2PA metadata from $Path"
     }
     finally {

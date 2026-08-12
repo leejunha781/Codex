@@ -59,7 +59,7 @@ flowchart LR
 
 ### Cursor Cloud — post-run (09:00)
 
-1. Set Notion status to **QA Review** (or **Ready** if QA passed inline).
+1. Set Notion status to **QA Review** only. Do **not** set **Ready** — Claude QA (`daily-linkedin-claude-review` at 09:20) is the sole path that may promote status to Ready.
 2. Fill: Image Source, Image QA, Repo Path, Windows Path, Figma File (if used).
 3. Append run summary to `memory.md`.
 

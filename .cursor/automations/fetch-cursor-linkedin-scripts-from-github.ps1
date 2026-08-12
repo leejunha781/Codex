@@ -6,7 +6,7 @@
 
 [CmdletBinding()]
 param(
-    [string]$Branch = "cursor/linkedin-figma-notion-claude-0681",
+    [string]$Branch = "memory",
     [string]$Repo = "leejunha781/Codex",
     [string]$TargetDir = (Join-Path $env:USERPROFILE ".cursor\automations"),
     [int]$RequestDelayMs = 750,
@@ -127,7 +127,7 @@ Write-Host "FETCH INCOMPLETE: $($failed.Count) failed"
 Write-Host ""
 Write-Host "If failures are 429 rate limits, wait 1-2 minutes and re-run this script."
 Write-Host "Or fetch a single missing file with retry:"
-Write-Host '  $u="https://raw.githubusercontent.com/leejunha781/Codex/cursor/linkedin-figma-notion-claude-0681/.cursor/automations/daily-linkedin-marine-plm-post/linear-config.json"'
+Write-Host '  $u="https://raw.githubusercontent.com/leejunha781/Codex/memory/.cursor/automations/daily-linkedin-marine-plm-post/linear-config.json"'
 Write-Host '  $d="$env:USERPROFILE\.cursor\automations\daily-linkedin-marine-plm-post\linear-config.json"'
 Write-Host '  New-Item -ItemType Directory -Force -Path (Split-Path $d) | Out-Null'
 Write-Host '  1..5 | % { try { iwr $u -UseBasicParsing -OutFile $d; "OK"; break } catch { Start-Sleep -Seconds ([Math]::Pow(2,$_)); "retry $_" } }'

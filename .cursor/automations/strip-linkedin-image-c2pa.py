@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import struct
 import sys
 from pathlib import Path
@@ -17,8 +18,18 @@ def png_has_c2pa(path: Path) -> bool:
 def strip_with_pillow(path: Path) -> None:
     from PIL import Image
 
-    with Image.open(path) as image:
-        image.convert("RGB").save(path, format="PNG", optimize=True)
+    tmp_path = path.with_name(path.name + ".tmp.png")
+    try:
+        with Image.open(path) as image:
+            frame = image.copy()
+        if frame.mode not in ("RGB", "RGBA", "L", "LA", "P"):
+            frame = frame.convert("RGBA" if "A" in frame.mode else "RGB")
+        frame.save(tmp_path, format="PNG", optimize=True)
+        os.replace(tmp_path, path)
+    except Exception:
+        if tmp_path.exists():
+            tmp_path.unlink()
+        raise
 
 
 def strip_png_chunks(path: Path) -> None:

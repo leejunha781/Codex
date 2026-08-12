@@ -16,7 +16,7 @@ if (-not (Test-Path $AutomationsDir)) {
 if (-not (Test-Path $SyncBoth)) {
     Write-Host "Scripts missing — fetching from GitHub..."
     if (-not (Test-Path $Fetch)) {
-        $url = "https://raw.githubusercontent.com/leejunha781/Codex/cursor/linkedin-figma-notion-claude-0681/.cursor/automations/fetch-cursor-linkedin-scripts-from-github.ps1"
+        $url = "https://raw.githubusercontent.com/leejunha781/Codex/memory/.cursor/automations/fetch-cursor-linkedin-scripts-from-github.ps1"
         Invoke-WebRequest -Uri $url -UseBasicParsing -OutFile $Fetch
     }
     & powershell -NoProfile -ExecutionPolicy Bypass -File $Fetch

@@ -3,7 +3,7 @@
 
 [CmdletBinding()]
 param(
-    [string]$Branch = "cursor/linkedin-figma-notion-claude-0681",
+    [string]$Branch = "memory",
     [string]$Repo = "leejunha781/Codex",
     [string]$Date = "2026-07-09",
     [string]$Topic = "engineering-rca-evidence-structure",
@@ -49,11 +49,26 @@ function Get-RemoteFile {
     $gitRef = "origin/${Branch}:$($RelativePath -replace '\\', '/')"
     Write-Host "TRY  git show $gitRef"
     $quotedRoot = '"' + $RepoRoot + '"'
-    $quotedRef = '"' + $gitRef + '"'
-    $quotedDest = '"' + $DestPath + '"'
-    cmd.exe /c "git -C $quotedRoot fetch origin $Branch 2>nul & git -C $quotedRoot show $quotedRef > $quotedDest" | Out-Null
+    cmd.exe /c "git -C $quotedRoot fetch origin $Branch 2>nul" | Out-Null
 
-    if ((Test-Path $DestPath) -and ((Get-Item $DestPath).Length -gt 0)) {
+    # Binary-safe export: cmd `>` corrupts PNGs via text-mode CRLF rewriting.
+    $psi = New-Object System.Diagnostics.ProcessStartInfo
+    $psi.FileName = "git"
+    $psi.Arguments = "-C `"$RepoRoot`" show `"$gitRef`""
+    $psi.RedirectStandardOutput = $true
+    $psi.RedirectStandardError = $true
+    $psi.UseShellExecute = $false
+    $psi.CreateNoWindow = $true
+    $proc = [System.Diagnostics.Process]::Start($psi)
+    $fs = [System.IO.File]::Create($DestPath)
+    try {
+        $proc.StandardOutput.BaseStream.CopyTo($fs)
+    } finally {
+        $fs.Dispose()
+    }
+    $proc.WaitForExit()
+
+    if ($proc.ExitCode -eq 0 -and (Test-Path $DestPath) -and ((Get-Item $DestPath).Length -gt 0)) {
         Write-Host "OK   $DestPath (git show)"
         return $true
     }

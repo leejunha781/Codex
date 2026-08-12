@@ -6,7 +6,7 @@
 
 $ErrorActionPreference = "Stop"
 
-$Branch = "cursor/linkedin-figma-notion-claude-0681"
+$Branch = "memory"
 $Repo = "leejunha781/Codex"
 $CursorBase = "https://raw.githubusercontent.com/$Repo/$Branch/.cursor/automations"
 $CodexBase = "https://raw.githubusercontent.com/$Repo/$Branch/.codex/automations"

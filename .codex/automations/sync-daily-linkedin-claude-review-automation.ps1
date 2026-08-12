@@ -5,7 +5,7 @@ $ErrorActionPreference = "Stop"
 
 $AutomationName = "daily-linkedin-claude-review"
 $Repo = "leejunha781/Codex"
-$Branch = "cursor/linkedin-figma-notion-claude-0681"
+$Branch = "memory"
 
 function Normalize-PathString {
     param([string]$Path)
@@ -23,22 +23,23 @@ function Test-SamePath {
     return (Normalize-PathString $Left) -ieq (Normalize-PathString $Right)
 }
 
-function Ensure-AutomationToml {
+function Ensure-AutomationFile {
     param(
         [string]$TargetDir,
-        [string]$RelativeRepoPath
+        [string]$RelativeRepoPath,
+        [string]$FileName
     )
 
     New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null
-    $tomlPath = Join-Path $TargetDir "automation.toml"
-    if (Test-Path $tomlPath) {
-        return $tomlPath
+    $destPath = Join-Path $TargetDir $FileName
+    if (Test-Path $destPath) {
+        return $destPath
     }
 
-    $url = "https://raw.githubusercontent.com/$Repo/$Branch/$RelativeRepoPath/automation.toml"
+    $url = "https://raw.githubusercontent.com/$Repo/$Branch/$RelativeRepoPath/$FileName"
     Write-Host "FETCH $url"
-    Invoke-WebRequest -Uri $url -UseBasicParsing -OutFile $tomlPath
-    return $tomlPath
+    Invoke-WebRequest -Uri $url -UseBasicParsing -OutFile $destPath
+    return $destPath
 }
 
 function Copy-IfDifferent {
@@ -57,11 +58,14 @@ $SourceDir = Join-Path $PSScriptRoot $AutomationName
 $TargetDir = Join-Path $env:USERPROFILE ".codex\automations\$AutomationName"
 $RelativeRepoPath = ".codex/automations/$AutomationName"
 
-if (-not (Test-Path (Join-Path $SourceDir "automation.toml"))) {
-    Write-Host "Source automation.toml not in repo path; ensuring live install from GitHub..."
-    Ensure-AutomationToml -TargetDir $TargetDir -RelativeRepoPath $RelativeRepoPath | Out-Null
+$sourceToml = Join-Path $SourceDir "automation.toml"
+if (Test-Path $sourceToml) {
+    Copy-IfDifferent -Source $sourceToml -Destination (Join-Path $TargetDir "automation.toml")
+    Copy-IfDifferent -Source (Join-Path $SourceDir "memory.md") -Destination (Join-Path $TargetDir "memory.md")
 } else {
-    Copy-IfDifferent -Source (Join-Path $SourceDir "automation.toml") -Destination (Join-Path $TargetDir "automation.toml")
+    Write-Host "Source files not in repo path; ensuring live install from GitHub..."
+    Ensure-AutomationFile -TargetDir $TargetDir -RelativeRepoPath $RelativeRepoPath -FileName "automation.toml" | Out-Null
+    Ensure-AutomationFile -TargetDir $TargetDir -RelativeRepoPath $RelativeRepoPath -FileName "memory.md" | Out-Null
 }
 
 if (-not (Test-Path (Join-Path $TargetDir "automation.toml"))) {
