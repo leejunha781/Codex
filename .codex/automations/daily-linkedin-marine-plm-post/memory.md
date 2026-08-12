@@ -8,7 +8,7 @@ Read this file at the start of each run. Choose a topic and angle different from
 ## YYYY-MM-DD HH:MM TZ
 - Topic: <topic-slug>
 - Angle: <one-line angle description>
-- Marine execution context: <BOM maturity | design-change control | supplier package readiness | class/test records | handover evidence | CAD/ERP/MES interfaces | control-valve commissioning | RF/SATCOM validation | shipyard adoption gates | other>
+- Marine execution context: <BOM maturity | design-change control | supplier package readiness | class/test records | handover evidence | CAD/ERP/MES interfaces | control-valve commissioning | RF/SATCOM validation | shipyard adoption gates | Cortex-M/A bring-up | peripheral driver validation | bootloader/OTA acceptance | device-tree/BSP | shipboard EMC/PCB | other>
 - Post path: C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\linkedin-post.md
 - Image path: C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\<topic-slug>-infographic.png
 - Image QA: text-fit pass/fail | leader-lines pass/fail | overlap QA pass/fail | photo-diversity 8/8 unique (YARD,DASH,IFACE,REL,BOM,HANDOVER,CONTROL,VESSEL) pass/fail
@@ -22,6 +22,20 @@ Read this file at the start of each run. Choose a topic and angle different from
 
 **Fixed Windows mirror folder:** `C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\`
 Codex automation `daily-linkedin-mirror-and-post` (09:35) mirrors repo runs then auto-posts via LinkedIn Windows app.
+
+---
+
+## Embedded ARM topic rotation (2026-08-12)
+
+Reference (Cursor folder): `embedded-arm-topic-reference.md`  
+Rotate ARM Cortex-Mx / Cortex-Ax hardware, firmware, and peripheral drivers at least 1 in 4 posts.
+
+| Date | topic-slug | status |
+|------|------------|--------|
+| 2026-08-13 | cortex-m-peripheral-driver-gates | Planned |
+| 2026-08-14 | cortex-a-bsp-device-tree-ownership | Planned |
+| 2026-08-15 | embedded-dma-isr-latency-budget | Planned |
+| 2026-08-16 | satcom-companion-mcu-lock-proof | Planned |
 
 ---
 
