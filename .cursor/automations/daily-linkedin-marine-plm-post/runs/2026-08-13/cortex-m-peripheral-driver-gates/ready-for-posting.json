@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-13",
+  "topicSlug": "cortex-m-peripheral-driver-gates",
+  "topic": "Cortex-M Peripheral Driver Gates",
+  "angle": "Driver readiness gates before board release — ISR/DMA ownership and loopback proof",
+  "marineContext": "Shipboard control board UART/CAN driver validation before sea trial",
+  "postPath": "C:\\Users\\namma\\Documents\\Codex\\2026-08-13\\cortex-m-peripheral-driver-gates\\linkedin-post.md",
+  "imagePath": "C:\\Users\\namma\\Documents\\Codex\\2026-08-13\\cortex-m-peripheral-driver-gates\\cortex-m-peripheral-driver-gates-infographic.png",
+  "repoPath": ".cursor/automations/daily-linkedin-marine-plm-post/runs/2026-08-13/cortex-m-peripheral-driver-gates/",
+  "figmaUrl": "https://www.figma.com/design/Sqk9blaQ3S3jkCP0YIqNsW",
+  "imageSource": "Figma composition + generated center scene",
+  "imageVersion": "figma-v1",
+  "referenceStyle": "linkedin-reference-style-commissioning-gates.md",
+  "c2paStripped": false,
+  "c2paClean": true,
+  "designBrief": "design-brief.md",
+  "qualityVerification": "quality-verification.md",
+  "imageQA": "commissioning-gates reference pass | 1080x1350 pass | C2PA markers absent | text-fit pass | overlap pass",
+  "designGrade": "Pass",
+  "status": "ready for final posting",
+  "createdAt": "2026-08-13T13:20:00Z"
+}
