@@ -67,6 +67,10 @@ Rotation rule: at least **1 in 4** posts uses ARM Cortex-Mx / Cortex-Ax embedded
 | 2026-07-02 | marine-plm-interface-readiness-governance | interface readiness governance, 8 unique crops (fixed rule applied) | interface handoff + BOM maturity | prepared (8/8 unique, QA pass) |
 | 2026-07-02 | satcom-fallback-evidence-management | SATCOM fallback managed as engineering evidence, not just network event | RF/SATCOM validation + shore-gateway logs + acceptance thresholds | prepared (pro-grade image, QA pass) |
 | 2026-07-02 | marine-plm-bom-validation-gates-test | BOM validation gates owned before AI scripts reach shipyard release line | BOM maturity + supplier package readiness + class/test records | prepared (image-gen tool, QA pass) |
+| 2026-07-06 | marine-plm-design-change-control-governance | design change control governance, SATCOM-fallback reference poster style v3 | design-change control | prepared |
+| 2026-07-07 | marine-plm-supplier-package-readiness-gates | supplier package readiness gates — AI drafts checks, leadership owns release evidence | supplier package readiness | prepared |
+| 2026-08-13 | cortex-m-peripheral-driver-gates | shipboard UART/CAN driver readiness gates — ISR/DMA ownership, loopback, fault injection | Cortex-M peripheral driver validation | prepared (Figma 1080x1350, QA pass) |
+| 2026-08-18 | control-valve-commissioning-evidence | HART loop-check and fail-safe evidence gates before machinery handover | control-valve commissioning + handover evidence | prepared (image-gen tool, QA pass) |
 
 ---
 
@@ -130,3 +134,14 @@ Rotation rule: at least **1 in 4** posts uses ARM Cortex-Mx / Cortex-Ax embedded
 - Repo path: `.cursor/automations/daily-linkedin-marine-plm-post/runs/2026-07-02/marine-plm-bom-validation-gates-test/`
 - Windows path: `C:\Users\namma\Documents\Codex\2026-07-02\marine-plm-bom-validation-gates-test\`
 - LinkedIn status: ready for final posting (cloud test; no Windows app action executed).
+
+## 2026-08-18 13:15 UTC
+- Topic: control-valve-commissioning-evidence
+- Angle: HART loop-check and fail-safe evidence gates before machinery handover; AI/Python drafts completeness checks, commissioning engineer owns acceptance limits, exceptions, and class-witness schedule.
+- Marine execution context: control-valve commissioning + HART configuration + handover evidence
+- Post path: C:\Users\namma\Documents\Codex\2026-08-18\control-valve-commissioning-evidence\linkedin-post.md
+- Image path: C:\Users\namma\Documents\Codex\2026-08-18\control-valve-commissioning-evidence\control-valve-commissioning-evidence-infographic.png
+- Image QA: text-fit pass | leader-lines pass | overlap QA pass | photo-diversity N/A (single central photoreal scene per commissioning-gates reference) | C2PA markers absent | 1080x1350 pass
+- Image source: built-in image generation tool (reference-styled on 2026-08-13 commissioning-gates poster) + deterministic pad to 1080x1350
+- LinkedIn status: ready for final posting (cloud run; no Windows app action executed)
+- Blocker (if any): none

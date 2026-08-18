@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-18",
+  "topicSlug": "control-valve-commissioning-evidence",
+  "topic": "Control Valve Commissioning Evidence Gates",
+  "angle": "HART loop-check and fail-safe evidence gates before machinery handover — AI/Python drafts completeness checks, commissioning engineer owns acceptance",
+  "marineContext": "Control-valve commissioning + HART configuration + class-witness handover evidence on a newbuild vessel",
+  "postPath": "C:\\Users\\namma\\Documents\\Codex\\2026-08-18\\control-valve-commissioning-evidence\\linkedin-post.md",
+  "imagePath": "C:\\Users\\namma\\Documents\\Codex\\2026-08-18\\control-valve-commissioning-evidence\\control-valve-commissioning-evidence-infographic.png",
+  "repoPath": ".cursor/automations/daily-linkedin-marine-plm-post/runs/2026-08-18/control-valve-commissioning-evidence/",
+  "imageSource": "built-in image generation tool + deterministic pad to 1080x1350",
+  "imageVersion": "v1",
+  "referenceStyle": "commissioning-gates solution overview (2026-08-13 run)",
+  "c2paStripped": false,
+  "c2paClean": true,
+  "designBrief": "design-brief.md",
+  "qualityVerification": "quality-verification.md",
+  "imageQA": "commissioning-gates reference pass | 1080x1350 pass | C2PA markers absent | text-fit pass | leader-lines pass | overlap pass",
+  "designGrade": "Pass",
+  "status": "ready for final posting",
+  "createdAt": "2026-08-18T13:15:00Z"
+}
