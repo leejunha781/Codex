@@ -28,6 +28,16 @@ Mirror + LinkedIn auto-post:
 - Post guide: `.cursor/automations/post-linkedin-windows-app-prompt.md`
 - Scheduled Codex automation: `daily-linkedin-mirror-and-post` (daily 09:35, auto-clicks Post in LinkedIn Windows app)
 
+Daily pipeline:
+
+| Time | Automation | Action |
+|------|-----------|--------|
+| 09:00 | Cursor Cloud `daily-linkedin-marine-plm-post` | Draft post + infographic → repo runs/ |
+| 09:20 | Codex `daily-linkedin-claude-review` | Claude posting QA → Ready or **Blocked** |
+| 09:35 | Codex `daily-linkedin-mirror-and-post` | Mirror + LinkedIn post only if Ready |
+
+Claude QA prompt: `claude-review-prompt.md`
+
 ---
 
 ## Embedded ARM topic rotation (2026-08-12)

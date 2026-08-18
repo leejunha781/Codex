@@ -21,7 +21,9 @@ Read this file at the start of each run. Choose a topic and angle different from
 ## Local mirror + auto-post workflow (2026-07-06)
 
 **Fixed Windows mirror folder:** `C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\`
-Codex automation `daily-linkedin-mirror-and-post` (09:35) mirrors repo runs then auto-posts via LinkedIn Windows app.
+Codex automation `daily-linkedin-mirror-and-post` (09:35) mirrors repo runs then auto-posts via LinkedIn Windows app **only if Claude QA at 09:20 set Ready**.
+
+Claude QA: Codex `daily-linkedin-claude-review` (09:20) follows `claude-review-prompt.md`. Fail → Notion Blocked → skip post.
 
 ---
 

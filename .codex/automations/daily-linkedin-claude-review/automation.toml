@@ -1,0 +1,13 @@
+version = 1
+id = "daily-linkedin-claude-review"
+kind = "cron"
+name = "Daily LinkedIn Claude QA Review"
+prompt = "Scheduled Claude QA review for Daily LinkedIn Marine PLM Post. Runs daily at 09:20 after Cursor Cloud artifacts (09:00) and BEFORE mirror+post (09:35).\n\nMANDATORY reads:\n- C:\\Users\\namma\\.cursor\\automations\\daily-linkedin-marine-plm-post\\claude-review-prompt.md\n- C:\\Users\\namma\\.cursor\\automations\\daily-linkedin-marine-plm-post\\prompt.md\n- C:\\Users\\namma\\.cursor\\automations\\daily-linkedin-marine-plm-post\\embedded-arm-topic-reference.md (when present — ARM Cortex-Mx/Ax posts)\n- C:\\Users\\namma\\.cursor\\automations\\daily-linkedin-marine-plm-post\\linkedin-reference-style-commissioning-gates.md (when present)\n- C:\\Users\\namma\\.cursor\\automations\\daily-linkedin-marine-plm-post\\notion-config.json (when present)\n\n## Workflow\n\n1. Resolve today's run from latest-mirror-runs.json, repo runs/, Windows Documents\\Codex, or Notion QA Review row.\n2. Post QA per claude-review-prompt.md Step 2 (tone, structure, proof gates, ARM/freelance rules).\n3. Image QA per Step 3 (professional-grade, text-fit, overlap, solution-overview; commissioning-gates if reference exists; embedded diagram if ARM topic).\n4. C2PA QA per Step 4 when strip-linkedin-image-c2pa.ps1 exists.\n5. Verdict: ANY required FAIL → Notion Status = Blocked, Design Grade = Fail. ALL PASS → Notion Status = Ready, Design Grade = Pass.\n6. Write qa-verdict.json in the run folder (postQA, imageQA, embeddedArmQA, c2paQA, verdict, blockedReason, reviewer=claude).\n7. Append summary to C:\\Users\\namma\\.codex\\automations\\daily-linkedin-marine-plm-post\\memory.md\n\n8. Return: topic, post QA, image QA, embedded ARM QA, C2PA QA, Notion status, recommendation (proceed mirror+post at 09:35 | BLOCK)\n\nQuiet workflow. Concise final status only. FAIL on post quality or simple/generic image is non-negotiable — set Blocked, do not allow 09:35 post."
+status = "ACTIVE"
+rrule = "RRULE:FREQ=WEEKLY;BYHOUR=9;BYMINUTE=20;BYDAY=MO,TU,WE,TH,FR,SA,SU"
+model = "gpt-5.5"
+reasoning_effort = "low"
+execution_environment = "local"
+cwds = ["C:\\Users\\namma\\Documents\\Daily Linkedin Posting"]
+created_at = 1783100000000
+updated_at = 1784486400000
