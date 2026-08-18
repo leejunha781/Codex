@@ -28,6 +28,7 @@
 !/.cursor/mcp.json
 !/.cursor/automations/
 !/.cursor/automations/**
+!/.cursor/automations/daily-linkedin-marine-plm-post/runs/**/*.png
 
 # .codex 안에서 추적할 폴더만 허용 (대용량 DB·캐시 제외)
 /.codex/*
