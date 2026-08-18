@@ -1,0 +1,20 @@
+{
+  "date": "2026-08-18",
+  "topicSlug": "control-valve-hart-commissioning-evidence",
+  "topic": "Control-Valve HART Commissioning Evidence",
+  "angle": "HART/stroke-test data becomes commissioning evidence only through gated, accountable acceptance dispositions",
+  "marineContext": "Control-valve commissioning evidence — loop-list reconciliation, signature acceptance bands, disposition log into handover dossier",
+  "postPath": "C:\\Users\\namma\\Documents\\Codex\\2026-08-18\\control-valve-hart-commissioning-evidence\\linkedin-post.md",
+  "imagePath": "C:\\Users\\namma\\Documents\\Codex\\2026-08-18\\control-valve-hart-commissioning-evidence\\control-valve-hart-commissioning-evidence-infographic.png",
+  "repoPath": ".cursor/automations/daily-linkedin-marine-plm-post/runs/2026-08-18/control-valve-hart-commissioning-evidence/",
+  "imageSource": "built-in image generation tool",
+  "imageVersion": "v1",
+  "referenceStyle": "SATCOM-fallback reference poster (runs/2026-07-02/satcom-fallback-evidence-management)",
+  "c2paStripped": true,
+  "c2paClean": true,
+  "qualityVerification": "quality-verification.md",
+  "imageQA": "satcom-reference style pass | 1536x1024 landscape pass | C2PA markers absent | text-fit pass | leader-lines pass | overlap pass | professional-grade pass",
+  "designGrade": "Pass",
+  "status": "ready for final posting",
+  "createdAt": "2026-08-18T13:35:00Z"
+}
