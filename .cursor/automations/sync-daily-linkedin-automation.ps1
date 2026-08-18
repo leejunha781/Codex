@@ -70,6 +70,12 @@ Copy-IfDifferent -Source (Join-Path $SourceDir "automation.toml") -Destination (
 Copy-IfDifferent -Source (Join-Path $SourceDir "memory.md") -Destination (Join-Path $TargetDir "memory.md")
 Copy-IfDifferent -Source (Join-Path $SourceDir "prompt.md") -Destination (Join-Path $TargetDir "prompt.md")
 Copy-IfDifferent -Source (Join-Path $SourceDir "cursor-cloud-registration.md") -Destination (Join-Path $TargetDir "cursor-cloud-registration.md")
+if (Test-Path (Join-Path $SourceDir "claude-review-prompt.md")) {
+    Copy-IfDifferent -Source (Join-Path $SourceDir "claude-review-prompt.md") -Destination (Join-Path $TargetDir "claude-review-prompt.md")
+}
+if (Test-Path (Join-Path $SourceDir "embedded-arm-topic-reference.md")) {
+    Copy-IfDifferent -Source (Join-Path $SourceDir "embedded-arm-topic-reference.md") -Destination (Join-Path $TargetDir "embedded-arm-topic-reference.md")
+}
 
 foreach ($utility in $RequiredUtilities) {
     $sourcePath = Join-Path $PSScriptRoot $utility

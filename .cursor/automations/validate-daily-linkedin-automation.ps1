@@ -13,12 +13,15 @@ $SyncScript = Join-Path $AutomationsRoot "sync-daily-linkedin-automation.ps1"
 $InstallScript = Join-Path $AutomationsRoot "install-cursor-linkedin-automation-scripts.ps1"
 $TomlPath = Join-Path $AutomationDir "automation.toml"
 $MemoryPath = Join-Path $AutomationDir "memory.md"
+$ClaudeReviewPrompt = Join-Path $AutomationDir "claude-review-prompt.md"
 $PromptPath = Join-Path $AutomationDir "prompt.md"
 
 $requiredPromptSections = @(
     "Cursor Cloud Agent addendum",
     "mirror-linkedin-runs.ps1",
     "daily-linkedin-mirror-and-post",
+    "daily-linkedin-claude-review",
+    "Claude review handoff",
     "post-linkedin-windows-app-prompt",
     "Quiet daily LinkedIn workflow",
     "New AI-era developer leadership angle",
@@ -38,7 +41,7 @@ $requiredPromptSections = @(
 
 $failures = @()
 
-$RequiredPaths = @($TomlPath, $MemoryPath, $PromptPath, $MirrorScript, $PostPrompt, $SyncBothScript, $ValidateScript, $SyncScript)
+$RequiredPaths = @($TomlPath, $MemoryPath, $PromptPath, $ClaudeReviewPrompt, $MirrorScript, $PostPrompt, $SyncBothScript, $ValidateScript, $SyncScript)
 $OptionalPaths = @($InstallScript)
 
 foreach ($path in $RequiredPaths) {
@@ -81,6 +84,9 @@ if ($failures.Count -eq 0 -and (Test-Path $PromptPath)) {
     if ($prompt -notmatch [regex]::Escape("Photo diversity rule")) {
         $failures += "prompt.md missing Photo diversity rule section"
     }
+    if ($prompt -notmatch [regex]::Escape("Claude review handoff")) {
+        $failures += "prompt.md missing Claude review handoff section"
+    }
 }
 
 if ($failures.Count -gt 0) {
@@ -99,6 +105,6 @@ Write-Host "  sync-both: $SyncBothScript"
 Write-Host "  validate: $ValidateScript"
 Write-Host "  sync: $SyncScript"
 Write-Host "  install: $InstallScript"
-Write-Host "  Schedule: daily 09:00 cloud + 09:35 local mirror and LinkedIn auto-post"
+Write-Host "  Schedule: daily 09:00 cloud + 09:20 Claude posting QA + 09:35 local mirror and LinkedIn auto-post"
 Write-Host "  Register at: https://cursor.com/automations/new"
 exit 0

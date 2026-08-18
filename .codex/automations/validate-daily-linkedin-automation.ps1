@@ -9,6 +9,8 @@ $MemoryPath = Join-Path $AutomationDir "memory.md"
 
 $requiredPromptSections = @(
     "Quiet daily LinkedIn workflow",
+    "Claude review handoff",
+    "daily-linkedin-claude-review",
     "New AI-era developer leadership angle",
     "Beyond Vibe Coding",
     "Lead Developer Career Guide",

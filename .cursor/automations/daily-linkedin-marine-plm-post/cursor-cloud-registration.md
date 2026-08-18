@@ -68,9 +68,10 @@ Scripts synced to `C:\Users\namma\.cursor\automations\`:
 Daily pipeline:
 
 1. **09:00** — Cursor cloud generates artifacts in repo `runs/`
-2. **09:35** — Codex `daily-linkedin-mirror-and-post`:
+2. **09:20** — Codex `daily-linkedin-claude-review`: posting QA (post + image + ARM rules) → Ready or Blocked
+3. **09:35** — Codex `daily-linkedin-mirror-and-post`:
    - Mirrors to `C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\`
-   - Auto-posts via LinkedIn Windows app (no user confirmation)
+   - Auto-posts via LinkedIn Windows app **only if Claude QA is Ready**
 3. Files in mirror folder:
    - `linkedin-post.md`
    - `<topic-slug>-infographic.png`
@@ -86,6 +87,7 @@ cd <repo-root>\.cursor\automations
 ## 5. Activation checklist
 
 - [ ] Cursor cloud trigger: daily 09:00
+- [ ] Codex `daily-linkedin-claude-review`: daily 09:20, ACTIVE (posting QA; Fail → Blocked)
 - [ ] Codex `daily-linkedin-mirror-and-post`: daily 09:35, ACTIVE, local execution, full-access sandbox
 - [ ] Disable legacy `daily-linkedin-mirror-runs` if still present in Codex UI
 - [ ] LinkedIn Windows app installed and logged in
