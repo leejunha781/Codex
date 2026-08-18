@@ -1,0 +1,25 @@
+{
+  "date": "2026-08-18",
+  "topicSlug": "marine-handover-evidence-package-gates",
+  "topic": "Vessel handover evidence package gates",
+  "angle": "AI/Python automation reconciles the yard-to-owner handover evidence set (as-built BOM, tag master, class/test records, certificates) at every build milestone, but the acceptance decision, gap disposition, and warranty accountability stay with engineering leadership.",
+  "marineExecutionContext": "yard-to-owner handover evidence + as-built BOM/tag master reconciliation + class/test records + certificate currency + PLM/ERP/document-control interfaces + conditional acceptance disposition gates",
+  "repoRunDirectory": ".cursor/automations/daily-linkedin-marine-plm-post/runs/2026-08-18/marine-handover-evidence-package-gates/",
+  "repoPostPath": ".cursor/automations/daily-linkedin-marine-plm-post/runs/2026-08-18/marine-handover-evidence-package-gates/linkedin-post.md",
+  "repoImagePath": ".cursor/automations/daily-linkedin-marine-plm-post/runs/2026-08-18/marine-handover-evidence-package-gates/marine-handover-evidence-package-gates-infographic.png",
+  "windowsRunDirectory": "C:\\Users\\namma\\Documents\\Codex\\2026-08-18\\marine-handover-evidence-package-gates\\",
+  "windowsPostPath": "C:\\Users\\namma\\Documents\\Codex\\2026-08-18\\marine-handover-evidence-package-gates\\linkedin-post.md",
+  "windowsImagePath": "C:\\Users\\namma\\Documents\\Codex\\2026-08-18\\marine-handover-evidence-package-gates\\marine-handover-evidence-package-gates-infographic.png",
+  "imageGenerationPath": "built-in image generation tool",
+  "imageStyle": "SATCOM-reference poster composition: seven-step top pipeline (icon + 2 bullets per card), cinematic shipyard vessel scene with cyan digital-thread links to labeled data nodes, amber GAP HOLD exception path, left HANDOVER EVENTS legend, right PYTHON AUTOMATION sidebar (5 rows), three numbered bottom summary cards, footer takeaway strip. Navy/cyan/white palette, 1536x1024.",
+  "imageQa": {
+    "textFit": "pass",
+    "leaderLines": "pass",
+    "overlap": "pass",
+    "satcomReferenceStyle": "pass",
+    "professionalGrade": "pass",
+    "photoDiversity": "not applicable; single generated cinematic central scene, no thumbnail set"
+  },
+  "linkedinStatus": "ready for final posting",
+  "blocker": "LinkedIn Windows app is unavailable from Linux cloud environment; on Cursor Pro Windows run git pull then .cursor\\automations\\mirror-linkedin-run-to-codex.ps1 -Latest to mirror artifacts before posting."
+}
