@@ -5,7 +5,7 @@ $ErrorActionPreference = "Stop"
 
 $AutomationName = "daily-linkedin-claude-review"
 $Repo = "leejunha781/Codex"
-$Branch = "cursor/linkedin-claude-posting-qa-0681"
+$Branch = "memory"
 
 function Normalize-PathString {
     param([string]$Path)

@@ -38,6 +38,7 @@ function Test-IsRunArtifactName {
     return (
         $FileName -eq "linkedin-post.md" -or
         $FileName -eq "ready-for-posting.json" -or
+        $FileName -eq "qa-verdict.json" -or
         $FileName -like "*-infographic.png"
     )
 }

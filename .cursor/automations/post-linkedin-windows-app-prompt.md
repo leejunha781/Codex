@@ -7,7 +7,7 @@ Use this workflow after `mirror-linkedin-runs.ps1` has mirrored today's run to:
 ## Inputs
 
 1. Read `ready-for-posting.json` in the mirrored topic folder (or `C:\Users\namma\.cursor\automations\cache\linkedin-mirror\latest-mirror-runs.json`).
-2. **Claude QA gate:** if `qa-verdict.json` exists and `verdict` is `blocked`, **do not post**. If Notion Status is not Ready, **do not post**.
+2. **Claude QA gate:** read `qa-verdict.json` in the same mirrored topic folder (copied by `mirror-linkedin-runs.ps1`). If it exists and `verdict` is `blocked`, **do not post**. If Notion Status is not Ready, **do not post**.
 3. Read post text from `linkedin-post.md` in the same folder.
 4. Use `imagePath` from the manifest for media upload.
 

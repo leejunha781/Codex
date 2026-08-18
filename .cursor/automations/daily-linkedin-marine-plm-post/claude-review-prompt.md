@@ -10,20 +10,30 @@ Read with (when present in this folder):
 - `linkedin-reference-style-commissioning-gates.md` (if present — image layout)
 - `notion-config.json` / `linear-config.json` (if present)
 
-## Step 0 — Preconditions
+## Step 0 — Fetch today's cloud artifacts (required)
+
+Cloud writes only to GitHub repo `runs/` at 09:00. Local `latest-mirror-runs.json` and `Documents\Codex` are typically **yesterday** until this fetch — do not review them first.
+
+Execute in PowerShell 5.1 (git pull plus copy of today's files from `origin/cursor/daily-linkedin*` and `origin/main|master`):
+
+```
+powershell -NoProfile -ExecutionPolicy Bypass -File C:\Users\namma\.cursor\automations\mirror-linkedin-runs.ps1 -Pull -IncludeRemoteBranches
+```
 
 - Notion row for today should be **QA Review** or **Drafting** after the 09:00 run
-- Required files: `linkedin-post.md`, `<topic-slug>-infographic.png`
+- Required files for **today's date**: `linkedin-post.md`, `<topic-slug>-infographic.png`
 
-If no artifacts for today, report `no artifacts yet` and exit without setting Notion to Ready.
+If no artifacts for **today** after fetch, report `no artifacts yet` and exit without setting Notion to Ready.
 
 ## Step 1 — Resolve today's run
 
+Use **today's date only**. Ignore `latest-mirror-runs.json` or `Documents\Codex` folders whose `date` is not today.
+
 Check in this order:
-- `C:\Users\namma\.cursor\automations\cache\linkedin-mirror\latest-mirror-runs.json`
-- Repo: `.cursor\automations\daily-linkedin-marine-plm-post\runs\YYYY-MM-DD\<topic-slug>\`
-- Windows mirror: `C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\`
-- Notion Content Calendar row with Status **QA Review** or **Drafting**
+- Repo: `.cursor\automations\daily-linkedin-marine-plm-post\runs\YYYY-MM-DD\<topic-slug>\` (after pull)
+- Windows mirror: `C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\` (after fetch above)
+- `C:\Users\namma\.cursor\automations\cache\linkedin-mirror\latest-mirror-runs.json` **only if** its `date` equals today
+- Notion Content Calendar row with Status **QA Review** or **Drafting** for today
 
 ## Step 2 — Post quality review (HARD GATE)
 
@@ -76,7 +86,10 @@ If the strip script is missing, record `c2paQA: skipped` (do not block solely on
 - ALL required gates PASS → Notion **Ready**, Design Grade **Pass**, Linear **Approved** (if Linear issue exists)
 - ANY required FAIL → Notion **Blocked**, Design Grade **Fail**, Linear **Blocked**, Notes = failure reason
 
-Write `qa-verdict.json` in the run folder:
+Write `qa-verdict.json` to **both** the repo run folder and the Windows mirror folder (so 09:35 can gate on it after mirror):
+
+- `.cursor\automations\daily-linkedin-marine-plm-post\runs\YYYY-MM-DD\<topic-slug>\qa-verdict.json`
+- `C:\Users\namma\Documents\Codex\YYYY-MM-DD\<topic-slug>\qa-verdict.json`
 
 ```json
 {
