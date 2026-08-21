@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "profiles": {
+    "epoxy-demo-25c-nozzle-a": {
+      "reference_temperature_c": 25.0,
+      "temperature_viscosity_coefficient_per_c": 0.055,
+      "nozzle_factor": 1.0,
+      "component_a": {
+        "density_mg_per_ul": 1.15,
+        "feedforward_flow_mg_s": 720.0,
+        "actual_flow_scale": 0.90,
+        "transport_delay_s": 0.080,
+        "fluid_time_constant_s": 0.140,
+        "dribble_fraction": 0.045,
+        "dribble_time_constant_s": 0.180
+      },
+      "component_b": {
+        "density_mg_per_ul": 0.98,
+        "feedforward_flow_mg_s": 360.0,
+        "actual_flow_scale": 0.94,
+        "transport_delay_s": 0.110,
+        "fluid_time_constant_s": 0.190,
+        "dribble_fraction": 0.060,
+        "dribble_time_constant_s": 0.240
+      },
+      "sensor": {
+        "sample_period_s": 0.010,
+        "delay_s": 0.120,
+        "noise_std_mg": 1.2,
+        "settle_time_s": 0.650
+      },
+      "limits": {
+        "min_target_mass_mg": 100.0,
+        "max_target_mass_mg": 10000.0,
+        "ratio_tolerance_percent": 5.0,
+        "total_mass_learning_tolerance_percent": 10.0,
+        "max_shot_time_s": 15.0
+      }
+    }
+  }
+}

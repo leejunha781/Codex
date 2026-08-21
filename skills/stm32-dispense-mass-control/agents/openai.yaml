@@ -1,0 +1,4 @@
+interface:
+  display_name: "STM32 Dispense Mass Control"
+  short_description: "Safe material-aware gravimetric dispensing control"
+  default_prompt: "Use $stm32-dispense-mass-control to design or review bounded STM32 dispensing and shot-mass correction."

@@ -1,0 +1,26 @@
+# Embedded code audit checklist
+
+- Validate inputs before indexing, casting, copying, or commanding hardware.
+- Make integer widths, units, scaling, saturation, and overflow explicit.
+- Compare time using elapsed-time subtraction so tick wraparound is safe.
+- Keep ISR code bounded and nonblocking; define one synchronization strategy for shared state.
+- Keep DMA buffers alive, aligned, and unchanged for the transfer lifetime.
+- Define illegal state-machine events, timeouts, retries, and safe fallback.
+- Ensure communication loss cannot leave motors indefinitely energized.
+- Return hardware to a safe state after partial initialization failure.
+- Feed watchdogs only after proving forward progress.
+- Do not replace production error handling with assertions.
+- Keep logs out of timing-critical paths and bound all formatting.
+- Preserve CubeMX regeneration boundaries.
+- Prove UART/DMA producer-consumer ownership, IDLE/overrun handling, and bounded ISR work.
+- Validate frame length, address, sequence/replay, CRC, byte order, scaling, and units before publishing a motor command.
+- Ensure servo enable, brake, alarm reset, and fault clear require legal state transitions and documented polarity.
+- Reject or safely saturate out-of-range position, velocity, torque/current, acceleration, and slew commands according to the requirements contract.
+- Ensure communication loss, parser desynchronization, DMA overflow, and partial drive replies cannot leave the last command active indefinitely.
+- Trace reconstructed behavior to an artifact or measurement; flag decompiler-derived assumptions as unverified.
+- Trace each external-IC register field to the exact order code and datasheet revision; verify access, reset, reserved bits, side effects, byte order, and readback masks.
+- Distinguish I2C NACK/arbitration/stuck-bus, SPI framing/status, UART framing/overrun, CAN bus-off, timeout, and device faults; bound retries and prove idempotence.
+- On cache-equipped MCUs, verify DMA addressability, lifetime, alignment, clean/invalidate direction, barriers, and cache-line collateral.
+- Keep driver configuration, PWM generation, ADC acquisition, control law, machine safety, and GUI presentation in separately owned modules.
+- Verify ADC self/reference/channel calibration provenance, PWM trigger, fixed-point range, coefficient version/CRC, sample age, plausibility, and invalid-calibration safety.
+- Enforce one GUI owner; prohibit ISR/background widget access; bound queues, formatting, allocation, rendering, and flush waits; GUI failure cannot hold a motor command active.

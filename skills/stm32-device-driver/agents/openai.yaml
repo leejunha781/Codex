@@ -1,0 +1,4 @@
+interface:
+  display_name: "STM32 Device Driver"
+  short_description: "Build STM32 BSP, drivers, motors, and boot flows"
+  default_prompt: "Use $stm32-device-driver to design or review this STM32 hardware contract safely."

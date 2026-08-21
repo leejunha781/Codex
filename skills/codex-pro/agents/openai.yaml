@@ -1,0 +1,7 @@
+interface:
+  display_name: "Codex Pro"
+  short_description: "High-initiative verified execution workflow"
+  default_prompt: "Use $codex-pro to complete this task end to end with proportionate verification."
+
+policy:
+  allow_implicit_invocation: true

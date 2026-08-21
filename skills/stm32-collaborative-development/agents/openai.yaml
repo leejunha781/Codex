@@ -1,0 +1,4 @@
+interface:
+  display_name: "STM32 Collaborative Development"
+  short_description: "Coordinate verified multi-engine STM32 delivery"
+  default_prompt: "Use $stm32-collaborative-development to coordinate this STM32 task with evidence and review gates."
