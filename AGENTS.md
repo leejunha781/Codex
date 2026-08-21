@@ -25,12 +25,15 @@ Enable **Max Mode** for large context. See `docs/SETUP_CURSOR_PRO_CLAUDE_CODEX.m
 
 ## Key Commands
 
-- `@resume-jd-workflow` — JD matching and resume tailoring
 - `@MEMORY.md` — user context hub
-- `/create-rule` — add new Cursor rules from chat
+- `@cursor-pro-max-orchestration` — Cursor Pro Max + Claude + Codex (all substantive work)
+- `@embedded-codex-workflow` — embedded firmware pipeline
 - `@stm32-device-drivers` — STM32 firmware / device drivers
 - `@taeha-dispense-controller` — Taeha dispense controller development
-- `@embedded-codex-workflow` — Cursor ↔ Codex embedded pipeline
+- `@resume-jd-workflow` / `@30-resume-jd-workflow` — JD matching and resume tailoring
+- `/create-rule` — add new Cursor rules from chat
+
+Skill index: `.cursor/skills/README.md` · Embedded playbook: `docs/EMBEDDED_DEV_STACK.md`
 
 ## Repos & Links
 

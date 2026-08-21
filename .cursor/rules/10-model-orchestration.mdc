@@ -44,6 +44,11 @@ In **Cursor → Settings → Models**:
 ```
 JD/요구사항 → Cursor Agent (분석·초안) → Claude Pro (문장·전략 검토) → Cursor (최종 파일·PR)
 코드 구현   → Codex/GPT-5.3 Codex (구현) → Claude Opus (아키텍처 리뷰) → CI/Bugbot
+임베디드    → Claude Max (SM·타이밍·안전) → Codex (드라이버/펌웨어) → Cursor (측정·PR)
 ```
+
+## Substantive Work Default
+
+For multi-file, architecture, firmware, or long documents: load `cursor-pro-max-orchestration`, enable **Max Mode**, and route domain skills (`stm32-device-drivers`, `taeha-dispense-controller`, `resume-jd-match`, etc.) before coding.
 
 Do not run duplicate paid calls for the same subtask unless quality requires a second pass.

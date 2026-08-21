@@ -9,21 +9,25 @@ description: Orchestrates Cursor + Claude + Codex for STM32/embedded and Taeha d
 
 Ship embedded firmware (STM32 drivers, Taeha dispense controller logic) with the same discipline as the career hub: structure → implement → verify → close.
 
+For whole-workspace Max Mode routing, also load `cursor-pro-max-orchestration`.
+
 ## Model Split
 
 | Layer | Tool | Role |
 |-------|------|------|
-| Spec / architecture / RCA | Claude Opus/Sonnet (Max) | State machines, timing budgets, trade-offs |
+| Spec / architecture / RCA | Claude Opus/Sonnet (**Max Mode**) | State machines, timing budgets, trade-offs |
 | Implementation | GPT-5.3 Codex / Cursor Agent | Drivers, HAL wrappers, tests, refactors |
+| Second-pass review | Claude or Bugbot | Safety, ISR budget, interface correctness |
 | Repo / skills / PR | Cursor Agent | `.cursor/skills`, git, Cloud Agents |
 
-Do not pay twice for the same subtask unless a second pass improves quality.
+Do not pay twice for the same subtask unless a second pass improves quality. Prefer **Max Mode** for firmware design and RCA.
 
 ## Skill Loading Order
 
-1. This skill (`embedded-codex-workflow`)
-2. Domain: `taeha-dispense-controller` and/or `stm32-device-drivers`
-3. Project rules already always-on (core, communication, models)
+1. `cursor-pro-max-orchestration` (session routing)
+2. This skill (`embedded-codex-workflow`)
+3. Domain: `taeha-dispense-controller` and/or `stm32-device-drivers`
+4. Project rules already always-on (core, communication, models)
 
 ## Session Bootstrap Checklist
 
@@ -57,9 +61,11 @@ Paste into Codex / Cursor Agent when starting a firmware task:
 - No new RTOS unless asked
 
 ## Skills to follow
+- @.cursor/skills/cursor-pro-max-orchestration/SKILL.md
+- @.cursor/skills/embedded-codex-workflow/SKILL.md
 - @.cursor/skills/stm32-device-drivers/SKILL.md
 - @.cursor/skills/taeha-dispense-controller/SKILL.md (if dispense)
-- @.cursor/skills/embedded-codex-workflow/SKILL.md
+- @MEMORY.md
 
 ## Deliverables
 - [ ] Driver .h/.c or SM module

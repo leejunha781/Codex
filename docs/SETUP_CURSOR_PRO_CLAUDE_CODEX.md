@@ -113,44 +113,61 @@ If you exceed included Cursor API pool, add OpenAI API key in Cursor Settings �
 
 ```
 Codex/
-├── AGENTS.md              # Main agent instructions
-├── CLAUDE.md              # Claude compatibility (always on)
-├── MEMORY.md              # Context hub — update here
+├── AGENTS.md
+├── CLAUDE.md
+├── MEMORY.md
 ├── chatgpt-preferences.md
 ├── .cursor/
-│   ├── rules/             # Modular agent rules (.mdc)
-│   ├── skills/            # Workflow skills
-│   └── mcp.json           # MCP server config
+│   ├── rules/             # alwaysApply / glob rules (.mdc)
+│   ├── skills/            # Agent Skills (see skills/README.md)
+│   └── mcp.json
 └── docs/
-    └── SETUP_CURSOR_PRO_CLAUDE_CODEX.md  # This file
+    ├── SETUP_CURSOR_PRO_CLAUDE_CODEX.md
+    └── EMBEDDED_DEV_STACK.md
 ```
 
-After clone: open in Cursor — rules and skills apply automatically.
+After clone: open in Cursor — rules apply automatically; skills discover via description or `@`.
+
+### Skill catalog (quick)
+
+| Area | Skills |
+|------|--------|
+| Orchestration | `cursor-pro-max-orchestration`, `embedded-codex-workflow` |
+| Embedded | `stm32-device-drivers`, `taeha-dispense-controller` |
+| Career | `30-resume-jd-workflow`, `resume-jd-match`, `career-interview-prep` |
+| Consulting | `plm-systems-consulting` |
+
+Full index: `.cursor/skills/README.md`
 
 ---
 
 ## 6. Recommended Daily Workflow
 
-### Coding
+### Coding (default multi-model)
 
-1. Open repo in Cursor Pro
-2. Agent model: **Auto** or **GPT-5.3 Codex**
-3. `@MEMORY.md` or specific rules as needed
-4. Cloud Agent for long jobs overnight
+1. Open repo in Cursor Pro; for hard tasks turn **Max Mode** on  
+2. Agent: **Auto** daily; switch to **GPT-5.3 Codex** for implementation, **Claude Opus/Sonnet** for design  
+3. `@cursor-pro-max-orchestration` then domain skill  
+4. Cloud Agent for long overnight jobs  
+
+### Embedded / STM32 / Taeha
+
+1. Follow [EMBEDDED_DEV_STACK.md](EMBEDDED_DEV_STACK.md)  
+2. `@embedded-codex-workflow` + `@stm32-device-drivers` (+ `@taeha-dispense-controller`)  
+3. Claude Max for SM/timing → Codex for code → measure before claim done  
 
 ### Job Application
 
-1. Paste JD in Cursor chat (Korean OK)
-2. `@resume-jd-match` skill or rule
-3. Review match score + draft bullets
-4. Optional: paste draft to Claude Project for polish
-5. Save new files with `_Targeted_YYYYMMDD` suffix
+1. Paste JD in Cursor chat (Korean OK)  
+2. `@resume-jd-match` / `@30-resume-jd-workflow`  
+3. Optional Claude Project polish  
+4. Save with `_Targeted_YYYYMMDD` suffix — never overwrite canonicals  
 
 ### Interview Prep
 
-1. `@career-interview-prep` in chat
-2. Practice 30–60 sec English answers
-3. Korean debrief if needed
+1. `@career-interview-prep`  
+2. Practice 30–60 sec English answers  
+3. Keep LPC1769 vs STM32F accuracy boundaries  
 
 ---
 
@@ -166,11 +183,13 @@ After clone: open in Cursor — rules and skills apply automatically.
 ## 8. Verification Checklist
 
 - [ ] Cursor Pro active; models enabled in Settings
-- [ ] Claude Pro active; Project created with MEMORY context
+- [ ] Max Mode available; used for firmware/architecture/JD
+- [ ] Claude Pro Project created with MEMORY + skill context
 - [ ] OpenAI/Codex access via Cursor model list
-- [ ] Repo cloned; `.cursor/rules` visible in Settings → Rules
+- [ ] Repo cloned; `.cursor/rules` + `.cursor/skills` visible
 - [ ] MCP authenticated (Notion/Linear if used)
 - [ ] Cloud Agent environment linked to `leejunha781/Codex`
+- [ ] Can invoke `@stm32-device-drivers` and `@taeha-dispense-controller`
 
 ---
 
@@ -179,11 +198,12 @@ After clone: open in Cursor — rules and skills apply automatically.
 | Issue | Fix |
 |-------|-----|
 | Rules not applied | Check `.mdc` in `.cursor/rules/`; reload window |
+| Skill not found | `@.cursor/skills/<name>/SKILL.md` or see `skills/README.md` |
 | Model missing | Settings → Models → show hidden models |
 | Max Mode costly | Use default context for small tasks |
 | MCP auth failed | Re-authenticate in Settings → MCP |
-| Korean/English mix-up | `@20-communication` rule |
+| Korean/English mix-up | Follow `20-communication` rule |
 
 ---
 
-*Last updated: 2026-07-08 — maintained in `leejunha781/Codex`*
+*Last updated: 2026-08-21 — maintained in `leejunha781/Codex`*

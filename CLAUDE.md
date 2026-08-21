@@ -23,7 +23,8 @@ See `MEMORY.md` for career history, preferences, and workflow pipelines.
 - **Career:** JD → match score → tailored resume (new filename) → cover letter
 - **Engineering:** spec → design → implement → test → PR
 - **Consulting:** stakeholder map → requirements → traceability → delivery plan
-- **Embedded:** load `embedded-codex-workflow` + `stm32-device-drivers` / `taeha-dispense-controller` → Codex implement → measure → PR
+- **Embedded:** `@cursor-pro-max-orchestration` → `@embedded-codex-workflow` → STM32/Taeha skills → Claude Max design → Codex implement → measure → PR
+- **Default hard task:** Max Mode + Claude + Codex; see `.cursor/skills/README.md`
 
 ## Communication
 

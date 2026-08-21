@@ -49,10 +49,15 @@
 | Intellian STM32 | STM32F existing BLDC code analysis / validation / tuning (Conscan·Consearch) |
 | Research | TI RM57L843 EtherCAT / servo / 25 kHz PWM — research, not production claim |
 | Taeha focus | Precision dispense controller SW: recipe, calibration, motors, Modbus, safety |
-| Skills | `stm32-device-drivers`, `taeha-dispense-controller`, `embedded-codex-workflow` |
+| Skills | `cursor-pro-max-orchestration`, `embedded-codex-workflow`, `stm32-device-drivers`, `taeha-dispense-controller` |
 | Notion hub | 태하 제어기 개발(SW) 기술면접 준비 허브 |
+| Playbook | `docs/EMBEDDED_DEV_STACK.md` |
 
 Accuracy: do not equate LPC1769 with STM32; do not invent Taeha private architecture.
+
+### Multi-model default
+
+Substantive work → Max Mode + Claude (design) + Codex (implement) + Cursor (verify/PR). Route via `@cursor-pro-max-orchestration`.
 
 ## Repo
 
