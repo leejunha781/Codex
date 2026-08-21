@@ -30,11 +30,19 @@ Enable and pin:
 - **Composer 2.5** — fast Cursor-native agent (included in first-party pool)
 - **Auto** — daily default to balance cost
 
-Turn on **Max Mode** for:
+### Pro Mode / Max context (do this in Agent chat)
 
-- Large repos
+**Usage-based Pro:** model picker → **Edit** → **Context** = **1M** (or max).  
+**Legacy plan:** model picker → **Max Mode** **ON**.
+
+Workspace policy already defaults to Pro Mode via `.cursor/rules/05-cursor-pro-mode.mdc`.  
+Step-by-step: [CURSOR_PRO_MAX_MODE.md](CURSOR_PRO_MAX_MODE.md).
+
+Use large context for:
+
+- Large repos / many `@` files
 - Resume/JD long documents
-- Multi-file refactors
+- Multi-file refactors / STM32·Taeha firmware
 
 ### Rules (Settings → Rules → User Rules)
 

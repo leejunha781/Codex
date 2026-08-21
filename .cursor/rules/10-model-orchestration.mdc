@@ -20,12 +20,20 @@ Use the right model for the job. Max Mode when context or reasoning depth matter
 
 ## Cursor Pro Settings (User Action Required)
 
-In **Cursor → Settings → Models**:
+**Pro Mode / large context is the workspace default** (see `05-cursor-pro-mode.mdc` and `docs/CURSOR_PRO_MAX_MODE.md`).
 
-1. Enable **Claude 4.6/4.7 Opus**, **Claude Sonnet 5**, **GPT-5.3 Codex**, **GPT-5.4**.
-2. Turn on **Max Mode** for complex agent sessions.
-3. Set **Default Agent Model** to Auto for daily work; switch manually for heavy tasks.
-4. Monitor usage at [cursor.com/settings](https://cursor.com/settings) — Pro includes $20 API pool/month.
+### Turn it on in the IDE (agents cannot)
+
+| Plan | Action |
+|------|--------|
+| Usage-based Pro | Agent model picker → **Edit** → **Context** = max (e.g. **1M**) |
+| Legacy request | Model picker → **Max Mode** **ON** |
+
+Also in **Cursor Settings → Models** (`Ctrl+Shift+J`):
+
+1. Enable **Claude Opus/Sonnet**, **GPT-5.3 Codex**, **GPT-5.4** (Show hidden models if needed).
+2. Default Agent Model: **Auto** daily; switch to Codex/Claude for heavy tasks.
+3. Monitor usage at [cursor.com/settings](https://cursor.com/settings).
 
 ## Claude Pro (claude.ai) — When to Use Alongside Cursor
 

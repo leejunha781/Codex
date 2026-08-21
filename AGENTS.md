@@ -21,7 +21,7 @@ You assist **Joonha Lee (이준하)** — marine/PLM solution architect with 21+
 | Reasoning | Claude Pro (Projects) | Long analysis, polish, strategy |
 | Implementation | GPT-5.3 Codex | Heavy coding, refactors, tests |
 
-Enable **Max Mode** for large context. See `docs/SETUP_CURSOR_PRO_CLAUDE_CODEX.md`.
+Enable **Max Mode / Pro large context** for this workspace. See `docs/CURSOR_PRO_MAX_MODE.md` and rule `05-cursor-pro-mode`.
 
 ## Key Commands
 

@@ -1,0 +1,32 @@
+---
+description: Cursor Pro Mode policy — large context (Max) is the default for Agent work in this workspace
+alwaysApply: true
+---
+
+# Cursor Pro Mode (Workspace Default)
+
+This workspace treats **Cursor Pro Mode** as on: prefer large context + Claude/Codex orchestration for Agent sessions.
+
+## What “Pro Mode” Means Here
+
+1. **Large context** — Max Mode (legacy) or model picker **Context = 1M / max available**
+2. **Strong models** — Claude Opus/Sonnet for design; GPT-5.3 Codex for implementation
+3. **Skill routing** — load `cursor-pro-max-orchestration` before domain skills
+4. **Evidence** — verify before claiming done
+
+## Agent Behavior (Always)
+
+- Assume Pro Mode / large context for multi-file, firmware, JD, architecture, RCA.
+- Remind once if the session looks like default-small context on a hard task:
+  > Enable large context: Agent model picker → Edit → Context (1M), or legacy Max Mode ON.
+- Trivial single-file edits may stay on Auto without Max.
+
+## User Toggle (Desktop Only — Agents Cannot Flip This)
+
+**Usage-based Pro (typical):** Agent/Chat → model picker → **Edit** → **Context** → max (e.g. 1M)
+
+**Legacy request plan:** model picker → **Max Mode** ON
+
+**Models page:** Cursor Settings (`Ctrl+Shift+J`) → **Models** → enable Claude + Codex; set Default Agent Model
+
+Full steps: `docs/CURSOR_PRO_MAX_MODE.md`
