@@ -49,5 +49,6 @@
 
 - `chatgpt-preferences.md` — exported ChatGPT preferences
 - `docs/SETUP_CURSOR_PRO_CLAUDE_CODEX.md` — subscription & settings guide
+- `docs/SETUP_CLAUDE_PRO.md` — Claude Pro Projects setup guide
 - `.cursor/rules/` — project rules
 - `.cursor/skills/` — workflow skills

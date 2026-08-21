@@ -13,7 +13,8 @@ Personal AI configuration hub for **Joonha Lee (이준하)** — optimized for *
 
 1. Clone and open in **Cursor Pro**
 2. Follow [docs/SETUP_CURSOR_PRO_CLAUDE_CODEX.md](docs/SETUP_CURSOR_PRO_CLAUDE_CODEX.md) for subscription & model setup
-3. Chat in Korean or English — agent follows your preferences automatically
+3. For Claude Pro specifically (Projects, system prompt), see [docs/SETUP_CLAUDE_PRO.md](docs/SETUP_CLAUDE_PRO.md)
+4. Chat in Korean or English — agent follows your preferences automatically
 
 ## Key Files
 
