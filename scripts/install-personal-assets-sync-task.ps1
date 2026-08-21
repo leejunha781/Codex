@@ -4,11 +4,12 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$syncScript = Join-Path ([IO.Path]::GetFullPath($RepositoryRoot)) 'scripts\sync-personal-assets.ps1'
+$repoRoot = [IO.Path]::GetFullPath($RepositoryRoot)
+$syncScript = Join-Path $repoRoot 'scripts\sync-personal-assets.ps1'
 if (-not (Test-Path -LiteralPath $syncScript)) { throw "Missing sync script: $syncScript" }
 
 $action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument (
-    "-NoProfile -ExecutionPolicy Bypass -File `"$syncScript`" -RepositoryRoot `"$RepositoryRoot`" -Push"
+    "-NoProfile -ExecutionPolicy Bypass -File `"$syncScript`" -RepositoryRoot `"$repoRoot`" -Push"
 )
 $trigger = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes(1) `
     -RepetitionInterval (New-TimeSpan -Minutes $IntervalMinutes)

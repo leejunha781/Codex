@@ -16,13 +16,20 @@ if (-not (Test-Path -LiteralPath (Join-Path $repo '.git'))) {
 
 New-Item -ItemType Directory -Force -Path $skillDestination, $siteDestination | Out-Null
 
-Get-ChildItem -LiteralPath $SkillsRoot -Directory | Where-Object {
+$sourceSkills = @(Get-ChildItem -LiteralPath $SkillsRoot -Directory | Where-Object {
     Test-Path -LiteralPath (Join-Path $_.FullName 'SKILL.md')
-} | ForEach-Object {
+})
+$sourceSkillNames = @($sourceSkills | ForEach-Object { $_.Name })
+
+$sourceSkills | ForEach-Object {
     $target = Join-Path $skillDestination $_.Name
     & robocopy $_.FullName $target /MIR /NFL /NDL /NJH /NJS /NP | Out-Null
     if ($LASTEXITCODE -gt 7) { throw "robocopy failed for skill $($_.Name): $LASTEXITCODE" }
 }
+
+@(Get-ChildItem -LiteralPath $skillDestination -Directory | Where-Object {
+    $sourceSkillNames -notcontains $_.Name
+}) | Remove-Item -Recurse -Force
 
 $excluded = @('.git', 'node_modules', 'build', 'dist', 'work', 'outputs', '.wrangler', '_sites-preview')
 $xd = $excluded | ForEach-Object { Join-Path $SiteRoot $_ }
@@ -39,11 +46,18 @@ if ($matches) { throw 'Potential secret detected; sync stopped before staging.' 
 Push-Location $repo
 try {
     $changed = git status --porcelain -- skills sites
+    if ($LASTEXITCODE -ne 0) { throw "git status failed: $LASTEXITCODE" }
     if (-not $changed) { Write-Output 'No skill or site changes.'; exit 0 }
     git add -- skills sites scripts/sync-personal-assets.ps1 scripts/install-personal-assets-sync-task.ps1
+    if ($LASTEXITCODE -ne 0) { throw "git add failed: $LASTEXITCODE" }
     git diff --cached --check
+    if ($LASTEXITCODE -ne 0) { throw "Whitespace check failed: $LASTEXITCODE" }
     git commit -m 'chore: sync personal skills and sites'
-    if ($Push) { git push }
+    if ($LASTEXITCODE -ne 0) { throw "git commit failed: $LASTEXITCODE" }
+    if ($Push) {
+        git push
+        if ($LASTEXITCODE -ne 0) { throw "git push failed: $LASTEXITCODE" }
+    }
 } finally {
     Pop-Location
 }

@@ -570,7 +570,8 @@ export default function Home() {
     return peripherals.filter((item) => {
       const itemMeta = driverMeta[item];
       const matchesCategory = driverCategory === "ALL" || itemMeta.category === driverCategory;
-      const matchesSearch = !query || item.toLowerCase().includes(query) || itemMeta.category.toLowerCase().includes(query) || driverProfiles[item].summaryEn.toLowerCase().includes(query);
+      const itemProfile = driverProfiles[item];
+      const matchesSearch = !query || item.toLowerCase().includes(query) || itemMeta.category.toLowerCase().includes(query) || itemProfile.summaryEn.toLowerCase().includes(query) || itemProfile.summary.toLowerCase().includes(query);
       return matchesCategory && matchesSearch;
     });
   }, [driverSearch, driverCategory]);
@@ -630,11 +631,21 @@ export default function Home() {
     window.setTimeout(() => setStatus("passed"), 1200);
   }
 
-  function chooseDriver(item: Peripheral) {
+  function applyBriefs(item: Peripheral, lang: "en" | "ko") {
     const examples = driverExamples[item];
+    setFeatureBrief(lang === "en" ? examples.featureEn : examples.featureKo);
+    setUsageBrief(lang === "en" ? examples.usageEn : examples.usageKo);
+  }
+
+  function changeLocale(next: "en" | "ko") {
+    if (next === locale) return;
+    setLocale(next);
+    applyBriefs(peripheral, next);
+  }
+
+  function chooseDriver(item: Peripheral) {
     setPeripheral(item);
-    setFeatureBrief(locale === "en" ? examples.featureEn : examples.featureKo);
-    setUsageBrief(locale === "en" ? examples.usageEn : examples.usageKo);
+    applyBriefs(item, locale);
     setGuideOpen(false);
     setBriefError(false);
   }
@@ -662,8 +673,8 @@ export default function Home() {
         </nav>
         <div className="top-actions">
           <div className="language-toggle" role="group" aria-label="Display language">
-            <button className={locale === "en" ? "active" : ""} aria-pressed={locale === "en"} onClick={() => setLocale("en")}>EN</button>
-            <button className={locale === "ko" ? "active" : ""} aria-pressed={locale === "ko"} onClick={() => setLocale("ko")}>한</button>
+            <button className={locale === "en" ? "active" : ""} aria-pressed={locale === "en"} onClick={() => changeLocale("en")}>EN</button>
+            <button className={locale === "ko" ? "active" : ""} aria-pressed={locale === "ko"} onClick={() => changeLocale("ko")}>한</button>
           </div>
           <span className="system-pill"><i /> LOCAL READY</span>
         </div>
