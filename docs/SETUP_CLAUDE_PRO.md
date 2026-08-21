@@ -41,12 +41,21 @@ This mirrors the compatibility layer already defined in `CLAUDE.md` at the repo 
 
 ---
 
-## 3. Model Selection
+## 3. Model Selection & Extended Thinking
 
 Within the Project, prefer:
 
 - **Claude Sonnet 5 / Opus** — long-form reasoning, resume/cover polish, strategy discussions
-- Enable **extended/long-context** behavior for large document review (JD batches, multi-page resumes)
+
+### Extended Thinking
+
+claude.ai exposes a per-chat **Extended thinking** toggle (next to the model picker, on Pro/Max plans) that has Claude reason step-by-step before answering. Turn it on for:
+
+- JD-batch analysis and multi-page resume review
+- Match-scoring logic (JD requirement ↔ resume evidence traceability)
+- Any strategy discussion where the reasoning chain matters as much as the answer
+
+Leave it off for quick tone edits or short Q&A — it adds latency and eats into Pro usage limits faster. This is a manual per-chat toggle in the claude.ai UI; it isn't something set once at the Project level, so re-enable it each new chat that needs deeper reasoning.
 
 ---
 
@@ -69,6 +78,7 @@ Claude Pro is the "editor's desk" — it never touches files or git directly. Dr
 - [ ] `MEMORY.md` uploaded as project knowledge (re-upload after edits)
 - [ ] Project system prompt pasted in
 - [ ] Canonical resume/cover files uploaded as read-only reference
+- [ ] Know where the **Extended thinking** toggle is and when to flip it on (§3)
 - [ ] Confirmed Korean-in / Korean-out, English-in / English-out behavior matches `CLAUDE.md`
 
 ---
