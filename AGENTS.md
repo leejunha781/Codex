@@ -28,6 +28,9 @@ Enable **Max Mode** for large context. See `docs/SETUP_CURSOR_PRO_CLAUDE_CODEX.m
 - `@resume-jd-workflow` — JD matching and resume tailoring
 - `@MEMORY.md` — user context hub
 - `/create-rule` — add new Cursor rules from chat
+- `@stm32-device-drivers` — STM32 firmware / device drivers
+- `@taeha-dispense-controller` — Taeha dispense controller development
+- `@embedded-codex-workflow` — Cursor ↔ Codex embedded pipeline
 
 ## Repos & Links
 
