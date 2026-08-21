@@ -1,0 +1,4 @@
+interface:
+  display_name: "Taeha STM32 Workflow"
+  short_description: "Deliver Taeha STM32 firmware end to end"
+  default_prompt: "Use $taeha-stm32-workflow to deliver this Taeha STM32 change from requirements through verification."

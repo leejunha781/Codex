@@ -1,0 +1,7 @@
+interface:
+  display_name: "Office COM Doc QA"
+  short_description: "Edit Office docs and verify PDF/PNG output"
+  default_prompt: "Use $office-com-doc-qa to edit this Office document with PowerShell COM and verify the exported PDF/PNG pages."
+
+policy:
+  allow_implicit_invocation: true

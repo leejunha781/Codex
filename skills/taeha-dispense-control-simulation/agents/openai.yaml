@@ -1,0 +1,4 @@
+interface:
+  display_name: "Taeha Dispense Control Simulation"
+  short_description: "Simulate and validate dispenser control strategies"
+  default_prompt: "Use $taeha-dispense-control-simulation to select a toolchain, model delayed dispensing, compare bounded controllers, and plan evidence. Keep results SIMULATED and hardware claims UNVERIFIED unless board-specific evidence is supplied."

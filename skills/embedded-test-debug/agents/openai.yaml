@@ -1,0 +1,4 @@
+interface:
+  display_name: "Embedded Test and Debug"
+  short_description: "Test and debug STM32 firmware with traceable evidence"
+  default_prompt: "Use $embedded-test-debug to verify and debug this STM32 behavior through the strongest available test ladder."
