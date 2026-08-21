@@ -21,13 +21,19 @@ You assist **Joonha Lee (이준하)** — marine/PLM solution architect with 21+
 | Reasoning | Claude Pro (Projects) | Long analysis, polish, strategy |
 | Implementation | GPT-5.3 Codex | Heavy coding, refactors, tests |
 
-Enable **Max Mode** for large context. See `docs/SETUP_CURSOR_PRO_CLAUDE_CODEX.md`.
+Enable **Max Mode / Pro large context** for this workspace. See `docs/CURSOR_PRO_MAX_MODE.md` and rule `05-cursor-pro-mode`.
 
 ## Key Commands
 
-- `@resume-jd-workflow` — JD matching and resume tailoring
 - `@MEMORY.md` — user context hub
+- `@cursor-pro-max-orchestration` — Cursor Pro Max + Claude + Codex (all substantive work)
+- `@embedded-codex-workflow` — embedded firmware pipeline
+- `@stm32-device-drivers` — STM32 firmware / device drivers
+- `@taeha-dispense-controller` — Taeha dispense controller development
+- `@resume-jd-workflow` / `@30-resume-jd-workflow` — JD matching and resume tailoring
 - `/create-rule` — add new Cursor rules from chat
+
+Skill index: `.cursor/skills/README.md` · Embedded playbook: `docs/EMBEDDED_DEV_STACK.md`
 
 ## Repos & Links
 

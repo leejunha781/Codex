@@ -20,12 +20,20 @@ Use the right model for the job. Max Mode when context or reasoning depth matter
 
 ## Cursor Pro Settings (User Action Required)
 
-In **Cursor → Settings → Models**:
+**Pro Mode / large context is the workspace default** (see `05-cursor-pro-mode.mdc` and `docs/CURSOR_PRO_MAX_MODE.md`).
 
-1. Enable **Claude 4.6/4.7 Opus**, **Claude Sonnet 5**, **GPT-5.3 Codex**, **GPT-5.4**.
-2. Turn on **Max Mode** for complex agent sessions.
-3. Set **Default Agent Model** to Auto for daily work; switch manually for heavy tasks.
-4. Monitor usage at [cursor.com/settings](https://cursor.com/settings) — Pro includes $20 API pool/month.
+### Turn it on in the IDE (agents cannot)
+
+| Plan | Action |
+|------|--------|
+| Usage-based Pro | Agent model picker → **Edit** → **Context** = max (e.g. **1M**) |
+| Legacy request | Model picker → **Max Mode** **ON** |
+
+Also in **Cursor Settings → Models** (`Ctrl+Shift+J`):
+
+1. Enable **Claude Opus/Sonnet**, **GPT-5.3 Codex**, **GPT-5.4** (Show hidden models if needed).
+2. Default Agent Model: **Auto** daily; switch to Codex/Claude for heavy tasks.
+3. Monitor usage at [cursor.com/settings](https://cursor.com/settings).
 
 ## Claude Pro (claude.ai) — When to Use Alongside Cursor
 
@@ -44,6 +52,11 @@ In **Cursor → Settings → Models**:
 ```
 JD/요구사항 → Cursor Agent (분석·초안) → Claude Pro (문장·전략 검토) → Cursor (최종 파일·PR)
 코드 구현   → Codex/GPT-5.3 Codex (구현) → Claude Opus (아키텍처 리뷰) → CI/Bugbot
+임베디드    → Claude Max (SM·타이밍·안전) → Codex (드라이버/펌웨어) → Cursor (측정·PR)
 ```
+
+## Substantive Work Default
+
+For multi-file, architecture, firmware, or long documents: load `cursor-pro-max-orchestration`, enable **Max Mode**, and route domain skills (`stm32-device-drivers`, `taeha-dispense-controller`, `resume-jd-match`, etc.) before coding.
 
 Do not run duplicate paid calls for the same subtask unless quality requires a second pass.
