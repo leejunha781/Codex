@@ -60,6 +60,10 @@ Environment: [Codex Cloud Environment](https://cursor.com/dashboard/cloud-agents
 - **Privacy Mode** — enable if working with sensitive defence/marine data
 - Note: some Claude models require data handling approval on enterprise; individual Privacy Mode is supported
 
+### CLI Sandbox
+
+Run `cursor-agent sandbox enable` once (or pass `--sandbox enabled`) so agent shell commands execute in an OS-level sandbox. Repo policy is in `.cursor/sandbox.json`. Full guide: `docs/CURSOR_CLI_SANDBOX.md`.
+
 ---
 
 ## 3. Claude Pro (claude.ai)
@@ -120,8 +124,10 @@ Codex/
 ├── .cursor/
 │   ├── rules/             # Modular agent rules (.mdc)
 │   ├── skills/            # Workflow skills
-│   └── mcp.json           # MCP server config
+│   ├── mcp.json           # MCP server config
+│   └── sandbox.json       # CLI sandbox policy (fs + network)
 └── docs/
+    ├── CURSOR_CLI_SANDBOX.md             # Sandbox enable & policy guide
     └── SETUP_CURSOR_PRO_CLAUDE_CODEX.md  # This file
 ```
 
