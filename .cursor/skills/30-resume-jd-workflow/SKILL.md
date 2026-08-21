@@ -1,6 +1,6 @@
 ---
+name: 30-resume-jd-workflow
 description: Resume tailoring, JD matching, and document workflow — never overwrite canonical files
-alwaysApply: false
 ---
 
 # Resume & JD Matching Workflow
