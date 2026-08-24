@@ -1,0 +1,12 @@
+{
+  "autoRun": {
+    "allow_instructions": [
+      "Read-only commands (listing files, reading files, git status/diff/log, linters, type checks) are fine to run without asking.",
+      "Package installs via npm, pip, or yarn inside this workspace are fine to run in the sandbox."
+    ],
+    "block_instructions": [
+      "Anything that deletes files outside the workspace, edits shell rc files, or touches SSH/credential files must ask for approval.",
+      "Never overwrite canonical resume or cover letter template files in this repo without approval."
+    ]
+  }
+}
