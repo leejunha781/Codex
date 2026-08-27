@@ -156,7 +156,7 @@ def check_skills() -> None:
             fail(f"{rel} frontmatter missing 'name'")
         elif name != dirname:
             fail(f"{rel} name '{name}' does not match directory '{dirname}'")
-        else:
+        elif fm.get("description"):
             ok(f"{rel} frontmatter valid (name={name})")
 
 
