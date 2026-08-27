@@ -1,0 +1,4 @@
+{
+  "name": "Codex AI Hub",
+  "install": "bash scripts/validate.sh"
+}
