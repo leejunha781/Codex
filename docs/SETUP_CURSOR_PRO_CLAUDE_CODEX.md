@@ -63,7 +63,13 @@ Cursor on Windows runs the Linux sandbox **inside WSL2**. Cloud Agents do not us
 2. Settings → Agents → Approvals & Execution = **Auto-review**.
 3. Settings → Agents → Inline Editing & Terminal → **Legacy Terminal Tool** = **Off**.
 4. Open this repo so `.cursor/sandbox.json` and `.cursor/permissions.json` apply.
-5. Run `scripts/windows-sandbox-preflight.ps1`, then `wsl -e bash scripts/windows-sandbox-preflight.sh`.
+5. From the Codex repo, not the user home folder:
+
+   ```powershell
+   cd C:\Users\namma\Codex
+   powershell -ExecutionPolicy Bypass -File C:\Users\namma\Codex\scripts\windows-sandbox-preflight.ps1
+   wsl -e bash /mnt/c/Users/namma/Codex/scripts/windows-sandbox-preflight.sh
+   ```
 
 Full checklist: [CURSOR_WINDOWS_SANDBOX.md](CURSOR_WINDOWS_SANDBOX.md).
 

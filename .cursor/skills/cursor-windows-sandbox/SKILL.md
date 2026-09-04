@@ -26,7 +26,13 @@ description: Enable, diagnose, and configure Cursor agent sandboxing on Windows 
 4. Settings → Agents → Inline Editing & Terminal → **Legacy Terminal Tool = Off**.
 5. Network mode: **sandbox.json + Defaults** (recommended).
 6. Confirm this repo's `.cursor/sandbox.json` is present (do not set `type` to `insecure_none`).
-7. Run `scripts/windows-sandbox-preflight.ps1` in PowerShell, then `wsl -e bash /path/to/repo/scripts/windows-sandbox-preflight.sh`.
+7. Run from the Codex repo root (not `%USERPROFILE%`). Example for `C:\Users\namma`:
+
+```powershell
+cd C:\Users\namma\Codex
+powershell -ExecutionPolicy Bypass -File C:\Users\namma\Codex\scripts\windows-sandbox-preflight.ps1
+wsl -e bash /mnt/c/Users/namma/Codex/scripts/windows-sandbox-preflight.sh
+```
 
 ## Policy files in this repo
 

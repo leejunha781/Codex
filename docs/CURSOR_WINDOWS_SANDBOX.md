@@ -45,11 +45,42 @@ Do **not** use **Run Everything** if you need a sandbox. That mode has no sandbo
 
 ## Verify
 
-From PowerShell in this repo:
+Do **not** run these from your user home (`C:\Users\<you>`). The scripts live in the **Codex repo**, on the sandbox branch.
+
+If the repo is not cloned yet (PowerShell as `C:\Users\namma`):
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts/windows-sandbox-preflight.ps1
-wsl -e bash scripts/windows-sandbox-preflight.sh
+cd C:\Users\namma
+git clone -b cursor/windows-sandbox-4428 https://github.com/leejunha781/Codex.git Codex
+```
+
+If Codex already exists, fetch that branch first:
+
+```powershell
+cd C:\Users\namma\Codex
+git fetch origin cursor/windows-sandbox-4428
+git checkout cursor/windows-sandbox-4428
+```
+
+Then run with **absolute** paths:
+
+```powershell
+cd C:\Users\namma\Codex
+powershell -ExecutionPolicy Bypass -File C:\Users\namma\Codex\scripts\windows-sandbox-preflight.ps1
+wsl -e bash /mnt/c/Users/namma/Codex/scripts/windows-sandbox-preflight.sh
+```
+
+Exact files:
+
+| Side | Path |
+|------|------|
+| Windows | `C:\Users\namma\Codex\scripts\windows-sandbox-preflight.ps1` |
+| WSL | `/mnt/c/Users/namma/Codex/scripts/windows-sandbox-preflight.sh` |
+
+If `Codex` is not under `C:\Users\namma`, find it:
+
+```powershell
+Get-ChildItem -Path C:\Users\namma, C:\Users\namma\Documents, C:\Users\namma\source -Filter windows-sandbox-preflight.ps1 -Recurse -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
 ```
 
 The Linux/WSL script also locates Cursor's `cursorsandbox` helper and runs `--preflight-only`, then a `/bin/true` smoke exec. That is the same backend Windows uses through WSL2.
