@@ -30,6 +30,25 @@ function Write-Check {
     }
 }
 
+function ConvertTo-WslPath {
+    param([Parameter(Mandatory = $true)][string]$WindowsPath)
+    $full = [System.IO.Path]::GetFullPath($WindowsPath)
+    if ($full -match '^[A-Za-z]:') {
+        $drive = $full.Substring(0, 1).ToLowerInvariant()
+        $rest = $full.Substring(2) -replace '\\', '/'
+        return "/mnt/$drive$rest"
+    }
+    return ($full -replace '\\', '/')
+}
+
+function Invoke-WslText {
+    param([Parameter(Mandatory = $true)][string[]]$ArgumentList)
+    $raw = & wsl @ArgumentList 2>&1
+    $code = $LASTEXITCODE
+    $text = (($raw | Out-String) -replace "`0", "").Trim()
+    return [pscustomobject]@{ ExitCode = $code; Text = $text; Raw = $raw }
+}
+
 Write-Host "Cursor Windows sandbox preflight"
 Write-Host "================================"
 Write-Check -Status INFO -Message "Windows sandbox = Linux Landlock/seccomp inside WSL2 (not a native Win32 sandbox)."
@@ -67,91 +86,104 @@ catch {
 
 # --- WSL feature / binary ---
 $wslCmd = Get-Command wsl -ErrorAction SilentlyContinue
+$wslReady = $false
 if (-not $wslCmd) {
-    Write-Check -Status FAIL -Message "wsl.exe not found. In an elevated PowerShell run: wsl --install"
+    Write-Check -Status FAIL -Message "wsl.exe not found. In an elevated PowerShell run: wsl --install -d Ubuntu"
 }
 else {
     Write-Check -Status PASS -Message "wsl.exe found at $($wslCmd.Source)"
 
     Write-Host ""
     Write-Host "--- wsl --status ---"
-    & wsl --status 2>&1 | ForEach-Object { Write-Host $_ }
+    $status = Invoke-WslText -ArgumentList @("--status")
+    if ($status.Text) { Write-Host $status.Text }
 
     Write-Host ""
     Write-Host "--- wsl -l -v ---"
-    $listOutput = & wsl -l -v 2>&1
-    $listOutput | ForEach-Object { Write-Host $_ }
+    $list = Invoke-WslText -ArgumentList @("-l", "-v")
+    if ($list.Text) { Write-Host $list.Text }
+    $listText = $list.Text
 
-    # wsl.exe often emits UTF-16LE; strip NUL so -match works in Windows PowerShell 5.x
-    $listText = (($listOutput | Out-String) -replace "`0", "")
-    if ($listText -match "VERSION\s+2" -or $listText -match "\s2\s*$" -or $listText -match "\s2\s") {
+    if ($listText -match "Windows Subsystem for Linux has no installed distributions" -or
+        $listText -match "no installed distributions") {
+        Write-Check -Status FAIL -Message "No WSL distro installed. Elevated PowerShell: wsl --install -d Ubuntu"
+    }
+    elseif ($listText -match "VERSION\s+2" -or $listText -match "(?m)\s2\s*$" -or $listText -match "\s2\s") {
         Write-Check -Status PASS -Message "At least one WSL2 distro is listed."
     }
     else {
-        Write-Check -Status FAIL -Message "No WSL2 distro listed. Convert with: wsl --set-version <Distro> 2"
+        Write-Check -Status WARN -Message "Could not confirm a WSL2 distro from wsl -l -v. If needed: wsl --set-version <Distro> 2"
     }
 
-    if ($listText -match "docker-desktop" -and $listText -notmatch "Ubuntu|Debian|openSUSE|Fedora") {
-        Write-Check -Status WARN -Message "Only Docker Desktop WSL distros were detected. Install a real Linux distro: wsl --install -d Ubuntu"
+    if ($listText -match "docker-desktop" -and $listText -notmatch "Ubuntu|Debian|openSUSE|Fedora|kali|Alpine") {
+        Write-Check -Status WARN -Message "Only Docker Desktop WSL distros were detected. Install Ubuntu: wsl --install -d Ubuntu"
+    }
+
+    # Smoke-test bash with a single argv (no multiline -lc payloads — those break under PowerShell quoting)
+    Write-Host ""
+    Write-Host "--- WSL bash smoke test ---"
+    $smoke = Invoke-WslText -ArgumentList @("-e", "bash", "-lc", "echo WSL_BASH_OK; uname -r")
+    if ($smoke.Text) { Write-Host $smoke.Text }
+    if ($smoke.ExitCode -eq 0 -and $smoke.Text -match "WSL_BASH_OK") {
+        Write-Check -Status PASS -Message "bash runs inside WSL."
+        $wslReady = $true
+    }
+    else {
+        Write-Check -Status FAIL -Message "Could not run bash inside WSL. Fix with: wsl --install -d Ubuntu   then   wsl --update   then open 'wsl' once."
+        Write-Check -Status INFO -Message "If a distro exists but is stopped: wsl -d Ubuntu"
     }
 }
 
-# --- Probe Landlock inside default WSL distro ---
-if ($wslCmd) {
-    $probe = @'
-set -e
-echo "KERNEL=$(uname -r)"
-echo "UNAME=$(uname -s -m)"
-if [ -r /proc/sys/kernel/unprivileged_userns_clone ]; then
-  echo "USERNS=$(cat /proc/sys/kernel/unprivileged_userns_clone)"
-else
-  echo "USERNS=unknown"
-fi
-if [ -d /sys/kernel/security/lsm ]; then
-  echo "LSM=$(cat /sys/kernel/security/lsm 2>/dev/null || echo missing)"
-fi
-python3 - <<'PY' 2>/dev/null || true
-import os, platform
-print("PY_KERNEL=" + platform.release())
-print("PY_UID=" + str(os.getuid()))
-PY
-kern="$(uname -r | cut -d- -f1)"
-major="$(echo "$kern" | cut -d. -f1)"
-minor="$(echo "$kern" | cut -d. -f2)"
-echo "KERNEL_MAJOR=$major"
-echo "KERNEL_MINOR=$minor"
-'@
+# --- Probe Landlock with one-liners only (never multiline bash -lc from PowerShell) ---
+if ($wslCmd -and $wslReady) {
     Write-Host ""
-    Write-Host "--- WSL distro probe ---"
-    $probeOut = & wsl -e bash -lc $probe 2>&1
-    $probeText = (($probeOut | Out-String) -replace "`0", "")
-    $probeOut | ForEach-Object { Write-Host $_ }
+    Write-Host "--- WSL kernel / Landlock probe ---"
 
-    if ($LASTEXITCODE -ne 0) {
-        Write-Check -Status FAIL -Message "Could not run bash inside WSL. Start the distro: wsl"
+    $kernel = Invoke-WslText -ArgumentList @("-e", "uname", "-r")
+    Write-Check -Status INFO -Message "WSL kernel: $($kernel.Text)"
+
+    $kMajor = 0
+    $kMinor = 0
+    if ($kernel.Text -match '^(\d+)\.(\d+)') {
+        $kMajor = [int]$Matches[1]
+        $kMinor = [int]$Matches[2]
+    }
+    if ($kMajor -gt 6 -or ($kMajor -eq 6 -and $kMinor -ge 2)) {
+        Write-Check -Status PASS -Message "WSL kernel $kMajor.$kMinor meets Landlock v3 baseline (6.2+)."
+    }
+    elseif ($kMajor -gt 0) {
+        Write-Check -Status FAIL -Message "WSL kernel $kMajor.$kMinor is older than 6.2. Update WSL: wsl --update"
     }
     else {
-        if ($probeText -match "KERNEL_MAJOR=(\d+)" ) { $kMajor = [int]$Matches[1] } else { $kMajor = 0 }
-        if ($probeText -match "KERNEL_MINOR=(\d+)" ) { $kMinor = [int]$Matches[1] } else { $kMinor = 0 }
-        if ($kMajor -gt 6 -or ($kMajor -eq 6 -and $kMinor -ge 2)) {
-            Write-Check -Status PASS -Message "WSL kernel $kMajor.$kMinor meets Landlock v3 baseline (6.2+)."
-        }
-        elseif ($kMajor -gt 0) {
-            Write-Check -Status FAIL -Message "WSL kernel $kMajor.$kMinor is older than 6.2. Update WSL: wsl --update"
-        }
-        else {
-            Write-Check -Status WARN -Message "Could not parse WSL kernel version from probe output."
-        }
+        Write-Check -Status WARN -Message "Could not parse WSL kernel version from: $($kernel.Text)"
+    }
 
-        if ($probeText -match "USERNS=1") {
-            Write-Check -Status PASS -Message "Unprivileged user namespaces are enabled in WSL."
-        }
-        elseif ($probeText -match "USERNS=0") {
-            Write-Check -Status FAIL -Message "Unprivileged user namespaces are disabled. Cursor cannot create the Linux sandbox."
+    $userns = Invoke-WslText -ArgumentList @("-e", "bash", "-lc", "if [ -r /proc/sys/kernel/unprivileged_userns_clone ]; then cat /proc/sys/kernel/unprivileged_userns_clone; else echo unknown; fi")
+    $usernsVal = ($userns.Text -split "`n" | Select-Object -Last 1).Trim()
+    if ($usernsVal -eq "1") {
+        Write-Check -Status PASS -Message "Unprivileged user namespaces are enabled in WSL."
+    }
+    elseif ($usernsVal -eq "0") {
+        Write-Check -Status FAIL -Message "Unprivileged user namespaces are disabled. Cursor cannot create the Linux sandbox."
+    }
+    else {
+        # Confirm with unshare instead of failing hard
+        $unshare = Invoke-WslText -ArgumentList @("-e", "bash", "-lc", "unshare --user --map-root-user true >/dev/null 2>&1 && echo USERNS_OK || echo USERNS_FAIL")
+        if ($unshare.Text -match "USERNS_OK") {
+            Write-Check -Status PASS -Message "User namespaces usable via unshare (sysctl file not readable)."
         }
         else {
-            Write-Check -Status WARN -Message "Could not read kernel.unprivileged_userns_clone inside WSL."
+            Write-Check -Status WARN -Message "Could not confirm user namespaces (got '$usernsVal')."
         }
+    }
+
+    $lsm = Invoke-WslText -ArgumentList @("-e", "bash", "-lc", "if [ -r /sys/kernel/security/lsm ]; then cat /sys/kernel/security/lsm; else echo missing; fi")
+    Write-Check -Status INFO -Message "LSM: $($lsm.Text)"
+    if ($lsm.Text -match "landlock") {
+        Write-Check -Status PASS -Message "Landlock appears in the LSM list."
+    }
+    else {
+        Write-Check -Status WARN -Message "Landlock not listed in LSM; Cursor may still work if CONFIG_SECURITY_LANDLOCK=y."
     }
 }
 
@@ -160,6 +192,9 @@ $repoRoot = Split-Path -Parent $PSScriptRoot
 if (-not $repoRoot) { $repoRoot = (Get-Location).Path }
 $sandboxJson = Join-Path $repoRoot ".cursor\sandbox.json"
 $permissionsJson = Join-Path $repoRoot ".cursor\permissions.json"
+$linuxPreflight = Join-Path $repoRoot "scripts\windows-sandbox-preflight.sh"
+$linuxPreflightWsl = ConvertTo-WslPath -WindowsPath $linuxPreflight
+
 if (Test-Path $sandboxJson) {
     Write-Check -Status PASS -Message "Found .cursor/sandbox.json"
 }
@@ -183,12 +218,33 @@ Write-Host "3. Network mode = sandbox.json + Defaults"
 Write-Host "4. Fully quit and reopen Cursor after changing those settings"
 Write-Host "5. Optional: Output panel > Extension Host, look for 'Sandbox support detected: true'"
 Write-Host ""
-Write-Host "Then run the Linux-side checks inside WSL:"
-Write-Host "  wsl -e bash '$repoRoot/scripts/windows-sandbox-preflight.sh'"
-Write-Host ""
+
+# --- Auto-run Linux preflight with a correct /mnt path ---
+if ($wslCmd -and $wslReady -and (Test-Path $linuxPreflight)) {
+    Write-Host "--- Linux preflight via WSL ---"
+    Write-Check -Status INFO -Message "wsl -e bash $linuxPreflightWsl"
+    $linux = Invoke-WslText -ArgumentList @("-e", "bash", $linuxPreflightWsl)
+    if ($linux.Text) { Write-Host $linux.Text }
+    if ($linux.ExitCode -eq 0) {
+        Write-Check -Status PASS -Message "Linux/WSL preflight script exited 0."
+    }
+    else {
+        Write-Check -Status FAIL -Message "Linux/WSL preflight script exited $($linux.ExitCode)."
+    }
+}
+else {
+    Write-Host "Then run the Linux-side checks inside WSL:"
+    Write-Host "  wsl -e bash $linuxPreflightWsl"
+    Write-Host ""
+}
 
 if ($fail -gt 0) {
     Write-Check -Status FAIL -Message "Preflight finished with $fail failure(s) and $warn warning(s)."
+    Write-Host ""
+    Write-Host "If WSL bash failed, run these in an elevated PowerShell, then re-run this script:"
+    Write-Host "  wsl --install -d Ubuntu"
+    Write-Host "  wsl --update"
+    Write-Host "  wsl -d Ubuntu"
     exit 1
 }
 if ($warn -gt 0) {
