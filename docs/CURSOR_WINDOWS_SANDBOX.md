@@ -43,45 +43,53 @@ These files cannot flip Cursor UI settings or install WSL2. You still complete t
 
 Do **not** use **Run Everything** if you need a sandbox. That mode has no sandbox.
 
-## Verify
+## One-click batch (recommended on Windows)
 
-Do **not** run these from your user home (`C:\Users\<you>`). The scripts live in the **Codex repo**, on the sandbox branch.
+Download and double-click this file (PowerShell as Administrator is **not** required for the bat itself):
 
-If the repo is not cloned yet (PowerShell as `C:\Users\namma`):
+| | |
+|--|--|
+| File | [`Enable-Cursor-Windows-Sandbox.bat`](https://raw.githubusercontent.com/leejunha781/Codex/cursor/windows-sandbox-4428/Enable-Cursor-Windows-Sandbox.bat) |
+| Same file in `scripts/` | [`scripts/Enable-Cursor-Windows-Sandbox.bat`](https://raw.githubusercontent.com/leejunha781/Codex/cursor/windows-sandbox-4428/scripts/Enable-Cursor-Windows-Sandbox.bat) |
 
-```powershell
-cd C:\Users\namma
-git clone -b cursor/windows-sandbox-4428 https://github.com/leejunha781/Codex.git Codex
-```
-
-If Codex already exists, fetch that branch first:
+PowerShell one-liner (download to Downloads, then run):
 
 ```powershell
-cd C:\Users\namma\Codex
-git fetch origin cursor/windows-sandbox-4428
-git checkout cursor/windows-sandbox-4428
+$bat = "$env:USERPROFILE\Downloads\Enable-Cursor-Windows-Sandbox.bat"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/leejunha781/Codex/cursor/windows-sandbox-4428/Enable-Cursor-Windows-Sandbox.bat" -OutFile $bat -UseBasicParsing
+Start-Process -FilePath $bat -WorkingDirectory $env:USERPROFILE
 ```
 
-Then run with **absolute** paths:
+Or in `cmd.exe`:
+
+```bat
+curl -L -o "%USERPROFILE%\Downloads\Enable-Cursor-Windows-Sandbox.bat" "https://raw.githubusercontent.com/leejunha781/Codex/cursor/windows-sandbox-4428/Enable-Cursor-Windows-Sandbox.bat"
+"%USERPROFILE%\Downloads\Enable-Cursor-Windows-Sandbox.bat"
+```
+
+What the bat does:
+
+1. Uses `%USERPROFILE%\Codex` (or `%USERPROFILE%\Codex-windows-sandbox` if `Codex` is already taken by a non-Codex folder).
+2. Clones/fetches branch `cursor/windows-sandbox-4428` (never uses your user-home `.git` as the project root).
+3. Runs `scripts\windows-sandbox-preflight.ps1` and the WSL `.sh` preflight.
+4. Prints the Cursor UI settings you must still confirm (Auto-review, Legacy Terminal Off).
+
+## Manual verify (optional)
+
+Do **not** run relative `scripts\...` commands from your user home (`C:\Users\<you>`).
 
 ```powershell
-cd C:\Users\namma\Codex
-powershell -ExecutionPolicy Bypass -File C:\Users\namma\Codex\scripts\windows-sandbox-preflight.ps1
-wsl -e bash /mnt/c/Users/namma/Codex/scripts/windows-sandbox-preflight.sh
+cd $env:USERPROFILE\Codex
+powershell -ExecutionPolicy Bypass -File "$env:USERPROFILE\Codex\scripts\windows-sandbox-preflight.ps1"
+wsl -e bash /mnt/c/Users/$env:USERNAME/Codex/scripts/windows-sandbox-preflight.sh
 ```
 
-Exact files:
+Exact files after a successful bat run (typical layout):
 
 | Side | Path |
 |------|------|
-| Windows | `C:\Users\namma\Codex\scripts\windows-sandbox-preflight.ps1` |
-| WSL | `/mnt/c/Users/namma/Codex/scripts/windows-sandbox-preflight.sh` |
-
-If `Codex` is not under `C:\Users\namma`, find it:
-
-```powershell
-Get-ChildItem -Path C:\Users\namma, C:\Users\namma\Documents, C:\Users\namma\source -Filter windows-sandbox-preflight.ps1 -Recurse -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName
-```
+| Windows | `%USERPROFILE%\Codex\scripts\windows-sandbox-preflight.ps1` |
+| WSL | `/mnt/c/Users/<you>/Codex/scripts/windows-sandbox-preflight.sh` |
 
 The Linux/WSL script also locates Cursor's `cursorsandbox` helper and runs `--preflight-only`, then a `/bin/true` smoke exec. That is the same backend Windows uses through WSL2.
 

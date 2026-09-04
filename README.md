@@ -44,6 +44,10 @@ Windows에서 Cursor 샌드박스 켜줘
 @cursor-windows-sandbox
 ```
 
+### Windows sandbox one-click
+
+Download [`Enable-Cursor-Windows-Sandbox.bat`](https://raw.githubusercontent.com/leejunha781/Codex/cursor/windows-sandbox-4428/Enable-Cursor-Windows-Sandbox.bat) and double-click. Details: [docs/CURSOR_WINDOWS_SANDBOX.md](docs/CURSOR_WINDOWS_SANDBOX.md).
+
 ## Cloud Agents
 
 Environment: https://cursor.com/dashboard/cloud-agents/environments/r/github.com/leejunha781/codex
