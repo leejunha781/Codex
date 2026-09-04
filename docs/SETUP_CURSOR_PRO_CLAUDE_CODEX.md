@@ -55,6 +55,24 @@ Environment: [Codex Cloud Environment](https://cursor.com/dashboard/cloud-agents
 - Connect repo `leejunha781/Codex`
 - Use for async long tasks (JD batch, doc generation, PR fixes)
 
+### Windows agent sandbox (local desktop)
+
+Cursor on Windows runs the Linux sandbox **inside WSL2**. Cloud Agents do not use this.
+
+1. Install WSL2 (`wsl --install -d Ubuntu`) and keep the distro on version 2.
+2. Settings → Agents → Approvals & Execution = **Auto-review**.
+3. Settings → Agents → Inline Editing & Terminal → **Legacy Terminal Tool** = **Off**.
+4. Open this repo so `.cursor/sandbox.json` and `.cursor/permissions.json` apply.
+5. Download and run `Enable-Cursor-Windows-Sandbox.bat` (see [CURSOR_WINDOWS_SANDBOX.md](CURSOR_WINDOWS_SANDBOX.md)), or:
+
+   ```powershell
+   $bat = "$env:USERPROFILE\Downloads\Enable-Cursor-Windows-Sandbox.bat"
+   Invoke-WebRequest -Uri "https://raw.githubusercontent.com/leejunha781/Codex/cursor/windows-sandbox-4428/Enable-Cursor-Windows-Sandbox.bat" -OutFile $bat -UseBasicParsing
+   Start-Process $bat
+   ```
+
+Full checklist: [CURSOR_WINDOWS_SANDBOX.md](CURSOR_WINDOWS_SANDBOX.md).
+
 ### Privacy
 
 - **Privacy Mode** — enable if working with sensitive defence/marine data
@@ -120,9 +138,16 @@ Codex/
 ├── .cursor/
 │   ├── rules/             # Modular agent rules (.mdc)
 │   ├── skills/            # Workflow skills
+│   ├── sandbox.json       # Local agent sandbox policy (Windows uses WSL2)
+│   ├── permissions.json   # Auto-review steering
 │   └── mcp.json           # MCP server config
+├── scripts/
+│   ├── windows-sandbox-preflight.ps1
+│   ├── windows-sandbox-preflight.sh
+│   └── validate-sandbox-config.py
 └── docs/
-    └── SETUP_CURSOR_PRO_CLAUDE_CODEX.md  # This file
+    ├── SETUP_CURSOR_PRO_CLAUDE_CODEX.md  # This file
+    └── CURSOR_WINDOWS_SANDBOX.md
 ```
 
 After clone: open in Cursor — rules and skills apply automatically.
@@ -171,6 +196,7 @@ After clone: open in Cursor — rules and skills apply automatically.
 - [ ] Repo cloned; `.cursor/rules` visible in Settings → Rules
 - [ ] MCP authenticated (Notion/Linear if used)
 - [ ] Cloud Agent environment linked to `leejunha781/Codex`
+- [ ] Windows: WSL2 + Auto-review + Legacy Terminal Tool Off; preflight scripts pass
 
 ---
 
@@ -183,6 +209,7 @@ After clone: open in Cursor — rules and skills apply automatically.
 | Max Mode costly | Use default context for small tasks |
 | MCP auth failed | Re-authenticate in Settings → MCP |
 | Korean/English mix-up | `@20-communication` rule |
+| Windows sandbox missing | WSL2 install/update; Legacy Terminal Off; Auto-review; see `docs/CURSOR_WINDOWS_SANDBOX.md` |
 
 ---
 

@@ -1,0 +1,17 @@
+{
+  "autoRun": {
+    "allow_instructions": [
+      "Allow read-only git commands such as status, diff, log, show, and branch listing.",
+      "Allow running this repository's Windows sandbox preflight scripts (scripts/windows-sandbox-preflight.ps1 and scripts/windows-sandbox-preflight.sh).",
+      "Allow installing Python or Node packages into the workspace using the project's existing lockfiles.",
+      "Allow reading documentation and configuration files inside the workspace."
+    ],
+    "block_instructions": [
+      "Every command that modifies git config, git hooks, or SSH keys should go through approval first.",
+      "Every command that prints, copies, or publishes secrets, tokens, or credentials should go through approval first.",
+      "Every command that deploys to production or changes cloud infrastructure should go through approval first.",
+      "Every command that deletes files outside the workspace should go through approval first.",
+      "Every command that disables the Cursor sandbox or sets sandbox type to insecure_none should go through approval first."
+    ]
+  }
+}

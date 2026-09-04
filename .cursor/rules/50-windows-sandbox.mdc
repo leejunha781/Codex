@@ -1,0 +1,26 @@
+---
+description: Cursor agent sandbox on Windows (WSL2 Landlock) — local desktop only
+alwaysApply: true
+---
+
+# Windows Agent Sandbox
+
+Local Cursor desktop agents on Windows run terminal commands in a **Linux sandbox inside WSL2** (Landlock + seccomp). There is no native Win32 sandbox. Cloud Agents ignore this rule: they use a dedicated VM and do not use Run Modes.
+
+## Required local settings (Windows)
+
+- Cursor **v3.6+** recommended (Auto-review default).
+- **Settings → Agents → Approvals & Execution** = **Auto-review** (or Allowlist with sandboxing). Never **Run Everything** if sandboxing is required — that mode has no sandbox.
+- **Settings → Agents → Inline Editing & Terminal → Legacy Terminal Tool** = **Off**. Sandbox exists only on the new terminal.
+- WSL2 distro with Linux kernel **6.2+**, Landlock v3, and unprivileged user namespaces.
+- Project policy: `.cursor/sandbox.json` (network/paths) and `.cursor/permissions.json` (Auto-review steering).
+
+## Agent behavior inside the sandbox
+
+- Workspace read/write is allowed. Writes to `.cursor/*.json`, `.git/config`, `.git/hooks`, `.vscode`, and `.cursorignore` are blocked.
+- Network is deny-by-default plus this repo allowlist (and Cursor package-manager defaults when the UI mode is `sandbox.json + Defaults`).
+- If a command fails because of sandbox filesystem, git, or network limits, **do not retry the same command**. Escalate permissions or pick another path.
+- On Linux/WSL, `id -u` may be `0` inside the namespace. Use `CURSOR_ORIG_UID` / `CURSOR_ORIG_GID` for Docker `--user`.
+- Diagnose with `scripts/windows-sandbox-preflight.ps1` (Windows) or `scripts/windows-sandbox-preflight.sh` (WSL/Linux).
+
+Official docs: https://cursor.com/docs/agent/security/run-modes · https://cursor.com/docs/reference/sandbox · https://cursor.com/blog/agent-sandboxing

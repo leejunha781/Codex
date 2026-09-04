@@ -23,6 +23,7 @@ See `MEMORY.md` for career history, preferences, and workflow pipelines.
 - **Career:** JD → match score → tailored resume (new filename) → cover letter
 - **Engineering:** spec → design → implement → test → PR
 - **Consulting:** stakeholder map → requirements → traceability → delivery plan
+- **Windows sandbox:** WSL2 + Auto-review + `.cursor/sandbox.json` (local desktop only; Cloud Agents skip Run Modes)
 
 ## Communication
 
