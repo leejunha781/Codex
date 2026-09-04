@@ -52,12 +52,7 @@ powershell -ExecutionPolicy Bypass -File scripts/windows-sandbox-preflight.ps1
 wsl -e bash scripts/windows-sandbox-preflight.sh
 ```
 
-From any Linux/WSL shell:
-
-```bash
-python3 scripts/validate-sandbox-config.py
-bash scripts/windows-sandbox-preflight.sh
-```
+The Linux/WSL script also locates Cursor's `cursorsandbox` helper and runs `--preflight-only`, then a `/bin/true` smoke exec. That is the same backend Windows uses through WSL2.
 
 Optional: Cursor **Output** panel → **Extension Host** (or Extension Host Remote) and look for `Sandbox support detected: true`.
 

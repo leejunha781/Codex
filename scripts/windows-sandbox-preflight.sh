@@ -47,7 +47,7 @@ if [ -r "$userns_file" ]; then
     fail_msg "Unprivileged user namespaces disabled ($userns_file=$userns_val)."
   fi
 else
-  warn_msg "$userns_file not readable; cannot confirm user namespaces."
+  info "$userns_file not readable; will confirm user namespaces with unshare instead."
 fi
 
 max_userns="/proc/sys/user/max_user_namespaces"
@@ -113,10 +113,65 @@ fi
 if [ -n "$helper" ]; then
   pass "Found sandbox helper: $helper"
   if [ -x "$helper" ]; then
-    if "$helper" --help >/dev/null 2>&1 || "$helper" -h >/dev/null 2>&1; then
-      pass "Sandbox helper is executable."
+    pass "Sandbox helper is executable."
+    policy_file="$(mktemp "$repo_root/.sandbox-preflight-XXXXXX")"
+    if ! python3 - "$policy_file" "$repo_root" <<'PY'
+import json
+import sys
+from pathlib import Path
+
+policy_path = Path(sys.argv[1])
+cwd = sys.argv[2]
+sandbox_path = Path(cwd) / ".cursor" / "sandbox.json"
+sandbox_type = "workspace_readwrite"
+if sandbox_path.is_file():
+    try:
+        data = json.loads(sandbox_path.read_text(encoding="utf-8"))
+        sandbox_type = data.get("type", sandbox_type)
+    except (OSError, json.JSONDecodeError):
+        pass
+policy_path.write_text(
+    json.dumps({"sandbox": {"type": sandbox_type, "cwd": cwd}, "cwd": cwd}),
+    encoding="utf-8",
+)
+PY
+    then
+      fail_msg "Could not write temporary unified policy for cursorsandbox."
+      rm -f "$policy_file"
     else
-      info "Sandbox helper exists; it may only support Cursor's internal preflight flags."
+      if "$helper" --policy "$policy_file" --preflight-only -- /bin/true >/dev/null 2>&1; then
+        pass "cursorsandbox --preflight-only succeeded (Linux sandbox backend is supported)."
+      else
+        helper_err="$("$helper" --policy "$policy_file" --preflight-only -- /bin/true 2>&1 || true)"
+        fail_msg "cursorsandbox --preflight-only failed. $helper_err"
+      fi
+      # The helper may consume/unlink the policy file during preflight. Rewrite before exec.
+      python3 - "$policy_file" "$repo_root" <<'PY'
+import json
+import sys
+from pathlib import Path
+
+policy_path = Path(sys.argv[1])
+cwd = sys.argv[2]
+sandbox_path = Path(cwd) / ".cursor" / "sandbox.json"
+sandbox_type = "workspace_readwrite"
+if sandbox_path.is_file():
+    try:
+        data = json.loads(sandbox_path.read_text(encoding="utf-8"))
+        sandbox_type = data.get("type", sandbox_type)
+    except (OSError, json.JSONDecodeError):
+        pass
+policy_path.write_text(
+    json.dumps({"sandbox": {"type": sandbox_type, "cwd": cwd}, "cwd": cwd}),
+    encoding="utf-8",
+)
+PY
+      if "$helper" --policy "$policy_file" -- /bin/true >/dev/null 2>&1; then
+        pass "cursorsandbox executed /bin/true inside the sandbox."
+      else
+        warn_msg "cursorsandbox exec smoke test failed; preflight-only may still be enough."
+      fi
+      rm -f "$policy_file"
     fi
   else
     warn_msg "Sandbox helper is not executable: $helper"
@@ -147,11 +202,11 @@ else
 fi
 
 printf '\nWindows desktop settings (confirm in Cursor UI)\n'
-printf '----------------------------------------------\n'
-printf '1. Settings > Agents > Approvals & Execution = Auto-review\n'
-printf '2. Settings > Agents > Inline Editing & Terminal > Legacy Terminal Tool = Off\n'
-printf '3. Network mode = sandbox.json + Defaults\n'
-printf '4. Do not use Run Everything if you need a sandbox\n'
+printf -- '----------------------------------------------\n'
+printf '%s\n' '1. Settings > Agents > Approvals & Execution = Auto-review'
+printf '%s\n' '2. Settings > Agents > Inline Editing & Terminal > Legacy Terminal Tool = Off'
+printf '%s\n' '3. Network mode = sandbox.json + Defaults'
+printf '%s\n' '4. Do not use Run Everything if you need a sandbox'
 printf '\n'
 
 if [ "$fail" -gt 0 ]; then
