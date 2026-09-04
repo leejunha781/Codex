@@ -66,7 +66,20 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/leejunha781/Codex/curs
 Start-Process $bat
 ```
 
-Both land the repo under `%USERPROFILE%\Codex` or `%USERPROFILE%\Codex-windows-sandbox`, then run preflight.
+### If preflight says `Could not run bash inside WSL`
+
+That failure was often a **PowerShell quoting bug** in an older preflight (multiline `bash -lc`). Pull the latest branch / re-run the fix script.
+
+If bash still fails after the update:
+
+```powershell
+# Elevated PowerShell (Run as administrator)
+wsl --install -d Ubuntu
+wsl --update
+wsl -d Ubuntu
+```
+
+Complete the first-time Ubuntu username/password prompt, type `exit`, then re-run the fix script.
 
 ## Manual verify (optional)
 

@@ -153,7 +153,11 @@ try {
         Write-Bad "git checkout failed"
         exit 1
     }
-    & git pull --ff-only origin $Branch 2>$null
+    & git reset --hard "origin/$Branch"
+    if ($LASTEXITCODE -ne 0) {
+        Write-Bad "git reset --hard origin/$Branch failed"
+        exit 1
+    }
     $head = (& git rev-parse --short HEAD | Out-String).Trim()
     Write-Ok "Checked out $Branch at $head in $repoDir"
 }
@@ -219,6 +223,15 @@ Write-Host "   Legacy Terminal Tool = Off"
 Write-Host "============================================================"
 Write-Host ""
 Write-Host ("[RESULT] Windows preflight exit={0}  WSL preflight exit={1}" -f $psExit, $wslExit)
+
+if ($psExit -ne 0) {
+    Write-Host ""
+    Write-Host "If the only failure was WSL bash, install/start Ubuntu then re-run this fix script:" -ForegroundColor Yellow
+    Write-Host "  wsl --install -d Ubuntu"
+    Write-Host "  wsl --update"
+    Write-Host "  wsl -d Ubuntu"
+    Write-Host "  (close the Ubuntu window after first-time user setup, then re-run)"
+}
 
 if (($psExit -ne 0) -or ($wslExit -ne 0)) {
     exit 1
