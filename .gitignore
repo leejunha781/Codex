@@ -1,5 +1,7 @@
 # Local Cursor sandbox preflight temps
 .sandbox-preflight-*
+__pycache__/
+*.pyc
 
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
