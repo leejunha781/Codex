@@ -37,7 +37,7 @@
 
 | Service | Use For |
 |---------|---------|
-| Cursor Pro | Agent coding, git, MCP, Cloud Agents, rules/skills |
+| Cursor Pro | Agent coding, git, MCP, Cloud Agents, rules/skills. Local Windows sandbox = WSL2 Landlock (not Cloud Agents). |
 | Claude Pro | Long reasoning, document polish, Projects |
 | Codex / GPT-5.3 | Implementation, refactors, automation |
 

@@ -5,9 +5,10 @@ Personal AI configuration hub for **Joonha Lee (이준하)** — optimized for *
 ## What This Repo Does
 
 - **Agent rules** (`.cursor/rules/`) — Claude-grade reasoning, model orchestration, communication, resume workflow
-- **Skills** (`.cursor/skills/`) — Resume/JD matching, interview prep, PLM consulting
+- **Skills** (`.cursor/skills/`) — Resume/JD matching, interview prep, PLM consulting, Windows sandbox
 - **Context hub** — `MEMORY.md`, `AGENTS.md`, `CLAUDE.md`
 - **MCP** — Notion + Linear via `.cursor/mcp.json`
+- **Windows sandbox** — `.cursor/sandbox.json` + WSL2 Landlock; see [docs/CURSOR_WINDOWS_SANDBOX.md](docs/CURSOR_WINDOWS_SANDBOX.md)
 
 ## Quick Start
 
@@ -24,6 +25,8 @@ Personal AI configuration hub for **Joonha Lee (이준하)** — optimized for *
 | `CLAUDE.md` | Claude Code compatibility layer |
 | `.cursor/rules/` | Modular Cursor rules |
 | `.cursor/skills/` | Specialized workflows |
+| `.cursor/sandbox.json` | Local agent sandbox network/path policy (Windows = WSL2) |
+| `docs/CURSOR_WINDOWS_SANDBOX.md` | Enable Cursor Windows sandbox |
 
 ## Example Prompts
 
@@ -36,6 +39,9 @@ FAE 면접 질문 "Tell me about a difficult integration" 답변 준비해줘
 
 PLM 도입 시 traceability 구조 제안해줘
 @plm-systems-consulting
+
+Windows에서 Cursor 샌드박스 켜줘
+@cursor-windows-sandbox
 ```
 
 ## Cloud Agents

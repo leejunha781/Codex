@@ -26,6 +26,7 @@ Enable **Max Mode** for large context. See `docs/SETUP_CURSOR_PRO_CLAUDE_CODEX.m
 ## Key Commands
 
 - `@resume-jd-workflow` — JD matching and resume tailoring
+- `@cursor-windows-sandbox` — enable/diagnose Cursor Windows sandbox (WSL2)
 - `@MEMORY.md` — user context hub
 - `/create-rule` — add new Cursor rules from chat
 
