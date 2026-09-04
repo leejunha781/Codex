@@ -43,36 +43,30 @@ These files cannot flip Cursor UI settings or install WSL2. You still complete t
 
 Do **not** use **Run Everything** if you need a sandbox. That mode has no sandbox.
 
-## One-click batch (recommended on Windows)
+## One-click fix (use this if you saw path errors under `C:\Users\<you>\scripts`)
 
-Download and double-click this file (PowerShell as Administrator is **not** required for the bat itself):
+Those errors mean PowerShell used your **user home** as the git root. The fix script never does that.
 
-| | |
-|--|--|
-| File | [`Enable-Cursor-Windows-Sandbox.bat`](https://raw.githubusercontent.com/leejunha781/Codex/cursor/windows-sandbox-4428/Enable-Cursor-Windows-Sandbox.bat) |
-| Same file in `scripts/` | [`scripts/Enable-Cursor-Windows-Sandbox.bat`](https://raw.githubusercontent.com/leejunha781/Codex/cursor/windows-sandbox-4428/scripts/Enable-Cursor-Windows-Sandbox.bat) |
+### Option A — PowerShell paste (fastest)
 
-PowerShell one-liner (download to Downloads, then run):
+```powershell
+$uri = 'https://raw.githubusercontent.com/leejunha781/Codex/cursor/windows-sandbox-4428/scripts/Fix-Cursor-Windows-Sandbox.ps1'
+$out = Join-Path $env:TEMP 'Fix-Cursor-Windows-Sandbox.ps1'
+Invoke-WebRequest -Uri $uri -OutFile $out -UseBasicParsing
+powershell -NoProfile -ExecutionPolicy Bypass -File $out
+```
+
+### Option B — Download bat and double-click
+
+https://raw.githubusercontent.com/leejunha781/Codex/cursor/windows-sandbox-4428/Enable-Cursor-Windows-Sandbox.bat
 
 ```powershell
 $bat = "$env:USERPROFILE\Downloads\Enable-Cursor-Windows-Sandbox.bat"
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/leejunha781/Codex/cursor/windows-sandbox-4428/Enable-Cursor-Windows-Sandbox.bat" -OutFile $bat -UseBasicParsing
-Start-Process -FilePath $bat -WorkingDirectory $env:USERPROFILE
+Start-Process $bat
 ```
 
-Or in `cmd.exe`:
-
-```bat
-curl -L -o "%USERPROFILE%\Downloads\Enable-Cursor-Windows-Sandbox.bat" "https://raw.githubusercontent.com/leejunha781/Codex/cursor/windows-sandbox-4428/Enable-Cursor-Windows-Sandbox.bat"
-"%USERPROFILE%\Downloads\Enable-Cursor-Windows-Sandbox.bat"
-```
-
-What the bat does:
-
-1. Uses `%USERPROFILE%\Codex` (or `%USERPROFILE%\Codex-windows-sandbox` if `Codex` is already taken by a non-Codex folder).
-2. Clones/fetches branch `cursor/windows-sandbox-4428` (never uses your user-home `.git` as the project root).
-3. Runs `scripts\windows-sandbox-preflight.ps1` and the WSL `.sh` preflight.
-4. Prints the Cursor UI settings you must still confirm (Auto-review, Legacy Terminal Off).
+Both land the repo under `%USERPROFILE%\Codex` or `%USERPROFILE%\Codex-windows-sandbox`, then run preflight.
 
 ## Manual verify (optional)
 
