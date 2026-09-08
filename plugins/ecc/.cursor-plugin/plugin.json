@@ -1,0 +1,26 @@
+{
+  "name": "ecc",
+  "displayName": "ECC",
+  "version": "2.2.1",
+  "description": "Cursor adapter for ECC (affaan-m/ECC): on-demand engineering skills, agents, and commands. Does not inject always-on rules or hooks.",
+  "author": {
+    "name": "Affaan Mustafa",
+    "email": "me@affaanmustafa.com"
+  },
+  "homepage": "https://ecc.tools",
+  "repository": "https://github.com/affaan-m/ECC",
+  "license": "MIT",
+  "keywords": [
+    "ecc",
+    "agents",
+    "skills",
+    "tdd",
+    "code-review",
+    "security",
+    "workflow"
+  ],
+  "category": "developer-tools",
+  "skills": "./skills/",
+  "agents": "./agents/",
+  "commands": "./commands/"
+}

@@ -8,6 +8,7 @@ Personal AI configuration hub for **Joonha Lee (이준하)** — optimized for *
 - **Skills** (`.cursor/skills/`) — Resume/JD matching, interview prep, PLM consulting
 - **Context hub** — `MEMORY.md`, `AGENTS.md`, `CLAUDE.md`
 - **MCP** — Notion + Linear via `.cursor/mcp.json`
+- **ECC adapter** — Cursor plugin at `plugins/ecc/` (skills/agents/commands from [affaan-m/ECC](https://github.com/affaan-m/ECC))
 
 ## Quick Start
 
@@ -24,6 +25,8 @@ Personal AI configuration hub for **Joonha Lee (이준하)** — optimized for *
 | `CLAUDE.md` | Claude Code compatibility layer |
 | `.cursor/rules/` | Modular Cursor rules |
 | `.cursor/skills/` | Specialized workflows |
+| `plugins/ecc/` | ECC Cursor plugin adapter (on-demand engineering catalog) |
+| `docs/ECC_PLUGIN.md` | Why ECC is adapted instead of native marketplace-add |
 
 ## Example Prompts
 
@@ -36,6 +39,9 @@ FAE 면접 질문 "Tell me about a difficult integration" 답변 준비해줘
 
 PLM 도입 시 traceability 구조 제안해줘
 @plm-systems-consulting
+
+ECC TDD/리뷰 워크플로로 이 변경 검증해줘
+@ecc-plugin
 ```
 
 ## Cloud Agents

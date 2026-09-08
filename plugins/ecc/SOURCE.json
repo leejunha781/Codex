@@ -1,0 +1,21 @@
+{
+  "marketplace": "https://github.com/affaan-m/ECC.git",
+  "upstreamFormat": "claude-plugin",
+  "adapter": "cursor-plugin",
+  "version": "2.2.1",
+  "resolvedCommitSha": "5064474d4d762dc9640234a41617cccb79185cec",
+  "copied": {
+    "skills": 286,
+    "agents": 68,
+    "commands": 94
+  },
+  "excluded": [
+    "always-on .cursor/rules",
+    "hooks runtime",
+    "mcp.json chrome-devtools default"
+  ],
+  "notes": [
+    "ECC is a Claude Code / Codex marketplace, not a Cursor marketplace.",
+    "This adapter exposes the catalog as a Cursor plugin without overriding hub rules."
+  ]
+}

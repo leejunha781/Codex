@@ -27,6 +27,7 @@ Enable **Max Mode** for large context. See `docs/SETUP_CURSOR_PRO_CLAUDE_CODEX.m
 
 - `@resume-jd-workflow` — JD matching and resume tailoring
 - `@MEMORY.md` — user context hub
+- `@ecc-plugin` — ECC Cursor adapter (TDD, review, security, verification)
 - `/create-rule` — add new Cursor rules from chat
 
 ## Repos & Links

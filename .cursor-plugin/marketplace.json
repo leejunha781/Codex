@@ -1,0 +1,22 @@
+{
+  "name": "codex-ai-hub",
+  "owner": {
+    "name": "Joonha Lee"
+  },
+  "metadata": {
+    "description": "Personal Cursor marketplace for Joonha Lee. Includes an ECC adapter because upstream ECC is a Claude Code marketplace, not a Cursor marketplace.",
+    "version": "1.0.0",
+    "pluginRoot": "plugins"
+  },
+  "plugins": [
+    {
+      "name": "ecc",
+      "source": "ecc",
+      "description": "ECC 2.2.1 Cursor adapter: on-demand skills, agents, and commands from https://github.com/affaan-m/ECC",
+      "version": "2.2.1",
+      "homepage": "https://ecc.tools",
+      "repository": "https://github.com/affaan-m/ECC",
+      "license": "MIT"
+    }
+  ]
+}

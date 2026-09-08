@@ -40,6 +40,7 @@
 | Cursor Pro | Agent coding, git, MCP, Cloud Agents, rules/skills |
 | Claude Pro | Long reasoning, document polish, Projects |
 | Codex / GPT-5.3 | Implementation, refactors, automation |
+| ECC adapter | On-demand engineering catalog (`plugins/ecc/`) — not a native Cursor marketplace |
 
 ## Repo
 
@@ -51,3 +52,5 @@
 - `docs/SETUP_CURSOR_PRO_CLAUDE_CODEX.md` — subscription & settings guide
 - `.cursor/rules/` — project rules
 - `.cursor/skills/` — workflow skills
+- `plugins/ecc/` — ECC Cursor plugin adapter
+- `docs/ECC_PLUGIN.md` — ECC marketplace-add notes
