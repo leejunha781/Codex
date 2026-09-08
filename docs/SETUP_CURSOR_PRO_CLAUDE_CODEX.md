@@ -119,10 +119,12 @@ Codex/
 ├── chatgpt-preferences.md
 ├── .cursor/
 │   ├── rules/             # Modular agent rules (.mdc)
-│   ├── skills/            # Workflow skills
-│   └── mcp.json           # MCP server config
+│   ├── skills/            # Workflow skills (includes ecc-plugin)
+│   └── mcp.json           # MCP server config (Notion + Linear)
+├── plugins/ecc/           # ECC Cursor plugin adapter
 └── docs/
-    └── SETUP_CURSOR_PRO_CLAUDE_CODEX.md  # This file
+    ├── SETUP_CURSOR_PRO_CLAUDE_CODEX.md  # This file
+    └── ECC_PLUGIN.md      # ECC marketplace-add / adapter notes
 ```
 
 After clone: open in Cursor — rules and skills apply automatically.
@@ -171,6 +173,7 @@ After clone: open in Cursor — rules and skills apply automatically.
 - [ ] Repo cloned; `.cursor/rules` visible in Settings → Rules
 - [ ] MCP authenticated (Notion/Linear if used)
 - [ ] Cloud Agent environment linked to `leejunha781/Codex`
+- [ ] Optional: ECC adapter present at `plugins/ecc/` (see `docs/ECC_PLUGIN.md`)
 
 ---
 

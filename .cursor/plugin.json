@@ -1,7 +1,7 @@
 {
   "name": "codex-ai-hub",
-  "version": "1.0.0",
-  "description": "Claude-grade AI configuration for Joonha Lee — rules, skills, and MCP for Cursor Pro + Claude Pro + Codex Pro",
+  "version": "1.1.0",
+  "description": "Claude-grade AI configuration for Joonha Lee — rules, skills, MCP, and an ECC Cursor adapter",
   "author": "Joonha Lee",
   "rules": "./rules",
   "skills": "./skills"

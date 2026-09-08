@@ -21,7 +21,7 @@ See `MEMORY.md` for career history, preferences, and workflow pipelines.
 ## Workflows
 
 - **Career:** JD → match score → tailored resume (new filename) → cover letter
-- **Engineering:** spec → design → implement → test → PR
+- **Engineering:** spec → design → implement → test → PR (`@ecc-plugin` for ECC skills/agents)
 - **Consulting:** stakeholder map → requirements → traceability → delivery plan
 
 ## Communication

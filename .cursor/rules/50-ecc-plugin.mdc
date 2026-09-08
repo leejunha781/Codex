@@ -1,0 +1,13 @@
+---
+description: ECC plugin adapter — on-demand engineering catalog, never overrides hub identity
+alwaysApply: false
+---
+
+# ECC Plugin Adapter
+
+ECC is available in this repo as a Cursor plugin at `plugins/ecc/`.
+
+- Load ECC skills/agents/commands when the task is engineering process (TDD, review, security, verification).
+- Keep career, JD, resume, and PLM work on hub rules and hub skills.
+- Do not copy ECC always-on rules or hooks into `.cursor/rules/` or `.cursor/hooks.json`.
+- Refresh with `bash scripts/install-ecc-cursor-plugin.sh`.
